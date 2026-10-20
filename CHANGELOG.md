@@ -8,6 +8,8 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+## [1.27.0] - 2026-10-20
+
 ### Added
 
 - `gutenkg export-web-books` (also `make export-web-books`) writes each
@@ -21,11 +23,6 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   repo. The docs index, Installation, On-device packs, the site nav and the
   README link to it.
 
-### Fixed (docs)
-
-- The README no longer says the published forest cannot open a book; it
-  reads static chapter files and needs no worker.
-
 ### Changed
 
 - Three scripts are now `gutenkg` commands, so they work from an installed
@@ -38,6 +35,13 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   - `gutenkg audit --sections` (was `scripts/check_sections.py`) adds the
     oversized-section report to the audit, with `--baseline` and `--csv-out`.
     It is advisory and does not change the audit's exit code.
+- **KG pin set moved to kg-rag 0.17.1, kgmodule-utils 0.27.0 and doc-kg
+  0.28.0** (#186), by `scripts/check_pins.py --bump` across the pyproject
+  floors, `poetry.lock`, `docker/Dockerfile` and `runpod/requirements.txt`.
+  None of the three changes the index, so a bundle built on the old set stays
+  valid. The PDF fix below moves it again, to 0.27.1 and 0.28.1.
+- **Dependencies refreshed to clear 22 Dependabot alerts**: pyjwt 2.15.1,
+  urllib3 2.8.0, mcp 1.30.0 and virtualenv 21.14.11 (dev), all transitive.
 
 ### Removed
 
@@ -76,6 +80,26 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   Tess, The Possessed, the Upanishads and others), no words change in any
   book, and the other 220 convert identically. The 25 books need
   re-downloading and a full `gutenkg build-corpus`.
+
+- The README no longer says the published forest cannot open a book; it
+  reads static chapter files and needs no worker.
+
+- **Every corpus-count surface is synced, and a test keeps it that way**
+  (#179). At 1.26.0 six files still said 21 genres after the corpus had 20:
+  `sync_corpus_docs.py` missed the README's "**N texts in G genres**" wording
+  and never touched `docs/index.md`, `docs/CHAT_UI.md`,
+  `docs/ingestion-pipeline.md` or the `CITATION.cff` abstract, while
+  reporting success. One pattern list now covers README and every surface
+  file, and `tests/test_sync_corpus_docs.py` fails if any "N genres" on disk
+  sits outside a pattern. `regenerate_corpus_doc.py` ends `docs/CORPUS.md`
+  with a newline.
+
+- **Audel volume dates and rights basis** (#185). Vols 8 and 9 now carry
+  the 1930 and 1931 dates on their scanned copyright pages instead of the
+  Internet Archive's 1929, and every volume's `reference.md` states its US
+  public-domain basis (published 1929-1931 with notice, no renewal found in
+  the 1956-1970 renewal records). `gutenkg stale` flags all eight volumes;
+  they re-ingest at the next corpus rebuild.
 
 ## [1.26.0] - 2026-09-28
 

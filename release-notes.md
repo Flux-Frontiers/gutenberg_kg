@@ -1,120 +1,97 @@
-# Release Notes -- v1.26.0
+# Release Notes -- v1.27.0
 
-> Released: 2026-09-28
+> Released: 2026-10-20
 
 ### Added
 
-- Diaries grow as timelines in `viz3d` and `quilt`. The trunk runs up to the
-  diary's last year, and each calendar year forks from it as a limb, turning
-  half the golden angle from the one before, so the years climb the trunk in
-  a spiral and a year the diarist skipped leaves bare trunk. Each entry hangs
-  on its year's limb at its fraction of the year; before, all of a period's
-  entries were clustered at the limb tip, about 900 of them for each Pepys
-  year. Limbs are sized by the square root of their share of entries, so a
-  heavy year no longer wraps the trunk. A one-year diary (the Hebrides
-  journal) spaces its parts in file order.
-- `gutenkg quilt --still` renders one square PNG of a book's tree, the
-  quilt's center view, instead of a full light-field quilt. `--size` sets the
-  edge in pixels; `--plain`, `--season` and `--zoom` apply; `--orbit` and
-  `--cast` are refused.
-- The web catalog export writes two new fields. `book` is the corpus folder
-  name the worker looks books up by; for 9 of 253 books it differs from the
-  title (The Sea-Wolf is in `The Sea-Wolf (London)`), so the forest could not
-  open them. `periods`, on diary books, carries each year's chunk counts in 53
-  slices along its limb, so the web forest grows the same diary limbs as
-  `viz3d` without the graph.
-- `make stale-books` lists books whose text (`*.md` or `reference.md`) is
-  newer than their index, and the bundle when a book's index is newer than
-  it. It prints the `refresh-text` command for the stale genres and exits 1
-  when anything is stale.
-- `make refresh-text GENRE="..."` carries changed book text to every local
-  surface: it force-rebuilds those genres' indices, runs a full `gutenkg
-  build-corpus`, checks with `stale_books.py`, then exports the Swift packs,
-  builds the image under every installed runtime and exports the web forest
-  catalog. `build-corpus --update` is not enough after a text change: it
-  matches on node ids, so an edited book keeps its old vectors. Pushing the
-  image to Docker Hub stays a separate step. The author fixes below rewrote
-  about 50 `reference.md` files and the OCR fix rewrote the Audel text; this
-  release's bundle, packs and image were refreshed that way across 16 genres.
+- `gutenkg export-web-books` (also `make export-web-books`) writes each
+  book's chapters as `<slug>.json` in the knowledge_press forest's
+  `web/public/books/`, from the Swift packs, with chapters built the way the
+  worker's `get_chapter` builds them. The published forest on GitHub Pages
+  can then read books without a worker.
+- `docs/KNOWLEDGE_PRESS.md` describes the readers in the knowledge_press
+  repo: the web forest, live, and the iPhone, iPad and Mac app, in
+  development for App Store deployment. It lists what each needs from this
+  repo. The docs index, Installation, On-device packs, the site nav and the
+  README link to it.
 
-### Fixed
+### Changed
 
-- The worker can browse diaries. `get_chapters` and `get_chapter` looked
-  every book up in the consolidated DocKG, which does not hold the four
-  diaries, so the forest reader and the Browse page answered "book not found"
-  for Pepys, both Evelyn volumes and the Hebrides journal. For diaries they
-  now read the book's DiaryKG: one chapter per dated entry, in the same
-  scheme as the app's `PassagePack.diaryEntries`.
-- Internet Archive text is cleaned properly, and the eight Audel volumes are
-  regenerated with it. Hyphenated words were never rejoined, because the
-  Archive's OCR ends every line with a space; about 6,800 now are. Running
-  titles printed with a page number ("304 Dynamo and Motor Experiments") and
-  page numbers such as "4.047" are removed. Drawings and rotated captions
-  that OCR read as characters, about 34,000 lines across the set, are removed
-  by a new debris filter; lines of this kind fell from 22 to 4 percent, at a
-  cost of under 1 percent of real words, mostly labels inside drawings. Every
-  IA book's `reference.md` now ends with a Text notes section giving the OCR
-  engine, a count for each cleanup step, and what was not repaired. The
-  Audel scans are cropped into the binding, so letters are missing at line
-  starts and ends; that cannot be fixed from these scans, and
-  `docs/IA_OCR_TEXT.md` records the measurements and the other scans that
-  were considered. Carry the new text downstream with `make refresh-text
-  GENRE=audel-electric` (see Added).
-- Books with more than one author are credited to all of them, primary
-  author first. Only the first author in Gutenberg's OPDS feed was kept, and
-  the feed lists co-authors in reverse, so The Count of Monte Cristo and The
-  Three Musketeers were credited to Auguste Maquet instead of Alexandre Dumas,
-  The Travels of Marco Polo to Rusticiano da Pisa, Grimms' Fairy Tales to
-  Wilhelm Grimm alone, and The Federalist Papers to James Madison alone.
-  Authors now come from the RDF record's creators, which leave out
-  translators and editors. Born/Died/Wikipedia always describe the first
-  author; Monte Cristo's had been Dumas's under Maquet's name.
-- Author names read the way readers know them. "Tolstoy, Leo, graf" was
-  displayed as "Leo, graf Tolstoy", "Marcus Aurelius, Emperor of Rome" as
-  "Emperor of Rome Marcus Aurelius", and "Wells, H. G. (Herbert George)" as
-  "H. G. (Herbert George) Wells"; they are now Leo Tolstoy, Marcus Aurelius
-  and H. G. Wells. Twenty authors across 39 books changed.
-- Internet Archive books have their author. Their `reference.md` records it
-  as a Publication Author line, which the parser never read, so the eight
-  Audel manuals showed no author (or "Unknown"); they are by Frank D. Graham
-  and Theo Audel & Company.
-- A book whose Gutenberg record names no author is credited to "Various"
-  instead of nobody, so it can be found by author. That covers the five
-  sacred texts now in the corpus and any future download like them.
-- The Wikipedia link is the English article when Gutenberg has one. Aristotle,
-  Dante, Euripides, Hesse, Sun Tzu, Wilde and Zola linked to Greek, Italian,
-  German, Chinese or French Wikipedia.
-- `gutenkg authors --refresh` works again. It imported a script that no longer
-  exists. It now re-fetches the RDF for every book and rewrites each
-  `reference.md` Author section from it (leaving the rest of the file alone),
-  which is how the corpus picked up the fixes above. `gutenkg authors` lists a
-  co-written book under each author and removes pages for authors no longer in
-  the corpus: 31 stale pages went.
-- The King James Bible (#10) converts to all 66 books. Fifteen books the
-  edition titles with a bare name (Ezra, The Proverbs, Ecclesiastes and the
-  twelve minor prophets) were not recognized as headings, so their text was
-  folded into 2 Chronicles, Psalms and Daniel. 3 John was folded into 2 John
-  the same way. The "Otherwise Called:" subtitles of Samuel and Kings no
-  longer open a second, mislabeled section, so 1 Samuel's text is no longer
-  filed under "The First Book of the Kings". Bare titles count only when at
-  least five stand alone in one book, so Hobbes's marginal note "The
-  Proverbs" in Leviathan stays body text. The corrected text ships in this
-  release; rebuild an existing local index with `make refresh-text
-  GENRE=sacred-texts`.
-- `gutenkg build-corpus` no longer crashes with `FileNotFoundError` when a
-  registered genre (such as `curiosities`) has no directory under `corpus/`.
-- An exact-phrase match now wins a reciprocal-rank-fusion tie against the
-  dense channel's hit of the same rank. "pillar of salt" has one BM25 hit,
-  Genesis 19:26, which tied Ruskin's "pillar of sand" (the dense top hit) at
-  1/60 and lost on insertion order. The worker and `export_swift.rrf_fuse`
-  change together; the app's Swift `LocalRetrieval.fuse` changes in
-  knowledge_press, and `golden.json` needs a fresh `gutenkg export-swift`.
+- Three scripts are now `gutenkg` commands, so they work from an installed
+  package and share the CLI's corpus root:
+  - `gutenkg stale` (was `scripts/stale_books.py`) lists books whose text is
+    newer than their index; `make stale-books` and `make refresh-text` call it.
+  - `gutenkg export-web-catalog` (was `scripts/export_web_catalog.py`) writes
+    the web forest's catalog, next to `gutenkg export-swift`;
+    `make export-web-catalog` calls it.
+  - `gutenkg audit --sections` (was `scripts/check_sections.py`) adds the
+    oversized-section report to the audit, with `--baseline` and `--csv-out`.
+    It is advisory and does not change the audit's exit code.
+- **KG pin set moved to kg-rag 0.17.1, kgmodule-utils 0.27.0 and doc-kg
+  0.28.0** (#186), by `scripts/check_pins.py --bump` across the pyproject
+  floors, `poetry.lock`, `docker/Dockerfile` and `runpod/requirements.txt`.
+  None of the three changes the index, so a bundle built on the old set stays
+  valid. The PDF fix below moves it again, to 0.27.1 and 0.28.1.
+- **Dependencies refreshed to clear 22 Dependabot alerts**: pyjwt 2.15.1,
+  urllib3 2.8.0, mcp 1.30.0 and virtualenv 21.14.11 (dev), all transitive.
 
 ### Removed
 
-- `scripts/resync_catalog_fix.sh`, a one-off resync for an old branch. It
-  rebuilt the bundle with `build-corpus --update`, which keeps stale vectors
-  for books whose text changed.
+- The SIMILAR_TO cap study's scripts: `setup_similar_to_analysis.py`,
+  `run_similar_to_cap_sweep.py`, `run_retrieval_cap_ab.py`,
+  `summarize_retrieval_ab.py`, `evaluate_similar_to_value.py` and
+  `build_gold_from_retrieval.py`. The cap-8 decision is settled; their
+  results stay in `analysis/`.
+- `scripts/synth_replay.py` and `scripts/make_tokenizer_fixture.py` moved to
+  the knowledge_press repo, the app they serve.
+- `scripts/build_corpus_by_genre.py` and `scripts/benchmark_embedders.py`,
+  which need LanceDB; the bundle has been sqlite-vec since doc-kg 0.18.0.
+- `scripts/catalog.txt`, the pre-genre book list, whose usage line named a
+  script that no longer exists, and `scripts/catalogs/science-fiction-additions.txt`,
+  whose four IDs are all in the genre catalogs.
+- `scripts/make_app_icon.py`, which drew the app's old "G badge" icon into
+  `app/`. The app moved to knowledge_press, whose `make icons` renders the
+  press-seal icon from SVG.
+
+### Fixed
+
+- **PDF ingest on a fresh install, and the image pins moved with it.**
+  kgmodule-utils 0.27.0's `[pdf]` resolved to the empty pymupdf4llm 2.0
+  placeholder, leaving no PDF code (kgrag_priv sweep item 86). The KG pin
+  set moves to kgmodule-utils 0.27.1 and doc-kg 0.28.1 in the pyproject
+  floors, `docker/Dockerfile` ARGs and `runpod/requirements.txt`, via
+  `scripts/check_pins.py --bump`; the lock takes pymupdf 2.0.
+
+- Chapter numbers printed as a bare numeral with no period ("I", "II",
+  "IV") now become headings. Only three-character numerals such as III and
+  XII did before, by way of the ALL-CAPS rule, so chapters like I, II, IV,
+  V, X, XL and L merged into the chapter before them. A lone numeral counts
+  only as part of a sequence that counts up and may restart at I, so stray
+  capitals in plays and dialogues are left alone. Checked against the raw
+  text of all 245 Gutenberg books: 25 gain headings (Cellini, My Antonia,
+  Tess, The Possessed, the Upanishads and others), no words change in any
+  book, and the other 220 convert identically. The 25 books need
+  re-downloading and a full `gutenkg build-corpus`.
+
+- The README no longer says the published forest cannot open a book; it
+  reads static chapter files and needs no worker.
+
+- **Every corpus-count surface is synced, and a test keeps it that way**
+  (#179). At 1.26.0 six files still said 21 genres after the corpus had 20:
+  `sync_corpus_docs.py` missed the README's "**N texts in G genres**" wording
+  and never touched `docs/index.md`, `docs/CHAT_UI.md`,
+  `docs/ingestion-pipeline.md` or the `CITATION.cff` abstract, while
+  reporting success. One pattern list now covers README and every surface
+  file, and `tests/test_sync_corpus_docs.py` fails if any "N genres" on disk
+  sits outside a pattern. `regenerate_corpus_doc.py` ends `docs/CORPUS.md`
+  with a newline.
+
+- **Audel volume dates and rights basis** (#185). Vols 8 and 9 now carry
+  the 1930 and 1931 dates on their scanned copyright pages instead of the
+  Internet Archive's 1929, and every volume's `reference.md` states its US
+  public-domain basis (published 1929-1931 with notice, no renewal found in
+  the 1956-1970 renewal records). `gutenkg stale` flags all eight volumes;
+  they re-ingest at the next corpus rebuild.
 
 ---
 
