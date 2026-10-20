@@ -59,6 +59,13 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Fixed
 
+- **PDF ingest on a fresh install, and the image pins moved with it.**
+  kgmodule-utils 0.27.0's `[pdf]` resolved to the empty pymupdf4llm 2.0
+  placeholder, leaving no PDF code (kgrag_priv sweep item 86). The KG pin
+  set moves to kgmodule-utils 0.27.1 and doc-kg 0.28.1 in the pyproject
+  floors, `docker/Dockerfile` ARGs and `runpod/requirements.txt`, via
+  `scripts/check_pins.py --bump`; the lock takes pymupdf 2.0.
+
 - Chapter numbers printed as a bare numeral with no period ("I", "II",
   "IV") now become headings. Only three-character numerals such as III and
   XII did before, by way of the ALL-CAPS rule, so chapters like I, II, IV,
