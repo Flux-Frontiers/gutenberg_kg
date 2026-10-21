@@ -210,9 +210,15 @@ gutenkg query "plague" --registry /path/to/registry.json     # non-default regis
 ## Two Books in Conversation (Entmoot)
 
 `gutenkg converse` seats two books in a moot. Each speaks only from passages
-of its own text, cites them as `[s1]`, `[s2]`, ..., and may quote the other
-book's earlier turn `N` as `[oN]`. Needs a running worker (for book-scoped
-retrieval) and oMLX.
+of its own text, cites them as `[s1]`, `[s2]`, ..., and may quote any earlier
+turn `N` of the moot, the other book's or its own, as `[oN]`. Needs a running worker (for book-scoped
+retrieval) and a model backend (`--backend`, oMLX by default).
+
+Every quote in the output is verbatim. A quote the model misremembered is
+replaced with its source's exact words when it nearly matches them, and loses
+its quotation marks when it does not; the run prints each correction. The
+grounding rates still measure the model's own replies, which the JSON keeps
+as `raw_text` beside the corrected `text` and its `snaps`.
 
 ```bash
 gutenkg converse "philosophy/Thus Spake Zarathustra" "philosophy/Meditations" \
