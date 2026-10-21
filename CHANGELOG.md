@@ -32,6 +32,24 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   omlx, the backend's own default model applies unless `--model` names one,
   and `openai` without `OPENAI_API_KEY` or `SYNTH_API_KEY` is a clean usage
   error.
+- **Quote snapping in moots.** Every quote left in a moot transcript is now
+  verbatim. After the grounding check, each quote of 3 or more words that
+  was not found in its source is compared with that source (the speaker's
+  passage pool, or the other tree's tagged turn for `[oN]`). When the
+  source's words reach a similarity of 0.85 (`SNAP_MIN_RATIO`), they
+  replace the quote's; otherwise the quotation marks come off and the words
+  stand as paraphrase, as they also do for a missed quote with an ellipsis.
+  Grounding is still measured on the model's raw reply, kept as `raw_text`;
+  each correction is recorded in the utterance's `snaps`, and the stats add
+  `quotes_snapped` and `quotes_unquoted`.
+- **A tree can quote itself.** `[oN]` now names any earlier turn of the
+  moot, the speaker's own as well as the other tree's; turn numbers are
+  unique, so the tag stays unambiguous. A quote of the speaker's own turn
+  is recorded with source `self` and counted in `self_quotes_found` /
+  `self_quotes_total`. Like quotes of the other tree, it never counts toward
+  grounding: words spoken in the moot are model-written, not the book.
+  Before this, such quotes were rejected, which was the only kind of invalid
+  `[oN]` in a 27B test run.
 
 ## [1.27.1] - 2026-10-20
 

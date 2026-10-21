@@ -8,7 +8,10 @@ other tree from those passages through a local model, and cites them with
 was given this turn, and its quoted phrases against every passage its own book
 has given it during the moot. A tree may also quote the other tree, tagging the
 words ``[oN]`` with the turn they were spoken in; those quotes are checked and
-reported separately and never count toward grounding.
+reported separately and never count toward grounding. After the check, every
+quote that was not found is snapped (:func:`snap_quotes`): replaced with its
+source's exact words when it nearly matches them, or stripped of its quotation
+marks when it does not, so every quote left in a transcript is verbatim.
 
 This module is pure logic: the worker client and the text synthesizer are
 passed in, so tests run with fakes and no network. The ``gutenkg converse``
@@ -18,6 +21,7 @@ only output is its transcript.
 
 from __future__ import annotations
 
+import difflib
 import re
 from dataclasses import asdict, dataclass, field
 
@@ -57,6 +61,14 @@ _ELLIPSIS = re.compile(r"\.\.\.|\u2026")
 #: Quoted phrases per turn the persona asks for. Guidance only, not enforced.
 MAX_QUOTES = 4
 _EDGE_PUNCT = " .,;:!?'"
+
+#: A quote that misses its source is replaced with the source's own words when
+#: their similarity (difflib ratio over normalized words) reaches this; below
+#: it, the quotation marks come off and the words stand as paraphrase.
+SNAP_MIN_RATIO = 0.85
+_WORD = re.compile(r"\S+")
+# Stripped from both ends of a snapped span: edge punctuation and every quote mark.
+_SPAN_EDGE = _EDGE_PUNCT + '"' + "".join(chr(c) for c in _QUOTE_CHARS)
 
 
 class MootError(RuntimeError):
@@ -106,12 +118,17 @@ class Utterance:
     :param text: What it said.
     :param cited: Valid ``sN`` tag -> node id, for each passage tag the reply cited.
     :param quotes: Each double-quoted span of 3+ words: ``{"text", "found", "source"}``,
-        where ``source`` is ``"own"`` or ``"other"``.
+        where ``source`` is ``"own"`` (the speaker's book), ``"other"`` (an
+        ``[oN]`` quote of the other tree) or ``"self"`` (an ``[oN]`` quote of
+        the speaker's own earlier turn).
     :param grounding: The :func:`check_grounding` result for the kept reply.
     :param grounded: Whether the kept reply passed the grounding check.
     :param attempts: 1, or 2 when the first reply failed and the turn was retried.
     :param query: The retrieval query that produced this turn's passages.
     :param retrieved: ``{"tag", "label", "node_id"}`` for every passage given this turn.
+    :param raw_text: The model's reply before snapping; ``grounding`` was measured on it.
+    :param snaps: One record per quote that was not found: ``{"text", "source",
+        "action", "to", "ratio"}``, ``action`` being ``"snapped"`` or ``"unquoted"``.
     """
 
     turn: int
@@ -125,6 +142,8 @@ class Utterance:
     attempts: int
     query: str
     retrieved: list[dict]
+    raw_text: str = ""
+    snaps: list[dict] = field(default_factory=list)
 
 
 @dataclass
@@ -150,15 +169,23 @@ class Transcript:
     def stats(self) -> dict:
         """Grounding totals across the moot.
 
-        :returns: Counts and rates. ``quote_found_rate`` covers quotes of the
-            speaker's own book; ``other_quote_valid_rate`` covers ``[oN]``
-            quotes of the other tree, which never count toward grounding. A
-            rate is ``None`` when there was nothing to count.
+        :returns: Counts and rates, measured on the model's raw replies.
+            ``quote_found_rate`` covers quotes of the speaker's own book;
+            ``other_quote_valid_rate`` covers ``[oN]`` quotes of the other
+            tree and ``self_quotes_*`` the speaker's ``[oN]`` quotes of its
+            own earlier turns; neither counts toward grounding. ``quotes_snapped`` and
+            ``quotes_unquoted`` count the corrections :func:`snap_quotes`
+            made. A rate is ``None`` when there was nothing to count.
         """
         n = len(self.utterances)
         quoted = sum(
-            u.grounding["quotes_total"] + u.grounding["other_quotes_total"] for u in self.utterances
+            u.grounding["quotes_total"]
+            + u.grounding["other_quotes_total"]
+            + u.grounding["self_quotes_total"]
+            for u in self.utterances
         )
+        s_found = sum(u.grounding["self_quotes_found"] for u in self.utterances)
+        s_total = sum(u.grounding["self_quotes_total"] for u in self.utterances)
         tags_valid = sum(1 for u in self.utterances if u.grounding["tags_valid"])
         cited = sum(1 for u in self.utterances if u.grounding["tags_cited"] > 0)
         found = sum(u.grounding["quotes_found"] for u in self.utterances)
@@ -178,7 +205,15 @@ class Transcript:
             "other_quotes_found": o_found,
             "other_quotes_total": o_total,
             "other_quote_valid_rate": round(o_found / o_total, 3) if o_total else None,
+            "self_quotes_found": s_found,
+            "self_quotes_total": s_total,
             "quotes_per_turn": round(quoted / n, 2) if n else None,
+            "quotes_snapped": sum(
+                1 for u in self.utterances for s in u.snaps if s["action"] == "snapped"
+            ),
+            "quotes_unquoted": sum(
+                1 for u in self.utterances for s in u.snaps if s["action"] == "unquoted"
+            ),
         }
 
     def to_dict(self) -> dict:
@@ -285,9 +320,10 @@ def persona(tree: Tree, other: Tree, topic: str | None) -> str:
         "Quote short phrases from your passages exactly, in double quotes, at most "
         f"{MAX_QUOTES} quoted phrases in a turn. Paraphrase the rest, still with its "
         "[sN] tag. "
-        "To quote the other tree, put its exact words in double quotes followed by "
-        "[oN], where N is the number of the turn it spoke them in, for example [o3]. "
-        "Never tag the other tree's words with an [sN] tag. "
+        "To quote words spoken earlier in this moot, the other tree's or your own, "
+        "put them in double quotes followed by [oN], where N is the number of the "
+        "turn they were spoken in, for example [o3]. "
+        "Never tag words spoken in the moot with an [sN] tag. "
         "If no passage bears on what was said, say so plainly and turn the "
         "conversation toward something your passages do cover. "
         f"At most 120 words. No lists. Address the other tree as {other.title}."
@@ -385,6 +421,22 @@ def _other_turns(text: str, spans: list[tuple[str, int, int]], i: int) -> list[i
     return [int(t[1:]) for t in _TAG.findall(group.group(1).lower()) if t.startswith("o")]
 
 
+def _moot_source(
+    turns: list[int], others: dict[int, str], own: dict[int, str]
+) -> tuple[str, list[str]]:
+    """Classify an ``[oN]`` quote and gather the texts of the turns it names.
+
+    :param turns: The ``[oN]`` turn numbers attached to the quote.
+    :param others: The other tree's utterances so far, turn number -> text.
+    :param own: The speaker's own earlier utterances, turn number -> text.
+    :returns: ``"self"`` when every named turn is the speaker's own, else
+        ``"other"``, and the texts of the named turns that exist.
+    """
+    spoken = {**others, **own}
+    source = "self" if all(n in own for n in turns) else "other"
+    return source, [spoken[n] for n in turns if n in spoken]
+
+
 def _quote_in(quote: str, sources: list[str]) -> bool:
     """Whether a quote appears in the source its tag points to.
 
@@ -410,32 +462,38 @@ def check_grounding(
     passages: list[Passage],
     pool: list[Passage] | None = None,
     others: dict[int, str] | None = None,
+    own: dict[int, str] | None = None,
 ) -> dict:
     """Check a reply's citations and quotes.
 
     ``[sN]`` tags must name a passage given this turn. A quote of the
     speaker's own book is found when it appears, after normalization, in any
     passage of that book retrieved during the moot (``pool``); a quote with
-    an ellipsis is checked fragment by fragment (see :func:`_quote_in`). A quote tagged
-    ``[oN]`` is a quote of the other tree: it is valid when it appears in the
-    other tree's turn ``N``, and it is reported separately, never counting
-    toward grounding. A quote of the other tree under an ``[sN]`` tag is
-    checked as an own quote, so it is a miss. A reply with no tags has
-    ``tags_valid`` true, so ``tags_cited`` is reported to make that visible.
+    an ellipsis is checked fragment by fragment (see :func:`_quote_in`). A
+    quote tagged ``[oN]`` is a quote of turn ``N`` of the moot: of the other
+    tree (source ``"other"``) or of the speaker's own earlier turn (source
+    ``"self"``). It is valid when it appears in that turn, and it is reported
+    separately, never counting toward grounding: words spoken in the moot are
+    model-written, not the book. Words of the moot under an ``[sN]`` tag are
+    checked as an own-book quote, so they are a miss. A reply with no tags
+    has ``tags_valid`` true, so ``tags_cited`` is reported to make that visible.
 
     :param text: The reply.
     :param passages: The passages given this turn.
     :param pool: Every passage of the speaker's own book retrieved during the
         moot; defaults to ``passages``.
     :param others: The other tree's utterances so far, turn number -> text.
+    :param own: The speaker's own earlier utterances, turn number -> text.
     :returns: ``{"tags_valid", "tags_cited", "quotes_found", "quotes_total",
-        "other_quotes_found", "other_quotes_total", "quotes"}``, where
-        ``quotes`` lists ``{"text", "found", "source"}`` per quote.
+        "other_quotes_found", "other_quotes_total", "self_quotes_found",
+        "self_quotes_total", "quotes"}``, where ``quotes`` lists
+        ``{"text", "found", "source"}`` per quote, ``source`` being
+        ``"own"`` (the speaker's book), ``"other"`` or ``"self"``.
     """
     by_tag = {p.tag for p in passages}
     s_tags = [t for t in parse_tags(text) if t.startswith("s")]
     haystacks = [_normalize(p.content) for p in (pool if pool is not None else passages)]
-    others = others or {}
+    others, own = others or {}, own or {}
     flat = text.translate(_QUOTE_CHARS)
     spans = _quote_spans(flat)
     quotes = []
@@ -444,21 +502,143 @@ def check_grounding(
             continue
         turns = _other_turns(flat, spans, i)
         if turns:
-            sources = [_normalize(others[n]) for n in turns if n in others]
-            quotes.append({"text": q, "found": _quote_in(q, sources), "source": "other"})
+            source, texts = _moot_source(turns, others, own)
+            found = _quote_in(q, [_normalize(t) for t in texts])
+            quotes.append({"text": q, "found": found, "source": source})
         else:
             quotes.append({"text": q, "found": _quote_in(q, haystacks), "source": "own"})
-    own = [q for q in quotes if q["source"] == "own"]
-    other = [q for q in quotes if q["source"] == "other"]
+
+    def count(source: str) -> tuple[int, int]:
+        picked = [q for q in quotes if q["source"] == source]
+        return sum(1 for q in picked if q["found"]), len(picked)
+
+    (own_found, own_total), (o_found, o_total), (s_found, s_total) = (
+        count("own"),
+        count("other"),
+        count("self"),
+    )
     return {
         "tags_valid": all(t in by_tag for t in s_tags),
         "tags_cited": len(s_tags),
-        "quotes_found": sum(1 for q in own if q["found"]),
-        "quotes_total": len(own),
-        "other_quotes_found": sum(1 for q in other if q["found"]),
-        "other_quotes_total": len(other),
+        "quotes_found": own_found,
+        "quotes_total": own_total,
+        "other_quotes_found": o_found,
+        "other_quotes_total": o_total,
+        "self_quotes_found": s_found,
+        "self_quotes_total": s_total,
         "quotes": quotes,
     }
+
+
+def _key(text: str) -> str:
+    """Normalized words with edge punctuation dropped, for fuzzy comparison."""
+    return " ".join(w.strip(_EDGE_PUNCT + '"') for w in _normalize(text).split())
+
+
+def best_span(quote: str, sources: list[str]) -> tuple[str, float]:
+    """Find the source span most like a quote.
+
+    Every window of the quote's word count, give or take two words, in every
+    source is compared with the quote over normalized words.
+
+    :param quote: The quoted span.
+    :param sources: Source texts, as written (not normalized).
+    :returns: The best span exactly as the source writes it, edge punctuation
+        dropped, and its difflib ratio; ``("", 0.0)`` with no sources.
+    """
+    target = _key(quote)
+    n = len(target.split())
+    matcher = difflib.SequenceMatcher(None, autojunk=False)
+    matcher.set_seq2(target)  # SequenceMatcher caches what it learns about seq2
+    best, best_ratio = "", 0.0
+    for src in sources:
+        words = list(_WORD.finditer(src.translate(_QUOTE_CHARS)))
+        keys = [_key(w.group()) for w in words]
+        for size in range(max(1, n - 2), n + 3):
+            for i in range(len(words) - size + 1):
+                matcher.set_seq1(" ".join(keys[i : i + size]))
+                if matcher.real_quick_ratio() <= best_ratio:
+                    continue
+                if matcher.quick_ratio() <= best_ratio:
+                    continue
+                ratio = matcher.ratio()
+                if ratio > best_ratio:
+                    span = src[words[i].start() : words[i + size - 1].end()]
+                    best, best_ratio = span.strip(_SPAN_EDGE), ratio
+    return best, best_ratio
+
+
+def snap_quotes(
+    text: str,
+    pool: list[Passage],
+    others: dict[int, str] | None = None,
+    own: dict[int, str] | None = None,
+) -> tuple[str, list[dict]]:
+    """Make every quote in a reply verbatim, or not a quote.
+
+    Each double-quoted span of 3 or more words that is not found in its
+    source (see :func:`check_grounding`) is corrected in place. When
+    :func:`best_span` finds source words with a ratio of at least
+    :data:`SNAP_MIN_RATIO`, they replace the quote's words, keeping the
+    quote's own marks and edge punctuation. Otherwise, and always for a quote
+    with an ellipsis, the quotation marks are removed and the words stay as
+    paraphrase. Quotes that are found, short quotes and citation tags are
+    left alone.
+
+    :param text: The reply.
+    :param pool: Every passage of the speaker's own book retrieved during the moot.
+    :param others: The other tree's utterances so far, turn number -> text.
+    :param own: The speaker's own earlier utterances, turn number -> text.
+    :returns: The corrected reply, and one record per corrected quote:
+        ``{"text", "source", "action", "to", "ratio"}``.
+    """
+    others, own = others or {}, own or {}
+    own_sources = [p.content for p in pool]
+    own_keys = [_normalize(s) for s in own_sources]
+    flat = text.translate(_QUOTE_CHARS)  # one char for one char: offsets match ``text``
+    spans = _quote_spans(flat)
+    edits: list[tuple[int, int, str]] = []
+    snaps: list[dict] = []
+    for i, (q, start, end) in enumerate(spans):
+        if len(q.split()) < _QUOTE_MIN_WORDS:
+            continue
+        turns = _other_turns(flat, spans, i)
+        if turns:
+            source, sources = _moot_source(turns, others, own)
+            keys = [_normalize(s) for s in sources]
+        else:
+            source, sources, keys = "own", own_sources, own_keys
+        if _quote_in(q, keys):
+            continue
+        inner = text[start + 1 : end - 1]
+        lead = inner[: len(inner) - len(inner.lstrip(_EDGE_PUNCT))]
+        trail = inner[len(inner.rstrip(_EDGE_PUNCT)) :]
+        to, ratio = ("", 0.0) if _ELLIPSIS.search(q) else best_span(q, sources)
+        if to and ratio >= SNAP_MIN_RATIO:
+            edits.append((start, end, f"{text[start]}{lead}{to}{trail}{text[end - 1]}"))
+            snaps.append(
+                {
+                    "text": q,
+                    "source": source,
+                    "action": "snapped",
+                    "to": to,
+                    "ratio": round(ratio, 3),
+                }
+            )
+        else:
+            edits.append((start, end, inner))
+            snaps.append(
+                {
+                    "text": q,
+                    "source": source,
+                    "action": "unquoted",
+                    "to": None,
+                    "ratio": round(ratio, 3),
+                }
+            )
+    for start, end, replacement in reversed(edits):
+        text = text[:start] + replacement + text[end:]
+    return text, snaps
 
 
 def _passes(grounding: dict) -> bool:
@@ -471,7 +651,8 @@ def _reminder(passages: list[Passage]) -> str:
         "That reply did not hold to your passages. Cite only the tags you were "
         f"given ({tags}), and put in double quotes only words copied exactly from "
         f"your passages, at most {MAX_QUOTES} quoted phrases; paraphrase the rest with "
-        "its [sN] tag. Words of the other tree take an [oN] tag, never an [sN] tag. "
+        "its [sN] tag. Words spoken earlier in the moot, the other tree's or your "
+        "own, take an [oN] tag, never an [sN] tag. "
         "Give your reply again."
     )
 
@@ -489,6 +670,7 @@ def turn(
     number: int,
     pool: list[Passage],
     others: dict[int, str],
+    own: dict[int, str] | None = None,
     query: str,
     model: str | None,
     temperature: float,
@@ -507,16 +689,19 @@ def turn(
     :param pool: Every passage of this tree's book retrieved during the moot,
         including ``passages``.
     :param others: The other tree's utterances so far, turn number -> text.
+    :param own: This tree's own earlier utterances, turn number -> text.
     :param query: The retrieval query that produced ``passages`` (recorded only).
     :param model: Model id override, or ``None`` for the synthesizer's default.
     :param temperature: Sampling temperature.
-    :returns: The utterance. A reply that fails twice is kept and marked ungrounded.
+    :returns: The utterance, its quotes snapped by :func:`snap_quotes`. A reply
+        that fails twice is kept and marked ungrounded; grounding is measured
+        before snapping.
     :raises MootError: When the model returns no text on both attempts.
     """
     messages = build_messages(tree, other, topic, passages, summary, recent, incoming)
     reply = synth.complete(messages, model=model, max_tokens=MAX_TOKENS, temperature=temperature)
     attempts = 1
-    grounding = check_grounding(reply or "", passages, pool, others)
+    grounding = check_grounding(reply or "", passages, pool, others, own)
     if not reply or not _passes(grounding):
         attempts = 2
         retry = list(messages)
@@ -526,15 +711,16 @@ def turn(
         second = synth.complete(retry, model=model, max_tokens=MAX_TOKENS, temperature=temperature)
         if second:
             reply = second
-            grounding = check_grounding(reply, passages, pool, others)
+            grounding = check_grounding(reply, passages, pool, others, own)
     if not reply:
         raise MootError(f"the model returned no text for {tree.title}; is the endpoint up?")
     by_tag = {p.tag: p.node_id for p in passages}
+    text, snaps = snap_quotes(reply, pool, others, own)
     return Utterance(
         turn=number,
         speaker=tree.key,
         title=tree.title,
-        text=reply,
+        text=text,
         cited={t: by_tag[t] for t in dict.fromkeys(parse_tags(reply)) if t in by_tag},
         quotes=grounding.pop("quotes"),
         grounding=grounding,
@@ -542,6 +728,8 @@ def turn(
         attempts=attempts,
         query=query,
         retrieved=[{"tag": p.tag, "label": p.label, "node_id": p.node_id} for p in passages],
+        raw_text=reply,
+        snaps=snaps,
     )
 
 
@@ -655,6 +843,7 @@ def run_moot(
             number=i + 1,
             pool=list(pools[speaker.key].values()),
             others={u.turn: u.text for u in transcript.utterances if u.speaker == other.key},
+            own={u.turn: u.text for u in transcript.utterances if u.speaker == speaker.key},
             query=query,
             model=model,
             temperature=temperature,

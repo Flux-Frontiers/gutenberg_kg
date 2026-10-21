@@ -109,6 +109,11 @@ def _print_utterance(u) -> None:
             f"    UNGROUNDED: tags_valid={g['tags_valid']}, "
             f"quotes {g['quotes_found']}/{g['quotes_total']} found"
         )
+    for s in u.snaps:
+        if s["action"] == "snapped":
+            click.echo(f'    snapped "{s["text"]}" to "{s["to"]}"')
+        else:
+            click.echo(f'    unquoted "{s["text"]}" (not in its source)')
 
 
 @cli.command("converse", epilog=_EPILOG)
@@ -227,7 +232,9 @@ def converse_cmd(
         f"{stats['quotes_found']}/{stats['quotes_total']}"
         + (f" ({rate:.0%})" if rate is not None else "")
         + f"; [oN] quotes of the other tree valid {stats['other_quotes_found']}"
-        f"/{stats['other_quotes_total']}"
+        f"/{stats['other_quotes_total']}, of itself {stats['self_quotes_found']}"
+        f"/{stats['self_quotes_total']}"
+        f"; snapped {stats['quotes_snapped']}, unquoted {stats['quotes_unquoted']}"
     )
     if out is not None:
         out.write_text(json.dumps(transcript.to_dict(), indent=2, ensure_ascii=False) + "\n")

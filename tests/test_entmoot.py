@@ -520,7 +520,7 @@ class TestRevisedGrounding:
             {"text": "the eagle and the serpent", "found": False, "source": "other"}
         ]
 
-    def test_other_quote_pointing_at_own_turn_is_invalid(self):
+    def test_an_o_tag_on_the_speakers_own_turn_is_a_valid_self_quote(self):
         synth = KeyedSynth(
             {
                 ZARA: [
@@ -531,7 +531,31 @@ class TestRevisedGrounding:
             }
         )
         t = run_moot(TurnClient(), synth, [A, B], "jealousy", 3)
-        assert t.utterances[2].grounding["other_quotes_found"] == 0
+        u = t.utterances[2]
+        assert u.quotes == [{"text": "the scorpion and its sting", "found": True, "source": "self"}]
+        assert (u.grounding["self_quotes_found"], u.grounding["self_quotes_total"]) == (1, 1)
+        assert u.grounding["other_quotes_total"] == 0
+        assert u.grounding["quotes_total"] == 0  # never counts toward grounding
+        assert u.snaps == []
+        stats = t.stats()
+        assert (stats["self_quotes_found"], stats["self_quotes_total"]) == (1, 1)
+
+    def test_a_self_quote_that_misquotes_its_turn_snaps_to_it(self):
+        text, snaps = entmoot.snap_quotes(
+            'I said "the scorpion and it sting" [o1].',
+            _passages(PEPYS),
+            others={},
+            own={1: "I speak of the scorpion and its sting."},
+        )
+        assert text == 'I said "the scorpion and its sting" [o1].'
+        assert snaps[0]["source"] == "self"
+
+    def test_moot_source_classifies_turns(self):
+        others, own = {2: "theirs"}, {1: "mine", 3: "mine too"}
+        assert entmoot._moot_source([1, 3], others, own) == ("self", ["mine", "mine too"])
+        assert entmoot._moot_source([2], others, own) == ("other", ["theirs"])
+        assert entmoot._moot_source([1, 2], others, own) == ("other", ["mine", "theirs"])
+        assert entmoot._moot_source([9], others, own) == ("other", [])
 
     def test_other_tree_quoted_under_an_s_tag_is_still_a_miss(self):
         synth = KeyedSynth(
@@ -671,3 +695,120 @@ def test_converse_rejects_the_same_book_twice(cli, monkeypatch):
     result = CliRunner().invoke(cli, ["converse", A, A])
     assert result.exit_code == 2
     assert "the two books must differ" in result.output
+
+
+# ---------------------------------------------------------------------------
+# Quote snapping: every quote left in a transcript is verbatim
+# ---------------------------------------------------------------------------
+
+PEPYS = "I do curse the time that ever I did give way to it, God forgive me for my jealousy!"
+
+
+class TestSnapQuotes:
+    def test_a_near_miss_takes_the_source_words(self):
+        text, snaps = entmoot.snap_quotes(
+            'I "curse[d] the time that ever I did give way," [s1] say I.', _passages(PEPYS)
+        )
+        assert text == 'I "curse the time that ever I did give way," [s1] say I.'
+        assert snaps == [
+            {
+                "text": "curse[d] the time that ever I did give way",
+                "source": "own",
+                "action": "snapped",
+                "to": "curse the time that ever I did give way",
+                "ratio": snaps[0]["ratio"],
+            }
+        ]
+        assert snaps[0]["ratio"] >= entmoot.SNAP_MIN_RATIO
+
+    def test_words_not_in_the_source_lose_their_quotation_marks(self):
+        text, snaps = entmoot.snap_quotes(
+            'I feel "the impulse to punish others" [s1].', _passages(PEPYS)
+        )
+        assert text == "I feel the impulse to punish others [s1]."
+        assert snaps[0]["action"] == "unquoted"
+        assert snaps[0]["to"] is None
+
+    def test_found_and_short_quotes_are_left_alone(self):
+        reply = 'I say "God forgive me for my jealousy!" [s1] and "curse it" [s1].'
+        text, snaps = entmoot.snap_quotes(reply, _passages(PEPYS))
+        assert text == reply
+        assert snaps == []
+
+    def test_curly_quote_marks_are_kept(self):
+        text, _ = entmoot.snap_quotes(
+            "I “curse[d] the time that ever I did” [s1].", _passages(PEPYS)
+        )
+        assert text == "I “curse the time that ever I did” [s1]."
+
+    def test_a_missed_quote_with_an_ellipsis_is_unquoted(self):
+        text, snaps = entmoot.snap_quotes(
+            'I "curse[d] the time ... give way to it" [s1].', _passages(PEPYS)
+        )
+        assert text == "I curse[d] the time ... give way to it [s1]."
+        assert snaps[0]["action"] == "unquoted"
+
+    def test_an_other_quote_snaps_to_the_tagged_turn(self):
+        others = {1: "Like the lover am I, who distrusteth too sleek smiling."}
+        text, snaps = entmoot.snap_quotes(
+            'You are "the lover who distrusts too sleek smiling" [o1].', _passages(PEPYS), others
+        )
+        assert text == 'You are "the lover am I, who distrusteth too sleek smiling" [o1].'
+        assert snaps[0]["source"] == "other"
+        assert snaps[0]["action"] == "snapped"
+
+    def test_the_other_trees_words_under_an_s_tag_are_unquoted(self):
+        others = {1: "He turneth at last, like the scorpion, the poisoned sting against himself."}
+        text, snaps = entmoot.snap_quotes(
+            'I "turneth at last like the scorpion" [s1].', _passages(PEPYS), others
+        )
+        assert text == "I turneth at last like the scorpion [s1]."
+        assert snaps[0]["source"] == "own"
+
+    def test_best_span_with_no_sources(self):
+        assert entmoot.best_span("any words at all", []) == ("", 0.0)
+
+
+def test_a_moot_snaps_quotes_but_measures_the_raw_reply():
+    synth = FakeSynth(['Hear me: "jealousy is a dredful thing" [s1].'])
+    t = run_moot(FakeClient(), synth, [B, A], "jealousy", 1)
+    u = t.utterances[0]
+    assert u.raw_text == 'Hear me: "jealousy is a dredful thing" [s1].'
+    assert u.text == 'Hear me: "jealousy is a dreadful thing" [s1].'
+    assert u.grounding["quotes_found"] == 0  # measured before snapping
+    assert not u.grounded
+    stats = t.stats()
+    assert stats["quotes_snapped"] == 1
+    assert stats["quotes_unquoted"] == 0
+    data = t.to_dict()["utterances"][0]
+    assert data["snaps"][0]["to"] == "jealousy is a dreadful thing"
+
+
+def test_the_next_tree_sees_and_quotes_the_snapped_text():
+    synth = KeyedSynth(
+        {
+            "The Diary of Somebody": ['Hear me: "jealousy is a dredful thing" [s1].'],
+            "Thus Spake Zarathustra": ['You said "jealousy is a dreadful thing" [o1].'],
+        }
+    )
+    t = run_moot(FakeClient(), synth, [B, A], "jealousy", 2)
+    second = t.utterances[1]
+    assert second.grounding["other_quotes_found"] == 1
+    assert second.snaps == []
+
+
+def test_converse_reports_snapped_quotes(cli, monkeypatch):
+    from gutenberg_kg.cli import cmd_converse
+
+    monkeypatch.setattr(cmd_converse, "_make_client", lambda url: FakeClient())
+    monkeypatch.setattr(
+        cmd_converse,
+        "_make_synth",
+        lambda backend: FakeSynth(['Hear me: "jealousy is a dredful thing" [s1].']),
+    )
+    result = CliRunner().invoke(cli, ["converse", B, A, "--turns", "2"])
+    assert result.exit_code == 0, result.output
+    assert (
+        'snapped "jealousy is a dredful thing" to "jealousy is a dreadful thing"' in result.output
+    )
+    assert "snapped 2, unquoted 0" in result.output
