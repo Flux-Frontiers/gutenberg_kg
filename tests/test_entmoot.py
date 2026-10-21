@@ -3,6 +3,8 @@
 from __future__ import annotations
 
 import json
+import re
+import types
 
 import pytest
 from click.testing import CliRunner
@@ -140,7 +142,8 @@ class TestTopicSeeding:
         synth = FakeSynth(["Opening line [s1].", "Second line [s2]."])
         t = run_moot(client, synth, [A, B], "jealousy", 3)
         assert client.calls[2] == ("jealousy Opening line [s1].", B, 6)
-        assert client.calls[3] == ("jealousy Second line [s2].", A, 6)
+        # Overfetched: by turn 3 this tree has cited a passage, so fresh ones are sought.
+        assert client.calls[3] == ("jealousy Second line [s2].", A, 6 * entmoot.FRESH_OVERFETCH)
         assert t.utterances[0].query == "jealousy"
 
     def test_without_topic_later_queries_use_the_incoming_line_only(self):
@@ -247,6 +250,12 @@ class TestRetry:
 # ---------------------------------------------------------------------------
 
 
+@pytest.fixture(autouse=True)
+def _no_shell_backend(monkeypatch):
+    """Keep the developer's SYNTH_BACKEND out of the CLI's default backend."""
+    monkeypatch.delenv("SYNTH_BACKEND", raising=False)
+
+
 @pytest.fixture
 def cli():
     pytest.importorskip("kg_rag", reason="kg_rag not installed")
@@ -278,7 +287,7 @@ def test_converse_unknown_book_is_a_clean_error(cli, monkeypatch):
             raise WorkerError("unknown corpus 'philosophy/Nope'")
 
     monkeypatch.setattr(cmd_converse, "_make_client", lambda url: Rejecting())
-    monkeypatch.setattr(cmd_converse, "_make_synth", lambda: FakeSynth())
+    monkeypatch.setattr(cmd_converse, "_make_synth", lambda backend: FakeSynth())
     result = CliRunner().invoke(cli, ["converse", "philosophy/Nope", A])
     assert result.exit_code == 1
     assert "worker error: unknown corpus" in result.output
@@ -290,7 +299,7 @@ def test_converse_writes_a_transcript(cli, monkeypatch, tmp_path):
 
     monkeypatch.setattr(cmd_converse, "_make_client", lambda url: FakeClient())
     synth = FakeSynth()
-    monkeypatch.setattr(cmd_converse, "_make_synth", lambda: synth)
+    monkeypatch.setattr(cmd_converse, "_make_synth", lambda backend: synth)
     out = tmp_path / "moot.json"
     result = CliRunner().invoke(
         cli, ["converse", A, B, "--topic", "jealousy", "--turns", "2", "--out", str(out)]
@@ -309,7 +318,7 @@ def test_converse_model_overrides_the_default(cli, monkeypatch):
 
     synth = FakeSynth()
     monkeypatch.setattr(cmd_converse, "_make_client", lambda url: FakeClient())
-    monkeypatch.setattr(cmd_converse, "_make_synth", lambda: synth)
+    monkeypatch.setattr(cmd_converse, "_make_synth", lambda backend: synth)
     result = CliRunner().invoke(cli, ["converse", A, B, "--turns", "2", "--model", "small"])
     assert result.exit_code == 0, result.output
     assert synth.models == {"small"}
@@ -318,7 +327,109 @@ def test_converse_model_overrides_the_default(cli, monkeypatch):
 def test_converse_help_names_the_default_model(cli):
     result = CliRunner().invoke(cli, ["converse", "--help"])
     assert entmoot.DEFAULT_MODEL in result.output
-    assert "SYNTH_MODEL" in result.output  # documented as not applying
+    assert "SYNTH_MODEL" in result.output  # documented as not applying on omlx
+    for backend in ("omlx", "ollama", "openai"):
+        assert backend in result.output
+
+
+class ConfiguredSynth(FakeSynth):
+    """A FakeSynth that carries a TextConfig, as TextSynthesizer does."""
+
+    def __init__(self, default_model):
+        super().__init__()
+        self._cfg = types.SimpleNamespace(resolved_model=lambda: default_model)
+
+
+def test_converse_off_omlx_uses_the_backend_default_model(cli, monkeypatch, tmp_path):
+    from gutenberg_kg.cli import cmd_converse
+
+    monkeypatch.setenv("OPENAI_API_KEY", "test-key")
+    seen = []
+    synth = ConfiguredSynth("gpt-4o-mini")
+    monkeypatch.setattr(cmd_converse, "_make_client", lambda url: FakeClient())
+    monkeypatch.setattr(cmd_converse, "_make_synth", lambda backend: seen.append(backend) or synth)
+    out = tmp_path / "moot.json"
+    result = CliRunner().invoke(
+        cli, ["converse", A, B, "--turns", "2", "--backend", "openai", "--out", str(out)]
+    )
+    assert result.exit_code == 0, result.output
+    assert seen == ["openai"]
+    assert synth.models == {None}  # the synthesizer's own default applies
+    assert json.loads(out.read_text())["model"] == "gpt-4o-mini"
+    assert "Speaking through openai: gpt-4o-mini" in result.output
+
+
+def test_converse_model_overrides_any_backend(cli, monkeypatch):
+    from gutenberg_kg.cli import cmd_converse
+
+    synth = ConfiguredSynth("llama-default")
+    monkeypatch.setattr(cmd_converse, "_make_client", lambda url: FakeClient())
+    monkeypatch.setattr(cmd_converse, "_make_synth", lambda backend: synth)
+    result = CliRunner().invoke(
+        cli, ["converse", A, B, "--turns", "2", "--backend", "ollama", "--model", "mine"]
+    )
+    assert result.exit_code == 0, result.output
+    assert synth.models == {"mine"}
+
+
+def test_converse_backend_defaults_to_synth_backend(cli, monkeypatch):
+    from gutenberg_kg.cli import cmd_converse
+
+    seen = []
+    monkeypatch.setenv("SYNTH_BACKEND", "ollama")
+    monkeypatch.setattr(cmd_converse, "_make_client", lambda url: FakeClient())
+    monkeypatch.setattr(
+        cmd_converse, "_make_synth", lambda backend: seen.append(backend) or FakeSynth()
+    )
+    result = CliRunner().invoke(cli, ["converse", A, B, "--turns", "2"])
+    assert result.exit_code == 0, result.output
+    assert seen == ["ollama"]
+
+
+def test_converse_unknown_synth_backend_falls_back_to_omlx(cli, monkeypatch):
+    from gutenberg_kg.cli import cmd_converse
+
+    seen = []
+    monkeypatch.setenv("SYNTH_BACKEND", "nonsense")
+    monkeypatch.setattr(cmd_converse, "_make_client", lambda url: FakeClient())
+    monkeypatch.setattr(
+        cmd_converse, "_make_synth", lambda backend: seen.append(backend) or FakeSynth()
+    )
+    result = CliRunner().invoke(cli, ["converse", A, B, "--turns", "2"])
+    assert result.exit_code == 0, result.output
+    assert seen == ["omlx"]
+
+
+def test_converse_rejects_an_unknown_backend(cli):
+    result = CliRunner().invoke(cli, ["converse", A, B, "--backend", "nonsense"])
+    assert result.exit_code == 2
+    assert "nonsense" in result.output
+
+
+def test_converse_openai_without_a_key_is_a_clean_error(cli, monkeypatch):
+    from gutenberg_kg.cli import cmd_converse
+
+    monkeypatch.delenv("OPENAI_API_KEY", raising=False)
+    monkeypatch.delenv("SYNTH_API_KEY", raising=False)
+    monkeypatch.setattr(cmd_converse, "_make_client", lambda url: FakeClient())
+    monkeypatch.setattr(cmd_converse, "_make_synth", lambda backend: FakeSynth())
+    result = CliRunner().invoke(cli, ["converse", A, B, "--backend", "openai"])
+    assert result.exit_code == 2
+    assert "needs OPENAI_API_KEY or SYNTH_API_KEY" in result.output
+
+
+def test_make_synth_routes_by_backend(monkeypatch):
+    from gutenberg_kg.cli import cmd_converse
+
+    monkeypatch.setenv("SYNTH_BACKEND", "omlx")
+    monkeypatch.setenv("SYNTH_ENDPOINT", "http://example.invalid:9999/v1")
+    monkeypatch.setenv("OPENAI_API_KEY", "test-key")
+    same = cmd_converse._make_synth("omlx")
+    other = cmd_converse._make_synth("openai")
+    assert same._cfg.backend.value == "omlx"
+    assert same._cfg.endpoint == "http://example.invalid:9999/v1"  # full env config
+    assert other._cfg.backend.value == "openai"
+    assert other._cfg.api_key == "test-key"  # pragma: allowlist secret
 
 
 # ---------------------------------------------------------------------------
@@ -411,7 +522,7 @@ class TestRevisedGrounding:
             {"text": "the eagle and the serpent", "found": False, "source": "other"}
         ]
 
-    def test_other_quote_pointing_at_own_turn_is_invalid(self):
+    def test_an_o_tag_on_the_speakers_own_turn_is_a_valid_self_quote(self):
         synth = KeyedSynth(
             {
                 ZARA: [
@@ -422,7 +533,31 @@ class TestRevisedGrounding:
             }
         )
         t = run_moot(TurnClient(), synth, [A, B], "jealousy", 3)
-        assert t.utterances[2].grounding["other_quotes_found"] == 0
+        u = t.utterances[2]
+        assert u.quotes == [{"text": "the scorpion and its sting", "found": True, "source": "self"}]
+        assert (u.grounding["self_quotes_found"], u.grounding["self_quotes_total"]) == (1, 1)
+        assert u.grounding["other_quotes_total"] == 0
+        assert u.grounding["quotes_total"] == 0  # never counts toward grounding
+        assert u.snaps == []
+        stats = t.stats()
+        assert (stats["self_quotes_found"], stats["self_quotes_total"]) == (1, 1)
+
+    def test_a_self_quote_that_misquotes_its_turn_snaps_to_it(self):
+        text, snaps = entmoot.snap_quotes(
+            'I said "the scorpion and it sting" [o1].',
+            _passages(PEPYS),
+            others={},
+            own={1: "I speak of the scorpion and its sting."},
+        )
+        assert text == 'I said "the scorpion and its sting" [o1].'
+        assert snaps[0]["source"] == "self"
+
+    def test_moot_source_classifies_turns(self):
+        others, own = {2: "theirs"}, {1: "mine", 3: "mine too"}
+        assert entmoot._moot_source([1, 3], others, own) == ("self", ["mine", "mine too"])
+        assert entmoot._moot_source([2], others, own) == ("other", ["theirs"])
+        assert entmoot._moot_source([1, 2], others, own) == ("other", ["mine", "theirs"])
+        assert entmoot._moot_source([9], others, own) == ("other", [])
 
     def test_other_tree_quoted_under_an_s_tag_is_still_a_miss(self):
         synth = KeyedSynth(
@@ -534,7 +669,7 @@ def test_quote_cap_is_in_the_persona_and_reminder():
     synth = FakeSynth(["Bad [s9].", "Good [s1]."])
     run_moot(FakeClient(), synth, [A, B], "jealousy", 2)
     calls = synth.turn_calls()
-    assert f"at most {entmoot.MAX_QUOTES} quoted phrases" in calls[0][0]["content"]
+    assert f"at least one in every turn and at most {entmoot.MAX_QUOTES}" in calls[0][0]["content"]
     assert f"at most {entmoot.MAX_QUOTES} quoted phrases" in calls[1][-1]["content"]
 
 
@@ -558,7 +693,438 @@ def test_converse_rejects_the_same_book_twice(cli, monkeypatch):
     from gutenberg_kg.cli import cmd_converse
 
     monkeypatch.setattr(cmd_converse, "_make_client", lambda url: FakeClient())
-    monkeypatch.setattr(cmd_converse, "_make_synth", lambda: FakeSynth())
+    monkeypatch.setattr(cmd_converse, "_make_synth", lambda backend: FakeSynth())
     result = CliRunner().invoke(cli, ["converse", A, A])
     assert result.exit_code == 2
     assert "the two books must differ" in result.output
+
+
+# ---------------------------------------------------------------------------
+# Quote snapping: every quote left in a transcript is verbatim
+# ---------------------------------------------------------------------------
+
+PEPYS = "I do curse the time that ever I did give way to it, God forgive me for my jealousy!"
+
+
+class TestSnapQuotes:
+    def test_a_near_miss_takes_the_source_words(self):
+        text, snaps = entmoot.snap_quotes(
+            'I "curse[d] the time that ever I did give way," [s1] say I.', _passages(PEPYS)
+        )
+        assert text == 'I "curse the time that ever I did give way," [s1] say I.'
+        assert snaps == [
+            {
+                "text": "curse[d] the time that ever I did give way",
+                "source": "own",
+                "action": "snapped",
+                "to": "curse the time that ever I did give way",
+                "ratio": snaps[0]["ratio"],
+                "reason": None,
+            }
+        ]
+        assert snaps[0]["ratio"] >= entmoot.SNAP_MIN_RATIO
+
+    def test_words_not_in_the_source_lose_their_quotation_marks(self):
+        text, snaps = entmoot.snap_quotes(
+            'I feel "the impulse to punish others" [s1].', _passages(PEPYS)
+        )
+        assert text == "I feel the impulse to punish others [s1]."
+        assert snaps[0]["action"] == "unquoted"
+        assert snaps[0]["to"] is None
+
+    def test_a_found_quote_is_left_alone(self):
+        reply = 'I say "God forgive me for my jealousy!" [s1].'
+        text, snaps = entmoot.snap_quotes(reply, _passages(PEPYS))
+        assert text == reply
+        assert snaps == []
+
+    def test_a_quote_under_three_words_is_unquoted_unchecked(self):
+        reply = 'I "curse" it, and "God forgive" me [s1]; "the poisoned sting" [s1].'
+        text, snaps = entmoot.snap_quotes(reply, _passages(PEPYS))
+        assert text == "I curse it, and God forgive me [s1]; the poisoned sting [s1]."
+        assert [(s["text"], s["reason"]) for s in snaps] == [
+            ("curse", "under 3 words"),
+            ("God forgive", "under 3 words"),  # in the source, but too short to check
+            ("the poisoned sting", "not in source"),
+        ]
+
+    def test_short_quotes_count_apart_from_failed_ones(self):
+        synth = FakeSynth(['I "fret" so [s1], "jealousy is a dredful thing" [s1].'])
+        t = run_moot(FakeClient(), synth, [B, A], None, 1)
+        stats = t.stats()
+        assert (stats["quotes_snapped"], stats["quotes_unquoted"]) == (1, 0)
+        assert stats["quotes_too_short"] == 1
+        assert t.utterances[0].text == 'I fret so [s1], "jealousy is a dreadful thing" [s1].'
+
+    def test_curly_quote_marks_are_kept(self):
+        text, _ = entmoot.snap_quotes(
+            "I “curse[d] the time that ever I did” [s1].", _passages(PEPYS)
+        )
+        assert text == "I “curse the time that ever I did” [s1]."
+
+    def test_a_missed_quote_with_an_ellipsis_is_unquoted(self):
+        text, snaps = entmoot.snap_quotes(
+            'I "curse[d] the time ... give way to it" [s1].', _passages(PEPYS)
+        )
+        assert text == "I curse[d] the time ... give way to it [s1]."
+        assert snaps[0]["action"] == "unquoted"
+
+    def test_an_other_quote_snaps_to_the_tagged_turn(self):
+        others = {1: "Like the lover am I, who distrusteth too sleek smiling."}
+        text, snaps = entmoot.snap_quotes(
+            'You are "the lover who distrusts too sleek smiling" [o1].', _passages(PEPYS), others
+        )
+        assert text == 'You are "the lover am I, who distrusteth too sleek smiling" [o1].'
+        assert snaps[0]["source"] == "other"
+        assert snaps[0]["action"] == "snapped"
+
+    def test_the_other_trees_words_under_an_s_tag_are_unquoted(self):
+        others = {1: "He turneth at last, like the scorpion, the poisoned sting against himself."}
+        text, snaps = entmoot.snap_quotes(
+            'I "turneth at last like the scorpion" [s1].', _passages(PEPYS), others
+        )
+        assert text == "I turneth at last like the scorpion [s1]."
+        assert snaps[0]["source"] == "own"
+
+    def test_best_span_with_no_sources(self):
+        assert entmoot.best_span("any words at all", []) == ("", 0.0)
+
+
+def test_a_moot_snaps_quotes_but_measures_the_raw_reply():
+    synth = FakeSynth(['Hear me: "jealousy is a dredful thing" [s1].'])
+    t = run_moot(FakeClient(), synth, [B, A], "jealousy", 1)
+    u = t.utterances[0]
+    assert u.raw_text == 'Hear me: "jealousy is a dredful thing" [s1].'
+    assert u.text == 'Hear me: "jealousy is a dreadful thing" [s1].'
+    assert u.grounding["quotes_found"] == 0  # measured before snapping
+    assert not u.grounded
+    stats = t.stats()
+    assert stats["quotes_snapped"] == 1
+    assert stats["quotes_unquoted"] == 0
+    data = t.to_dict()["utterances"][0]
+    assert data["snaps"][0]["to"] == "jealousy is a dreadful thing"
+
+
+def test_the_next_tree_sees_and_quotes_the_snapped_text():
+    synth = KeyedSynth(
+        {
+            "The Diary of Somebody": ['Hear me: "jealousy is a dredful thing" [s1].'],
+            "Thus Spake Zarathustra": ['You said "jealousy is a dreadful thing" [o1].'],
+        }
+    )
+    t = run_moot(FakeClient(), synth, [B, A], "jealousy", 2)
+    second = t.utterances[1]
+    assert second.grounding["other_quotes_found"] == 1
+    assert second.snaps == []
+
+
+def test_converse_reports_snapped_quotes(cli, monkeypatch):
+    from gutenberg_kg.cli import cmd_converse
+
+    monkeypatch.setattr(cmd_converse, "_make_client", lambda url: FakeClient())
+    monkeypatch.setattr(
+        cmd_converse,
+        "_make_synth",
+        lambda backend: FakeSynth(['Hear me: "jealousy is a dredful thing" [s1].']),
+    )
+    result = CliRunner().invoke(cli, ["converse", B, A, "--turns", "2"])
+    assert result.exit_code == 0, result.output
+    assert (
+        'snapped "jealousy is a dredful thing" -> "jealousy is a dreadful thing"' in result.output
+    )
+    assert "snapped 2, unquoted 0" in result.output
+
+
+# ---------------------------------------------------------------------------
+# Speech-bubble output on a terminal
+# ---------------------------------------------------------------------------
+
+
+def _console(width=100):
+    import io
+
+    from rich.console import Console
+
+    return Console(file=io.StringIO(), width=width, force_terminal=True, color_system=None)
+
+
+def _bubble_lines(console):
+    return [line for line in console.file.getvalue().splitlines() if line.strip()]
+
+
+def test_the_first_tree_speaks_on_the_left_and_the_second_on_the_right():
+    from gutenberg_kg.cli import cmd_converse
+
+    t = run_moot(FakeClient(), FakeSynth(), [A, B], "jealousy", 2)
+    con = _console()
+    cmd_converse._render_utterance(con, t.utterances[0], A)
+    first = _bubble_lines(con)
+    con = _console()
+    cmd_converse._render_utterance(con, t.utterances[1], A)
+    second = _bubble_lines(con)
+    assert first[0].startswith("╭─ [1] Thus Spake Zarathustra")
+    assert second[0].startswith(" ") and second[0].rstrip().endswith("─╮")
+    assert "[2] The Diary of Somebody" in second[0]
+
+
+def test_a_bubble_carries_its_citations_and_corrections():
+    from gutenberg_kg.cli import cmd_converse
+
+    t = run_moot(
+        FakeClient(), FakeSynth(['Hear me: "jealousy is a dredful thing" [s1].']), [B, A], None, 1
+    )
+    con = _console(width=200)
+    cmd_converse._render_utterance(con, t.utterances[0], B)
+    out = con.file.getvalue()
+    assert '"jealousy is a dreadful thing" [s1]' in out  # the snapped text is shown
+    assert "cites s1 1664-01-11" in out
+    assert "ungrounded" in out
+    assert 'snapped "jealousy is a dredful thing" -> "jealousy is a dreadful thing"' in out
+
+
+def test_a_title_with_brackets_is_not_read_as_markup():
+    from gutenberg_kg.cli import cmd_converse
+
+    t = run_moot(FakeClient(), FakeSynth(), [A, B], None, 1)
+    u = t.utterances[0]
+    u.title = "Poems [bold]and[/bold] Songs"
+    con = _console()
+    cmd_converse._render_utterance(con, u, A)
+    assert "[1] Poems [bold]and[/bold] Songs" in con.file.getvalue()
+
+
+def test_converse_draws_bubbles_on_a_terminal(cli, monkeypatch):
+    from rich.console import Console
+
+    from gutenberg_kg.cli import cmd_converse
+
+    monkeypatch.setattr(Console, "is_terminal", property(lambda self: True))
+    monkeypatch.setattr(cmd_converse, "_make_client", lambda url: FakeClient())
+    monkeypatch.setattr(cmd_converse, "_make_synth", lambda backend: FakeSynth())
+    result = CliRunner().invoke(cli, ["converse", A, B, "--topic", "jealousy", "--turns", "2"])
+    assert result.exit_code == 0, result.output
+    out = re.sub(r"\x1b\[[0-9;]*m", "", result.output)  # drop ANSI styling
+    assert "A moot of Thus Spake Zarathustra and The Diary of Somebody" in out
+    assert "╭─ [1] Thus Spake Zarathustra" in out
+    assert "Grounding" in out
+    assert "Own-book quotes found" in out
+
+
+def test_converse_plain_overrides_a_terminal(cli, monkeypatch):
+    from rich.console import Console
+
+    from gutenberg_kg.cli import cmd_converse
+
+    monkeypatch.setattr(Console, "is_terminal", property(lambda self: True))
+    monkeypatch.setattr(cmd_converse, "_make_client", lambda url: FakeClient())
+    monkeypatch.setattr(cmd_converse, "_make_synth", lambda backend: FakeSynth())
+    result = CliRunner().invoke(cli, ["converse", A, B, "--turns", "2", "--plain"])
+    assert result.exit_code == 0, result.output
+    assert "[1] Thus Spake Zarathustra: Hear me [s1]." in result.output
+    assert "╭" not in result.output
+
+
+# ---------------------------------------------------------------------------
+# Run summary: timing, machine and model
+# ---------------------------------------------------------------------------
+
+
+def test_converse_prints_a_run_summary(cli, monkeypatch, tmp_path):
+    from gutenberg_kg.cli import cmd_converse
+
+    monkeypatch.setattr(cmd_converse, "_make_client", lambda url: FakeClient())
+    monkeypatch.setattr(cmd_converse, "_make_synth", lambda backend: FakeSynth())
+    monkeypatch.setattr(cmd_converse, "_machine_description", lambda: "Test CPU, 8 GB RAM")
+    out = tmp_path / "moot.json"
+    result = CliRunner().invoke(cli, ["converse", A, B, "--turns", "3", "--out", str(out)])
+    assert result.exit_code == 0, result.output
+    for label in ("Run:", "Started:", "Elapsed:", "Per turn:", "Host:", "OS:"):
+        assert label in result.output
+    assert "Machine: Test CPU, 8 GB RAM" in result.output
+    assert f"Backend / model: omlx / {entmoot.DEFAULT_MODEL}" in result.output
+    run = json.loads(out.read_text())["run"]
+    assert len(run["turn_seconds"]) == 3
+    assert run["elapsed_seconds"] >= 0
+    assert run["machine"] == "Test CPU, 8 GB RAM"
+    assert run["worker"] == "http://localhost:8000"
+    assert set(run) >= {"started", "host", "os", "python", "gutenberg_kg", "backend", "model"}
+
+
+def test_the_run_summary_is_a_table_on_a_terminal(cli, monkeypatch):
+    from rich.console import Console
+
+    from gutenberg_kg.cli import cmd_converse
+
+    monkeypatch.setattr(Console, "is_terminal", property(lambda self: True))
+    monkeypatch.setattr(cmd_converse, "_make_client", lambda url: FakeClient())
+    monkeypatch.setattr(cmd_converse, "_make_synth", lambda backend: FakeSynth())
+    monkeypatch.setattr(cmd_converse, "_machine_description", lambda: "Test CPU, 8 GB RAM")
+    result = CliRunner().invoke(cli, ["converse", A, B, "--turns", "2"])
+    assert result.exit_code == 0, result.output
+    out = re.sub(r"\x1b\[[0-9;]*m", "", result.output)
+    assert "Run" in out and "Per turn" in out and "Test CPU, 8 GB RAM" in out
+    assert "Run:" not in out  # the plain block is not printed as well
+
+
+def test_machine_description_falls_back_without_sysctl(monkeypatch):
+    import subprocess
+
+    from gutenberg_kg.cli import cmd_converse
+
+    def no_sysctl(*_a, **_kw):
+        raise OSError("no sysctl here")
+
+    monkeypatch.setattr(subprocess, "run", no_sysctl)
+    assert cmd_converse._machine_description()  # platform's processor or machine
+
+
+# ---------------------------------------------------------------------------
+# The persona: the book speaks in its author's voice
+# ---------------------------------------------------------------------------
+
+
+def _tree(title, author):
+    return entmoot.Tree(key=f"x/{title}", title=title, author=author, genre="x")
+
+
+def test_the_book_speaks_in_its_authors_voice():
+    p = entmoot.persona(
+        _tree("The Diary of Samuel Pepys", "Samuel Pepys"), _tree("Walden", "Thoreau"), None
+    )
+    assert p.startswith("You are the book The Diary of Samuel Pepys by Samuel Pepys,")
+    assert "You speak with Samuel Pepys's voice: in the first person where" in p
+    assert "in Samuel Pepys's own style and diction" in p
+
+
+def test_a_book_with_no_named_author_speaks_as_itself():
+    other = _tree("Walden", "Thoreau")
+    for author in ("", "Various", "ANONYMOUS"):
+        p = entmoot.persona(_tree("Poems", author), other, "the sea")
+        assert p.startswith("You are the book Poems, in a moot: a slow, considered conversation")
+        assert "voice" not in p
+        assert "The moot has gathered to discuss: the sea." in p
+
+
+def test_tree_names_are_bold_italic_in_their_own_color():
+    from rich.console import Console
+
+    from gutenberg_kg.cli import cmd_converse
+
+    synth = KeyedSynth(
+        {
+            "Thus Spake Zarathustra": ["The Diary of Somebody, hear me [s1]."],
+            "The Diary of Somebody": ["Thus Spake Zarathustra, I hear [s1]."],
+        }
+    )
+    t = run_moot(FakeClient(), synth, [A, B], None, 2)
+    names = {"Thus Spake Zarathustra": "green", "The Diary of Somebody": "magenta"}
+    con = Console(width=100, force_terminal=True, color_system="standard", record=True)
+    cmd_converse._render_utterance(con, t.utterances[0], A, names)
+    out = con.export_text(styles=True)
+    assert "\x1b[1;3;35mThe Diary of Somebody\x1b[0m, hear me" in out  # addressee in its color
+    assert "\x1b[1;3;32m [1] Thus Spake Zarathustra " in out  # speaker title, bold italic
+
+
+# ---------------------------------------------------------------------------
+# Fresh passages and the persona's wording
+# ---------------------------------------------------------------------------
+
+
+class RankedClient(FakeClient):
+    """Always the same ranking, so a tree that re-asked would get its old passages first."""
+
+    def query(self, query, *, corpus="all", k=8, **_kw):
+        self.calls.append((query, corpus, k))
+        hits = [
+            {"node_id": f"{corpus}#{i}", "name": f"chunk:{i:04d}", "content": f"passage {i}",
+             "title": corpus.split("/", 1)[1], "author": "Someone", "genre": corpus.split("/", 1)[0]}
+            for i in range(1, 13)
+        ]  # fmt: skip
+        return {"hits": hits[:k]}
+
+
+def test_retrieve_puts_cited_passages_last():
+    client = RankedClient()
+    tree = entmoot.Tree(key=A, title="Z", author="", genre="philosophy")
+    fresh = entmoot.retrieve(client, tree, "virtue", 3)
+    assert [p.node_id for p in fresh] == [f"{A}#1", f"{A}#2", f"{A}#3"]
+    assert client.calls[-1][2] == 3  # nothing cited yet: no overfetch
+    again = entmoot.retrieve(client, tree, "virtue", 3, cited={f"{A}#1", f"{A}#3"})
+    assert [p.node_id for p in again] == [f"{A}#2", f"{A}#4", f"{A}#5"]
+    assert [p.tag for p in again] == ["s1", "s2", "s3"]  # retagged
+    assert client.calls[-1][2] == 3 * entmoot.FRESH_OVERFETCH
+
+
+def test_cited_passages_fill_in_when_nothing_fresh_is_left():
+    client = RankedClient()
+    tree = entmoot.Tree(key=A, title="Z", author="", genre="philosophy")
+    every = {f"{A}#{i}" for i in range(1, 13)} - {f"{A}#6"}
+    got = entmoot.retrieve(client, tree, "virtue", 3, cited=every)
+    assert [p.node_id for p in got] == [f"{A}#6", f"{A}#1", f"{A}#2"]
+
+
+def test_a_moot_keeps_each_trees_citations_apart():
+    client = RankedClient()
+    synth = KeyedSynth(
+        {"Thus Spake Zarathustra": ["Mine [s1]."], "The Diary of Somebody": ["Mine [s1]."]}
+    )
+    t = run_moot(client, synth, [A, B], "virtue", 4)
+    firsts = [u.retrieved[0]["node_id"] for u in t.utterances]
+    # Each tree cites its top passage, then gets a fresh one next time.
+    assert firsts == [f"{A}#1", f"{B}#1", f"{A}#2", f"{B}#2"]
+
+
+def test_the_persona_says_book_not_tree_and_asks_for_an_answer():
+    p = entmoot.persona(
+        _tree("Meditations", "Marcus Aurelius"), _tree("The Prince", "Machiavelli"), "virtue"
+    )
+    assert "tree" not in p.lower()
+    assert "Answer the point the other book has just made" in p
+    assert "Do not argue about how you were quoted unless you truly were misquoted" in p
+    assert "Address the other book as The Prince." in p
+
+
+# ---------------------------------------------------------------------------
+# Turn intents: open, vary the middle, close
+# ---------------------------------------------------------------------------
+
+
+def test_turn_intent_schedule():
+    assert [entmoot.turn_intent(n, 8) for n in range(1, 9)] == [
+        "open", "answer", "ask", "example", "concede", "answer", "close", "close",
+    ]  # fmt: skip
+    assert [entmoot.turn_intent(n, 2) for n in (1, 2)] == ["open", "close"]
+    assert [entmoot.turn_intent(n, 3) for n in (1, 2, 3)] == ["open", "close", "close"]
+    assert set(entmoot.INTENTS) >= {entmoot.turn_intent(n, 40) for n in range(1, 41)}
+
+
+def test_a_turn_is_told_its_move_and_names_the_other_book():
+    tree, other = _tree("Meditations", "Marcus Aurelius"), _tree("The Prince", "Machiavelli")
+    said = types.SimpleNamespace(turn=2, title="The Prince", text="Fear is surer than love.")
+    msgs = entmoot.build_messages(tree, other, "virtue", [], "", [], said, "ask")
+    assert msgs[1]["content"].endswith(
+        "This turn: Answer briefly, then put one pointed question to The Prince about what it has just said."
+    )
+    opening = entmoot.build_messages(tree, other, "virtue", [], "", [], None, "open")
+    assert "Open the moot on virtue" in opening[1]["content"]
+    assert "This turn:" not in opening[1]["content"]
+
+
+def test_a_moot_records_each_turns_intent():
+    t = run_moot(FakeClient(), FakeSynth(), [A, B], "virtue", 6)
+    assert [u.intent for u in t.utterances] == [
+        "open",
+        "answer",
+        "ask",
+        "example",
+        "close",
+        "close",
+    ]
+    assert t.to_dict()["utterances"][2]["intent"] == "ask"
+
+
+def test_the_persona_forbids_repeating_a_sentence():
+    p = entmoot.persona(
+        _tree("Meditations", "Marcus Aurelius"), _tree("The Prince", "Machiavelli"), "virtue"
+    )
+    assert "Never repeat a sentence you have already said in this moot." in p

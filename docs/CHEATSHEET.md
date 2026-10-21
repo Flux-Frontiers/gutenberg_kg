@@ -210,15 +210,27 @@ gutenkg query "plague" --registry /path/to/registry.json     # non-default regis
 ## Two Books in Conversation (Entmoot)
 
 `gutenkg converse` seats two books in a moot. Each speaks only from passages
-of its own text, cites them as `[s1]`, `[s2]`, ..., and may quote the other
-book's earlier turn `N` as `[oN]`. Needs a running worker (for book-scoped
-retrieval) and oMLX.
+of its own text, cites them as `[s1]`, `[s2]`, ..., and may quote any earlier
+turn `N` of the moot, the other book's or its own, as `[oN]`. Needs a running worker (for book-scoped
+retrieval) and a model backend (`--backend`, oMLX by default). On a terminal
+each turn prints as a speech bubble as it arrives, the first book on the
+left and the second on the right, with its citations and corrections
+underneath, then a grounding table and a run summary (elapsed time, per-turn
+time, model, machine) at the end; piped or logged output stays plain text.
+
+Every quote in the output is verbatim and at least three words long. A quote
+the model misremembered is replaced with its source's exact words when it
+nearly matches them, and loses its quotation marks when it does not or when it
+is too short to check; the run prints each correction. The
+grounding rates still measure the model's own replies, which the JSON keeps
+as `raw_text` beside the corrected `text` and its `snaps`.
 
 ```bash
 gutenkg converse "philosophy/Thus Spake Zarathustra" "philosophy/Meditations" \
     --topic "jealousy"                                       # 8 turns
 gutenkg converse "<genre>/<book>" "<genre>/<book>" --turns 12 --out moot.json
 gutenkg converse ... --model Qwen3-4B-Instruct-2507-MLX-8bit # faster, quotes less reliably
+gutenkg converse ... --backend openai                       # no local model needed
 ```
 
 Book keys are catalog keys, `<genre>/<book>`; a diary is `diaries/<title>`.
@@ -230,10 +242,12 @@ titles contain an em dash.
 | `--topic` | none | Subject the moot discusses; anchors every retrieval |
 | `--turns` | `8` | Total utterances (2-40) |
 | `--k` | `6` | Passages per turn |
-| `--model` | `Qwen3.8-27B-4bit` | oMLX model id; `SYNTH_MODEL` does not apply |
+| `--backend` | `$SYNTH_BACKEND`, then `omlx` | Model provider: `omlx`, `ollama` or `openai` (needs `OPENAI_API_KEY` or `SYNTH_API_KEY`) |
+| `--model` | `Qwen3.8-27B-4bit` on omlx, else the backend's default | Model id; on omlx `SYNTH_MODEL` does not apply |
 | `--temperature` | `0.6` | Sampling temperature |
 | `--worker` | `$KGRAG_ENDPOINT` or `http://localhost:8000` | Worker URL |
 | `--out` | print only | Write a JSON transcript with grounding stats |
+| `--plain` | off | Plain text instead of speech bubbles (automatic when not a terminal) |
 
 ---
 
@@ -292,6 +306,31 @@ packs, with chapters built as the worker's `get_chapter` builds them. Run
 ```bash
 gutenkg export-web-books                   # -> ../knowledge_press/web/public/books/
 make export-web-books                      # the same; KNOWLEDGE_PRESS_DIR moves the checkout
+```
+
+The forest plays saved moots from `public/moots/`. `export-web-moots` turns
+`gutenkg converse --out` transcripts into moot packs: what the reader sees
+(the corrected text, citations, speakers), never the raw replies or prompts.
+A pack's id is both book names and the topic, so re-running a pairing on the
+same topic replaces its pack; `index.json` is merged, not rewritten.
+
+```bash
+gutenkg export-web-moots moot.json         # -> ../knowledge_press/web/public/moots/
+gutenkg export-web-moots runs/*.json --out /tmp/moots
+```
+
+Each tree in a pack carries its author's voice, so the forest can read a
+woman's book in a woman's voice and Twain in an American one where the browser
+has one. `author-voices` looks the authors up on Wikidata (gender, and an
+accent from citizenship: `en-US`, `en-GB`, or none for translated authors) and
+writes `corpus/authors/voices.json`. Ingestion does not touch it. Run it again
+after adding authors; set an entry's `"source"` to `"manual"` to keep a
+correction.
+
+```bash
+gutenkg author-voices                      # look up authors not yet in the table
+gutenkg author-voices --refresh            # look everyone up again; manual entries stay
+gutenkg author-voices --dry-run            # print the table instead of writing it
 ```
 
 ## Visualisation and Light-Field Rendering
