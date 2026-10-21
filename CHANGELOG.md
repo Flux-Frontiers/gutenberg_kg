@@ -65,6 +65,15 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   `under 3 words`), and the stats count the short ones apart, as
   `quotes_too_short`, so `quotes_unquoted` still means a checked quote that
   failed.
+- **Moots have a shape: turn intents.** Each turn is asked to make one
+  move (`INTENTS`, scheduled by `turn_intent`): the first opens, each
+  book's last turn closes (what it still holds, and what it takes from the
+  other), and the turns between rotate through answer, ask a pointed
+  question, give an example from the passages, and concede a point before
+  pressing. The persona also forbids repeating a sentence already said.
+  Each turn's `intent` is recorded in the transcript. On the Aurelius and
+  Machiavelli moot this ended the echoed sentences (2 to 0), gave the moot
+  a real close, and raised own-book quotes from 19 to 27.
 - **Moots bring fresh passages and argue the point.** The strongest matches
   for a topic were the same every turn, so a book repeated its best lines
   (Machiavelli's "to appear merciful is useful" four times in eight turns).

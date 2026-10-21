@@ -129,6 +129,7 @@ class Utterance:
     :param raw_text: The model's reply before snapping; ``grounding`` was measured on it.
     :param snaps: One record per quote :func:`snap_quotes` corrected: ``{"text",
         "source", "action", "to", "ratio", "reason"}``.
+    :param intent: The move this turn was asked to make; see :data:`INTENTS`.
     """
 
     turn: int
@@ -144,6 +145,7 @@ class Utterance:
     retrieved: list[dict]
     raw_text: str = ""
     snaps: list[dict] = field(default_factory=list)
+    intent: str = ""
 
 
 @dataclass
@@ -360,7 +362,8 @@ def persona(tree: Tree, other: Tree, topic: str | None) -> str:
         "You speak only from the passages given to you this turn. "
         "Answer the point the other book has just made: agree, disagree or press "
         "it further, from your passages. Do not argue about how you were quoted "
-        "unless you truly were misquoted. "
+        "unless you truly were misquoted. Never repeat a sentence you have "
+        "already said in this moot. "
         "Cite every claim with its passage tag, for example [s2]. "
         "Quote phrases from your passages exactly, in double quotes: at least one "
         f"in every turn and at most {MAX_QUOTES}, each at least three words long; "
@@ -376,6 +379,36 @@ def persona(tree: Tree, other: Tree, topic: str | None) -> str:
     )
 
 
+#: What a turn is asked to do. The first turn opens and each book's last turn
+#: closes; the turns between rotate through the middle moves, so a moot
+#: develops instead of circling one point, and ends on purpose.
+INTENTS = {
+    "open": "Open the moot: state your position on the topic plainly, from your passages.",
+    "answer": "Answer the point {other} has just made: agree, disagree or press it further.",
+    "ask": "Answer briefly, then put one pointed question to {other} about what it has just said.",
+    "example": "Give one concrete example or story from your passages that bears on what {other} has just said.",
+    "concede": "Grant one point {other} has made that your passages honestly support, then press your own position.",
+    "close": "This is your last turn. Close the moot: say briefly what you still hold, and what, if anything, you take from {other}.",
+}
+_MIDDLE_INTENTS = ("answer", "ask", "example", "concede")
+
+
+def turn_intent(number: int, turns: int) -> str:
+    """The move for one turn of a moot.
+
+    :param number: The turn's number, from 1.
+    :param turns: The moot's length.
+    :returns: A key of :data:`INTENTS`: ``"open"`` for turn 1, ``"close"`` for
+        each book's last turn (the last two), the middle moves in rotation
+        between.
+    """
+    if number == 1:
+        return "open"
+    if number > turns - 2:
+        return "close"
+    return _MIDDLE_INTENTS[(number - 2) % len(_MIDDLE_INTENTS)]
+
+
 def build_messages(
     tree: Tree,
     other: Tree,
@@ -384,6 +417,7 @@ def build_messages(
     summary: str,
     recent: list[Utterance],
     incoming: Utterance | None,
+    intent: str = "answer",
 ) -> list[dict]:
     """Assemble the chat messages for one turn.
 
@@ -394,6 +428,8 @@ def build_messages(
     :param summary: The rolling summary so far, or ``""``.
     :param recent: The utterances before ``incoming``, oldest first.
     :param incoming: The other tree's last utterance, or ``None`` when opening.
+    :param intent: The move this turn makes, a key of :data:`INTENTS`; the
+        opening turn uses its own line.
     :returns: OpenAI-style messages.
     """
     parts = ["Your passages for this turn:"]
@@ -410,7 +446,7 @@ def build_messages(
     else:
         parts.append(
             f"Turn {incoming.turn}, {other.title} has just said: {incoming.text}"
-            f"\n\nReply to {other.title}."
+            f"\n\nThis turn: {INTENTS[intent].format(other=other.title)}"
         )
     return [
         {"role": "system", "content": persona(tree, other, topic)},
@@ -717,6 +753,7 @@ def turn(
     query: str,
     model: str | None,
     temperature: float,
+    intent: str = "answer",
 ) -> Utterance:
     """Speak one turn: complete, check grounding, retry once on failure.
 
@@ -734,6 +771,7 @@ def turn(
     :param others: The other tree's utterances so far, turn number -> text.
     :param own: This tree's own earlier utterances, turn number -> text.
     :param query: The retrieval query that produced ``passages`` (recorded only).
+    :param intent: The move this turn makes, a key of :data:`INTENTS`.
     :param model: Model id override, or ``None`` for the synthesizer's default.
     :param temperature: Sampling temperature.
     :returns: The utterance, its quotes snapped by :func:`snap_quotes`. A reply
@@ -741,7 +779,7 @@ def turn(
         before snapping.
     :raises MootError: When the model returns no text on both attempts.
     """
-    messages = build_messages(tree, other, topic, passages, summary, recent, incoming)
+    messages = build_messages(tree, other, topic, passages, summary, recent, incoming, intent)
     reply = synth.complete(messages, model=model, max_tokens=MAX_TOKENS, temperature=temperature)
     attempts = 1
     grounding = check_grounding(reply or "", passages, pool, others, own)
@@ -772,6 +810,7 @@ def turn(
         query=query,
         retrieved=[{"tag": p.tag, "label": p.label, "node_id": p.node_id} for p in passages],
         raw_text=reply,
+        intent=intent,
         snaps=snaps,
     )
 
@@ -892,6 +931,7 @@ def run_moot(
             query=query,
             model=model,
             temperature=temperature,
+            intent=turn_intent(i + 1, turns),
         )
         transcript.utterances.append(utterance)
         cited[speaker.key].update(utterance.cited.values())
