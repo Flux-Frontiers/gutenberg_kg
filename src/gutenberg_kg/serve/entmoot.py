@@ -288,16 +288,33 @@ def passages_from_hits(hits: list[dict]) -> list[Passage]:
     return passages
 
 
-def retrieve(client, tree: Tree, text: str, k: int) -> list[Passage]:
-    """Retrieve passages from the tree's own book.
+#: How many times ``k`` hits a turn asks for once its tree has cited passages,
+#: so the ones it has already cited can give way to fresh ones.
+FRESH_OVERFETCH = 2
+
+
+def retrieve(client, tree: Tree, text: str, k: int, cited: set[str] | None = None) -> list[Passage]:
+    """Retrieve passages from the tree's own book, fresh ones first.
+
+    The strongest matches for a topic are the same every turn, so a tree
+    kept repeating its best lines. Passages it has already cited in the moot
+    now go to the back: the worker is asked for ``k * FRESH_OVERFETCH`` hits,
+    uncited ones are kept in rank order, and cited ones only fill what is left.
 
     :param client: A ``WorkerClient`` (anything with a compatible ``query``).
     :param tree: The tree whose book is searched.
     :param text: Retrieval query.
     :param k: Passages to retrieve.
+    :param cited: Node ids this tree has cited so far in the moot.
     :returns: Tagged passages, best first.
     """
-    return passages_from_hits(client.query(text, corpus=tree.key, k=k).get("hits", []))
+    cited = cited or set()
+    hits = client.query(text, corpus=tree.key, k=k * FRESH_OVERFETCH if cited else k).get(
+        "hits", []
+    )
+    fresh = [h for h in hits if h.get("node_id") not in cited]
+    used = [h for h in hits if h.get("node_id") in cited]
+    return passages_from_hits((fresh + used)[:k])
 
 
 def retrieval_query(topic: str | None, incoming: str) -> str:
@@ -338,21 +355,24 @@ def persona(tree: Tree, other: Tree, topic: str | None) -> str:
     )
     framing = f"The moot has gathered to discuss: {topic}. " if topic else ""
     return (
-        f"You are the book {tree.title}{by}, speaking as an old, slow tree in a moot "
-        f"with another book, {other.title}. {voice}{framing}"
+        f"You are the book {tree.title}{by}, in a moot: a slow, considered "
+        f"conversation with another book, {other.title}. {voice}{framing}"
         "You speak only from the passages given to you this turn. "
+        "Answer the point the other book has just made: agree, disagree or press "
+        "it further, from your passages. Do not argue about how you were quoted "
+        "unless you truly were misquoted. "
         "Cite every claim with its passage tag, for example [s2]. "
-        "Quote phrases from your passages exactly, in double quotes, at most "
-        f"{MAX_QUOTES} quoted phrases in a turn, each at least three words long; "
+        "Quote phrases from your passages exactly, in double quotes: at least one "
+        f"in every turn and at most {MAX_QUOTES}, each at least three words long; "
         "never put a single word or two in quotes. Paraphrase the rest, still with "
         "its [sN] tag. "
-        "To quote words spoken earlier in this moot, the other tree's or your own, "
+        "To quote words spoken earlier in this moot, the other book's or your own, "
         "put them in double quotes followed by [oN], where N is the number of the "
         "turn they were spoken in, for example [o3]. "
         "Never tag words spoken in the moot with an [sN] tag. "
         "If no passage bears on what was said, say so plainly and turn the "
         "conversation toward something your passages do cover. "
-        f"At most 120 words. No lists. Address the other tree as {other.title}."
+        f"At most 120 words. No lists. Address the other book as {other.title}."
     )
 
 
@@ -674,8 +694,8 @@ def _reminder(passages: list[Passage]) -> str:
         "That reply did not hold to your passages. Cite only the tags you were "
         f"given ({tags}), and put in double quotes only words copied exactly from "
         f"your passages, at most {MAX_QUOTES} quoted phrases of at least three words "
-        "each; paraphrase the rest with its [sN] tag. Words spoken earlier in the moot, the other tree's or your "
-        "own, take an [oN] tag, never an [sN] tag. "
+        "each; paraphrase the rest with its [sN] tag. Words spoken earlier in the "
+        "moot, the other book's or your own, take an [oN] tag, never an [sN] tag. "
         "Give your reply again."
     )
 
@@ -828,6 +848,8 @@ def run_moot(
     opening: list[list[Passage]] = []
     trees: list[Tree] = []
     pools: dict[str, dict[str, Passage]] = {key: {} for key in keys}
+    # What each tree has cited, so its later retrievals bring fresh passages first.
+    cited: dict[str, set[str]] = {key: set() for key in keys}
     opening_queries = [topic or _book_name(key) for key in keys]
     for key, opening_query in zip(keys, opening_queries, strict=True):
         hits = client.query(opening_query, corpus=key, k=k).get("hits", [])
@@ -852,7 +874,7 @@ def run_moot(
             passages, query = opening[0], opening_queries[0]
         else:
             query = retrieval_query(topic, incoming.text)
-            passages = retrieve(client, speaker, query, k)
+            passages = retrieve(client, speaker, query, k, cited[speaker.key])
             _add_to_pool(pools[speaker.key], passages)
         utterance = turn(
             synth,
@@ -872,6 +894,7 @@ def run_moot(
             temperature=temperature,
         )
         transcript.utterances.append(utterance)
+        cited[speaker.key].update(utterance.cited.values())
         if on_utterance is not None:
             on_utterance(utterance)
     return transcript
