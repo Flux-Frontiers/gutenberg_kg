@@ -8,6 +8,25 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+### Added
+
+- **Book-scoped retrieval in the worker.** The `corpus` field now also takes
+  a catalog key, `"<genre>/<book>"`, and searches that one book only. A
+  `"diaries/<title>"` key searches that one diary's DiaryKG. The scope rules
+  live in `serve/scope.py` so they can be tested without starting the worker;
+  the RunPod worker (`runpod/handler.py`) uses the same module.
+- **`gutenkg converse`** (Entmoot, phases 1 and 2): two books hold a moot,
+  seeded with `--topic`. Each tree retrieves only from its own book, answers
+  through the local model, and cites its passages with `[sN]` tags. A quote of
+  its own book counts when it appears in any passage that book returned during
+  the moot; a quote of the other tree is tagged `[oN]` (turn `N`), checked and
+  reported separately, and never counts toward grounding. A quote with an
+  ellipsis is checked fragment by fragment. The persona asks for at most four
+  quoted phrases a turn, and the stats report `quotes_per_turn`. A failed turn
+  is retried once, and the same book cannot be seated twice. The default
+  model is `Qwen3.8-27B-4bit`; `--model` overrides it. `--out` writes a JSON
+  transcript with grounding stats.
+
 ## [1.27.1] - 2026-10-20
 
 ### Changed

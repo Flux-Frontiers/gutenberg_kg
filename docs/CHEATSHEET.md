@@ -207,6 +207,36 @@ gutenkg query "plague" --registry /path/to/registry.json     # non-default regis
 
 ---
 
+## Two Books in Conversation (Entmoot)
+
+`gutenkg converse` seats two books in a moot. Each speaks only from passages
+of its own text, cites them as `[s1]`, `[s2]`, ..., and may quote the other
+book's earlier turn `N` as `[oN]`. Needs a running worker (for book-scoped
+retrieval) and oMLX.
+
+```bash
+gutenkg converse "philosophy/Thus Spake Zarathustra" "philosophy/Meditations" \
+    --topic "jealousy"                                       # 8 turns
+gutenkg converse "<genre>/<book>" "<genre>/<book>" --turns 12 --out moot.json
+gutenkg converse ... --model Qwen3-4B-Instruct-2507-MLX-8bit # faster, quotes less reliably
+```
+
+Book keys are catalog keys, `<genre>/<book>`; a diary is `diaries/<title>`.
+Copy them from `catalog.json` or the worker's `list_books` op: the diary
+titles contain an em dash.
+
+| Option | Default | Meaning |
+|---|---|---|
+| `--topic` | none | Subject the moot discusses; anchors every retrieval |
+| `--turns` | `8` | Total utterances (2-40) |
+| `--k` | `6` | Passages per turn |
+| `--model` | `Qwen3.8-27B-4bit` | oMLX model id; `SYNTH_MODEL` does not apply |
+| `--temperature` | `0.6` | Sampling temperature |
+| `--worker` | `$KGRAG_ENDPOINT` or `http://localhost:8000` | Worker URL |
+| `--out` | print only | Write a JSON transcript with grounding stats |
+
+---
+
 ## On-Device Corpus Packs
 
 Build the SQLite packs the native app searches locally (see
@@ -690,6 +720,7 @@ gutenberg_kg/
 │   │   └── parser.py
 │   ├── serve/
 │   │   ├── Chat.py                         # Streamlit reading room
+│   │   ├── entmoot.py                      # Two books in conversation (gutenkg converse)
 │   │   ├── handler.py                      # Query worker (retrieval + synthesis)
 │   │   ├── image_server.py                 # FLUX image service
 │   │   ├── sdxl_server.py                  # SDXL-Lightning image service
@@ -703,6 +734,7 @@ gutenberg_kg/
 │       ├── cmd_build_diaries.py            # gutenkg build-diaries
 │       ├── cmd_chat.py                     # gutenkg chat
 │       ├── cmd_chunk_diaries.py            # gutenkg chunk-diaries
+│       ├── cmd_converse.py                 # gutenkg converse
 │       ├── cmd_download.py                 # gutenkg download *
 │       ├── cmd_export_web_catalog.py       # gutenkg export-web-catalog
 │       ├── cmd_genres.py                   # gutenkg genres init/list/add
