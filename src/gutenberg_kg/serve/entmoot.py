@@ -127,8 +127,8 @@ class Utterance:
     :param query: The retrieval query that produced this turn's passages.
     :param retrieved: ``{"tag", "label", "node_id"}`` for every passage given this turn.
     :param raw_text: The model's reply before snapping; ``grounding`` was measured on it.
-    :param snaps: One record per quote that was not found: ``{"text", "source",
-        "action", "to", "ratio"}``, ``action`` being ``"snapped"`` or ``"unquoted"``.
+    :param snaps: One record per quote :func:`snap_quotes` corrected: ``{"text",
+        "source", "action", "to", "ratio", "reason"}``.
     """
 
     turn: int
@@ -173,9 +173,11 @@ class Transcript:
             ``quote_found_rate`` covers quotes of the speaker's own book;
             ``other_quote_valid_rate`` covers ``[oN]`` quotes of the other
             tree and ``self_quotes_*`` the speaker's ``[oN]`` quotes of its
-            own earlier turns; neither counts toward grounding. ``quotes_snapped`` and
-            ``quotes_unquoted`` count the corrections :func:`snap_quotes`
-            made. A rate is ``None`` when there was nothing to count.
+            own earlier turns; neither counts toward grounding.
+            ``quotes_snapped`` and ``quotes_unquoted`` count the corrections
+            :func:`snap_quotes` made to quotes of 3+ words, and
+            ``quotes_too_short`` the shorter quotes it unquoted unchecked. A
+            rate is ``None`` when there was nothing to count.
         """
         n = len(self.utterances)
         quoted = sum(
@@ -212,7 +214,13 @@ class Transcript:
                 1 for u in self.utterances for s in u.snaps if s["action"] == "snapped"
             ),
             "quotes_unquoted": sum(
-                1 for u in self.utterances for s in u.snaps if s["action"] == "unquoted"
+                1
+                for u in self.utterances
+                for s in u.snaps
+                if s["action"] == "unquoted" and s["reason"] != "under 3 words"
+            ),
+            "quotes_too_short": sum(
+                1 for u in self.utterances for s in u.snaps if s["reason"] == "under 3 words"
             ),
         }
 
@@ -317,9 +325,10 @@ def persona(tree: Tree, other: Tree, topic: str | None) -> str:
         f"with another book, {other.title}. {framing}"
         "You speak only from the passages given to you this turn. "
         "Cite every claim with its passage tag, for example [s2]. "
-        "Quote short phrases from your passages exactly, in double quotes, at most "
-        f"{MAX_QUOTES} quoted phrases in a turn. Paraphrase the rest, still with its "
-        "[sN] tag. "
+        "Quote phrases from your passages exactly, in double quotes, at most "
+        f"{MAX_QUOTES} quoted phrases in a turn, each at least three words long; "
+        "never put a single word or two in quotes. Paraphrase the rest, still with "
+        "its [sN] tag. "
         "To quote words spoken earlier in this moot, the other tree's or your own, "
         "put them in double quotes followed by [oN], where N is the number of the "
         "turn they were spoken in, for example [o3]. "
@@ -576,21 +585,23 @@ def snap_quotes(
 ) -> tuple[str, list[dict]]:
     """Make every quote in a reply verbatim, or not a quote.
 
-    Each double-quoted span of 3 or more words that is not found in its
-    source (see :func:`check_grounding`) is corrected in place. When
+    Every double-quoted span is checked against its source (see
+    :func:`check_grounding`) and corrected in place when it misses. When
     :func:`best_span` finds source words with a ratio of at least
     :data:`SNAP_MIN_RATIO`, they replace the quote's words, keeping the
-    quote's own marks and edge punctuation. Otherwise, and always for a quote
-    with an ellipsis, the quotation marks are removed and the words stay as
-    paraphrase. Quotes that are found, short quotes and citation tags are
-    left alone.
+    quote's own marks and edge punctuation. Otherwise the quotation marks are
+    removed and the words stay as paraphrase; so they are, unchecked, for a
+    missed quote with an ellipsis and for any quote under 3 words, which is
+    too short to check. Quotes that are found and citation tags are left alone.
 
     :param text: The reply.
     :param pool: Every passage of the speaker's own book retrieved during the moot.
     :param others: The other tree's utterances so far, turn number -> text.
     :param own: The speaker's own earlier utterances, turn number -> text.
     :returns: The corrected reply, and one record per corrected quote:
-        ``{"text", "source", "action", "to", "ratio"}``.
+        ``{"text", "source", "action", "to", "ratio", "reason"}``, where
+        ``action`` is ``"snapped"`` (``reason`` ``None``) or ``"unquoted"``
+        (``reason`` ``"not in source"``, ``"ellipsis"`` or ``"under 3 words"``).
     """
     others, own = others or {}, own or {}
     own_sources = [p.content for p in pool]
@@ -600,7 +611,7 @@ def snap_quotes(
     edits: list[tuple[int, int, str]] = []
     snaps: list[dict] = []
     for i, (q, start, end) in enumerate(spans):
-        if len(q.split()) < _QUOTE_MIN_WORDS:
+        if not q:
             continue
         turns = _other_turns(flat, spans, i)
         if turns:
@@ -608,34 +619,29 @@ def snap_quotes(
             keys = [_normalize(s) for s in sources]
         else:
             source, sources, keys = "own", own_sources, own_keys
+        inner = text[start + 1 : end - 1]
+        record = {"text": q, "source": source, "action": "unquoted", "to": None, "ratio": 0.0}
+        if len(q.split()) < _QUOTE_MIN_WORDS:
+            edits.append((start, end, inner))
+            snaps.append({**record, "reason": "under 3 words"})
+            continue
         if _quote_in(q, keys):
             continue
-        inner = text[start + 1 : end - 1]
-        lead = inner[: len(inner) - len(inner.lstrip(_EDGE_PUNCT))]
-        trail = inner[len(inner.rstrip(_EDGE_PUNCT)) :]
-        to, ratio = ("", 0.0) if _ELLIPSIS.search(q) else best_span(q, sources)
+        if _ELLIPSIS.search(q):
+            edits.append((start, end, inner))
+            snaps.append({**record, "reason": "ellipsis"})
+            continue
+        to, ratio = best_span(q, sources)
         if to and ratio >= SNAP_MIN_RATIO:
+            lead = inner[: len(inner) - len(inner.lstrip(_EDGE_PUNCT))]
+            trail = inner[len(inner.rstrip(_EDGE_PUNCT)) :]
             edits.append((start, end, f"{text[start]}{lead}{to}{trail}{text[end - 1]}"))
             snaps.append(
-                {
-                    "text": q,
-                    "source": source,
-                    "action": "snapped",
-                    "to": to,
-                    "ratio": round(ratio, 3),
-                }
+                {**record, "action": "snapped", "to": to, "ratio": round(ratio, 3), "reason": None}
             )
         else:
             edits.append((start, end, inner))
-            snaps.append(
-                {
-                    "text": q,
-                    "source": source,
-                    "action": "unquoted",
-                    "to": None,
-                    "ratio": round(ratio, 3),
-                }
-            )
+            snaps.append({**record, "ratio": round(ratio, 3), "reason": "not in source"})
     for start, end, replacement in reversed(edits):
         text = text[:start] + replacement + text[end:]
     return text, snaps
@@ -650,8 +656,8 @@ def _reminder(passages: list[Passage]) -> str:
     return (
         "That reply did not hold to your passages. Cite only the tags you were "
         f"given ({tags}), and put in double quotes only words copied exactly from "
-        f"your passages, at most {MAX_QUOTES} quoted phrases; paraphrase the rest with "
-        "its [sN] tag. Words spoken earlier in the moot, the other tree's or your "
+        f"your passages, at most {MAX_QUOTES} quoted phrases of at least three words "
+        "each; paraphrase the rest with its [sN] tag. Words spoken earlier in the moot, the other tree's or your "
         "own, take an [oN] tag, never an [sN] tag. "
         "Give your reply again."
     )

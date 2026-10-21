@@ -212,11 +212,16 @@ gutenkg query "plague" --registry /path/to/registry.json     # non-default regis
 `gutenkg converse` seats two books in a moot. Each speaks only from passages
 of its own text, cites them as `[s1]`, `[s2]`, ..., and may quote any earlier
 turn `N` of the moot, the other book's or its own, as `[oN]`. Needs a running worker (for book-scoped
-retrieval) and a model backend (`--backend`, oMLX by default).
+retrieval) and a model backend (`--backend`, oMLX by default). On a terminal
+each turn prints as a speech bubble as it arrives, the first book on the
+left and the second on the right, with its citations and corrections
+underneath, then a grounding table and a run summary (elapsed time, per-turn
+time, model, machine) at the end; piped or logged output stays plain text.
 
-Every quote in the output is verbatim. A quote the model misremembered is
-replaced with its source's exact words when it nearly matches them, and loses
-its quotation marks when it does not; the run prints each correction. The
+Every quote in the output is verbatim and at least three words long. A quote
+the model misremembered is replaced with its source's exact words when it
+nearly matches them, and loses its quotation marks when it does not or when it
+is too short to check; the run prints each correction. The
 grounding rates still measure the model's own replies, which the JSON keeps
 as `raw_text` beside the corrected `text` and its `snaps`.
 
@@ -242,6 +247,7 @@ titles contain an em dash.
 | `--temperature` | `0.6` | Sampling temperature |
 | `--worker` | `$KGRAG_ENDPOINT` or `http://localhost:8000` | Worker URL |
 | `--out` | print only | Write a JSON transcript with grounding stats |
+| `--plain` | off | Plain text instead of speech bubbles (automatic when not a terminal) |
 
 ---
 

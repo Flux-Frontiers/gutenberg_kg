@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import json
+import re
 import types
 
 import pytest
@@ -717,6 +718,7 @@ class TestSnapQuotes:
                 "action": "snapped",
                 "to": "curse the time that ever I did give way",
                 "ratio": snaps[0]["ratio"],
+                "reason": None,
             }
         ]
         assert snaps[0]["ratio"] >= entmoot.SNAP_MIN_RATIO
@@ -729,11 +731,29 @@ class TestSnapQuotes:
         assert snaps[0]["action"] == "unquoted"
         assert snaps[0]["to"] is None
 
-    def test_found_and_short_quotes_are_left_alone(self):
-        reply = 'I say "God forgive me for my jealousy!" [s1] and "curse it" [s1].'
+    def test_a_found_quote_is_left_alone(self):
+        reply = 'I say "God forgive me for my jealousy!" [s1].'
         text, snaps = entmoot.snap_quotes(reply, _passages(PEPYS))
         assert text == reply
         assert snaps == []
+
+    def test_a_quote_under_three_words_is_unquoted_unchecked(self):
+        reply = 'I "curse" it, and "God forgive" me [s1]; "the poisoned sting" [s1].'
+        text, snaps = entmoot.snap_quotes(reply, _passages(PEPYS))
+        assert text == "I curse it, and God forgive me [s1]; the poisoned sting [s1]."
+        assert [(s["text"], s["reason"]) for s in snaps] == [
+            ("curse", "under 3 words"),
+            ("God forgive", "under 3 words"),  # in the source, but too short to check
+            ("the poisoned sting", "not in source"),
+        ]
+
+    def test_short_quotes_count_apart_from_failed_ones(self):
+        synth = FakeSynth(['I "fret" so [s1], "jealousy is a dredful thing" [s1].'])
+        t = run_moot(FakeClient(), synth, [B, A], None, 1)
+        stats = t.stats()
+        assert (stats["quotes_snapped"], stats["quotes_unquoted"]) == (1, 0)
+        assert stats["quotes_too_short"] == 1
+        assert t.utterances[0].text == 'I fret so [s1], "jealousy is a dreadful thing" [s1].'
 
     def test_curly_quote_marks_are_kept(self):
         text, _ = entmoot.snap_quotes(
@@ -809,6 +829,149 @@ def test_converse_reports_snapped_quotes(cli, monkeypatch):
     result = CliRunner().invoke(cli, ["converse", B, A, "--turns", "2"])
     assert result.exit_code == 0, result.output
     assert (
-        'snapped "jealousy is a dredful thing" to "jealousy is a dreadful thing"' in result.output
+        'snapped "jealousy is a dredful thing" -> "jealousy is a dreadful thing"' in result.output
     )
     assert "snapped 2, unquoted 0" in result.output
+
+
+# ---------------------------------------------------------------------------
+# Speech-bubble output on a terminal
+# ---------------------------------------------------------------------------
+
+
+def _console(width=100):
+    import io
+
+    from rich.console import Console
+
+    return Console(file=io.StringIO(), width=width, force_terminal=True, color_system=None)
+
+
+def _bubble_lines(console):
+    return [line for line in console.file.getvalue().splitlines() if line.strip()]
+
+
+def test_the_first_tree_speaks_on_the_left_and_the_second_on_the_right():
+    from gutenberg_kg.cli import cmd_converse
+
+    t = run_moot(FakeClient(), FakeSynth(), [A, B], "jealousy", 2)
+    con = _console()
+    cmd_converse._render_utterance(con, t.utterances[0], A)
+    first = _bubble_lines(con)
+    con = _console()
+    cmd_converse._render_utterance(con, t.utterances[1], A)
+    second = _bubble_lines(con)
+    assert first[0].startswith("╭─ [1] Thus Spake Zarathustra")
+    assert second[0].startswith(" ") and second[0].rstrip().endswith("─╮")
+    assert "[2] The Diary of Somebody" in second[0]
+
+
+def test_a_bubble_carries_its_citations_and_corrections():
+    from gutenberg_kg.cli import cmd_converse
+
+    t = run_moot(
+        FakeClient(), FakeSynth(['Hear me: "jealousy is a dredful thing" [s1].']), [B, A], None, 1
+    )
+    con = _console(width=200)
+    cmd_converse._render_utterance(con, t.utterances[0], B)
+    out = con.file.getvalue()
+    assert '"jealousy is a dreadful thing" [s1]' in out  # the snapped text is shown
+    assert "cites s1 1664-01-11" in out
+    assert "ungrounded" in out
+    assert 'snapped "jealousy is a dredful thing" -> "jealousy is a dreadful thing"' in out
+
+
+def test_a_title_with_brackets_is_not_read_as_markup():
+    from gutenberg_kg.cli import cmd_converse
+
+    t = run_moot(FakeClient(), FakeSynth(), [A, B], None, 1)
+    u = t.utterances[0]
+    u.title = "Poems [bold]and[/bold] Songs"
+    con = _console()
+    cmd_converse._render_utterance(con, u, A)
+    assert "[1] Poems [bold]and[/bold] Songs" in con.file.getvalue()
+
+
+def test_converse_draws_bubbles_on_a_terminal(cli, monkeypatch):
+    from rich.console import Console
+
+    from gutenberg_kg.cli import cmd_converse
+
+    monkeypatch.setattr(Console, "is_terminal", property(lambda self: True))
+    monkeypatch.setattr(cmd_converse, "_make_client", lambda url: FakeClient())
+    monkeypatch.setattr(cmd_converse, "_make_synth", lambda backend: FakeSynth())
+    result = CliRunner().invoke(cli, ["converse", A, B, "--topic", "jealousy", "--turns", "2"])
+    assert result.exit_code == 0, result.output
+    out = re.sub(r"\x1b\[[0-9;]*m", "", result.output)  # drop ANSI styling
+    assert "A moot of Thus Spake Zarathustra and The Diary of Somebody" in out
+    assert "╭─ [1] Thus Spake Zarathustra" in out
+    assert "Grounding" in out
+    assert "Own-book quotes found" in out
+
+
+def test_converse_plain_overrides_a_terminal(cli, monkeypatch):
+    from rich.console import Console
+
+    from gutenberg_kg.cli import cmd_converse
+
+    monkeypatch.setattr(Console, "is_terminal", property(lambda self: True))
+    monkeypatch.setattr(cmd_converse, "_make_client", lambda url: FakeClient())
+    monkeypatch.setattr(cmd_converse, "_make_synth", lambda backend: FakeSynth())
+    result = CliRunner().invoke(cli, ["converse", A, B, "--turns", "2", "--plain"])
+    assert result.exit_code == 0, result.output
+    assert "[1] Thus Spake Zarathustra: Hear me [s1]." in result.output
+    assert "╭" not in result.output
+
+
+# ---------------------------------------------------------------------------
+# Run summary: timing, machine and model
+# ---------------------------------------------------------------------------
+
+
+def test_converse_prints_a_run_summary(cli, monkeypatch, tmp_path):
+    from gutenberg_kg.cli import cmd_converse
+
+    monkeypatch.setattr(cmd_converse, "_make_client", lambda url: FakeClient())
+    monkeypatch.setattr(cmd_converse, "_make_synth", lambda backend: FakeSynth())
+    monkeypatch.setattr(cmd_converse, "_machine_description", lambda: "Test CPU, 8 GB RAM")
+    out = tmp_path / "moot.json"
+    result = CliRunner().invoke(cli, ["converse", A, B, "--turns", "3", "--out", str(out)])
+    assert result.exit_code == 0, result.output
+    for label in ("Run:", "Started:", "Elapsed:", "Per turn:", "Host:", "OS:"):
+        assert label in result.output
+    assert "Machine: Test CPU, 8 GB RAM" in result.output
+    assert f"Backend / model: omlx / {entmoot.DEFAULT_MODEL}" in result.output
+    run = json.loads(out.read_text())["run"]
+    assert len(run["turn_seconds"]) == 3
+    assert run["elapsed_seconds"] >= 0
+    assert run["machine"] == "Test CPU, 8 GB RAM"
+    assert run["worker"] == "http://localhost:8000"
+    assert set(run) >= {"started", "host", "os", "python", "gutenberg_kg", "backend", "model"}
+
+
+def test_the_run_summary_is_a_table_on_a_terminal(cli, monkeypatch):
+    from rich.console import Console
+
+    from gutenberg_kg.cli import cmd_converse
+
+    monkeypatch.setattr(Console, "is_terminal", property(lambda self: True))
+    monkeypatch.setattr(cmd_converse, "_make_client", lambda url: FakeClient())
+    monkeypatch.setattr(cmd_converse, "_make_synth", lambda backend: FakeSynth())
+    monkeypatch.setattr(cmd_converse, "_machine_description", lambda: "Test CPU, 8 GB RAM")
+    result = CliRunner().invoke(cli, ["converse", A, B, "--turns", "2"])
+    assert result.exit_code == 0, result.output
+    out = re.sub(r"\x1b\[[0-9;]*m", "", result.output)
+    assert "Run" in out and "Per turn" in out and "Test CPU, 8 GB RAM" in out
+    assert "Run:" not in out  # the plain block is not printed as well
+
+
+def test_machine_description_falls_back_without_sysctl(monkeypatch):
+    import subprocess
+
+    from gutenberg_kg.cli import cmd_converse
+
+    def no_sysctl(*_a, **_kw):
+        raise OSError("no sysctl here")
+
+    monkeypatch.setattr(subprocess, "run", no_sysctl)
+    assert cmd_converse._machine_description()  # platform's processor or machine
