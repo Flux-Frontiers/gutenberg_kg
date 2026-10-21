@@ -1,0 +1,1552 @@
+{
+ "adam_seaborn": {
+  "name": "Adam Seaborn",
+  "gender": "male",
+  "accent": null,
+  "citizenship": [],
+  "wikidata": "Q121818267",
+  "source": "wikidata-search"
+ },
+ "adam_smith": {
+  "name": "Adam Smith",
+  "gender": "male",
+  "accent": "en-GB",
+  "citizenship": [
+   "Kingdom of Great Britain"
+  ],
+  "wikidata": "Q9381",
+  "source": "wikidata"
+ },
+ "aeschylus": {
+  "name": "Aeschylus",
+  "gender": "male",
+  "accent": null,
+  "citizenship": [
+   "Classical Athens"
+  ],
+  "wikidata": "Q40939",
+  "source": "wikidata"
+ },
+ "alexander_hamilton": {
+  "name": "Alexander Hamilton",
+  "gender": "male",
+  "accent": "en-US",
+  "citizenship": [
+   "United States"
+  ],
+  "wikidata": "Q178903",
+  "source": "wikidata"
+ },
+ "alexandre_dumas": {
+  "name": "Alexandre Dumas",
+  "gender": "male",
+  "accent": null,
+  "citizenship": [
+   "France"
+  ],
+  "wikidata": "Q38337",
+  "source": "wikidata"
+ },
+ "alfred_russel_wallace": {
+  "name": "Alfred Russel Wallace",
+  "gender": "male",
+  "accent": "en-GB",
+  "citizenship": [
+   "United Kingdom of Great Britain and Ireland"
+  ],
+  "wikidata": "Q160627",
+  "source": "wikidata"
+ },
+ "algernon_blackwood": {
+  "name": "Algernon Blackwood",
+  "gender": "male",
+  "accent": "en-GB",
+  "citizenship": [
+   "United Kingdom",
+   "United Kingdom of Great Britain and Ireland"
+  ],
+  "wikidata": "Q507991",
+  "source": "wikidata"
+ },
+ "andrew_lang": {
+  "name": "Andrew Lang",
+  "gender": "male",
+  "accent": "en-GB",
+  "citizenship": [
+   "United Kingdom of Great Britain and Ireland",
+   "United Kingdom"
+  ],
+  "wikidata": "Q505827",
+  "source": "wikidata"
+ },
+ "ann_ward_radcliffe": {
+  "name": "Ann Ward Radcliffe",
+  "gender": "female",
+  "accent": "en-GB",
+  "citizenship": [
+   "Kingdom of Great Britain",
+   "United Kingdom of Great Britain and Ireland"
+  ],
+  "wikidata": "Q231944",
+  "source": "wikidata"
+ },
+ "anton_pavlovich_chekhov": {
+  "name": "Anton Pavlovich Chekhov",
+  "gender": "male",
+  "accent": null,
+  "citizenship": [
+   "Russian Empire"
+  ],
+  "wikidata": "Q5685",
+  "source": "wikidata"
+ },
+ "aristophanes": {
+  "name": "Aristophanes",
+  "gender": "male",
+  "accent": null,
+  "citizenship": [
+   "Classical Athens"
+  ],
+  "wikidata": "Q43353",
+  "source": "wikidata"
+ },
+ "aristotle": {
+  "name": "Aristotle",
+  "gender": "male",
+  "accent": null,
+  "citizenship": [],
+  "wikidata": "Q868",
+  "source": "wikidata"
+ },
+ "arthur_conan_doyle": {
+  "name": "Arthur Conan Doyle",
+  "gender": "male",
+  "accent": "en-GB",
+  "citizenship": [
+   "United Kingdom of Great Britain and Ireland",
+   "United Kingdom"
+  ],
+  "wikidata": "Q35610",
+  "source": "wikidata"
+ },
+ "arthur_machen": {
+  "name": "Arthur Machen",
+  "gender": "male",
+  "accent": "en-GB",
+  "citizenship": [
+   "United Kingdom",
+   "United Kingdom of Great Britain and Ireland"
+  ],
+  "wikidata": "Q540166",
+  "source": "wikidata"
+ },
+ "auguste_maquet": {
+  "name": "Auguste Maquet",
+  "gender": "male",
+  "accent": null,
+  "citizenship": [
+   "France"
+  ],
+  "wikidata": "Q766768",
+  "source": "wikidata-search"
+ },
+ "augustine_of_hippo": {
+  "name": "Augustine of Hippo",
+  "gender": "male",
+  "accent": null,
+  "citizenship": [
+   "Ancient Rome"
+  ],
+  "wikidata": "Q8018",
+  "source": "wikidata"
+ },
+ "benjamin_franklin": {
+  "name": "Benjamin Franklin",
+  "gender": "male",
+  "accent": "en-US",
+  "citizenship": [
+   "British America",
+   "United States"
+  ],
+  "wikidata": "Q34969",
+  "source": "wikidata"
+ },
+ "benvenuto_cellini": {
+  "name": "Benvenuto Cellini",
+  "gender": "male",
+  "accent": null,
+  "citizenship": [
+   "France",
+   "Republic of Florence",
+   "Duchy of Florence"
+  ],
+  "wikidata": "Q190116",
+  "source": "wikidata"
+ },
+ "bernard_shaw": {
+  "name": "Bernard Shaw",
+  "gender": "male",
+  "accent": "en-GB",
+  "citizenship": [
+   "United Kingdom of Great Britain and Ireland",
+   "United Kingdom",
+   "Ireland"
+  ],
+  "wikidata": "Q19185",
+  "source": "wikidata"
+ },
+ "bertrand_russell": {
+  "name": "Bertrand Russell",
+  "gender": "male",
+  "accent": "en-GB",
+  "citizenship": [
+   "United Kingdom",
+   "United Kingdom of Great Britain and Ireland"
+  ],
+  "wikidata": "Q33760",
+  "source": "wikidata"
+ },
+ "boethius": {
+  "name": "Boethius",
+  "gender": "male",
+  "accent": null,
+  "citizenship": [
+   "Ostrogothic Kingdom"
+  ],
+  "wikidata": "Q102851",
+  "source": "wikidata"
+ },
+ "booker_t_washington": {
+  "name": "Booker T. Washington",
+  "gender": "male",
+  "accent": "en-US",
+  "citizenship": [
+   "United States"
+  ],
+  "wikidata": "Q319871",
+  "source": "wikidata"
+ },
+ "bram_stoker": {
+  "name": "Bram Stoker",
+  "gender": "male",
+  "accent": "en-GB",
+  "citizenship": [
+   "United Kingdom of Great Britain and Ireland",
+   "Ireland"
+  ],
+  "wikidata": "Q36184",
+  "source": "wikidata"
+ },
+ "charles_darwin": {
+  "name": "Charles Darwin",
+  "gender": "male",
+  "accent": "en-GB",
+  "citizenship": [
+   "United Kingdom of Great Britain and Ireland"
+  ],
+  "wikidata": "Q1035",
+  "source": "wikidata"
+ },
+ "charles_dickens": {
+  "name": "Charles Dickens",
+  "gender": "male",
+  "accent": "en-GB",
+  "citizenship": [
+   "United Kingdom of Great Britain and Ireland",
+   "United Kingdom"
+  ],
+  "wikidata": "Q5686",
+  "source": "wikidata"
+ },
+ "charlotte_brontë": {
+  "name": "Charlotte Brontë",
+  "gender": "female",
+  "accent": "en-GB",
+  "citizenship": [
+   "United Kingdom of Great Britain and Ireland"
+  ],
+  "wikidata": "Q127332",
+  "source": "wikidata"
+ },
+ "charlotte_perkins_gilman": {
+  "name": "Charlotte Perkins Gilman",
+  "gender": "female",
+  "accent": "en-US",
+  "citizenship": [
+   "United States"
+  ],
+  "wikidata": "Q287752",
+  "source": "wikidata"
+ },
+ "christopher_marlowe": {
+  "name": "Christopher Marlowe",
+  "gender": "male",
+  "accent": "en-GB",
+  "citizenship": [
+   "Kingdom of England"
+  ],
+  "wikidata": "Q28975",
+  "source": "wikidata"
+ },
+ "clark_ashton_smith": {
+  "name": "Clark Ashton Smith",
+  "gender": "male",
+  "accent": "en-US",
+  "citizenship": [
+   "United States"
+  ],
+  "wikidata": "Q555298",
+  "source": "wikidata"
+ },
+ "daniel_defoe": {
+  "name": "Daniel Defoe",
+  "gender": "male",
+  "accent": "en-GB",
+  "citizenship": [
+   "Kingdom of England",
+   "Kingdom of Great Britain",
+   "United Kingdom"
+  ],
+  "wikidata": "Q40946",
+  "source": "wikidata"
+ },
+ "dante_alighieri": {
+  "name": "Dante Alighieri",
+  "gender": "male",
+  "accent": null,
+  "citizenship": [
+   "Republic of Florence"
+  ],
+  "wikidata": "Q1067",
+  "source": "wikidata"
+ },
+ "diogenes_laertius": {
+  "name": "Diogenes Laertius",
+  "gender": "male",
+  "accent": null,
+  "citizenship": [
+   "Ancient Rome"
+  ],
+  "wikidata": "Q59138",
+  "source": "wikidata"
+ },
+ "e_m_forster": {
+  "name": "E. M. Forster",
+  "gender": "male",
+  "accent": "en-GB",
+  "citizenship": [
+   "United Kingdom",
+   "United Kingdom of Great Britain and Ireland"
+  ],
+  "wikidata": "Q189119",
+  "source": "wikidata"
+ },
+ "edgar_allan_poe": {
+  "name": "Edgar Allan Poe",
+  "gender": "male",
+  "accent": "en-US",
+  "citizenship": [
+   "United States"
+  ],
+  "wikidata": "Q16867",
+  "source": "wikidata"
+ },
+ "edgar_rice_burroughs": {
+  "name": "Edgar Rice Burroughs",
+  "gender": "male",
+  "accent": "en-US",
+  "citizenship": [
+   "United States"
+  ],
+  "wikidata": "Q148234",
+  "source": "wikidata"
+ },
+ "edith_wharton": {
+  "name": "Edith Wharton",
+  "gender": "female",
+  "accent": "en-US",
+  "citizenship": [
+   "United States"
+  ],
+  "wikidata": "Q276032",
+  "source": "wikidata"
+ },
+ "edward_bulwer_lytton_baron_lytton": {
+  "name": "Edward Bulwer Lytton, Baron Lytton",
+  "gender": "male",
+  "accent": "en-GB",
+  "citizenship": [
+   "United Kingdom of Great Britain and Ireland"
+  ],
+  "wikidata": "Q318462",
+  "source": "wikidata"
+ },
+ "edward_westermarck": {
+  "name": "Edward Westermarck",
+  "gender": "male",
+  "accent": null,
+  "citizenship": [
+   "Finland",
+   "Grand Duchy of Finland"
+  ],
+  "wikidata": "Q722835",
+  "source": "wikidata"
+ },
+ "edwin_abbott_abbott": {
+  "name": "Edwin Abbott Abbott",
+  "gender": "male",
+  "accent": "en-GB",
+  "citizenship": [
+   "United Kingdom of Great Britain and Ireland"
+  ],
+  "wikidata": "Q531606",
+  "source": "wikidata"
+ },
+ "elizabeth_cleghorn_gaskell": {
+  "name": "Elizabeth Cleghorn Gaskell",
+  "gender": "female",
+  "accent": "en-GB",
+  "citizenship": [
+   "United Kingdom of Great Britain and Ireland"
+  ],
+  "wikidata": "Q229226",
+  "source": "wikidata"
+ },
+ "emily_brontë": {
+  "name": "Emily Brontë",
+  "gender": "female",
+  "accent": "en-GB",
+  "citizenship": [
+   "United Kingdom of Great Britain and Ireland"
+  ],
+  "wikidata": "Q80137",
+  "source": "wikidata"
+ },
+ "epictetus": {
+  "name": "Epictetus",
+  "gender": "male",
+  "accent": null,
+  "citizenship": [
+   "Ancient Rome"
+  ],
+  "wikidata": "Q183144",
+  "source": "wikidata"
+ },
+ "euripides": {
+  "name": "Euripides",
+  "gender": "male",
+  "accent": null,
+  "citizenship": [
+   "Classical Athens"
+  ],
+  "wikidata": "Q48305",
+  "source": "wikidata"
+ },
+ "frank_d_graham_and_theo_audel_company": {
+  "name": "Frank D. Graham and Theo Audel & Company",
+  "gender": null,
+  "accent": null,
+  "citizenship": [],
+  "wikidata": null,
+  "source": "not found"
+ },
+ "franz_kafka": {
+  "name": "Franz Kafka",
+  "gender": "male",
+  "accent": null,
+  "citizenship": [
+   "Cisleithania",
+   "Czechoslovakia"
+  ],
+  "wikidata": "Q905",
+  "source": "wikidata"
+ },
+ "frederick_douglass": {
+  "name": "Frederick Douglass",
+  "gender": "male",
+  "accent": "en-US",
+  "citizenship": [
+   "United States"
+  ],
+  "wikidata": "Q215562",
+  "source": "wikidata"
+ },
+ "friedrich_wilhelm_nietzsche": {
+  "name": "Friedrich Wilhelm Nietzsche",
+  "gender": "male",
+  "accent": null,
+  "citizenship": [
+   "Kingdom of Prussia",
+   "Germany"
+  ],
+  "wikidata": "Q9358",
+  "source": "wikidata"
+ },
+ "fyodor_dostoyevsky": {
+  "name": "Fyodor Dostoyevsky",
+  "gender": "male",
+  "accent": null,
+  "citizenship": [
+   "Russia",
+   "Russian Empire"
+  ],
+  "wikidata": "Q991",
+  "source": "wikidata"
+ },
+ "g_k_chesterton": {
+  "name": "G. K. Chesterton",
+  "gender": "male",
+  "accent": "en-GB",
+  "citizenship": [
+   "United Kingdom"
+  ],
+  "wikidata": "Q183167",
+  "source": "wikidata"
+ },
+ "georg_wilhelm_friedrich_hegel": {
+  "name": "Georg Wilhelm Friedrich Hegel",
+  "gender": "male",
+  "accent": null,
+  "citizenship": [
+   "Kingdom of Württemberg"
+  ],
+  "wikidata": "Q9235",
+  "source": "wikidata"
+ },
+ "george_eliot": {
+  "name": "George Eliot",
+  "gender": "female",
+  "accent": "en-GB",
+  "citizenship": [
+   "United Kingdom of Great Britain and Ireland"
+  ],
+  "wikidata": "Q131333",
+  "source": "wikidata"
+ },
+ "george_gordon_byron_baron_byron": {
+  "name": "George Gordon Byron, Baron Byron",
+  "gender": "male",
+  "accent": "en-GB",
+  "citizenship": [
+   "United Kingdom of Great Britain and Ireland",
+   "Kingdom of Great Britain",
+   "United Kingdom"
+  ],
+  "wikidata": "Q5679",
+  "source": "wikidata"
+ },
+ "gustave_flaubert": {
+  "name": "Gustave Flaubert",
+  "gender": "male",
+  "accent": null,
+  "citizenship": [
+   "France"
+  ],
+  "wikidata": "Q43444",
+  "source": "wikidata"
+ },
+ "h_g_wells": {
+  "name": "H. G. Wells",
+  "gender": "male",
+  "accent": "en-GB",
+  "citizenship": [
+   "United Kingdom of Great Britain and Ireland",
+   "United Kingdom"
+  ],
+  "wikidata": "Q42511",
+  "source": "wikidata"
+ },
+ "h_p_lovecraft": {
+  "name": "H. P. Lovecraft",
+  "gender": "male",
+  "accent": "en-US",
+  "citizenship": [
+   "United States"
+  ],
+  "wikidata": "Q169566",
+  "source": "wikidata"
+ },
+ "harriet_a_jacobs": {
+  "name": "Harriet A. Jacobs",
+  "gender": "female",
+  "accent": "en-US",
+  "citizenship": [
+   "United States"
+  ],
+  "wikidata": "Q944063",
+  "source": "wikidata"
+ },
+ "harriet_beecher_stowe": {
+  "name": "Harriet Beecher Stowe",
+  "gender": "female",
+  "accent": "en-US",
+  "citizenship": [
+   "United States"
+  ],
+  "wikidata": "Q102513",
+  "source": "wikidata"
+ },
+ "harry_houdini": {
+  "name": "Harry Houdini",
+  "gender": "male",
+  "accent": "en-US",
+  "citizenship": [
+   "Austria–Hungary",
+   "United States"
+  ],
+  "wikidata": "Q131545",
+  "source": "wikidata"
+ },
+ "henrik_ibsen": {
+  "name": "Henrik Ibsen",
+  "gender": "male",
+  "accent": null,
+  "citizenship": [
+   "Norway"
+  ],
+  "wikidata": "Q36661",
+  "source": "wikidata"
+ },
+ "henry_adams": {
+  "name": "Henry Adams",
+  "gender": "male",
+  "accent": "en-US",
+  "citizenship": [
+   "United States"
+  ],
+  "wikidata": "Q458390",
+  "source": "wikidata"
+ },
+ "henry_david_thoreau": {
+  "name": "Henry David Thoreau",
+  "gender": "male",
+  "accent": "en-US",
+  "citizenship": [
+   "United States"
+  ],
+  "wikidata": "Q131149",
+  "source": "wikidata"
+ },
+ "henry_james": {
+  "name": "Henry James",
+  "gender": "male",
+  "accent": "en-US",
+  "citizenship": [
+   "United States",
+   "United Kingdom of Great Britain and Ireland"
+  ],
+  "wikidata": "Q170509",
+  "source": "wikidata"
+ },
+ "herman_melville": {
+  "name": "Herman Melville",
+  "gender": "male",
+  "accent": "en-US",
+  "citizenship": [
+   "United States"
+  ],
+  "wikidata": "Q4985",
+  "source": "wikidata"
+ },
+ "hermann_hesse": {
+  "name": "Hermann Hesse",
+  "gender": "male",
+  "accent": null,
+  "citizenship": [
+   "German Empire",
+   "Switzerland",
+   "Germany",
+   "Russian Empire"
+  ],
+  "wikidata": "Q25973",
+  "source": "wikidata"
+ },
+ "herodotus": {
+  "name": "Herodotus",
+  "gender": "male",
+  "accent": null,
+  "citizenship": [
+   "Halicarnassus"
+  ],
+  "wikidata": "Q26825",
+  "source": "wikidata"
+ },
+ "homer": {
+  "name": "Homer",
+  "gender": "male",
+  "accent": null,
+  "citizenship": [
+   "Ionian League"
+  ],
+  "wikidata": "Q6691",
+  "source": "wikidata"
+ },
+ "immanuel_kant": {
+  "name": "Immanuel Kant",
+  "gender": "male",
+  "accent": null,
+  "citizenship": [
+   "Kingdom of Prussia"
+  ],
+  "wikidata": "Q9312",
+  "source": "wikidata"
+ },
+ "isabella_l_bird": {
+  "name": "Isabella L. Bird",
+  "gender": "female",
+  "accent": "en-GB",
+  "citizenship": [
+   "United Kingdom of Great Britain and Ireland"
+  ],
+  "wikidata": "Q288210",
+  "source": "wikidata"
+ },
+ "ivan_aleksandrovich_goncharov": {
+  "name": "Ivan Aleksandrovich Goncharov",
+  "gender": "male",
+  "accent": null,
+  "citizenship": [
+   "Russian Empire"
+  ],
+  "wikidata": "Q189665",
+  "source": "wikidata"
+ },
+ "ivan_sergeevich_turgenev": {
+  "name": "Ivan Sergeevich Turgenev",
+  "gender": "male",
+  "accent": null,
+  "citizenship": [
+   "Russian Empire"
+  ],
+  "wikidata": "Q42831",
+  "source": "wikidata"
+ },
+ "jack_london": {
+  "name": "Jack London",
+  "gender": "male",
+  "accent": "en-US",
+  "citizenship": [
+   "United States"
+  ],
+  "wikidata": "Q45765",
+  "source": "wikidata"
+ },
+ "jacob_grimm": {
+  "name": "Jacob Grimm",
+  "gender": "male",
+  "accent": null,
+  "citizenship": [
+   "Electorate of Hesse",
+   "Kingdom of Prussia"
+  ],
+  "wikidata": "Q6701",
+  "source": "wikidata"
+ },
+ "james_boswell": {
+  "name": "James Boswell",
+  "gender": "male",
+  "accent": "en-GB",
+  "citizenship": [
+   "Kingdom of Great Britain"
+  ],
+  "wikidata": "Q335060",
+  "source": "wikidata"
+ },
+ "james_legge": {
+  "name": "James Legge",
+  "gender": "male",
+  "accent": "en-GB",
+  "citizenship": [
+   "United Kingdom of Great Britain and Ireland"
+  ],
+  "wikidata": "Q1287990",
+  "source": "wikidata"
+ },
+ "james_madison": {
+  "name": "James Madison",
+  "gender": "male",
+  "accent": "en-US",
+  "citizenship": [
+   "United States"
+  ],
+  "wikidata": "Q11813",
+  "source": "wikidata-search"
+ },
+ "jane_austen": {
+  "name": "Jane Austen",
+  "gender": "female",
+  "accent": "en-GB",
+  "citizenship": [
+   "United Kingdom of Great Britain and Ireland"
+  ],
+  "wikidata": "Q36322",
+  "source": "wikidata"
+ },
+ "jean_jacques_rousseau": {
+  "name": "Jean-Jacques Rousseau",
+  "gender": "male",
+  "accent": null,
+  "citizenship": [
+   "Republic of Geneva",
+   "France"
+  ],
+  "wikidata": "Q6527",
+  "source": "wikidata"
+ },
+ "johann_wolfgang_von_goethe": {
+  "name": "Johann Wolfgang von Goethe",
+  "gender": "male",
+  "accent": null,
+  "citizenship": [
+   "Duchy of Saxe-Weimar-Eisenach"
+  ],
+  "wikidata": "Q5879",
+  "source": "wikidata"
+ },
+ "john_evelyn": {
+  "name": "John Evelyn",
+  "gender": "male",
+  "accent": "en-GB",
+  "citizenship": [
+   "Kingdom of England"
+  ],
+  "wikidata": "Q342712",
+  "source": "wikidata"
+ },
+ "john_jacob_astor": {
+  "name": "John Jacob Astor",
+  "gender": "male",
+  "accent": "en-US",
+  "citizenship": [
+   "United States"
+  ],
+  "wikidata": "Q430672",
+  "source": "wikidata"
+ },
+ "john_jay": {
+  "name": "John Jay",
+  "gender": "male",
+  "accent": "en-US",
+  "citizenship": [
+   "United States"
+  ],
+  "wikidata": "Q310847",
+  "source": "wikidata-search"
+ },
+ "john_keats": {
+  "name": "John Keats",
+  "gender": "male",
+  "accent": "en-GB",
+  "citizenship": [
+   "United Kingdom of Great Britain and Ireland"
+  ],
+  "wikidata": "Q82083",
+  "source": "wikidata"
+ },
+ "john_locke": {
+  "name": "John Locke",
+  "gender": "male",
+  "accent": "en-GB",
+  "citizenship": [
+   "Kingdom of England"
+  ],
+  "wikidata": "Q9353",
+  "source": "wikidata"
+ },
+ "john_ruskin": {
+  "name": "John Ruskin",
+  "gender": "male",
+  "accent": "en-GB",
+  "citizenship": [
+   "United Kingdom of Great Britain and Ireland",
+   "United Kingdom"
+  ],
+  "wikidata": "Q179126",
+  "source": "wikidata"
+ },
+ "john_stuart_mill": {
+  "name": "John Stuart Mill",
+  "gender": "male",
+  "accent": "en-GB",
+  "citizenship": [
+   "United Kingdom of Great Britain and Ireland"
+  ],
+  "wikidata": "Q50020",
+  "source": "wikidata"
+ },
+ "john_uri_lloyd": {
+  "name": "John Uri Lloyd",
+  "gender": "male",
+  "accent": "en-US",
+  "citizenship": [
+   "United States"
+  ],
+  "wikidata": "Q3809662",
+  "source": "wikidata"
+ },
+ "john_webster": {
+  "name": "John Webster",
+  "gender": "male",
+  "accent": "en-GB",
+  "citizenship": [
+   "United Kingdom of Great Britain and Ireland"
+  ],
+  "wikidata": "Q225904",
+  "source": "wikidata"
+ },
+ "jonathan_swift": {
+  "name": "Jonathan Swift",
+  "gender": "male",
+  "accent": "en-GB",
+  "citizenship": [
+   "Kingdom of Ireland",
+   "Ireland"
+  ],
+  "wikidata": "Q41166",
+  "source": "wikidata"
+ },
+ "joseph_conrad": {
+  "name": "Joseph Conrad",
+  "gender": "male",
+  "accent": "en-GB",
+  "citizenship": [
+   "Russian Empire",
+   "United Kingdom of Great Britain and Ireland",
+   "United Kingdom",
+   "Second Polish Republic",
+   "Poland",
+   "Ukraine"
+  ],
+  "wikidata": "Q82925",
+  "source": "wikidata"
+ },
+ "joseph_sheridan_le_fanu": {
+  "name": "Joseph Sheridan Le Fanu",
+  "gender": "male",
+  "accent": "en-GB",
+  "citizenship": [
+   "United Kingdom of Great Britain and Ireland",
+   "British Empire"
+  ],
+  "wikidata": "Q326467",
+  "source": "wikidata"
+ },
+ "jules_verne": {
+  "name": "Jules Verne",
+  "gender": "male",
+  "accent": null,
+  "citizenship": [
+   "France"
+  ],
+  "wikidata": "Q33977",
+  "source": "wikidata"
+ },
+ "kate_chopin": {
+  "name": "Kate Chopin",
+  "gender": "female",
+  "accent": "en-US",
+  "citizenship": [
+   "United States"
+  ],
+  "wikidata": "Q230476",
+  "source": "wikidata"
+ },
+ "laozi": {
+  "name": "Laozi",
+  "gender": "male",
+  "accent": null,
+  "citizenship": [
+   "Zhou dynasty"
+  ],
+  "wikidata": "Q9333",
+  "source": "wikidata"
+ },
+ "leo_tolstoy": {
+  "name": "Leo Tolstoy",
+  "gender": "male",
+  "accent": null,
+  "citizenship": [
+   "Russian Empire"
+  ],
+  "wikidata": "Q7243",
+  "source": "wikidata"
+ },
+ "lewis_carroll": {
+  "name": "Lewis Carroll",
+  "gender": "male",
+  "accent": "en-GB",
+  "citizenship": [
+   "United Kingdom of Great Britain and Ireland"
+  ],
+  "wikidata": "Q38082",
+  "source": "wikidata"
+ },
+ "lucius_annaeus_seneca": {
+  "name": "Lucius Annaeus Seneca",
+  "gender": "male",
+  "accent": null,
+  "citizenship": [
+   "Ancient Rome"
+  ],
+  "wikidata": "Q2054",
+  "source": "wikidata"
+ },
+ "m_g_lewis": {
+  "name": "M. G. Lewis",
+  "gender": "male",
+  "accent": "en-GB",
+  "citizenship": [
+   "Kingdom of Great Britain",
+   "United Kingdom"
+  ],
+  "wikidata": "Q121060",
+  "source": "wikidata"
+ },
+ "m_r_james": {
+  "name": "M. R. James",
+  "gender": "male",
+  "accent": "en-GB",
+  "citizenship": [
+   "United Kingdom"
+  ],
+  "wikidata": "Q963715",
+  "source": "wikidata"
+ },
+ "marco_polo": {
+  "name": "Marco Polo",
+  "gender": "male",
+  "accent": null,
+  "citizenship": [
+   "Republic of Venice"
+  ],
+  "wikidata": "Q6101",
+  "source": "wikidata"
+ },
+ "marcus_aurelius": {
+  "name": "Marcus Aurelius",
+  "gender": "male",
+  "accent": null,
+  "citizenship": [
+   "Ancient Rome"
+  ],
+  "wikidata": "Q1430",
+  "source": "wikidata"
+ },
+ "mark_twain": {
+  "name": "Mark Twain",
+  "gender": "male",
+  "accent": "en-US",
+  "citizenship": [
+   "United States"
+  ],
+  "wikidata": "Q7245",
+  "source": "wikidata"
+ },
+ "mary_wollstonecraft": {
+  "name": "Mary Wollstonecraft",
+  "gender": "female",
+  "accent": "en-GB",
+  "citizenship": [
+   "Kingdom of Great Britain"
+  ],
+  "wikidata": "Q101638",
+  "source": "wikidata"
+ },
+ "mary_wollstonecraft_shelley": {
+  "name": "Mary Wollstonecraft Shelley",
+  "gender": "female",
+  "accent": "en-GB",
+  "citizenship": [
+   "United Kingdom of Great Britain and Ireland",
+   "Kingdom of Great Britain",
+   "United Kingdom"
+  ],
+  "wikidata": "Q47152",
+  "source": "wikidata"
+ },
+ "michael_faraday": {
+  "name": "Michael Faraday",
+  "gender": "male",
+  "accent": "en-GB",
+  "citizenship": [
+   "United Kingdom of Great Britain and Ireland",
+   "Kingdom of Great Britain"
+  ],
+  "wikidata": "Q8750",
+  "source": "wikidata"
+ },
+ "miguel_de_cervantes_saavedra": {
+  "name": "Miguel de Cervantes Saavedra",
+  "gender": "male",
+  "accent": null,
+  "citizenship": [
+   "Crown of Castile"
+  ],
+  "wikidata": "Q5682",
+  "source": "wikidata"
+ },
+ "mungo_park": {
+  "name": "Mungo Park",
+  "gender": "male",
+  "accent": "en-GB",
+  "citizenship": [
+   "United Kingdom of Great Britain and Ireland"
+  ],
+  "wikidata": "Q219086",
+  "source": "wikidata"
+ },
+ "nathaniel_hawthorne": {
+  "name": "Nathaniel Hawthorne",
+  "gender": "male",
+  "accent": "en-US",
+  "citizenship": [
+   "United States"
+  ],
+  "wikidata": "Q69339",
+  "source": "wikidata"
+ },
+ "niccolò_machiavelli": {
+  "name": "Niccolò Machiavelli",
+  "gender": "male",
+  "accent": null,
+  "citizenship": [
+   "Republic of Florence"
+  ],
+  "wikidata": "Q1399",
+  "source": "wikidata"
+ },
+ "nikolai_vasilevich_gogol": {
+  "name": "Nikolai Vasilevich Gogol",
+  "gender": "male",
+  "accent": null,
+  "citizenship": [
+   "Russian Empire"
+  ],
+  "wikidata": "Q43718",
+  "source": "wikidata"
+ },
+ "oscar_wilde": {
+  "name": "Oscar Wilde",
+  "gender": "male",
+  "accent": "en-GB",
+  "citizenship": [
+   "United Kingdom of Great Britain and Ireland",
+   "Ireland",
+   "United Kingdom",
+   "France"
+  ],
+  "wikidata": "Q30875",
+  "source": "wikidata"
+ },
+ "ovid": {
+  "name": "Ovid",
+  "gender": "male",
+  "accent": null,
+  "citizenship": [
+   "Ancient Rome"
+  ],
+  "wikidata": "Q7198",
+  "source": "wikidata"
+ },
+ "philip_dormer_stanhope_earl_of_chesterfield": {
+  "name": "Philip Dormer Stanhope, Earl of Chesterfield",
+  "gender": "male",
+  "accent": "en-GB",
+  "citizenship": [
+   "Kingdom of Great Britain"
+  ],
+  "wikidata": "Q332487",
+  "source": "wikidata"
+ },
+ "plato": {
+  "name": "Plato",
+  "gender": "male",
+  "accent": null,
+  "citizenship": [
+   "Classical Athens"
+  ],
+  "wikidata": "Q859",
+  "source": "wikidata"
+ },
+ "pliny_the_younger": {
+  "name": "Pliny the Younger",
+  "gender": "male",
+  "accent": null,
+  "citizenship": [
+   "Ancient Rome"
+  ],
+  "wikidata": "Q168707",
+  "source": "wikidata"
+ },
+ "plutarch": {
+  "name": "Plutarch",
+  "gender": "male",
+  "accent": null,
+  "citizenship": [
+   "Ancient Rome"
+  ],
+  "wikidata": "Q41523",
+  "source": "wikidata"
+ },
+ "rabindranath_tagore": {
+  "name": "Rabindranath Tagore",
+  "gender": "male",
+  "accent": null,
+  "citizenship": [
+   "British Raj"
+  ],
+  "wikidata": "Q7241",
+  "source": "wikidata"
+ },
+ "ralph_waldo_emerson": {
+  "name": "Ralph Waldo Emerson",
+  "gender": "male",
+  "accent": "en-US",
+  "citizenship": [
+   "United States"
+  ],
+  "wikidata": "Q48226",
+  "source": "wikidata"
+ },
+ "rené_descartes": {
+  "name": "René Descartes",
+  "gender": "male",
+  "accent": null,
+  "citizenship": [
+   "France"
+  ],
+  "wikidata": "Q9191",
+  "source": "wikidata"
+ },
+ "richard_henry_dana": {
+  "name": "Richard Henry Dana",
+  "gender": "male",
+  "accent": "en-US",
+  "citizenship": [
+   "United States"
+  ],
+  "wikidata": "Q527981",
+  "source": "wikidata"
+ },
+ "robert_louis_stevenson": {
+  "name": "Robert Louis Stevenson",
+  "gender": "male",
+  "accent": "en-GB",
+  "citizenship": [
+   "United Kingdom of Great Britain and Ireland",
+   "United Kingdom"
+  ],
+  "wikidata": "Q1512",
+  "source": "wikidata"
+ },
+ "robert_w_chambers": {
+  "name": "Robert W. Chambers",
+  "gender": "male",
+  "accent": "en-US",
+  "citizenship": [
+   "United States"
+  ],
+  "wikidata": "Q1349144",
+  "source": "wikidata"
+ },
+ "rudyard_kipling": {
+  "name": "Rudyard Kipling",
+  "gender": "male",
+  "accent": "en-GB",
+  "citizenship": [
+   "United Kingdom",
+   "United Kingdom of Great Britain and Ireland"
+  ],
+  "wikidata": "Q34743",
+  "source": "wikidata"
+ },
+ "rusticiano_da_pisa": {
+  "name": "Rusticiano da Pisa",
+  "gender": "male",
+  "accent": null,
+  "citizenship": [
+   "Republic of Venice"
+  ],
+  "wikidata": "Q366741",
+  "source": "wikidata-search"
+ },
+ "samuel_pepys": {
+  "name": "Samuel Pepys",
+  "gender": "male",
+  "accent": "en-GB",
+  "citizenship": [
+   "Kingdom of England"
+  ],
+  "wikidata": "Q106143",
+  "source": "wikidata"
+ },
+ "sophocles": {
+  "name": "Sophocles",
+  "gender": "male",
+  "accent": null,
+  "citizenship": [
+   "Classical Athens"
+  ],
+  "wikidata": "Q7235",
+  "source": "wikidata"
+ },
+ "stephen_crane": {
+  "name": "Stephen Crane",
+  "gender": "male",
+  "accent": "en-US",
+  "citizenship": [
+   "United States"
+  ],
+  "wikidata": "Q206534",
+  "source": "wikidata"
+ },
+ "sunzi": {
+  "name": "Sunzi",
+  "gender": "male",
+  "accent": null,
+  "citizenship": [
+   "Qi",
+   "Wu"
+  ],
+  "wikidata": "Q37151",
+  "source": "wikidata"
+ },
+ "thomas_hardy": {
+  "name": "Thomas Hardy",
+  "gender": "male",
+  "accent": "en-GB",
+  "citizenship": [
+   "United Kingdom"
+  ],
+  "wikidata": "Q132805",
+  "source": "wikidata"
+ },
+ "thomas_henry_huxley": {
+  "name": "Thomas Henry Huxley",
+  "gender": "male",
+  "accent": "en-GB",
+  "citizenship": [
+   "United Kingdom of Great Britain and Ireland"
+  ],
+  "wikidata": "Q184366",
+  "source": "wikidata"
+ },
+ "thomas_hobbes": {
+  "name": "Thomas Hobbes",
+  "gender": "male",
+  "accent": "en-GB",
+  "citizenship": [
+   "Kingdom of England"
+  ],
+  "wikidata": "Q37621",
+  "source": "wikidata"
+ },
+ "thomas_paine": {
+  "name": "Thomas Paine",
+  "gender": "male",
+  "accent": "en-US",
+  "citizenship": [
+   "Kingdom of Great Britain",
+   "United States",
+   "Kingdom of Great Britain",
+   "France",
+   "United States"
+  ],
+  "wikidata": "Q126462",
+  "source": "wikidata"
+ },
+ "thucydides": {
+  "name": "Thucydides",
+  "gender": "male",
+  "accent": null,
+  "citizenship": [
+   "Classical Athens"
+  ],
+  "wikidata": "Q41683",
+  "source": "wikidata"
+ },
+ "timothy_dexter": {
+  "name": "Timothy Dexter",
+  "gender": "male",
+  "accent": "en-US",
+  "citizenship": [
+   "United States"
+  ],
+  "wikidata": "Q598210",
+  "source": "wikidata"
+ },
+ "titus_lucretius_carus": {
+  "name": "Titus Lucretius Carus",
+  "gender": "male",
+  "accent": null,
+  "citizenship": [
+   "Ancient Rome"
+  ],
+  "wikidata": "Q47154",
+  "source": "wikidata"
+ },
+ "ulysses_s_grant": {
+  "name": "Ulysses S. Grant",
+  "gender": "male",
+  "accent": "en-US",
+  "citizenship": [
+   "United States"
+  ],
+  "wikidata": "Q34836",
+  "source": "wikidata"
+ },
+ "upton_sinclair": {
+  "name": "Upton Sinclair",
+  "gender": "male",
+  "accent": "en-US",
+  "citizenship": [
+   "United States"
+  ],
+  "wikidata": "Q216134",
+  "source": "wikidata"
+ },
+ "various": {
+  "name": "Various",
+  "gender": null,
+  "accent": null,
+  "citizenship": [],
+  "wikidata": null,
+  "source": "placeholder"
+ },
+ "vatsyayana": {
+  "name": "Vatsyayana",
+  "gender": "male",
+  "accent": null,
+  "citizenship": [
+   "Gupta Empire"
+  ],
+  "wikidata": "Q380234",
+  "source": "wikidata"
+ },
+ "victor_hugo": {
+  "name": "Victor Hugo",
+  "gender": "male",
+  "accent": "en-GB",
+  "citizenship": [
+   "France",
+   "Belgium",
+   "United Kingdom"
+  ],
+  "wikidata": "Q535",
+  "source": "wikidata"
+ },
+ "virgil": {
+  "name": "Virgil",
+  "gender": "male",
+  "accent": null,
+  "citizenship": [
+   "Ancient Rome"
+  ],
+  "wikidata": "Q1398",
+  "source": "wikidata"
+ },
+ "voltaire": {
+  "name": "Voltaire",
+  "gender": "male",
+  "accent": null,
+  "citizenship": [
+   "France",
+   "Kingdom of France"
+  ],
+  "wikidata": "Q9068",
+  "source": "wikidata"
+ },
+ "w_e_b_du_bois": {
+  "name": "W. E. B. Du Bois",
+  "gender": "male",
+  "accent": "en-US",
+  "citizenship": [
+   "United States",
+   "Ghana"
+  ],
+  "wikidata": "Q158060",
+  "source": "wikidata"
+ },
+ "walt_whitman": {
+  "name": "Walt Whitman",
+  "gender": "male",
+  "accent": "en-US",
+  "citizenship": [
+   "United States"
+  ],
+  "wikidata": "Q81438",
+  "source": "wikidata"
+ },
+ "washington_irving": {
+  "name": "Washington Irving",
+  "gender": "male",
+  "accent": "en-US",
+  "citizenship": [
+   "United States"
+  ],
+  "wikidata": "Q181667",
+  "source": "wikidata"
+ },
+ "wilhelm_grimm": {
+  "name": "Wilhelm Grimm",
+  "gender": "male",
+  "accent": null,
+  "citizenship": [
+   "Landgraviate of Hesse-Kassel",
+   "Kingdom of Prussia"
+  ],
+  "wikidata": "Q6714",
+  "source": "wikidata-search"
+ },
+ "willa_cather": {
+  "name": "Willa Cather",
+  "gender": "female",
+  "accent": "en-US",
+  "citizenship": [
+   "United States"
+  ],
+  "wikidata": "Q229480",
+  "source": "wikidata"
+ },
+ "william_hope_hodgson": {
+  "name": "William Hope Hodgson",
+  "gender": "male",
+  "accent": "en-GB",
+  "citizenship": [
+   "United Kingdom of Great Britain and Ireland"
+  ],
+  "wikidata": "Q919277",
+  "source": "wikidata"
+ },
+ "william_makepeace_thackeray": {
+  "name": "William Makepeace Thackeray",
+  "gender": "male",
+  "accent": "en-GB",
+  "citizenship": [
+   "United Kingdom of Great Britain and Ireland"
+  ],
+  "wikidata": "Q167768",
+  "source": "wikidata"
+ },
+ "william_shakespeare": {
+  "name": "William Shakespeare",
+  "gender": "male",
+  "accent": "en-GB",
+  "citizenship": [
+   "Kingdom of England"
+  ],
+  "wikidata": "Q692",
+  "source": "wikidata"
+ },
+ "émile_zola": {
+  "name": "Émile Zola",
+  "gender": "male",
+  "accent": "en-GB",
+  "citizenship": [
+   "France",
+   "United Kingdom"
+  ],
+  "wikidata": "Q504",
+  "source": "wikidata"
+ }
+}

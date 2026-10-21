@@ -319,6 +319,20 @@ gutenkg export-web-moots moot.json         # -> ../knowledge_press/web/public/mo
 gutenkg export-web-moots runs/*.json --out /tmp/moots
 ```
 
+Each tree in a pack carries its author's voice, so the forest can read a
+woman's book in a woman's voice and Twain in an American one where the browser
+has one. `author-voices` looks the authors up on Wikidata (gender, and an
+accent from citizenship: `en-US`, `en-GB`, or none for translated authors) and
+writes `corpus/authors/voices.json`. Ingestion does not touch it. Run it again
+after adding authors; set an entry's `"source"` to `"manual"` to keep a
+correction.
+
+```bash
+gutenkg author-voices                      # look up authors not yet in the table
+gutenkg author-voices --refresh            # look everyone up again; manual entries stay
+gutenkg author-voices --dry-run            # print the table instead of writing it
+```
+
 ## Visualisation and Light-Field Rendering
 
 `viz3d` and `quilt` need the 3-D extra: `poetry install --extras viz3d`. The

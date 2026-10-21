@@ -6,7 +6,8 @@ the model's raw reply and the grounding results. The forest needs less and
 must not depend on that format, so this module turns transcripts into small
 moot packs, version :data:`PACK_VERSION`, and keeps an index of them:
 
-- ``moots/<id>.json``: the trees, topic, date and model, and each turn as
+- ``moots/<id>.json``: the trees (with each author's voice: gender and
+  accent from ``corpus/authors/voices.json``), topic, date and model, and each turn as
   the reader sees it -- the snapped text, the speaker (0 or 1), the
   passages it cites, whether it was grounded and the corrections made.
 - ``moots/index.json``: one entry per moot, merged by id.
@@ -21,6 +22,7 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
+from gutenberg_kg.author_voices import read_voices, voice_for
 from gutenberg_kg.export_web import KNOWLEDGE_PRESS_DIR
 from gutenberg_kg.ingest import slugify
 
@@ -50,10 +52,12 @@ def moot_id(transcript: dict) -> str:
     return slugify(" ".join([*names, transcript.get("topic") or ""]))
 
 
-def moot_pack(transcript: dict) -> dict:
+def moot_pack(transcript: dict, voices: dict[str, dict] | None = None) -> dict:
     """Turn a transcript into a moot pack.
 
     :param transcript: A ``converse --out`` transcript.
+    :param voices: The author voice table; each tree's ``voice`` is
+        ``{"gender", "accent"}``, both ``None`` for an author not in it.
     :returns: The pack, JSON-ready.
     :raises MootPackError: When the transcript lacks two trees or any turns.
     """
@@ -89,7 +93,15 @@ def moot_pack(transcript: dict) -> dict:
         "date": (run.get("started") or "")[:10],
         "model": transcript.get("model", ""),
         "backend": run.get("backend", ""),
-        "trees": [{"key": t["key"], "title": t["title"], "author": t["author"]} for t in trees],
+        "trees": [
+            {
+                "key": t["key"],
+                "title": t["title"],
+                "author": t["author"],
+                "voice": voice_for(t["author"], voices or {}),
+            }
+            for t in trees
+        ],
         "turns": turns,
         "stats": transcript.get("stats", {}),
     }
@@ -113,14 +125,18 @@ def index_entry(pack: dict) -> dict:
     }
 
 
-def write_moots(transcripts: list[Path], out_dir: Path) -> list[str]:
+def write_moots(
+    transcripts: list[Path], out_dir: Path, voices: dict[str, dict] | None = None
+) -> list[str]:
     """Write a pack per transcript and merge them into the index.
 
     :param transcripts: ``converse --out`` transcript files.
     :param out_dir: The forest's ``public/moots`` directory; created if missing.
+    :param voices: The author voice table; ``corpus/authors/voices.json`` if omitted.
     :returns: The ids written, in input order.
     :raises MootPackError: When a file is not valid JSON or not a transcript.
     """
+    voices = read_voices() if voices is None else voices
     packs = []
     for path in transcripts:
         try:
@@ -128,7 +144,7 @@ def write_moots(transcripts: list[Path], out_dir: Path) -> list[str]:
         except (OSError, json.JSONDecodeError) as exc:
             raise MootPackError(f"{path}: {exc}") from exc
         try:
-            packs.append(moot_pack(data))
+            packs.append(moot_pack(data, voices))
         except (MootPackError, KeyError, TypeError) as exc:
             raise MootPackError(f"{path}: {exc}") from exc
 
