@@ -22,6 +22,7 @@ from gutenberg_kg.cli import (  # noqa: E402, F401
     cmd_catalog_sync,
     cmd_chat,
     cmd_chunk_diaries,
+    cmd_converse,
     cmd_download,
     cmd_export_embedder,
     cmd_export_swift,

@@ -34,7 +34,11 @@ Request schema
 {
   "query":          str   — natural-language query (required)
   "secret":         str   — required when HANDLER_SECRET is set
-  "corpus":         str   — "all" | "gutenberg" | "diary" | <genre>  (default: "all")
+  "corpus":         str   — "all" | "gutenberg" | "diary" | <genre> | <genre>/<book>
+                            (default: "all")
+                            <genre>/<book> is a catalog.json key and searches that one
+                            book only; "diaries/<title>" searches that one diary's
+                            DiaryKG. A book-scoped query never merges in the diaries.
   "k":              int   — top-k hits  (default: 8)
   "min_score":      float — drop hits below this score  (default: 0.0)
   "semantic_floor": float — discard KG if best hit is below this  (default: 0.0)
@@ -63,6 +67,10 @@ from kg_utils.retrieval import attach_content_by_sqlite
 import runpod
 from gutenberg_kg.diary_meta import DIARY_META as _DIARY_META
 from gutenberg_kg.diary_meta import diary_slug as _diary_slug
+from gutenberg_kg.serve.scope import dense_scope_sql as _dense_scope_sql
+from gutenberg_kg.serve.scope import keep_in_scope as _keep_in_scope
+from gutenberg_kg.serve.scope import resolve_corpus as _resolve_corpus
+from gutenberg_kg.serve.scope import scope_prefix as _scope_prefix
 from gutenberg_kg.synthesis_prompts import HEADER_SEPARATOR, system_prompt
 
 # ---------------------------------------------------------------------------
@@ -384,14 +392,18 @@ def _semantic_search(
     min_score: float = 0.0,
     semantic_floor: float = 0.0,
     genre_filter: str | None = None,
+    book_filter: str | None = None,
 ) -> list[dict]:
     if _DOCKG_TABLE is None:
         return []
     qvec = _embedder.embed_texts([query])[0]
     where = "kind IN ('chunk', 'section') AND file_path NOT LIKE '%reference.md'"
-    if genre_filter:
-        where += f" AND file_path LIKE '{genre_filter}/%'"
-    rows = _table_search(_DOCKG_TABLE, qvec, where, k)
+    # Both filters are validated against the catalog before this call.
+    prefix = _scope_prefix(genre_filter, book_filter)
+    if prefix:
+        where += _dense_scope_sql(prefix)
+    # LIKE treats "_" and "%" in a book name as wildcards; drop the over-match.
+    rows = _keep_in_scope(_table_search(_DOCKG_TABLE, qvec, where, k), prefix)
     hits = _rows_to_hits(rows, "gutenberg", "KGKind.GUTENBERG", min_score)
     _attach_content(hits)
     for h in hits:
@@ -406,15 +418,19 @@ def _semantic_search_diaries(
     k: int,
     min_score: float = 0.0,
     semantic_floor: float = 0.0,
+    slug: str | None = None,
 ) -> list[dict]:
-    if not _DIARY_TABLES:
+    tables = _DIARY_TABLES
+    if slug is not None:
+        tables = {slug: _DIARY_TABLES[slug]} if slug in _DIARY_TABLES else {}
+    if not tables:
         return []
     qvec = _embedder.embed_texts([query])[0]
     where = "kind IN ('chunk', 'section')"
     hits: list[dict] = []
-    for slug, table in _DIARY_TABLES.items():
+    for name, table in tables.items():
         rows = _table_search(table, qvec, where, k)
-        hits.extend(_rows_to_hits(rows, slug, "KGKind.DIARY", min_score))
+        hits.extend(_rows_to_hits(rows, name, "KGKind.DIARY", min_score))
     hits.sort(key=lambda h: h["score"], reverse=True)
     hits = hits[:k]
     _attach_diary_fields(hits)
@@ -555,20 +571,24 @@ def handler(job: dict) -> dict:
     if not query:
         return {"error": "query is required"}
 
-    genre_filter: str | None = None
-    if corpus in _ALL_GENRES:
-        genre_filter = corpus
-    elif corpus not in ("all", "diary", "gutenberg"):
-        return {
-            "error": (
-                f"unknown corpus {corpus!r}; choose: all, gutenberg, diary, "
-                f"or a genre name ({', '.join(sorted(_ALL_GENRES))})"
-            )
-        }
+    scope = _resolve_corpus(corpus, _catalog, _ALL_GENRES)
+    if "error" in scope:
+        return scope
 
     t0_search = time.perf_counter()
 
-    if corpus == "diary":
+    if scope["diary_slug"]:
+        # One diary, searched in its own DiaryKG table.
+        hits = _semantic_search_diaries(
+            query,
+            k=k,
+            min_score=min_score,
+            semantic_floor=semantic_floor,
+            slug=scope["diary_slug"],
+        )
+        _enrich_catalog(hits)
+        kgs_queried = 1
+    elif corpus == "diary":
         hits = _semantic_search_diaries(
             query, k=k, min_score=min_score, semantic_floor=semantic_floor
         )
@@ -580,7 +600,8 @@ def handler(job: dict) -> dict:
             k=k,
             min_score=min_score,
             semantic_floor=semantic_floor,
-            genre_filter=genre_filter,
+            genre_filter=scope["genre_filter"],
+            book_filter=scope["book_filter"],
         )
         _enrich_catalog(hits)
         kgs_queried = 1

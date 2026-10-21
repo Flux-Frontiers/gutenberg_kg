@@ -38,8 +38,12 @@ Request schema
 {
   "query":          str   — natural-language query (required)
   "secret":         str   — required when HANDLER_SECRET is set
-  "corpus":         str   — "all" | "gutenberg" | "diary" | <genre>  (default: "all")
+  "corpus":         str   — "all" | "gutenberg" | "diary" | <genre> | <genre>/<book>
+                            (default: "all")
                             <genre> is any genre name, e.g. "philosophy", "sacred-texts"
+                            <genre>/<book> is a catalog.json key and searches that one
+                            book only; "diaries/<title>" searches that one diary's
+                            DiaryKG. A book-scoped query never merges in the diaries.
   "k":              int   — top-k hits  (default: 8)
   "min_score":      float — drop hits below this score  (default: 0.0)
   "semantic_floor": float — discard KG if best hit is below this  (default: 0.0)
@@ -84,6 +88,10 @@ from gutenberg_kg.serve.diary_browse import diary_chapter as _diary_chapter
 from gutenberg_kg.serve.diary_browse import diary_chapters as _diary_chapters
 from gutenberg_kg.serve.fusion import merge_by_rank as _merge_by_rank
 from gutenberg_kg.serve.image_backends import image_backends
+from gutenberg_kg.serve.scope import dense_scope_sql as _dense_scope_sql
+from gutenberg_kg.serve.scope import keep_in_scope as _keep_in_scope
+from gutenberg_kg.serve.scope import resolve_corpus as _resolve_corpus
+from gutenberg_kg.serve.scope import scope_prefix as _scope_prefix
 from gutenberg_kg.synthesis_prompts import system_prompt
 from gutenberg_kg.vector_store import resolve_vector_paths
 
@@ -541,6 +549,7 @@ def _semantic_search(
     min_score: float = 0.0,
     semantic_floor: float = 0.0,
     genre_filter: str | None = None,
+    book_filter: str | None = None,
 ) -> tuple[list[dict], set[str]]:
     """Hybrid (dense + lexical) search over the consolidated DocKG.
 
@@ -565,6 +574,8 @@ def _semantic_search(
     :param min_score: Drop hits whose cosine similarity is below this.
     :param semantic_floor: If the best *dense* hit is below this, discard the set.
     :param genre_filter: Restrict to a single genre subtree (e.g. ``sacred-texts``).
+    :param book_filter: Restrict to a single ``"<genre>/<book>"`` subtree; wins
+        over ``genre_filter``.
     :returns: Hit dictionaries ranked best-first, shaped like ``hit_to_dict``,
         and the node IDs among them that the lexical channel rescued -- found
         by BM25 outside the dense top ``k``.  The ``corpus="all"`` merge needs
@@ -574,12 +585,14 @@ def _semantic_search(
         return [], set()
     qvec = _embedder.embed_texts([query])[0]
     where = "kind IN ('chunk', 'section') AND file_path NOT LIKE '%reference.md'"
-    if genre_filter:
-        # genre_filter is validated against _ALL_GENRES before this call.
-        where += f" AND file_path LIKE '{genre_filter}/%'"
+    # Both filters are validated against the catalog before this call.
+    prefix = _scope_prefix(genre_filter, book_filter)
+    if prefix:
+        where += _dense_scope_sql(prefix)
 
     # Dense channel — oversample so RRF has rank headroom for the lexical blend.
-    dense_rows = _table_search(_DOCKG_TABLE, qvec, where, k * 3)
+    # LIKE treats "_" and "%" in a book name as wildcards; drop the over-match.
+    dense_rows = _keep_in_scope(_table_search(_DOCKG_TABLE, qvec, where, k * 3), prefix)
 
     # Lexical channel — BM25 over the same genre/kind-scoped subset (pushed down
     # into the FTS5 SQL), returning chunk IDs ordered best-first.
@@ -589,7 +602,7 @@ def _semantic_search(
             lex_ids = _DOCKG_STORE.search_lexical(
                 query,
                 limit=k * 3,
-                file_prefixes=[f"{genre_filter}/"] if genre_filter else None,
+                file_prefixes=[prefix] if prefix else None,
                 node_kinds=("chunk", "section"),
             )
         except Exception as exc:  # noqa: BLE001 — degrade to dense-only on any error
@@ -606,7 +619,7 @@ def _semantic_search(
             lex_rows = _table_search(
                 _DOCKG_TABLE, qvec, f"{where} AND id IN ({id_list})", len(missing)
             )
-            for r in lex_rows:
+            for r in _keep_in_scope(lex_rows, prefix):
                 row_by_id.setdefault(r["id"], r)
         lex_ids = [i for i in lex_ids if i in row_by_id]  # drop out-of-scope IDs
         # What the dense channel would have returned on its own.  A lexical hit
@@ -638,6 +651,7 @@ def _semantic_search_diaries(
     k: int,
     min_score: float = 0.0,
     semantic_floor: float = 0.0,
+    slug: str | None = None,
 ) -> list[dict]:
     """Pure cosine search across the DiaryKG vector tables, merged by score.
 
@@ -649,16 +663,21 @@ def _semantic_search_diaries(
     :param k: Number of hits to return across all diaries.
     :param min_score: Drop hits whose cosine similarity is below this.
     :param semantic_floor: If the best hit is below this, discard the whole set.
+    :param slug: Search only this diary's table (a ``DIARY_META`` slug); ``None``
+        searches them all. A slug with no open table returns no hits.
     :returns: Hit dictionaries ranked best-first across all diary KGs.
     """
-    if not _DIARY_TABLES:
+    tables = _DIARY_TABLES
+    if slug is not None:
+        tables = {slug: _DIARY_TABLES[slug]} if slug in _DIARY_TABLES else {}
+    if not tables:
         return []
     qvec = _embedder.embed_texts([query])[0]
     where = "kind IN ('chunk', 'section')"
     hits: list[dict] = []
-    for slug, table in _DIARY_TABLES.items():
+    for name, table in tables.items():
         rows = _table_search(table, qvec, where, k)
-        hits.extend(_rows_to_hits(rows, slug, "KGKind.DIARY", min_score))
+        hits.extend(_rows_to_hits(rows, name, "KGKind.DIARY", min_score))
     hits.sort(key=lambda h: h["score"], reverse=True)
     hits = hits[:k]
     _attach_diary_fields(hits)  # clean text + timestamp from each diary's SQLite
@@ -970,20 +989,24 @@ def handler(job: dict) -> dict:
     if not query:
         return {"error": "query is required"}
 
-    genre_filter: str | None = None
-    if corpus in _ALL_GENRES:
-        genre_filter = corpus
-    elif corpus not in ("all", "diary", "gutenberg"):
-        return {
-            "error": (
-                f"unknown corpus {corpus!r}; choose: all, gutenberg, diary, "
-                f"or a genre name ({', '.join(sorted(_ALL_GENRES))})"
-            )
-        }
+    scope = _resolve_corpus(corpus, _catalog, _ALL_GENRES)
+    if "error" in scope:
+        return scope
 
     t0_search = time.perf_counter()
 
-    if corpus == "diary":
+    if scope["diary_slug"]:
+        # One diary, searched in its own DiaryKG table.
+        hits = _semantic_search_diaries(
+            query,
+            k=k,
+            min_score=min_score,
+            semantic_floor=semantic_floor,
+            slug=scope["diary_slug"],
+        )
+        _enrich_catalog(hits)
+        kgs_queried = 1
+    elif corpus == "diary":
         # Diaries only — semantic-first across the DiaryKG vector tables.
         hits = _semantic_search_diaries(
             query, k=k, min_score=min_score, semantic_floor=semantic_floor
@@ -998,7 +1021,8 @@ def handler(job: dict) -> dict:
             k=k,
             min_score=min_score,
             semantic_floor=semantic_floor,
-            genre_filter=genre_filter,
+            genre_filter=scope["genre_filter"],
+            book_filter=scope["book_filter"],
         )
         _enrich_catalog(hits)
         kgs_queried = 1  # the consolidated 'gutenberg' DocKG

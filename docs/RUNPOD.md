@@ -132,7 +132,7 @@ curl -s -X POST \
 | `op` | str | — | `models` returns available synthesis models |
 | `query` | str | — | Natural-language query (required) |
 | `secret` | str | — | Required if `HANDLER_SECRET` is set |
-| `corpus` | str | `all` | `all`, `gutenberg`, `diary`, or a genre slug |
+| `corpus` | str | `all` | `all`, `gutenberg`, `diary`, a genre slug, a `<genre>/<book>` catalog key (one book), or `diaries/<title>` (one diary) |
 | `k` | int | `8` | Top-k hits to return |
 | `min_score` | float | `0.0` | Drop hits below this score |
 | `semantic_floor` | float | `0.0` | Discard the KG if its best hit is below this |
