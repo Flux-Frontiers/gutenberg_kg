@@ -222,12 +222,14 @@ def _render_header(console, keys: list[str], topic: str | None, backend: str, mo
     )
 
 
-def _render_utterance(console, u, first_key: str) -> None:
+def _render_utterance(console, u, first_key: str, names: dict[str, str] | None = None) -> None:
     """Print one utterance as a speech bubble, the first tree left, the second right.
 
     :param console: A Rich ``Console``.
     :param u: The utterance.
     :param first_key: The first speaker's key, which takes the left side.
+    :param names: Tree name -> color. Each name in the text is set bold and
+        italic in its tree's color, so a reader sees who is addressed.
     """
     from rich.align import Align
     from rich.console import Group
@@ -239,6 +241,8 @@ def _render_utterance(console, u, first_key: str) -> None:
     body = Text(u.text)
     body.highlight_regex(_QUOTED, "bold")
     body.highlight_regex(_TAGS, "dim cyan")
+    for name, color in (names or {}).items():
+        body.highlight_words([name], f"bold italic {color}")
     notes = Text()
     labels = {r["tag"]: r["label"] for r in u.retrieved}
     if u.cited:
@@ -255,7 +259,7 @@ def _render_utterance(console, u, first_key: str) -> None:
     width = min(console.width, max(40, int(console.width * 0.72)))
     panel = Panel(
         Group(body, Text(""), notes) if notes else body,
-        title=Text(f"[{u.turn}] {u.title}", style=f"bold {style}"),
+        title=Text(f"[{u.turn}] {u.title}", style=f"bold italic {style}"),
         title_align="left" if left else "right",
         border_style=style,
         width=width,
@@ -408,7 +412,14 @@ def converse_cmd(
             console = None
     if console is not None:
         _render_header(console, [book_a, book_b], topic, backend, model_name)
-        show = lambda u: _render_utterance(console, u, book_a)  # noqa: E731
+        side = {book_a: _TREE_STYLES[0], book_b: _TREE_STYLES[1]}
+        # A tree's name as the key spells it, then as the catalog titles it once it speaks.
+        names = {key.split("/", 1)[-1]: color for key, color in side.items()}
+
+        def show(u) -> None:
+            names[u.title] = side[u.speaker]
+            _render_utterance(console, u, book_a, names)
+
     else:
         click.echo(f"Speaking through {backend}: {model_name or 'the backend default'}")
         if topic:

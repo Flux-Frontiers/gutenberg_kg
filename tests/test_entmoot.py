@@ -975,3 +975,50 @@ def test_machine_description_falls_back_without_sysctl(monkeypatch):
 
     monkeypatch.setattr(subprocess, "run", no_sysctl)
     assert cmd_converse._machine_description()  # platform's processor or machine
+
+
+# ---------------------------------------------------------------------------
+# The persona: the book speaks in its author's voice
+# ---------------------------------------------------------------------------
+
+
+def _tree(title, author):
+    return entmoot.Tree(key=f"x/{title}", title=title, author=author, genre="x")
+
+
+def test_the_book_speaks_in_its_authors_voice():
+    p = entmoot.persona(
+        _tree("The Diary of Samuel Pepys", "Samuel Pepys"), _tree("Walden", "Thoreau"), None
+    )
+    assert p.startswith("You are the book The Diary of Samuel Pepys by Samuel Pepys,")
+    assert "You speak with Samuel Pepys's voice: in the first person where" in p
+    assert "in Samuel Pepys's own style and diction" in p
+
+
+def test_a_book_with_no_named_author_speaks_as_itself():
+    other = _tree("Walden", "Thoreau")
+    for author in ("", "Various", "ANONYMOUS"):
+        p = entmoot.persona(_tree("Poems", author), other, "the sea")
+        assert p.startswith("You are the book Poems, speaking as an old, slow tree")
+        assert "voice" not in p
+        assert "The moot has gathered to discuss: the sea." in p
+
+
+def test_tree_names_are_bold_italic_in_their_own_color():
+    from rich.console import Console
+
+    from gutenberg_kg.cli import cmd_converse
+
+    synth = KeyedSynth(
+        {
+            "Thus Spake Zarathustra": ["The Diary of Somebody, hear me [s1]."],
+            "The Diary of Somebody": ["Thus Spake Zarathustra, I hear [s1]."],
+        }
+    )
+    t = run_moot(FakeClient(), synth, [A, B], None, 2)
+    names = {"Thus Spake Zarathustra": "green", "The Diary of Somebody": "magenta"}
+    con = Console(width=100, force_terminal=True, color_system="standard", record=True)
+    cmd_converse._render_utterance(con, t.utterances[0], A, names)
+    out = con.export_text(styles=True)
+    assert "\x1b[1;3;35mThe Diary of Somebody\x1b[0m, hear me" in out  # addressee in its color
+    assert "\x1b[1;3;32m [1] Thus Spake Zarathustra " in out  # speaker title, bold italic

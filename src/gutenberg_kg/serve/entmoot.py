@@ -310,19 +310,36 @@ def retrieval_query(topic: str | None, incoming: str) -> str:
     return f"{topic} {incoming}" if topic else incoming
 
 
+#: Author values that name no one; a book with one speaks as itself, with no voice line.
+_NO_AUTHOR = frozenset({"various", "anonymous", "unknown"})
+
+
 def persona(tree: Tree, other: Tree, topic: str | None) -> str:
     """The system prompt for one tree.
+
+    The tree is the book, speaking in its author's voice: first person where
+    the author wrote in the first person, and in the author's style. With no
+    named author (``""`` or a placeholder such as ``Various``) the book speaks
+    as itself.
 
     :param tree: The speaking tree.
     :param other: The tree it is talking to.
     :param topic: The seed topic, or ``None``.
     :returns: The system prompt.
     """
-    by = f" by {tree.author}" if tree.author else ""
+    named = tree.author and tree.author.casefold() not in _NO_AUTHOR
+    by = f" by {tree.author}" if named else ""
+    voice = (
+        f"You speak with {tree.author}'s voice: in the first person where "
+        f"{tree.author} wrote in the first person, and in {tree.author}'s own style "
+        "and diction. "
+        if named
+        else ""
+    )
     framing = f"The moot has gathered to discuss: {topic}. " if topic else ""
     return (
         f"You are the book {tree.title}{by}, speaking as an old, slow tree in a moot "
-        f"with another book, {other.title}. {framing}"
+        f"with another book, {other.title}. {voice}{framing}"
         "You speak only from the passages given to you this turn. "
         "Cite every claim with its passage tag, for example [s2]. "
         "Quote phrases from your passages exactly, in double quotes, at most "
