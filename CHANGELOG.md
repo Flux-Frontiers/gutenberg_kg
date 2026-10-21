@@ -42,6 +42,27 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   Grounding is still measured on the model's raw reply, kept as `raw_text`;
   each correction is recorded in the utterance's `snaps`, and the stats add
   `quotes_snapped` and `quotes_unquoted`.
+- **Moots print as a conversation.** On a terminal, `gutenkg converse`
+  prints each turn as a Rich speech bubble as it arrives: the first book on
+  the left in green, the second on the right in magenta, the turn number
+  and title in the border, quoted words in bold and citation tags dimmed,
+  with the cited sections, any ungrounded warning and each snap or unquote
+  underneath. A header rule names the books, topic and model, and a
+  grounding table closes the moot. Output that is not a terminal (pipes,
+  logs, tests), or any run with the new `--plain`, prints the plain text as
+  before.
+- **A moot ends with a run summary**: start time, elapsed wall time, the
+  average and slowest turn, backend and model, worker, host, machine (CPU
+  and RAM), OS, and Python and gutenberg-kg versions. It prints as a table
+  on a terminal and as plain lines otherwise, and `--out` records it under
+  `run`, with every turn's seconds.
+- **Quotes are at least three words.** The persona and the retry reminder
+  ask for it, and snapping removes the quotation marks from any shorter
+  quote, which is too short to check, so it reads as paraphrase. Every
+  unquote now records its `reason` (`not in source`, `ellipsis` or
+  `under 3 words`), and the stats count the short ones apart, as
+  `quotes_too_short`, so `quotes_unquoted` still means a checked quote that
+  failed.
 - **A tree can quote itself.** `[oN]` now names any earlier turn of the
   moot, the speaker's own as well as the other tree's; turn numbers are
   unique, so the tag stays unambiguous. A quote of the speaker's own turn
