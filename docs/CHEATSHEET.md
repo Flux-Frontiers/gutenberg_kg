@@ -308,6 +308,17 @@ gutenkg export-web-books                   # -> ../knowledge_press/web/public/bo
 make export-web-books                      # the same; KNOWLEDGE_PRESS_DIR moves the checkout
 ```
 
+The forest plays saved moots from `public/moots/`. `export-web-moots` turns
+`gutenkg converse --out` transcripts into moot packs: what the reader sees
+(the corrected text, citations, speakers), never the raw replies or prompts.
+A pack's id is both book names and the topic, so re-running a pairing on the
+same topic replaces its pack; `index.json` is merged, not rewritten.
+
+```bash
+gutenkg export-web-moots moot.json         # -> ../knowledge_press/web/public/moots/
+gutenkg export-web-moots runs/*.json --out /tmp/moots
+```
+
 ## Visualisation and Light-Field Rendering
 
 `viz3d` and `quilt` need the 3-D extra: `poetry install --extras viz3d`. The

@@ -65,6 +65,15 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   `under 3 words`), and the stats count the short ones apart, as
   `quotes_too_short`, so `quotes_unquoted` still means a checked quote that
   failed.
+- **`gutenkg export-web-moots`** writes `converse --out` transcripts as moot
+  packs for the Knowledge Press Forest (`../knowledge_press/web/public/moots/`
+  by default, moved by `KNOWLEDGE_PRESS_DIR`, like the other web exports).
+  A pack holds what the reader sees: the trees by worker key, the topic,
+  date, model and backend, and each turn's corrected text, speaker,
+  citations, grounding and corrections. It never carries the raw reply,
+  prompts or retrieval queries. The id is a slug of both book names and the
+  topic, and `index.json` is merged by id, so re-running a pairing on the
+  same topic replaces its pack.
 - **A tree speaks in its author's voice.** The persona still makes each
   tree the book, and now adds that it speaks with its author's voice: in
   the first person where the author wrote in the first person, and in the
