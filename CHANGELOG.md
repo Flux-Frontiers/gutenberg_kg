@@ -65,6 +65,20 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   `under 3 words`), and the stats count the short ones apart, as
   `quotes_too_short`, so `quotes_unquoted` still means a checked quote that
   failed.
+- **`gutenkg author-voices`** records each author's voice for moots in
+  `corpus/authors/voices.json`, beside the author pages and apart from
+  ingestion. Gender comes from Wikidata's sex or gender (P21) and a coarse
+  accent from country of citizenship (P27): `en-US` for an American
+  citizenship (which wins, as for Henry James), `en-GB` for a British, Irish
+  or Commonwealth one, and none otherwise, so translated authors keep the
+  system's accent. Authors are found through their pages' Wikipedia links in
+  batches; the few without one are searched by name and listed for review,
+  and placeholders such as `Various` are not looked up. Each entry keeps its
+  Wikidata item and citizenship labels for review. Existing entries are kept
+  unless `--refresh`, and an entry marked `"source": "manual"` is never
+  overwritten. The first run found 133 men, 15 women, 37 American and 57
+  British, Irish or Commonwealth authors among 150. `export-web-moots` stamps
+  each tree in a moot pack with its author's `voice` (`gender`, `accent`).
 - **`gutenkg export-web-moots`** writes `converse --out` transcripts as moot
   packs for the Knowledge Press Forest (`../knowledge_press/web/public/moots/`
   by default, moved by `KNOWLEDGE_PRESS_DIR`, like the other web exports).
