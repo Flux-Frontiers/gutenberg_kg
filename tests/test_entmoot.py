@@ -1082,3 +1082,49 @@ def test_the_persona_says_book_not_tree_and_asks_for_an_answer():
     assert "Answer the point the other book has just made" in p
     assert "Do not argue about how you were quoted unless you truly were misquoted" in p
     assert "Address the other book as The Prince." in p
+
+
+# ---------------------------------------------------------------------------
+# Turn intents: open, vary the middle, close
+# ---------------------------------------------------------------------------
+
+
+def test_turn_intent_schedule():
+    assert [entmoot.turn_intent(n, 8) for n in range(1, 9)] == [
+        "open", "answer", "ask", "example", "concede", "answer", "close", "close",
+    ]  # fmt: skip
+    assert [entmoot.turn_intent(n, 2) for n in (1, 2)] == ["open", "close"]
+    assert [entmoot.turn_intent(n, 3) for n in (1, 2, 3)] == ["open", "close", "close"]
+    assert set(entmoot.INTENTS) >= {entmoot.turn_intent(n, 40) for n in range(1, 41)}
+
+
+def test_a_turn_is_told_its_move_and_names_the_other_book():
+    tree, other = _tree("Meditations", "Marcus Aurelius"), _tree("The Prince", "Machiavelli")
+    said = types.SimpleNamespace(turn=2, title="The Prince", text="Fear is surer than love.")
+    msgs = entmoot.build_messages(tree, other, "virtue", [], "", [], said, "ask")
+    assert msgs[1]["content"].endswith(
+        "This turn: Answer briefly, then put one pointed question to The Prince about what it has just said."
+    )
+    opening = entmoot.build_messages(tree, other, "virtue", [], "", [], None, "open")
+    assert "Open the moot on virtue" in opening[1]["content"]
+    assert "This turn:" not in opening[1]["content"]
+
+
+def test_a_moot_records_each_turns_intent():
+    t = run_moot(FakeClient(), FakeSynth(), [A, B], "virtue", 6)
+    assert [u.intent for u in t.utterances] == [
+        "open",
+        "answer",
+        "ask",
+        "example",
+        "close",
+        "close",
+    ]
+    assert t.to_dict()["utterances"][2]["intent"] == "ask"
+
+
+def test_the_persona_forbids_repeating_a_sentence():
+    p = entmoot.persona(
+        _tree("Meditations", "Marcus Aurelius"), _tree("The Prince", "Machiavelli"), "virtue"
+    )
+    assert "Never repeat a sentence you have already said in this moot." in p
