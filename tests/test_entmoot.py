@@ -142,7 +142,8 @@ class TestTopicSeeding:
         synth = FakeSynth(["Opening line [s1].", "Second line [s2]."])
         t = run_moot(client, synth, [A, B], "jealousy", 3)
         assert client.calls[2] == ("jealousy Opening line [s1].", B, 6)
-        assert client.calls[3] == ("jealousy Second line [s2].", A, 6)
+        # Overfetched: by turn 3 this tree has cited a passage, so fresh ones are sought.
+        assert client.calls[3] == ("jealousy Second line [s2].", A, 6 * entmoot.FRESH_OVERFETCH)
         assert t.utterances[0].query == "jealousy"
 
     def test_without_topic_later_queries_use_the_incoming_line_only(self):
@@ -668,7 +669,7 @@ def test_quote_cap_is_in_the_persona_and_reminder():
     synth = FakeSynth(["Bad [s9].", "Good [s1]."])
     run_moot(FakeClient(), synth, [A, B], "jealousy", 2)
     calls = synth.turn_calls()
-    assert f"at most {entmoot.MAX_QUOTES} quoted phrases" in calls[0][0]["content"]
+    assert f"at least one in every turn and at most {entmoot.MAX_QUOTES}" in calls[0][0]["content"]
     assert f"at most {entmoot.MAX_QUOTES} quoted phrases" in calls[1][-1]["content"]
 
 
@@ -999,7 +1000,7 @@ def test_a_book_with_no_named_author_speaks_as_itself():
     other = _tree("Walden", "Thoreau")
     for author in ("", "Various", "ANONYMOUS"):
         p = entmoot.persona(_tree("Poems", author), other, "the sea")
-        assert p.startswith("You are the book Poems, speaking as an old, slow tree")
+        assert p.startswith("You are the book Poems, in a moot: a slow, considered conversation")
         assert "voice" not in p
         assert "The moot has gathered to discuss: the sea." in p
 
@@ -1022,3 +1023,62 @@ def test_tree_names_are_bold_italic_in_their_own_color():
     out = con.export_text(styles=True)
     assert "\x1b[1;3;35mThe Diary of Somebody\x1b[0m, hear me" in out  # addressee in its color
     assert "\x1b[1;3;32m [1] Thus Spake Zarathustra " in out  # speaker title, bold italic
+
+
+# ---------------------------------------------------------------------------
+# Fresh passages and the persona's wording
+# ---------------------------------------------------------------------------
+
+
+class RankedClient(FakeClient):
+    """Always the same ranking, so a tree that re-asked would get its old passages first."""
+
+    def query(self, query, *, corpus="all", k=8, **_kw):
+        self.calls.append((query, corpus, k))
+        hits = [
+            {"node_id": f"{corpus}#{i}", "name": f"chunk:{i:04d}", "content": f"passage {i}",
+             "title": corpus.split("/", 1)[1], "author": "Someone", "genre": corpus.split("/", 1)[0]}
+            for i in range(1, 13)
+        ]  # fmt: skip
+        return {"hits": hits[:k]}
+
+
+def test_retrieve_puts_cited_passages_last():
+    client = RankedClient()
+    tree = entmoot.Tree(key=A, title="Z", author="", genre="philosophy")
+    fresh = entmoot.retrieve(client, tree, "virtue", 3)
+    assert [p.node_id for p in fresh] == [f"{A}#1", f"{A}#2", f"{A}#3"]
+    assert client.calls[-1][2] == 3  # nothing cited yet: no overfetch
+    again = entmoot.retrieve(client, tree, "virtue", 3, cited={f"{A}#1", f"{A}#3"})
+    assert [p.node_id for p in again] == [f"{A}#2", f"{A}#4", f"{A}#5"]
+    assert [p.tag for p in again] == ["s1", "s2", "s3"]  # retagged
+    assert client.calls[-1][2] == 3 * entmoot.FRESH_OVERFETCH
+
+
+def test_cited_passages_fill_in_when_nothing_fresh_is_left():
+    client = RankedClient()
+    tree = entmoot.Tree(key=A, title="Z", author="", genre="philosophy")
+    every = {f"{A}#{i}" for i in range(1, 13)} - {f"{A}#6"}
+    got = entmoot.retrieve(client, tree, "virtue", 3, cited=every)
+    assert [p.node_id for p in got] == [f"{A}#6", f"{A}#1", f"{A}#2"]
+
+
+def test_a_moot_keeps_each_trees_citations_apart():
+    client = RankedClient()
+    synth = KeyedSynth(
+        {"Thus Spake Zarathustra": ["Mine [s1]."], "The Diary of Somebody": ["Mine [s1]."]}
+    )
+    t = run_moot(client, synth, [A, B], "virtue", 4)
+    firsts = [u.retrieved[0]["node_id"] for u in t.utterances]
+    # Each tree cites its top passage, then gets a fresh one next time.
+    assert firsts == [f"{A}#1", f"{B}#1", f"{A}#2", f"{B}#2"]
+
+
+def test_the_persona_says_book_not_tree_and_asks_for_an_answer():
+    p = entmoot.persona(
+        _tree("Meditations", "Marcus Aurelius"), _tree("The Prince", "Machiavelli"), "virtue"
+    )
+    assert "tree" not in p.lower()
+    assert "Answer the point the other book has just made" in p
+    assert "Do not argue about how you were quoted unless you truly were misquoted" in p
+    assert "Address the other book as The Prince." in p

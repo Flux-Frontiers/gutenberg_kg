@@ -65,6 +65,17 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   `under 3 words`), and the stats count the short ones apart, as
   `quotes_too_short`, so `quotes_unquoted` still means a checked quote that
   failed.
+- **Moots bring fresh passages and argue the point.** The strongest matches
+  for a topic were the same every turn, so a book repeated its best lines
+  (Machiavelli's "to appear merciful is useful" four times in eight turns).
+  A book's later retrievals now ask the worker for twice as many hits
+  (`FRESH_OVERFETCH`) and put passages it has already cited last, so each
+  turn brings new text. The persona no longer calls a book a tree, which
+  leaked into speech ("thou art an old tree"); it asks each book to answer
+  the point the other just made rather than argue about how it was quoted,
+  a tic in which nearly every turn opened "thou misquote me"; and it asks
+  for at least one exact quote in every turn, since paraphrase cannot be
+  checked.
 - **`gutenkg author-voices`** records each author's voice for moots in
   `corpus/authors/voices.json`, beside the author pages and apart from
   ingestion. Gender comes from Wikidata's sex or gender (P21) and a coarse
