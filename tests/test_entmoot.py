@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import json
+import types
 
 import pytest
 from click.testing import CliRunner
@@ -247,6 +248,12 @@ class TestRetry:
 # ---------------------------------------------------------------------------
 
 
+@pytest.fixture(autouse=True)
+def _no_shell_backend(monkeypatch):
+    """Keep the developer's SYNTH_BACKEND out of the CLI's default backend."""
+    monkeypatch.delenv("SYNTH_BACKEND", raising=False)
+
+
 @pytest.fixture
 def cli():
     pytest.importorskip("kg_rag", reason="kg_rag not installed")
@@ -278,7 +285,7 @@ def test_converse_unknown_book_is_a_clean_error(cli, monkeypatch):
             raise WorkerError("unknown corpus 'philosophy/Nope'")
 
     monkeypatch.setattr(cmd_converse, "_make_client", lambda url: Rejecting())
-    monkeypatch.setattr(cmd_converse, "_make_synth", lambda: FakeSynth())
+    monkeypatch.setattr(cmd_converse, "_make_synth", lambda backend: FakeSynth())
     result = CliRunner().invoke(cli, ["converse", "philosophy/Nope", A])
     assert result.exit_code == 1
     assert "worker error: unknown corpus" in result.output
@@ -290,7 +297,7 @@ def test_converse_writes_a_transcript(cli, monkeypatch, tmp_path):
 
     monkeypatch.setattr(cmd_converse, "_make_client", lambda url: FakeClient())
     synth = FakeSynth()
-    monkeypatch.setattr(cmd_converse, "_make_synth", lambda: synth)
+    monkeypatch.setattr(cmd_converse, "_make_synth", lambda backend: synth)
     out = tmp_path / "moot.json"
     result = CliRunner().invoke(
         cli, ["converse", A, B, "--topic", "jealousy", "--turns", "2", "--out", str(out)]
@@ -309,7 +316,7 @@ def test_converse_model_overrides_the_default(cli, monkeypatch):
 
     synth = FakeSynth()
     monkeypatch.setattr(cmd_converse, "_make_client", lambda url: FakeClient())
-    monkeypatch.setattr(cmd_converse, "_make_synth", lambda: synth)
+    monkeypatch.setattr(cmd_converse, "_make_synth", lambda backend: synth)
     result = CliRunner().invoke(cli, ["converse", A, B, "--turns", "2", "--model", "small"])
     assert result.exit_code == 0, result.output
     assert synth.models == {"small"}
@@ -318,7 +325,109 @@ def test_converse_model_overrides_the_default(cli, monkeypatch):
 def test_converse_help_names_the_default_model(cli):
     result = CliRunner().invoke(cli, ["converse", "--help"])
     assert entmoot.DEFAULT_MODEL in result.output
-    assert "SYNTH_MODEL" in result.output  # documented as not applying
+    assert "SYNTH_MODEL" in result.output  # documented as not applying on omlx
+    for backend in ("omlx", "ollama", "openai"):
+        assert backend in result.output
+
+
+class ConfiguredSynth(FakeSynth):
+    """A FakeSynth that carries a TextConfig, as TextSynthesizer does."""
+
+    def __init__(self, default_model):
+        super().__init__()
+        self._cfg = types.SimpleNamespace(resolved_model=lambda: default_model)
+
+
+def test_converse_off_omlx_uses_the_backend_default_model(cli, monkeypatch, tmp_path):
+    from gutenberg_kg.cli import cmd_converse
+
+    monkeypatch.setenv("OPENAI_API_KEY", "test-key")
+    seen = []
+    synth = ConfiguredSynth("gpt-4o-mini")
+    monkeypatch.setattr(cmd_converse, "_make_client", lambda url: FakeClient())
+    monkeypatch.setattr(cmd_converse, "_make_synth", lambda backend: seen.append(backend) or synth)
+    out = tmp_path / "moot.json"
+    result = CliRunner().invoke(
+        cli, ["converse", A, B, "--turns", "2", "--backend", "openai", "--out", str(out)]
+    )
+    assert result.exit_code == 0, result.output
+    assert seen == ["openai"]
+    assert synth.models == {None}  # the synthesizer's own default applies
+    assert json.loads(out.read_text())["model"] == "gpt-4o-mini"
+    assert "Speaking through openai: gpt-4o-mini" in result.output
+
+
+def test_converse_model_overrides_any_backend(cli, monkeypatch):
+    from gutenberg_kg.cli import cmd_converse
+
+    synth = ConfiguredSynth("llama-default")
+    monkeypatch.setattr(cmd_converse, "_make_client", lambda url: FakeClient())
+    monkeypatch.setattr(cmd_converse, "_make_synth", lambda backend: synth)
+    result = CliRunner().invoke(
+        cli, ["converse", A, B, "--turns", "2", "--backend", "ollama", "--model", "mine"]
+    )
+    assert result.exit_code == 0, result.output
+    assert synth.models == {"mine"}
+
+
+def test_converse_backend_defaults_to_synth_backend(cli, monkeypatch):
+    from gutenberg_kg.cli import cmd_converse
+
+    seen = []
+    monkeypatch.setenv("SYNTH_BACKEND", "ollama")
+    monkeypatch.setattr(cmd_converse, "_make_client", lambda url: FakeClient())
+    monkeypatch.setattr(
+        cmd_converse, "_make_synth", lambda backend: seen.append(backend) or FakeSynth()
+    )
+    result = CliRunner().invoke(cli, ["converse", A, B, "--turns", "2"])
+    assert result.exit_code == 0, result.output
+    assert seen == ["ollama"]
+
+
+def test_converse_unknown_synth_backend_falls_back_to_omlx(cli, monkeypatch):
+    from gutenberg_kg.cli import cmd_converse
+
+    seen = []
+    monkeypatch.setenv("SYNTH_BACKEND", "nonsense")
+    monkeypatch.setattr(cmd_converse, "_make_client", lambda url: FakeClient())
+    monkeypatch.setattr(
+        cmd_converse, "_make_synth", lambda backend: seen.append(backend) or FakeSynth()
+    )
+    result = CliRunner().invoke(cli, ["converse", A, B, "--turns", "2"])
+    assert result.exit_code == 0, result.output
+    assert seen == ["omlx"]
+
+
+def test_converse_rejects_an_unknown_backend(cli):
+    result = CliRunner().invoke(cli, ["converse", A, B, "--backend", "nonsense"])
+    assert result.exit_code == 2
+    assert "nonsense" in result.output
+
+
+def test_converse_openai_without_a_key_is_a_clean_error(cli, monkeypatch):
+    from gutenberg_kg.cli import cmd_converse
+
+    monkeypatch.delenv("OPENAI_API_KEY", raising=False)
+    monkeypatch.delenv("SYNTH_API_KEY", raising=False)
+    monkeypatch.setattr(cmd_converse, "_make_client", lambda url: FakeClient())
+    monkeypatch.setattr(cmd_converse, "_make_synth", lambda backend: FakeSynth())
+    result = CliRunner().invoke(cli, ["converse", A, B, "--backend", "openai"])
+    assert result.exit_code == 2
+    assert "needs OPENAI_API_KEY or SYNTH_API_KEY" in result.output
+
+
+def test_make_synth_routes_by_backend(monkeypatch):
+    from gutenberg_kg.cli import cmd_converse
+
+    monkeypatch.setenv("SYNTH_BACKEND", "omlx")
+    monkeypatch.setenv("SYNTH_ENDPOINT", "http://example.invalid:9999/v1")
+    monkeypatch.setenv("OPENAI_API_KEY", "test-key")
+    same = cmd_converse._make_synth("omlx")
+    other = cmd_converse._make_synth("openai")
+    assert same._cfg.backend.value == "omlx"
+    assert same._cfg.endpoint == "http://example.invalid:9999/v1"  # full env config
+    assert other._cfg.backend.value == "openai"
+    assert other._cfg.api_key == "test-key"  # pragma: allowlist secret
 
 
 # ---------------------------------------------------------------------------
@@ -558,7 +667,7 @@ def test_converse_rejects_the_same_book_twice(cli, monkeypatch):
     from gutenberg_kg.cli import cmd_converse
 
     monkeypatch.setattr(cmd_converse, "_make_client", lambda url: FakeClient())
-    monkeypatch.setattr(cmd_converse, "_make_synth", lambda: FakeSynth())
+    monkeypatch.setattr(cmd_converse, "_make_synth", lambda backend: FakeSynth())
     result = CliRunner().invoke(cli, ["converse", A, A])
     assert result.exit_code == 2
     assert "the two books must differ" in result.output
