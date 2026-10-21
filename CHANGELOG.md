@@ -26,6 +26,12 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   is retried once, and the same book cannot be seated twice. The default
   model is `Qwen3.8-27B-4bit`; `--model` overrides it. `--out` writes a JSON
   transcript with grounding stats.
+- **`gutenkg converse --backend`** picks the model provider, `omlx`, `ollama`
+  or `openai`, the same choices the chat app offers, so a moot can run
+  without a local model. It defaults to `SYNTH_BACKEND`, then `omlx`. Off
+  omlx, the backend's own default model applies unless `--model` names one,
+  and `openai` without `OPENAI_API_KEY` or `SYNTH_API_KEY` is a clean usage
+  error.
 
 ## [1.27.1] - 2026-10-20
 

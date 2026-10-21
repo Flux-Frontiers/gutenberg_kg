@@ -219,6 +219,7 @@ gutenkg converse "philosophy/Thus Spake Zarathustra" "philosophy/Meditations" \
     --topic "jealousy"                                       # 8 turns
 gutenkg converse "<genre>/<book>" "<genre>/<book>" --turns 12 --out moot.json
 gutenkg converse ... --model Qwen3-4B-Instruct-2507-MLX-8bit # faster, quotes less reliably
+gutenkg converse ... --backend openai                       # no local model needed
 ```
 
 Book keys are catalog keys, `<genre>/<book>`; a diary is `diaries/<title>`.
@@ -230,7 +231,8 @@ titles contain an em dash.
 | `--topic` | none | Subject the moot discusses; anchors every retrieval |
 | `--turns` | `8` | Total utterances (2-40) |
 | `--k` | `6` | Passages per turn |
-| `--model` | `Qwen3.8-27B-4bit` | oMLX model id; `SYNTH_MODEL` does not apply |
+| `--backend` | `$SYNTH_BACKEND`, then `omlx` | Model provider: `omlx`, `ollama` or `openai` (needs `OPENAI_API_KEY` or `SYNTH_API_KEY`) |
+| `--model` | `Qwen3.8-27B-4bit` on omlx, else the backend's default | Model id; on omlx `SYNTH_MODEL` does not apply |
 | `--temperature` | `0.6` | Sampling temperature |
 | `--worker` | `$KGRAG_ENDPOINT` or `http://localhost:8000` | Worker URL |
 | `--out` | print only | Write a JSON transcript with grounding stats |
