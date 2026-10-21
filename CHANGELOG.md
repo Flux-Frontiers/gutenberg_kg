@@ -45,9 +45,11 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - **Moots print as a conversation.** On a terminal, `gutenkg converse`
   prints each turn as a Rich speech bubble as it arrives: the first book on
   the left in green, the second on the right in magenta, the turn number
-  and title in the border, quoted words in bold and citation tags dimmed,
-  with the cited sections, any ungrounded warning and each snap or unquote
-  underneath. A header rule names the books, topic and model, and a
+  and title in the border in bold italic, quoted words in bold and citation
+  tags dimmed, and each tree's name in the text in bold italic in that
+  tree's color, so the reader sees who is addressed. The cited sections,
+  any ungrounded warning and each snap or unquote go underneath. A header
+  rule names the books, topic and model, and a
   grounding table closes the moot. Output that is not a terminal (pipes,
   logs, tests), or any run with the new `--plain`, prints the plain text as
   before.
@@ -63,6 +65,12 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   `under 3 words`), and the stats count the short ones apart, as
   `quotes_too_short`, so `quotes_unquoted` still means a checked quote that
   failed.
+- **A tree speaks in its author's voice.** The persona still makes each
+  tree the book, and now adds that it speaks with its author's voice: in
+  the first person where the author wrote in the first person, and in the
+  author's own style and diction. A book with no named author (an empty
+  author, or `Various`, `Anonymous` or `Unknown`) speaks as itself, with no
+  voice line and no "by".
 - **A tree can quote itself.** `[oN]` now names any earlier turn of the
   moot, the speaker's own as well as the other tree's; turn numbers are
   unique, so the tag stays unambiguous. A quote of the speaker's own turn
