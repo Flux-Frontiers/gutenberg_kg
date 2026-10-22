@@ -146,10 +146,18 @@ neither; in that case update the version stamp by hand and leave the counts
 alone. Books added through `/add-book` have already run it; `--check` then
 exits 0.
 
-**Prose must describe what actually shipped.** A new command or module is not
-released until it is documented — check `README.md` and the relevant
-`docs/*.md` guide name it. Read every grep hit rather than counting them;
-substring matches on unrelated features are common.
+**Prose must describe what actually shipped. This is a gate: do not tag
+until it passes.** A new command or feature is not released until it is
+documented in all three places: `README.md`, a `docs/*.md` guide in the
+mkdocs nav, and the cheatsheet. Read every grep hit rather than counting them;
+substring matches on unrelated features are common. Then check the docs this
+cycle touched against the code: every option, default, op and `make` target
+they name must exist (`--help`, `rg` the handler and the Makefile). 1.28.0
+shipped the moots with only the cheatsheet documenting them, and a later
+pass found two stale claims in docs nobody had reread (a genre list three
+genres short, and a `make` target that does not exist). If anything is
+missing or wrong, fix it on a branch into `develop` and promote before
+releasing; never release first and document after.
 
 ## Step 5 — Regenerate `release-notes.md`
 

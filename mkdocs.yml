@@ -66,6 +66,7 @@ nav:
       - Selective bundles: BUNDLES.md
   - Interfaces:
       - Chat UI: CHAT_UI.md
+      - "Moots: books in conversation": MOOTS.md
       - Knowledge Press apps: KNOWLEDGE_PRESS.md
       - On-device corpus packs: ON_DEVICE.md
       - RunPod deployment: RUNPOD.md
@@ -98,6 +99,11 @@ nav:
           - 3-D visualizer: api/viz3d.md
           - Growth timeline: api/viz_timeline.md
           - POV-Ray scenes: api/povscene.md
+      - Moots:
+          - Moots: api/entmoot.md
+          - Worker corpus scope: api/scope.md
+          - Moot packs for the forest: api/export_web_moots.md
+          - Author voices: api/author_voices.md
       - Image & MCP:
           - Image generation: api/image_gen.md
           - MCP server: api/mcp_server.md

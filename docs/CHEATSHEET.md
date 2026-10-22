@@ -211,12 +211,13 @@ gutenkg query "plague" --registry /path/to/registry.json     # non-default regis
 
 `gutenkg converse` seats two books in a moot. Each speaks only from passages
 of its own text, cites them as `[s1]`, `[s2]`, ..., and may quote any earlier
-turn `N` of the moot, the other book's or its own, as `[oN]`. Needs a running worker (for book-scoped
-retrieval) and a model backend (`--backend`, oMLX by default). On a terminal
-each turn prints as a speech bubble as it arrives, the first book on the
-left and the second on the right, with its citations and corrections
-underneath, then a grounding table and a run summary (elapsed time, per-turn
-time, model, machine) at the end; piped or logged output stays plain text.
+turn `N` of the moot, the other book's or its own, as `[oN]`. Needs a running
+worker (for book-scoped retrieval) and a model backend (`--backend`, oMLX by
+default). On a terminal each turn prints as a speech bubble as it arrives,
+the first book on the left and the second on the right, with its citations
+and corrections underneath, then a grounding table and a run summary (elapsed
+time, per-turn time, model, machine) at the end; piped or logged output stays
+plain text. [Moots](MOOTS.md) explains how a turn is made and grounded.
 
 Every quote in the output is verbatim and at least three words long. A quote
 the model misremembered is replaced with its source's exact words when it
