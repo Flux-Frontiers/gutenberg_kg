@@ -217,7 +217,9 @@ default). On a terminal each turn prints as a speech bubble as it arrives,
 the first book on the left and the second on the right, with its citations
 and corrections underneath, then a grounding table and a run summary (elapsed
 time, per-turn time, model, machine) at the end; piped or logged output stays
-plain text. [Moots](MOOTS.md) explains how a turn is made and grounded.
+plain text. [Moots](MOOTS.md) explains how a turn is made and grounded, and
+how the forest holds live moots against your worker (the `moot_start`,
+`moot_turn` and `moot_stop` ops; `GUTENKG_CORS_ORIGINS` and `MOOT_TOKEN`).
 
 Every quote in the output is verbatim and at least three words long. A quote
 the model misremembered is replaced with its source's exact words when it

@@ -27,6 +27,11 @@ Environment variables
 GUTENBERG_ROOT     Root of the baked-in bundle.   Default: /workspace/gutenberg
 EMBED_MODEL        Sentence-transformer model ID.  Default: BAAI/bge-small-en-v1.5
 HANDLER_SECRET     Optional shared secret.  Requests must include {"secret": "<value>"}.
+MOOT_TOKEN         Optional token the moot ops accept in place of HANDLER_SECRET, so a
+                   browser never holds the secret.  See serve/moot_ops.py.
+GUTENKG_CORS_ORIGINS  Comma-separated origins a browser may call from (serve/cors.py).
+                   Unset: no CORS.
+GUTENKG_VOICES     The author voice table for live moots.  Default: corpus/authors/voices.json
 VLLM_ENDPOINT_URL  Optional OpenAI-compatible endpoint for synthesis (oMLX/Ollama/vLLM).
 VLLM_API_KEY       Bearer token for the synthesis endpoint.  Omit for Ollama.
 VLLM_MODEL         Model ID.  Default: Qwen3-8B-MLX-4bit
@@ -57,6 +62,8 @@ Request schema
                             "get_chapter" (needs "genre", "book", "section_id") returns chapter text
                             "image_backends" returns {"default", "backends": [{"key", "label",
                             "available", "detail"}, ...]} for the image-backend picker
+                            "moot_start", "moot_turn", "moot_stop": live moots, held by the
+                            worker; see serve/moot_ops.py and docs/MOOTS.md
 }
 """
 
@@ -82,12 +89,15 @@ from kg_utils.synthesis import (
 from kg_utils.worker import handle_aux_ops
 
 import runpod
+from gutenberg_kg.author_voices import VOICES_PATH, read_voices
 from gutenberg_kg.diary_meta import DIARY_META as _DIARY_META
 from gutenberg_kg.diary_meta import diary_slug as _diary_slug
+from gutenberg_kg.serve.cors import CORS_ENV, CORSMiddleware, cors_origins
 from gutenberg_kg.serve.diary_browse import diary_chapter as _diary_chapter
 from gutenberg_kg.serve.diary_browse import diary_chapters as _diary_chapters
 from gutenberg_kg.serve.fusion import merge_by_rank as _merge_by_rank
 from gutenberg_kg.serve.image_backends import image_backends
+from gutenberg_kg.serve.moot_ops import MOOT_OPS, MootSessions, authorized
 from gutenberg_kg.serve.scope import dense_scope_sql as _dense_scope_sql
 from gutenberg_kg.serve.scope import keep_in_scope as _keep_in_scope
 from gutenberg_kg.serve.scope import resolve_corpus as _resolve_corpus
@@ -105,6 +115,8 @@ SYNTH_MAX_K = int(os.environ.get("SYNTH_MAX_K", "12"))
 SYNTH_PROMPT = os.environ.get("SYNTH_PROMPT", "")
 EMBED_MODEL = os.environ.get("EMBED_MODEL", "BAAI/bge-small-en-v1.5")
 HANDLER_SECRET = os.environ.get("HANDLER_SECRET", "")
+# Lets a browser run live moots without holding HANDLER_SECRET (serve/moot_ops.py).
+MOOT_TOKEN = os.environ.get("MOOT_TOKEN", "")
 
 _DOCKG_SQLITE = GUTENBERG_ROOT / ".dockg" / "graph.sqlite"
 _CATALOG_PATH = GUTENBERG_ROOT / ".dockg" / "catalog.json"
@@ -946,6 +958,35 @@ def _enrich_catalog(hits: list[dict]) -> None:
 # ---------------------------------------------------------------------------
 
 
+class _LocalClient:
+    """Retrieval for live moots: the same search a ``WorkerClient`` reaches over HTTP."""
+
+    def query(self, text: str, *, corpus: str, k: int) -> dict:
+        """Search one book, as ``WorkerClient.query`` does."""
+        return handler(
+            {"input": {"query": text, "corpus": corpus, "k": k, "secret": HANDLER_SECRET}}
+        )
+
+
+def _is_book(key: str) -> bool:
+    """Whether ``key`` names one book or one diary this worker serves."""
+    scope = _resolve_corpus(key, _catalog, _ALL_GENRES)
+    return bool(scope.get("book_filter") or scope.get("diary_slug"))
+
+
+_moots: MootSessions | None = None
+
+
+def _moot_sessions() -> MootSessions:
+    """The live moots this worker holds, created on first use."""
+    global _moots  # noqa: PLW0603 -- one table per worker process
+    if _moots is None:
+        voices = read_voices(Path(os.environ.get("GUTENKG_VOICES", str(VOICES_PATH))))
+        backend = _text_synth._cfg.backend.value  # pylint: disable=protected-access
+        _moots = MootSessions(_LocalClient(), _text_synth, backend, _is_book, voices)
+    return _moots
+
+
 def handler(job: dict) -> dict:
     """RunPod serverless entry point: search the corpus and optionally synthesise an answer.
 
@@ -956,6 +997,12 @@ def handler(job: dict) -> dict:
         ``{"error": ...}`` on validation/auth failure.
     """
     inp = job.get("input", {})
+
+    # Moot ops come first: they take MOOT_TOKEN in place of HANDLER_SECRET.
+    if inp.get("op") in MOOT_OPS:
+        if not authorized(inp, moot_token=MOOT_TOKEN, handler_secret=HANDLER_SECRET):
+            return {"error": "unauthorized"}
+        return _moot_sessions().handle(inp["op"], inp)
 
     if HANDLER_SECRET and inp.get("secret") != HANDLER_SECRET:
         return {"error": "unauthorized"}
@@ -1092,8 +1139,34 @@ def handler(job: dict) -> dict:
     }
 
 
+def _allow_cors(origins: frozenset[str]) -> None:
+    """Add :class:`CORSMiddleware` to RunPod's local API server.
+
+    ``runpod.serverless.start`` builds its FastAPI app and runs uvicorn in one
+    call, so there is no app to wrap. This replaces its ``WorkerAPI`` class
+    with one that adds the middleware once the app exists. Tied to runpod's
+    internals (1.12); the startup line shows whether it took.
+
+    :param origins: The allowed origins.
+    """
+    from runpod.serverless.modules import rp_fastapi
+
+    base = rp_fastapi.WorkerAPI
+
+    class _CORSWorkerAPI(base):
+        def __init__(self, config):
+            super().__init__(config)
+            self.rp_app.add_middleware(CORSMiddleware, origins=origins)
+
+    rp_fastapi.WorkerAPI = _CORSWorkerAPI
+    print(f"[startup] CORS allowed for: {', '.join(sorted(origins))}")
+
+
 def main() -> None:
     """Start the RunPod serverless worker (``gutenkg-handler`` entry point)."""
+    origins = cors_origins(os.environ.get(CORS_ENV, ""))
+    if origins:
+        _allow_cors(origins)
     runpod.serverless.start({"handler": handler})
 
 
