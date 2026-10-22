@@ -1128,3 +1128,13 @@ def test_the_persona_forbids_repeating_a_sentence():
         _tree("Meditations", "Marcus Aurelius"), _tree("The Prince", "Machiavelli"), "virtue"
     )
     assert "Never repeat a sentence you have already said in this moot." in p
+
+
+def test_the_persona_keeps_the_book_from_talking_about_its_passages():
+    p = entmoot.persona(
+        _tree("Meditations", "Marcus Aurelius"), _tree("The Prince", "Machiavelli"), "virtue"
+    )
+    assert "never mention passages, sources or what you were given" in p
+    assert "never claim your book lacks something" in p
+    assert "never check its quotes against your own" in p
+    assert "say so plainly" not in p
