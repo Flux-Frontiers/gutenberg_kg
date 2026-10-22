@@ -385,16 +385,23 @@ phone is the phone.
 
 Checklist on the Mac that runs the worker:
 
-1. **One container runtime.** With Docker Desktop and Apple's container
+1. **The worker listens on the LAN.** It answers only this Mac by default.
+   Set `WORKER_BIND=0.0.0.0` in `docker/.env`, then restart it (`make run`,
+   or `make up`). Anyone on the network can then use the worker, so do this
+   on a network you trust. `HANDLER_SECRET` guards it, but the apps send the
+   secret only when launched with it in their environment (an Xcode scheme),
+   so it locks out a phone installed normally; `MOOT_TOKEN` guards only the
+   live-moot ops.
+2. **One container runtime.** With Docker Desktop and Apple's container
    services both running, other devices can ping the Mac but every TCP
    connection to it hangs. `make run`, `make chat` and `make up` refuse to
    start in that state; `make down-all` stops both runtimes.
-2. **Host services listen on `0.0.0.0`.** Under `RUNTIME=apple` the containers
+3. **Host services listen on `0.0.0.0`.** Under `RUNTIME=apple` the containers
    reach oMLX (`:8080`), Ollama (`:11434`) and the image server (`:8090`) over
    vmnet, which a `127.0.0.1` listener does not accept.
-3. **The oMLX key matches.** If oMLX verifies API keys, `VLLM_API_KEY` must be
+4. **The oMLX key matches.** If oMLX verifies API keys, `VLLM_API_KEY` must be
    its key; otherwise synthesis fails with 401.
-4. **No stale VPN DNS.** A VPN that was uninstalled or stopped (Tailscale, for
+5. **No stale VPN DNS.** A VPN that was uninstalled or stopped (Tailscale, for
    one) can leave its DNS server set on the Wi-Fi service, which slows or
    breaks name lookups. Check with `networksetup -getdnsservers Wi-Fi`; clear
    with `sudo networksetup -setdnsservers Wi-Fi Empty`.
