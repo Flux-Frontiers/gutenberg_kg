@@ -65,6 +65,16 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   `under 3 words`), and the stats count the short ones apart, as
   `quotes_too_short`, so `quotes_unquoted` still means a checked quote that
   failed.
+- **A book no longer talks about its passages or claims what it lacks.**
+  The persona told a book to "say so plainly" when no passage bore on a
+  point, and the model turned that into claims about its whole text,
+  saying a figure or event its book does contain "does not appear in my
+  passages"; a book sees only part of its text each turn. The persona now
+  has the book speak as itself, never mention passages, sources or what it
+  was given, never claim its book lacks something, and turn to what it does
+  say instead; and never check the other book's quotes against its own,
+  which had read as "your citation appears to misquote my source". In
+  testing, such talk fell from 11 instances in a moot to none.
 - **Moots have a shape: turn intents.** Each turn is asked to make one
   move (`INTENTS`, scheduled by `turn_intent`): the first opens, each
   book's last turn closes (what it still holds, and what it takes from the

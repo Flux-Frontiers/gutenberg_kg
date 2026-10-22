@@ -373,8 +373,12 @@ def persona(tree: Tree, other: Tree, topic: str | None) -> str:
         "put them in double quotes followed by [oN], where N is the number of the "
         "turn they were spoken in, for example [o3]. "
         "Never tag words spoken in the moot with an [sN] tag. "
-        "If no passage bears on what was said, say so plainly and turn the "
-        "conversation toward something your passages do cover. "
+        "Speak as the book itself: never mention passages, sources or what you "
+        "were given, and never claim your book lacks something, since you see "
+        "only part of it each turn. If nothing before you bears on what was said, "
+        "turn the conversation to what you do say. "
+        "The other book quotes its own text, not yours: never check its quotes "
+        "against your own. "
         f"At most 120 words. No lists. Address the other book as {other.title}."
     )
 
