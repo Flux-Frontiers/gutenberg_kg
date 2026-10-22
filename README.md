@@ -63,7 +63,9 @@ gutenkg converse "philosophy/Meditations" "philosophy/The Prince" --topic virtue
 gutenkg export-web-moots moot.json
 ```
 
-[Moots](docs/MOOTS.md) covers the options, how a turn is grounded, and the author voices.
+The forest can also hold a live moot: choose **Hold a new moot**, pick two books and a topic, and your local worker makes each turn while you watch. It works from the forest's dev server in any browser, and from the published forest in Chrome once you allow local network access.
+
+[Moots](docs/MOOTS.md) covers the options, how a turn is grounded, live moots, and the author voices.
 
 ### Books grow into natural-looking trees (in progress)
 
@@ -153,7 +155,7 @@ make build RUNTIME=apple
 make up RUNTIME=apple
 ```
 
-To make Apple the default, `export RUNTIME=apple` in your shell profile; `RUNTIME=docker` on a command still overrides it. Run one runtime at a time. With Docker Desktop and Apple's container services both running, other devices cannot connect to the worker; `make up` refuses to start in that state, and `make down-all` stops both. Setup, caveats, and how the two runtimes differ are covered in [`docs/APPLE_CONTAINERS.md`](docs/APPLE_CONTAINERS.md).
+To make Apple the default, `export RUNTIME=apple` in your shell profile; `RUNTIME=docker` on a command still overrides it. Run one runtime at a time. The worker answers only this Mac unless `WORKER_BIND=0.0.0.0` is set in `docker/.env` (see [serving phones and other devices](docs/INSTALLATION.md#serving-phones-and-other-devices-on-your-lan)); with Docker Desktop and Apple's container services both running, other devices cannot connect to it even then; `make up` refuses to start in that state, and `make down-all` stops both. Setup, caveats, and how the two runtimes differ are covered in [`docs/APPLE_CONTAINERS.md`](docs/APPLE_CONTAINERS.md).
 
 ## Manage the library from the terminal
 
