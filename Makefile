@@ -539,7 +539,7 @@ run: runtime-guard setup
 	$(APPLE_REWRITE_ENDPOINTS); \
 	container run --detach --name $(WORKER_NAME) \
 	  --memory $(WORKER_MEM) --cpus $(WORKER_CPUS) \
-	  --publish 8000:8000 \
+	  --publish $${WORKER_BIND:-127.0.0.1}:8000:8000 \
 	  -e GUTENBERG_ROOT=/workspace/gutenberg \
 	  -e EMBED_MODEL=BAAI/bge-small-en-v1.5 \
 	  -e HANDLER_SECRET="$${HANDLER_SECRET:-}" \

@@ -8,6 +8,16 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+### Changed
+
+- **The worker answers only its own Mac by default.** `docker compose` and
+  `make run` published port 8000 on every interface, so anyone on the same
+  network could use the worker, and with live moots a browser on the
+  published forest could be pointed at it. The port now binds to
+  `127.0.0.1`. A new `WORKER_BIND` setting in `docker/.env` restores LAN
+  access (`WORKER_BIND=0.0.0.0`) for phones and other devices;
+  `docs/INSTALLATION.md` covers it.
+
 ### Added
 
 - **Live moots: the worker holds a moot for the forest.** Three new worker
