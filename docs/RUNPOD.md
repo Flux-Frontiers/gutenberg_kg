@@ -139,7 +139,7 @@ curl -s -X POST \
 | `synthesize` | bool | `false` | Call the vLLM endpoint for a generated answer |
 | `model` | str | `VLLM_MODEL` | Override synthesis model for this request |
 
-Available genre slugs: `american-literature`, `ancient-classical`, `biography`, `drama`, `english-literature`, `french-literature`, `german-literature`, `letters`, `natural-history`, `philosophy`, `russian-literature`, `sacred-texts`, `science-fiction`, `shakespeare`, `spanish`, `travel`, `world-literature`.
+Available genre slugs: `american-literature`, `ancient-classical`, `audel-electric`, `biography`, `diaries`, `drama`, `english-literature`, `french-literature`, `german-literature`, `horror`, `letters`, `natural-history`, `philosophy`, `russian-literature`, `sacred-texts`, `science-fiction`, `shakespeare`, `spanish`, `travel`, `world-literature`.
 
 **Note:** image generation is not available in the RunPod worker. Use `make up` locally for the full stack including FLUX.2-Klein.
 

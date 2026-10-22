@@ -44,10 +44,13 @@ files these commands write.
 | `gutenkg export-embedder` | The Core ML query embedder, beside the packs | The app |
 | `gutenkg export-web-catalog` | The forest's book catalog, `web/src/game/catalog*.ts` | The forest |
 | `gutenkg export-web-books` | One `web/public/books/<slug>.json` per book, built from the Swift packs | The forest's reader |
+| `gutenkg export-web-moots` | One moot pack per `gutenkg converse --out` transcript, plus `index.json`, under `web/public/moots/` | The forest's moot player |
 
-Each has a `make` target of the same name. Run `gutenkg ingest` before
-`export-web-catalog`, and `export-swift` before `export-web-books`. The
-[cheatsheet](CHEATSHEET.md#web-forest-catalog) has the options.
+`export-swift`, `export-web-catalog` and `export-web-books` each have a `make`
+target of the same name. Run `gutenkg ingest` before `export-web-catalog`, and
+`export-swift` before `export-web-books`. The
+[cheatsheet](CHEATSHEET.md#web-forest-catalog) has the options; moots, and the
+author voices their packs carry, are covered in [Moots](MOOTS.md).
 
 ## Side-by-side checkouts
 

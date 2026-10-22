@@ -50,6 +50,21 @@ cd knowledge_press && make web-install web-dev
 
 The book catalog is generated from the corpus rather than hand-maintained — `gutenkg export-web-catalog` (also `make export-web-catalog`) counts DocKG chunk nodes per book and writes the forest's `src/game/catalogPart*.ts` in a sibling knowledge_press checkout (`KNOWLEDGE_PRESS_DIR` to point elsewhere), so the forest follows the corpus instead of drifting from it. `gutenkg export-web-books` (also `make export-web-books`) writes each book's chapters from the Swift packs as `web/public/books/<slug>.json`, which is how the published forest reads books without a worker.
 
+### Moots: books that talk to each other
+
+A moot seats two books and lets them discuss a topic. Each book speaks only from passages of its own text, in its author's voice, and answers what the other just said. A language model writes each turn, and every quotation left in the transcript is checked to be the book's exact words.
+
+In the forest, the **Moots** button plays saved moots: each turn appears as a speech bubble, the speaking tree is ringed in its color, and the turns can be read aloud, in voices matched to each author where the browser has them. Playing a saved moot needs nothing installed.
+
+To hold a new moot, run `gutenkg converse` against a local worker and a model backend (local oMLX or Ollama, or any OpenAI-compatible host), then export it for the forest:
+
+```bash
+gutenkg converse "philosophy/Meditations" "philosophy/The Prince" --topic virtue --out moot.json
+gutenkg export-web-moots moot.json
+```
+
+[Moots](docs/MOOTS.md) covers the options, how a turn is grounded, and the author voices.
+
 ### Books grow into natural-looking trees (in progress)
 
 A knowledge graph does not have to be drawn as a hairball. Each book now grows into a tree, and the growth is structural rather than decorative. The book's text chunks become attraction points and the branches are produced by space colonization (Runions, Lane & Prusinkiewicz, 2007), so every limb is a real path through the graph—document → section → chunk cluster—and the canopy's shape is the book's shape. Branch radii follow the pipe model, so a limb carrying half the text is visibly thicker.
@@ -99,6 +114,7 @@ Under the hood, each work becomes a [DocKG](https://github.com/Flux-Frontiers/do
 | If you want to… | Start here |
 |---|---|
 | Walk the corpus as a forest | Open [Knowledge Press Forest](https://flux-frontiers.github.io/knowledge_press/). |
+| Have two books discuss a topic | Play a saved moot in the forest, or hold one with `gutenkg converse`. See [Moots](docs/MOOTS.md). |
 | Ask the corpus on an iPhone, iPad or Mac | The Knowledge Press app is in development for App Store deployment. See [Knowledge Press apps](docs/KNOWLEDGE_PRESS.md). |
 | Explore the library in a browser | Build the local app below, then open the chat UI. |
 | Work from the terminal or add texts | Follow the [CLI installation guide](docs/INSTALLATION.md#cli-workflow). |
