@@ -31,6 +31,11 @@ services:
       GUTENBERG_ROOT: /workspace/gutenberg
       EMBED_MODEL: BAAI/bge-small-en-v1.5
       HANDLER_SECRET: ${HANDLER_SECRET:-}
+      # Live moots from the Knowledge Press Forest (serve/moot_ops.py): the
+      # origins allowed to call this worker, and an optional token the forest
+      # sends instead of HANDLER_SECRET, which must never reach a browser.
+      GUTENKG_CORS_ORIGINS: ${GUTENKG_CORS_ORIGINS-http://localhost:5173,https://flux-frontiers.github.io}
+      MOOT_TOKEN: ${MOOT_TOKEN:-}
       # Synthesis via a host LLM server (optional — omit to disable).
       # Defaults target oMLX on :8080; see docker/.env.example.
       VLLM_ENDPOINT_URL: ${VLLM_ENDPOINT_URL:-http://host.docker.internal:8080/v1}

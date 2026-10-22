@@ -543,6 +543,8 @@ run: runtime-guard setup
 	  -e GUTENBERG_ROOT=/workspace/gutenberg \
 	  -e EMBED_MODEL=BAAI/bge-small-en-v1.5 \
 	  -e HANDLER_SECRET="$${HANDLER_SECRET:-}" \
+	  -e GUTENKG_CORS_ORIGINS="$${GUTENKG_CORS_ORIGINS-http://localhost:5173,https://flux-frontiers.github.io}" \
+	  -e MOOT_TOKEN="$${MOOT_TOKEN:-}" \
 	  -e VLLM_ENDPOINT_URL="$$VLLM_ENDPOINT_URL" \
 	  -e VLLM_MODEL="$${VLLM_MODEL:-Qwen3-4B-Instruct-2507-MLX-8bit}" \
 	  -e VLLM_API_KEY="$${VLLM_API_KEY:-}" \
