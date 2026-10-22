@@ -17,6 +17,7 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   `127.0.0.1`. A new `WORKER_BIND` setting in `docker/.env` restores LAN
   access (`WORKER_BIND=0.0.0.0`) for phones and other devices;
   `docs/INSTALLATION.md` covers it.
+- The README describes live moots and `WORKER_BIND`.
 
 ### Added
 
