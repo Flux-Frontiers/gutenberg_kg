@@ -8,6 +8,25 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+### Added
+
+- **Moots are documented.** A new guide, `docs/MOOTS.md`, covers running
+  `gutenkg converse` (what it needs, every option and backend setting), how a
+  turn is made (retrieval, the persona and author voice, turn intents,
+  grounding, quote snapping), the JSON transcript, playing moots in the
+  forest with `export-web-moots`, `author-voices`, and the known limits. The
+  README has a moots section and a "Choose a path" row, the docs home and
+  `KNOWLEDGE_PRESS.md` link the guide, and the API reference gains pages for
+  `serve.entmoot`, `serve.scope`, `export_web_moots` and `author_voices`.
+
+### Fixed
+
+- `docs/RUNPOD.md` listed 17 genre slugs; the corpus has 20 (`audel-electric`,
+  `diaries` and `horror` were missing).
+- `docs/KNOWLEDGE_PRESS.md` said every export command has a `make` target of
+  the same name; `export-embedder` has none. It now names the three that do,
+  and lists `export-web-moots`.
+
 ## [1.28.0] - 2026-10-21
 
 ### Added
