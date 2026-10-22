@@ -1,134 +1,60 @@
-# Release Notes -- v1.28.0
+# Release Notes -- v1.29.0
 
-> Released: 2026-10-21
+> Released: 2026-10-22
 
 ### Added
 
-- **Book-scoped retrieval in the worker.** The `corpus` field now also takes
-  a catalog key, `"<genre>/<book>"`, and searches that one book only. A
-  `"diaries/<title>"` key searches that one diary's DiaryKG. The scope rules
-  live in `serve/scope.py` so they can be tested without starting the worker;
-  the RunPod worker (`runpod/handler.py`) uses the same module.
-- **`gutenkg converse`** (Entmoot, phases 1 and 2): two books hold a moot,
-  seeded with `--topic`. Each tree retrieves only from its own book, answers
-  through the local model, and cites its passages with `[sN]` tags. A quote of
-  its own book counts when it appears in any passage that book returned during
-  the moot; a quote of the other tree is tagged `[oN]` (turn `N`), checked and
-  reported separately, and never counts toward grounding. A quote with an
-  ellipsis is checked fragment by fragment. The persona asks for at most four
-  quoted phrases a turn, and the stats report `quotes_per_turn`. A failed turn
-  is retried once, and the same book cannot be seated twice. The default
-  model is `Qwen3.8-27B-4bit`; `--model` overrides it. `--out` writes a JSON
-  transcript with grounding stats.
-- **`gutenkg converse --backend`** picks the model provider, `omlx`, `ollama`
-  or `openai`, the same choices the chat app offers, so a moot can run
-  without a local model. It defaults to `SYNTH_BACKEND`, then `omlx`. Off
-  omlx, the backend's own default model applies unless `--model` names one,
-  and `openai` without `OPENAI_API_KEY` or `SYNTH_API_KEY` is a clean usage
-  error.
-- **Quote snapping in moots.** Every quote left in a moot transcript is now
-  verbatim. After the grounding check, each quote of 3 or more words that
-  was not found in its source is compared with that source (the speaker's
-  passage pool, or the other tree's tagged turn for `[oN]`). When the
-  source's words reach a similarity of 0.85 (`SNAP_MIN_RATIO`), they
-  replace the quote's; otherwise the quotation marks come off and the words
-  stand as paraphrase, as they also do for a missed quote with an ellipsis.
-  Grounding is still measured on the model's raw reply, kept as `raw_text`;
-  each correction is recorded in the utterance's `snaps`, and the stats add
-  `quotes_snapped` and `quotes_unquoted`.
-- **Moots print as a conversation.** On a terminal, `gutenkg converse`
-  prints each turn as a Rich speech bubble as it arrives: the first book on
-  the left in green, the second on the right in magenta, the turn number
-  and title in the border in bold italic, quoted words in bold and citation
-  tags dimmed, and each tree's name in the text in bold italic in that
-  tree's color, so the reader sees who is addressed. The cited sections,
-  any ungrounded warning and each snap or unquote go underneath. A header
-  rule names the books, topic and model, and a
-  grounding table closes the moot. Output that is not a terminal (pipes,
-  logs, tests), or any run with the new `--plain`, prints the plain text as
-  before.
-- **A moot ends with a run summary**: start time, elapsed wall time, the
-  average and slowest turn, backend and model, worker, host, machine (CPU
-  and RAM), OS, and Python and gutenberg-kg versions. It prints as a table
-  on a terminal and as plain lines otherwise, and `--out` records it under
-  `run`, with every turn's seconds.
-- **Quotes are at least three words.** The persona and the retry reminder
-  ask for it, and snapping removes the quotation marks from any shorter
-  quote, which is too short to check, so it reads as paraphrase. Every
-  unquote now records its `reason` (`not in source`, `ellipsis` or
-  `under 3 words`), and the stats count the short ones apart, as
-  `quotes_too_short`, so `quotes_unquoted` still means a checked quote that
-  failed.
-- **Moots have a shape: turn intents.** Each turn is asked to make one
-  move (`INTENTS`, scheduled by `turn_intent`): the first opens, each
-  book's last turn closes (what it still holds, and what it takes from the
-  other), and the turns between rotate through answer, ask a pointed
-  question, give an example from the passages, and concede a point before
-  pressing. The persona also forbids repeating a sentence already said.
-  Each turn's `intent` is recorded in the transcript. On the Aurelius and
-  Machiavelli moot this ended the echoed sentences (2 to 0), gave the moot
-  a real close, and raised own-book quotes from 19 to 27.
-- **Moots bring fresh passages and argue the point.** The strongest matches
-  for a topic were the same every turn, so a book repeated its best lines
-  (Machiavelli's "to appear merciful is useful" four times in eight turns).
-  A book's later retrievals now ask the worker for twice as many hits
-  (`FRESH_OVERFETCH`) and put passages it has already cited last, so each
-  turn brings new text. The persona no longer calls a book a tree, which
-  leaked into speech ("thou art an old tree"); it asks each book to answer
-  the point the other just made rather than argue about how it was quoted,
-  a tic in which nearly every turn opened "thou misquote me"; and it asks
-  for at least one exact quote in every turn, since paraphrase cannot be
-  checked.
-- **`gutenkg author-voices`** records each author's voice for moots in
-  `corpus/authors/voices.json`, beside the author pages and apart from
-  ingestion. Gender comes from Wikidata's sex or gender (P21) and a coarse
-  accent from country of citizenship (P27): `en-US` for an American
-  citizenship (which wins, as for Henry James), `en-GB` for a British, Irish
-  or Commonwealth one, and none otherwise, so translated authors keep the
-  system's accent. Authors are found through their pages' Wikipedia links in
-  batches; the few without one are searched by name and listed for review,
-  and placeholders such as `Various` are not looked up. Each entry keeps its
-  Wikidata item and citizenship labels for review. Existing entries are kept
-  unless `--refresh`, and an entry marked `"source": "manual"` is never
-  overwritten. The first run found 133 men, 15 women, 37 American and 57
-  British, Irish or Commonwealth authors among 150. `export-web-moots` stamps
-  each tree in a moot pack with its author's `voice` (`gender`, `accent`).
-- **`gutenkg export-web-moots`** writes `converse --out` transcripts as moot
-  packs for the Knowledge Press Forest (`../knowledge_press/web/public/moots/`
-  by default, moved by `KNOWLEDGE_PRESS_DIR`, like the other web exports).
-  A pack holds what the reader sees: the trees by worker key, the topic,
-  date, model and backend, and each turn's corrected text, speaker,
-  citations, grounding and corrections. It never carries the raw reply,
-  prompts or retrieval queries. The id is a slug of both book names and the
-  topic, and `index.json` is merged by id, so re-running a pairing on the
-  same topic replaces its pack.
-- **A tree speaks in its author's voice.** The persona still makes each
-  tree the book, and now adds that it speaks with its author's voice: in
-  the first person where the author wrote in the first person, and in the
-  author's own style and diction. A book with no named author (an empty
-  author, or `Various`, `Anonymous` or `Unknown`) speaks as itself, with no
-  voice line and no "by".
-- **A tree can quote itself.** `[oN]` now names any earlier turn of the
-  moot, the speaker's own as well as the other tree's; turn numbers are
-  unique, so the tag stays unambiguous. A quote of the speaker's own turn
-  is recorded with source `self` and counted in `self_quotes_found` /
-  `self_quotes_total`. Like quotes of the other tree, it never counts toward
-  grounding: words spoken in the moot are model-written, not the book.
-  Before this, such quotes were rejected, which was the only kind of invalid
-  `[oN]` in a 27B test run.
+- **Live moots: the worker holds a moot for the forest.** Three new worker
+  ops let the Knowledge Press Forest hold a moot against a local worker and
+  play each turn as it is made: `moot_start` (two catalog keys, topic,
+  turns, k, model, temperature) returns the trees with their author voices,
+  `moot_turn` speaks one turn and returns it in the moot-pack form,
+  `moot_stop` ends it. The worker keeps each moot (`serve/moot_ops.py`):
+  at most 4, dropped after 30 idle minutes, the least recently used making
+  room. Keeping it there means no passage pools cross the wire, and a
+  browser cannot hand the grounding check a doctored pool. The model call
+  uses the worker's own backend, so a browser may name a model but not a
+  backend. `run_moot` is now a loop over a new `entmoot.Moot` class
+  (`start()`, `next_turn()`), so the CLI is unchanged.
+- **CORS on the local worker** (`serve/cors.py`), on when
+  `GUTENKG_CORS_ORIGINS` is set. `docker compose` and `make run` default it
+  to the forest's dev server and the published forest. Tested on 2026-10-21:
+  Chrome reaches the worker from both once local network access is allowed;
+  Safari only from the dev server, since it blocks `http://localhost` on an
+  https page. A new `MOOT_TOKEN` lets the moot ops run without
+  `HANDLER_SECRET`, which never reaches a browser.
+- The worker image carries `corpus/authors/voices.json` (`GUTENKG_VOICES`),
+  so live moots give each tree its author's voice.
+- The worker image pins `runpod==1.12.0` (was `>=1.7.0`): the CORS hook
+  subclasses its internal `WorkerAPI`.
+
+- **Moots are documented.** A new guide, `docs/MOOTS.md`, covers running
+  `gutenkg converse` (what it needs, every option and backend setting), how a
+  turn is made (retrieval, the persona and author voice, turn intents,
+  grounding, quote snapping), the JSON transcript, playing moots in the
+  forest with `export-web-moots`, `author-voices`, and the known limits. The
+  README has a moots section and a "Choose a path" row, the docs home and
+  `KNOWLEDGE_PRESS.md` link the guide, and the API reference gains pages for
+  `serve.entmoot`, `serve.scope`, `export_web_moots` and `author_voices`.
+
+### Changed
+
+- **The worker answers only its own Mac by default.** `docker compose` and
+  `make run` published port 8000 on every interface, so anyone on the same
+  network could use the worker, and with live moots a browser on the
+  published forest could be pointed at it. The port now binds to
+  `127.0.0.1`. A new `WORKER_BIND` setting in `docker/.env` restores LAN
+  access (`WORKER_BIND=0.0.0.0`) for phones and other devices;
+  `docs/INSTALLATION.md` covers it.
+- The README describes live moots and `WORKER_BIND`.
 
 ### Fixed
 
-- **A book no longer talks about its passages or claims what it lacks.**
-  The persona told a book to "say so plainly" when no passage bore on a
-  point, and the model turned that into claims about its whole text,
-  saying a figure or event its book does contain "does not appear in my
-  passages"; a book sees only part of its text each turn. The persona now
-  has the book speak as itself, never mention passages, sources or what it
-  was given, never claim its book lacks something, and turn to what it does
-  say instead; and never check the other book's quotes against its own,
-  which had read as "your citation appears to misquote my source". In
-  testing, such talk fell from 11 instances in a moot to none.
+- `docs/RUNPOD.md` listed 17 genre slugs; the corpus has 20 (`audel-electric`,
+  `diaries` and `horror` were missing).
+- `docs/KNOWLEDGE_PRESS.md` said every export command has a `make` target of
+  the same name; `export-embedder` has none. It now names the three that do,
+  and lists `export-web-moots`.
 
 ---
 

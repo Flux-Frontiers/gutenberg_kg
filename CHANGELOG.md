@@ -8,16 +8,7 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
-### Changed
-
-- **The worker answers only its own Mac by default.** `docker compose` and
-  `make run` published port 8000 on every interface, so anyone on the same
-  network could use the worker, and with live moots a browser on the
-  published forest could be pointed at it. The port now binds to
-  `127.0.0.1`. A new `WORKER_BIND` setting in `docker/.env` restores LAN
-  access (`WORKER_BIND=0.0.0.0`) for phones and other devices;
-  `docs/INSTALLATION.md` covers it.
-- The README describes live moots and `WORKER_BIND`.
+## [1.29.0] - 2026-10-22
 
 ### Added
 
@@ -53,6 +44,17 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   README has a moots section and a "Choose a path" row, the docs home and
   `KNOWLEDGE_PRESS.md` link the guide, and the API reference gains pages for
   `serve.entmoot`, `serve.scope`, `export_web_moots` and `author_voices`.
+
+### Changed
+
+- **The worker answers only its own Mac by default.** `docker compose` and
+  `make run` published port 8000 on every interface, so anyone on the same
+  network could use the worker, and with live moots a browser on the
+  published forest could be pointed at it. The port now binds to
+  `127.0.0.1`. A new `WORKER_BIND` setting in `docker/.env` restores LAN
+  access (`WORKER_BIND=0.0.0.0`) for phones and other devices;
+  `docs/INSTALLATION.md` covers it.
+- The README describes live moots and `WORKER_BIND`.
 
 ### Fixed
 
