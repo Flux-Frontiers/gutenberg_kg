@@ -8,6 +8,19 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+### Fixed
+
+- **`make publish-worker-image` no longer leaves the replaced image on
+  Docker Hub.** Each push moved `latest` and Docker Hub kept the previous
+  image untagged, about 6 GB a publish (`corpus-gutenberg` had reached
+  47.5 GB for one live image). The target now records the tag's digest
+  before the push and, after it, deletes that image and its platform and
+  attestation manifests with `scripts/prune_hub_image.py`, through the
+  registry API, which refuses anything still referenced. It needs
+  `DOCKERHUB_USERNAME` and `DOCKERHUB_TOKEN` (a personal access token with
+  Read, Write and Delete); without them the publish succeeds and says the
+  old image was kept. Both runtimes' targets do this.
+
 ## [1.29.0] - 2026-10-22
 
 ### Added
