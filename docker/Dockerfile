@@ -60,7 +60,9 @@ RUN apt-get update && \
 # where that build is the correct one.
 RUN pip install --no-cache-dir --index-url https://download.pytorch.org/whl/cpu torch
 
-# runpod: serverless worker harness (rp_serve_api) used by the handler
+# runpod: serverless worker harness (rp_serve_api) used by the handler. Pinned
+#         exactly: handler._allow_cors subclasses its internal WorkerAPI to add
+#         CORS for live moots, and a different version may change that class.
 # kg-rag: KGRegistry/CorpusRegistry + embedder wrapper — imported lazily by
 #         the handler's _bootstrap_registry, so a missing install only fails
 #         at container startup, not at build time
@@ -106,7 +108,7 @@ ARG KGMODULE_UTILS_VERSION=0.27.1
 ARG DOC_KG_VERSION=0.28.1
 ARG DIARY_KG_VERSION=0.100.1
 RUN pip install --no-cache-dir \
-    "runpod>=1.7.0" \
+    "runpod==1.12.0" \
     "kg-rag==${KG_RAG_VERSION}" \
     "kgmodule-utils[synthesis,sqlite-vec]==${KGMODULE_UTILS_VERSION}" \
     "doc-kg==${DOC_KG_VERSION}" \
@@ -119,6 +121,11 @@ RUN pip install --no-cache-dir \
 COPY pyproject.toml README.md /app/
 COPY src/gutenberg_kg /app/src/gutenberg_kg
 RUN pip install --no-cache-dir .
+
+# The author voice table, so a live moot gives each tree its author's voice.
+# The installed package cannot find corpus/ from site-packages, hence the path.
+COPY corpus/authors/voices.json /app/voices.json
+ENV GUTENKG_VOICES=/app/voices.json
 
 # Pre-download the embedding model during build so the container never reaches
 # HuggingFace at runtime (network may be unavailable or restricted on RunPod).

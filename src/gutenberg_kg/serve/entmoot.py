@@ -849,20 +849,29 @@ def _add_to_pool(pool: dict[str, Passage], passages: list[Passage]) -> None:
         pool.setdefault(p.node_id, p)
 
 
-def run_moot(
-    client,
-    synth,
-    keys: list[str],
-    topic: str | None,
-    turns: int,
-    *,
-    k: int = 6,
-    model: str | None = None,
-    model_name: str = "",
-    temperature: float = 0.6,
-    on_utterance=None,
-) -> Transcript:
-    """Hold a moot between two books.
+def resolve_model(backend: str, model: str | None, synth) -> tuple[str | None, str]:
+    """Pick the model a moot calls with and the name its transcript records.
+
+    :param backend: The synthesizer's backend name, e.g. ``"omlx"``.
+    :param model: A model id the caller asked for, or ``None``.
+    :param synth: The synthesizer, whose own default applies off omlx.
+    :returns: ``(model passed to complete, model name recorded)``. The first is
+        ``None`` when the synthesizer's default should apply.
+    """
+    if model:
+        return model, model
+    if backend == "omlx":
+        return DEFAULT_MODEL, DEFAULT_MODEL
+    cfg = getattr(synth, "_cfg", None)  # TextSynthesizer keeps its TextConfig here
+    return None, cfg.resolved_model() if cfg is not None else ""
+
+
+class Moot:
+    """A moot between two books, held one turn at a time.
+
+    :meth:`start` makes both trees' opening retrievals; each :meth:`next_turn`
+    speaks one utterance. The CLI runs it to the end in :func:`run_moot`; the
+    worker holds one per live moot and runs a turn per request.
 
     Both trees first retrieve on the topic alone (or on their own book name
     with no topic); that opening retrieval names each tree, and the first
@@ -882,63 +891,156 @@ def run_moot(
         synthesizer's default.
     :param model_name: Model id recorded in the transcript.
     :param temperature: Sampling temperature.
+    :raises ValueError: When the same book key is given twice.
+    """
+
+    def __init__(
+        self,
+        client,
+        synth,
+        keys: list[str],
+        topic: str | None,
+        turns: int,
+        *,
+        k: int = 6,
+        model: str | None = None,
+        model_name: str = "",
+        temperature: float = 0.6,
+    ) -> None:
+        if len(set(keys)) != len(keys):
+            raise ValueError(f"a moot needs two different books, got {keys[0]!r} twice")
+        self.client, self.synth, self.keys = client, synth, keys
+        self.topic, self.turns, self.k = topic, turns, k
+        self.model, self.model_name, self.temperature = model, model_name, temperature
+        self.transcript: Transcript | None = None
+        self._opening: list[list[Passage]] = []
+        self._opening_queries = [topic or _book_name(key) for key in keys]
+        self._pools: dict[str, dict[str, Passage]] = {key: {} for key in keys}
+        # What each tree has cited, so its later retrievals bring fresh passages first.
+        self._cited: dict[str, set[str]] = {key: set() for key in keys}
+        self._summary = ""
+
+    @property
+    def done(self) -> bool:
+        """Whether every turn has been spoken."""
+        return self.transcript is not None and len(self.transcript.utterances) >= self.turns
+
+    def start(self) -> Transcript:
+        """Make both trees' opening retrievals and name the trees.
+
+        :returns: The transcript, with its trees and no utterances yet.
+        """
+        trees: list[Tree] = []
+        for key, opening_query in zip(self.keys, self._opening_queries, strict=True):
+            hits = self.client.query(opening_query, corpus=key, k=self.k).get("hits", [])
+            trees.append(tree_from_hits(key, hits))
+            self._opening.append(passages_from_hits(hits))
+            _add_to_pool(self._pools[key], self._opening[-1])
+        self.transcript = Transcript(
+            trees=trees,
+            topic=self.topic,
+            model=self.model_name or self.model or "",
+            settings={
+                "turns": self.turns,
+                "k": self.k,
+                "temperature": self.temperature,
+                "max_tokens": MAX_TOKENS,
+            },
+        )
+        return self.transcript
+
+    def next_turn(self) -> Utterance:
+        """Speak the next utterance.
+
+        :returns: The utterance, also appended to the transcript.
+        :raises RuntimeError: Before :meth:`start`, or when the moot is done.
+        """
+        if self.transcript is None:
+            raise RuntimeError("start the moot before its first turn")
+        if self.done:
+            raise RuntimeError("the moot is over")
+        transcript, i = self.transcript, len(self.transcript.utterances)
+        speaker, other = transcript.trees[i % 2], transcript.trees[(i + 1) % 2]
+        if i and i % SUMMARY_EVERY == 0:
+            self._summary = summarize(
+                self.synth, self._summary, transcript.utterances, model=self.model
+            )
+            transcript.summaries.append({"before_turn": i + 1, "text": self._summary})
+        incoming = transcript.utterances[-1] if transcript.utterances else None
+        if incoming is None:
+            passages, query = self._opening[0], self._opening_queries[0]
+        else:
+            query = retrieval_query(self.topic, incoming.text)
+            passages = retrieve(self.client, speaker, query, self.k, self._cited[speaker.key])
+            _add_to_pool(self._pools[speaker.key], passages)
+        utterance = turn(
+            self.synth,
+            speaker,
+            other,
+            self.topic,
+            passages,
+            self._summary,
+            transcript.utterances[-(RECENT_TURNS + 1) : -1],
+            incoming,
+            number=i + 1,
+            pool=list(self._pools[speaker.key].values()),
+            others={u.turn: u.text for u in transcript.utterances if u.speaker == other.key},
+            own={u.turn: u.text for u in transcript.utterances if u.speaker == speaker.key},
+            query=query,
+            model=self.model,
+            temperature=self.temperature,
+            intent=turn_intent(i + 1, self.turns),
+        )
+        transcript.utterances.append(utterance)
+        self._cited[speaker.key].update(utterance.cited.values())
+        return utterance
+
+
+def run_moot(
+    client,
+    synth,
+    keys: list[str],
+    topic: str | None,
+    turns: int,
+    *,
+    k: int = 6,
+    model: str | None = None,
+    model_name: str = "",
+    temperature: float = 0.6,
+    on_utterance=None,
+) -> Transcript:
+    """Hold a moot between two books, start to finish.
+
+    See :class:`Moot` for how each turn is made.
+
+    :param client: A ``WorkerClient`` (anything with a compatible ``query``).
+    :param synth: A ``TextSynthesizer`` (anything with a compatible ``complete``).
+    :param keys: The two books' catalog keys, in speaking order.
+    :param topic: The seed topic, or ``None``.
+    :param turns: Total utterances.
+    :param k: Passages per turn.
+    :param model: Model id passed to ``complete``, or ``None`` for the
+        synthesizer's default.
+    :param model_name: Model id recorded in the transcript.
+    :param temperature: Sampling temperature.
     :param on_utterance: Optional callback, called with each utterance as it lands.
     :returns: The transcript.
     :raises ValueError: When the same book key is given twice.
     """
-    if len(set(keys)) != len(keys):
-        raise ValueError(f"a moot needs two different books, got {keys[0]!r} twice")
-    opening: list[list[Passage]] = []
-    trees: list[Tree] = []
-    pools: dict[str, dict[str, Passage]] = {key: {} for key in keys}
-    # What each tree has cited, so its later retrievals bring fresh passages first.
-    cited: dict[str, set[str]] = {key: set() for key in keys}
-    opening_queries = [topic or _book_name(key) for key in keys]
-    for key, opening_query in zip(keys, opening_queries, strict=True):
-        hits = client.query(opening_query, corpus=key, k=k).get("hits", [])
-        trees.append(tree_from_hits(key, hits))
-        opening.append(passages_from_hits(hits))
-        _add_to_pool(pools[key], opening[-1])
-
-    transcript = Transcript(
-        trees=trees,
-        topic=topic,
-        model=model_name or model or "",
-        settings={"turns": turns, "k": k, "temperature": temperature, "max_tokens": MAX_TOKENS},
+    moot = Moot(
+        client,
+        synth,
+        keys,
+        topic,
+        turns,
+        k=k,
+        model=model,
+        model_name=model_name,
+        temperature=temperature,
     )
-    summary = ""
-    for i in range(turns):
-        speaker, other = trees[i % 2], trees[(i + 1) % 2]
-        if i and i % SUMMARY_EVERY == 0:
-            summary = summarize(synth, summary, transcript.utterances, model=model)
-            transcript.summaries.append({"before_turn": i + 1, "text": summary})
-        incoming = transcript.utterances[-1] if transcript.utterances else None
-        if incoming is None:
-            passages, query = opening[0], opening_queries[0]
-        else:
-            query = retrieval_query(topic, incoming.text)
-            passages = retrieve(client, speaker, query, k, cited[speaker.key])
-            _add_to_pool(pools[speaker.key], passages)
-        utterance = turn(
-            synth,
-            speaker,
-            other,
-            topic,
-            passages,
-            summary,
-            transcript.utterances[-(RECENT_TURNS + 1) : -1],
-            incoming,
-            number=i + 1,
-            pool=list(pools[speaker.key].values()),
-            others={u.turn: u.text for u in transcript.utterances if u.speaker == other.key},
-            own={u.turn: u.text for u in transcript.utterances if u.speaker == speaker.key},
-            query=query,
-            model=model,
-            temperature=temperature,
-            intent=turn_intent(i + 1, turns),
-        )
-        transcript.utterances.append(utterance)
-        cited[speaker.key].update(utterance.cited.values())
+    transcript = moot.start()
+    while not moot.done:
+        utterance = moot.next_turn()
         if on_utterance is not None:
             on_utterance(utterance)
     return transcript

@@ -82,23 +82,6 @@ def _make_synth(backend: str):
     return text_synth_for_backend(backend, env_synth)
 
 
-def _resolve_model(backend: str, model: str | None, synth) -> tuple[str | None, str]:
-    """Pick the model a moot calls with and the name its transcript records.
-
-    :param backend: One of :data:`_BACKENDS`.
-    :param model: The ``--model`` value, or ``None``.
-    :param synth: The synthesizer, whose own default applies off omlx.
-    :returns: ``(model passed to complete, model name recorded)``. The first is
-        ``None`` when the synthesizer's default should apply.
-    """
-    if model:
-        return model, model
-    if backend == "omlx":
-        return DEFAULT_MODEL, DEFAULT_MODEL
-    cfg = getattr(synth, "_cfg", None)  # TextSynthesizer keeps its TextConfig here
-    return None, cfg.resolved_model() if cfg is not None else ""
-
-
 #: Border colors of the first and second tree's speech bubbles.
 _TREE_STYLES = ("green", "magenta")
 # Quoted spans (straight or curly marks) and citation tags, for highlighting.
@@ -397,12 +380,12 @@ def converse_cmd(
     import httpx
     from kg_utils.worker import WorkerError
 
-    from gutenberg_kg.serve.entmoot import MootError, run_moot
+    from gutenberg_kg.serve.entmoot import MootError, resolve_model, run_moot
 
     url = worker_url or os.environ.get("KGRAG_ENDPOINT", "http://localhost:8000")
     client = _make_client(url)
     synth = _make_synth(backend)
-    call_model, model_name = _resolve_model(backend, model, synth)
+    call_model, model_name = resolve_model(backend, model, synth)
     console = None
     if not plain:
         from rich.console import Console

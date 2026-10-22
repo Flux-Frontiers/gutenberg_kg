@@ -102,6 +102,8 @@ nav:
       - Moots:
           - Moots: api/entmoot.md
           - Worker corpus scope: api/scope.md
+          - Live moot sessions: api/moot_ops.md
+          - Worker CORS: api/cors.md
           - Moot packs for the forest: api/export_web_moots.md
           - Author voices: api/author_voices.md
       - Image & MCP:

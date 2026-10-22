@@ -123,6 +123,46 @@ both book names and the topic, so re-running a pairing on the same topic
 replaces its pack, and `index.json` is merged rather than rewritten. The forest
 publishes a pack when it is committed to knowledge_press `main`.
 
+## Live moots from the forest
+
+The forest can also hold a new moot against your local worker and play each
+turn as it is made. The worker holds the moot: the forest starts it, asks for
+one turn at a time, and may stop it.
+
+| Op | Input | Returns |
+|---|---|---|
+| `moot_start` | `books` (two catalog keys), and optionally `topic`, `turns` (2-40, default 8), `k` (1-20, default 6), `model`, `temperature` (default 0.6) | `moot_id`, the pack `id`, `topic`, `date`, `model`, `backend`, `turns`, and `trees`, each with its author's `voice` |
+| `moot_turn` | `moot_id` | `turn`, in the moot-pack form (text, speaker, citations, corrections), and `done`; the last turn adds `stats` |
+| `moot_stop` | `moot_id` | `stopped` |
+
+The model call uses the worker's own synthesis backend. A request may name a
+model but not a backend, and the default model is chosen as for
+`gutenkg converse`. A turn takes as long as the model needs: about 5 to 12
+seconds with a 4B model on oMLX, longer with the 27B default. A worker holds
+at most 4 live moots in memory. One left unasked for 30 minutes is dropped, a
+full table drops the least recently used, and a restart ends them all. An
+error comes back as RunPod's `{"status": "FAILED", "error": ...}`. A backend
+failure leaves the moot in place, so the turn can be asked for again.
+
+Two settings let a browser reach the worker:
+
+- **`GUTENKG_CORS_ORIGINS`**: the origins allowed to call it, comma
+  separated. `docker compose` and `make run` default to the forest's dev
+  server, `http://localhost:5173`, and the published forest,
+  `https://flux-frontiers.github.io`. Set it empty to turn CORS off.
+- **`MOOT_TOKEN`**: optional. When set, the moot ops need it as `token`,
+  and the forest sends it in place of `HANDLER_SECRET`, which never reaches
+  a browser. On a worker with neither set, the moot ops need nothing, as
+  every other op.
+
+Browsers differ on reaching `http://localhost` from the published https
+forest (checked 2026-10-21):
+
+| Forest at | Chrome | Safari |
+|---|---|---|
+| `http://localhost:5173` (`make web-dev` in knowledge_press) | works | works |
+| `https://flux-frontiers.github.io/knowledge_press/` | works after you allow local network access when Chrome asks | blocked: Safari refuses insecure content on a secure page |
+
 ## Author voices
 
 Each tree in a moot pack carries its author's voice (`gender` and `accent`), so

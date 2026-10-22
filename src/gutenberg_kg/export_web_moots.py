@@ -52,6 +52,46 @@ def moot_id(transcript: dict) -> str:
     return slugify(" ".join([*names, transcript.get("topic") or ""]))
 
 
+def pack_tree(tree: dict, voices: dict[str, dict]) -> dict:
+    """One tree as a pack carries it.
+
+    :param tree: A transcript tree, ``{"key", "title", "author", ...}``.
+    :param voices: The author voice table.
+    :returns: ``{key, title, author, voice}``.
+    """
+    return {
+        "key": tree["key"],
+        "title": tree["title"],
+        "author": tree["author"],
+        "voice": voice_for(tree["author"], voices),
+    }
+
+
+def pack_turn(utterance: dict, side: dict[str, int]) -> dict:
+    """One utterance as a pack turn: what the reader sees.
+
+    :param utterance: A transcript utterance.
+    :param side: Each tree's key -> 0 or 1, its speaking order.
+    :returns: ``{turn, speaker, text, cites, grounded, snaps}``; never the raw
+        reply, prompts or retrieval query.
+    """
+    labels = {r["tag"]: r["label"] for r in utterance.get("retrieved", [])}
+    return {
+        "turn": utterance["turn"],
+        "speaker": side[utterance["speaker"]],
+        "text": utterance["text"],
+        "cites": [
+            {"tag": tag, "label": labels.get(tag, ""), "node_id": node_id}
+            for tag, node_id in utterance.get("cited", {}).items()
+        ],
+        "grounded": utterance["grounded"],
+        "snaps": [
+            {k: s.get(k) for k in ("text", "action", "to", "reason")}
+            for s in utterance.get("snaps", [])
+        ],
+    }
+
+
 def moot_pack(transcript: dict, voices: dict[str, dict] | None = None) -> dict:
     """Turn a transcript into a moot pack.
 
@@ -67,25 +107,6 @@ def moot_pack(transcript: dict, voices: dict[str, dict] | None = None) -> dict:
         raise MootPackError("not a converse transcript: needs two trees and at least one turn")
     side = {t["key"]: i for i, t in enumerate(trees)}
     run = transcript.get("run") or {}
-    turns = []
-    for u in utterances:
-        labels = {r["tag"]: r["label"] for r in u.get("retrieved", [])}
-        turns.append(
-            {
-                "turn": u["turn"],
-                "speaker": side[u["speaker"]],
-                "text": u["text"],
-                "cites": [
-                    {"tag": tag, "label": labels.get(tag, ""), "node_id": node_id}
-                    for tag, node_id in u.get("cited", {}).items()
-                ],
-                "grounded": u["grounded"],
-                "snaps": [
-                    {k: s.get(k) for k in ("text", "action", "to", "reason")}
-                    for s in u.get("snaps", [])
-                ],
-            }
-        )
     return {
         "version": PACK_VERSION,
         "id": moot_id(transcript),
@@ -93,16 +114,8 @@ def moot_pack(transcript: dict, voices: dict[str, dict] | None = None) -> dict:
         "date": (run.get("started") or "")[:10],
         "model": transcript.get("model", ""),
         "backend": run.get("backend", ""),
-        "trees": [
-            {
-                "key": t["key"],
-                "title": t["title"],
-                "author": t["author"],
-                "voice": voice_for(t["author"], voices or {}),
-            }
-            for t in trees
-        ],
-        "turns": turns,
+        "trees": [pack_tree(t, voices or {}) for t in trees],
+        "turns": [pack_turn(u, side) for u in utterances],
         "stats": transcript.get("stats", {}),
     }
 
