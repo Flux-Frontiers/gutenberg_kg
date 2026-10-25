@@ -241,7 +241,6 @@ class DiarySource:
     slug: str
     graph: Path
     vectors: Path | None
-    lancedb: Path | None
 
 
 @dataclass(frozen=True)
@@ -252,31 +251,26 @@ class BundlePaths:
     graph: Path
     catalog: Path | None
     vectors: Path | None
-    lancedb: Path | None
     diaries: tuple[DiarySource, ...] = ()
 
     @property
     def has_vectors(self) -> bool:
-        return self.vectors is not None or self.lancedb is not None
+        return self.vectors is not None
 
 
-def _resolve_vector_paths(store_dir: Path) -> tuple[Path | None, Path | None]:
-    """Return ``(vectors.sqlite, lancedb/)`` for a store directory, at most one set.
+def _resolve_vectors_path(store_dir: Path) -> Path | None:
+    """Return a store directory's ``vectors.sqlite``, if it exists.
 
-    Mirrors :func:`gutenberg_kg.vector_store.resolve_vector_paths`, inlined so
+    Mirrors :func:`gutenberg_kg.vector_store.resolve_vectors_path`, inlined so
     this module keeps stdlib-only imports at module scope and stays importable
-    (and testable) without the rest of the package.
+    (and testable) without the rest of the package. A ``lancedb/`` directory is
+    not read: LanceDB support was removed fleet-wide in 0.29.0.
 
     :param store_dir: A ``.dockg`` / ``.diarykg`` directory.
-    :returns: ``(vectors_path, lancedb_path)``; the migrated shape wins.
+    :returns: The ``vectors.sqlite`` path, or ``None``.
     """
     vectors = store_dir / "vectors.sqlite"
-    if vectors.exists():
-        return vectors, None
-    lancedb = store_dir / "lancedb"
-    if lancedb.exists():
-        return None, lancedb
-    return None, None
+    return vectors if vectors.exists() else None
 
 
 def locate_bundle(root: Path) -> BundlePaths:
@@ -297,7 +291,7 @@ def locate_bundle(root: Path) -> BundlePaths:
     if not graph.exists():
         raise ExportError(f"no consolidated DocKG at {graph} — is {root} a bundle root?")
 
-    vectors, lancedb = _resolve_vector_paths(dockg)
+    vectors = _resolve_vectors_path(dockg)
     catalog = dockg / "catalog.json"
 
     diaries: list[DiarySource] = []
@@ -308,13 +302,11 @@ def locate_bundle(root: Path) -> BundlePaths:
             diary_graph = store / "graph.sqlite"
             if not diary_graph.exists():
                 continue
-            dvec, dlance = _resolve_vector_paths(store)
             diaries.append(
                 DiarySource(
                     slug=_diary_slug(directory.name),
                     graph=diary_graph,
-                    vectors=dvec,
-                    lancedb=dlance,
+                    vectors=_resolve_vectors_path(store),
                 )
             )
 
@@ -323,7 +315,6 @@ def locate_bundle(root: Path) -> BundlePaths:
         graph=graph,
         catalog=catalog if catalog.exists() else None,
         vectors=vectors,
-        lancedb=lancedb,
         diaries=tuple(diaries),
     )
 
@@ -642,27 +633,21 @@ def _connect_with_vec(path: Path, *, read_only: bool = False) -> sqlite3.Connect
 
 def iter_source_vectors(
     vectors: Path | None,
-    lancedb: Path | None,
     *,
     allowed_keys: frozenset[str] | None = None,
 ) -> Iterator[tuple[str, object]]:
-    """Stream ``(node_id, vector)`` from whichever store shape the bundle has.
+    """Stream ``(node_id, vector)`` from the bundle's sqlite-vec store.
 
     Streams rather than materialising: the consolidated store holds 688 K
     vectors, and only the ~364 K searchable ones end up in the pack.
 
-    :param vectors: A migrated ``vectors.sqlite``, or None.
-    :param lancedb: A legacy ``lancedb/`` directory, or None.
+    :param vectors: The ``vectors.sqlite`` store, or None.
     :param allowed_keys: Restrict to ``vec_meta`` rows whose ``file_path``
         starts with one of these ``"<genre>/<book>"`` keys, applied alongside
         ``kind IN ('chunk','section')`` so enrichment-kind rows (topic,
-        entity, keyword, document) never reach the scan either. Only the
-        ``vectors.sqlite`` path filters at the query — a book-filtered export
-        against the legacy ``lancedb/`` shape still streams every row and
-        relies on the caller's own id check to drop the rest, since LanceDB
-        is retired fleet-wide and not worth optimising further.
+        entity, keyword, document) never reach the scan either.
     :yields: ``(id, numpy float32 array)`` pairs.
-    :raises ExportError: If neither store is present.
+    :raises ExportError: If there is no store.
     """
     numpy = _load_numpy()
     if vectors is not None:
@@ -685,24 +670,10 @@ def iter_source_vectors(
             con.close()
         return
 
-    if lancedb is not None:
-        try:
-            import lancedb as lancedb_module  # noqa: PLC0415
-        except ImportError as exc:  # pragma: no cover — environment-dependent
-            raise ExportError(
-                f"{lancedb} is a LanceDB store; reading it needs the lancedb "
-                "package. Convert it first with `dockg convert-index`."
-            ) from exc
-        database = lancedb_module.connect(str(lancedb))
-        table = database.open_table(database.table_names()[0])
-        arrow = table.to_arrow()
-        ids = arrow["id"].to_pylist()
-        raw = arrow["vector"].to_pylist()
-        for node_id, vector in zip(ids, raw, strict=False):
-            yield node_id, numpy.asarray(vector, dtype=numpy.float32)
-        return
-
-    raise ExportError("no vector store found in the bundle (.dockg/vectors.sqlite or lancedb/)")
+    raise ExportError(
+        "no vector store found in the bundle (.dockg/vectors.sqlite); a lancedb/ "
+        "store is no longer read -- rebuild it with `gutenkg build-corpus`"
+    )
 
 
 def encode_vector(vector, dtype: str) -> bytes:
@@ -931,7 +902,6 @@ class _PassageSource:
     kg_name: str
     kg_kind: str
     vectors: Path | None
-    lancedb: Path | None
     #: Fixed title/author/genre for a whole KG (diaries), or None to take them
     #: from the catalog per book.
     fixed_meta: dict | None = None
@@ -1250,12 +1220,12 @@ def write_vector_sidecar(
             seen: set[int] = set()
             assignments: list[tuple[int, int]] = []
             for source in sources:
-                if source.vectors is None and source.lancedb is None:
+                if source.vectors is None:
                     progress(f"  {source.kg_name}: no vector store — lexical search only")
                     continue
                 source_start = written
                 for node_id, vector in iter_source_vectors(
-                    source.vectors, source.lancedb, allowed_keys=source.allowed_keys
+                    source.vectors, allowed_keys=source.allowed_keys
                 ):
                     # The pack id is namespaced by kg_name, so a vector can only
                     # ever land on a row from its own KG — a diary's vector
@@ -1738,9 +1708,7 @@ def verify_pack(
     say("  loading source vectors for exact ground truth…")
     ids: list[str] = []
     rows: list = []
-    for node_id, vector in iter_source_vectors(
-        source.vectors, source.lancedb, allowed_keys=source.allowed_keys
-    ):
+    for node_id, vector in iter_source_vectors(source.vectors, allowed_keys=source.allowed_keys):
         ids.append(f"{source.kg_name}:{node_id}")
         rows.append(vector)
     if not rows:
@@ -1930,7 +1898,6 @@ def export_swift(options: ExportOptions, *, progress=None) -> ExportReport:
         kg_name="gutenberg",
         kg_kind="KGKind.GUTENBERG",
         vectors=bundle.vectors,
-        lancedb=bundle.lancedb,
         allowed_keys=options.catalog_keys,
     )
     say("gutenberg.pack")
@@ -1957,7 +1924,6 @@ def export_swift(options: ExportOptions, *, progress=None) -> ExportReport:
                         kg_name=diary.slug,
                         kg_kind="KGKind.DIARY",
                         vectors=diary.vectors,
-                        lancedb=diary.lancedb,
                     )
                     for diary in diaries
                 ],

@@ -59,7 +59,7 @@ from rich.progress import (
 from rich.text import Text
 
 from gutenberg_kg.temporal import publication_year, stamp_publication_year
-from gutenberg_kg.vector_store import resolve_vector_paths
+from gutenberg_kg.vector_store import resolve_vectors_path
 
 # kg_rag is an optional kgdeps extra — import lazily inside functions so the
 # module can be imported in environments where it isn't installed (e.g. CI).
@@ -222,11 +222,11 @@ def dockg_defect(store_dir: Path) -> str | None:
     if not is_sqlite_valid(store_dir / "graph.sqlite"):
         return "corrupt/empty graph.sqlite"
 
-    vectors, lancedb = resolve_vector_paths(store_dir)
-    if vectors is None and lancedb is None:
-        return "no vector store"
+    vectors = resolve_vectors_path(store_dir)
     if vectors is None:
-        return None  # LanceDB store: pre-migration shape, presence is all we check
+        if (store_dir / "lancedb").exists():
+            return "only a LanceDB store, which is no longer read"
+        return "no vector store"
 
     import sqlite3
 
@@ -337,10 +337,7 @@ def register_book(
     from kg_rag.primitives import KGEntry, KGKind
 
     sqlite = book_dir / ".dockg" / "graph.sqlite"
-    # build_dockg leaves DocKG on vector_backend="auto", which resolves to
-    # sqlite-vec for a fresh corpus — so a newly built book writes
-    # vectors.sqlite, not lancedb/. Probe for both rather than assuming either.
-    vectors, lancedb = resolve_vector_paths(book_dir / ".dockg")
+    vectors = resolve_vectors_path(book_dir / ".dockg")
     entry = KGEntry(
         name=name,
         kind=KGKind.GUTENBERG,
@@ -348,7 +345,6 @@ def register_book(
         venv_path=book_dir / ".venv",
         sqlite_path=sqlite if sqlite.exists() else None,
         vectors_path=vectors,
-        lancedb_path=lancedb,
         tags=[date.today().isoformat()],
     )
     if dry_run:
@@ -392,10 +388,7 @@ def register_diary_book(
     from kg_rag.primitives import KGEntry, KGKind
 
     sqlite = diary_dir / ".diarykg" / "graph.sqlite"
-    # diary-kg >=0.96.0 writes .diarykg/vectors.sqlite and no longer creates
-    # lancedb/, so probing only for the latter registered both vector columns
-    # empty — silently, since None is a legal value here.
-    vectors, lancedb = resolve_vector_paths(diary_dir / ".diarykg")
+    vectors = resolve_vectors_path(diary_dir / ".diarykg")
     entry = KGEntry(
         name=name,
         kind=KGKind.GUTENBERG,
@@ -403,7 +396,6 @@ def register_diary_book(
         venv_path=diary_dir / ".venv",
         sqlite_path=sqlite if sqlite.exists() else None,
         vectors_path=vectors,
-        lancedb_path=lancedb,
         tags=[date.today().isoformat()],
     )
     if dry_run:

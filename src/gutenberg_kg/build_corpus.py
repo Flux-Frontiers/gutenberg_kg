@@ -341,8 +341,8 @@ def bundle_diaries(out_dir: Path, *, diary_dirs: tuple[str, ...] | None = None) 
         if dest.exists() or dest.is_symlink():
             shutil.rmtree(dest)
         # Skip any lancedb/ a pre-0.94 diary-kg left behind — the served store
-        # is .diarykg/vectors.sqlite, and handler.py's resolve_vector_paths
-        # prefers it, so copying the old one only bloats the bundle and the image.
+        # is .diarykg/vectors.sqlite and nothing reads LanceDB any more, so
+        # copying the old one only bloats the bundle and the image.
         shutil.copytree(
             str(diarykg_dir),
             str(dest),
@@ -490,7 +490,7 @@ def run_build_corpus(genres: list[str], opts: BuildCorpusOptions) -> int:
 
     Genres are grouped by their effective chunk strategy, then each group is
     walked and parsed into the *same* ``graph.sqlite`` (first group wipes, the
-    rest append).  A single embedding pass and a single LanceDB index pass run
+    rest append).  A single embedding pass and a single vector index pass run
     over the combined node table.  Finally, any DiaryKG indices found under
     ``corpus/diaries/`` are copied verbatim into the bundle.
 
@@ -611,8 +611,8 @@ def run_build_corpus(genres: list[str], opts: BuildCorpusOptions) -> int:
     out_dir.mkdir(parents=True, exist_ok=True)
 
     # Purge a LanceDB store left over from a pre-migration build: ~2.8 GB of
-    # index nothing reads any more (the handler and resolve_vector_paths both
-    # prefer vectors.sqlite), which a blanket `COPY bundles/` baked into the
+    # index nothing reads any more (LanceDB support was removed fleet-wide in
+    # 0.29.0), which a blanket `COPY bundles/` baked into the
     # image byte for byte.
     #
     # It used to be a correctness issue too, not just weight: through doc-kg
@@ -757,7 +757,7 @@ def run_build_corpus(genres: list[str], opts: BuildCorpusOptions) -> int:
             )
 
         # ------------------------------------------------------------------
-        # Phase 3: build LanceDB index + SIMILAR_TO edges.
+        # Phase 3: build the sqlite-vec index + SIMILAR_TO edges.
         # ------------------------------------------------------------------
         # On --update we UPSERT into the existing vector index (wipe=False) and skip
         # SIMILAR_TO — the served handler is semantic-first and never traverses those

@@ -52,7 +52,7 @@ That set is the **recommended default** — everything except dev tooling (KG in
 | `kgdeps` | kg-rag (doc-kg and diary-kg are core dependencies, always installed) | `poetry install --extras kgdeps` |
 | `viz` | plotly (2-D growth timeline) | `poetry install --extras viz` |
 | `viz3d` | pyvista, PyQt5, kgmodule-utils, quiltwright (3-D visualiser + light-field quilts) | `poetry install --extras viz3d` |
-| `mcp` | fastmcp, structlog (MCP server) | `poetry install --extras mcp` |
+| `mcp` | mcp, structlog (MCP server) | `poetry install --extras mcp` |
 | `chat` | streamlit, httpx, watchdog (reading-room UI) | `poetry install --extras chat` |
 | `image` | fastapi, uvicorn, pydantic (image service) | `poetry install --extras image` |
 | `pov` | quiltwright povgen, kgmodule-utils NumPy-only geometry (analytic POV-Ray output, `gutenkg pov`) — deliberately no PyVista/Qt/GL, so a headless box can install it alone | `poetry install --extras pov` |

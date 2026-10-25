@@ -468,11 +468,11 @@ def test_dockg_defect_empty_vector_store(tmp_path: Path):
     assert dockg_defect(tmp_path) == "empty vector store"
 
 
-def test_dockg_defect_lancedb_store_accepted(tmp_path: Path):
-    """Pre-migration LanceDB stores are probed by presence only."""
+def test_dockg_defect_a_lancedb_store_is_a_defect(tmp_path: Path):
+    """LanceDB support is gone, so a LanceDB-only store needs a rebuild."""
     _write_graph(tmp_path)
     (tmp_path / "lancedb").mkdir()
-    assert dockg_defect(tmp_path) is None
+    assert dockg_defect(tmp_path) == "only a LanceDB store, which is no longer read"
 
 
 # ---------------------------------------------------------------------------

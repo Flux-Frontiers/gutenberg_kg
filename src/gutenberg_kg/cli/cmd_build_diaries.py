@@ -48,7 +48,7 @@ def build_diaries(diary_names, force, workers, dry_run, quiet):
     Each diary must have a pre-built .diary/ directory of chunked entry files
     (produced by 'gutenkg chunk-diaries' from the committed <book>.md).  This
     command runs the DocKG build over those chunks and writes the resulting
-    graph.sqlite + lancedb index into .diarykg/ — the prerequisite for
+    graph.sqlite + vectors.sqlite index into .diarykg/ — the prerequisite for
     'build-corpus', which copies these indices verbatim into the bundle.
 
     Uses sentence_group chunking and disables SIMILAR_TO edges, matching the

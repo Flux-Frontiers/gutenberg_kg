@@ -14,14 +14,14 @@ Client
 RunPod Serverless — GutenbergKG Query Worker
   • handler.py bootstraps the DocKG registry from the Network Volume on startup
   • BAAI/bge-small-en-v1.5 baked into the image (no cold-start download)
-  • LanceDB + SQLite indices served from Network Volume (~200 MB)
+  • sqlite-vec + SQLite indices served from Network Volume (~200 MB)
   │ (optional, synthesize=true)
   ▼
 RunPod vLLM Endpoint — Qwen3-8B-Instruct
 
 RunPod Network Volume (~10 GB reserved)
   /workspace/
-  └── gutenberg_kg/.dockg/       (DocKG index — SQLite + LanceDB)
+  └── gutenberg_kg/.dockg/       (DocKG index — SQLite + sqlite-vec)
 ```
 
 ---

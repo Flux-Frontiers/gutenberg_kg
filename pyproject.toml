@@ -13,7 +13,7 @@
 #   pov      analytic POV-Ray output, `gutenkg pov` (quiltwright povgen).
 #            Headless and NumPy-only — no PyVista, no Qt, no GL context — so a
 #            ray-tracing box can install this WITHOUT viz3d.
-#   mcp      MCP server, `gutenkg-mcp` (fastmcp, structlog)
+#   mcp      MCP server, `gutenkg mcp` (mcp, structlog)
 #   chat     reading-room UI, `gutenkg chat` (streamlit, httpx, watchdog)
 #   image    local image server, `gutenkg-image-server` (fastapi, uvicorn)
 #
@@ -149,10 +149,11 @@ pov = [
     "quiltwright>=0.16.0",
 ]
 mcp = [
-    # Upper-bounded: mcp_server.py builds its FastMCP instance and registers its
-    # tools at import, so an incompatible major breaks `gutenkg-mcp` at import
-    # time. Lift the ceiling only after verifying 4.x against test_mcp_server.py.
-    "fastmcp>=3.0,<4",
+    # The server is kg_utils.mcp's, on the SDK's FastMCP -- the standalone
+    # fastmcp package is gone (MCP centralization step 4). 1.23.0 is the floor
+    # kg_utils.mcp measured. At the kgmodule-utils 0.29.0 release this becomes
+    # "kgmodule-utils[mcp]>=0.29.0", which carries the same pin.
+    "mcp>=1.23.0,<2",
     "structlog>=24.0",
 ]
 # Serving layer (gutenberg_kg.serve) -- one extra per module. runpod is

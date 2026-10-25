@@ -220,7 +220,7 @@ def _query_corpus(query: str, book: str | None) -> str:
                 with DocKG(
                     corpus_root=str(diarykg / "corpus"),
                     db_path=str(diarykg / "graph.sqlite"),
-                    lancedb_dir=str(diarykg / "lancedb"),
+                    vectors_path=str(diarykg / "vectors.sqlite"),
                 ) as kg:
                     result = kg.query(query, k=8)
                 for node in result.nodes:
@@ -242,7 +242,7 @@ def _query_corpus(query: str, book: str | None) -> str:
                         str(bundle / "corpus") if (bundle / "corpus").exists() else str(bundle)
                     ),
                     db_path=str(bundle / "graph.sqlite"),
-                    lancedb_dir=str(bundle / "lancedb"),
+                    vectors_path=str(bundle / "vectors.sqlite"),
                 ) as kg:
                     result = kg.query(query, k=8)
                 for node in result.nodes:

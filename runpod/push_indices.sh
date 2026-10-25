@@ -95,8 +95,7 @@ ssh ${SSH_OPTS} "${SSH_TARGET}" \
 
 echo "--- Pushing corpus bundle → ${DEST_BASE}/gutenberg_kg/ ---"
 # --exclude 'lancedb': the served worker reads sqlite-vec (vectors.sqlite); the
-# LanceDB dirs are the ~2.3 GB legacy store and are not shipped. Drop the flag
-# to fall back to a LanceDB deploy.
+# LanceDB dirs are the ~2.3 GB legacy store; nothing reads them since 0.29.0.
 rsync -avz --progress --exclude 'lancedb' -e "${RSYNC_SSH}" \
     "${BUNDLE_DIR}/" \
     "${SSH_TARGET}:${DEST_BASE}/gutenberg_kg/"
