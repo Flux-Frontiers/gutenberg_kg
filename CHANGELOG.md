@@ -26,6 +26,11 @@ against their local wheels, and the floors are raised when the fleet lap passes.
   without opening the bundle. Each session prints the bundle it serves to
   stderr, and **a missing bundle is refused** (`no graph at ...`): build it
   with `gutenkg build-corpus` before serving, including to use the image tools.
+- **The `stats` tool reports `kind: "gutenberg"`.** It returns the bundle
+  DocKG's stats in the fleet shape (kgrag_priv `docs/FLEET_STANDARDS.md`,
+  "KG stats shape") -- `nodes` / `edges` totals with their breakdowns by kind
+  and relation, plus `vector_count` -- with `kind` set to the server's own
+  kind rather than DocKG's `"doc"`.
 - **`gutenkg mcp`** is the MCP command, with the fleet's standard flags
   (`--repo`, `--db`, `--vectors`, `--model`,
   `--transport stdio|streamable-http`, `--host`, `--port`, `--manifest`);

@@ -31,6 +31,7 @@ from click.testing import CliRunner  # noqa: E402
 from doc_kg.dockg import DocEdge, DocNode  # noqa: E402
 from doc_kg.store import GraphStore  # noqa: E402
 from kg_utils.mcp import CANONICAL_TOOLS, manifest  # noqa: E402
+from kg_utils.stats import stats_problems  # noqa: E402
 from mcp import ClientSession, StdioServerParameters  # noqa: E402
 from mcp.client.stdio import stdio_client  # noqa: E402
 from mcp.shared.memory import create_connected_server_and_client_session  # noqa: E402
@@ -151,7 +152,9 @@ def test_graph_tools_answer_without_a_model(repo, monkeypatch):
         )
 
     stats, node, near, query = _session(mcp_server.build_server(repo), calls)
-    assert not stats.isError and stats.structuredContent["node_count"] == 4
+    assert not stats.isError and stats_problems(stats.structuredContent) == []
+    assert stats.structuredContent["kind"] == "gutenberg"
+    assert stats.structuredContent["nodes"]["total"] == 4
     assert not node.isError and node.structuredContent["title"] == "Canto I"
     assert [n["id"] for n in near.structuredContent["nodes"]] == ["chunk:poetry/Inferno.md:0001"]
     assert query.isError and "embedding model load refused by test" in query.content[0].text
@@ -262,7 +265,7 @@ def test_stdio_subprocess_serves(repo, tmp_path):
     init, tools, stats = anyio.run(run)
     assert (init.serverInfo.name, init.serverInfo.version) == ("gutenkg", gutenberg_kg.__version__)
     assert [t.name for t in tools.tools] == [*CANONICAL_TOOLS, *_EXTRAS]
-    assert stats.structuredContent["node_count"] == 4
+    assert stats.structuredContent["nodes"]["total"] == 4
     err = (tmp_path / "stderr.log").read_text(encoding="utf-8")
     assert "gutenkg MCP server starting (stdio)" in err
     assert "bundles/gutenberg-all/.dockg/graph.sqlite" in err

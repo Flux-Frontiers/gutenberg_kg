@@ -37,11 +37,12 @@ import os
 import tempfile
 from io import BytesIO
 from pathlib import Path
-from typing import TYPE_CHECKING
+from typing import TYPE_CHECKING, Any
 
 # At module scope: FastMCP evaluates the tools' annotations when it registers
 # them. Only build_server() imports this module, so other gutenkg commands
 # still start without mcp.
+from kg_utils.mcp import Context, kg_from
 from mcp.server.fastmcp import Image
 
 if TYPE_CHECKING:
@@ -67,6 +68,13 @@ PREAMBLE = (
 )
 
 _MAX_IMAGE_BYTES = 3_750_000
+
+
+def stats(*, ctx: Context) -> dict[str, Any]:
+    """
+    Node and edge counts for the corpus bundle, in total and by kind and relation, plus its vector count.
+    """
+    return {**kg_from(ctx).stats(), "kind": "gutenberg"}
 
 
 def _compress_for_mcp(pil_img: PILImage.Image, path: str) -> tuple[str, str]:
@@ -252,6 +260,7 @@ def build_server(
     server = make_server(
         open_kg, name="gutenkg", kind="gutenberg", version=__version__, instructions=PREAMBLE
     )
+    server.canonical("stats")(stats)
     server.canonical("query")(query)
     server.canonical("pack")(pack)
     for tool in EXTRA_TOOLS:
