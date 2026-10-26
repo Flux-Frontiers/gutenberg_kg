@@ -161,6 +161,11 @@ def test_graph_tools_answer_without_a_model(repo, monkeypatch):
 
 
 def test_image_tools_return_images(repo, stub_images):
+    # The image tools log through structlog, which only the mcp extra brings.
+    # mcp itself can arrive without it (kg-rag 0.18.0 depends on
+    # kgmodule-utils[mcp]), as in CI's dev-group-only Test job.
+    pytest.importorskip("structlog", reason="the image tools need the mcp extra")
+
     async def calls(client: ClientSession):
         return (
             await client.call_tool("generate_image", {"prompt": "a dark wood"}),
