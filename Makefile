@@ -508,14 +508,18 @@ build: check-pins setup
 	  --build-arg BUNDLE=$$BUNDLE -t $(IMAGE):$$IMAGE_TAG .
 
 # Build every platform in $(PLATFORMS) into one image index and push it. Needs
-# `container registry login docker.io` once.
+# `container registry login docker.io` once. Then delete the image the push
+# replaced (scripts/prune_hub_image.py; needs DOCKERHUB_USERNAME and
+# DOCKERHUB_TOKEN, and skips with a note without them).
 publish-worker-image: check-pins setup
 	@$(resolve_spec) \
+	OLD=$$(python3 scripts/prune_hub_image.py digest $(REGISTRY_IMAGE):$$IMAGE_TAG); \
 	container build $(BUILD_FLAGS) $(HF_SECRET) \
 	  $(foreach p,$(subst $(COMMA), ,$(PLATFORMS)),--platform $(p)) \
 	  -f docker/Dockerfile --build-arg BUNDLE=$$BUNDLE \
 	  -t $(REGISTRY_IMAGE):$$IMAGE_TAG . && \
-	container image push $(REGISTRY_IMAGE):$$IMAGE_TAG
+	container image push $(REGISTRY_IMAGE):$$IMAGE_TAG && \
+	python3 scripts/prune_hub_image.py prune $(REGISTRY_IMAGE):$$IMAGE_TAG "$$OLD"
 
 # Fetch a published image and tag it as the local one `make run` starts, so a
 # new machine can skip build-corpus and build. The old local tag is removed
@@ -623,14 +627,18 @@ build: check-pins
 
 # Multi-platform builds need a docker-container builder; the default `docker`
 # driver cannot push an image index. Created once, reused after. Needs
-# `docker login` once.
+# `docker login` once. Then delete the image the push replaced, which Docker
+# Hub would otherwise keep untagged (scripts/prune_hub_image.py; needs
+# DOCKERHUB_USERNAME and DOCKERHUB_TOKEN, and skips with a note without them).
 publish-worker-image: check-pins
 	@docker buildx inspect $(BUILDX_BUILDER) >/dev/null 2>&1 || \
 	  docker buildx create --name $(BUILDX_BUILDER) --driver docker-container >/dev/null
 	@$(resolve_spec) \
+	OLD=$$(python3 scripts/prune_hub_image.py digest $(REGISTRY_IMAGE):$$IMAGE_TAG); \
 	docker buildx build --builder $(BUILDX_BUILDER) --platform $(PLATFORMS) \
 	  $(BUILD_FLAGS) $(HF_SECRET) -f docker/Dockerfile --build-arg BUNDLE=$$BUNDLE \
-	  -t $(REGISTRY_IMAGE):$$IMAGE_TAG --push .
+	  -t $(REGISTRY_IMAGE):$$IMAGE_TAG --push . && \
+	python3 scripts/prune_hub_image.py prune $(REGISTRY_IMAGE):$$IMAGE_TAG "$$OLD"
 
 pull-worker-image:
 	@$(resolve_spec) \
