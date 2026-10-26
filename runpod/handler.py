@@ -2,7 +2,7 @@
 RunPod serverless handler — GutenbergKG query service.
 
 Serves semantic search over the Project Gutenberg literary corpus mounted
-from a RunPod Network Volume.  Uses the same direct LanceDB cosine-search
+from a RunPod Network Volume.  Uses the same direct sqlite-vec cosine-search
 path as docker/handler.py — no KGRAG orchestrator hop-expansion, which
 avoids the flat-plateau scoring bug and hangs on large corpora.
 
@@ -12,7 +12,7 @@ Volume layout (populated by runpod/push_indices.sh)
   └── gutenberg_kg/
       ├── .dockg/
       │   ├── graph.sqlite
-      │   ├── lancedb/
+      │   ├── vectors.sqlite
       │   └── catalog.json
       └── diaries/
           └── <diary-name>/.diarykg/
@@ -89,7 +89,6 @@ SYNTH_MAX_K = int(os.environ.get("SYNTH_MAX_K", "12"))
 SYNTH_PROMPT = os.environ.get("SYNTH_PROMPT", "")
 
 _DOCKG_SQLITE = GUTENBERG_ROOT / ".dockg" / "graph.sqlite"
-_DOCKG_LANCEDB = GUTENBERG_ROOT / ".dockg" / "lancedb"
 _DOCKG_VECTORS = GUTENBERG_ROOT / ".dockg" / "vectors.sqlite"
 _CATALOG_PATH = GUTENBERG_ROOT / ".dockg" / "catalog.json"
 # Metadata columns the sqlite-vec store carries (matches doc_kg's index).
@@ -160,7 +159,7 @@ def _bootstrap_registry():
             repo_path=GUTENBERG_ROOT,
             venv_path=Path("/usr"),
             sqlite_path=_DOCKG_SQLITE,
-            lancedb_path=_DOCKG_LANCEDB,
+            vectors_path=_DOCKG_VECTORS if _DOCKG_VECTORS.exists() else None,
             created_at=datetime.now(UTC),
             updated_at=datetime.now(UTC),
         )
@@ -177,7 +176,7 @@ def _bootstrap_registry():
                 continue
             diarykg_dir = diary_dir / ".diarykg"
             sqlite = diarykg_dir / "graph.sqlite"
-            lancedb = diarykg_dir / "lancedb"
+            vectors = diarykg_dir / "vectors.sqlite"
             if not sqlite.exists():
                 print(f"[bootstrap] skipping {diary_dir.name} — no .diarykg/graph.sqlite")
                 continue
@@ -189,7 +188,7 @@ def _bootstrap_registry():
                 repo_path=diary_dir,
                 venv_path=Path("/usr"),
                 sqlite_path=sqlite,
-                lancedb_path=lancedb,
+                vectors_path=vectors if vectors.exists() else None,
                 metadata={"source_file": _source_file_for(diary_dir)},
                 created_at=datetime.now(UTC),
                 updated_at=datetime.now(UTC),
@@ -197,7 +196,7 @@ def _bootstrap_registry():
             reg.register(entry)
             corp_reg.add_kg("diaries", entry.id)
             _KG_SQLITE[slug] = sqlite
-            # Open the diary's vector store (sqlite-vec preferred, LanceDB fallback).
+            # Open the diary's sqlite-vec store.
             try:
                 src = _open_vector_source(diarykg_dir, label=f"diary {slug}")
                 if src is not None:
@@ -214,38 +213,25 @@ def _bootstrap_registry():
 
 
 def _open_vector_source(dockg_dir, *, label: str):
-    """Open a vector source for a ``.dockg`` dir — sqlite-vec if present, else LanceDB.
+    """Open the sqlite-vec store in a ``.dockg`` / ``.diarykg`` dir.
 
-    Prefers the exact ``vectors.sqlite`` store; falls back to the LanceDB
-    ``dockg_nodes`` table for un-converted corpora (transition safety).
+    LanceDB support was removed with doc-kg and kgmodule-utils 0.29.0, and this
+    image never installed it, so there is no ``lancedb/`` fallback.
 
     :param dockg_dir: The ``.dockg``/``.diarykg`` dir holding the vector store.
     :param label: Human label for startup logging.
-    :returns: A ``SqliteVecBackend`` or an open LanceDB table, or ``None``.
+    :returns: An open ``SqliteVecBackend``, or ``None``.
     """
     vectors = dockg_dir / "vectors.sqlite"
-    lancedb_dir = dockg_dir / "lancedb"
-    if vectors.exists():
-        from kg_utils.vector_backend import SqliteVecBackend
+    if not vectors.exists():
+        print(f"[startup] WARNING: no vector store for {label} in {dockg_dir}")
+        return None
+    from kg_utils.vector_backend import SqliteVecBackend
 
-        be = SqliteVecBackend(vectors, dim=384, meta_columns=_VEC_META, check_same_thread=False)
-        be.open(wipe=False)
-        print(f"[startup] {label}: sqlite-vec store ({be.count()} vectors)")
-        return be
-    if lancedb_dir.exists():
-        import lancedb
-
-        db = lancedb.connect(str(lancedb_dir))
-        names = list(db.table_names())
-        table = "dockg_nodes" if "dockg_nodes" in names else (names[0] if names else None)
-        if table is None:
-            print(f"[startup] WARNING: no lancedb table in {lancedb_dir}")
-            return None
-        tbl = db.open_table(table)
-        print(f"[startup] {label}: LanceDB table {table} ({tbl.count_rows()} rows)")
-        return tbl
-    print(f"[startup] WARNING: no vector store for {label} in {dockg_dir}")
-    return None
+    be = SqliteVecBackend(vectors, dim=384, meta_columns=_VEC_META, check_same_thread=False)
+    be.open(wipe=False)
+    print(f"[startup] {label}: sqlite-vec store ({be.count()} vectors)")
+    return be
 
 
 def _open_dockg_table() -> None:
@@ -309,29 +295,16 @@ def _attach_content(hits: list[dict]) -> None:
 def _table_search(table, qvec, where: str, k: int) -> list[dict]:
     """Run a cosine kNN search with a pre-filter; returns rows with ``_distance``.
 
-    Dispatches on the store type. The sqlite-vec backend is exact (recall 1.0)
-    and its ``where`` compiles to a true rowid-subquery prefilter. The LanceDB
-    path keeps the ``nprobes(128)`` stopgap that lifts IvfFlat recall@10 from
-    ~0.825 to ~0.99 (benchmarks/SQLITE_VEC_RESULTS.md).
+    The sqlite-vec backend is exact (recall 1.0) and its ``where`` compiles to
+    a true rowid-subquery prefilter.
     """
-    from kg_utils.vector_backend import SqliteVecBackend
-
-    if isinstance(table, SqliteVecBackend):
-        return table.search(qvec, k, where=where)
-    return (
-        table.search(qvec)
-        .metric("cosine")
-        .where(where, prefilter=True)
-        .nprobes(128)
-        .limit(k)
-        .to_list()
-    )
+    return table.search(qvec, k, where=where)
 
 
 def _rows_to_hits(rows: list[dict], kg_name: str, kg_kind: str, min_score: float) -> list[dict]:
-    """Shape LanceDB rows into hit dicts (clean content hydrated separately).
+    """Shape vector-store rows into hit dicts (clean content hydrated separately).
 
-    The LanceDB ``text`` column holds the structured *embed-text*, not the clean
+    The store's ``text`` column holds the structured *embed-text*, not the clean
     passage — so ``content``/``summary`` are left empty here and filled from
     SQLite by ``_attach_content`` / ``_attach_diary_fields``.
     """

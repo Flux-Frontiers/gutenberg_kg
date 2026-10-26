@@ -103,10 +103,10 @@ RUN pip install --no-cache-dir --index-url https://download.pytorch.org/whl/cpu 
 # here and the pre-install layer fetches that package twice per cold build.
 # KGMODULE_UTILS_VERSION sat at 0.10.0 against a >=0.12.1 floor for exactly that
 # reason. Keep every ARG == the lock.
-ARG KG_RAG_VERSION=0.17.2
-ARG KGMODULE_UTILS_VERSION=0.27.1
-ARG DOC_KG_VERSION=0.28.1
-ARG DIARY_KG_VERSION=0.100.1
+ARG KG_RAG_VERSION=0.18.0
+ARG KGMODULE_UTILS_VERSION=0.29.0
+ARG DOC_KG_VERSION=0.29.0
+ARG DIARY_KG_VERSION=0.101.0
 RUN pip install --no-cache-dir \
     "runpod==1.12.0" \
     "kg-rag==${KG_RAG_VERSION}" \

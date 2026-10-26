@@ -52,7 +52,7 @@ That set is the **recommended default** — everything except dev tooling (KG in
 | `kgdeps` | kg-rag (doc-kg and diary-kg are core dependencies, always installed) | `poetry install --extras kgdeps` |
 | `viz` | plotly (2-D growth timeline) | `poetry install --extras viz` |
 | `viz3d` | pyvista, PyQt5, kgmodule-utils, quiltwright (3-D visualiser + light-field quilts) | `poetry install --extras viz3d` |
-| `mcp` | fastmcp, structlog (MCP server) | `poetry install --extras mcp` |
+| `mcp` | kgmodule-utils[mcp], structlog (MCP server, `gutenkg mcp`) | `poetry install --extras mcp` |
 | `chat` | streamlit, httpx, watchdog (reading-room UI) | `poetry install --extras chat` |
 | `image` | fastapi, uvicorn, pydantic (image service) | `poetry install --extras image` |
 | `pov` | quiltwright povgen, kgmodule-utils NumPy-only geometry (analytic POV-Ray output, `gutenkg pov`) — deliberately no PyVista/Qt/GL, so a headless box can install it alone | `poetry install --extras pov` |
@@ -179,6 +179,23 @@ Docker Desktop already holds the Docker Hub login (browser sign-in), and a
 `docker-container` buildx builder named `gutenkg-multiarch` is created on
 first use. Its amd64 half runs under QEMU, so the first build is slow; later
 builds reuse the builder's cache.
+
+Each push moves the tag to the new image, and Docker Hub keeps the one it
+replaced, untagged, with its own copy of the corpus: about 6 GB per publish.
+So after a successful push the target deletes the replaced image
+(`scripts/prune_hub_image.py`), through Docker Hub's registry API, which can
+delete an image nothing references but cannot list untagged ones. It needs a
+Docker Hub personal access token with Read, Write and Delete:
+
+```bash
+export DOCKERHUB_USERNAME=<your-docker-hub-user>
+export DOCKERHUB_TOKEN=<personal-access-token>
+```
+
+Without them the publish still succeeds and prints that the old image was
+kept; delete it later under the repository's **Image Management** on
+hub.docker.com. To see what a prune would delete without deleting it:
+`python3 scripts/prune_hub_image.py prune <image> <old-digest> --dry-run`.
 
 `RUNTIME=apple` builds both platforms faster (Rosetta for amd64), but pushing
 from it did not work on 2026-09-24: the upload runs in Apple's background

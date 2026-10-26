@@ -505,9 +505,11 @@ No HuggingFace account or license acceptance is required for this model.
 
 #### 4. MCP server (optional — Claude Code / Cursor)
 
-To expose `generate_image` and `corpus_imagine` as MCP tools, first install
-the MCP extra, then add the
-`gutenkg` server to your `.mcp.json` in the repo root:
+The `gutenkg` MCP server serves the consolidated bundle (`bundles/gutenberg-all`)
+through the fleet's five canonical tools — `stats`, `query`, `pack`, `get_node`,
+`neighbors` — and adds `generate_image` and `corpus_imagine`. Build the bundle
+first (`gutenkg build-corpus`): a missing bundle is refused. Install the MCP
+extra, then add the server to your `.mcp.json` in the repo root:
 
 ```bash
 pip install -e ".[mcp]"
@@ -517,15 +519,16 @@ pip install -e ".[mcp]"
 {
   "mcpServers": {
     "gutenkg": {
-      "command": "/path/to/repo/.venv/bin/gutenkg-mcp"
+      "command": "/path/to/repo/.venv/bin/gutenkg",
+      "args": ["mcp", "--repo", "/path/to/repo"]
     }
   }
 }
 ```
 
 Replace `/path/to/repo` with the absolute path to your `gutenberg_kg` checkout.
-After saving, reload the MCP server in your editor. The tools appear as
-`gutenkg / generate_image` and `gutenkg / corpus_imagine`.
+After saving, reload the MCP server in your editor. `gutenkg mcp --manifest`
+prints the tool list as JSON; `gutenkg-mcp` is the same command.
 
 Both tools call a running image server; they never load a model themselves.
 Start one with `make up`. The tools use the server `GUTENKG_IMAGE_ENDPOINT`
@@ -574,8 +577,8 @@ gutenkg imagine --query "great fire" --book pepys --corpus-only
 
 ### MCP tool (Claude Code / Cursor)
 
-The same pipeline is exposed as two MCP tools via the `gutenkg-mcp` server,
-configured in `.mcp.json`:
+The same pipeline is exposed as two MCP tools on the `gutenkg mcp` server,
+beside the five canonical corpus tools, configured in `.mcp.json`:
 
 ```
 generate_image(prompt, size, seed, steps)
@@ -749,12 +752,12 @@ gutenberg_kg/
 │   ├── image_gen.py                        # FLUX.2-Klein wrapper (gutenkg imagine)
 │   ├── ingest.py                           # DocKG ingest + KGRAG registration
 │   ├── layout_organic.py                   # Space colonization, pipe radii, tube sweep
-│   ├── mcp_server.py                       # MCP server (gutenkg-mcp entry point)
+│   ├── mcp_server.py                       # MCP server (gutenkg mcp / gutenkg-mcp)
 │   ├── model_setup.py                      # Local model download (gutenkg init)
 │   ├── scene.py                            # Qt-free scene builder + seasons
 │   ├── sections.py                         # Oversized-section report (gutenkg audit --sections)
 │   ├── stale.py                            # Books whose index predates their text (gutenkg stale)
-│   ├── vector_store.py                     # sqlite-vec / LanceDB store resolution
+│   ├── vector_store.py                     # sqlite-vec store resolution
 │   ├── viz3d.py                            # 3-D KG visualisation (Qt viewer)
 │   ├── viz_timeline.py                     # 2-D timeline visualisation
 │   ├── diary/                              # Diary parsing + chunking
@@ -832,7 +835,7 @@ gutenberg_kg/
 │   └── ingestion-pipeline.md               # Ingestion pipeline internals
 ├── reports/
 │   └── ingest_YYYY-MM-DD_HHMMSS.md         # Auto-saved ingest reports
-├── .mcp.json                               # MCP server config (gutenkg-mcp)
+├── .mcp.json                               # MCP server config (gutenkg mcp)
 ├── pyproject.toml                          # Package config + script entry points
 └── .gitignore
 ```

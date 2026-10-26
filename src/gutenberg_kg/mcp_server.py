@@ -1,20 +1,34 @@
 """GutenbergKG MCP Server.
 
-Exposes image generation and corpus-grounded illustration tools.
+Serves the consolidated corpus bundle's DocKG over the fleet's shared server
+base, :mod:`kg_utils.mcp`, with GutenbergKG's illustration tools beside it.
 
 Tools
 -----
-generate_image    — Direct text-to-image on a running image server (no VLM planning).
-corpus_imagine    — Query the corpus for context, then generate an image.
+stats, query, pack, get_node, neighbors
+    The fleet's five canonical tools, under the same names as every other KG
+    server, over ``bundles/gutenberg-all`` (books, verse and their sections).
+    ``query`` and ``pack`` are DocKG's own hybrid dense + BM25 search.
+generate_image
+    Direct text-to-image on a running image server (no VLM planning).
+corpus_imagine
+    Query the corpus — diaries first, then the books — for context, then
+    generate an illustration.
 
-Both tools call an image server over HTTP -- the one GUTENKG_IMAGE_ENDPOINT
-names, or the first of ``image_gen.DEFAULT_IMAGE_ENDPOINTS`` that answers
-(``make up`` starts one). They never load a model in-process: mflux is not a
-dependency of this package.
+The image tools call an image server over HTTP -- the one
+GUTENKG_IMAGE_ENDPOINT names, or the first of
+``image_gen.DEFAULT_IMAGE_ENDPOINTS`` that answers (``make up`` starts one).
+They never load a model in-process: mflux is not a dependency of this package.
 
 Run
 ---
-  gutenkg-mcp          # stdio transport (Claude Code / Cursor)
+::
+
+  gutenkg mcp                      # stdio transport (Claude Code / Cursor)
+  gutenkg mcp --manifest           # the tool list as JSON, without opening the graph
+
+``gutenkg-mcp`` is the same command. ``--repo`` is the GutenbergKG checkout;
+``--db`` and ``--vectors`` default to ``bundles/gutenberg-all/.dockg/``.
 """
 
 from __future__ import annotations
@@ -23,21 +37,50 @@ import os
 import tempfile
 from io import BytesIO
 from pathlib import Path
+from typing import TYPE_CHECKING, Any
 
-import structlog
-from fastmcp import FastMCP
-from fastmcp.utilities.types import Image
-from PIL import Image as PILImage
+# At module scope: FastMCP evaluates the tools' annotations when it registers
+# them. Only build_server() imports this module, so other gutenkg commands
+# still start without mcp.
+from kg_utils.mcp import Context, kg_from
+from mcp.server.fastmcp import Image
 
-logger = structlog.get_logger()
+if TYPE_CHECKING:
+    from kg_utils.mcp import KGServer
+    from PIL import Image as PILImage
 
-mcp = FastMCP("GutenbergKG")
+#: The bundle served when ``--db`` is not given.
+DEFAULT_BUNDLE = Path("bundles") / "gutenberg-all"
+
+PREAMBLE = (
+    "GutenbergKG is a knowledge graph of Project Gutenberg and Internet Archive "
+    "books: documents ('doc:<genre>/<book>/...'), their sections and chunks, and "
+    "the topics, entities and keywords drawn from them. Edges: CONTAINS, NEXT, "
+    "REFERENCES, SIMILAR_TO, HAS_TOPIC, MENTIONS_ENTITY, HAS_KEYWORD, "
+    "CO_OCCURS_WITH.\n\n"
+    "## Recommended workflows\n\n"
+    "- **Orientation**: stats\n"
+    "- **Find passages**: query → get_node; pack for the text itself\n"
+    "- **Read around a passage**: neighbors(node_id, rels=['NEXT'])\n"
+    "- **Illustrate**: corpus_imagine for a scene grounded in the corpus "
+    "(diaries first); generate_image for a prompt of your own. Both need a "
+    "running image server."
+)
 
 _MAX_IMAGE_BYTES = 3_750_000
 
 
+def stats(*, ctx: Context) -> dict[str, Any]:
+    """
+    Node and edge counts for the corpus bundle, in total and by kind and relation, plus its vector count.
+    """
+    return {**kg_from(ctx).stats(), "kind": "gutenberg"}
+
+
 def _compress_for_mcp(pil_img: PILImage.Image, path: str) -> tuple[str, str]:
     """Save image; compress to JPEG if it exceeds the 5 MB MCP limit."""
+    from PIL import Image as PILImage  # noqa: PLC0415
+
     pil_img.save(path)
     size = Path(path).stat().st_size
     if size <= _MAX_IMAGE_BYTES:
@@ -67,29 +110,36 @@ def _compress_for_mcp(pil_img: PILImage.Image, path: str) -> tuple[str, str]:
     raise ValueError("Image could not be compressed below the 5 MB MCP limit.")
 
 
-@mcp.tool
+def _as_mcp_image(pil: PILImage.Image) -> Image:
+    with tempfile.NamedTemporaryFile(suffix=".png", delete=False) as f:
+        out_path = f.name
+    effective_path, fmt = _compress_for_mcp(pil, out_path)
+    return Image(path=effective_path, format=fmt)
+
+
+def _logger():
+    import structlog  # noqa: PLC0415
+
+    return structlog.get_logger()
+
+
 async def generate_image(
     prompt: str,
     size: str = "1536x1024",
     seed: int | None = None,
     steps: int = 4,
 ) -> Image:
-    """Generate an image directly from a text prompt on the running image server.
-
-    No VLM planning — fast direct generation (~20s for FLUX.2-Klein on Apple Silicon).
-
-    Args:
-        prompt: Text description of the image to generate.
-        size: Output size "WIDTHxHEIGHT" (default landscape 1536x1024).
-        seed: Optional integer seed for reproducible outputs.
-        steps: Inference steps — 4 (fast) to 25 (higher quality).
-
-    Returns:
-        The generated image.
     """
-    from gutenberg_kg import image_gen
+    Generate an image from a text prompt on the running image server, with no VLM planning.
 
-    logger.info("generate_image", prompt=prompt[:80], size=size, seed=seed)
+    :param prompt: Text description of the image to generate.
+    :param size: Output size "WIDTHxHEIGHT" (default landscape 1536x1024).
+    :param seed: Optional integer seed for reproducible outputs.
+    :param steps: Inference steps — 4 (fast) to 25 (higher quality).
+    """
+    from gutenberg_kg import image_gen  # noqa: PLC0415
+
+    _logger().info("generate_image", prompt=prompt[:80], size=size, seed=seed)
     pil = await _run_sync(
         image_gen.generate_via_server,
         prompt,
@@ -98,14 +148,9 @@ async def generate_image(
         seed=seed,
         steps=steps,
     )
-
-    with tempfile.NamedTemporaryFile(suffix=".png", delete=False) as f:
-        out_path = f.name
-    effective_path, fmt = _compress_for_mcp(pil, out_path)
-    return Image(path=effective_path, format=fmt)
+    return _as_mcp_image(pil)
 
 
-@mcp.tool
 async def corpus_imagine(
     query: str,
     book: str | None = None,
@@ -114,38 +159,33 @@ async def corpus_imagine(
     seed: int | None = None,
     steps: int = 4,
 ) -> Image:
-    """Query the Gutenberg corpus for context, then generate an illustration.
-
-    Retrieves the most relevant chunks from the corpus (diaries, prose, etc.)
-    for *query*, optionally filtered to *book*, combines them into an image
-    prompt, and generates an image on the running image server.
-
-    Args:
-        query: What to search for in the corpus (e.g. "great fire of London").
-        book: Optional book/author name substring to restrict the search
-              (e.g. "pepys", "evelyn", "republic").
-        extra_prompt: Additional style or scene instructions appended to the
-                      corpus text (e.g. "oil painting, dramatic lighting").
-        size: Output size "WIDTHxHEIGHT" (default landscape 1536x1024).
-        seed: Optional integer seed for reproducibility.
-        steps: Inference steps — 4 (fast) to 25 (higher quality).
-
-    Returns:
-        The generated illustration.
     """
-    from gutenberg_kg import image_gen
-    from gutenberg_kg.cli.cmd_imagine import _query_corpus
-    from gutenberg_kg.image_gen import vlm_rewrite
+    Search the corpus for a scene (diaries first, then the books), then illustrate it.
+
+    The matching passages are rewritten into an image prompt by the local VLM
+    and generated on the running image server.
+
+    :param query: What to search for, e.g. "great fire of London".
+    :param book: Optional book or author name substring to search within, e.g. "pepys".
+    :param extra_prompt: Style or scene notes appended to the corpus text, e.g. "oil painting".
+    :param size: Output size "WIDTHxHEIGHT" (default landscape 1536x1024).
+    :param seed: Optional integer seed for reproducibility.
+    :param steps: Inference steps — 4 (fast) to 25 (higher quality).
+    """
+    from gutenberg_kg import image_gen  # noqa: PLC0415
+    from gutenberg_kg.cli.cmd_imagine import _query_corpus  # noqa: PLC0415
+    from gutenberg_kg.image_gen import vlm_rewrite  # noqa: PLC0415
 
     corpus_text = _query_corpus(query, book)
-    logger.info("corpus_imagine", query=query, book=book, corpus_chars=len(corpus_text))
+    log = _logger()
+    log.info("corpus_imagine", query=query, book=book, corpus_chars=len(corpus_text))
 
     vlm_input = corpus_text
     if extra_prompt:
         vlm_input = f"{corpus_text}\n\nAdditional style/scene notes: {extra_prompt}"
     prompt, vlm_error = vlm_rewrite(vlm_input)
     if vlm_error:
-        logger.warning("vlm_rewrite_failed", error=vlm_error)
+        log.warning("vlm_rewrite_failed", error=vlm_error)
 
     pil = await _run_sync(
         image_gen.generate_via_server,
@@ -155,11 +195,10 @@ async def corpus_imagine(
         seed=seed,
         steps=steps,
     )
+    return _as_mcp_image(pil)
 
-    with tempfile.NamedTemporaryFile(suffix=".png", delete=False) as f:
-        out_path = f.name
-    effective_path, fmt = _compress_for_mcp(pil, out_path)
-    return Image(path=effective_path, format=fmt)
+
+EXTRA_TOOLS = (generate_image, corpus_imagine)
 
 
 def _image_endpoint() -> str:
@@ -169,7 +208,7 @@ def _image_endpoint() -> str:
         that answers.
     :raises RuntimeError: When no image server is configured or running.
     """
-    from gutenberg_kg import image_gen
+    from gutenberg_kg import image_gen  # noqa: PLC0415
 
     endpoint = os.environ.get("GUTENKG_IMAGE_ENDPOINT") or image_gen.discover_image_endpoint()
     if not endpoint:
@@ -183,17 +222,60 @@ def _image_endpoint() -> str:
 
 async def _run_sync(fn, *args, **kwargs):
     """Run a blocking function in a thread so the event loop stays free."""
-    import asyncio
+    import asyncio  # noqa: PLC0415
+    import functools  # noqa: PLC0415
 
-    loop = asyncio.get_event_loop()
-    import functools
-
+    loop = asyncio.get_running_loop()
     return await loop.run_in_executor(None, functools.partial(fn, *args, **kwargs))
 
 
-def main() -> None:
-    """Run the GutenbergKG MCP server (entry point for the ``gutenkg-mcp`` command)."""
-    mcp.run()
+def build_server(
+    repo: str | Path,
+    db: str | Path | None = None,
+    vectors: str | Path | None = None,
+    model: str | None = None,
+) -> KGServer:
+    """Build the GutenbergKG MCP server, without opening the bundle's graph.
+
+    :param repo: The GutenbergKG checkout; its ``corpus/`` is the corpus root.
+    :param db: Bundle graph; ``None`` for ``<repo>/bundles/gutenberg-all/.dockg/graph.sqlite``.
+    :param vectors: Bundle vectors; ``None`` for the ``vectors.sqlite`` beside *db*.
+    :param model: Embedding model; ``None`` for DocKG's default.
+    :return: The server; serve it with :func:`kg_utils.mcp.run`.
+    """
+    from doc_kg import DocKG  # noqa: PLC0415
+    from doc_kg.dockg import DEFAULT_MODEL  # noqa: PLC0415
+    from doc_kg.mcp_server import pack, query  # noqa: PLC0415
+    from kg_utils.mcp import make_server  # noqa: PLC0415
+
+    from gutenberg_kg import __version__  # noqa: PLC0415
+
+    root = Path(repo).resolve()
+    db_path = Path(db) if db else root / DEFAULT_BUNDLE / ".dockg" / "graph.sqlite"
+    vectors_path = Path(vectors) if vectors else db_path.parent / "vectors.sqlite"
+
+    def open_kg() -> DocKG:
+        return DocKG(root / "corpus", db_path, vectors_path, model=model or DEFAULT_MODEL)
+
+    server = make_server(
+        open_kg, name="gutenkg", kind="gutenberg", version=__version__, instructions=PREAMBLE
+    )
+    server.canonical("stats")(stats)
+    server.canonical("query")(query)
+    server.canonical("pack")(pack)
+    for tool in EXTRA_TOOLS:
+        server.tool()(tool)
+    return server
+
+
+def main(argv: list[str] | None = None) -> None:
+    """Entry point for ``gutenkg-mcp``: the same command as ``gutenkg mcp``.
+
+    :param argv: Arguments; ``None`` for ``sys.argv[1:]``.
+    """
+    from gutenberg_kg.cli.cmd_mcp import mcp_command  # noqa: PLC0415
+
+    mcp_command.main(args=argv, prog_name="gutenkg-mcp")
 
 
 if __name__ == "__main__":

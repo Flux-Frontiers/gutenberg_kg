@@ -190,7 +190,7 @@ def build_corpus(
 ):
     """Build one consolidated DocKG over the whole corpus (or chosen genres).
 
-    Writes a single graph.sqlite + lancedb index to ``bundles/<name>/.dockg/`` —
+    Writes a single graph.sqlite + vectors.sqlite index to ``bundles/<name>/.dockg/`` —
     the artifact baked into the standalone fat image.  Unlike ``ingest`` (one
     DocKG per book, federated), this is a single index spanning every book, with
     genre recoverable from each node's file_path prefix.
