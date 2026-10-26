@@ -38,8 +38,9 @@ def test_run_ingest_routes_diaries_to_diary_pipeline(monkeypatch):
 def test_register_diary_book_points_to_diarykg(tmp_path):
     """register_diary_book registers the .diarykg/ index, never .dockg/."""
     diary_dir = tmp_path / "Some Diary"
-    (diary_dir / ".diarykg" / "lancedb").mkdir(parents=True)
+    (diary_dir / ".diarykg").mkdir(parents=True)
     (diary_dir / ".diarykg" / "graph.sqlite").write_text("", encoding="utf-8")
+    (diary_dir / ".diarykg" / "vectors.sqlite").write_text("", encoding="utf-8")
 
     class _StubReg:
         def __init__(self):
@@ -54,6 +55,5 @@ def test_register_diary_book_points_to_diarykg(tmp_path):
     assert entry is reg.registered
     assert entry.sqlite_path.parent == diary_dir / ".diarykg"
     assert entry.sqlite_path.name == "graph.sqlite"
-    assert entry.lancedb_path.parent == diary_dir / ".diarykg"
-    assert entry.lancedb_path.name == "lancedb"
+    assert entry.vectors_path == diary_dir / ".diarykg" / "vectors.sqlite"
     assert ".dockg" not in str(entry.sqlite_path)

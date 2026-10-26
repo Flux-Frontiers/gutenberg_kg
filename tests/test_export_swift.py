@@ -1045,10 +1045,7 @@ class TestSelectiveExportVectors:
 
     def test_unfiltered_scan_still_yields_every_kind(self, bundle):
         _seed_two_book_vectors(bundle)
-        ids = {
-            node_id
-            for node_id, _ in iter_source_vectors(bundle / ".dockg" / "vectors.sqlite", None)
-        }
+        ids = {node_id for node_id, _ in iter_source_vectors(bundle / ".dockg" / "vectors.sqlite")}
         assert ids == {"c:1", "c:2", "sec:1", "s:1", "t:1"}
 
     def test_filtered_scan_excludes_the_other_book_and_enrichment_kinds(self, bundle):
@@ -1057,7 +1054,6 @@ class TestSelectiveExportVectors:
             node_id
             for node_id, _ in iter_source_vectors(
                 bundle / ".dockg" / "vectors.sqlite",
-                None,
                 allowed_keys=frozenset({"philosophy/Leviathan"}),
             )
         }

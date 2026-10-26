@@ -1,12 +1,12 @@
 {
   "mcpServers": {
     "gutenkg": {
-      "command": ".venv/bin/gutenkg-mcp",
+      "command": ".venv/bin/gutenkg",
       "env": {
         "GUTENKG_IMAGE_MODEL": "mlx-community/flux2-klein-4b-4bit",
         "GUTENKG_IMAGE_STEPS": "4"
       },
-      "args": []
+      "args": ["mcp", "--repo", "."]
     },
     "pycodekg": {
       "command": "${HOME}/.local/bin/pycodekg-mcp",

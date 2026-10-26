@@ -67,6 +67,7 @@ nav:
   - Interfaces:
       - Chat UI: CHAT_UI.md
       - "Moots: books in conversation": MOOTS.md
+      - MCP server: MCP.md
       - Knowledge Press apps: KNOWLEDGE_PRESS.md
       - On-device corpus packs: ON_DEVICE.md
       - RunPod deployment: RUNPOD.md
