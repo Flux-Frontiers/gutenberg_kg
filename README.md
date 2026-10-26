@@ -232,6 +232,21 @@ gutenkg imagine --query "plague in London" --book pepys --corpus-only
 
 The second command is a useful way to inspect retrieval without generating anything. Setup and full options are in the [image-generation cheatsheet](docs/CHEATSHEET.md#corpus-grounded-image-generation).
 
+## Give the corpus to an AI agent
+
+`gutenkg mcp` serves the consolidated bundle to Claude Code, Cursor or any MCP
+client. Its first five tools -- `stats`, `query`, `pack`, `get_node` and
+`neighbors` -- have the same names on every Flux-Frontiers KG server; it adds
+`generate_image` and `corpus_imagine`.
+
+```bash
+gutenkg build-corpus          # the server reads bundles/gutenberg-all
+gutenkg mcp --manifest        # list the tools without opening the bundle
+```
+
+Configuration, options and the full tool list are in the
+[MCP server guide](docs/MCP.md).
+
 ## Project ecosystem
 
 GutenbergKG is one corpus in the broader **Tree of Knowledge**: interoperable, domain-specific knowledge graphs that can be queried independently or together. The underlying projects are [DocKG](https://github.com/Flux-Frontiers/doc_kg) for document graphs and [KGRAG](https://github.com/Flux-Frontiers/KGRAG) for federated retrieval.

@@ -42,6 +42,11 @@ against their local wheels, and the floors are raised when the fleet lap passes.
 - `vector_store.resolve_vectors_path(store_dir)` replaces
   `resolve_vector_paths()`: it returns the `vectors.sqlite` file or `None`.
 
+### Added
+
+- **`docs/MCP.md`**, the MCP server guide (in the docs nav), and a README
+  section pointing to it: configuration, options and the seven tools.
+
 ### Fixed
 
 - **`make publish-worker-image` no longer leaves the replaced image on
