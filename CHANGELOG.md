@@ -8,11 +8,14 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+## [1.30.0] - 2026-10-26
+
 Step 4 of the fleet's MCP centralization (kgrag_priv
 `docs/MCP_CENTRALIZATION_PLAN.md`, sweep item 93), with this repo's LanceDB
 paths removed. **Needs kgmodule-utils 0.29.0** (for `kg_utils.mcp`), **doc-kg
-0.29.0** and the diary-kg release that follows it; until then it is tested
-against their local wheels, and the floors are raised when the fleet lap passes.
+0.29.0** and **diary-kg 0.101.0**: the KG pins are kgmodule-utils 0.29.0,
+doc-kg 0.29.0, diary-kg 0.101.0 and kg-rag 0.18.0, and the `mcp` extra takes
+`kgmodule-utils[mcp]`.
 
 ### Changed
 

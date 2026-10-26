@@ -1,60 +1,75 @@
-# Release Notes -- v1.29.0
+# Release Notes -- v1.30.0
 
-> Released: 2026-10-22
+> Released: 2026-10-26
 
-### Added
-
-- **Live moots: the worker holds a moot for the forest.** Three new worker
-  ops let the Knowledge Press Forest hold a moot against a local worker and
-  play each turn as it is made: `moot_start` (two catalog keys, topic,
-  turns, k, model, temperature) returns the trees with their author voices,
-  `moot_turn` speaks one turn and returns it in the moot-pack form,
-  `moot_stop` ends it. The worker keeps each moot (`serve/moot_ops.py`):
-  at most 4, dropped after 30 idle minutes, the least recently used making
-  room. Keeping it there means no passage pools cross the wire, and a
-  browser cannot hand the grounding check a doctored pool. The model call
-  uses the worker's own backend, so a browser may name a model but not a
-  backend. `run_moot` is now a loop over a new `entmoot.Moot` class
-  (`start()`, `next_turn()`), so the CLI is unchanged.
-- **CORS on the local worker** (`serve/cors.py`), on when
-  `GUTENKG_CORS_ORIGINS` is set. `docker compose` and `make run` default it
-  to the forest's dev server and the published forest. Tested on 2026-10-21:
-  Chrome reaches the worker from both once local network access is allowed;
-  Safari only from the dev server, since it blocks `http://localhost` on an
-  https page. A new `MOOT_TOKEN` lets the moot ops run without
-  `HANDLER_SECRET`, which never reaches a browser.
-- The worker image carries `corpus/authors/voices.json` (`GUTENKG_VOICES`),
-  so live moots give each tree its author's voice.
-- The worker image pins `runpod==1.12.0` (was `>=1.7.0`): the CORS hook
-  subclasses its internal `WorkerAPI`.
-
-- **Moots are documented.** A new guide, `docs/MOOTS.md`, covers running
-  `gutenkg converse` (what it needs, every option and backend setting), how a
-  turn is made (retrieval, the persona and author voice, turn intents,
-  grounding, quote snapping), the JSON transcript, playing moots in the
-  forest with `export-web-moots`, `author-voices`, and the known limits. The
-  README has a moots section and a "Choose a path" row, the docs home and
-  `KNOWLEDGE_PRESS.md` link the guide, and the API reference gains pages for
-  `serve.entmoot`, `serve.scope`, `export_web_moots` and `author_voices`.
+Step 4 of the fleet's MCP centralization (kgrag_priv
+`docs/MCP_CENTRALIZATION_PLAN.md`, sweep item 93), with this repo's LanceDB
+paths removed. **Needs kgmodule-utils 0.29.0** (for `kg_utils.mcp`), **doc-kg
+0.29.0** and **diary-kg 0.101.0**: the KG pins are kgmodule-utils 0.29.0,
+doc-kg 0.29.0, diary-kg 0.101.0 and kg-rag 0.18.0, and the `mcp` extra takes
+`kgmodule-utils[mcp]`.
 
 ### Changed
 
-- **The worker answers only its own Mac by default.** `docker compose` and
-  `make run` published port 8000 on every interface, so anyone on the same
-  network could use the worker, and with live moots a browser on the
-  published forest could be pointed at it. The port now binds to
-  `127.0.0.1`. A new `WORKER_BIND` setting in `docker/.env` restores LAN
-  access (`WORKER_BIND=0.0.0.0`) for phones and other devices;
-  `docs/INSTALLATION.md` covers it.
-- The README describes live moots and `WORKER_BIND`.
+- **The MCP server is built on `kg_utils.mcp`**, off the standalone `fastmcp`
+  package. It now serves the consolidated bundle (`bundles/gutenberg-all`)
+  through the fleet's five canonical tools, under the same names as every
+  other KG server (`stats`, `query`, `pack`, `get_node`, `neighbors`), with
+  DocKG's own hybrid search behind `query` and `pack`, and keeps
+  `generate_image` and `corpus_imagine` beside them. The tool list is
+  generated from the tools, and `gutenkg mcp --manifest` prints it as JSON
+  without opening the bundle. Each session prints the bundle it serves to
+  stderr, and **a missing bundle is refused** (`no graph at ...`): build it
+  with `gutenkg build-corpus` before serving, including to use the image tools.
+- **The `stats` tool reports `kind: "gutenberg"`.** It returns the bundle
+  DocKG's stats in the fleet shape (kgrag_priv `docs/FLEET_STANDARDS.md`,
+  "KG stats shape") -- `nodes` / `edges` totals with their breakdowns by kind
+  and relation, plus `vector_count` -- with `kind` set to the server's own
+  kind rather than DocKG's `"doc"`.
+- **`gutenkg mcp`** is the MCP command, with the fleet's standard flags
+  (`--repo`, `--db`, `--vectors`, `--model`,
+  `--transport stdio|streamable-http`, `--host`, `--port`, `--manifest`);
+  `--db` defaults to `bundles/gutenberg-all/.dockg/graph.sqlite` under
+  `--repo`. `gutenkg-mcp` is the same command. Registering it does not import
+  `mcp`.
+- The `mcp` extra is `mcp>=1.23.0,<2` and `structlog`; `fastmcp` and its 27
+  dependencies are gone from the lock (closes MCP_MIGRATION Phase 4).
+- `vector_store.resolve_vectors_path(store_dir)` replaces
+  `resolve_vector_paths()`: it returns the `vectors.sqlite` file or `None`.
+
+### Added
+
+- **`docs/MCP.md`**, the MCP server guide (in the docs nav), and a README
+  section pointing to it: configuration, options and the seven tools.
 
 ### Fixed
 
-- `docs/RUNPOD.md` listed 17 genre slugs; the corpus has 20 (`audel-electric`,
-  `diaries` and `horror` were missing).
-- `docs/KNOWLEDGE_PRESS.md` said every export command has a `make` target of
-  the same name; `export-embedder` has none. It now names the three that do,
-  and lists `export-web-moots`.
+- **`make publish-worker-image` no longer leaves the replaced image on
+  Docker Hub.** Each push moved `latest` and Docker Hub kept the previous
+  image untagged, about 6 GB a publish (`corpus-gutenberg` had reached
+  47.5 GB for one live image). The target now records the tag's digest
+  before the push and, after it, deletes that image and its platform and
+  attestation manifests with `scripts/prune_hub_image.py`, through the
+  registry API, which refuses anything still referenced. It needs
+  `DOCKERHUB_USERNAME` and `DOCKERHUB_TOKEN` (a personal access token with
+  Read, Write and Delete); without them the publish succeeds and says the
+  old image was kept. Both runtimes' targets do this.
+- **`gutenkg imagine --query` and the `corpus_imagine` tool** opened their
+  DocKGs with `lancedb_dir=`, which doc-kg 0.29.0 refuses; a blanket `except`
+  turned that into a silent fall back to the raw query, with no corpus text at
+  all. They now pass `vectors_path=`, with a test.
+- `runpod/handler.py` registered the consolidated DocKG and every diary with a
+  `lancedb_path` even when only `vectors.sqlite` existed; it now registers
+  `vectors_path`.
+
+### Removed
+
+- **LanceDB reading**, everywhere: the worker's `lancedb/` fallback in
+  `serve/handler.py` and `runpod/handler.py` (the image never installed
+  LanceDB, so it could not run), `export_swift`'s LanceDB reader and its dual
+  `(vectors, lancedb)` lookup, and the registry's `lancedb_path` from ingest.
+  `dockg_defect` now reports a LanceDB-only store as a defect, so ingest
+  rebuilds it. `build-corpus` still deletes a stale `lancedb/` directory.
 
 ---
 
