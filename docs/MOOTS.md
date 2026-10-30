@@ -149,7 +149,10 @@ Two settings let a browser reach the worker:
 - **`GUTENKG_CORS_ORIGINS`**: the origins allowed to call it, comma
   separated. `docker compose` and `make run` default to the forest's dev
   server, `http://localhost:5173`, and the published forest,
-  `https://flux-frontiers.github.io`. Set it empty to turn CORS off.
+  `https://flux-frontiers.github.io`. Set it empty to turn CORS off. A
+  browser on another device sends the origin it opened, such as
+  `http://<your-mac>.local:5173`, so add that too (see the installation
+  guide's LAN checklist).
 - **`MOOT_TOKEN`**: optional. When set, the moot ops need it as `token`,
   and the forest sends it in place of `HANDLER_SECRET`, which never reaches
   a browser. On a worker with neither set, the moot ops need nothing, as
