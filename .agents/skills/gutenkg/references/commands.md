@@ -64,6 +64,15 @@ gutenkg download catalog scripts/catalogs/philosophy.txt --genre philosophy --fo
 
 Each book is idempotent — already-present books are skipped unless `--force`.
 
+**Title check.** A title override is compared with the title Gutenberg gives
+the ID before anything is downloaded, and an entry whose titles share fewer
+than half their words is refused (`Gutenberg #1022 is 'Walking', not 'The
+Overcoat (Gogol)'`); the rest of the catalog carries on. `--dry-run` runs the
+check, so it vets a new catalog without writing anything. For a deliberate
+rename that shares no words with Gutenberg's title (`2800  The Quran`, which
+Gutenberg calls *The Koran*), pass `--no-title-check`. The check catches an ID
+that names an unrelated book, not a sibling volume of the right one.
+
 ---
 
 ## download search

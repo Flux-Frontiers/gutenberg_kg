@@ -954,6 +954,112 @@ def test_download_book_dry_run_writes_no_catalog(tmp_path: Path, monkeypatch):
 
 
 # ---------------------------------------------------------------------------
+# Title check -- a catalog ID that names a different book
+# ---------------------------------------------------------------------------
+
+
+def test_title_overlap_identical_titles():
+    assert dg.title_overlap("Paradise Lost", "Paradise Lost") == 1.0
+
+
+def test_title_overlap_unrelated_titles():
+    # The wishlist's "The Overcoat #1022", which is Thoreau.
+    assert dg.title_overlap("The Overcoat (Gogol)", "Walking") == 0.0
+
+
+def test_title_overlap_drops_curator_suffixes():
+    assert dg.title_overlap("Medea (Euripides)", "Medea of Euripides") == 1.0
+    assert dg.title_overlap("Typee — Herman Melville", "Typee: A Romance of the South Seas") == 1.0
+
+
+def test_title_overlap_matches_word_stems():
+    assert dg.title_overlap("Purgatorio", "Divine Comedy, Cary's Translation, Purgatory") == 1.0
+
+
+def test_title_overlap_ignores_case_accents_and_stopwords():
+    assert dg.title_overlap("THE ÉDUCATION OF HENRY ADAMS", "Education of Henry Adams") == 1.0
+
+
+def test_title_overlap_empty_expected_title_passes():
+    assert dg.title_overlap("The", "Walking") == 1.0
+
+
+def test_check_title_raises_on_mismatch():
+    try:
+        dg.check_title(7223, "Autobiography (Mill)", "The Belgian Cookbook")
+    except dg.TitleMismatchError as exc:
+        assert "#7223" in str(exc) and "The Belgian Cookbook" in str(exc)
+    else:
+        raise AssertionError("expected TitleMismatchError")
+
+
+def test_check_title_passes_without_fetched_title():
+    dg.check_title(7223, "Autobiography (Mill)", None)
+
+
+def test_download_book_refuses_mismatched_title(tmp_path: Path, monkeypatch):
+    """A wrong ID must stop before the text is fetched or a directory made."""
+    monkeypatch.setattr(dg, "CORPUS_ROOT", str(tmp_path))
+    monkeypatch.setattr(dg, "fetch_metadata", lambda *a, **kw: {"title": "Walking"})
+
+    def _no_fetch(*a, **kw):
+        raise AssertionError("the text must not be fetched for a mismatched ID")
+
+    monkeypatch.setattr(dg, "fetch_url", _no_fetch)
+    try:
+        dg.download_book(1022, title="The Overcoat (Gogol)", genre="letters")
+    except dg.TitleMismatchError:
+        pass
+    else:
+        raise AssertionError("expected TitleMismatchError")
+    assert not (tmp_path / "letters").exists()
+
+
+def test_download_book_title_check_runs_on_dry_run(tmp_path: Path, monkeypatch):
+    """--dry-run is how a catalog gets vetted, so it must check titles too."""
+    monkeypatch.setattr(dg, "CORPUS_ROOT", str(tmp_path))
+    monkeypatch.setattr(dg, "fetch_metadata", lambda *a, **kw: {"title": "Walking"})
+    try:
+        dg.download_book(1022, title="The Overcoat (Gogol)", genre="letters", dry_run=True)
+    except dg.TitleMismatchError:
+        pass
+    else:
+        raise AssertionError("expected TitleMismatchError")
+
+
+def test_download_book_title_check_can_be_disabled(tmp_path: Path, monkeypatch):
+    monkeypatch.setattr(dg, "CORPUS_ROOT", str(tmp_path))
+    monkeypatch.setattr(dg, "fetch_metadata", lambda *a, **kw: {"title": "The Koran (Al-Qur'an)"})
+    out = dg.download_book(
+        2800,
+        title="The Quran (Rodwell translation)",
+        genre="sacred-texts",
+        dry_run=True,
+        check_titles=False,
+    )
+    assert out.endswith("the_quran_rodwell_translation.md")
+
+
+def test_download_book_without_title_override_is_not_checked(tmp_path: Path, monkeypatch):
+    monkeypatch.setattr(dg, "CORPUS_ROOT", str(tmp_path))
+    monkeypatch.setattr(dg, "fetch_metadata", lambda *a, **kw: {"title": "Walking"})
+    assert dg.download_book(1022, genre="letters", dry_run=True).endswith("walking.md")
+
+
+def test_run_catalog_skips_mismatched_entry_and_continues(tmp_path: Path, monkeypatch, capsys):
+    monkeypatch.setattr(dg, "CORPUS_ROOT", str(tmp_path))
+    titles = {1022: "Walking", 36238: "The Mantle, and Other Stories"}
+    monkeypatch.setattr(dg, "fetch_metadata", lambda ebook_id: {"title": titles[ebook_id]})
+    catalog = tmp_path / "russian.txt"
+    catalog.write_text("1022\tThe Overcoat (Gogol)\n36238\tThe Mantle (Gogol)\n", encoding="utf-8")
+
+    dg.run_catalog(str(catalog), genre="russian-literature", dry_run=True)
+    captured = capsys.readouterr()
+    assert "ERROR downloading #1022" in captured.err
+    assert "1/2 book(s) would be downloaded" in captured.out
+
+
+# ---------------------------------------------------------------------------
 # run_catalog_sync — repairing drift from downloads that predate write-back
 # ---------------------------------------------------------------------------
 
