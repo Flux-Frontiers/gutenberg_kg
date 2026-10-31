@@ -12,6 +12,14 @@ Format: `- [ ] Title — Author (Gutenberg ID #NNNNN | IA)` — check the box wh
 > 34 boxes were checked, 5 unchecked, 13 IDs corrected. `gutenkg audit` reports
 > the corpus itself clean at 241 books; the drift was in this file alone.
 
+> **Re-checked against Gutenberg's own catalog 2026-10-31.** The 2026-09-02 pass
+> could only test IDs of books already downloaded. Looking every remaining ID up
+> in Gutenberg's `pg_catalog.csv` found 12 of the 13 unchecked IDs naming
+> another book (`#7223` was *The Belgian Cookbook*), and `#35` for Medea naming
+> *The Time Machine*. Each is corrected below with the wrong ID recorded. Look an
+> ID up before adding it here: `gutenkg download book <id> --title "<title>"
+> --dry-run` now refuses one that names a different book.
+
 > **Internet Archive:** The entire IA corpus is not yet represented here. The `gutenkg ia` command handles IA downloads separately from Gutenberg. IA is the right source for: technical manuals (Audel, trade catalogues), out-of-print scientific monographs, periodicals, and government documents not on Gutenberg. An IA-focused wishlist section should be built out as a separate planning effort — see `gutenkg ia survey` for discovery.
 
 ---
@@ -21,7 +29,7 @@ Format: `- [ ] Title — Author (Gutenberg ID #NNNNN | IA)` — check the box wh
 - [x] The Bible — King James Version (#10)
 - [x] Quran — Rodwell translation (#2800) *(wishlist said Yusuf Ali; the corpus holds Rodwell)*
 - [x] The Dhammapada — Max Müller translation *(in corpus; was never listed here)*
-- [ ] The Torah / Tanakh — JPS 1917 translation (#1097) *(not in corpus -- never downloaded)*
+- [ ] The Torah / Tanakh — JPS 1917 translation *(not on Gutenberg; #1097 was Shaw's Mrs. Warren's Profession)*
 - [x] Bhagavad Gita — Edwin Arnold verse translation (#2388)
 - [x] Tao Te Ching — James Legge translation (#216)
 - [x] The Upanishads — Max Müller translation (#3283)
@@ -61,7 +69,7 @@ Format: `- [ ] Title — Author (Gutenberg ID #NNNNN | IA)` — check the box wh
 - [x] The Clouds — Aristophanes (#2562)
 - [x] The Birds — Aristophanes (#3013)
 - [x] Oresteia — Aeschylus (#8714) *(in corpus as The House of Atreus)*
-- [x] Medea — Euripides (#35)
+- [x] Medea — Euripides (#35451) *(#35 is The Time Machine)*
 - [ ] On Duties (De Officiis) — Cicero (#47001) *(not in corpus -- never downloaded)*
 - [x] On the Nature of Things — Lucretius (#785)
 - [x] The Consolation of Philosophy — Boethius (#14328)
@@ -132,11 +140,11 @@ Format: `- [ ] Title — Author (Gutenberg ID #NNNNN | IA)` — check the box wh
 
 - [x] Fathers and Sons — Ivan Turgenev (#30723)
 - [x] On the Eve — Ivan Turgenev (#6902)
-- [ ] The Overcoat — Nikolai Gogol (#1022) *(not in corpus -- never downloaded)*
+- [ ] The Overcoat — Nikolai Gogol (#36238, as The Mantle, and Other Stories) *(#1022 was Thoreau's Walking)*
 - [x] Oblomov — Ivan Goncharov (#54700)
 - [x] The Possessed (Demons) — Fyodor Dostoevsky (#8117)
 - [x] Notes from Underground — Fyodor Dostoevsky (#600)
-- [x] Childhood, Boyhood, Youth — Leo Tolstoy (#2450)
+- [x] Childhood, Boyhood, Youth — Leo Tolstoy (#2450) *(#2450 is Boyhood alone; Childhood is #2142, Youth #2637)*
 
 ---
 
@@ -144,17 +152,17 @@ Format: `- [ ] Title — Author (Gutenberg ID #NNNNN | IA)` — check the box wh
 
 - [x] One Thousand and One Nights — Lane translation (#128)
 - [x] Don Quixote Vol. II — Cervantes (#996) *(Vol. I already in spanish genre)*
-- [ ] The Divine Comedy: Purgatorio — Dante (#8799) *(not in corpus; only Paradiso #8800 was ingested, as The Divine Comedy (Cary))*
-- [x] The Divine Comedy: Paradiso — Dante (#8800)
+- [x] The Divine Comedy: Purgatorio — Dante *(held: #8800, ingested as The Divine Comedy (Cary), is the complete poem; #8799 was the Doré Paradise)*
+- [x] The Divine Comedy: Paradiso — Dante (#8800, the complete Cary translation)
 - [x] Gitanjali — Rabindranath Tagore (#7164)
 
 ---
 
 ## Science Fiction (additions)
 
-- [ ] The Complete Works of Edgar Allan Poe — Poe (#2148) *(Tales of Mystery already in american-literature)*
+- [ ] The Complete Works of Edgar Allan Poe — Poe (Raven Edition, #2147-2151) *(#2148 is volume 2 alone; #2147, volume 1, is already in american-literature as Tales of Mystery and Imagination)*
 - [x] The Food of the Gods — H.G. Wells (#11696)
-- [ ] When the World Screamed — Arthur Conan Doyle (#2038) *(not in corpus -- never downloaded)*
+- [ ] When the World Screamed — Arthur Conan Doyle *(not on Gutenberg; #2038 was the Lock and Key Library anthology)*
 - [x] A Journey to Other Worlds — John Jacob Astor (#3935) *(in corpus as A Journey in Other Worlds)*
 - [x] Pellucidar — Edgar Rice Burroughs (#605)
 - [x] The Warlord of Mars — Edgar Rice Burroughs (#68)
@@ -252,9 +260,9 @@ personality and social context in ways essays cannot.  Wide date range: Pliny
 - [x] Letters to His Son — Lord Chesterfield (#3352)
 - [x] Letters — Pliny the Younger (#2811)
 - [x] Letters of John Keats to His Family and Friends (#35698)
-- [ ] Turkish Embassy Letters — Lady Mary Wortley Montagu (#16287)
-- [ ] Letters of Charles Lamb (#1633)
-- [ ] Letters and Journals of Lord Byron (#19190)
+- [ ] Turkish Embassy Letters — Lady Mary Wortley Montagu (#17520) *(Gutenberg titles it "Letters of the Right Honourable Lady M—y W—y M—e"; use that title in a catalog. #16287 was William James)*
+- [ ] Letters of Charles Lamb (#10125, The Best Letters of Charles Lamb) *(#1633 was Hale's The Brick Moon)*
+- [x] Letters and Journals of Lord Byron (#8901, #9921) *(in corpus as two volumes; #19190 was an unrelated book)*
 
 ---
 
@@ -264,7 +272,7 @@ First-person life narratives and major literary biographies; overlaps with
 diaries but distinct in retrospective authorial voice.
 
 - [x] Autobiography — Benjamin Franklin (#148)
-- [ ] Autobiography of John Stuart Mill (#7223)
+- [ ] Autobiography of John Stuart Mill (#10378) *(#7223 was The Belgian Cookbook)*
 - [x] Autobiography — Benvenuto Cellini (#4028)
 - [x] Life of Samuel Johnson — James Boswell (#1564)
 - [x] Personal Memoirs — Ulysses S. Grant (#4367)
@@ -301,7 +309,7 @@ Natural History (Darwin, Wallace) but includes purely geographic/cultural works.
 
 - [x] The Travels of Marco Polo (#12410)
 - [x] A Lady's Life in the Rocky Mountains — Isabella Bird (#755)
-- [ ] Travels in the Interior Districts of Africa — Mungo Park (#4191)
+- [x] Travels in the Interior Districts of Africa — Mungo Park (#74976) *(in corpus; #4191 was a Pepys volume)*
 - [x] Two Years Before the Mast — Richard Henry Dana Jr. (#2055)
 - [x] The Innocents Abroad — Mark Twain (#3176)
 - [x] Typee — Herman Melville (#1900)
@@ -316,7 +324,7 @@ canon: Greek tragedy (many already in Ancient & Classical), Jacobean, and
 modern European.
 
 ### Already in Ancient & Classical (no re-ingest needed):
-- [x] Medea — Euripides (#35)
+- [x] Medea — Euripides (#35451) *(#35 is The Time Machine)*
 - [x] Oresteia — Aeschylus (#8714) *(in corpus as The House of Atreus)*
 - [x] The Clouds / The Birds — Aristophanes
 
@@ -328,10 +336,10 @@ modern European.
 - [x] Hedda Gabler — Henrik Ibsen (#4093)
 - [x] Pygmalion — George Bernard Shaw (#3825)
 - [x] Major Barbara — George Bernard Shaw (#3790)
-- [ ] The Cherry Orchard — Anton Chekhov (#7984)
+- [ ] The Cherry Orchard — Anton Chekhov (#7986, Plays by Anton Chekhov, Second Series) *(#7984 was The Old Santa Fe Trail)*
 - [x] The Seagull — Anton Chekhov (#1754)
 - [x] The Importance of Being Earnest — Oscar Wilde (#844)
-- [ ] The Playboy of the Western World — J.M. Synge (#5765) *(verify ID)*
+- [ ] The Playboy of the Western World — J.M. Synge (#1240) *(#5765 was Darwin's Insectivorous Plants)*
 
 ---
 
