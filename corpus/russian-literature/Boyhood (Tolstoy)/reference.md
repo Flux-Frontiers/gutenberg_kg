@@ -1,4 +1,4 @@
-# Reference: Childhood, Boyhood, Youth (Tolstoy)
+# Reference: Boyhood (Tolstoy)
 
 ## Source
 

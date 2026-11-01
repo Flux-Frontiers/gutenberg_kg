@@ -32,9 +32,11 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   13 unchecked IDs named the wrong book or part of it; each now carries the
   right ID or is marked as not on Gutenberg, and Byron's *Letters and Journals*
   and Mungo Park are checked off, as both are already held.
-- **"Childhood, Boyhood, Youth" is *Boyhood* alone.** #2450 holds only the
-  middle book of the trilogy. Noted in the catalog and wishlist; *Childhood*
-  (#2142) and *Youth* (#2637) are not yet in the corpus.
+- **Tolstoy's trilogy is complete.** #2450, held as "Childhood, Boyhood,
+  Youth", is *Boyhood* alone; it is renamed `Boyhood (Tolstoy)`, and
+  *Childhood* (#2142) and *Youth* (#2637) are added to `russian-literature`.
+  The `ancient-classical` catalog line for #47001 is retitled *De Officiis*,
+  Gutenberg's own title, so the download title check accepts it.
 
 ## [1.30.0] - 2026-10-26
 

@@ -1,4 +1,4 @@
-# Childhood, Boyhood, Youth (Tolstoy)
+# Boyhood (Tolstoy)
 
 **Leo, graf Tolstoy**
 

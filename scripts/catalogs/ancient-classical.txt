@@ -14,7 +14,7 @@
 2562	The Clouds (Aristophanes)
 3013	The Birds (Aristophanes)
 8604	The House of Atreus; Being the Agamemnon, the Libation bearers, and the Furies
-47001	On Duties / De Officiis (Cicero)
+47001	De Officiis (Cicero)
 785	On the Nature of Things (Lucretius)
 14328	The Consolation of Philosophy (Boethius)
 10661	A Selection from the Discourses of Epictetus with the Encheiridion
