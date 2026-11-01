@@ -70,7 +70,7 @@ Format: `- [ ] Title — Author (Gutenberg ID #NNNNN | IA)` — check the box wh
 - [x] The Birds — Aristophanes (#3013)
 - [x] Oresteia — Aeschylus (#8714) *(in corpus as The House of Atreus)*
 - [x] Medea — Euripides (#35451) *(#35 is The Time Machine)*
-- [ ] On Duties (De Officiis) — Cicero (#47001) *(not in corpus -- never downloaded)*
+- [ ] On Duties (De Officiis) — Cicero (#47001) *(not in corpus -- never downloaded; Gutenberg titles it De Officiis)*
 - [x] On the Nature of Things — Lucretius (#785)
 - [x] The Consolation of Philosophy — Boethius (#14328)
 
@@ -144,7 +144,9 @@ Format: `- [ ] Title — Author (Gutenberg ID #NNNNN | IA)` — check the box wh
 - [x] Oblomov — Ivan Goncharov (#54700)
 - [x] The Possessed (Demons) — Fyodor Dostoevsky (#8117)
 - [x] Notes from Underground — Fyodor Dostoevsky (#600)
-- [x] Childhood, Boyhood, Youth — Leo Tolstoy (#2450) *(#2450 is Boyhood alone; Childhood is #2142, Youth #2637)*
+- [x] Childhood — Leo Tolstoy (#2142)
+- [x] Boyhood — Leo Tolstoy (#2450) *(held until 2026-11-01 as "Childhood, Boyhood, Youth")*
+- [x] Youth — Leo Tolstoy (#2637)
 
 ---
 
@@ -348,15 +350,5 @@ modern European.
 - [x] Meditations on First Philosophy — Descartes (#59) — retry download
 - [x] Don Quixote Vol. II — Cervantes (#996)
 - [ ] Audel volumes (IA — needs curation tooling first)
-- [ ] **Corpus fix: Tolstoy's trilogy is one-third present** *(found 2026-10-31; deferred to a local Mac run, since it needs re-ingest and a bundle rebuild)*
-  `russian-literature/Childhood, Boyhood, Youth (Tolstoy)` holds #2450, which is
-  *Boyhood* alone (162 KB). To fix:
-  1. `kgrag unregister` the book, `mv` its directory to `Boyhood (Tolstoy)`, retitle
-     its `.md` and `reference.md`, then `gutenkg re-register` (the same route used to
-     move the Clark Ashton Smith books, 2026-09-02).
-  2. Change the catalog line to `2450	Boyhood (Tolstoy)` and drop the note above it.
-  3. Add `2142	Childhood (Tolstoy)` and `2637	Youth (Tolstoy)` to
-     `scripts/catalogs/russian-literature.txt` and download with
-     `gutenkg download catalog ... --genre russian-literature`.
-  4. Ingest, rebuild `bundles/gutenberg-all` and the Swift packs, and redeploy the
-     image and web forest (the `add-book` skill covers the full rollout).
+- [x] **Corpus fix: Tolstoy's trilogy** *(2026-11-01)* — #2450 renamed to
+  `Boyhood (Tolstoy)`; *Childhood* (#2142) and *Youth* (#2637) downloaded.
