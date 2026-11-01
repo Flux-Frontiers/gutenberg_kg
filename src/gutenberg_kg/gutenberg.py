@@ -20,6 +20,7 @@ import os
 import re
 import sys
 import time
+import unicodedata
 import urllib.error
 import urllib.parse
 import urllib.request
@@ -106,6 +107,73 @@ def slugify(title: str) -> str:
     slug = re.sub(r"[^\w\s-]", "", slug)
     slug = re.sub(r"[\s-]+", "_", slug)
     return slug
+
+
+# Words that carry no identity in a title: articles, connectives, and the
+# volume/edition boilerplate Gutenberg titles are full of.
+_TITLE_STOPWORDS = frozenset(
+    "the a an of and or in on to with by for from his her its their "
+    "de la le les et volume vol complete part book being other others".split()
+)
+
+# Below this share of the catalog title's words found in Gutenberg's own
+# title, the ID is taken to name a different book. Measured on every
+# titled entry in scripts/catalogs/ (2026-10-31): 0.5 flags all the known
+# wrong IDs whose titles share no words, and of the 251 entries only
+# alternate titles (Koran/Quran, Tao Teh King, Arabian Nights) score lower.
+TITLE_MATCH_THRESHOLD = 0.5
+
+
+class TitleMismatchError(ValueError):
+    """A catalog title and the title Gutenberg gives the same ID disagree."""
+
+
+def _title_words(title: str) -> list[str]:
+    """Lowercased ASCII content words of a title, stopwords dropped."""
+    folded = unicodedata.normalize("NFKD", title).encode("ascii", "ignore").decode().lower()
+    return [w for w in re.findall(r"[a-z0-9]+", folded) if w not in _TITLE_STOPWORDS and len(w) > 1]
+
+
+def title_overlap(expected: str, fetched: str) -> float:
+    """Share of ``expected``'s content words that appear in ``fetched``.
+
+    A catalog title usually carries a curator's suffix -- ``"Medea
+    (Euripides)"`` or ``"Typee — Herman Melville"`` -- that Gutenberg's
+    title lacks, so a trailing parenthetical and anything after a spaced
+    dash are dropped from ``expected`` first. Words match on their first
+    five letters, so ``Purgatorio`` meets ``Purgatory``.
+
+    :param expected: The title the catalog gives the ID.
+    :param fetched: The title Gutenberg's metadata gives the ID.
+    :returns: 0.0 (no word in common) to 1.0; 1.0 when ``expected`` has no
+        content words to compare.
+    """
+    core = re.sub(r"\s*\([^)]*\)\s*$", "", expected)
+    core = re.split(r"\s+[—–-]{1,2}\s+", core)[0]
+    want = _title_words(core)
+    if not want:
+        return 1.0
+    have = {w[:5] for w in _title_words(fetched)}
+    return sum(1 for w in want if w[:5] in have) / len(want)
+
+
+def check_title(ebook_id: int, expected: str, fetched: str | None) -> None:
+    """Refuse an ID whose Gutenberg title does not resemble the catalog's.
+
+    :param ebook_id: Project Gutenberg numeric book ID.
+    :param expected: The title the catalog (or ``--title``) gives the ID.
+    :param fetched: The title from the ID's OPDS metadata, if any.
+    :raises TitleMismatchError: When fewer than
+        :data:`TITLE_MATCH_THRESHOLD` of the catalog title's words appear in
+        Gutenberg's title.
+    """
+    if not fetched:
+        return
+    if title_overlap(expected, fetched) < TITLE_MATCH_THRESHOLD:
+        raise TitleMismatchError(
+            f"Gutenberg #{ebook_id} is {fetched!r}, not {expected!r}. "
+            "Fix the ID, or pass --no-title-check if the title is a deliberate rename."
+        )
 
 
 def fetch_url(url: str, retries: int = 3, backoff: float = 2.0) -> str:
@@ -657,6 +725,7 @@ def download_book(
     genre: str | None = None,
     force: bool = False,
     dry_run: bool = False,
+    check_titles: bool = True,
 ) -> str:
     """Download a book, convert to Markdown, and save with reference.
 
@@ -667,7 +736,13 @@ def download_book(
         omitted, it is written to ``REPO_ROOT/<Title>/`` as before.
     :param force: Re-download even when the Markdown file already exists.
     :param dry_run: Print what would be done without writing any files.
+    :param check_titles: Refuse the download when ``title`` does not resemble
+        the title Gutenberg gives ``ebook_id`` (see :func:`check_title`). The
+        override is otherwise trusted blindly, so a wrong ID downloads the
+        wrong book under the right name.
     :returns: Absolute path to the primary Markdown file.
+    :raises TitleMismatchError: When ``check_titles`` is set and the titles
+        disagree.
     """
     # ID-based idempotence check: a book already present under ANY directory
     # name (e.g. downloaded under its OPDS title before a catalog override was
@@ -688,6 +763,8 @@ def download_book(
     # Fetch metadata (needed for the title before we can check idempotence)
     print(f"  Fetching metadata for Gutenberg #{ebook_id}...")
     meta = fetch_metadata(ebook_id)
+    if title and check_titles:
+        check_title(ebook_id, title, meta.get("title"))
     title = title or meta.get("title") or f"Book_{ebook_id}"
     meta["title"] = title
 
@@ -994,6 +1071,7 @@ def run_catalog(
     genre: str | None = None,
     force: bool = False,
     dry_run: bool = False,
+    check_titles: bool = True,
 ) -> None:
     """Download all books from a catalog file.
 
@@ -1001,6 +1079,8 @@ def run_catalog(
     :param genre: Genre subdirectory for all books.
     :param force: Re-download even if already present.
     :param dry_run: Print actions without writing files.
+    :param check_titles: Skip any entry whose title does not resemble the
+        title Gutenberg gives its ID (see :func:`check_title`).
     """
     if genre and genre not in ALL_GENRES:
         print(f"ERROR: unknown genre {genre!r}.", file=sys.stderr)
@@ -1015,7 +1095,14 @@ def run_catalog(
     succeeded = 0
     for ebook_id, title in entries:
         try:
-            download_book(ebook_id, title=title, genre=genre, force=force, dry_run=dry_run)
+            download_book(
+                ebook_id,
+                title=title,
+                genre=genre,
+                force=force,
+                dry_run=dry_run,
+                check_titles=check_titles,
+            )
             succeeded += 1
         except Exception as exc:  # noqa: BLE001
             print(f"  ERROR downloading #{ebook_id}: {exc}", file=sys.stderr)

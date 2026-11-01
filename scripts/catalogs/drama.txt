@@ -9,7 +9,7 @@
 #
 # Note: Aristophanes and Euripides are already in ancient-classical;
 # listed here as reference only — do not re-ingest.
-# Already in ancient-classical (skip): Medea (#35), Oresteia (#8714),
+# Already in ancient-classical (skip): Medea (#35451), Oresteia (#8714),
 #   The Clouds (#2562), The Birds (#3013), Oresteia (#8604)
 
 # ── Jacobean & Elizabethan ────────────────────────────────────────────────────

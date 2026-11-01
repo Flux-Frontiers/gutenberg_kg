@@ -10,7 +10,6 @@
 # --- Classics ---
 84	Frankenstein
 5230	The Invisible Man
-1658	The Island of Doctor Moreau
 1013	The First Men in the Moon
 62	A Princess of Mars
 201	Flatland
@@ -29,5 +28,5 @@
 1607	A Journey in Other Worlds: A Romance of the Future
 605	Pellucidar (Burroughs)
 11696	The Food of the Gods (Wells)
-159	The island of Doctor Moreau
+159	The Island of Doctor Moreau
 68	The warlord of Mars

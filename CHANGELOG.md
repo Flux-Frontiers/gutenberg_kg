@@ -8,6 +8,36 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+### Added
+
+- **`gutenkg download` refuses an ID that names a different book.** A catalog
+  or `--title` override was trusted blindly, so a wrong ID downloaded the
+  wrong book under the right name: `8799  The Divine Comedy: Purgatorio` in
+  `world-literature.txt` would have shelved the Doré *Paradise* as Purgatorio.
+  The override is now compared with the title from the ID's metadata, and an
+  entry sharing fewer than half its words is refused before any text is
+  fetched; a catalog run reports it and carries on. `--dry-run` runs the
+  check, and `--no-title-check` (on `download book` and `download catalog`)
+  skips it for a deliberate rename.
+
+### Fixed
+
+- **Wrong Gutenberg IDs in the catalogs and wishlist.** Checked against
+  Gutenberg's catalog on 2026-10-31. Removed three catalog lines whose IDs
+  name other books: `35 Medea` (*The Time Machine*), `1658 The Island of
+  Doctor Moreau` (*Phaedo*) and `8799 Purgatorio` (#8800, already held, is the
+  complete Cary *Divine Comedy*). The right copies were already held under
+  #35451 and #159, and `159`'s title is re-cased to match its directory, which
+  clears the one `gutenkg audit` error. In `docs/CORPUS_WISHLIST.md`, 12 of the
+  13 unchecked IDs named the wrong book or part of it; each now carries the
+  right ID or is marked as not on Gutenberg, and Byron's *Letters and Journals*
+  and Mungo Park are checked off, as both are already held.
+- **Tolstoy's trilogy is complete.** #2450, held as "Childhood, Boyhood,
+  Youth", is *Boyhood* alone; it is renamed `Boyhood (Tolstoy)`, and
+  *Childhood* (#2142) and *Youth* (#2637) are added to `russian-literature`.
+  The `ancient-classical` catalog line for #47001 is retitled *De Officiis*,
+  Gutenberg's own title, so the download title check accepts it.
+
 ## [1.30.0] - 2026-10-26
 
 Step 4 of the fleet's MCP centralization (kgrag_priv

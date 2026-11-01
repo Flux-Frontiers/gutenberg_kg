@@ -71,6 +71,8 @@ gutenkg download catalog scripts/catalogs/science-fiction.txt --genre science-fi
 
 Catalog format: one book per line, `<gutenberg_id>[TAB<optional title>]`. Lines starting with `#` are comments.
 
+A title is checked against the one Gutenberg gives the ID, and an entry that names a different book is refused before it downloads; `--dry-run` runs the same check. Pass `--no-title-check` for a deliberate rename (`download book --title` takes it too).
+
 ### Fetch an entire genre in one step
 
 ```bash

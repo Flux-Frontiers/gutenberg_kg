@@ -24,7 +24,13 @@ def download_group():
 @click.option("--title", default=None, help="Override the book title.")
 @click.option("--force", is_flag=True, default=False, help="Re-download even if already present.")
 @click.option("--dry-run", is_flag=True, default=False, help="Print actions without downloading.")
-def download_book(ebook_id, genre, title, force, dry_run):
+@click.option(
+    "--no-title-check",
+    is_flag=True,
+    default=False,
+    help="Download even when the title does not match the one Gutenberg gives the ID.",
+)
+def download_book(ebook_id, genre, title, force, dry_run, no_title_check):
     """Download a single book by its Gutenberg ebook ID.
     \f
 
@@ -33,13 +39,21 @@ def download_book(ebook_id, genre, title, force, dry_run):
     :param title: Optional title override.
     :param force: Re-download even if already present.
     :param dry_run: Print what would be done without actually doing it.
+    :param no_title_check: Skip the check that ``--title`` matches the ID.
     """
     if dry_run:
         click.echo(f"[dry] Would download Gutenberg #{ebook_id}...")
     else:
         click.echo(f"Downloading Gutenberg #{ebook_id}...")
     try:
-        path = _dg.download_book(ebook_id, title=title, genre=genre, force=force, dry_run=dry_run)
+        path = _dg.download_book(
+            ebook_id,
+            title=title,
+            genre=genre,
+            force=force,
+            dry_run=dry_run,
+            check_titles=not no_title_check,
+        )
         if not dry_run:
             click.echo(f"\nDone. Book saved to: {path}")
     except Exception as exc:  # noqa: BLE001
@@ -57,7 +71,13 @@ def download_book(ebook_id, genre, title, force, dry_run):
 )
 @click.option("--force", is_flag=True, default=False, help="Re-download even if already present.")
 @click.option("--dry-run", is_flag=True, default=False, help="Print actions without downloading.")
-def download_catalog(catalog_file, genre, force, dry_run):
+@click.option(
+    "--no-title-check",
+    is_flag=True,
+    default=False,
+    help="Download even when the title does not match the one Gutenberg gives the ID.",
+)
+def download_catalog(catalog_file, genre, force, dry_run, no_title_check):
     """Download multiple books from a catalog file.
     \f
 
@@ -65,8 +85,15 @@ def download_catalog(catalog_file, genre, force, dry_run):
     :param genre: Override genre for all entries.
     :param force: Re-download even if already present.
     :param dry_run: Print what would be done without actually doing it.
+    :param no_title_check: Skip the check that each entry's title matches its ID.
     """
-    _dg.run_catalog(catalog_file, genre=genre, force=force, dry_run=dry_run)
+    _dg.run_catalog(
+        catalog_file,
+        genre=genre,
+        force=force,
+        dry_run=dry_run,
+        check_titles=not no_title_check,
+    )
 
 
 @download_group.command("search")
