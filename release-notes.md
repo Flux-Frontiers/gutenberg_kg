@@ -1,75 +1,70 @@
-# Release Notes -- v1.30.0
+# Release Notes -- v1.31.0
 
-> Released: 2026-10-26
+> Released: 2026-11-01
 
-Step 4 of the fleet's MCP centralization (kgrag_priv
-`docs/MCP_CENTRALIZATION_PLAN.md`, sweep item 93), with this repo's LanceDB
-paths removed. **Needs kgmodule-utils 0.29.0** (for `kg_utils.mcp`), **doc-kg
-0.29.0** and **diary-kg 0.101.0**: the KG pins are kgmodule-utils 0.29.0,
-doc-kg 0.29.0, diary-kg 0.101.0 and kg-rag 0.18.0, and the `mcp` extra takes
-`kgmodule-utils[mcp]`.
-
-### Changed
-
-- **The MCP server is built on `kg_utils.mcp`**, off the standalone `fastmcp`
-  package. It now serves the consolidated bundle (`bundles/gutenberg-all`)
-  through the fleet's five canonical tools, under the same names as every
-  other KG server (`stats`, `query`, `pack`, `get_node`, `neighbors`), with
-  DocKG's own hybrid search behind `query` and `pack`, and keeps
-  `generate_image` and `corpus_imagine` beside them. The tool list is
-  generated from the tools, and `gutenkg mcp --manifest` prints it as JSON
-  without opening the bundle. Each session prints the bundle it serves to
-  stderr, and **a missing bundle is refused** (`no graph at ...`): build it
-  with `gutenkg build-corpus` before serving, including to use the image tools.
-- **The `stats` tool reports `kind: "gutenberg"`.** It returns the bundle
-  DocKG's stats in the fleet shape (kgrag_priv `docs/FLEET_STANDARDS.md`,
-  "KG stats shape") -- `nodes` / `edges` totals with their breakdowns by kind
-  and relation, plus `vector_count` -- with `kind` set to the server's own
-  kind rather than DocKG's `"doc"`.
-- **`gutenkg mcp`** is the MCP command, with the fleet's standard flags
-  (`--repo`, `--db`, `--vectors`, `--model`,
-  `--transport stdio|streamable-http`, `--host`, `--port`, `--manifest`);
-  `--db` defaults to `bundles/gutenberg-all/.dockg/graph.sqlite` under
-  `--repo`. `gutenkg-mcp` is the same command. Registering it does not import
-  `mcp`.
-- The `mcp` extra is `mcp>=1.23.0,<2` and `structlog`; `fastmcp` and its 27
-  dependencies are gone from the lock (closes MCP_MIGRATION Phase 4).
-- `vector_store.resolve_vectors_path(store_dir)` replaces
-  `resolve_vector_paths()`: it returns the `vectors.sqlite` file or `None`.
+A corpus and security release: the catalog IDs checked against Gutenberg's
+own catalog, Tolstoy's trilogy completed (255 books), and the two critical
+Dependabot alerts cleared. Rebuild the worker image to pick up the new
+dependency floors.
 
 ### Added
 
-- **`docs/MCP.md`**, the MCP server guide (in the docs nav), and a README
-  section pointing to it: configuration, options and the seven tools.
+- **`gutenkg download` refuses an ID that names a different book.** A catalog
+  or `--title` override was trusted blindly, so a wrong ID downloaded the
+  wrong book under the right name: `8799  The Divine Comedy: Purgatorio` in
+  `world-literature.txt` would have shelved the Doré *Paradise* as Purgatorio.
+  The override is now compared with the title from the ID's metadata, and an
+  entry sharing fewer than half its words is refused before any text is
+  fetched; a catalog run reports it and carries on. `--dry-run` runs the
+  check, and `--no-title-check` (on `download book` and `download catalog`)
+  skips it for a deliberate rename.
 
 ### Fixed
 
-- **`make publish-worker-image` no longer leaves the replaced image on
-  Docker Hub.** Each push moved `latest` and Docker Hub kept the previous
-  image untagged, about 6 GB a publish (`corpus-gutenberg` had reached
-  47.5 GB for one live image). The target now records the tag's digest
-  before the push and, after it, deletes that image and its platform and
-  attestation manifests with `scripts/prune_hub_image.py`, through the
-  registry API, which refuses anything still referenced. It needs
-  `DOCKERHUB_USERNAME` and `DOCKERHUB_TOKEN` (a personal access token with
-  Read, Write and Delete); without them the publish succeeds and says the
-  old image was kept. Both runtimes' targets do this.
-- **`gutenkg imagine --query` and the `corpus_imagine` tool** opened their
-  DocKGs with `lancedb_dir=`, which doc-kg 0.29.0 refuses; a blanket `except`
-  turned that into a silent fall back to the raw query, with no corpus text at
-  all. They now pass `vectors_path=`, with a test.
-- `runpod/handler.py` registered the consolidated DocKG and every diary with a
-  `lancedb_path` even when only `vectors.sqlite` existed; it now registers
-  `vectors_path`.
+- **Wrong Gutenberg IDs in the catalogs and wishlist.** Checked against
+  Gutenberg's catalog on 2026-10-31. Removed three catalog lines whose IDs
+  name other books: `35 Medea` (*The Time Machine*), `1658 The Island of
+  Doctor Moreau` (*Phaedo*) and `8799 Purgatorio` (#8800, already held, is the
+  complete Cary *Divine Comedy*). The right copies were already held under
+  #35451 and #159, and `159`'s title is re-cased to match its directory, which
+  clears the one `gutenkg audit` error. In `docs/CORPUS_WISHLIST.md`, 12 of the
+  13 unchecked IDs named the wrong book or part of it; each now carries the
+  right ID or is marked as not on Gutenberg, and Byron's *Letters and Journals*
+  and Mungo Park are checked off, as both are already held.
+- **Tolstoy's trilogy is complete.** #2450, held as "Childhood, Boyhood,
+  Youth", is *Boyhood* alone; it is renamed `Boyhood (Tolstoy)`, and
+  *Childhood* (#2142) and *Youth* (#2637) are added to `russian-literature`.
+  The `ancient-classical` catalog line for #47001 is retitled *De Officiis*,
+  Gutenberg's own title, so the download title check accepts it.
+
+### Changed
+
+- **kgmodule-utils 0.29.1.** `check_pins.py --bump` moves the floor, lock,
+  Dockerfile ARG and runpod pin together. Its two fixes are in the code-KG
+  store's symbol-stub resolution (kg_utils #46). The DocKG and DiaryKG
+  paths this repo uses are unchanged.
+- **Phones and tablets as worker origins (docs).** A browser on another
+  device opens the forest's dev server as `http://<your-mac>.local:5173` and
+  sends that origin, which the default `GUTENKG_CORS_ORIGINS` does not
+  include, so live moots fail while every other op works. The LAN checklist
+  in `docs/INSTALLATION.md` gains that step, and `docs/MOOTS.md` notes it
+  under the setting (#216).
 
 ### Removed
 
-- **LanceDB reading**, everywhere: the worker's `lancedb/` fallback in
-  `serve/handler.py` and `runpod/handler.py` (the image never installed
-  LanceDB, so it could not run), `export_swift`'s LanceDB reader and its dual
-  `(vectors, lancedb)` lookup, and the registry's `lancedb_path` from ingest.
-  `dockg_defect` now reports a LanceDB-only store as a defect, so ingest
-  rebuilds it. `build-corpus` still deletes a stale `lancedb/` directory.
+- **`scratch_embed_bench.py`**, a one-off probe of embedding throughput over
+  time. Nothing referenced it.
+
+### Security
+
+- **Dependabot alerts cleared in `poetry.lock`.** `pillow` 12.3.0 -> 13.0.0
+  (critical: FlashPix heap overflow, plus the 12.x advisories) and `certifi`
+  2026.7.22 -> 2026.10.23 (critical: emSign roots with compromised
+  intermediates), with `filelock` 3.32.5 -> 4.2.6, `setuptools` -> 84.2.1 and
+  `virtualenv` -> 21.15.2. The `pillow` floor moves to `>=13.0.0` in the `chat`
+  and `image` extras, the dev group and both image-server requirement files.
+  `streamlit` moves to `>=1.66.1` with it: through 1.66.0 it capped
+  `pillow<13`.
 
 ---
 

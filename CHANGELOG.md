@@ -8,6 +8,13 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+## [1.31.0] - 2026-11-01
+
+A corpus and security release: the catalog IDs checked against Gutenberg's
+own catalog, Tolstoy's trilogy completed (255 books), and the two critical
+Dependabot alerts cleared. Rebuild the worker image to pick up the new
+dependency floors.
+
 ### Added
 
 - **`gutenkg download` refuses an ID that names a different book.** A catalog
@@ -37,6 +44,24 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   *Childhood* (#2142) and *Youth* (#2637) are added to `russian-literature`.
   The `ancient-classical` catalog line for #47001 is retitled *De Officiis*,
   Gutenberg's own title, so the download title check accepts it.
+
+### Changed
+
+- **kgmodule-utils 0.29.1.** `check_pins.py --bump` moves the floor, lock,
+  Dockerfile ARG and runpod pin together. Its two fixes are in the code-KG
+  store's symbol-stub resolution (kg_utils #46). The DocKG and DiaryKG
+  paths this repo uses are unchanged.
+- **Phones and tablets as worker origins (docs).** A browser on another
+  device opens the forest's dev server as `http://<your-mac>.local:5173` and
+  sends that origin, which the default `GUTENKG_CORS_ORIGINS` does not
+  include, so live moots fail while every other op works. The LAN checklist
+  in `docs/INSTALLATION.md` gains that step, and `docs/MOOTS.md` notes it
+  under the setting (#216).
+
+### Removed
+
+- **`scratch_embed_bench.py`**, a one-off probe of embedding throughput over
+  time. Nothing referenced it.
 
 ### Security
 

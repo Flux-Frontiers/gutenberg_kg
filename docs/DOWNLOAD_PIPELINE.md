@@ -70,6 +70,26 @@ KGRAG registration) is described in [`README.md`](../README.md).
 | `gutenkg download survey [--genre G]` | Show what's downloaded/indexed |
 | `gutenkg authors [--refresh] [--dry-run]` | Rebuild author pages |
 
+### The title check
+
+A Gutenberg ID is easy to get wrong, and a wrong one used to download the
+wrong book under the right name. When `download book --title` or a catalog
+line gives an ID a title, it is now compared with the title from the ID's
+metadata before any text is fetched. A curator's suffix (`Medea (Euripides)`,
+`Typee — Herman Melville`) is dropped first, and words match on their first
+five letters. If fewer than half the title's words appear in Gutenberg's
+(`TITLE_MATCH_THRESHOLD`, in `gutenberg.py`), the ID is refused:
+
+```
+ERROR: Gutenberg #47001 is 'De Officiis', not 'On Duties'. Fix the ID, or pass --no-title-check if the title is a deliberate rename.
+```
+
+`download book` stops there. `download catalog` reports the line and goes on
+to the next. `--dry-run` runs the check without downloading, so a new catalog
+can be vetted before it is run. Alternate titles (*Koran* for *Quran*, *Tao
+Teh King*) score low, so pass `--no-title-check`, on either command, for a
+deliberate rename.
+
 The `gutenkg` CLI is the authoritative interface. Scripts are thin wrappers that delegate to it:
 
 - [`src/gutenberg_kg/gutenberg.py`](../src/gutenberg_kg/gutenberg.py) — download library (`download_book`, `run_search`, `run_catalog`, `run_fetch_genre`, `run_survey`)

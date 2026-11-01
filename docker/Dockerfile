@@ -104,7 +104,7 @@ RUN pip install --no-cache-dir --index-url https://download.pytorch.org/whl/cpu 
 # KGMODULE_UTILS_VERSION sat at 0.10.0 against a >=0.12.1 floor for exactly that
 # reason. Keep every ARG == the lock.
 ARG KG_RAG_VERSION=0.18.0
-ARG KGMODULE_UTILS_VERSION=0.29.0
+ARG KGMODULE_UTILS_VERSION=0.29.1
 ARG DOC_KG_VERSION=0.29.0
 ARG DIARY_KG_VERSION=0.101.0
 RUN pip install --no-cache-dir \
