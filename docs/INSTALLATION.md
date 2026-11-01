@@ -422,6 +422,13 @@ Checklist on the Mac that runs the worker:
    one) can leave its DNS server set on the Wi-Fi service, which slows or
    breaks name lookups. Check with `networksetup -getdnsservers Wi-Fi`; clear
    with `sudo networksetup -setdnsservers Wi-Fi Empty`.
+6. **Browsers on other devices are allowed origins.** A phone that opens the
+   forest's dev server as `http://<your-mac>.local:5173` sends that origin,
+   which the worker's default `GUTENKG_CORS_ORIGINS` does not include, so
+   live moots fail while every other op works. Add it in `docker/.env`:
+   `GUTENKG_CORS_ORIGINS=http://localhost:5173,http://<your-mac>.local:5173,https://flux-frontiers.github.io`.
+   Vite itself refuses unknown host names; start the dev server with
+   `__VITE_ADDITIONAL_SERVER_ALLOWED_HOSTS=<your-mac>.local`.
 
 From the phone, open `http://<LAN-IP>:8000/health` in Safari. A
 `{"detail":"Not Found"}` page means the network path works and the problem is

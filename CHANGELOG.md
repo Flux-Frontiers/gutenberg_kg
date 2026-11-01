@@ -38,6 +38,17 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   The `ancient-classical` catalog line for #47001 is retitled *De Officiis*,
   Gutenberg's own title, so the download title check accepts it.
 
+### Security
+
+- **Dependabot alerts cleared in `poetry.lock`.** `pillow` 12.3.0 -> 13.0.0
+  (critical: FlashPix heap overflow, plus the 12.x advisories) and `certifi`
+  2026.7.22 -> 2026.10.23 (critical: emSign roots with compromised
+  intermediates), with `filelock` 3.32.5 -> 4.2.6, `setuptools` -> 84.2.1 and
+  `virtualenv` -> 21.15.2. The `pillow` floor moves to `>=13.0.0` in the `chat`
+  and `image` extras, the dev group and both image-server requirement files.
+  `streamlit` moves to `>=1.66.1` with it: through 1.66.0 it capped
+  `pillow<13`.
+
 ## [1.30.0] - 2026-10-26
 
 Step 4 of the fleet's MCP centralization (kgrag_priv
