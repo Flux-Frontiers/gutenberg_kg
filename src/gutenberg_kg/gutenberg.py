@@ -1107,8 +1107,12 @@ def run_catalog(
         sys.exit(1)
 
     print(f"{'[dry] ' if dry_run else ''}Catalog loaded: {len(entries)} book(s)\n")
-    succeeded = 0
+    # download_book returns the existing path on a skip, the same as on a
+    # download, so the held books are counted here. A summary that counted
+    # every non-failure read "24/24 would be downloaded" with nothing to fetch.
+    fetched = held = failed = 0
     for ebook_id, title in entries:
+        already = not force and _find_book_by_id(ebook_id, CORPUS_ROOT) is not None
         try:
             download_book(
                 ebook_id,
@@ -1118,15 +1122,20 @@ def run_catalog(
                 dry_run=dry_run,
                 check_titles=check_titles,
             )
-            succeeded += 1
+            if already:
+                held += 1
+            else:
+                fetched += 1
         except Exception as exc:  # noqa: BLE001
+            failed += 1
             print(f"  ERROR downloading #{ebook_id}: {exc}", file=sys.stderr)
         print()
 
-    if dry_run:
-        print(f"[dry] {succeeded}/{len(entries)} book(s) would be downloaded.")
-    else:
-        print(f"Done. {succeeded}/{len(entries)} book(s) downloaded.")
+    verb = "would be downloaded" if dry_run else "downloaded"
+    print(
+        f"{'[dry] ' if dry_run else 'Done. '}{fetched} book(s) {verb}, {held} already held, "
+        f"{failed} failed ({len(entries)} in catalog)."
+    )
 
 
 def run_fetch_genre(

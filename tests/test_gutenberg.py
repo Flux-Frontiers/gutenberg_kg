@@ -1084,7 +1084,25 @@ def test_run_catalog_skips_mismatched_entry_and_continues(tmp_path: Path, monkey
     dg.run_catalog(str(catalog), genre="russian-literature", dry_run=True)
     captured = capsys.readouterr()
     assert "ERROR downloading #1022" in captured.err
-    assert "1/2 book(s) would be downloaded" in captured.out
+    assert "1 book(s) would be downloaded, 0 already held, 1 failed (2 in catalog)" in captured.out
+
+
+def test_run_catalog_counts_held_books_apart_from_downloads(tmp_path: Path, monkeypatch, capsys):
+    """A catalog whose books are all held must not report them as downloads."""
+    monkeypatch.setattr(dg, "CORPUS_ROOT", str(tmp_path / "corpus"))
+    monkeypatch.setattr(dg, "CATALOG_ROOT", str(tmp_path / "catalogs"))
+    _make_downloaded_book(tmp_path / "corpus" / "biography", "Up From Slavery", 2376)
+    monkeypatch.setattr(dg, "fetch_metadata", lambda ebook_id: {"title": "De Officiis"})
+    catalog = tmp_path / "mixed.txt"
+    catalog.write_text(
+        "2376\tUp From Slavery (Washington)\n47001\tDe Officiis (Cicero)\n", encoding="utf-8"
+    )
+
+    dg.run_catalog(str(catalog), genre="ancient-classical", dry_run=True)
+    assert (
+        "1 book(s) would be downloaded, 1 already held, 0 failed (2 in catalog)"
+        in capsys.readouterr().out
+    )
 
 
 # ---------------------------------------------------------------------------
