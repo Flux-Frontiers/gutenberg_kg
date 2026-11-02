@@ -1,4 +1,4 @@
-# Reference: Letters of Lady Mary Wortley Montagu
+# Reference: Letters of the Right Honourable Lady Mary Wortley Montagu
 
 ## Source
 

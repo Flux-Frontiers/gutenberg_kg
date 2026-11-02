@@ -11,10 +11,9 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ### Added
 
 - **Ten books from the wishlist** (265 after ingest): Gogol's *The Mantle,
-  and Other Stories*, the *Letters of Lady Mary Wortley Montagu* (Gutenberg
-  #17520, held under a readable name; the catalog keeps Gutenberg's
-  "Lady M—y W—y M—e" title, which the download title check compares
-  against), *The Best Letters of Charles Lamb*, Chekhov's *Plays, Second
+  and Other Stories*, the *Letters of the Right Honourable Lady Mary Wortley
+  Montagu* (Gutenberg #17520, whose own title initials her name as "Lady
+  M—y W—y M—e"), *The Best Letters of Charles Lamb*, Chekhov's *Plays, Second
   Series*, Synge's *The Playboy of the Western World*, the Raven Edition of
   Poe, volumes 2-5 (#2148-2151, beside volume 1 in american-literature), and
   Cicero's *De Officiis*.

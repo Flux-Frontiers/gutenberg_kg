@@ -1,4 +1,4 @@
-# Letters of Lady Mary Wortley Montagu
+# Letters of the Right Honourable Lady Mary Wortley Montagu
 
 **Mary Wortley Montagu**
 
