@@ -199,14 +199,14 @@ The complete workflows—including catalogs, genre management, provenance, and r
 | Philosophy | 39 | 207,611 | 721,115 |
 | English Literature | 38 | 187,104 | 836,820 |
 | American Literature | 27 | 110,137 | 389,582 |
-| Ancient & Classical | 24 | 126,131 | 482,425 |
+| Ancient & Classical | 24 | 123,532 | 473,802 |
 | Science Fiction | 16 | 52,002 | 179,992 |
 | Horror | 16 | 43,592 | 165,107 |
-| Russian Literature | 15 | 98,319 | 451,685 |
+| Russian Literature | 15 | 98,329 | 451,711 |
 | French Literature | 12 | 89,504 | 415,272 |
 | Biography | 12 | 74,814 | 293,928 |
-| Drama | 12 | 19,681 | 76,243 |
-| Letters | 8 | 47,391 | 150,222 |
+| Drama | 12 | 19,680 | 76,246 |
+| Letters | 8 | 47,469 | 150,200 |
 | Technical Reference (IA) | 8 | 62,007 | 167,715 |
 | Natural History | 7 | 44,823 | 157,476 |
 | Sacred Texts | 7 | 31,996 | 156,858 |
@@ -216,7 +216,7 @@ The complete workflows—including catalogs, genre management, provenance, and r
 | Diaries | 4 | 78,217 | 379,515 |
 | Shakespeare | 4 | 6,271 | 20,974 |
 | Spanish Literature | 1 | 11,431 | 52,843 |
-| **Total** | **265** | **1,382,379** | **5,409,463** |
+| **Total** | **265** | **1,379,867** | **5,400,847** |
 <!-- END corpus-table -->
 
 </details>

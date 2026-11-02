@@ -7,7 +7,7 @@ abstract: >
   It downloads public-domain works from Project Gutenberg and the Internet
   Archive, converts them to structured Markdown, and indexes them as
   queryable knowledge graphs via DocKG and KGRAG. The current corpus spans
-  265 works across 20 genres — 1,382,379 nodes, 5,409,463 edges — queryable
+  265 works across 20 genres — 1,379,867 nodes, 5,400,847 edges — queryable
   as independent genre corpora or as a unified knowledge graph.
 authors:
   - family-names: Suchanek

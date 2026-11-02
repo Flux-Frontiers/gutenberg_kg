@@ -203,7 +203,7 @@ sister.
 
 LET. II
 
-TO MRS. S----.
+## TO MRS. S----.
 
 _Hague, Aug. 5_. O. S. 1716.
 
@@ -234,7 +234,7 @@ great pleasure and exactness; being,              Dear Madam, &c. &c.
 
 LET. III
 
-TO MRS. S. C.
+## TO MRS. S. C.
 
 _Nimeguen, Aug_.13. O. S. 1716.
 
@@ -282,7 +282,7 @@ me; and be assured I can never forget you, &c. &c.
 
 LET. IV.
 
-TO THE LADY ----.
+## TO THE LADY ----.
 
 _Cologn (sic), Aug_, 16. O. S. 1716.
 
@@ -329,7 +329,7 @@ the same you call Burgundy in London, &c. &c.
 
 LET. V.
 
-TO THE COUNTESS OF B----.
+## TO THE COUNTESS OF B----.
 
 _Nuremberg, Aug_. 22. O. S. 1716.
 
@@ -392,7 +392,7 @@ yours, &c. &c.
 
 LET. VI.
 
-To MRS P----.
+## To MRS P----.
 
 _Ratisbon, Aug_. 30 O. S. 1716.
 
@@ -468,7 +468,7 @@ me to tell you, very abruptly, that I am ever your, &c. &c.
 
 LET. VII.
 
-TO THE COUNTESS OF ----.
+## TO THE COUNTESS OF ----.
 
 _Vienna, Sept_. 8. O. S. 1716.
 
@@ -623,7 +623,7 @@ already.
 
 LET. IX.
 
-TO THE COUNTESS OF ----.
+## TO THE COUNTESS OF ----.
 
 _Vienna, Sept_. 14. O. S.
 
@@ -754,7 +754,7 @@ conclude at all.
 
 LET. X.
 
-TO THE LADY R----.
+## TO THE LADY R----.
 
 _Vienna, Sept_. 20. O. S. 1716.
 
@@ -861,7 +861,7 @@ your, &c. &c.
 
 L E T. XI.
 
-TO MRS J----.
+## TO MRS J----.
 
 _Vienna, Sept_. 26. O. S. 1716.
 
@@ -928,7 +928,7 @@ Your's, &c. &c.
 
 LET. XII.
 
-TO THE LADY X----.
+## TO THE LADY X----.
 
 _Vienna, Oct_. 1. O. S. 1716.
 
@@ -1027,7 +1027,7 @@ Dear madam, &c. &c.
 
 LET. XIII.
 
-TO MR ----.
+## TO MR ----.
 
 _Vienna, Oct_. O. S. 1716.
 
@@ -1089,7 +1089,7 @@ the stupidity of,                                       Your, &c. &c.
 
 LET.  XIV.
 
-TO THE COUNTESS OF ----.
+## TO THE COUNTESS OF ----.
 
 _Prague, Nov_. 17. O. S. 1716.
 
@@ -1129,7 +1129,7 @@ curiosity, than to indulge my own repose.  I am, &c.
 
 LET. XV.
 
-TO THE COUNTESS OF ----.
+## TO THE COUNTESS OF ----.
 
 _Leipzig, Nov_. 21. O. S. 1716.
 
@@ -1239,7 +1239,7 @@ Adieu, my dear sister.
 
 LET. XVI.
 
-TO THE COUNTESS OF ----.
+## TO THE COUNTESS OF ----.
 
 _Brunswick, Nov_. 23. O. S. 1716.
 
@@ -1258,7 +1258,7 @@ know you have more curiosity to hear of that place than any other.
 
 LET. XVII.
 
-TO THE COUNTESS OF B----.
+## TO THE COUNTESS OF B----.
 
 _Hanover, Nov_. 25. O. S. 1716.
 
@@ -1309,7 +1309,7 @@ Dear madam, your, &c. &c.
 
 LET. XVIII.
 
-TO THE LADY R----.
+## TO THE LADY R----.
 
 _Hanover, Oct_. 1. O. S. 1716.
 
@@ -1363,7 +1363,7 @@ goodness is lost upon   Your, &c.
 
 LET. XIX.
 
-TO THE COUNTESS OF ----.
+## TO THE COUNTESS OF ----.
 
 _Blankenburg, OCT_. 17. O. S. 1716.
 
@@ -1425,7 +1425,7 @@ understand hints.
 
 LET. XX.
 
-TO THE LADY ----.
+## TO THE LADY ----.
 
 _Vienna, Jan_. 1. O. S. 1717
 
@@ -1490,7 +1490,7 @@ tell you a plain truth,                                That I am, &c.
 
 LET. XXI.
 
-To THE COUNTESS OF ----.
+## To THE COUNTESS OF ----.
 
 _Vienna, Jan_. 16. O. S. 1717.
 
@@ -1583,7 +1583,7 @@ her.
 
 LET. XXII.
 
-TO MR POPE.
+## TO MR POPE.
 
 _Vienna, Jan_. 16. O. S. 1717.
 
@@ -1604,7 +1604,7 @@ live, I will answer it.  The same compliment to my lady R----.
 
 LET. XXIII.
 
-TO THE COUNTESS OF ----.
+## TO THE COUNTESS OF ----.
 
 _Peterwaradin, Jan_. 30. O. S. 1717.
 
@@ -1794,7 +1794,7 @@ I AM promised to have this letter carefully sent to Vienna.
 
 LET. XXIV.
 
-TO MR POPE.
+## TO MR POPE.
 
 _Belgrade, Feb_. 12. O. S. 1717.
 
@@ -1935,7 +1935,7 @@ reproach me, that one of yours makes ten of mine.  Adieu.
 
 LET. XXV.
 
-To HER R. H. THE PRINCESS OF WALES
+## To HER R. H. THE PRINCESS OF WALES
 [Footnote: The late Queen Caroline.]
 
 _Adrianople, April_ 1. O. S. 1717.
@@ -2003,7 +2003,7 @@ With the greatest respect, &c.
 
 LET. XXVI.
 
-TO THE LADY ----.
+## TO THE LADY ----.
 
 _Adrianople, April_ 1. O. S. 1717.
 
@@ -2110,7 +2110,7 @@ be found in one of these places.
 
 LET. XXVII.
 
-TO THE ABBOT ----.
+## TO THE ABBOT ----.
 
 _Adrianople, April_ 1. O. S. 1717.
 
@@ -2285,7 +2285,7 @@ you shall hear again from                                 Your's, &c.
 
 LET. XXVIII
 
-To THE COUNTESS or B----.
+## To THE COUNTESS or B----.
 
 _Adrianople, April_ 1. O. S. 1717.
 
@@ -2421,7 +2421,7 @@ long, and will, I hope, plead the excuse of, dear madam,  Your's, &c.
 
 LET. XXIX.
 
-TO THE COUNTESS OF ----.
+## TO THE COUNTESS OF ----.
 
 _Adrianople, April_. 1. O. S. 1717.
 
@@ -2556,7 +2556,7 @@ Dear sister, &c.
 
 LET. XXX.
 
-TO MR POPE.
+## TO MR POPE.
 
 _Adrianople, April_ 1. O. S. 1717.
 
@@ -2843,7 +2843,7 @@ for from them, by,                                        Your's, &c.
 
 LET. XXXI.
 
-TO MRS S. C.
+## TO MRS S. C.
 
 _Adrianople, April_ 1. O. S.
 
@@ -2924,7 +2924,7 @@ Your friend, &c. &c.
 
 LET. XXXII.
 
-TO MRS T----.
+## TO MRS T----.
 
 _Adrianople, April_ 1. O. S. 1718 (sic).
 
@@ -3076,7 +3076,7 @@ Your's, &c. &c.
 
 LET. XXXIII.
 
-TO THE COUNTESS OF ----.
+## TO THE COUNTESS OF ----.
 
 _Adrianopolis, April_ 18. O. S.
 
@@ -3268,7 +3268,7 @@ would have my dear sister share in all the diversions of,   Yours,&c.
 
 LET. XXXIV.
 
-TO THE ABBOT OF ----.
+## TO THE ABBOT OF ----.
 
 _Adrianople, May_ 17. O. S.
 
@@ -3474,7 +3474,7 @@ P. S. I will write to you again from Constantinople.
 
 LET. XXXV.
 
-To THE ABBOT ----.
+## To THE ABBOT ----.
 
 _Constantinople, May_ 29. O. S.
 
@@ -3637,7 +3637,7 @@ about me, you shall hear from me again.  I am, Sir,   Your's, &c. &c.
 
 LET. XXXVI.
 
-TO MR POPE.
+## TO MR POPE.
 
 _Belgrade Village, June_ 17. O. S.
 
@@ -3702,7 +3702,7 @@ remembrance, though dead to all the world beside.       I am, &c. &c.
 
 LET. XXXVII.
 
-TO THE LADY ----.
+## TO THE LADY ----.
 
 _Belgrade Village, June_ 17 O. S.
 
@@ -3802,7 +3802,7 @@ of learning.                         I am, dear madam, yours, &c. &c.
 
 LET. XXXVIII.
 
-TO MRS T----.
+## TO MRS T----.
 
 _Pera of Constantinople, Jan_. 4. O. S.
 
@@ -3887,7 +3887,7 @@ midwife.
 
 LET. XXXIX.
 
-TO THE COUNTESS OF ----.
+## TO THE COUNTESS OF ----.
 
 _Pera of Constantinople, March_ 10. O. S.
 
@@ -4157,7 +4157,7 @@ other people.                                           I am, &c, &c.
 
 LET. XL.
 
-TO THE LADY ----.
+## TO THE LADY ----.
 
 _Pera, March_ 16. O. S.
 
@@ -4285,7 +4285,7 @@ Your's, &C. &c.
 
 LET. XLI.
 
-TO THE COUNTESS OF B----.
+## TO THE COUNTESS OF B----.
 
 AT length I have heard from my dear Lady B----, for the first time.
 I am persuaded you have had the goodness to write before, but I have
@@ -4496,7 +4496,7 @@ when you have read enough, &c. &c.
 
 LET. XLII.
 
-TO THE COUNTESS OF ----.
+## TO THE COUNTESS OF ----.
 
 I AM now preparing to leave Constantinople, and perhaps you will
 accuse me of hypocrisy, when I tell you 'tis with regret, but as I am
@@ -4724,7 +4724,7 @@ that I am,                                Dear sister, yours, &c. &c.
 
 LET. XLIII
 
-TO THE ABBOT OF ----.
+## TO THE ABBOT OF ----.
 
 _Constantinople, May_ 19. O. S. 1718.
 
@@ -4836,7 +4836,7 @@ I am, Sir, &c. &c.
 
 LET. XLIV.
 
-TO THE ABBOT OF ----.
+## TO THE ABBOT OF ----.
 
 _Tunis, July_ 31. O. S. 1718
 
@@ -5189,7 +5189,7 @@ tell you, by word of mouth, that I am,   Your humble servant, &c. &c.
 
 LET. XLV
 
-TO THE COUNTESS OF ----.
+## TO THE COUNTESS OF ----.
 
 _Genoa, Aug_. 28. O. S. 1718
 
@@ -5316,7 +5316,7 @@ destined to so much tranquillity.                       I am, &c. &c.
 
 LET. XLVI.
 
-TO THE COUNTESS OF ----.
+## TO THE COUNTESS OF ----.
 
 _Turin, Sept_. 12. O. S. 1718.
 
@@ -5358,7 +5358,7 @@ the bottom, you shall hear of me.--I am, &c. &c.
 
 LET. XLVII.
 
-TO MRS T----.
+## TO MRS T----.
 
 _Lyons, Sept_, 25. O. S. 1718.
 
@@ -5409,7 +5409,7 @@ objects of apothecaries vials and bottles.--I am, &c. &c.
 
 LET. XLVIII.
 
-TO MR POPE.
+## TO MR POPE.
 
 _Lyons, Sept_. 28. O. S. 1718.
 
@@ -5560,7 +5560,7 @@ most willingly hear of.                                 I am, &c. &c:
 
 LET. XLIX.
 
-TO THE LADY R----.
+## TO THE LADY R----.
 
 _Paris, Oct_. 10. O. S. 1718.
 
@@ -5632,7 +5632,7 @@ compliments to you.
 
 LET. L.
 
-TO MR T----.
+## TO MR T----.
 
 _Paris, Oct_. 16. O. S. 1718.
 
@@ -5700,7 +5700,7 @@ take pleasure in obeying you.                           I am, &c. &c.
 
 LET. LI.
 
-TO THE ABBOT ----.
+## TO THE ABBOT ----.
 
 _Dover, Oct_. 31. O. S. 1718.
 
@@ -5755,7 +5755,7 @@ sun of Constantinople.                                  I am, &c. &c.
 
 LET. LII.
 
-TO MR P----.
+## TO MR P----.
 
 _Dover, Nov_. 1. O. S. 1718.
 
@@ -5818,7 +5818,7 @@ LET. LIII.
 
 [Footnote: This and the following letters are now first published.]
 
-TO LADY ----.
+## TO LADY ----.
 
 _January_ 13. 1715-16.
 
@@ -5925,7 +5925,7 @@ direction.                            Farewell, my dear lady, &c. &c.
 
 LET. LIV.
 
-TO THE ABBOT ----.
+## TO THE ABBOT ----.
 
 _Vienna, Jan_. 2. O. S. 1717.
 
@@ -6020,7 +6020,7 @@ Adieu, &c.
 
 LET. LV.
 
-TO MR P----.
+## TO MR P----.
 
 _Sept_. 1. 1717.
 
@@ -6143,7 +6143,7 @@ is not come to the hands of the editor, it was probably, on that
 account, sent without a date.  It seems evidently to have been
 written after Lady M. W. M. had fixed her residence in Italy.]
 
-To THE COUNTESS OF ----.
+## To THE COUNTESS OF ----.
 
 _Saturday-Florence_.
 
@@ -6313,7 +6313,7 @@ saint.  Adieu, my dear madam.          Yours very affectionately, &c.
 
 LET. LVII.
 
-TO MR P.
+## TO MR P.
 
 I HAVE been running about Paris at a strange rate with my sister, and
 strange sights have we seen.  They are, at least, strange sights to
@@ -6387,7 +6387,7 @@ And am, &c.
 
 LET. LVIII.
 
-TO THE COUNT ----.
+## TO THE COUNT ----.
 
 _Translated from the French._
 

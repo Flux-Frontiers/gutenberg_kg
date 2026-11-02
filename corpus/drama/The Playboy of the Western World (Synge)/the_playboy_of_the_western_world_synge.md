@@ -1156,7 +1156,7 @@ and drip?
 SUSAN.
 Is that blood there, Sara Tansey?
 
-### SARAH
+SARAH.
 
 _smelling it._—That’s bog water, I’m thinking, but it’s his own they
 are surely, for I never seen the like of them for whity mud, and red
@@ -1164,7 +1164,7 @@ mud, and turf on them, and the fine sands of the sea. That man’s been
 walking, I’m telling you. [_She goes down right, putting on one of his
 boots._]
 
-### SUSAN
+SUSAN.
 
 _going to window._—Maybe he’s stolen off to Belmullet with the boots of
 Michael James, and you’d have a right so to follow after him, Sara

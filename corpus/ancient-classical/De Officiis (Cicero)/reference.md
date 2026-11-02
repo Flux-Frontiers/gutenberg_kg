@@ -33,3 +33,5 @@
 ## Notes
 
 Wikipedia page about this book: https://en.wikipedia.org/wiki/De_Officiis
+
+**Corpus edit (2026-11-01):** this is the bilingual Loeb edition (Miller, 1913). The Latin text and its manuscript-variant notes (numbered `[1]`, `[2]`…) were removed so the corpus holds Miller's English only; the introduction, marginal summaries, lettered footnotes and index are kept. Gutenberg #47001 has the full parallel text.
