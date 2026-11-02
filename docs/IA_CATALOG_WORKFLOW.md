@@ -160,7 +160,8 @@ gutenkg ia catalog scripts/catalogs/audel-electric.txt --force     # re-download
 
 Re-running is safe. Downloads are idempotent on the IA identifier, not the
 output path, so re-running with a changed title override skips the item rather
-than writing a second copy of it under the new name.
+than writing a second copy of it under the new name. The check covers the whole
+corpus, so an item held in another genre is skipped too.
 
 ---
 

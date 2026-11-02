@@ -8,6 +8,29 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+### Added
+
+- **Ten books from the wishlist** (265 after ingest): Gogol's *The Mantle,
+  and Other Stories*, the *Letters of Lady Mary Wortley Montagu* (Gutenberg
+  #17520, held under a readable name; the catalog keeps Gutenberg's
+  "Lady M—y W—y M—e" title, which the download title check compares
+  against), *The Best Letters of Charles Lamb*, Chekhov's *Plays, Second
+  Series*, Synge's *The Playboy of the Western World*, the Raven Edition of
+  Poe, volumes 2-5 (#2148-2151, beside volume 1 in american-literature), and
+  Cicero's *De Officiis*.
+
+### Fixed
+
+- **A book held in one genre is no longer downloaded again from another
+  genre's catalog.** The already-downloaded check (`gutenkg download` and
+  `gutenkg ia download`) searched only the target genre, so the
+  american-literature catalog re-downloaded Douglass (#23) and Washington
+  (#2376), both held in biography. It now searches the whole corpus, and the
+  skip records the book in the catalog of the genre that holds it. Without
+  `--genre` the check had never matched at all: it looked one level below
+  `corpus/`, where there are only genre directories. Those two catalog lines
+  are removed.
+
 ## [1.31.0] - 2026-11-01
 
 A corpus and security release: the catalog IDs checked against Gutenberg's

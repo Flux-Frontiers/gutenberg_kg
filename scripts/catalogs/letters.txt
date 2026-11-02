@@ -14,6 +14,10 @@
 3352	Letters to His Son — Lord Chesterfield
 8901	The Works of Lord Byron: Letters and Journals. Vol. 1
 9921	The Works of Lord Byron: Letters and Journals. Vol. 2
+# Held as "Letters of Lady Mary Wortley Montagu". The line keeps Gutenberg's
+# title because no readable name passes the download title check.
+17520	Letters of the Right Honourable Lady M—y W—y M—e (Montagu)
 
 # ── 19th Century ─────────────────────────────────────────────────────────────
 35698	Letters of John Keats to His Family and Friends
+10125	The Best Letters of Charles Lamb (Lamb)

@@ -30,7 +30,7 @@ KGRAG registration) is described in [`README.md`](../README.md).
                                          ▼
      ┌─────────────────────────────────────────────────────────────────┐
      │ download_book(id)                                                │
-     │   1. idempotence check  (skip if <slug>.md already exists)       │
+     │   1. idempotence check  (skip if the ID is held in any genre)    │
      │   2. fetch plain text                                            │
      │   3. strip_boilerplate()    — remove PG header/footer markers    │
      │   4. text_to_markdown()     — detect structure, emit headings    │
@@ -171,12 +171,19 @@ BCE years are stored as negative integers (Homer: `-750 / -650`).
 
 ### 4.3 Idempotence check
 
-Before downloading text, `download_book()` checks whether
-`corpus/<genre>/<title>/<slug>.md` already exists. If yes, it prints `[=] already
-downloaded` and returns early. Use `--force` to override.
+Before anything else, `download_book()` looks for the Gutenberg ID in every
+`reference.md` in the corpus, across all genres. If a book has it, the download
+prints `[=] already downloaded (Gutenberg #<id>): <dir> — skipping` and returns
+early, with no network request. The directory is shown as `<genre>/<dir>` when a
+genre other than the requested one holds it. Use `--force` to override.
 
-Metadata fetch happens **before** the idempotence check because it provides the
-title needed to compute the output path.
+The check is keyed on the ID rather than the output path, so a catalog title that
+differs from the directory name (a renamed book, such as *Letters of Lady Mary
+Wortley Montagu*) still skips. It is corpus-wide because a catalog can list a book
+that another genre holds; until 1.32.0 it searched only the target genre, and the
+american-literature catalog downloaded second copies of Douglass and Washington,
+which biography holds. On a skip the book is recorded in the catalog of the genre
+that holds it.
 
 ### 4.4 Text download
 
