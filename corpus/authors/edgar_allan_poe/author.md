@@ -11,3 +11,7 @@
 |-------|-------|
 | Tales of Mystery and Imagination (Poe) | american-literature |
 | The Raven and Other Poems (Poe) | american-literature |
+| The Works of Edgar Allan Poe, Volume 2 (Poe) | american-literature |
+| The Works of Edgar Allan Poe, Volume 3 (Poe) | american-literature |
+| The Works of Edgar Allan Poe, Volume 4 (Poe) | american-literature |
+| The Works of Edgar Allan Poe, Volume 5 (Poe) | american-literature |
