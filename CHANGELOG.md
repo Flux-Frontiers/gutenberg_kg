@@ -16,7 +16,14 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   M—y W—y M—e"), *The Best Letters of Charles Lamb*, Chekhov's *Plays, Second
   Series*, Synge's *The Playboy of the Western World*, the Raven Edition of
   Poe, volumes 2-5 (#2148-2151, beside volume 1 in american-literature), and
-  Cicero's *De Officiis*.
+  Cicero's *De Officiis*. Gutenberg's only *De Officiis* is the bilingual
+  Loeb; the corpus keeps Miller's English and drops the Latin and its
+  manuscript-variant notes, which the English embedder turned into search
+  noise. Montagu's 58 letters each get a heading (the download had fused
+  them into two sections), and stray headings in Synge and Gogol are fixed.
+- **`add-book` skill: a structure gate before any build.** Every new book's
+  heading outline, section count and language are checked first, with the
+  four problems this batch hit and their fixes.
 
 ### Fixed
 
