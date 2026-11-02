@@ -9,4 +9,5 @@
 
 | Title | Genre |
 |-------|-------|
+| Plays by Anton Chekhov, Second Series (Chekhov) | drama |
 | The sea-gull | drama |

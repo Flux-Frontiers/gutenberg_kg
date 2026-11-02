@@ -262,7 +262,7 @@ personality and social context in ways essays cannot.  Wide date range: Pliny
 - [x] Letters to His Son — Lord Chesterfield (#3352)
 - [x] Letters — Pliny the Younger (#2811)
 - [x] Letters of John Keats to His Family and Friends (#35698)
-- [x] Turkish Embassy Letters — Lady Mary Wortley Montagu (#17520) *(in corpus as Letters of Lady Mary Wortley Montagu; Gutenberg titles it "Letters of the Right Honourable Lady M—y W—y M—e", which the catalog keeps. #16287 was William James)*
+- [x] Turkish Embassy Letters — Lady Mary Wortley Montagu (#17520) *(in corpus as Letters of the Right Honourable Lady Mary Wortley Montagu; Gutenberg's title initials the name, "Lady M—y W—y M—e". #16287 was William James)*
 - [x] Letters of Charles Lamb (#10125, The Best Letters of Charles Lamb) *(#1633 was Hale's The Brick Moon)*
 - [x] Letters and Journals of Lord Byron (#8901, #9921) *(in corpus as two volumes; #19190 was an unrelated book)*
 

@@ -9,9 +9,9 @@
   <a href="LICENSE"><img src="https://img.shields.io/badge/code-Elastic--2.0-lightgrey.svg" alt="Code License"/></a>
   <a href="https://www.gutenberg.org/"><img src="https://img.shields.io/badge/texts-Public%20Domain-green.svg" alt="Texts License"/></a>
   <img src="https://img.shields.io/badge/version-1.31.0-blue.svg" alt="Version"/>
-  <img src="https://img.shields.io/badge/corpus-255%20books-orange.svg" alt="Corpus"/>
-  <img src="https://img.shields.io/badge/nodes-1.3M-green.svg" alt="Nodes"/>
-  <img src="https://img.shields.io/badge/edges-5.3M-green.svg" alt="Edges"/>
+  <img src="https://img.shields.io/badge/corpus-265%20books-orange.svg" alt="Corpus"/>
+  <img src="https://img.shields.io/badge/nodes-1.4M-green.svg" alt="Nodes"/>
+  <img src="https://img.shields.io/badge/edges-5.4M-green.svg" alt="Edges"/>
   <a href="https://doi.org/10.5281/zenodo.20045389"><img src="https://img.shields.io/badge/DOI-10.5281%2Fzenodo.20045389-blue.svg" alt="DOI"/></a>
 </p>
 
@@ -23,7 +23,7 @@ GutenbergKG turns public-domain texts into a queryable library of knowledge grap
 
 Ask how Stoics, novelists, and sacred texts treat suffering; find accounts of the Great Fire in Pepys; compare what Rousseau and Thoreau mean by freedom. Retrieval is local and works without an LLM. An optional local or cloud model can turn the retrieved passages into a cited synthesis, but the evidence remains visible and inspectable.
 
-The included corpus contains **255 texts in 20 genres**: literature, philosophy, drama, diaries, sacred texts, travel, natural history, and technical reference. It is a working library, not a benchmark-sized black box.
+The included corpus contains **265 texts in 20 genres**: literature, philosophy, drama, diaries, sacred texts, travel, natural history, and technical reference. It is a working library, not a benchmark-sized black box.
 
 > **GutenbergKG is for readers, researchers, and builders** who want semantic discovery with a path back to the original text.
 
@@ -198,25 +198,25 @@ The complete workflows—including catalogs, genre management, provenance, and r
 |-------|------:|------:|------:|
 | Philosophy | 39 | 207,611 | 721,115 |
 | English Literature | 38 | 187,104 | 836,820 |
-| Ancient & Classical | 23 | 119,078 | 461,381 |
-| American Literature | 23 | 90,382 | 329,433 |
+| American Literature | 27 | 110,137 | 389,582 |
+| Ancient & Classical | 24 | 123,532 | 473,802 |
 | Science Fiction | 16 | 52,002 | 179,992 |
 | Horror | 16 | 43,592 | 165,107 |
-| Russian Literature | 14 | 95,361 | 442,133 |
+| Russian Literature | 15 | 98,329 | 451,711 |
 | French Literature | 12 | 89,504 | 415,272 |
 | Biography | 12 | 74,814 | 293,928 |
-| Drama | 10 | 14,999 | 57,232 |
+| Drama | 12 | 19,680 | 76,246 |
+| Letters | 8 | 47,469 | 150,200 |
 | Technical Reference (IA) | 8 | 62,007 | 167,715 |
 | Natural History | 7 | 44,823 | 157,476 |
 | Sacred Texts | 7 | 31,996 | 156,858 |
 | Travel | 6 | 57,126 | 197,023 |
-| Letters | 6 | 37,551 | 120,198 |
 | German Literature | 5 | 15,695 | 48,683 |
 | World Literature | 4 | 18,527 | 65,985 |
 | Diaries | 4 | 78,217 | 379,515 |
 | Shakespeare | 4 | 6,271 | 20,974 |
 | Spanish Literature | 1 | 11,431 | 52,843 |
-| **Total** | **255** | **1,338,091** | **5,269,683** |
+| **Total** | **265** | **1,379,867** | **5,400,847** |
 <!-- END corpus-table -->
 
 </details>

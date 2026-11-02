@@ -18,14 +18,14 @@ Italic text has been marked with _underscores_.
 
 Printed in Great Britain
 
-### THE MANTLE AND OTHER STORIES
+THE MANTLE AND OTHER STORIES
 
 BY
 NICHOLAS GOGOL
 
-### AUTHOR OF "DEAD SOULS," "TARAS BULBA," ETC.
+AUTHOR OF "DEAD SOULS," "TARAS BULBA," ETC.
 
-### TRANSLATED BY CLAUD FIELD AND WITH AN INTRODUCTION ON GOGOL BY PROSPER MERIMEE
+TRANSLATED BY CLAUD FIELD AND WITH AN INTRODUCTION ON GOGOL BY PROSPER MERIMEE
 
 New York: FREDERICK A. STOKES Co.
 London: T. WERNER LAURIE LIMITED
@@ -5984,7 +5984,7 @@ in order to find a hiding-place in the thick steppe grass outside the
 town. At the same time, in accordance with his old habits, he did not
 forget to steal an old boot-sole which lay on the ale-house bench.
 
-### THE END THE NORTHUMBERLAND PRESS, THORNTON STREET, NEWCASTLE-UPON-TYNE
+THE END THE NORTHUMBERLAND PRESS, THORNTON STREET, NEWCASTLE-UPON-TYNE
 
 [ Transcriber's Note:
 

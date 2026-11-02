@@ -178,8 +178,8 @@ early, with no network request. The directory is shown as `<genre>/<dir>` when a
 genre other than the requested one holds it. Use `--force` to override.
 
 The check is keyed on the ID rather than the output path, so a catalog title that
-differs from the directory name (a renamed book, such as *Letters of Lady Mary
-Wortley Montagu*) still skips. It is corpus-wide because a catalog can list a book
+differs from the directory name (a book downloaded under its OPDS title before
+the catalog override was curated) still skips. It is corpus-wide because a catalog can list a book
 that another genre holds; until 1.32.0 it searched only the target genre, and the
 american-literature catalog downloaded second copies of Douglass and Washington,
 which biography holds. On a skip the book is recorded in the catalog of the genre

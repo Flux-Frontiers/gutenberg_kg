@@ -256,53 +256,6 @@ edidit Car. Tim. Zumptius. Brunsvigae, 1849.
 
 ### MORAL GOODNESS LIBER PRIMUS / BOOK I
 
-*1* I. Quamquam te, Marce fili, annum iam audientem Cratippum, idque
-Athenis, abundare oportet praeceptis institutisque philosophiae propter
-summam et doctoris auctoritatem et urbis, quorum alter te scientia
-augere potest, altera exemplis, tamen, ut ipse ad meam utilitatem semper
-cum Graecis Latina coniunxi neque id in philosophia solum, sed etiam in
-dicendi exercitatione feci, idem tibi censeo faciendum, ut par sis in
-utriusque orationis facultate. Quam quidem ad rem nos, ut videmur,
-magnum attulimus adiumentum hominibus nostris, ut non modo Graecarum
-litterarum rudes, sed etiam docti aliquantum se arbitrentur adeptos et
-ad dicendum[1] et ad iudicandum.
-
-*2* Quam ob rem disces tu quidem a principe huius aetatis philosophorum,
-et disces, quam diu voles; tam diu autem velle debebis, quoad te,
-quantum proficias, non paenitebit; sed tamen nostra legens non multum a
-Peripateticis dissidentia, quoniam utrique Socratici et Platonici
-volumus esse, de rebus ipsis utere tuo iudicio (nihil enim impedio),
-orationem autem Latinam efficies profecto legendis nostris pleniorem.
-Nec vero hoc arroganter dictum existimari velim. Nam philosophandi
-scientiam concedens multis, quod est oratoris proprium, apte, distincte,
-ornate dicere, quoniam in eo studio aetatem consumpsi, si id mihi
-assumo, videor id meo iure quodam modo vindicare.
-
-*3* Quam ob rem magnopere te hortor, mi Cicero, ut non solum orationes
-meas, sed hos etiam de philosophia libros, qui iam illis fere se[2]
-aequarunt, studiose legas; vis enim maior in illis dicendi, sed hoc
-quoque colendum est aequabile et temperatum orationis genus. Et id
-quidem nemini video Graecorum adhuc contigisse, ut idem utroque in
-genere elaboraret[3] sequereturque et illud forense dicendi et hoc
-quietum disputandi genus, nisi forte Demetrius Phalereus in hoc numero
-haberi potest, disputator subtilis, orator parum vehemens, dulcis tamen,
-ut Theophrasti discipulum possis agnoscere. Nos autem quantum in utroque
-profecerimus, aliorum sit iudicium, utrumque certe secuti sumus.
-
-*4* Equidem et Platonem existimo, si genus forense dicendi tractare
-voluisset, gravissime et copiosissime potuisse dicere, et Demosthenem,
-si illa, quae a Platone didicerat, tenuisset et pronuntiare voluisset,
-ornate splendideque facere potuisse; eodemque modo de Aristotele et
-Isocrate iudico, quorum uterque suo studio delectatus contempsit
-alterum.
-
-[1] _dicendum_ Edd.; _discendum_ MSS. (i.e. acquisition of
-learning).
-
-[2] _se_ A c, Edd.; not in B H a b p.
-
-[3] _elaboraret_ Lambin., Edd.; laboraret MSS.
-
 #Introduction: the importance of combining Greek and Latin studies.#
 
 *1* I. My dear son Marcus, you have now been studying a full year under
@@ -368,59 +321,7 @@ Nature of the Gods, Academics, Hortensius, his essays on
 Friendship (Laelius), Old Age (Cato), Fate, Divination, etc.
 (15 in all).
 
-II. Sed cum statuissem scribere ad te aliquid hoc tempore, multa
-posthac, ab eo ordiri maxime volui, quod et aetati tuae esset aptissimum
-et auctoritati meae. Nam cum multa sint in philosophia et gravia et
-utilia accurate copioseque a philosophis disputata, latissime patere
-videntur ea, quae de officiis tradita ab illis et praecepta sunt. Nulla
-enim vitae pars neque publicis neque privatis neque forensibus neque
-domesticis in rebus, neque si tecum agas quid, neque si cum altero
-contrahas, vacare officio potest, in eoque et colendo sita vitae est
-honestas omnis et neglegendo[4] turpitudo.
-
-*5* Atque haec quidem quaestio communis est omnium philosophorum; quis
-est enim, qui nullis officii praeceptis tradendis philosophum se audeat
-dicere? Sed sunt non nullae disciplinae, quae propositis bonorum et
-malorum finibus officium omne pervertant. Nam qui summum bonum sic
-instituit, ut nihil habeat cum virtute coniunctum, idque suis commodis,
-non honestate metitur, hic, si sibi ipse consentiat et non interdum
-naturae bonitate vincatur neque amicitiam colere possit nec iustitiam
-nec liberalitatem; fortis vero dolorem summum malum iudicans aut
-temperans voluptatem summum bonum statuens esse certe nullo modo potest.
-
 #de Fin. II, 12 ff.; Tusc. Disp. IV-V; de Off. III, 117#
-
-*6* Quae quamquam ita sunt in promptu, ut res disputatione non egeat,
-tamen sunt a nobis alio loco disputata. Hae disciplinae igitur si sibi
-consentaneae velint esse, de officio nihil queant dicere, neque ulla
-officii praecepta firma, stabilia, coniuncta naturae tradi possunt nisi
-aut ab iis, qui solam, aut ab iis, qui maxime honestatem propter se
-dicant expetendam. Ita propria est ea praeceptio Stoicorum,
-Academicorum, Peripateticorum, quoniam Aristonis, Pyrrhonis, Erilli iam
-pridem explosa sententia est; qui tamen haberent ius suum disputandi de
-officio, si rerum aliquem dilectum[5] reliquissent, ut ad officii
-inventionem aditus esset. Sequemur[6] igitur hoc quidem tempore et hac
-in quaestione potissimum Stoicos non ut interpretes, sed, ut solemus, e
-fontibus eorum iudicio arbitrioque nostro, quantum quoque modo
-videbitur, hauriemus.
-
-*7* Placet igitur, quoniam omnis disputatio de officio futura est, ante
-definire, quid sit officium; quod a Panaetio praetermissum esse miror.
-Omnis enim, quae [a] ratione[7] suscipitur de aliqua re institutio,
-debet a definitione proficisci, ut intellegatur, quid sit id, de quo
-disputetur....[8]
-
-[4] _et neglegendo_ A H a b, Edd.; _et in neglegendo_ B c.
-
-[5] _dilectum_ B H a b, Edd.; _delectum_ A c.
-
-[6] _sequemur_ Graevius, Edd.; _sequimur_ MSS.
-
-[7] [_a_] _ratione_ Ed.; _a ratione_ MSS.; _ratione_ Müller.
-
-[8] Cicero's definition must have followed here, something
-like _Omne igitur, quod ratione actum est officium
-appellamus_ Unger.
 
 #Statement of subject.#
 
@@ -473,49 +374,6 @@ duty, I should like at the outset to define what duty is, as, to my
 surprise, Panaetius has failed to do. For every systematic development
 of any subject ought to begin with a definition, so that every one may
 understand what the discussion is about.
-
-III. Omnis de officio duplex est quaestio: unum genus est, quod pertinet
-ad finem bonorum, alterum, quod positum est in praeceptis, quibus in
-omnis partis usus vitae conformari[9] possit. Superioris generis huius
-modi sunt exempla: omniane officia perfecta sint, num quod officium
-aliud alio maius sit, et quae sunt generis eiusdem. Quorum autem
-officiorum praecepta traduntur, ea quamquam pertinent ad finem bonorum,
-tamen minus id apparet, quia magis ad institutionem vitae communis
-spectare videntur; de quibus est nobis his libris explicandum. Atque
-etiam alia divisio est officii.
-
-*8* Nam et medium quoddam officium dicitur et perfectum. Perfectum
-officium rectum, opinor, vocemus, quoniam Graeci κατόρθωμα, hoc autem
-commune officium καθῆκον vocant.[10] Atque ea sic definiunt, ut, rectum
-quod sit, id officium perfectum esse definiant; medium autem officium id
-esse dicunt, quod cur factum sit, ratio probabilis reddi possit.
-
-*9* Triplex igitur est, ut Panaetio videtur, consilii capiendi
-deliberatio. Nam aut honestumne factu sit an turpe dubitant id, quod in
-deliberationem cadit; in quo considerando saepe animi in contrarias
-sententias distrahuntur. Tum autem aut anquirunt[11] aut consultant, ad
-vitae commoditatem iucunditatemque, ad facultates rerum atque copias, ad
-opes, ad potentiam, quibus et se possint iuvare et suos, conducat id
-necne, de quo deliberant; quae deliberatio omnis in rationem utilitatis
-cadit. Tertium dubitandi genus est, cum pugnare videtur cum honesto id,
-quod videtur esse utile; cum enim utilitas ad se rapere, honestas contra
-revocare ad se videtur, fit ut distrahatur in deliberando animus
-afferatque ancipitem curam cogitandi.
-
-*10* Hac divisione, cum praeterire aliquid maximum vitium in dividendo
-sit, duo praetermissa sunt; nec enim solum utrum honestum an turpe sit,
-deliberari solet, sed etiam duobus propositis honestis utrum honestius,
-itemque duobus propositis utilibus utrum utilius. Ita, quam ille
-triplicem putavit esse rationem, in quinque partes distribui debere
-reperitur. Primum igitur est de honesto, sed dupliciter, tum pari
-ratione de utili, post de comparatione eorum disserendum.
-
-[9] _conformari_ Edd.; _confirmari_ MSS. (i.e. fortified).
-
-[10] _officium_ καθῆκον _vocant_ Pearce, Ed., Heine;
-_officium vocant_ MSS., Bt.
-
-[11] _anquirunt_ A B H b; _inquirunt_ a c.
 
 #Classification of duties.#
 
@@ -588,64 +446,6 @@ _honores_ are always 'offices of honour.'
 [C] For Panaetius was a Stoic, and the Stoics did not admit
 that there were any degrees of right or wrong.
 
-*11* IV. Principio generi animantium omni est a natura tributum, ut se,
-vitam corpusque tueatur, declinet ea, quae nocitura videantur, omniaque,
-quae sint ad vivendum necessaria, anquirat et paret, ut pastum, ut
-latibula, ut alia generis eiusdem. Commune item[12] animantium omnium
-est coniunctionis adpetitus procreandi causa et cura quaedam eorum, quae
-procreata sint[13]; sed inter hominem et beluam hoc maxime interest,
-quod haec tantum, quantum sensu movetur, ad id solum, quod adest quodque
-praesens est, se accommodat paulum admodum sentiens praeteritum aut
-futurum; homo autem, quod rationis est particeps, per quam consequentia
-cernit, causas rerum videt earumque praegressus[14] et quasi
-antecessiones non ignorat, similitudines comparat rebusque praesentibus
-adiungit atque annectit futuras, facile totius vitae cursum videt ad
-eamque degendam praeparat res necessarias.
-
-*12* Eademque natura vi rationis hominem conciliat homini et ad
-orationis et ad vitae societatem ingeneratque in primis praecipuum
-quendam amorem in eos, qui procreati sunt, impellitque, ut hominum
-coetus et celebrationes et esse et a se obiri velit ob easque causas
-studeat parare ea, quae suppeditent ad cultum et ad victum, nec sibi
-soli, sed coniugi, liberis ceterisque, quos caros habeat tuerique
-debeat; quae cura exsuscitat etiam animos et maiores ad rem gerendam
-facit.
-
-*13* In primisque hominis est propria veri inquisitio atque
-investigatio. Itaque cum sumus necessariis negotiis curisque vacui, tum
-avemus aliquid videre, audire, addiscere cognitionemque rerum aut
-occultarum aut admirabilium ad beate vivendum necessariam ducimus. Ex
-quo intellegitur, quod verum, simplex sincerumque sit, id esse naturae
-hominis aptissimum. Huic veri videndi cupiditati adiuncta est appetitio
-quaedam principatus, ut nemini parere animus bene informatus a natura
-velit nisi praecipienti aut docenti aut utilitatis causa iuste et
-legitime imperanti; ex quo magnitudo animi existit humanarumque rerum
-contemptio.
-
-*14* Nec vero illa parva vis naturae est rationisque, quod unum hoc
-animal sentit, quid sit ordo, quid sit, quod deceat, in factis dictisque
-qui modus. Itaque eorum ipsorum, quae aspectu sentiuntur, nullum aliud
-animal pulchritudinem, venustatem, convenientiam partium sentit; quam
-similitudinem natura ratioque ab oculis ad animum transferens multo
-etiam magis pulchritudinem, constantiam, ordinem in consiliis factisque
-conservandam[15] putat cavetque, ne quid indecore effeminateve faciat,
-tum in omnibus et opinionibus et factis ne quid libidinose aut faciat
-aut cogitet.
-
-Quibus ex rebus conflatur et efficitur id, quod quaerimus, honestum,
-quod etiamsi nobilitatum non sit, tamen honestum sit, quodque vere
-dicimus, etiamsi a nullo laudetur, natura esse laudabile.
-
-[12] _item_ Manutius, Edd.; _autem_ MSS.
-
-[13] _procreata sint_ B H a b; _procreata sunt_ A (?), Bt.;
-_procreantur_ c.
-
-[14] _praegressus_ A H a b, Edd.; _progressus_ B c.
-
-[15] _conservandam_ MSS.; _conservanda_ codd. aliquot
-recentiores, Bt.
-
 #The essential differences between man and the lower animals.#
 
 *11* IV. First of all, Nature has endowed every species of living
@@ -716,39 +516,6 @@ though it be praised by none.
 
 #Phaedr., 250 D#
 
-*15* V. Formam quidem ipsam, Marce fili, et tamquam faciem honesti
-vides, "quae si oculis cerneretur, mirabiles amores," ut ait Plato,
-"excitaret sapientiae." Sed omne, quod est honestum, id quattuor partium
-oritur ex aliqua: aut enim in perspicientia veri sollertiaque versatur
-aut in hominum societate tuenda tribuendoque suum cuique et rerum
-contractarum fide aut in animi excelsi atque invicti magnitudine ac
-robore aut in omnium, quae fiunt quaeque dicuntur, ordine et modo, in
-quo inest modestia et temperantia.
-
-*(15)* Quae quattuor quamquam inter se colligata atque implicata sunt,
-tamen ex singulis certa officiorum genera nascuntur, velut ex ea parte,
-quae prima discripta[16] est, in qua sapientiam et prudentiam ponimus,
-inest indagatio atque inventio veri, eiusque virtutis hoc munus est
-proprium. *16* Ut enim quisque maxime perspicit, quid in re quaque
-verissimum sit, quique acutissime et celerrime potest et videre et
-explicare rationem, is prudentissimus et sapientissimus rite haberi
-solet. Quocirca huic quasi materia, quam tractet et in qua versetur,
-subiecta est veritas.
-
-*17* Reliquis autem tribus virtutibus necessitates propositae sunt ad
-eas res parandas tuendasque, quibus actio vitae continetur, ut et
-societas hominum coniunctioque servetur et animi excellentia
-magnitudoque cum in augendis opibus utilitatibusque et sibi et suis
-comparandis, tum multo magis in his ipsis despiciendis eluceat. Ordo
-autem[17] et constantia et moderatio et ea, quae sunt his similia,
-versantur in eo genere, ad quod est adhibenda actio quaedam, non solum
-mentis agitatio. Iis enim rebus, quae tractantur in vita, modum quendam
-et ordinem adhibentes honestatem et decus conservabimus.
-
-[16] _discripta_ Heine; _descripta_ MSS., Bt.
-
-[17] _autem_ MSS., Müller, Heine; _item_ Pearce, Ed., Bt.
-
 *15* V. You see here, Marcus, my son, the very form and as it were the
 face of Moral Goodness; "and if," as Plato says, "it could be seen with
 the physical eye, it would awaken a marvellous love of wisdom." #The
@@ -788,37 +555,6 @@ merely, is required. For if we bring a certain amount of propriety and
 order into the transactions of daily life, we shall be conserving moral
 rectitude and moral dignity.
 
-*18* VI. Ex quattuor autem locis, in quos honesti naturam vimque
-divisimus, primus ille, qui in veri cognitione consistit, maxime naturam
-attingit humanam. Omnes enim trahimur et ducimur ad cognitionis et
-scientiae cupiditatem, in qua excellere pulchrum putamus, labi autem,
-errare, nescire, decipi et malum et turpe ducimus.[18] In hoc genere et
-naturali et honesto duo vitia vitanda sunt, unum, ne incognita pro
-cognitis habeamus iisque temere assentiamur; quod vitium effugere qui
-volet (omnes autem velle debent), adhibebit ad considerandas res et
-tempus et diligentiam. *19* Alterum est vitium, quod quidam nimis magnum
-studium multamque operam in res obscuras atque difficiles conferunt
-easdemque non necessarias.
-
-Quibus vitiis declinatis quod in rebus honestis et cognitione dignis
-operae curaeque ponetur, id iure laudabitur, ut in astrologia C.
-Sulpicium audivimus, in geometria Sex. Pompeium ipsi cognovimus, multos
-in dialecticis, plures in iure civili, quae omnes artes in veri
-investigatione versantur; cuius studio a rebus gerendis abduci contra
-officium est. Virtutis enim laus omnis in actione consistit; a qua tamen
-fit intermissio saepe multique dantur ad studia reditus; tum agitatio
-mentis, quae numquam acquiescit, potest nos in studiis cognitionis[19]
-etiam sine opera nostra continere. Omnis autem cogitatio motusque animi
-aut in consiliis capiendis de rebus honestis et pertinentibus ad bene
-beateque vivendum aut in studiis scientiae cognitionisque versabitur.
-
-Ac de primo quidem officii fonte diximus.
-
-[18] _ducimus_ c, Edd.; _dicimus_ A B H a b.
-
-[19] _cognitionis_ A, Bt., Müller, Heine; _cogitationis_ BH
-a b c (error caused by _cogitatio_ in next line).
-
 #A. Wisdom.#
 
 *18* VI. Now, of the four divisions which we have made of the essential
@@ -853,58 +589,7 @@ science and learning.
 
 With this we close the discussion of the first source of duty.
 
-*20* VII. De tribus autem reliquis latissime patet ea ratio, qua
-societas hominum inter ipsos et vitae quasi communitas continetur; cuius
-partes duae,[20] iustitia, in qua virtutis est splendor maximus, ex qua
-viri boni nominantur, et huic coniuncta beneficentia, quam eandem vel
-benignitatem vel liberalitatem appellari licet.
-
-Sed iustitiae primum munus est, ut ne cui quis noceat nisi lacessitus
-iniuria, deinde ut communibus pro communibus utatur, privatis ut suis.
-
-*21* Sunt autem privata nulla natura, sed aut vetere occupatione, ut qui
-quondam in vacua venerunt, aut victoria, ut qui bello potiti sunt, aut
-lege, pactione, condicione, sorte; ex quo fit, ut ager Arpinas
-Arpinatium dicatur, Tusculanus Tusculanorum; similisque est privatarum
-possessionum discriptio.[21] Ex quo, quia suum cuiusque fit eorum, quae
-natura fuerant communia, quod cuique obtigit, id quisque teneat; e
-quo[22] si quis sibi appetet, violabit ius humanae societatis.
-
 #Ep. IX, ad Archytam, 358 A#
-
-*22* Sed quoniam, ut praeclare scriptum est a Platone, non nobis solum
-nati sumus ortusque nostri partem patria vindicat, partem amici, atque,
-ut placet Stoicis, quae in terris gignantur, ad usum hominum omnia
-creari, homines autem hominum causa esse generatos, ut ipsi inter se
-aliis alii prodesse possent, in hoc naturam debemus ducem sequi,
-communes utilitates in medium afferre mutatione officiorum, dando
-accipiendo, tum artibus, tum opera, tum facultatibus devincire hominum
-inter homines societatem.
-
-*23* Fundamentum autem est iustitiae fides, id est dictorum
-conventorumque constantia et veritas. Ex quo, quamquam hoc videbitur
-fortasse cuipiam durius, tamen audeamus imitari Stoicos, qui studiose
-exquirunt, unde verba sint ducta, credamusque, quia fiat, quod dictum
-est, appellatam fidem.
-
-Sed iniustitiae genera duo sunt, unum eorum, qui inferunt, alterum
-eorum, qui ab iis, quibus infertur, si possunt, non propulsant iniuriam.
-Nam qui iniuste impetum in quempiam facit aut ira aut aliqua
-perturbatione incitatus, is quasi manus afferre videtur socio; qui autem
-non defendit nec obsistit, si potest, iniuriae, tam est in vitio, quam
-si parentes aut amicos aut patriam deserat. *24* Atque illae quidem
-iniuriae, quae nocendi causa de industria inferuntur, saepe a metu
-proficiscuntur, cum is, qui nocere alteri cogitat, timet ne, nisi id
-fecerit, ipse aliquo afficiatur incommodo. Maximam autem partem ad
-iniuriam faciendam aggrediuntur, ut adipiscantur ea, quae concupiverunt;
-in quo vitio latissime patet avaritia.
-
-[20] _partes duae_ BH b; _partes duae sunt_ c, Bt., Heine.
-
-[21] _discriptio_ B, Edd.; _descriptio_ A H a b c.
-
-[22] _e quo_ A^1 H a b c, Müller; _eo_ B, _de quo_ Bt.
-(suppl.), Heine.
 
 #B. Justice.#
 
@@ -973,45 +658,7 @@ personal end; in this vice, avarice is generally the controlling motive.
 [E] Of course, 'good faith' and 'made good' have just as
 little etymological connection as _fiat_ and _fidem_.
 
-*25* VIII. Expetuntur autem divitiae cum ad usus vitae necessarios, tum
-ad perfruendas voluptates. In quibus autem maior est animus, in iis
-pecuniae cupiditas spectat ad opes et ad gratificandi facultatem, ut
-nuper M. Crassus negabat ullam satis magnam pecuniam esse ei, qui in re
-publica princeps vellet esse, cuius fructibus exercitum alere non
-posset. Delectant etiam magnifici apparatus vitaeque cultus cum
-elegantia et copia; quibus rebus effectum est, ut infinita pecuniae
-cupiditas esset. Nec vero rei familiaris amplificatio nemini nocens
-vituperanda est, sed fugienda semper iniuria est.
-
-*26* Maxime autem adducuntur plerique, ut eos iustitiae capiat oblivio,
-cum in imperiorum, honorum, gloriae cupiditatem inciderunt.[23] Quod
-enim est apud Ennium:
-
 #Fab. inc. (Thyestes?) Vahlen^2, 404#
-
-Núlla sancta sócietas
-Néc fides regni ést,
-
-id latius patet. Nam quicquid eius modi est, in quo non possint plures
-excellere, in eo fit plerumque tanta contentio, ut difficillimum sit
-servare "sanctam societatem." Declaravit id modo temeritas C. Caesaris,
-qui omnia iura divina et humana pervertit propter eum, quem sibi ipse
-opinionis errore finxerat, principatum. Est autem in hoc genere
-molestum, quod in maximis animis splendidissimisque ingeniis plerumque
-exsistunt honoris, imperii, potentiae, gloriae cupiditates. Quo magis
-cavendum est, ne quid in eo genere peccetur.
-
-*27* Sed in omni iniustitia permultum interest, utrum perturbatione
-aliqua animi, quae plerumque brevis est et ad tempus, an consulto et
-cogitata[24] fiat iniuria. Leviora enim sunt ea, quae repentino aliquo
-motu accidunt, quam ea, quae meditata et praeparata inferuntur.
-
-Ac de inferenda quidem iniuria satis dictum est.
-
-[23] _inciderunt_ A B H L a b; _inciderint_ c.
-
-[24] _cogitata_ A B H a b p, Edd.; _cogitatu_ c, _cogitato_
-alii, Madvig (ad De Fin. p. 696).
 
 *25* VIII. Again, men seek riches partly to supply the needs of life,
 partly to secure the enjoyment of pleasure. #The dangers of ambition.#
@@ -1056,51 +703,6 @@ are less culpable than those committed designedly and with malice
 aforethought.
 
 But enough has been said on the subject of inflicting injury.
-
-*28* IX. Praetermittendae autem defensionis deserendique officii plures
-solent esse causae; nam aut inimicitias aut laborem aut sumptus
-suscipere nolunt aut etiam neglegentia, pigritia, inertia aut suis
-studiis quibusdam occupationibusve sic impediuntur, ut eos, quos tutari
-debeant, desertos esse patiantur. #Rep. VI, 485 ff. VII, 520 D# Itaque
-videndum est, ne non satis sit id, quod apud Platonem est in philosophos
-dictum, quod in veri investigatione versentur quodque ea, quae plerique
-vehementer expetant,[25] de quibus inter se digladiari soleant,
-contemnant et pro nihilo putent, propterea iustos esse. Nam alterum
-[iustitiae genus] assequuntur,[26] ut[27] inferenda ne cui noceant
-iniuria, in alterum incidunt[28]; discendi enim studio impediti, quos
-tueri debent, deserunt. #Rep. I, 347 C# Itaque eos ne ad rem publicam
-quidem accessuros putat nisi coactos. Aequius autem erat id voluntate
-fieri; nam hoc ipsum ita iustum est, quod recte fit, si est voluntarium.
-
-*29* Sunt etiam, qui aut studio rei familiaris tuendae aut odio quodam
-hominum suum se negotium agere dicant nec facere cuiquam videantur
-iniuriam. Qui altero genere iniustitiae vacant, in alterum incurrunt;
-deserunt enim vitae societatem, quia nihil conferunt in eam studii,
-nihil operae, nihil facultatum.
-
-Quando igitur duobus generibus iniustitiae propositis adiunximus causas
-utriusque generis easque res ante constituimus, quibus iustitia
-contineretur, facile, quod cuiusque temporis officium sit, poterimus,
-nisi nosmet ipsos valde amabimus, iudicare; *30* est enim difficilis
-cura rerum alienarum. #Heaut. Tim. 77# Quamquam Terentianus ille Chremes
-"humani nihil a se alienum putat"; sed tamen, quia magis ea percipimus
-atque sentimus, quae nobis ipsis aut prospera aut adversa eveniunt, quam
-illa, quae ceteris, quae quasi longo intervallo interiecto videmus,
-aliter de illis ac de nobis iudicamus. Quocirca bene praecipiunt, qui
-vetant quicquam agere, quod dubites aequum sit an iniquum. Aequitas enim
-lucet ipsa per se, dubitatio cogitationem significat iniuriae.
-
-[25] _expetant_ A B a b; _expectant_ H; _exspectant_ c.
-
-[26] _alterum iustitiae genus assequuntur_ MSS.; _alterum
-assequuntur_ Pearce, J. M. Heusinger, et al.; _alterum genus
-assequuntur_ Beier.
-
-[27] _ut_ Halm; _in_ MSS.; om. Bt.
-
-[28] _in alterum incidunt_ A B H a b; _in altero delinqunt_
-c, Bt. (_delinquunt_, i.e. they offend in the other
-direction).
 
 #Motives to passive injustice;#
 
@@ -1150,47 +752,6 @@ therefore, an excellent rule that they give who bid us not to do a
 thing, when there is a doubt whether it be right or wrong; for
 righteousness shines with a brilliance of its own, but doubt is a sign
 that we are thinking of a possible wrong.
-
-*31* X. Sed incidunt saepe tempora, cum ea, quae maxime videntur digna
-esse iusto homine eoque, quem virum bonum dicimus, commutantur fiuntque
-contraria, ut reddere depositum, facere promissum; quaeque pertinent ad
-veritatem et ad fidem, ea migrare interdum et non servare fit iustum.
-#Ch. VII# Referri enim decet ad ea, quae posui principio, fundamenta
-iustitiae, primum ut ne cui noceatur, deinde ut communi utilitati
-serviatur. Ea cum tempore commutantur, commutatur officium et non semper
-est idem. *32* Potest enim accidere promissum aliquod et conventum, ut
-id effici sit inutile vel ei, cui promissum sit, vel ei, qui promiserit.
-#e.g. Eur. Hipp. 1315-1319# Nam si, ut in fabulis est, Neptunus, quod
-Theseo promiserat, non fecisset, Theseus Hippolyto filio non esset
-orbatus; ex tribus enim optatis, ut scribitur, hoc erat tertium, quod de
-Hippolyti interitu iratus optavit; quo impetrato in maximos luctus
-incidit. Nec promissa igitur servanda sunt ea, quae sint iis, quibus
-promiseris, inutilia, nec, si plus tibi ea noceant quam illi prosint,
-cui[29] promiseris, contra officium est maius anteponi minori; ut, si
-constitueris cuipiam te advocatum in rem praesentem esse venturum atque
-interim graviter aegrotare filius coeperit, non sit contra officium non
-facere, quod dixeris, magisque ille, cui promissum sit, ab officio
-discedat, si se destitutum queratur. Iam illis promissis standum non
-esse quis non videt, quae coactus quis metu, quae deceptus dolo
-promiserit? quae quidem pleraque iure praetorio liberantur, non nulla
-legibus.
-
-*33* Exsistunt etiam saepe iniuriae calumnia quadam et nimis callida,
-sed malitiosa iuris interpretatione. Ex quo illud "Summum ius summa
-iniuria" factum est iam tritum sermone proverbium. Quo in genere etiam
-in re publica multa peccantur, ut ille, qui, cum triginta dierum essent
-cum hoste indutiae factae, noctu populabatur agros, quod dierum essent
-pactae, non noctium indutiae. Ne noster quidem probandus, si verum est
-Q. Fabium Labeonem seu quem alium (nihil enim habeo praeter auditum)
-arbitrum Nolanis et Neapolitanis de finibus a senatu datum, cum ad locum
-venisset, cum utrisque separatim locutum, ne cupide quid agerent, ne
-appetenter, atque ut regredi quam progredi mallent. Id cum utrique
-fecissent, aliquantum agri in medio relictum est. Itaque illorum finis
-sic, ut ipsi dixerant, terminavit; in medio relictum quod erat, populo
-Romano adiudicavit. Decipere hoc quidem est, non iudicare. Quocirca in
-omni est re fugienda talis sollertia.
-
-[29] _cui_ B a, Edd.; _cui quod_ H b; _cui quid_ A c.
 
 #Change of duty in change of circumstances.#
 
@@ -1264,51 +825,6 @@ most valuable part of the body of Roman Law.
 B.C.), in the war with Argos. (Plutarch, Apophth. Lacon. 223
 A.)
 
-XI. Sunt autem quaedam officia etiam adversus eos servanda, a quibus
-iniuriam acceperis. Est enim ulciscendi et puniendi modus; atque haud
-scio an satis sit eum, qui lacessierit, iniuriae suae paenitere, ut et
-ipse ne quid tale posthac et ceteri sint ad iniuriam tardiores.
-
-*34* Atque in re publica maxime conservanda sunt iura belli. Nam cum
-sint duo genera decertandi, unum per disceptationem, alterum per vim,
-cumque illud proprium sit hominis, hoc beluarum, confugiendum est ad
-posterius, si uti non licet superiore. *35* Quare suscipienda quidem
-bella sunt ob eam causam, ut sine iniuria in pace vivatur, parta autem
-victoria conservandi ii, qui non crudeles in bello, non immanes fuerunt,
-ut maiores nostri Tusculanos, Aequos, Volscos, Sabinos, Hernicos in
-civitatem etiam acceperunt, at Carthaginem et Numantiam funditus
-sustulerunt; nollem Corinthum, sed credo aliquid secutos, opportunitatem
-loci maxime, ne posset aliquando ad bellum faciendum locus ipse
-adhortari. Mea quidem sententia paci, quae nihil habitura sit
-insidiarum, semper est consulendum. In quo si mihi esset optemperatum,
-si non optimam, at aliquam rem publicam, quae nunc nulla est, haberemus.
-
-Et cum iis, quos vi deviceris, consulendum est, tum ii, qui armis
-positis ad imperatorum fidem confugient, quamvis murum aries
-percusserit, recipiendi. In quo tantopere apud nostros iustitia culta
-est, ut ii, qui civitates aut nationes devictas bello in fidem
-recepissent, earum patroni essent more maiorum.
-
-*36* Ac belli quidem aequitas sanctissime fetiali populi Romani iure
-perscripta est. Ex quo intellegi potest nullum bellum esse iustum, nisi
-quod aut rebus repetitis geratur aut denuntiatum ante sit et indictum.
-[Popilius imperator tenebat provinciam, in cuius exercitu Catonis filius
-tiro militabat. Cum autem Popilio videretur unam dimittere legionem,
-Catonis quoque filium, qui in eadem legione militabat, dimisit. Sed cum
-amore pugnandi in exercitu remansisset, Cato ad Popilium scripsit, ut,
-si eum patitur[30] in exercitu remanere, secundo eum obliget militiae
-sacramento, quia priore amisso iure cum hostibus pugnare non poterat.
-*37* Adeo summa erat observatio in bello movendo.][31] M. quidem Catonis
-senis est epistula ad M. filium, in qua scribit se audisse eum missum
-factum esse a consule, cum in Macedonia bello Persico miles esset. Monet
-igitur, ut caveat, ne proelium ineat; negat enim ius esse, qui miles non
-sit, cum hoste pugnare.
-
-[30] _patitur_ A B H a b; _patiatur_ c.
-
-[31] _Popilius ... movendo_ bracketed by Madvig, Edd.;
-_Popilius ... poterat_ bracketed by Unger.
-
 #Our duty to those who have wronged us.#
 
 XI. Again, there are certain duties that we owe even to those who have
@@ -1370,50 +886,7 @@ a soldier has no right to be fighting the foe.
 
 [I] Lucius Aemilius Paulus (B.C. 168).
 
-XII. Equidem etiam illud animadverto, quod, qui proprio nomine
-perduellis esset, is hostis vocaretur, lenitate verbi rei tristitiam
-mitigatam. Hostis enim apud maiores nostros is dicebatur, quem nunc
-peregrinum dicimus. Indicant duodecim tabulae: AUT STATUS DIES CUM
-HOSTE, itemque: ADVERSUS HOSTEM AETERNA AUCTORITAS. Quid ad hanc
-mansuetudinem addi potest, eum, quicum bellum geras, tam molli nomine
-appellare? Quamquam id nomen durius effecit[32] iam vetustas; a
-peregrino enim recessit et proprie in eo, qui arma contra ferret,
-remansit.
-
-*38* Cum vero de imperio decertatur belloque quaeritur gloria, causas
-omnino subesse tamen oportet easdem, quas dixi paulo ante iustas causas
-esse bellorum. Sed ea bella, quibus imperii proposita gloria est, minus
-acerbe gerenda sunt. Ut enim cum civi aliter contendimus, si[33] est
-inimicus, aliter, si competitor (cum altero certamen honoris et
-dignitatis est, cum altero capitis et famae), sic cum Celtiberis, cum
-Cimbris bellum ut cum inimicis gerebatur, uter esset, non uter
-imperaret, cum Latinis, Sabinis, Samnitibus, Poenis, Pyrrho de imperio
-dimicabatur. Poeni foedifragi, crudelis Hannibal, reliqui iustiores.
-Pyrrhi quidem de captivis reddendis illa praeclara:
-
 #Ennius, Ann. VI, Vahlen^2, xii, 194-201#
-
-Nec mi aurum posco nec mi pretium dederitis,
-Nec[34] cauponantes bellum, sed belligerantes
-Ferro, non auro vitam cernamus utrique.
-Vosne velit an me regnare era, quidve ferat Fors,
-Virtute experiamur. Et hoc simul accipe dictum:
-Quorum virtuti[35] belli fortuna pepercit,
-Eorundem libertati me parcere certum est.
-Dono, ducite, doque volentibus cum magnis dis.
-
-Regalis sane et digna Aeacidarum genere sententia.
-
-[32] _effecit_ Edd.; _efficit_ MSS.
-
-[33] _cum cive_ [Edd.: _civi_] _aliter contendimus si_ L,
-Anemoecius, Edd.; _cum civiliter contendimus aliter si_ A B H
-a b c.
-
-[34] _Nec_ A B H b c; _Non_ L p, Bt., Heine.
-
-[35] _virtuti_ A B^2 L c, Edd.; _virtute_ B^1 H b; _virtutei_
-Vahlen.
 
 XII. This also I observe--that he who would properly have been called "a
 fighting enemy" (_perduellis_) was called "a guest" (_hostis_), thus
@@ -1457,46 +930,6 @@ Take them back to their homes; the great gods' blessings attend
 you."
 
 A right kingly sentiment this and worthy a scion of the Aeacidae.
-
-*39* XIII. Atque etiam si quid singuli temporibus adducti hosti
-promiserunt, est in eo ipso fides conservanda, ut primo Punico bello
-Regulus captus a Poenis cum de captivis commutandis Romam missus esset
-iurassetque se rediturum, primum, ut venit, captivos reddendos in senatu
-non censuit, deinde, cum retineretur a propinquis et ab amicis, ad
-supplicium redire maluit quam fidem hosti datam fallere.
-
-*40* [Secundo autem Punico bello post Cannensem pugnam quos decem
-Hannibal Romam astrictos misit iure iurando se redituros esse, nisi de
-redimendis iis, qui capti erant, impetrassent, eos omnes censores, quoad
-quisque eorum vixit, qui peierassent, in aerariis reliquerunt nec minus
-illum, qui iuris iurandi fraude culpam invenerat. Cum enim Hannibalis
-permissu exisset de castris, rediit paulo post, quod se oblitum nescio
-quid diceret; deinde egressus e castris iure iurando se solutum putabat,
-et erat verbis, re non erat. Semper autem in fide quid senseris, non
-quid dixeris, cogitandum.
-
-Maximum autem exemplum est iustitiae in hostem a maioribus nostris
-constitutum, cum a Pyrrho perfuga senatui est pollicitus se venenum regi
-daturum et eum necaturum, senatus et C. Fabricius perfugam Pyrrho
-dedidit. Ita ne hostis quidem et potentis et bellum ultro inferentis
-interitum cum scelere approbavit.][36]
-
-*41* Ac de bellicis quidem officiis satis dictum est.
-
-Meminerimus autem etiam adversus infimos iustitiam esse servandam. Est
-autem infima condicio et fortuna servorum, quibus non male praecipiunt
-qui ita iubent uti, ut mercennariis: operam exigendam, iusta praebenda.
-
-Cum autem duobus modis, id est aut vi aut fraude, fiat iniuria, fraus
-quasi vulpeculae, vis leonis videtur; utrumque homine alienissimum, sed
-fraus odio digna maiore. Totius autem iniustitiae nulla capitalior quam
-eorum, qui tum, cum maxime fallunt, id agunt, ut viri boni esse
-videantur.
-
-De iustitia satis dictum.
-
-[36] _Secundo ... re non erat_ om. L c; _Secundo ...
-approbavit_ om. A B H a b p, Edd.
 
 #Fidelity to a promise:#
 
@@ -1557,48 +990,6 @@ This must conclude our discussion of justice.
 
 #Ch. VII#
 
-*42* XIV. Deinceps, ut erat propositum, de beneficentia ac de
-liberalitate dicatur, qua quidem nihil est naturae hominis
-accommodatius, sed habet multas cautiones. Videndum est enim, primum ne
-obsit benignitas et iis ipsis, quibus benigne videbitur fieri, et
-ceteris, deinde ne maior benignitas sit quam facultates, tum ut pro
-dignitate cuique tribuatur; id enim est iustitiae fundamentum, ad quam
-haec referenda sunt omnia. Nam et qui gratificantur cuipiam, quod obsit
-illi, cui prodesse velle videantur, non benefici neque liberales, sed
-perniciosi assentatores iudicandi sunt, et qui aliis nocent, ut in alios
-liberales sint, in eadem sunt iniustitia, ut si in suam rem aliena
-convertant.
-
-*43* Sunt autem multi, et quidem cupidi splendoris et gloriae, qui
-eripiunt aliis, quod aliis largiantur, iique arbitrantur se beneficos in
-suos amicos visum iri, si locupletent eos quacumque ratione. Id autem
-tantum abest ab[37] officio, ut nihil magis officio possit esse
-contrarium. Videndum est igitur, ut ea liberalitate utamur, quae prosit
-amicis, noceat nemini. Quare L. Sullae, C. Caesaris pecuniarum
-translatio a iustis dominis ad alienos non debet liberalis videri; nihil
-est enim liberale, quod non idem iustum.
-
-*44* Alter locus erat cautionis, ne benignitas maior esset quam
-facultates, quod, qui benigniores volunt esse, quam res patitur, primum
-in eo peccant, quod iniuriosi sunt in proximos; quas enim copias his[38]
-et suppeditari aequius est et relinqui, eas transferunt ad alienos.
-Inest autem in tali liberalitate cupiditas plerumque rapiendi et
-auferendi per iniuriam, ut ad largiendum suppetant copiae. Videre etiam
-licet plerosque non tam natura liberales quam quadam gloria ductos, ut
-benefici videantur, facere multa, quae proficisci ab ostentatione magis
-quam a voluntate videantur. Talis autem simulatio vanitati est
-coniunctior quam aut liberalitati aut honestati.
-
-*45* Tertium est propositum, ut in beneficentia dilectus esset
-dignitatis; in quo et mores eius erunt spectandi in quem beneficium
-conferetur, et animus erga nos et communitas ac societas vitae et ad
-nostras utilitates officia ante collata; quae ut concurrant omnia,
-optabile est; si minus, plures causae maioresque ponderis plus habebunt.
-
-[37] _ab_ c, Edd.; not in A B H L b.
-
-[38] _his_ H a, Edd.; _iis_ A B b; _eis_ L c.
-
 #Justice and generosity.#
 
 *42* XIV. Next in order, as outlined above, let us speak of kindness and
@@ -1658,57 +1049,7 @@ interest. It is to be desired that all these considerations should be
 combined in the same person; if they are not, then the more numerous and
 the more important considerations must have the greater weight.
 
-*46* XV. Quoniam autem vivitur non cum perfectis hominibus planeque
-sapientibus, sed cum iis, in quibus praeclare agitur si sunt simulacra
-virtutis, etiam hoc intellegendum puto, neminem omnino esse neglegendum,
-in quo aliqua significatio virtutis appareat, colendum autem esse ita
-quemque maxime, ut quisque maxime virtutibus his lenioribus erit
-ornatus, modestia, temperantia, hac ipsa, de qua multa iam dicta sunt,
-iustitia. Nam fortis animus et magnus in homine non perfecto nec
-sapiente[39] ferventior plerumque est, illae virtutes bonum virum
-videntur potius attingere.
-
-Atque haec in moribus.
-
-*47* De benivolentia autem, quam quisque habeat erga nos, primum illud
-est in officio, ut ei plurimum tribuamus, a quo plurimum diligamur,[40]
-sed benivolentiam non adulescentulorum more ardore quodam amoris, sed
-stabilitate potius et constantia iudicemus. Sin erunt merita, ut non
-ineunda, sed referenda sit gratia, maior quaedam cura adhibenda est;
-nullum enim officium referenda gratia magis necessarium est.
-
 #Op. 349-351#
-
-*48* Quodsi ea, quae utenda acceperis, maiore mensura, si modo possis,
-iubet reddere Hesiodus, quidnam beneficio provocati facere debemus? an
-imitari agros fertiles, qui multo plus efferunt quam acceperunt? Etenim
-si in eos, quos speramus nobis profuturos, non dubitamus officia
-conferre, quales in eos esse debemus, qui iam profuerunt? Nam cum duo
-genera liberalitatis sint, unum dandi beneficii, alterum reddendi, demus
-necne, in nostra potestate est, non reddere viro bono non licet,
-modo[41] id facere possit sine iniuria.
-
-*49* Acceptorum autem beneficiorum sunt dilectus habendi, nec dubium,
-quin maximo cuique plurimum debeatur. In quo tamen in primis, quo
-quisque animo, studio, benivolentia facerit, ponderandum est. Multi enim
-faciunt multa temeritate quadam sine iudicio vel morbo in omnes vel
-repentino quodam quasi vento impetu animi incitati; quae beneficia aeque
-magna non sunt habenda atque ea, quae iudicio, considerate constanterque
-delata sunt.
-
-Sed in collocando beneficio et in referenda gratia, si cetera paria
-sunt, hoc maxime officii est, ut quisque maxime opis indigeat, ita ei
-potissimum opitulari; quod contra fit a plerisque; a quo enim plurimum
-sperant,[42] etiamsi ille iis non eget, tamen ei potissimum inserviunt.
-
-[39] _sapiente_ MSS.; _sapienti_ Wesenberg, Bt.
-
-[40] _diligamur_ A B^2 H L b c; _diligimur_ B^1, Bt^1.
-
-[41] _modo_ A H L b c; _si modo_ B.
-
-[42] _sperant_ Marg. A, Edd.; _spectant_ A b (_spernant_
-Marg. b).
 
 *46* XV. Now, the men we live with are not perfect and ideally wise,
 but men who do very well, if there be found in them but the semblance of
@@ -1764,53 +1105,7 @@ self-interest,# Most people adopt the contrary course: they put
 themselves most eagerly at the service of the one from whom they hope to
 receive the greatest favours, even though he has no need of their help.
 
-*50* XVI. Optime autem societas hominum coniunctioque servabitur, si, ut
-quisque erit coniunctissimus, ita in eum benignitatis plurimum
-conferetur.
-
-Sed, quae naturae principia sint communitatis et societatis humanae,
-repetendum videtur altius; est enim primum, quod cernitur in universi
-generis humani societate. Eius autem vinculum est ratio et oratio, quae
-docendo, discendo, communicando, disceptando, iudicando conciliat inter
-se homines coniungitque naturali quadam societate; neque ulla re longius
-absumus a natura ferarum, in quibus inesse fortitudinem saepe dicimus,
-ut in equis, in leonibus, iustitiam, aequitatem, bonitatem non dicimus;
-sunt enim rationis et orationis expertes.
-
-*51* Ac latissime quidem patens hominibus inter ipsos, omnibus inter
-omnes societas haec est; in qua omnium rerum, quas ad communem hominum
-usum natura genuit, est servanda communitas, ut, quae discripta[43] sunt
-legibus et iure civili, haec ita teneantur, ut sit constitutum legibus
-ipsis,[44] cetera sic observentur, ut in Graecorum proverbio est,
-amicorum esse communia omnia. Omnium[45] autem communia hominum videntur
-ea, quae sunt generis eius, quod ab Ennio positum in una re transferri
-in permultas potest:
-
 #(Telephus?) Vahlen^2, Fab. Inc. 398#
-
-Homó, qui erranti cómiter monstrát viam,
-Quasi lúmen de suo lúmine accendát, facit.
-Nihiló minus ipsi lúcet,[46] cum illi accénderit.
-
-Una ex re satis praecipit, ut, quicquid sine detrimento commodari
-possit, id tribuatur vel ignoto; *52* ex quo sunt illa communia: non
-prohibere aqua profluente, pati ab igne ignem capere, si qui velit,
-consilium fidele deliberanti dare, quae sunt iis utilia, qui accipiunt,
-danti non molesta. Quare et his utendum est et semper aliquid ad
-communem utilitatem afferendum. Sed quoniam copiae parvae singulorum
-sunt, eorum autem, qui his egeant, infinita est multitudo, vulgaris
-liberalitas referenda est ad illum Ennii finem: "Nihilo minus ipsi
-lucet," ut facultas sit, qua in nostros simus liberales.
-
-[43] _discripta_ H b, Edd.; _descripta_ A B L a c.
-
-[44] _legibus ipsis_ Gulielmus, Edd.; _e_ (_ex_ c) _quibus
-ipsis_ MSS.
-
-[45] _Omnium_ Zumpt, Edd.; _omnia_ MSS.
-
-[46] _ipsi lucet_ Edd.; _ipsi luceat_ A B H b c; _ipsi ut
-luceat_ a.
 
 #(4) relationship.#
 
@@ -1864,71 +1159,6 @@ means for being generous to our friends.
 
 [J] κοινὰ τὰ (τῶν) φίλων (Plato, Phaedr. 279 C; Aristotle,
 Eth. VIII, 11).
-
-*53* XVII. Gradus autem plures sunt societatis hominum. Ut enim ab illa
-infinita discedatur, propior[47] est eiusdem gentis, nationis, linguae,
-qua maxime homines coniunguntur; interius etiam est eiusdem esse
-civitatis; multa enim sunt civibus inter se communia, forum, fana,
-porticus, viae, leges, iura, iudicia, suffragia, consuetudines praeterea
-et familiaritates multisque cum multis res rationesque contractae.
-
-Artior vero colligatio est societatis propinquorum; ab illa enim immensa
-societate humani generis in exiguum angustumque concluditur. *54* Nam
-cum sit hoc natura commune animantium, ut habeant lubidinem procreandi,
-prima societas in ipso coniugio est, proxima in liberis, deinde una
-domus, communia omnia; id autem est principium urbis et quasi seminarium
-rei publicae. Sequuntur fratrum coniunctiones, post consobrinorum
-sobrinorumque, qui cum una domo iam capi non possint, in alias domos
-tamquam in colonias exeunt. Sequuntur conubia et affinitates, ex quibus
-etiam plures propinqui; quae propagatio et suboles origo est rerum
-publicarum. Sanguinis autem coniunctio et benivolentia devincit homines
-_et_[48] caritate; *55* magnum est enim eadem habere monumenta maiorum,
-eisdem uti sacris, sepulcra habere communia.
-
-Sed omnium societatum nulla praestantior est, nulla firmior, quam cum
-viri boni moribus similes sunt familiaritate coniuncti; illud enim
-honestum, quod saepe dicimus, etiam si in alio cernimus, [tamen][49] nos
-movet atque illi, in quo id inesse videtur, amicos facit. *56* Et
-quamquam omnis virtus nos ad se allicit facitque, ut eos diligamus, in
-quibus ipsa inesse videatur, tamen iustitia et liberalitas id maxime
-efficit. Nihil autem est amabilius nec copulatius quam morum similitudo
-bonorum; in quibus enim eadem studia sunt, eaedem voluntates, in iis fit
-ut aeque quisque altero delectetur ac se ipso, efficiturque id, quod
-Pythagoras vult in amicitia, ut[50] unus fiat ex pluribus.
-
-Magna etiam illa communitas est, quae conficitur ex beneficiis ultro et
-citro datis acceptis, quae et mutua et grata dum sunt, inter quos ea
-sunt, firma devinciuntur societate.
-
-*57* Sed cum omnia ratione animoque lustraris, omnium societatum nulla
-est gravior, nulla carior quam ea, quae cum re publica est uni cuique
-nostrum. Cari sunt parentes, cari liberi, propinqui, familiares, sed
-omnes omnium caritates patria una complexa est, pro qua quis bonus
-dubitet mortem oppetere, si ei sit profuturus? Quo est detestabilior
-istorum immanitas, qui lacerarunt omni scelere patriam et in ea funditus
-delenda occupati et sunt et fuerunt.
-
-*58* Sed si contentio quaedam et comparatio fiat, quibus plurimum
-tribuendum sit officii, principes sint patria et parentes, quorum
-beneficiis maximis obligati sumus, proximi liberi totaque domus, quae
-spectat in nos solos neque aliud ullum potest habere perfugium, deinceps
-bene convenientes propinqui, quibuscum communis etiam fortuna plerumque
-est.
-
-Quam ob rem necessaria praesidia vitae debentur iis maxime, quos ante
-dixi, vita autem victusque communis, consilia, sermones, cohortationes,
-consolationes, interdum etiam obiurgationes in amicitiis vigent maxime,
-estque ea iucundissima amicitia, quam similitudo morum coniugavit.
-
-[47] _propior_ A a c (ex corr.), Edd.; _proprior_ B H b.
-
-[48] _et_ Perizonius, Edd.; not in MSS.
-
-[49] _tamen_ MSS., Müller; del. Unger, Bt., Heine.
-
-[50] _efficiturque id quod P. ultimum in amicitia putavit ut_
-Nonius (s.v. ultimum) (i.e. Pythagoras's ideal of friendship
-is realized).
 
 #Degrees of social relationship:#
 
@@ -2013,66 +1243,9 @@ which is cemented by congeniality of character.
 
 [L] Caesar, Clodius, Catiline.
 
-*59* XVIII. Sed in his omnibus officiis tribuendis videndum erit, quid
-cuique maxime necesse sit, et quid quisque vel sine nobis aut possit
-consequi aut non possit. Ita non iidem erunt necessitudinum gradus, qui
-temporum; suntque officia, quae aliis magis quam aliis debeantur; ut
-vicinum citius adiuveris in fructibus percipiendis quam aut fratrem aut
-familiarem, at, si lis in iudicio sit, propinquum potius et amicum quam
-vicinum defenderis. Haec igitur et talia circumspicienda sunt in omni
-officio [et consuetudo exercitatioque capienda],[51] ut boni
-ratiocinatores officiorum esse possimus et addendo deducendoque[52]
-videre, quae reliqui summa fiat, ex quo, quantum cuique debeatur,
-intellegas.
-
-*60* Sed ut nec medici nec imperatores nec oratores, quamvis artis
-praecepta perceperint, quicquam magna laude dignum sine usu et
-exercitatione consequi possunt, sic officii conservandi praecepta
-traduntur illa quidem, ut facimus ipsi, sed rei magnitudo usum quoque
-exercitationemque desiderat.
-
-Atque ab iis[53] rebus, quae sunt in iure societatis humanae, quem ad
-modum ducatur honestum, ex quo aptum est officium, satis fere diximus.
-
-*61* Intelligendum autem est, cum proposita sint genera quattuor, e
-quibus honestas officiumque manaret, splendidissimum videri, quod animo
-magno elatoque humanasque res despiciente factum sit. Itaque in probris
-maxime in promptu est si quid tale dici potest:
-
 #Inc. inc. fab., Ribbeck^2, 210#
 
-"Vós enim,[54] iuvenes, ánimum geritis múliebrem, ílla" virgo
-"viri"[55]
-
-et si quid eius modi:
-
 #Enn. Aj., Vahlen^2, 18#
-
-Salmácida, spolia síne sudore et sánguine.
-
-Contraque in laudibus, quae magno animo et fortiter excellenterque gesta
-sunt, ea nescio quo modo quasi pleniore ore laudamus. Hinc rhetorum
-campus de Marathone, Salamine, Plataeis, Thermopylis, Leuctris, hinc
-noster Cocles,[56] hinc Decii, hinc Cn. et P. Scipiones, hinc M.
-Marcellus, innumerabiles alii, maximeque ipse populus Romanus animi
-magnitudine excellit. Declaratur autem studium bellicae gloriae, quod
-statuas quoque videmus ornatu fere militari.
-
-[51] _et ... capienda_ om. Facciolati, Edd.
-
-[52] _deducendoque_ p; _ducendoque_ A B H L a b (superscr.
-sec. m. _demendo_); _demendoque_ c.
-
-[53] _iis_ Edd.; _his_ MSS.
-
-[54] _enim_ A B H b c; _etenim_ a.
-
-[55] _illa" virgo "viri"_ Ed.; _illa virgo viri_ MSS.;
-_virago_ Orelli.
-
-[56] _Leuctris, hinc noster Cocles_ Baldwin, Edd.; _leutris
-stercocles_ A B H a b; _leutrister chodes_ c; _leutris
-stercodes_ L.
 
 #Duties may vary under varying circumstances.#
 
@@ -2128,60 +1301,7 @@ soldier's garb.
 
 [M] Cloelia (see Index).
 
-*62* XIX. Sed ea animi elatio, quae cernitur in periculis et laboribus,
-si iustitia vacat pugnatque non pro salute communi, sed pro suis
-commodis, in vitio est; non modo enim id virtutis non est, sed est
-potius immanitatis omnem humanitatem repellentis. Itaque probe definitur
-a Stoicis fortitudo, cum eam virtutem esse dicunt propugnantem pro
-aequitate. Quocirca nemo, qui fortitudinis gloriam consecutus est
-insidiis et malitia, laudem est adeptus; nihil enim[57] honestum esse
-potest, quod iustitia vacat.
-
 #Menex. 246 E; Laches 197 B#
-
-*63* Praeclarum igitur illud Platonis: "Non," inquit, "solum scientia,
-quae est remota ab iustitia, calliditas potius quam sapientia est
-appellanda, verum etiam animus paratus ad periculum, si sua cupiditate,
-non utilitate communi impellitur, audaciae potius nomen habeat quam
-fortitudinis." Itaque viros fortes et[58] magnanimos eosdem bonos et
-simplices, veritatis amicos minimeque fallaces esse volumus; quae sunt
-ex media laude iustitiae.
-
-*64* Sed illud odiosum est, quod in hac elatione et magnitudine animi
-facillime pertinacia et nimia cupiditas principatus innascitur. #Laches
-182 E# Ut enim apud Platonem est, omnem morem Lacedaemoniorum
-inflammatum esse cupiditate vincendi, sic, ut quisque animi magnitudine
-maxime excellet,[59] ita maxime vult princeps omnium vel potius solus
-esse. Difficile autem est, cum praestare omnibus concupieris, servare
-aequitatem, quae est iustitiae maxime propria. Ex quo fit, ut neque
-disceptatione vinci se nec ullo publico ac legitimo iure patiantur,
-existuntque in re publica plerumque largitores et factiosi, ut opes quam
-maximas consequantur et sint vi[60] potius superiores quam iustitia
-pares. Sed quo difficilius, hoc praeclarius; nullum enim est tempus,
-quod iustitia vacare debeat.
-
-*65* Fortes igitur et magnanimi sunt habendi, non qui faciunt, sed qui
-propulsant iniuriam. Vera autem et sapiens animi magnitudo honestum
-illud, quod maxime natura sequitur, in factis positum, non in gloria
-iudicat principemque se esse mavult quam videri; etenim qui ex errore
-imperitae multitudinis pendet, hic in magnis viris non est habendus.
-Facillime autem ad res iniustas impellitur, ut quisque altissimo animo
-est, gloriae cupiditate[61]; qui locus est sane lubricus, quod vix
-invenitur, qui laboribus susceptis periculisque aditis non quasi
-mercedem rerum gestarum desideret gloriam.
-
-[57] _enim_ A C, Edd.; not in A B H L b, Bt^2.
-
-[58] _et_ a, Edd.; not in A B H L b c p.
-
-[59] _excellet_ A B H L b c; _excellit_ a, Bt.
-
-[60] _vi_ a, Edd.; _ut_ A B H b; _utcumque_ L c.
-
-[61] _altissimo animo est, gloriae cupiditate_ Pearce
-(confirmed by several MSS.), Edd.; _alt. an. et gloriae
-cupiditate_ A B H b p; _est alt. an. et gloria et cupiditate_
-L c.
 
 #Fortitude in the light of justice.#
 
@@ -2232,60 +1352,6 @@ tempted to acts of injustice by his desire for fame. We are now, to be
 sure, on very slippery ground; for scarcely can the man be found who has
 passed through trials and encountered dangers and does not then wish for
 glory as a reward for his achievements.
-
-*66* XX. Omnino fortis animus et magnus duabus rebus maxime cernitur,
-quarum una in rerum externarum despicientia ponitur, cum persuasum
-est[62] nihil hominem, nisi quod honestum decorumque sit, aut admirari
-aut optare aut expetere oportere nullique neque homini neque
-perturbationi animi nec fortunae succumbere. Altera est res, ut, cum ita
-sis affectus animo, ut supra dixi, res geras magnas illas quidem et
-maxime utiles, sed [ut] vehementer arduas plenasque laborum et
-periculorum cum vitae, tum multarum rerum, quae ad vitam pertinent.
-
-*67* Harum rerum duarum splendor omnis, amplitudo, addo etiam
-utilitatem, in posteriore est, causa autem et ratio efficiens magnos
-viros in priore; in eo est enim illud, quod excellentes animos et humana
-contemnentes facit. Id autem ipsum cernitur in duobus, si et solum id,
-quod honestum sit, bonum iudices et ab omni animi perturbatione liber
-sis. Nam et ea, quae eximia plerisque et praeclara videntur, parva
-ducere eaque ratione stabili firmaque contemnere fortis animi magnique
-ducendum est, et ea, quae videntur acerba, quae multa et varia in
-hominum vita fortunaque versantur, ita ferre, ut nihil a statu naturae
-discedas, nihil a dignitate sapientis, robusti animi est magnaeque
-constantiae. *68* Non est autem consentaneum, qui metu non frangatur,
-eum frangi cupiditate nec, qui invictum se a labore praestiterit, vinci
-a voluptate. Quam ob rem et haec vitanda[63] et pecuniae fugienda
-cupiditas; nihil enim est tam angusti animi tamque parvi quam amare
-divitias, nihil honestius magnificentiusque quam pecuniam contemnere, si
-non habeas, si habeas, ad beneficentiam liberalitatemque conferre.
-
-Cavenda etiam est gloriae cupiditas, ut supra dixi; eripit enim
-libertatem, pro qua magnanimis viris omnis debet esse contentio. Nec
-vero imperia expetenda ac potius aut non accipienda interdum aut
-deponenda non numquam.
-
-*69* Vacandum autem omni est animi perturbatione, cum cupiditate et
-metu, tum etiam aegritudine et voluptate nimia[64] et iracundia, ut
-tranquillitas animi et securitas adsit, quae affert cum constantiam, tum
-etiam dignitatem. Multi autem et sunt et fuerunt, qui eam, quam dico,
-tranquillitatem expetentes a negotiis publicis se removerint ad otiumque
-perfugerint; in his et nobilissimi philosophi longeque principes et
-quidam homines severi et graves nec populi nec principum mores ferre
-potuerunt, vixeruntque non nulli in agris delectati re sua familiari.
-*70* His idem propositum fuit, quod regibus, ut ne qua re egerent, ne
-cui parerent, libertate uterentur, cuius proprium est sic vivere, ut
-velis.
-
-[62] _persuasum est_ Madvig (ad de Fin. p. 448 ff.), Edd.;
-_p. sit_ MSS.
-
-[63] _vitanda_ Edd. (cum duobus codd. Guelpherbytanis);
-_videnda_ MSS.
-
-[64] _voluptate nimia_ Orelli, Müller; _voluptate animi_ A H
-L a b c; _vol. animi et securitas_ (_et iracundia ut tr.
-animi_ by a later hand on the margin) B; _voluptate_
-[_animi_], Bt., Heine.
 
 #Characteristics of Fortitude:#
 
@@ -2356,56 +1422,6 @@ is the more striking for Cicero's not mentioning it.
 
 [Q] Such as Cicero's friend, Atticus, and Marcus Piso.
 
-XXI. Quare cum hoc commune sit potentiae cupidorum cum iis, quos dixi,
-otiosis, alteri se adipisci id posse arbitrantur, si opes magnas
-habeant, alteri, si contenti sint et suo et parvo. In quo neutrorum
-omnino contemnenda sententia est, sed et facilior et tutior et minus
-aliis gravis aut molesta vita est otiosorum, fructuosior autem hominum
-generi et ad claritatem amplitudinemque aptior eorum, qui se ad rem
-publicam et ad magnas res gerendas accommodaverunt.
-
-*71* Quapropter et iis forsitan concedendum sit rem publicam non
-capessentibus, qui excellenti ingenio doctrinae sese dediderunt, et iis,
-qui aut valetudinis imbecillitate aut aliqua graviore causa impediti a
-re publica recesserunt, cum eius administrandae potestatem aliis
-laudemque concederent. Quibus autem talis nulla sit causa, si despicere
-se dicant ea, quae plerique mirentur, imperia et magistratus, iis non
-modo non laudi, verum etiam vitio dandum puto; quorum iudicium in eo,
-quod gloriam contemnant et pro nihilo putent, difficile factu est non
-probare; sed videntur labores et molestias, tum offensionum et
-repulsarum quasi quandam ignominiam timere et infamiam. Sunt enim, qui
-in rebus contrariis parum sibi constent, voluptatem severissime
-contemnant, in dolore sint molliores, gloriam neglegant, frangantur
-infamia, atque ea quidem non satis constanter.
-
-*72* Sed iis, qui habent a natura adiumenta rerum gerendarum, abiecta
-omni cunctatione adipiscendi magistrates et gerenda res publica est; nec
-enim aliter aut regi civitas aut declarari animi magnitudo potest.
-Capessentibus autem rem publicam nihilo[65] minus quam philosophis, haud
-scio an magis etiam et magnificentia et despicientia adhibenda est[66]
-rerum humanarum, quam saepe dico, et tranquillitas animi atque
-securitas, siquidem nec anxii futuri sunt et cum gravitate constantiaque
-victuri. *73* Quae faciliora sunt philosophis, quo minus multa patent in
-eorum vita, quae fortuna feriat, et quo minus multis rebus egent, et
-quia, si quid adversi eveniat, tam graviter cadere non possunt. Quocirca
-non sine causa maiores motus animorum concitantur maioraque studia
-efficiendi[67] rem publicam gerentibus quam quietis, quo magis iis et
-magnitudo est animi adhibenda et vacuitas ab angoribus.
-
-Ad rem gerendam autem qui accedit, caveat, ne id modo consideret, quam
-illa res honesta sit, sed etiam ut habeat efficiendi facultatem; in quo
-ipso considerandum est, ne aut temere desperet propter ignaviam aut
-nimis confidat propter cupiditatem. In omnibus autem negotiis, prius
-quam aggrediare, adhibenda est praeparatio diligens.
-
-[65] _nihilo_ Wesenberg, Edd.; _nihil_ MSS.
-
-[66] _est_ Manutius, Edd.; _sit_ MSS.
-
-[67] _maioraque studia efficiendi_ Unger, Müller; _maioraque
-efficiendi_ A^1 B H L b c; _maiorque cura efficiendi_ a, Bt.,
-Heine; _maioraque efficienda_ A^2 p.
-
 #The life of public service _vs._ the life of retirement.#
 
 XXI. So, while this desire is common to men of political ambitions and
@@ -2461,64 +1477,7 @@ heart too readily through discouragement nor yet to be over-confident
 through ambition. In a word, before undertaking any enterprise, careful
 preparation must be made.
 
-*74* XXII. Sed cum plerique arbitrentur res bellicas maiores esse quam
-urbanas, minuenda est haec opinio. Multi enim bella saepe quaesiverunt
-propter gloriae cupiditatem, atque id in magnis animis ingeniisque
-plerumque contingit, eoque magis, si sunt ad rem militarem apti et
-cupidi bellorum gerendorum; vere autem si volumus iudicare, multae res
-exstiterunt urbanae maiores clarioresque quam bellicae.
-
-*75* Quamvis enim Themistocles iure laudetur et sit eius nomen quam
-Solonis illustrius citeturque Salamis clarissimae testis victoriae, quae
-anteponatur consilio Solonis ei, quo primum constituit Areopagitas, non
-minus praeclarum hoc quam illud iudicandum est; illud enim semel
-profuit, hoc semper proderit civitati; hoc consilio leges Atheniensium,
-hoc maiorum instituta servantur; et Themistocles quidem nihil dixerit,
-in quo ipse Areopagum adiuverit, at ille vere a[68] se adiutum
-Themistoclem; est enim bellum gestum consilio senatus eius, qui a Solone
-erat constitutus.
-
-*76* Licet eadem de Pausania Lysandroque dicere, quorum rebus gestis
-quamquam imperium Lacedaemoniis partum[69] putatur, tamen ne minima
-quidem ex parte Lycurgi legibus et disciplinae conferendi sunt; quin
-etiam ob has ipsas causas et parentiores habuerunt exercitus et
-fortiores. Mihi quidem neque pueris nobis M. Scaurus C. Mario neque, cum
-versaremur in re publica, Q. Catulus Cn. Pompeio cedere videbatur; parvi
-enim sunt foris arma, nisi est consilium domi; nec plus Africanus,
-singularis et vir et imperator, in exscindenda Numantia rei publicae
-profuit quam eodem tempore P. Nasica privatus, cum Ti. Gracchum
-interemit; quamquam haec quidem res non solum ex domestica est ratione
-(attingit etiam bellicam, quoniam vi manuque confecta est), sed tamen id
-ipsum est gestum consilio urbano sine exercitu.
-
 #Cic., de temp. suis, iii#
-
-*77* Illud autem optimum est, in quod invadi solere ab improbis et
-invidis audio:
-
-"Cedant arma togae, concedat laurea laudi."
-
-Ut enim alios omittam, nobis rem publicam gubernantibus nonne togae arma
-cesserunt? neque enim periculum in re publica fuit gravius umquam nec
-maius otium. Ita consiliis diligentiaque nostra celeriter de manibus
-audacissimorum civium delapsa arma ipsa ceciderunt. Quae res igitur
-gesta umquam in bello tanta? *78* qui triumphus conferendus? licet enim
-mihi, M. fili, apud te gloriari, ad quem et hereditas huius gloriae et
-factorum imitatio pertinet. Mihi quidem certe vir abundans bellicis
-laudibus, Cn. Pompeius, multis audientibus hoc tribuit, ut diceret
-frustra se triumphum tertium deportaturum fuisse, nisi meo in rem
-publicam beneficio, ubi triumpharet, esset habiturus.
-
-Sunt igitur domesticae fortitudines non inferiores militaribus; in
-quibus plus etiam quam in his operae studiique ponendum est.
-
-[68] _a_ Edd.; not in MSS.; _se adiutum_ A B H b, Edd.;
-_adiuvit_ L^1 c p; _se adiutum ab illo dixerit (?)
-Themistocles_ L^2.
-
-[69] _L. partum_ Lambinus, Müller; _partum L._, Bt.; om.
-_partum_ A^1 B H L^1 a b; _L. dilatatum_ A^2; _dilatatum L._
-L^2 c.
 
 #Victories of war _vs._ victories of peace.#
 
@@ -2596,36 +1555,6 @@ of Catiline.
 
 [S] The laurels of the triumphant general.
 
-*79* XXIII. Omnino illud honestum, quod ex animo excelso magnificoque
-quaerimus, animi efficitur, non corporis viribus. Exercendum tamen
-corpus et ita afficiendum est, ut oboedire consilio rationique possit in
-exsequendis negotiis et in labore tolerando. Honestum autem id, quod
-exquirimus, totum est positum in animi cura et cogitatione; in quo non
-minorem utilitatem afferunt, qui togati rei publicae praesunt, quam qui
-bellum gerunt. Itaque eorum consilio saepe aut non suscepta aut confecta
-bella sunt, non numquam etiam illata, ut M. Catonis bellum tertium
-Punicum, in quo etiam mortui valuit auctoritas. *80* Quare expetenda
-quidem magis est decernendi ratio quam decertandi fortitudo, sed
-cavendum, ne id bellandi magis fuga quam utilitatis ratione faciamus.
-Bellum autem ita suscipiatur, ut nihil aliud nisi pax quaesita videatur.
-
-Fortis vero animi et constantis est non perturbari in rebus asperis nec
-tumultuantem de gradu deici, ut dicitur, sed praesenti animo uti et
-consilio nec a ratione discedere.
-
-*81* Quamquam hoc animi, illud etiam ingenii magni est, praecipere
-cogitatione futura et aliquanto[70] ante constituere, quid accidere
-possit in utramque partem, et quid agendum sit, cum quid evenerit, nec
-committere, ut aliquando dicendum sit: "Non putaram."
-
-Haec sunt opera magni animi et excelsi et prudentia consilioque
-fidentis; temere autem in acie versari et manu cum hoste confligere
-immane quiddam et beluarum simile est; sed cum tempus necessitasque
-postulat, decertandum manu est et mors servituti turpitudinique
-anteponenda.
-
-[70] _aliquanto_ Edd.; _aliquando_ MSS.
-
 #(2) Physical courage.#
 
 *79* XXIII. That moral goodness which we look for in a lofty,
@@ -2667,69 +1596,7 @@ must gird on the sword and prefer death to slavery and disgrace.
 
 #Ch. XXII#
 
-*82* XXIV. De evertendis autem diripiendisque urbibus valde
-considerandum est ne quid temere, ne quid crudeliter. Idque est magni
-viri, rebus agitatis punire sontes, multitudinem conservare, in omni
-fortuna recta atque honesta retinere. Ut enim sunt, quem ad modum supra
-dixi, qui urbanis rebus bellicas anteponant, sic reperias multos, quibus
-periculosa et calida[71] consilia quietis et cogitatis[72] splendidiora
-et maiora videantur.
-
-*83* Nunquam omnino periculi fuga committendum est, ut imbelles
-timidique videamur, sed fugiendum illud etiam, ne offeramus nos
-periculis sine causa, quo esse nihil potest stultius. Quapropter in
-adeundis periculis consuetudo imitanda medicorum est, qui leviter
-aegrotantes leniter curant, gravioribus autem morbis periculosas
-curationes et ancipites adhibere coguntur. Quare in tranquillo
-tempestatem adversam optare dementis est, subvenire autem tempestati
-quavis ratione sapientis, eoque magis, si plus adipiscare re explicata
-boni quam addubitata mali.
-
-Periculosae autem rerum actiones partim iis[73] sunt, qui eas
-suscipiunt, partim rei publicae. Itemque alii de vita, alii de gloria et
-benivolentia civium in discrimen vocantur. Promptiores igitur debemus
-esse ad nostra pericula quam ad communia dimicareque paratius de honore
-et gloria quam de ceteris commodis.
-
-*84* Inventi autem multi sunt, qui non modo pecuniam, sed etiam vitam
-profundere pro patria parati essent, iidem gloriae iacturam ne minimam
-quidem facere vellent, ne re publica quidem postulante; ut
-Callicratidas, qui, cum Lacedaemoniorum dux fuisset Peloponnesiaco bello
-multaque fecisset egregie, vertit ad extremum omnia, cum consilio non
-paruit eorum, qui classem ab Arginusis removendam nec cum Atheniensibus
-dimicandum putabant; quibus ille respondit Lacedaemonios classe illa
-amissa aliam parare posse, se fugere sine suo dedecore non posse. Atque
-haec quidem Lacedaemoniis[74] plaga mediocris, illa pestifera, qua, cum
-Cleombrotus invidiam timens temere cum Epaminonda conflixisset
-Lacedaemoniorum opes corruerunt.
-
 #Ann. xii, Vahlen^2, 370-372#
-
-Quanto Q. Maximus melius! de quo Ennius:
-
-Unus homo nobis cunctando restituit rem.
-Noenum rumores ponebat[75] ante salutem.
-Ergo postque magisque viri nunc gloria claret.
-
-Quod genus peccandi vitandum est etiam in rebus urbanis. Sunt enim, qui,
-quod sentiunt, etsi optimum sit, tamen invidiae metu non audeant[76]
-dicere.
-
-[71] _calida_ Nonius, Edd.; _callida_ MSS.
-
-[72] _consilia quietis et cogitatis_ Edd.; _consilia et
-quietis et cogitationis_ A B H a b; _consilia et quietis
-cogitationibus_ c p.
-
-[73] _iis_ Edd.; _his_ MSS.
-
-[74] _quidem Lacedaemoniis_ Edd., _quidem de Lacedaemoniis_
-MSS.
-
-[75] _Noenum rumores ponebat_ Lachmann (ad Lucr. III, 198);
-_Non enim rumores ponebat_ MSS.; _Non ponebat enim_ alii.
-
-[76] _audeant_ Ernesti; _audent_ MSS., Bt.^1, Heine.
 
 *82* XXIV. As to destroying and plundering cities, let me say that great
 care should be taken that nothing be done in reckless cruelty or
@@ -2796,60 +1663,7 @@ the state and all the advantages it brings.
 
 [U] Sacrificing public interests to personal glory.
 
-*85* XXV. Omnino qui rei publicae praefuturi sunt, duo Platonis
-praecepta teneant, #Rep. i. 342 E# unum, ut utilitatem civium sic
-tueantur, ut, quaecumque agunt, ad eam referant obliti commodorum
-suorum, #Rep. iv, 420 B# alterum, ut totum corpus rei publicae curent,
-ne, dum partem aliquam tuentur, reliquas deserant. Ut enim tutela, sic
-procuratio rei publicae ad eorum utilitatem, qui commissi sunt, non ad
-eorum, quibus commissa est, gerenda est. Qui autem parti civium
-consulunt, partem neglegunt, rem perniciosissimam in civitatem inducunt,
-seditionem atque discordiam; ex quo evenit, ut alii populares, alii
-studiosi optimi cuiusque videantur, pauci universorum.
-
-*86* Hinc apud Atheniensis magnae discordiae, in nostra re publica non
-solum seditiones, sed etiam pestifera bella civilia; quae gravis et
-fortis civis et in re publica dignus principatu fugiet atque oderit
-tradetque se totum rei publicae neque opes aut potentiam consectabitur
-totamque eam sic tuebitur, ut omnibus consulat; nec vero criminibus
-falsis in odium aut invidiam quemquam vocabit omninoque ita iustitiae
-honestatique adhaerescet, ut, dum ea conservet, quamvis graviter
-offendat mortemque oppetat potius quam deserat illa, quae dixi.
-
 #Rep. vi, 488 B; 489 C#
-
-*87* Miserrima omnino est ambitio honorumque contentio, de qua praeclare
-apud eundem est Platonem, "similiter facere eos, qui inter se
-contenderent, uter potius rem publicam administraret, ut si nautae
-certarent, quis eorum potissimum gubernaret." #Rep. viii, 567 C; Leg.
-ix, 856 B# Idemque praecipit, ut "eos adversarios existimemus, qui arma
-contra ferant, non eos, qui suo iudicio tueri rem publicam velint,"
-qualis fuit inter P. Africanum et Q. Metellum sine acerbitate dissensio.
-
-*88* Nec vero audiendi, qui graviter inimicis irascendum putabunt idque
-magnanimi et fortis viri esse censebunt; nihil enim laudabilius, nihil
-magno et praeclaro viro dignius placabilitate atque clementia. In
-liberis vero populis et in iuris aequabilitate exercenda etiam est
-facilitas et altitudo animi, quae dicitur, ne, si irascamur aut
-intempestive accedentibus aut impudenter rogantibus, in morositatem
-inutilem et odiosam incidamus. Et tamen ita probanda est mansuetudo
-atque clementia, ut adhibeatur rei publicae causa severitas, sine qua
-administrari civitas non potest. Omnis autem et animadversio et
-castigatio contumelia vacare debet neque ad eius, qui punitur[77]
-aliquem aut verbis castigat,[78] sed ad rei publicae utilitatem referri.
-
-*89* Cavendum est etiam, ne maior poena quam culpa sit, et ne isdem de
-causis alii plectantur, alii ne appellentur quidem. Prohibenda autem
-maxime est ira in puniendo; numquam enim, iratus qui accedet ad poenam,
-mediocritatem illam tenebit, quae est inter nimium et parum, quae placet
-Peripateticis, et recte placet, modo ne laudarent iracundiam et dicerent
-utiliter a natura datam. Illa vero omnibus in rebus repudianda est
-optandumque, ut ii, qui praesunt rei publicae, legum similes sint, quae
-ad puniendum non iracundia, sed aequitate dicuntur.
-
-[77] _punitur_ Nonius, Edd.; _punit_ a; _puniet_ A B H b c.
-
-[78] _castigat_ MSS.; _fatigat_ Nonius, Orelli.
 
 #Public administration must be free from#
 
@@ -2937,63 +1751,6 @@ laws, which are led to inflict punishment not by wrath but by justice.
 controlling one's feelings under an outward serenity of
 manner.
 
-*90* XXVI. Atque etiam in rebus prosperis et ad voluntatem nostram
-fluentibus superbiam magnopere, fastidium arrogantiamque fugiamus. Nam
-ut adversas res, sic secundas immoderate ferre levitatis est,
-praeclaraque est aequabilitas in omni vita et idem semper vultus
-eademque frons, ut de Socrate itemque[79] de C. Laelio accepimus.[80]
-Philippum quidem, Macedonum regem, rebus gestis et gloria superatum a
-filio, facilitate et humanitate video superiorem fuisse; itaque alter
-semper magnus, alter saepe turpissimus; ut recte praecipere videantur,
-qui monent, ut, quanto superiores simus, tanto nos geramus summissius.
-Panaetius quidem Africanum, auditorem et familiarem suum, solitum ait
-dicere, "ut equos propter crebras contentiones proeliorum ferocitate
-exsultantes domitoribus tradere soleant, ut iis[81] facilioribus possint
-uti, sic homines secundis rebus effrenatos sibique praefidentes tamquam
-in gyrum rationis et doctrinae duci oportere, ut perspicerent rerum
-humanarum imbecillitatem varietatemque fortunae."
-
-*91* Atque etiam in secundissimis rebus maxime est utendum consilio
-amicorum iisque maior etiam quam ante tribuenda auctoritas. Isdemque
-temporibus cavendum est, ne assentatoribus patefaciamus auris neve[82]
-adulari nos sinamus, in quo falli facile est; tales enim nos esse
-putamus, ut iure laudemur; ex quo nascuntur innumerabilia peccata, cum
-homines inflati opinionibus turpiter irridentur et in maximis versantur
-erroribus.
-
-Sed haec quidem hactenus.
-
-*92* Illud autem sic est iudicandum, maximas geri res et maximi animi ab
-iis,[83] qui res publicas regant, quod earum administratio latissime
-pateat ad plurimosque pertineat; esse autem magni animi et fuisse multos
-etiam in vita otiosa, qui aut investigarent aut conarentur magna quaedam
-seseque suarum rerum finibus continerent aut interiecti inter
-philosophos et eos, qui rem publicam administrarent, delectarentur re
-sua familiari non eam quidem omni ratione exaggerantes neque excludentes
-ab eius usu suos potiusque et amicis impertientes et rei publicae, si
-quando usus esset. Quae primum bene parta[84] sit nullo neque turpi
-quaestu neque odioso, deinde augeatur ratione, diligentia,
-parsimonia,[85] tum quam plurimis, modo dignis, se utilem praebeat nec
-libidini potius luxuriaeque quam liberalitati et beneficentiae pareat.
-
-Haec praescripta servantem licet magnifice, graviter animoseque vivere
-atque etiam simpliciter, fideliter,† vere hominum amice.
-
-[79] _itemque_ H^2 a, Edd.; _idemque_ A B H^1 L b c.
-
-[80] _accepimus_ B^2 a c, Edd.; _accipimus_ A B^1 H b.
-
-[81] _iis_ Edd.; _his_ MSS.
-
-[82] _neve_ Nonius, Edd.; _nec_ MSS.
-
-[83] _iis_ Edd.; _his_ MSS.
-
-[84] _parta_ B^1, Edd.; _parata_ A B^2 H L a b c.
-
-[85] _deinde ... parsimonia_ Edd., after Unger, transpose; in
-MSS. it follows _tum ... pareat_.
-
 #Fortitude in prosperity.#
 
 *90* XXVI. Again, when fortune smiles and the stream of life flows
@@ -3054,48 +1811,6 @@ By observing these rules, one may live in magnificence, dignity, and
 independence, and yet in honour, truth and charity toward all.
 
 [Z] § 70.
-
-*93* XXVII. Sequitur, ut de una reliqua parte honestatis dicendum sit,
-in qua verecundia et quasi quidam ornatus vitae, temperantia et
-modestia omnisque sedatio perturbationum animi et rerum modus cernitur.
-Hoc loco continetur id, quod dici Latine decorum potest; Graece enim
-πρέπον dicitur. Huius[86] vis ea est, ut ab honesto non queat separari;
-*94* nam et, quod decet, honestum est et, quod honestum est, decet;
-qualis autem differentia sit honesti et decori, facilius intellegi quam
-explanari potest. Quicquid est enim, quod deceat, id tum apparet, cum
-antegressa est honestas. Itaque non solum in hac parte honestatis, de
-qua hoc loco disserendum est, sed etiam in tribus superioribus quid
-deceat apparet. Nam et ratione uti atque oratione prudenter et agere,
-quod agas, considerate omnique in re quid sit veri videre et tueri
-decet, contraque falli, errare, labi, decipi tam dedecet quam delirare
-et mente esse captum; et iusta omnia decora sunt, iniusta contra, ut
-turpia, sic indecora.
-
-Similis est ratio fortitudinis. Quod enim viriliter animoque magno fit,
-id dignum viro et decorum videtur, quod contra, id ut turpe, sic
-indecorum.
-
-*95* Quare pertinet quidem ad omnem honestatem hoc, quod dico, decorum,
-et ita pertinet, ut non recondita quadam ratione cernatur, sed sit in
-promptu. Est enim quiddam, idque intellegitur in omni virtute, quod
-deceat; quod cogitatione magis a virtute potest quam re separari. Ut
-venustas et pulchritudo corporis secerni non potest a valetudine, sic
-hoc, de quo loquimur, decorum totum illud quidem est cum virtute
-confusum, sed mente et cogitatione distinguitur.
-
-*96* Est autem eius discriptio[87] duplex; nam et generale quoddam
-decorum intellegimus, quod in omni honestate versatur, et aliud huic
-subiectum, quod pertinet ad singulas partes honestatis. Atque illud
-superius sic fere definiri solet: decorum id esse, quod consentaneum sit
-hominis excellentiae in eo, in quo natura eius a reliquis animantibus
-differat. Quae autem pars subiecta generi est, eam sic definiunt, ut id
-decorum velint esse, quod ita naturae consentaneum sit, ut in eo
-moderatio et temperantia appareat cum specie quadam liberali.
-
-[86] _dicitur. Huius_ Edd.; _dicitur decorum. huius_ MSS.
-
-[87] _discriptio_ b, Edd.; _descriptio_ A B H a; _distinctio_
-L c.
 
 #D. Temperance.#
 
@@ -3160,72 +1875,11 @@ rendered by 'proper,' as a noun, by 'propriety.'
 
 #Cic., Or. xxii, 71#
 
-*97* XXVIII. Haec ita intellegi possumus existimare ex eo decoro, quod
-poëtae sequuntur; de quo alio loco plura dici solent. Sed tum[88]
-servare illud poëtas, quod deceat, dicimus, cum id, quod quaque persona
-dignum est, et fit et dicitur; ut, si Aeacus aut Minos diceret:
-
 #Attius, Atreus, Ribbeck^2, 203#
 
 óderint, dum métuant,
 
-aut:
-
 #Ibid., 226#
-
-natís sepulchro ipse ést parens,
-
-indecorum videretur, quod eos fuisse iustos accepimus; at Atreo dicente
-plausus excitantur; est enim digna persona oratio. Sed poëtae, quid
-quemque deceat, ex persona iudicabunt; nobis autem personam imposuit
-ipsa natura magna cum excellentia praestantiaque animantium
-reliquarum.[89]
-
-*98* Quocirca poëtae in magna varietate personarum, etiam vitiosis quid
-conveniat et quid deceat, videbunt, nobis autem cum a natura
-constantiae, moderationis, temperantiae, verecundiae partes datae sint,
-cumque eadem natura doceat non neglegere, quem ad modum nos adversus
-homines geramus, efficitur, ut et illud, quod ad omnem honestatem
-pertinet, decorum quam late fusum sit, appareat et hoc, quod spectatur
-in uno quoque genere virtutis. Ut enim pulchritudo corporis apta
-compositione membrorum movet oculos et delectat hoc ipso, quod inter se
-omnes partes cum quodam lepore consentiunt, sic hoc decorum, quod elucet
-in vita, movet approbationem eorum, quibuscum vivitur, ordine et
-constantia et moderatione dictorum omnium atque factorum.
-
-*99* Adhibenda est igitur quaedam reverentia adversus homines et optimi
-cuiusque et reliquorum. Nam neglegere, quid de se quisque sentiat, non
-solum arrogantis est, sed etiam omnino dissoluti. Est autem, quod
-differat in hominum ratione habenda inter iustitiam et verecundiam.
-Iustitiae partes sunt non violare homines, verecundiae non offendere; in
-quo maxime vis perspicitur decori.
-
-His igitur expositis, quale sit id, quod decere dicimus, intellectum
-puto.
-
-*100* Officium autem, quod ab eo ducitur, hanc primum habet viam, quae
-deducit ad convenientiam conservationemque naturae; quam si sequemur
-ducem, numquam aberrabimus sequemurque et id, quod acutum et perspicax
-natura est, et id, quod ad hominum consociationem accommodatum, et id,
-quod vehemens atque forte. Sed maxima vis decori in hac inest parte, de
-qua disputamus; neque enim solum corporis, qui ad naturam apti sunt, sed
-multo etiam magis animi motus probandi, qui item ad naturam accommodati
-sunt.
-
-*101* Duplex est enim vis animorum atque natura;[90] una pars in
-appetitu posita est, quae est ὁρμή Graece, quae hominem huc et illuc
-rapit, altera in ratione, quae docet et[91] explanat, quid faciendum
-fugiendumque[92] sit. Ita fit, ut ratio praesit, appetitus obtemperet.
-
-[88] _Sed tum_ L c, Edd.; _sed ut tum_ A B H b.
-
-[89] _reliquarum_ A^1 B^1 H a b; _reliquorum_ A^2 B^2 c.
-
-[90] _natura_ Edd.; _naturae_ MSS.
-
-[91] _et_ L c, Edd.; not in A B H b.
-
-[92] _fugiendumque_ A B H a b; _fugiendumve_ L c p.
 
 #Poetic propriety.#
 
@@ -3301,60 +1955,6 @@ way and that; the other is reason, which teaches and explains what
 should be done and what should be left undone. The result is that reason
 commands, appetite obeys.
 
-XXIX. Omnis autem actio vacare debet temeritate et neglegentia nec vero
-agere quicquam, cuius non possit causam probabilem reddere; haec est
-enim fere discriptio[93] officii.
-
-*102* Efficiendum autem est, ut appetitus rationi oboediant eamque neque
-praecurrant nec propter pigritiam aut ignaviam deserant sintque
-tranquilli atque omni animi perturbatione careant; ex quo elucebit omnis
-constantia omnisque moderatio. Nam qui appetitus longius evagantur et
-tamquam exsultantes sive cupiendo sive fugiendo non satis a ratione
-retinentur, ii[94] sine dubio finem et modum transeunt; relinquunt enim
-et abiciunt oboedientiam nec rationi parent, cui sunt subiecti lege
-naturae; a quibus non modo animi perturbantur, sed etiam corpora. Licet
-ora ipsa cernere iratorum aut eorum, qui aut libidine aliqua aut metu
-commoti sunt aut voluptate nimia gestiunt; quorum omnium voltus, voces,
-motus statusque mutantur.
-
-*103* Ex quibus illud intellegitur, ut ad officii formam revertamur,
-appetitus omnes contrahendos sedandosque esse excitandamque
-animadversionem et diligentiam, ut ne quid temere ac fortuito,
-inconsiderate neglegenterque agamus. Neque enim ita generati a natura
-sumus, ut ad ludum et iocum facti esse videamur, ad severitatem potius
-et ad quaedam studia graviora atque maiora. Ludo autem et ioco uti illo
-quidem licet, sed sicut somno et quietibus ceteris tum, cum gravibus
-seriisque rebus satis fecerimus. Ipsumque genus iocandi non profusum nec
-immodestum, sed ingenuum et facetum esse debet. Ut enim pueris non omnem
-ludendi licentiam damus, sed eam, quae ab honestatis actionibus non sit
-aliena, sic in ipso ioco aliquod probi ingenii lumen eluceat. *104*
-Duplex omnino est iocandi genus, unum illiberale, petulans, flagitiosum,
-obscenum, alterum elegans, urbanum, ingeniosum, facetum. Quo genere non
-modo Plautus noster et Atticorum antiqua comoedia, sed etiam
-philosophorum Socraticorum libri referti sunt, multaque multorum facete
-dicta, ut ea, quae a sene Catone collecta sunt, quae vocant ἀποφθέγματα.
-Facilis igitur est distinctio ingenui et illiberalis ioci. Alter est, si
-tempore fit, ut si remisso animo, _gravissimo_ homine dignus,[95] alter
-ne libero quidem, si rerum turpitudini adhibetur verborum[96]
-obscenitas.
-
-Ludendi etiam est quidam modus retinendus, ut ne nimis omnia profundamus
-elatique voluptate in aliquam turpitudinem delabamur. Suppeditant autem
-et campus noster et studia venandi honesta exempla ludendi.
-
-[93] _discriptio_ B H, Bt.^1; _descriptio_ A L a b c, Bt.^2,
-Müller, Heine.
-
-[94] _ii_ Edd.; _hi_ a; _hii_ H; _hij_ c.
-
-[95] _fit, ut si remisso animo, gravissimo homine dignus_
-Ed.; _fit, ut_ (_et_ c) _remisso animo homine dignus_ MSS.;
-_fit aut si rem. an. magno homine_ Madvig; _fit, ut sit
-remissio animo, homine dignus_ Unger.
-
-[96] _turpitudini adhibetur verborum_ A B H a b, Edd.;
-_turpitudo adhibetur et verborum_ L c.
-
 XXIX. Again, every action ought to be free from undue haste or
 carelessness; neither ought we to do anything for which we cannot assign
 a reasonable motive; for in these words we have practically a definition
@@ -3404,88 +2004,6 @@ Then, too, certain bounds must be observed in our amusements and we must
 be careful not to carry things too far and, swept away by our passions,
 lapse into some shameful excess. Our Campus, however, and the amusements
 of the chase are examples of wholesome recreation.
-
-*105* XXX. Sed pertinet ad omnem officii quaestionem semper in promptu
-habere, quantum natura hominis pecudibus reliquisque beluis antecedat;
-illae nihil sentiunt nisi voluptatem ad eamque feruntur omni impetu,
-hominis autem mens discendo alitur et cogitando, semper aliquid aut
-anquirit aut agit videndique et audiendi delectatione ducitur. Quin
-etiam, si quis est paulo ad voluptates propensior, modo ne sit ex
-pecudum genere (sunt enim quidam homines non re, sed nomine), sed si
-quis est paulo erectior, quamvis voluptate capiatur, occultat et
-dissimulat appetitum voluptatis propter verecundiam.
-
-*106* Ex quo intellegitur corporis voluptatem non satis esse dignam
-hominis praestantia, eamque contemni et reici oportere; sin sit
-quispiam, qui aliquid tribuat voluptati, diligenter ei tenendum esse
-eius fruendae modum. Itaque victus cultusque corporis ad valetudinem
-referatur et ad vires, non ad voluptatem. Atque etiam si considerare
-volumus,[97] quae sit in natura excellentia et dignitas, intellegemus,
-quam sit turpe diffluere luxuria et delicate ac molliter vivere quamque
-honestum parce, continenter, severe, sobrie.
-
-*107* Intellegendum etiam est duabus quasi nos a natura indutos esse
-personis; quarum una communis est ex eo, quod omnes participes sumus
-rationis praestantiaeque eius, qua antecellimus bestiis, a qua omne
-honestum decorumque trahitur, et ex qua ratio inveniendi officii
-exquiritur, altera autem, quae proprie singulis est tributa. Ut enim in
-corporibus magnae dissimilitudines sunt (alios videmus velocitate ad
-cursum, alios viribus ad luctandum valere, itemque in formis aliis
-dignitatem inesse, aliis venustatem), sic in animis exsistunt maiores
-etiam varietates. *108* Erat in L. Crasso, in L. Philippo multus lepos,
-maior etiam magisque de industria in C. Caesare L. filio; at isdem
-temporibus in M. Scauro et in M. Druso adulescente singularis severitas,
-in C. Laelio multa hilaritas, in eius familiari Scipione ambitio maior,
-vita tristior. De Graecis autem dulcem et facetum festivique sermonis
-atque in omni oratione simulatorem, quem εἴρωνα Graeci[98] nominarunt,
-Socratem accepimus, contra Pythagoram et Periclem summam auctoritatem
-consecutos sine ulla hilaritate. Callidum Hannibalem ex Poenorum, ex
-nostris ducibus Q. Maximum accepimus, facile celare, tacere,
-dissimulare, insidiari, praeripere hostium consilia. In quo genere
-Graeci Themistoclem et Pheraeum Iasonem ceteris anteponunt; in primisque
-versutum et callidum factum Solonis, qui, quo et tutior eius vita esset
-et plus aliquanto rei publicae prodesset, furere se simulavit.
-
-*109* Sunt his alii multum dispares, simplices et aperti, qui nihil ex
-occulto, nihil de insidiis agendum putant, veritatis cultores, fraudis
-inimici, itemque alii, qui[99] quidvis perpetiantur, cuivis deserviant,
-dum, quod velint, consequantur, ut Sullam et M. Crassum videbamus. Quo
-in genere versutissimum et patientissimum Lacedaemonium Lysandrum
-accepimus, contraque Callicratidam, qui praefectus classis proximus post
-Lysandrum fuit; itemque in sermonibus alium [quemque], quamvis[100]
-praepotens sit, efficere, ut unus de multis esse videatur; quod in
-Catulo, et in patre et in filio, itemque in Q. Mucio† Mancia[101]
-vidimus. Audivi ex maioribus natu hoc idem fuisse in P. Scipione Nasica,
-contraque patrem eius, illum qui Ti. Gracchi conatus perditos
-vindicavit, nullam comitatem habuisse sermonis [ne Xenocratem quidem,
-severissimum philosophorum,][102] ob eamque rem ipsam magnum et clarum
-fuisse.
-
-Innumerabiles aliae dissimilitudines sunt naturae morumque, minime tamen
-vituperandorum.
-
-[97] _volumus_ A B^1 H^1 b; _volemus_ B^2 H^2, Bt., Heine;
-_velimus_ L; _vellemus_ c.
-
-[98] εἴρωνα _Graeci_ Edd.; _ironia graeci_ A B H b; _ironian
-graeci_ a; _greci mironian_ c.
-
-[99] _qui_ A L c; _si_ B H a b.
-
-[100] _alium_ [_quemque_] _quamvis_ Ed.; _alium quemque
-quamvis_ MSS.; _quemque alium quamvis_ p; _aliquem, quamvis_
-Pearce, Bt.; _alium quamvis_, Facciolati, Heine.
-
-[101] _et in patre et in filio_ A B b, Edd.; _et in patre et
-filio_ H a; _et patre et filio_ L c. _itemque_ B H^2, Bt.^1,
-Müller; _idemque_ A H^1 L a b c, Bt.^2, Heine. _in Q
-Mucio_† _Mancia_ Heine, Bt.^2; _in q. mucio mantia_ B; _in
-q. mutio mancia_ H L c; _in q. mutio mantia_ a; _inque mucio
-mantia_ b; _inque mutio mantia_ A; _in q. muntio mantia_ p;
-_in Q. Mucio, Mancia_ Müller.
-
-[102] _ne_ (_nec_ c) _Xenocratem_ (_-n_ L c) ...
-_philosophorum_ MSS.; bracketed by Heumann, Edd.
 
 *105* XXX. But it is essential to every inquiry about duty that we keep
 before our eyes how far superior man is by nature to cattle and other
@@ -3564,80 +2082,6 @@ very fact he rose to greatness and fame.
 Countless other dissimilarities exist in natures and characters, and
 they are not in the least to be criticized.
 
-*110* XXXI. Admodum autem tenenda sunt sua cuique non vitiosa, sed tamen
-propria, quo facilius decorum illud, quod quaerimus, retineatur. Sic
-enim est faciendum, ut contra universam naturam nihil contendamus, ea
-tamen conservata propriam nostram sequamur, ut, etiamsi sint alia
-graviora atque meliora, tamen nos studia nostra nostrae naturae
-regula[103] metiamur; neque enim attinet naturae repugnare nec quicquam
-sequi, quod assequi non queas. Ex quo magis emergit, quale sit decorum
-illud, ideo quia nihil decet invita Minerva, ut aiunt, id est adversante
-et repugnante natura.
-
-*111* Omnino si quicquam est decorum, nihil est profecto magis quam
-aequabilitas _cum_[104] universae vitae, tum singularum actionum, quam
-conservare non possis, si aliorum naturam imitans omittas tuam. Ut enim
-sermone eo debemus uti, qui innatus[105] est nobis, ne, ut quidam,
-Graeca verba inculcantes iure optimo rideamur, sic in actiones omnemque
-vitam nullam discrepantiam conferre debemus. *112* Atque haec
-differentia naturarum tantam habet vim, ut non numquam mortem sibi ipse
-consciscere alius debeat, alius [in eadem causa] non debeat.[106] Num
-enim alia in causa M. Cato fuit, alia ceteri, qui se in Africa Caesari
-tradiderunt? Atqui ceteris forsitan vitio datum esset, si se
-interemissent, propterea quod lenior eorum vita et mores fuerant
-faciliores, Catoni cum incredibilem tribuisset natura gravitatem eamque
-ipse perpetua constantia roboravisset semperque in proposito susceptoque
-consilio permansisset, moriendum potius quam tyranni vultus aspiciendus
-fuit.
-
-*113* Quam multa passus est Ulixes in illo errore diuturno, cum et
-mulieribus, si Circe et Calypso mulieres appellandae sunt, inserviret et
-in omni sermone omnibus affabilem [et iucundum][107] esse se vellet!
-domi vero etiam contumelias servorum ancillarumque pertulit, ut ad id
-aliquando, quod cupiebat, veniret. At Aiax, quo animo traditur, milies
-oppetere mortem quam illa perpeti maluisset.
-
-Quae contemplantes expendere oportebit, quid quisque habeat sui, eaque
-moderari nec velle experiri, quam se aliena deceant; id enim maxime
-quemque decet, quod est cuiusque maxime suum.
-
-*114* _Suum_[108] quisque igitur noscat ingenium acremque se et bonorum
-et vitiorum suorum iudicem praebeat, ne scaenici plus quam nos videantur
-habere prudentiae. Illi enim non optimas, sed sibi accommodatissimas
-fabulas eligunt; qui voce freti sunt, Epigonos Medumque, qui gestu,
-Melanippam, Clytemnestram, semper Rupilius, quem ego memini, Antiopam,
-non saepe Aesopus Aiacem. Ergo histrio hoc videbit in scaena, non
-videbit sapiens vir in vita?
-
-Ad quas igitur res aptissimi erimus, in iis potissimum elaborabimus; sin
-aliquando necessitas nos ad ea detruserit, quae nostri ingenii non
-erunt, omnis adhibenda erit cura, meditatio, diligentia, ut ea si non
-decore, at quam minime indecore facere possimus; nec tam[109] est
-enitendum, ut bona, quae nobis data non sint, sequamur, quam ut vitia
-fugiamus.
-
-[103] _studia nostra nostrae naturae regula_ Ernesti, Bt.,
-Heine; _studia nostra nostra_ (corr. ex _nostri_) _regula_ A;
-_studia nostrae regulae_ B; _studia nostrae regulā_ H;
-_studia nostra regula_ a; _studia_ (corr. in _studii_)
-_nostri regula_ b; _studia nostra naturae regula_ L c,
-Nonius; _studia nostrae naturae regula_ Müller.
-
-[104] _cum_ Lambinus, Edd.; not in MSS.
-
-[105] _innatus_ Bt., Edd.; _notus_ MSS.
-
-[106] _alius in eadem causa non debeat_ L c p, Müller, Heine;
-not in A B H b; _alius non debeat_ a; _alius_ [_in eadem
-causa_] _non debeat_ Bt., Ed.
-
-[107] _et iocundum_ L c p; not in A B H a b; [_et iucundum_]
-Bt., Ed.
-
-[108] _Suum_ Orelli; not in MSS.; but p has _ingenium suum_.
-
-[109] _tam_ L c, Edd.; _tam_ (i.e. _tamen_) A B H b.
-
 #Conduct must accord with individual endowments.#
 
 *110* XXXI. Everybody, however, must resolutely hold fast to his own
@@ -3711,62 +2155,7 @@ possible; and we need not strive so hard to attain to points of
 excellence that have not been vouchsafed to us as to correct the faults
 we have.
 
-*115* XXXII. Ac duabus iis personis, quas supra dixi, tertia adiungitur,
-quam casus aliqui aut tempus imponit; quarta etiam, quam nobismet ipsi
-iudicio nostro accommodamus. Nam regna, imperia, nobilitas, honores,
-divitiae,[110] opes eaque, quae sunt his contraria, in casu sita
-temporibus gubernantur; ipsi autem gerere quam personam velimus, a
-nostra voluntate proficiscitur. Itaque se alii ad philosophiam, alii ad
-ius civile, alii ad eloquentiam applicant, ipsarumque virtutum in alia
-alius mavult excellere.
-
-*116* Quorum vero patres aut maiores aliqua gloria praestiterunt, ii
-student plerumque eodem in genere laudis excellere, ut Q. Mucius P. f.
-in iure civili, Pauli filius Africanus in re militari. Quidam autem ad
-eas laudes, quas a patribus acceperunt, addunt aliquam suam, ut hic idem
-Africanus eloquentia cumulavit bellicam gloriam; quod idem fecit
-Timotheus Cononis filius, qui cum belli laude non inferior fuisset quam
-pater, ad eam laudem doctrinae et ingenii gloriam adiecit. Fit autem
-interdum, ut non nulli omissa imitatione maiorum suum quoddam institutum
-consequantur, maximeque in eo plerumque elaborant ii,[111] qui magna
-sibi proponunt obscuris orti maioribus.
-
-*117* Haec igitur omnia, cum quaerimus, quid deceat, complecti animo et
-cogitatione debemus; in primis autem constituendum est, quos nos et
-quales esse velimus et in quo genere vitae, quae deliberatio est omnium
-difficillima. Ineunte enim adulescentia, cum est maxima imbecillitas
-consilii, tum id sibi quisque genus aetatis degendae constituit, quod
-maxime adamavit; itaque ante implicatur aliquo certo genere cursuque
-vivendi, quam potuit, quod optimum esset, iudicare.
-
 #Mem. II, i, 21-34#
-
-*118* Nam quod[112] Herculem Prodicus[113] dicit, ut est apud
-Xenophontem, cum primum pubesceret, quod tempus a natura ad deligendum,
-quam quisque viam vivendi sit ingressurus, datum est, exisse in
-solitudinem atque ibi sedentem diu secum multumque dubitasse, cum duas
-cerneret vias, unam Voluptatis, alteram Virtutis, utram ingredi melius
-esset, hoc Herculi "Iovis satu edito" potuit fortasse contingere, nobis
-non item,[114] qui imitamur, quos cuique visum est, atque ad eorum
-studia institutaque impellimur; plerumque autem parentium praeceptis
-imbuti ad eorum consuetudinem moremque deducimur; alii multitudinis
-iudicio feruntur, quaeque maiori parti pulcherrima videntur, ea maxime
-exoptant; non nulli tamen sive felicitate quadam sive bonitate naturae
-sine[115] parentium disciplina rectam vitae secuti sunt viam.
-
-[110] _nobilitas, h., divitiae_ Unger; _nobilitatem, h.,
-divitias_ MSS.
-
-[111] _ii_ Edd.; _hii_ A H b; _hij_ c; _hi_ B a.
-
-[112] _Nam quod_ L c, Edd.; _namque_ A B H a b.
-
-[113] _Prodicus_ Manutius, Edd.; _prodigus_ L c; _prodigum_ B
-H b.
-
-[114] _item_ Edd.; _idem_ MSS.
-
-[115] _sine_ Stuerenburg, Edd. plerique; _sive_ MSS., Bt.^1
 
 *115* XXXII. To the two above-mentioned characters[AB] is added a third,
 which some chance or some circumstance imposes, and a fourth also, which
@@ -3827,53 +2216,6 @@ without parental guidance.
 
 [AB] The universal and the individual; § 107.
 
-*119* XXXIII. Illud autem maxime rarum genus est eorum, qui aut
-excellenti[116] ingenii magnitudine aut praeclara eruditione atque
-doctrina aut utraque re ornati spatium etiam deliberandi habuerunt, quem
-potissimum vitae cursum sequi vellent; in qua deliberatione ad suam
-cuiusque naturam consilium est omne revocandum. Nam cum in omnibus, quae
-aguntur, ex eo, quo modo quisque natus est, ut supra dictum est, quid
-deceat, exquirimus, tum in tota vita constituenda multo est ei rei[117]
-cura maior adhibenda, ut constare in perpetuitate vitae possimus
-nobismet ipsis nec in ullo officio claudicare.
-
-*120* Ad hanc autem rationem quoniam maximam vim natura habet, fortuna
-proximam, utriusque omnino habenda ratio est in deligendo genere vitae,
-sed naturae magis; multo enim et firmior est et constantior, ut fortuna
-non numquam tamquam ipsa mortalis cum immortali natura pugnare videatur.
-Qui igitur ad naturae suae non vitiosae genus consilium vivendi omne
-contulerit, is constantiam teneat (id enim maxime decet), nisi forte se
-intellexerit errasse in deligendo genere vitae. Quod si acciderit
-(potest autem accidere), facienda morum institutorumque mutatio est. Eam
-mutationem si tempora adiuvabunt, facilius commodiusque faciemus; sin
-minus, sensim erit pedetemptimque facienda, ut amicitias, quae minus
-delectent et minus probentur, magis decere censent sapientes sensim
-diluere quam repente praecidere. *121* Commutato autem genere vitae omni
-ratione curandum est, ut id bono consilio fecisse videamur.
-
-Sed quoniam paulo ante dictum est imitandos esse maiores, primum illud
-exceptum sit, ne vitia sint imitanda, deinde si natura non feret, ut
-quaedam imitari possit[118] (ut superioris filius Africani, qui hunc
-Paulo natum adoptavit, propter infirmitatem valetudinis non tam potuit
-patris similis esse, quam ille fuerat sui); si igitur non poterit sive
-causas defensitare sive populum contionibus tenere sive bella gerere,
-illa tamen praestare debebit, quae erunt in ipsius potestate, iustitiam,
-fidem, liberalitatem, modestiam, temperantiam, quo minus ab eo id, quod
-desit, requiratur. Optima autem hereditas a patribus traditur liberis
-omnique patrimonio praestantior gloria virtutis rerumque gestarum, cui
-dedecori esse nefas [et vitium][119] iudicandum est.
-
-[116] _excellenti_ L c; _excellente_ A B H a b; _excellentis_
-p.
-
-[117] _est ei rei_ Gruter, Edd.; _est eius rei_ L c p; _est
-rei_ A B H b; _est ei_ a.
-
-[118] _possit_ J. M. Heusinger, Edd.; _possint_ MSS.
-
-[119] _et_ (_sed_ b) _vitium_ A B H a b; [_et vitium_] Bt.^2,
-Ed.; _et vicium_ c; _et impium_ L p, Bt.^1, Heine.
-
 *119* XXXIII. There is one class of people that is very rarely met with:
 it is composed of those who are endowed with marked natural ability, or
 exceptional advantages of education and culture, or both, and who also
@@ -3922,59 +2264,6 @@ respects may be less conspicuous. The noblest heritage, however, that is
 handed down from fathers to children, and one more precious than any
 inherited wealth, is a reputation for virtue and worthy deeds; and to
 dishonour this must be branded as a sin and a shame.
-
-*122* XXXIV. Et quoniam officia non eadem disparibus aetatibus
-tribuuntur aliaque sunt iuvenum, alia seniorum, aliquid etiam de hac
-distinctione dicendum est.
-
-Est igitur adulescentis maiores natu vereri exque iis deligere optimos
-et probatissimos, quorum consilio atque auctoritate nitatur; ineuntis
-enim aetatis inscitia senum constituenda et regenda prudentia est.
-Maxime autem haec aetas a libidinibus arcenda est exercendaque in labore
-patientiaque et animi et corporis, ut eorum et in bellicis et in
-civilibus officiis vigeat industria. Atque etiam cum relaxare animos et
-dare se iucunditati volent, caveant intemperantiam, meminerint
-verecundiae, quod erit facilius, si _ne_ in eius modi quidem rebus
-maiores natu nolent[120] interesse.
-
-*123* Senibus autem labores corporis minuendi, exercitationes animi
-etiam augendae videntur; danda vero opera, ut et amicos et iuventutem et
-maxime rem publicam consilio et prudentia quam plurimum adiuvent. Nihil
-autem magis cavendum est senectuti, quam ne languori se desidiaeque
-dedat; luxuria vero cum omni aetati turpis, tum senectuti foedissima
-est; sin autem etiam libidinum intemperantia accessit, duplex malum est,
-quod et ipsa senectus dedecus concipit et facit adulescentium
-impudentiorem intemperantiam.
-
-*124* Ac ne illud quidem alienum est, de magistratuum, de privatorum,
-[de civium,][121] de peregrinorum officiis dicere.
-
-Est igitur proprium munus magistratus intellegere se gerere personam
-civitatis debereque eius dignitatem et decus sustinere, servare leges,
-iura discribere,[122] ea fidei suae commissa meminisse.
-
-Privatum autem oportet aequo et pari cum civibus iure vivere neque
-summissum et abiectum neque se efferentem,[123] tum in re publica ea
-velle, quae tranquilla et honesta sint; talem enim solemus et sentire
-bonum civem et dicere.
-
-*125* Peregrini autem atque incolae officium est nihil praeter suum
-negotium agere, nihil de alio anquirere minimeque esse in aliena re
-publica curiosum.
-
-Ita fere officia reperientur, cum quaeretur, quid deceat, et quid aptum
-sit personis, temporibus, aetatibus. Nihil est autem, quod tam deceat,
-quam in omni re gerenda consilioque capiendo servare constantiam.
-
-[120] _si ne in ... nolent_ Stuerenburg, Edd.; _si in ...
-nolint_ A B H a b; _si in ... volent_ L c; _si in ... non
-nolint_ Lambinus.
-
-[121] _de civium_ MSS.; [_de civium_] Hieron., Wolff, Edd.
-
-[122] _discribere_ Bt., Ed., Heine; _describere_ MSS.
-
-[123] _efferentem_ A H^1 L a b c; _ecferentem_ B H^2, Ed.
 
 *122* XXXIV. Since, too, the duties that properly belong to different
 times of life are not the same, but some belong to the young, others to
@@ -4046,60 +2335,6 @@ character, circumstance, and age. But there is nothing so essentially
 proper as to maintain consistency in the performance of every act and in
 the conception of every plan.
 
-*126* XXXV. Sed quoniam decorum illud in omnibus factis, dictis, in
-corporis denique motu et statu cernitur idque positum est in tribus
-rebus, formositate, ordine, ornatu ad actionem apto, difficilibus ad
-eloquendum, sed satis erit intellegi, in his autem tribus continetur
-cura etiam illa, ut probemur iis, quibuscum apud quosque vivamus, his
-quoque de rebus pauca dicantur.
-
-Principio corporis nostri magnam natura ipsa videtur habuisse rationem,
-quae formam nostram reliquamque figuram, in qua esset species honesta,
-eam posuit in promptu, quae partes autem corporis ad naturae
-necessitatem datae aspectum essent deformem habiturae atque foedum,[124]
-eas contexit atque abdidit. *127* Hanc naturae tam diligentem fabricam
-imitata est hominum verecundia. Quae enim natura occultavit, eadem
-omnes, qui sana mente sunt, removent ab oculis ipsique necessitati dant
-operam ut quam occultissime pareant; quarumque partium corporis usus
-sunt necessarii, eas neque partes neque earum usus suis nominibus
-appellant; quodque facere turpe non est,[125] modo occulte, id dicere
-obscenum est. Itaque nec actio rerum illarum aperta petulantia vacat nec
-orationis obscenitas.
-
-*128* Nec vero audiendi sunt Cynici, aut si qui fuerunt Stoici paene
-Cynici, qui reprehendunt et irrident, quod ea, quae turpia[126] non sint,
-verbis flagitiosa ducamus, illa autem, quae turpia[127] sint, nominibus
-appellemus suis. Latrocinari, fraudare, adulterare re[128] turpe est,
-sed dicitur non obscene; liberis dare operam re honestum est, nomine
-obscenum; pluraque in eam sententiam ab eisdem contra verecundiam
-disputantur. Nos autem naturam sequamur et ab omni, quod abhorret ab
-oculorum auriumque approbatione, fugiamus; status incessus, sessio
-accubitio, vultus oculi manuum motus teneat illud decorum.
-
-*129* Quibus in rebus duo maxime sunt fugienda, ne quid effeminatum aut
-molle et ne quid durum aut rusticum sit. Nec vero histrionibus
-oratoribusque concedendum est, ut iis haec apta sint, nobis dissoluta.
-Scaenicorum quidem mos tantam habet vetere disciplina verecundiam, ut in
-scaenam sine subligaculo prodeat nemo; verentur enim, ne, si quo casu
-evenerit, ut corporis partes quaedam aperiantur, aspiciantur non decore.
-Nostro quidem more cum parentibus puberes filii, cum soceris generi non
-lavantur. Retinenda igitur est huius generis verecundia, praesertim
-natura ipsa magistra et duce.
-
-[124] _foedum_ Klotz, Müller, Heine; _formam_ A B H a b;
-_turpem_ L c, Bt.
-
-[125] _turpe non est_ a, Edd.; _non turpe est_ L; _non turpe_
-(om. _est_) c; _turpe non turpe est_ A B H b (the first
-_turpe_ crossed out in A B).
-
-[126] _quae turpia_ B b, Edd.; _quae re turpia_, L c; _quae
-... autem_ om. H.
-
-[127] _quae turpia_ B H b, Edd.; _quae re turpia_ L c.
-
-[128] _re_ B H, Edd.; not in A L b c p.
-
 #Propriety in bodily actions.#
 
 *126* XXXV. But the propriety to which I refer shows itself also in
@@ -4153,37 +2388,6 @@ sons do not bathe with their fathers, nor sons-in-law with their
 fathers-in-law. We must, therefore, keep to the path of this sort of
 modesty, especially when Nature is our teacher and guide.
 
-*130* XXXVI. Cum autem pulchritudinis duo genera sint, quorum in altero
-venustas sit, in altero dignitas, venustatem muliebrem ducere debemus,
-dignitatem virilem. Ergo et a forma removeatur omnis viro non dignus
-ornatus, et huic simile vitium in gestu motuque caveatur. Nam et
-palaestrici motus sunt saepe odiosiores, et histrionum non nulli gestus
-ineptiis non vacant,[129] et in utroque genere quae sunt recta et
-simplicia, laudantur. Formae autem dignitas coloris bonitate tuenda est,
-color exercitationibus corporis. Adhibenda praeterea munditia est non
-odiosa neque exquisita nimis, tantum quae fugiat agrestem et inhumanam
-neglegentiam. Eadem ratio est habenda vestitus, in quo, sicut in
-plerisque rebus, mediocritas optima est.
-
-*131* Cavendum autem est, ne aut tarditatibus utamur _in_[130] ingressu
-mollioribus, ut pomparum ferculis similes esse videamur, aut in
-festinationibus suscipiamus nimias celeritates, quae cum fiunt,
-anhelitus moventur, vultus mutantur, ora torquentur; ex quibus magna
-significatio fit non adesse constantiam. Sed multo etiam magis
-elaborandum est, ne animi motus a natura recedant; quod assequemur, si
-cavebimus, ne in perturbationes atque exanimationes incidamus, et si
-attentos animos ad decoris conservationem tenebimus.
-
-*132* Motus autem animorum duplices sunt, alteri cogitationis, alteri
-appetitus; cogitatio in vero exquirendo maxime versatur, appetitus
-impellit ad agendum. Curandum est igitur, ut cogitatione ad res quam
-optimas utamur, appetitum rationi oboedientem praebeamus.
-
-[129] _ineptiis non vacant_ A B H a b; _inepti non vacant
-offensione_ L c p.
-
-[130] _in_ Edd.; not in MSS.
-
 #Propriety:#
 
 #(1) in outward appearance;#
@@ -4226,56 +2430,6 @@ to keep our impulses under the control of reason.
 athletics, adopted by the Romans became a place of exercise
 where the youth were trained in gestures and attitudes, a
 nursery of foppish manners.
-
-XXXVII. Et quoniam magna vis orationis est, eaque duplex, altera
-contentionis, altera sermonis, contentio disceptationibus tribuatur
-iudiciorum, contionum, senatus, sermo in circulis, disputationibus,
-congressionibus familiarium versetur, sequatur etiam convivia.
-Contentionis praecepta rhetorum sunt, nulla sermonis, quamquam haud scio
-an possint haec quoque esse. Sed discentium studiis inveniuntur
-magistri, huic autem qui studeant, sunt nulli, rhetorum turba referta
-omnia; quamquam, quae[131] verborum sententiarumque praecepta sunt,
-eadem ad sermonem pertinebunt.
-
-*133* Sed cum orationis indicem vocem habeamus, in voce autem duo
-sequamur, ut clara sit, ut suavis, utrumque omnino a natura petundum
-est, verum alterum exercitatio augebit, alterum imitatio presse
-loquentium et leniter.
-
-Nihil fuit in Catulis, ut eos exquisito iudicio putares uti litterarum,
-quamquam erant litterati; sed et alii; hi autem optime uti lingua Latina
-putabantur; sonus erat dulcis, litterae neque expressae neque oppressae,
-ne aut obscurum esset aut putidum, sine contentione vox nec languens nec
-canora. Uberior oratio L. Crassi nec minus faceta, sed bene loquendi de
-Catulis opinio non minor. Sale vero et facetiis Caesar, Catuli patris
-frater, vicit omnes, ut in illo ipso forensi genere dicendi contentiones
-aliorum sermone vinceret.
-
-In omnibus igitur his elaborandum est, si in omni re quid deceat
-exquirimus.
-
-*134* Sit ergo hic sermo, in quo Socratici maxime excellunt, lenis
-minimeque pertinax, insit in eo lepos; nec vero, tamquam in possessionem
-suam venerit, excludat alios, sed cum reliquis in rebus, tum in sermone
-communi vicissitudinem non iniquam putet; ac videat in primis, quibus de
-rebus loquatur; si seriis, severitatem adhibeat, si iocosis, leporem; in
-primisque provideat, ne sermo vitium aliquod indicet inesse in moribus;
-quod maxime tum solet evenire, cum studiose de absentibus detrahendi
-causa aut per ridiculum aut severe maledice contumelioseque dicitur.
-
-*135* Habentur autem plerumque sermones aut de domesticis negotiis aut
-de re publica aut de artium studiis atque doctrina. Danda igitur opera
-est, ut, etiamsi aberrare ad alia coeperit, ad haec revocetur oratio,
-sed utcumque aderunt; neque enim isdem[132] de rebus nec omni tempore
-nec similiter delectamur. Animadvertendum est etiam, quatenus sermo
-delectationem habeat, et, ut incipiendi ratio fuerit, ita sit desinendi
-modus.
-
-[131] _quae_ A^2 c, Edd.; _quoniam_ (per compend.) A^1 B H a
-b.
-
-[132] _enim isdem_ (_hisdem_ B H) A B H b, Müller; _enim
-omnes isdem_ L c, most Edd.
 
 #Propriety in speech: oratory and conversation.#
 
@@ -4340,35 +2494,6 @@ at all times or in the same degree. We must observe, too, how far the
 conversation is agreeable and, as it had a reason for its beginning, so
 there should be a point at which to close it tactfully.
 
-*136* XXXVIII. Sed quo modo in omni vita rectissime praecipitur, ut
-perturbationes fugiamus, id est motus animi nimios rationi non
-optemperantes, sic eius modi motibus sermo debet vacare, ne aut ira
-exsistat aut cupiditas aliqua aut pigritia aut ignavia aut tale aliquid
-appareat, maximeque curandum est, ut eos, quibuscum sermonem conferemus,
-et vereri et diligere videamur.
-
-Obiurgationes etiam non numquam incidunt necessariae, in quibus utendum
-est fortasse et vocis contentione maiore et verborum gravitate acriore,
-id agendum etiam, ut ea facere videamur irati. Sed, ut ad urendum et
-secandum, sic ad hoc genus castigandi raro invitique veniemus nec umquam
-nisi necessario, si nulla reperietur alia medicina; sed tamen ira procul
-absit, cum qua nihil recte fieri, nihil considerate potest. *137* Magnam
-autem partem[133] clementi castigatione licet uti, gravitate tamen
-adiuncta, ut severitas adhibeatur et contumelia repellatur, atque etiam
-illud ipsum, quod acerbitatis habet obiurgatio, significandum est,
-ipsius id causa, qui obiurgetur, esse susceptum.
-
-Rectum est autem etiam in illis contentionibus, quae cum inimicissimis
-fiunt, etiamsi nobis indigna audiamus, tamen gravitatem retinere,
-iracundiam pellere. Quae enim cum aliqua perturbatione fiunt, ea nec
-constanter fieri possunt neque iis, qui adsunt, probari.
-
-Deforme etiam est de se ipsum praedicare falsa praesertim et cum
-irrisione audientium imitari militem gloriosum.
-
-[133] _magnam autem partem_ Lambinus, Edd.; _magna autem
-parte_ MSS.
-
 #Propriety of speech#
 
 *136* XXXVIII. But as we have a most excellent rule for every phase of
@@ -4411,69 +2536,7 @@ Braggart Captain."[AD]
 [AD] Like Pyrgopolinices in the _Miles Gloriosus_ of Plautus,
 or Thraso in the _Eunuchus_ of Terence.
 
-*138* XXXIX. Et quoniam omnia persequimur, volumus quidem certe,
-dicendum est etiam, qualem hominis honorati et principis domum placeat
-esse, cuius finis est usus,[134] ad quem accommodanda est aedificandi
-descriptio et tamen adhibenda commoditatis dignitatisque diligentia.
-
-Cn. Octavio, qui primus ex illa familia consul factus est, honori fuisse
-accepimus, quod praeclaram aedificasset in Palatio et plenam dignitatis
-domum; quae cum vulgo viseretur, suffragata domino, novo homini, ad
-consulatum putabatur; hanc Scaurus demolitus accessionem adiunxit
-aedibus. Itaque ille in suam domum consulatum primus attulit, hic, summi
-et clarissimi viri filius, in domum multiplicatam non repulsam solum
-rettulit, sed ignominiam etiam et[135] calamitatem. *139* Ornanda enim
-est dignitas domo, non ex domo tota quaerenda, nec domo dominus, sed
-domino domus honestanda est, et, ut in ceteris habenda ratio non sua
-solum, sed etiam aliorum, sic in domo clari hominis, in quam et hospites
-multi recipiendi et admittenda hominum cuiusque modi multitudo,
-adhibenda cura est laxitatis; aliter ampla domus dedecori saepe domino
-fit,[136] si est in ea solitudo, et maxime, si aliquando alio domino
-solita est frequentari. Odiosum est enim, cum a praetereuntibus dicitur:
-
 #Inc. inc. fab., Ribbeck^2, 184-185#
-
-o domus ántiqua, heu[137] quam díspari
-domináre domino!
-
-quod quidem his temporibus in multis licet dicere.
-
-*140* Cavendum autem est, praesertim si ipse aedifices, ne extra modum
-sumptu et magnificentia prodeas; quo in genere multum mali etiam in
-exemplo est. Studiose enim plerique praesertim in hanc partem facta
-principum imitantur, ut L. Luculli, summi viri, virtutem quis? at quam
-multi villarum magnificentiam imitati! quarum quidem certe est
-adhibendus modus ad mediocritatemque[138] revocandus. Eademque
-mediocritas ad omnem usum cultumque vitae transferenda est.
-
-Sed haec hactenus.
-
-*141* In omni autem actione suscipienda tria sunt tenenda, primum ut
-appetitus rationi pareat, quo nihil est ad officia conservanda
-accommodatius, deinde ut animadvertatur, quanta illa res sit, quam
-efficere velimus, ut neve maior neve minor cura et opera suscipiatur,
-quam causa postulet. Tertium est, ut caveamus, ut ea, quae pertinent ad
-liberalem speciem et dignitatem,[139] moderata[140] sint. Modus autem
-est optimus decus ipsum tenere, de quo ante diximus, nec progredi
-longius. Horum tamen trium praestantissimum est appetitum optemperare
-rationi.
-
-[134] _est usus_ L c, Edd.; _et usus_ B H a b.
-
-[135] _et_ L c, Edd.; not in B H b.
-
-[136] _fit_ Bt., Ed.; _sit_ B H a b; _est_ L (corr. ex _sit_
-b), Müller, Heine; not in c.
-
-[137] _heu_ Edd.; _et_ MSS.; _ei_ Schenkl.
-
-[138] _mediocritatemque_: _que_ italicized by Ed. but
-attested by B H L b c.
-
-[139] _ad liberalem speciem et dignitatem_ B H b, Edd.; _ad
-liberalitatem specie et dignitate_ L c p.
-
-[140] _moderata_ L c p, Edd.; _moderanda_ B H a b.
 
 #The proper home.#
 
@@ -4540,65 +2603,7 @@ the one of prime importance is to keep impulse subservient to reason.
 that had been the homes of Pompey's friends. Antony, for
 example, lived in Pompey's house.
 
-*142* XL. Deinceps de ordine rerum et de opportunitate temporum dicendum
-est. Haec autem scientia continentur ea, quam Graeci εὐταξίαν nominant,
-non hanc, quam interpretamur modestiam, quo in verbo modus inest, sed
-illa est εὐταξία, in qua intellegitur ordinis conservatio. Itaque, ut
-eandem nos modestiam appellemus, sic definitur a Stoicis, ut modestia
-sit scientia rerum earum, quae agentur aut dicentur, loco suo
-collocandarum. Ita videtur eadem vis ordinis et collocationis fore; nam
-et ordinem sic definiunt: compositionem rerum aptis et accommodatis
-locis; locum autem actionis opportunitatem[141] temporis esse dicunt;
-tempus autem actionis opportunum[142] Graece εὐκαιρία, Latine appellatur
-occasio. Sic fit, ut modestia haec, quam ita interpretamur, ut dixi,
-scientia sit opportunitatis[143] idoneorum ad agendum temporum.
-
 #Ch. VI#
-
-*143* Sed potest eadem esse prudentiae definitio, de qua principio
-diximus; hoc autem loco de moderatione et temperantia et harum similibus
-virtutibus quaerimus. Itaque, quae erant prudentiae propria, suo loco
-dicta sunt; quae autem harum virtutum, de quibus iam diu loquimur, quae
-pertinent ad verecundiam et ad eorum approbationem, quibuscum vivimus,
-nunc dicenda sunt.
-
-*144* Talis est igitur ordo actionum adhibendus, ut, quem ad modum in
-oratione constanti, sic in vita omnia sint apta inter se et
-convenientia; turpe enim valdeque vitiosum in re severa convivio
-digna[144] aut delicatum aliquem inferre sermonem. Bene Pericles, cum
-haberet collegam in praetura Sophoclem poëtam iique de communi officio
-convenissent et casu formosus puer praeteriret dixissetque Sophocles: "O
-puerum pulchrum, Pericle!" "At enim praetorem, Sophocle, decet non solum
-manus, sed etiam oculos abstinentes habere." Atqui[145] hoc idem
-Sophocles si in athletarum probatione dixisset, iusta reprehensione
-caruisset. Tanta vis est et loci et temporis. Ut, si qui, cum causam sit
-acturus, in itinere aut in ambulatione secum ipse meditetur, aut si quid
-aliud attentius cogitet, non reprehendatur, at hoc idem si in convivio
-faciat, inhumanus videatur inscitia temporis.
-
-*145* Sed ea, quae multum ab humanitate discrepant, ut si qui in foro
-cantet, aut si qua est alia magna perversitas, facile apparet nec
-magnopere admonitionem et praecepta desiderat; quae autem parva videntur
-esse delicta neque a multis intellegi possunt, ab iis[146] est
-diligentius declinandum. Ut in fidibus aut tibiis, quamvis paulum
-discrepent, tamen id a sciente animadverti solet, sic videndum[147] est
-in vita ne forte quid discrepet, vel multo etiam magis, quo maior et
-melior actionum quam sonorum concentus est.
-
-[141] _oportunitate(m)_ Ed.
-
-[142] _oportunum_ Ed.
-
-[143] _oportunitatis_ Ed.
-
-[144] _convivio digna_ B H a b, Edd.; _convivio dignum_ c;
-_convivii dicta_ L p.
-
-[145] _Atqui_ Müller, Heine; _atque_ MSS., Bt.
-
-[146] _iis_ Edd.; _his_ MSS.
-
-[147] _videndum_ L c, Edd.; _vivendum_ B H a b.
 
 #Orderliness--the right thing at the right time.#
 
@@ -4657,59 +2662,6 @@ is still detected by a connoisseur; so we must be on the watch lest
 haply something in our life be out of tune--nay, rather, far greater is
 the need for painstaking, inasmuch as harmony of actions is far better
 and far more important than harmony of sounds.
-
-*146* XLI. Itaque, ut in fidibus musicorum aures vel minima sentiunt,
-sic nos, si acres ac diligentes esse volumus animadversores[que][148]
-vitiorum, magna saepe intellegemus ex parvis. Ex oculorum optutu,
-superciliorum aut remissione aut contractione, ex maestitia, ex
-hilaritate, ex risu, ex locutione, ex reticentia, ex contentione vocis,
-ex summissione, ex ceteris similibus facile iudicabimus, quid eorum apte
-fiat, quid ab officio naturaque discrepet. Quo in genere non est
-incommodum, quale quidque eorum sit, ex aliis iudicare, ut, si quid
-dedeceat in illis,[149] vitemus ipsi; fit enim nescio quo modo, ut magis
-in aliis cernamus quam in nobismet ipsis, si quid delinquitur. Itaque
-facillime corriguntur in discendo, quorum vitia imitantur emendandi
-causa magistri.
-
-*147* Nec vero alienum est ad ea eligenda, quae dubitationem afferent,
-adhibere doctos homines vel etiam usu peritos et, quid iis de quoque
-officii genere placeat, exquirere. Maior enim pars eo fere deferri
-solet, quo a natura ipsa deducitur. In quibus videndum est, non modo
-quid quisque loquatur, sed etiam quid quisque sentiat atque etiam de qua
-causa quisque sentiat. Ut enim pictores et ii, qui signa fabricantur, et
-vero etiam poëtae suum quisque opus a vulgo considerari vult, ut, si
-quid reprehensum sit a pluribus, id corrigatur, iique et secum et ab
-aliis,[150] quid in eo peccatum sit, exquirunt, sic aliorum iudicio
-permulta nobis et facienda et non facienda et mutanda et corrigenda
-sunt.
-
-*148* Quae vero more agentur institutisque civilibus, de iis nihil est
-praecipiendum; illa enim ipsa praecepta sunt, nec quemquam hoc errore
-duci oportet, ut, si quid Socrates aut Aristippus contra morem
-consuetudinemque civilem fecerint locutive sint, idem sibi arbitretur
-licere; magnis illi et divinis bonis hanc licentiam assequebantur.
-Cynicorum vero ratio tota est eicienda; est enim inimica verecundiae,
-sine qua nihil rectum esse potest, nihil honestum.
-
-*149* Eos autem, quorum vita perspecta in rebus honestis atque magnis
-est, bene de re publica sentientes ac bene meritos aut merentes sic
-ut[151] aliquo honore aut imperio affectos observare et colere debemus,
-tribuere etiam multum senectuti, cedere iis, qui magistratum habebunt,
-habere dilectum civis et peregrini in ipsoque peregrino, privatimne an
-publice venerit. Ad summam, ne agam de singulis, communem totius generis
-hominum conciliationem et consociationem colere, tueri, servare debemus.
-
-[148] _animadversores_ [_que_] Ed.; _animadversoresque_ MSS.;
-*_animadversoresque_ Bt.; _animadversores_ Orelli, Müller,
-Heine.
-
-[149] _dedeceat_ a c, Edd.; _deceat_ H L b; _non deceat_ B.
-_in illis_ a Bt.^1, Ed.; _in illos_ B H b c; _illos_ L, Bt.^2
-
-[150] _et ab aliis_ a, Bt., Ed.; _aliis_ B H b; _et cum
-aliis_ c; _et ex aliis_ Unger, Müller.
-
-[151] _sic ut_ L p, Nonius; not in B H b c.
 
 #We correct our faults#
 
@@ -4774,42 +2726,7 @@ details, it is our duty to respect, defend, and maintain the common
 bonds of union and fellowship subsisting between all the members of the
 human race.
 
-*150* XLII. Iam de artificiis et quaestibus, qui liberales habendi, qui
-sordidi sint, haec fere accepimus. Primum improbantur ii quaestus, qui
-in odia hominum incurrunt, ut portitorum, ut faeneratorum. Illiberales
-autem et sordidi quaestus mercennariorum omnium, quorum operae, non
-quorum artes emuntur; est enim in illis ipsa merces auctoramentum
-servitutis. Sordidi etiam putandi, qui mercantur a mercatoribus, quod
-statim vendant; nihil enim proficiant, nisi admodum mentiantur; nec vero
-est quicquam turpius vanitate. Opificesque omnes in sordida arte
-versantur; nec enim quicquam ingenuum habere potest officina. Minimeque
-artes eae probandae, quae ministrae sunt voluptatum:
-
 #Eunuchus II, 2, 26#
-
-Cetárii, lanií, coqui, fartóres, piscatóres,
-
-ut ait Terentius; adde huc, si placet, unguentarios, saltatores totumque
-ludum talarium.
-
-*151* Quibus autem artibus aut prudentia maior inest aut non mediocris
-utilitas quaeritur, ut medicina, ut architectura, ut doctrina rerum
-honestarum, eae sunt iis, quorum ordini conveniunt, honestae. Mercatura
-autem, si tenuis est, sordida putanda est; sin magna et copiosa, multa
-undique apportans multisque sine vanitate impertiens, non est admodum
-vituperanda, atque etiam, si satiata quaestu vel contenta potius, ut
-saepe ex alto in portum, ex ipso portu se in agros possessionesque
-contulit, videtur iure optimo posse laudari. Omnium autem rerum, ex
-quibus aliquid acquiritur, nihil est agri cultura melius, nihil uberius,
-nihil dulcius, nihil homine libero[152] dignius; #C.M. XV-XVII# de qua
-quoniam in Catone Maiore satis multa diximus, illim[153] assumes, quae
-ad hunc locum pertinebunt.
-
-[152] _homine libero_ Edd.; _homine nihil libero_ B H L a b
-c.
-
-[153] _illim_ B^1, Edd.; _illum_ H; _illa_ B^2 p; _illinc_ a
-b c; _illic_ L.
 
 #Occupations:#
 
@@ -4856,52 +2773,6 @@ Cato Major, you will find there the material that applies to this point.
 
 [AF] The _ludus talarius_ was a kind of low variety show,
 with loose songs and dances and bad music.
-
-*152* XLIII. Sed ab iis partibus, quae sunt honestatis, quem ad modum
-officia ducerentur, satis expositum videtur. Eorum autem ipsorum, quae
-honesta sunt, potest incidere saepe contentio et comparatio, de duobus
-honestis utrum honestius, qui locus a Panaetio est praetermissus. Nam
-cum omnis honestas manet a partibus quattuor, quarum una sit
-cognitionis, altera communitatis, tertia magnanimitatis, quarta
-moderationis, haec in deligendo officio saepe inter se comparentur
-necesse est.
-
-*153* Placet igitur aptiora esse naturae ea officia, quae ex
-communitate, quam ea, quae ex cognitione ducantur, idque hoc argumento
-confirmari potest, quod, si contigerit ea vita sapienti, ut omnium rerum
-affluentibus copiis [quamvis] omnia,[154] quae cognitione digna sint,
-summo otio secum ipse consideret et contempletur, tamen, si solitudo
-tanta sit, ut hominem videre non possit, excedat e vita. Princepsque
-omnium virtutum illa sapientia, quam σοφίαν Graeci vocant--prudentiam
-enim, quam Graeci φρόνησιν dicunt, aliam quandam intellegimus, quae est
-rerum expetendarum fugiendarumque scientia; illa autem sapientia, quam
-principem dixi, rerum est divinarum et humanarum scientia, in qua
-continetur deorum et hominum communitas et societas inter ipsos; ea si
-maxima est, ut est certe, necesse est, quod a communitate ducatur
-officium, id esse maximum. Etenim cognitio contemplatioque naturae manca
-quodam modo atque inchoata sit, si nulla actio rerum consequatur. Ea
-autem actio in hominum commodis tuendis maxime cernitur; pertinet igitur
-ad societatem generis humani; ergo haec cognitioni anteponenda est.
-
-*154* Atque id optimus quisque re ipsa[155] ostendit et iudicat. Quis
-enim est tam cupidus in perspicienda cognoscendaque rerum natura, ut, si
-ei tractanti contemplantique res cognitione dignissimas subito sit
-allatum periculum discrimenque patriae, cui subvenire opitularique
-possit, non illa omnia relinquat atque abiciat, etiamsi dinumerare se
-stellas aut metiri mundi magnitudinem posse arbitretur? atque hoc idem
-in parentis, in amici re aut periculo fecerit.
-
-*155* Quibus rebus intellegitur studiis officiisque scientiae
-praeponenda esse officia iustitiae, quae pertinent ad hominum
-utilitatem,[156] qua nihil homini esse debet antiquius.
-
-[154] _copiis_ [_quamvis_] _omnia_, Ed.; _copiis quamvis omnia_
-MSS.; _copiis omnia_ Lambinus, Bt., Müller, Heine.
-
-[155] _re ipsa_ B H a b, Bt., Ed.; _re ab se_ L c (i.e.
-_reapse_ Orelli, Müller, Heine); _ab ipsa re_ p.
-
-[156] _utilitatem_ B H a b; _caritatem_ L c p (affection).
 
 #Comparative estimate of duties.#
 
@@ -4971,52 +2842,7 @@ Cicero could not refrain from introducing a bit of
 theoretical speculation that has no value for his practical
 position--it actually prejudices it and confuses the reader.
 
-XLIV. Atque illi, quorum studia vitaque omnis in rerum cognitione
-versata est, tamen ab augendis hominum utilitatibus et commodis non
-recesserunt: nam et erudiverunt multos, quo meliores cives utilioresque
-rebus suis publicis essent, ut Thebanum Epaminondam Lysis Pythagoreus,
-Syracosium Dionem Plato multique multos, nosque ipsi, quicquid ad rem
-publicam attulimus, si modo aliquid attulimus, a doctoribus atque
-doctrina instructi ad eam et ornati accessimus. *156* Neque solum vivi
-atque praesentes studiosos discendi erudiunt atque docent, sed hoc idem
-etiam post mortem monumentis litterarum assequuntur. Nec enim locus
-ullus est praetermissus ab iis, qui ad leges, qui ad mores, qui ad
-disciplinam rei publicae pertineret, ut otium suum ad nostrum negotium
-contulisse videantur. Ita illi ipsi doctrinae studiis et sapientiae
-dediti ad hominum utilitatem suam prudentiam intellegentiamque
-potissimum conferunt; ob eamque etiam causam eloqui copiose, modo
-prudenter, melius est quam vel acutissime sine eloquentia cogitare, quod
-cogitatio in se ipsa vertitur, eloquentia complectitur eos, quibuscum
-communitate iuncti sumus.
-
-*157* Atque ut apium examina non fingendorum favorum causa congregantur,
-sed, cum congregabilia natura sint, fingunt favos, sic homines, ac multo
-etiam magis, natura congregati adhibent agendi cogitandique[157]
-sollertiam. Itaque, nisi ea virtus, quae constat ex hominibus tuendis,
-id est ex societate generis humani, attingat cognitionem rerum, solivaga
-cognitio et ieiuna videatur, itemque magnitudo animi remota
-communitate[158] coniunctioneque humana feritas sit quaedam et
-immanitas. Ita fit, ut vincat cognitionis studium consociatio hominum
-atque communitas.
-
 #Plato, Rep. II, 369 B; Arist., Pol. I, 1253 A#
-
-*158* Nec verum est, quod dicitur a quibusdam, propter necessitatem
-vitae, quod ea, quae natura desideraret, consequi sine aliis atque
-efficere non possemus, idcirco initam esse cum hominibus communitatem et
-societatem; quodsi omnia nobis, quae ad victum cultumque pertinent,
-quasi virgula divina, ut aiunt, suppeditarentur, tum optimo quisque
-ingenio negotiis omnibus omissis totum se in cognitione et scientia
-collocaret. Non est ita; nam et solitudinem fugeret et socium studii
-quaereret, tum docere tum discere vellet, tum audire tum dicere. Ergo
-omne officium, quod ad coniunctionem hominum et ad societatem tuendam
-valet, anteponendum est illi officio, quod cognitione et scientia
-continetur.
-
-[157] _cogitandique_ L c p, Edd.; _congregandique_ B H a b.
-
-[158] _communitate_ p (per compendium), Bt.^2, Müller, Heine;
-_comitate_ A B H L a b c.
 
 #Wisdom in the service of Justice.#
 
@@ -5070,39 +2896,6 @@ speak. Every duty, therefore, that tends effectively to maintain and
 safeguard human society should be given the preference over that duty
 which arises from speculation and science alone.
 
-*159* XLV. Illud forsitan quaerendum sit, num haec communitas, quae
-maxime est apta naturae, sit etiam moderationi modestiaeque semper
-anteponenda. Non placet; sunt enim quaedam partim ita foeda, partim ita
-flagitiosa, ut ea ne conservandae quidem patriae causa sapiens facturus
-sit. Ea Posidonius collegit permulta, sed ita taetra quaedam, ita
-obscena, ut dictu quoque videantur turpia. Haec igitur non suscipiet rei
-publicae causa, ne res publica quidem pro se suscipi volet. Sed hoc[159]
-commodius se res habet, quod non potest accidere tempus, ut intersit rei
-publicae quicquam illorum facere sapientem.
-
-*160* Quare hoc quidem effectum sit, in officiis deligendis id[160]
-genus officiorum excellere, quod teneatur hominum societate. [Etenim
-cognitionem prudentiamque sequetur considerata actio; ita fit, ut agere
-considerate pluris sit quam cogitare prudenter.][161]
-
-Atque haec quidem hactenus. Patefactus enim locus est ipse, ut non
-difficile sit in exquirendo officio, quid cuique sit praeponendum,
-videre. In ipsa autem communitate sunt gradus officiorum, ex quibus,
-quid cuique praestet, intellegi possit, ut prima dis immortalibus,
-secunda patriae, tertia parentibus, deinceps gradatim reliquis
-debeantur.
-
-*161* Quibus ex rebus breviter disputatis intellegi potest non solum id
-homines solere dubitare, honestumne an turpe sit, sed etiam duobus
-propositis honestis utrum honestius sit. Hic locus a Panaetio est, ut
-supra dixi, praetermissus. Sed iam ad reliqua pergamus.
-
-[159] _hoc_ L c p, Edd.; _haec_ B H a b.
-
-[160] _id_ a, Edd.; _ut_ b; _hoc_ B H L c p.
-
-[161] _Etenim ... prudenter_ bracketed by Unger.
-
 #Justice _vs._ Temperance.#
 
 *159* XLV. The following question should, perhaps, be asked: whether
@@ -5145,50 +2938,6 @@ by Panaetius. But let us now pass on to what remains.
 ### CICERO DE OFFICIIS BOOK II
 
 ### EXPEDIENCY LIBER SECUNDUS / BOOK II
-
-*1* I. Quem ad modum officia ducerentur ab honestate, Marce fili, atque
-ab omni genere virtutis, satis explicatum arbitror libro superiore.
-Sequitur, ut haec officiorum genera persequar, quae pertinent ad vitae
-cultum et ad earum rerum, quibus utuntur homines, facultatem, ad opes,
-ad copias[; in quo tum quaeri dixi, quid utile, quid inutile, tum ex
-utilibus quid utilius aut quid maxime utile].[162] De quibus dicere
-aggrediar, si pauca prius de instituto ac de iudicio meo dixero.
-
-*2* Quamquam enim libri nostri complures non modo ad legendi, sed etiam
-ad scribendi studium excitaverunt, tamen interdum vereor, ne quibusdam
-bonis viris philosophiae nomen sit invisum mirenturque in ea tantum me
-operae et temporis ponere.
-
-Ego autem, quam diu res publica per eos gerebatur, quibus se ipsa
-commiserat, omnis meas curas cogitationesque in eam conferebam; cum
-autem dominatu unius omnia tenerentur neque esset usquam consilio aut
-auctoritati locus, socios denique tuendae rei publicae, summos viros,
-amisissem, nec me angoribus dedidi, quibus essem confectus, nisi iis
-restitissem, nec rursum indignis homine docto voluptatibus.
-
-*3* Atque utinam res publica stetisset, quo coeperat, statu nec in
-homines non tam commutandarum quam evertendarum rerum cupidos
-incidisset! Primum enim, ut stante re publica facere solebamus, in
-agendo plus quam in scribendo operae poneremus, deinde ipsis scriptis
-non ea, quae nunc, sed actiones nostras mandaremus, ut saepe fecimus.
-Cum autem res publica, in qua omnis mea cura, cogitatio, opera poni
-solebat, nulla esset omnino, illae scilicet litterae conticuerunt
-forenses et senatoriae. *4* Nihil agere autem cum animus non posset, in
-his studiis ab initio versatus aetatis existimavi honestissime
-molestias[163] posse deponi, si me ad philosophiam rettulissem. Cui cum
-multum adulescens discendi causa temporis tribuissem, posteaquam
-honoribus inservire coepi meque totum rei publicae tradidi, tantum erat
-philosophiae loci, quantum superfuerat amicorum et rei publicae
-temporibus;[164] id autem omne consumebatur in legendo, scribendi otium
-non erat.
-
-[162] _in quo ... maxime utile_ bracketed by Heumann,
-Facciolati, Edd.; _tum ex ... maxime utile_ not in B H a b.
-
-[163] _molestias_ L c p, Nonius, Edd.; not in B H a b.
-
-[164] _temporibus_ Victorius, Edd.; _temporis_ B H a b;
-_tempori_ L c p.
 
 #Statement of subject.#
 
@@ -5242,63 +2991,9 @@ was spent in reading; I had no leisure for writing.
 
 [AH] Such as Pompey, Cato, Hortensius, and Piso.
 
-*5* II. Maximis igitur in malis hoc tamen boni assecuti videmur, ut ea
-litteris mandaremus, quae nec erant satis nota nostris et erant
-cognitione dignissima. Quid enim est, per deos, optabilius sapientia,
-quid praestantius, quid homini melius, quid homine dignius? Hanc igitur
-qui expetunt,[165] philosophi nominantur, nec quicquam aliud est
-philosophia, si interpretari velis, praeter studium sapientiae.
-Sapientia autem est, ut a veteribus philosophis definitum est, rerum
-divinarum et humanarum causarumque, quibus eae res continentur,
-scientia; cuius studium qui vituperat, haud sane intellego, quidnam sit,
-quod laudandum putet. *6* Nam sive oblectatio quaeritur animi requiesque
-curarum, quae conferri cum eorum studiis potest, qui semper aliquid
-anquirunt, quod spectet et valeat ad bene beateque vivendum? sive ratio
-constantiae virtutisque ducitur, aut haec ars est aut nulla omnino, per
-quam eas assequamur. Nullam dicere maximarum rerum artem esse, cum
-minimarum sine arte nulla sit, hominum est parum considerate loquentium
-atque in maximis rebus errantium. Si autem est aliqua disciplina
-virtutis, ubi ea quaeretur, cum ab hoc discendi genere discesseris?
-
 #Hortensius, de Div., II, 1.#
 
-Sed haec, cum ad philosophiam cohortamur, accuratius disputari solent,
-quod alio quodam libro fecimus; hoc autem tempore tantum nobis
-declarandum fuit, cur orbati rei publicae muneribus ad hoc nos studium
-potissimum contulissemus.
-
-*7* Occurritur autem nobis, et quidem a doctis et eruditis quaerentibus,
-satisne constanter facere videamur, qui, cum percipi nihil posse
-dicamus, tamen et aliis de rebus disserere soleamus et hoc ipso tempore
-praecepta officii persequamur. Quibus vellem satis cognita esset nostra
-sententia. Non enim sumus ii, quorum vagetur animus errore nec habeat
-umquam, quid sequatur. Quae enim esset ista mens vel quae vita potius
-non modo disputandi, sed etiam vivendi ratione sublata? Nos autem, ut
-ceteri alia certa, alia incerta esse dicunt, sic ab his dissentientes
-alia probabilia, contra alia dicimus.
-
-*8* Quid est igitur, quod me impediat ea, quae probabilia mihi
-videantur, sequi, quae contra, improbare atque affirmandi arrogantiam
-vitantem fugere temeritatem, quae a sapientia dissidet plurimum? Contra
-autem omnia disputatur[166] a nostris, quod hoc ipsum probabile elucere
-non posset,[167] nisi ex utraque parte causarum esset facta contentio.
-
 #II, 20 ff.#
-
-Sed haec explanata sunt in Academicis nostris satis, ut arbitror,
-diligenter. Tibi autem, mi Cicero, quamquam in antiquissima
-nobilissimaque philosophia Cratippo auctore versaris iis simillimo, qui
-ista praeclara pepererunt, tamen haec nostra finitima vestris ignota
-esse nolui.
-
-Sed iam ad instituta pergamus.
-
-[165] _expetunt_ L c p, Edd.; _expetant_ H; _expectant_ B a
-b.
-
-[166] _disputatur_ Edd.; _disputantur_ MSS.
-
-[167] _posset_ a c; _possit_ B H b.
 
 #Why philosophy is worth while.#
 
@@ -5366,67 +3061,6 @@ to yours, not to be unknown to you.
 Let us now proceed to the task in hand.
 
 [AI] Aristotle and Theophrastus.
-
-*9* III. Quinque igitur rationibus propositis officii persequendi,
-quarum duae ad decus honestatemque pertinerent, duae ad commoda vitae,
-copias, opes, facultates, quinta ad eligendi iudicium, si quando ea,
-quae dixi, pugnare inter se viderentur, honestatis pars confecta est,
-quam quidem tibi cupio esse notissimam.
-
-Hoc autem, de quo nunc agimus, id ipsum est, quod "utile" appellatur. In
-quo verbo lapsa consuetudo deflexit de via sensimque eo deducta est, ut
-honestatem ab utilitate secernens constitueret esse honestum aliquid,
-quod utile non esset, et utile, quod non honestum, qua nulla pernicies
-maior hominum vitae potuit afferri.
-
-*10* Summa quidem auctoritate philosophi severe sane atque honeste haec
-tria genera confusa[168] cogitatione distinguunt. [Quicquid enim iustum
-sit, id etiam utile esse censent, itemque quod honestum, idem iustum; ex
-quo efficitur, ut, quicquid honestum sit, idem sit utile.][169] Quod qui
-parum perspiciunt, ii saepe versutos homines et callidos admirantes
-malitiam sapientiam iudicant. Quorum error eripiendus est opinioque
-omnis ad eam spem traducenda, ut honestis consiliis iustisque factis,
-non fraude et malitia se intellegant ea, quae velint, consequi posse.
-
-*11* Quae ergo ad vitam hominum tuendam pertinent, partim sunt inanima,
-ut aurum, argentum, ut ea, quae gignuntur e terra, ut alia generis
-eiusdem, partim animalia, quae habent suos impetus et rerum appetitus.
-Eorum autem alia[170] rationis expertia sunt, alia ratione utentia;
-expertes rationis equi, boves, reliquae pecudes, [apes,][171] quarum
-opere efficitur aliquid ad usum hominum atque vitam; ratione autem
-utentium duo genera ponunt, deorum unum, alterum hominum. Deos placatos
-pietas efficiet et sanctitas, proxime autem et secundum deos homines
-hominibus maxime utiles esse possunt.
-
-*12* Earumque item rerum, quae noceant et obsint, eadem divisio est. Sed
-quia deos nocere non putant, iis exceptis homines hominibus obesse
-plurimum arbitrantur.
-
-Ea enim ipsa, quae inanima diximus, pleraque sunt hominum operis
-effecta; quae nec haberemus, nisi manus et ars accessisset, nec iis sine
-hominum administratione uteremur. Neque enim valetudinis curatio neque
-navigatio neque agri cultura neque frugum fructuumque reliquorum
-perceptio et conservatio sine hominum opera ulla esse potuisset. *13*
-Iam vero et earum rerum, quibus abundaremus, exportatio et earum, quibus
-egeremus, invectio certe nulla esset, nisi his[172] muneribus homines
-fungerentur. #(Attius, Prometheus?), Inc. inc. fab. Ribbeck^2, 154#
-Eademque ratione nec lapides ex terra exciderentur ad usum nostrum
-necessarii, nec "ferrum, aes, aurum, argentum" effoderetur "penitus
-abditum" sine hominum labore et manu.
-
-[168] _haec tria genera confusa_ B H a b, Bt.^2, Heine; _haec
-tria genere confusa_ c, Bt.^1, Müller; _haec tria genera, re
-confusa_ J. F. Heusinger.
-
-[169] _Quicquid ... sit utile_ bracketed by Unger, Bt.^2,
-Müller, Heine.
-
-[170] _alia_ H^2 (inserted above the line) a, Edd.; not in B
-H^1 b; _partim_ c.
-
-[171] _apes_ MSS.; bracketed by Facciolati, Edd.
-
-[172] _his_ H, Edd.; _iis_ B L b; _hijs_ c.
 
 #Expediency and Moral Rectitude identical.#
 
@@ -5496,53 +3130,6 @@ rectitude that is at the same time expedient; (2) moral
 rectitude that is (apparently) not expedient; and (3) the
 expedient that is (apparently) not morally right.
 
-IV. Tecta vero, quibus et frigorum vis pelleretur et calorum molestiae
-sedarentur, unde aut initio generi humano dari potuissent aut postea
-subveniri,[173] si aut vi tempestatis aut terrae motu aut vetustate
-cecidissent, nisi communis vita ab hominibus harum rerum auxilia petere
-didicisset? *14* Adde ductus aquarum, derivationes fluminum, agrorum
-irrigationes, moles oppositas fluctibus, portus manu factos, quae unde
-sine hominum opere habere possemus? Ex quibus multisque aliis perspicuum
-est, qui fructus quaeque utilitates ex rebus iis, quae sint inanimae,
-percipiantur, eas nos nullo modo sine hominum manu atque opera capere
-potuisse.
-
-Qui denique ex bestiis fructus aut quae commoditas, nisi homines
-adiuvarent, percipi posset? Nam et qui principes inveniendi fuerunt,
-quem ex quaque belua usum habere possemus, homines certe fuerunt, nec
-hoc tempore sine hominum opera aut pascere eas aut domare aut tueri aut
-tempestivos fructus ex iis capere possemus; ab eisdemque et, quae
-nocent,[174] interficiuntur et, quae usui possunt esse, capiuntur.
-
-*15* Quid enumerem artium multitudinem, sine quibus vita omnino nulla
-esse potuisset? Qui enim aegris subveniretur,[175] quae esset oblectatio
-valentium, qui victus aut cultus, nisi tam multae nobis artes
-ministrarent? quibus rebus exculta hominum vita tantum distat[176] a
-victu et cultu bestiarum. Urbes vero sine hominum coetu non potuissent
-nec aedificari nec frequentari; ex quo leges moresque constituti, tum
-iuris aequa discriptio[177] certaque vivendi disciplina; quas res et
-mansuetudo animorum consecuta et verecundia est effectumque, ut esset
-vita munitior, atque ut dando et accipiendo mutuandisque facultatibus et
-commodandis[178] nulla re egeremus.
-
-[173] _subveniri_ L c, Müller, Heine; _subvenire_ B H a b,
-Bt., Ed.
-
-[174] _et, quae nocent_ Bt.^2; _et eae, quae nocent_ B H b,
-Bt.^1; _et ea quae nocent_ L; _ea quae nocent_ c.
-
-[175] _qui ... subveniretur_ Gernhard, Edd.; _qui ...
-subvenire_ B H; _quis ... subveniret_ L c; _quid ...
-subveniret_ a b.
-
-[176] _distat_ L c p, Müller, Heine; _destitute_ B H a b, Bt.
-
-[177] _discriptio_ H b; _descriptio_ B a c.
-
-[178] _mutuandisque facultatibus et commodandis_ Nonius,
-Bt.^2, Müller; _mutandisque facultatibus et commodis_ MSS.,
-Bt.^1, Heine.
-
 #Mutual helpfulness the key to civilization.#
 
 IV. And how could houses ever have been provided in the first place for
@@ -5577,47 +3164,6 @@ institutions followed a more humane spirit and consideration for others,
 with the result that life was better supplied with all it requires, and
 by giving and receiving, by mutual exchange of commodities and
 conveniences, we succeeded in meeting all our wants.
-
-*16* V. Longiores hoc loco sumus, quam necesse est. Quis est enim, cui
-non perspicua sint illa, quae pluribus verbis a Panaetio commemorantur,
-neminem neque ducem bello[179] nec principem domi magnas res et
-salutares sine hominum studiis gerere potuisse? Commemoratur ab eo
-Themistocles, Pericles, Cyrus, Agesilaus, Alexander, quos negat sine
-adiumentis hominum tantas res efficere potuisse. Utitur in re non dubia
-testibus non necessariis.
-
-Atque ut magnas utilitates adipiscimur conspiratione hominum atque
-consensu, sic nulla tam detestabilis pestis est, quae non homini ab
-homine nascatur. Est Dicaearchi liber de interitu hominum, Peripatetici
-magni et copiosi, qui collectis ceteris causis eluvionis, pestilentiae,
-vastitatis, beluarum etiam repentinae multitudinis, quarum impetu docet
-quaedam hominum genera esse consumpta, deinde comparat, quanto plures
-deleti sint homines hominum impetu, id est bellis aut seditionibus, quam
-omni reliqua calamitate.
-
-*17* Cum igitur hic locus nihil habeat dubitationis, quin homines
-plurimum hominibus et prosint et obsint, proprium hoc statuo esse
-virtutis, conciliare animos hominum et ad usus suos adiungere. Itaque,
-quae in rebus inanimis quaeque in usu et[180] tractatione beluarum fiunt
-utiliter ad hominum vitam, artibus ea tribuuntur operosis, hominum autem
-studia ad amplificationem nostrarum rerum prompta ac parata [virorum
-praestantium][181] sapientia et virtute excitantur. *18* Etenim virtus
-omnis tribus in rebus fere vertitur, quarum una est in perspiciendo,
-quid in quaque re verum sincerumque sit, quid consentaneum cuique, quid
-consequens, ex quo quaeque gignantur, quae cuiusque rei causa sit,
-alterum cohibere motus animi turbatos, quos Graeci πάθη nominant,
-appetitionesque, quas illi ὁρμάς, oboedientes efficere rationi, tertium
-iis, quibuscum congregemur, uti moderate et scienter, quorum studiis ea,
-quae natura desiderat, expleta cumulataque habeamus, per eosdemque, si
-quid importetur nobis incommodi, propulsemus ulciscamurque eos, qui
-nocere nobis conati sint, tantaque poena afficiamus, quantam aequitas
-humanitasque patitur.
-
-[179] _bello_ B H a b, Müller, Heine; _belli_ L c p, Bt.
-
-[180] _usu et_ L c p; not in B H a b; bracketed by Bt.^1
-
-[181] _virorum praestantium_ bracketed by Ed.
 
 *16* V. I have dwelt longer on this point than was necessary. For who is
 there to whom those facts which Panaetius narrates at great length are
@@ -5665,55 +3211,6 @@ supplied in full and overflowing measure, that we may ward off any
 impending trouble, avenge ourselves upon those who have attempted to
 injure us, and visit them with such retribution as justice and humanity
 will permit.
-
-*19* VI. Quibus autem rationibus hanc facultatem assequi possimus, ut
-hominum studia complectamur eaque teneamus, dicemus, neque ita multo
-post, sed pauca ante dicenda sunt.
-
-Magnam vim esse in fortuna in utramque partem, vel secundas ad res vel
-adversas, quis ignorat? Nam et, cum prospero flatu eius utimur, ad
-exitus pervehimur optatos et, cum reflavit, affligimur. Haec igitur ipsa
-fortuna ceteros casus rariores habet, primum ab inanimis procellas,
-tempestates, naufragia, ruinas, incendia, deinde a bestiis ictus,
-morsus, impetus; haec ergo, ut dixi, rariora. *20* At vero interitus
-exercituum, ut proxime trium, saepe multorum, clades imperatorum, ut
-nuper summi et singularis viri, invidiae praeterea multitudinis atque ob
-eas bene meritorum saepe civium expulsiones, calamitates, fugae,
-rursusque secundae res, honores, imperia, victoriae, quamquam fortuita
-sunt, tamen sine hominum opibus et studiis neutram in partem effici
-possunt.
-
-Hoc igitur cognito dicendum est, quonam modo hominum studia ad
-utilitates nostras allicere atque excitare possimus. Quae si longior
-fuerit oratio, cum magnitudine utilitatis comparetur; ita fortasse
-etiam brevior videbitur.
-
-*21* Quaecumque igitur homines homini tribuunt ad eum augendum atque
-honestandum, aut benivolentiae gratia faciunt, cum aliqua de causa
-quempiam diligunt, aut honoris, si cuius virtutem suspiciunt, quemque
-dignum fortuna quam amplissima putant, aut cui fidem habent et bene
-rebus suis consulere arbitrantur, aut cuius opes metuunt, aut contra, a
-quibus aliquid exspectant, ut cum reges popularesve homines largitiones
-aliquas proponunt, aut postremo pretio ac mercede ducuntur, quae
-sordidissima est illa quidem ratio et inquinatissima et iis, qui ea
-tenentur, et illis, qui ad eam[182] confugere conantur; *22* male enim
-se res habet, cum, quod virtute effici debet, id temptatur pecunia. Sed
-quoniam non numquam hoc subsidium necessarium est, quem ad modum sit
-utendum eo, dicemus, si prius iis[183] de rebus, quae virtuti propiores
-sunt, dixerimus.
-
-Atque etiam subiciunt se homines imperio alterius et potestati de causis
-pluribus. Ducuntur enim aut benivolentia aut beneficiorum magnitudine
-aut dignitatis praestantia aut spe sibi id utile futurum aut metu, ne vi
-parere cogantur, aut spe largitionis promissisque[184] capti aut
-postremo, ut saepe in nostra re publica videmus, mercede conducti.
-
-[182] _eam_ c, Edd.; _ea_ B H a b.
-
-[183] _iis_ Edd.; _his_ B H a b; _hijs_ c.
-
-[184] _promissisque_ L c, Edd.; _promissionisque_ B H a b;
-_promissionibusque_ alii.
 
 *19* VI. I shall presently discuss the means by which we can gain the
 ability to win and hold the affections of our fellow-men; but I must say
@@ -5773,67 +3270,7 @@ perforce to submit; (5) they may be captivated by the hope of gifts of
 money and by liberal promises; or, finally, (6) they may be bribed with
 money, as we have frequently seen in our own country.
 
-*23* VII. Omnium autem rerum nec aptius est quicquam ad opes tuendas ac
-tenendas quam diligi nec alienius quam timeri. Praeclare enim Ennius:
-
 #(Thyestes?) Fab. inc. Vahlen^2, 402#
-
-Quém metuunt, odérunt; quem quisque ódit, periisse éxpetit.
-
-Multorum autem odiis nullas opes posse obsistere, si antea fuit ignotum,
-nuper est cognitum. Nec vero huius tyranni solum, quem armis oppressa
-pertulit civitas ac paret cum maxime mortuo,[185] interitus declarat,
-quantum odium hominum valeat[186] ad pestem, sed reliquorum similes
-exitus tyrannorum, quorum haud fere quisquam talem interitum effugit;
-malus enim est custos diuturnitatis metus contraque benivolentia fidelis
-vel ad perpetuitatem.
-
-*24* Sed iis, qui vi oppressos imperio coërcent, sit sane adhibenda
-saevitia, ut eris[187] in famulos, si aliter teneri non possunt; qui
-vero in libera civitate ita se instruunt, ut metuantur, iis[188] nihil
-potest esse dementius. Quamvis enim sint demersae leges alicuius opibus,
-quamvis timefacta libertas, emergunt tamen haec aliquando aut iudiciis
-tacitis aut occultis de honore suffragiis. Acriores autem morsus sunt
-intermissae libertatis quam retentae. Quod igitur latissime patet neque
-ad incolumitatem solum, sed etiam ad opes et potentiam valet plurimum,
-id amplectamur, ut metus absit, caritas retineatur. Ita facillime quae
-volemus, et privatis in rebus et in re publica consequemur.
-
-Etenim qui se metui volent, a quibus metuentur, eosdem metuant ipsi
-necesse est. *25* Quid enim censemus superiorem illum Dionysium quo
-cruciatu timoris angi solitum, qui cultros metuens tonsorios candente
-carbone sibi adurebat capillum? quid Alexandrum Pheraeum quo animo
-vixisse arbitramur? qui, ut scriptum legimus, cum uxorem Theben admodum
-diligeret, tamen ad eam ex epulis in cubiculum veniens barbarum, et eum
-quidem, ut scriptum est, compunctum notis Thraeciis, destricto gladio
-iubebat anteire praemittebatque de stipatoribus suis, qui scrutarentur
-arculas muliebres et, ne quod in vestimentis telum occultaretur,
-exquirerent. O miserum, qui fideliorem et barbarum et stigmatiam putaret
-quam coniugem! Nec eum fefellit; ab ea est enim ipsa propter pelicatus
-suspicionem interfectus.
-
-Nec vero ulla vis imperii tanta est, quae premente metu possit esse
-diuturna. *26* Testis est Phalaris, cuius est praeter ceteros nobilitata
-crudelitas, qui non ex insidiis interiit, ut is, quem modo dixi,
-Alexander, non a paucis, ut hic noster, sed in quem universa
-Agrigentinorum multitudo impetum fecit.
-
-Quid? Macedones nonne Demetrium reliquerunt universique se ad Pyrrhum
-contulerunt? Quid? Lacedaemonios iniuste imperantes nonne repente omnes
-fere socii deseruerunt spectatoresque se otiosos praebuerunt Leuctricae
-calamitatis?
-
-[185] _ac paret cum maxime mortuo_, Halm, Müller, Heine;
-_paretque cum maxime mortuo_ c^1, Bt.; _paretque, c. m. m._
-L; _apparet, cuius maxime mortui_ b; _apparet cuius maxime
-portui_ B H a.
-
-[186] _valeat_ c; _valet_ B H a b.
-
-[187] _ut eris_ Baiter; _ut eriis_ B; _uteris_ L; _utere
-hiis_ H; _utere iis_ b; _utere his_ a; _utantur eis_ c.
-
-[188] _iis_ Edd.; _his_ B H L a; _hijs_ c; _hiis_ b.
 
 #The motive of love _vs._ that of fear.#
 
@@ -5897,66 +3334,6 @@ tyrannically, did not practically all the allies desert them and view
 their disaster at Leuctra, as idle spectators?
 
 [AK] Julius Caesar.
-
-VIII. Externa libentius in tali re quam domestica recordor. Verum tamen,
-quam diu imperium populi Romani beneficiis tenebatur, non iniuriis,
-bella aut pro sociis aut de imperio gerebantur, exitus erant bellorum
-aut mites aut necessarii, regum, populorum, nationum portus erat et
-refugium senatus, *27* nostri autem magistratus imperatoresque ex hac
-una re maximam laudem capere studebant, si provincias, si socios
-aequitate et fide defendissent; *(27)* itaque illud patrocinium orbis
-terrae verius quam imperium poterat nominari.
-
-Sensim hanc consuetudinem et disciplinam iam antea minuebamus, post vero
-Sullae victoriam penitus amisimus; desitum est enim videri quicquam in
-socios iniquum, cum exstitisset in cives tanta crudelitas. Ergo in illo
-secuta est honestam causam non honesta victoria; est enim ausus dicere,
-hasta posita cum bona in foro venderet et bonorum virorum et locupletium
-et certe civium, "praedam se suam vendere." Secutus est, qui in causa
-impia, victoria etiam foediore non singulorum civium bona publicaret,
-sed universas provincias regionesque uno calamitatis iure
-comprehenderet.
-
-*28* Itaque vexatis ac perditis exteris nationibus ad exemplum amissi
-imperii portari in triumpho Massiliam vidimus et ex ea urbe triumphari,
-sine qua numquam nostri imperatores ex Transalpinis bellis triumpharunt.
-Multa praeterea commemorarem nefaria in socios, si hoc uno quicquam sol
-vidisset indignius. Iure igitur plectimur. Nisi enim multorum impunita
-scelera tulissemus, numquam ad unum tanta pervenisset licentia; a quo
-quidem rei familiaris ad paucos, cupiditatum ad multos improbos venit
-hereditas. *29* Nec vero umquam bellorum civilium semen et causa deerit,
-dum homines perditi hastam illam cruentam et meminerint et sperabunt;
-quam P.[189] Sulla cum vibrasset dictatore propinquo suo, idem sexto
-tricesimo anno post a sceleratiore hasta non recessit; alter autem, qui
-in illa dictatura scriba fuerat, in hac fuit quaestor urbanus. Ex quo
-debet intellegi talibus praemiis propositis numquam defutura bella
-civilia.
-
-Itaque parietes modo urbis stant et manent, iique ipsi iam extrema
-scelera metuentes, rem vero publicam penitus amisimus. Atque in has
-clades incidimus (redeundum est enim ad propositum), dum metui quam cari
-esse et diligi malumus. Quae si populo Romano iniuste imperanti accidere
-potuerunt, quid debent putare singuli? Quod cum perspicuum sit,
-benivolentiae vim esse magnam, metus imbecillam sequitur, ut disseramus,
-quibus rebus facillime possimus eam, quam volumus, adipisci cum honore
-et fide caritatem.
-
-*30* Sed ea non pariter omnes egemus; nam ad cuiusque vitam institutam
-accommodandum est, a multisne opus sit an satis sit a paucis diligi.
-Certum igitur hoc sit, idque et primum et maxime necessarium,
-familiaritates habere fidas amantium nos amicorum et nostra mirantium;
-haec enim una[190] res prorsus, ut non multum differat inter summos et
-mediocris viros, aeque[191] utrisque est propemodum comparanda.
-
-*31* Honore et gloria et benivolentia civium fortasse non aeque omnes
-egent, sed tamen, si cui haec suppetunt, adiuvant aliquantum cum ad
-cetera, tum ad amicitias comparandas.
-
-[189] _P._ c, Edd.; _L._ B H a b.
-
-[190] _enim una_ Baiter; _enim est una_ MSS.
-
-[191] _aeque_ Lund; _eaque_ MSS.
 
 #The old Republic and the new despotism.#
 
@@ -6035,54 +3412,6 @@ acquisition of friends.
 of an auction-sale--a symbol derived from the sale of booty
 taken in war.
 
-IX. Sed de amicitia alio libro dictum est, qui inscribitur Laelius; nunc
-dicamus de gloria, quamquam ea quoque de re duo sunt nostri libri, sed
-attingamus, quandoquidem ea in rebus maioribus administrandis adiuvat
-plurimum.
-
-Summa igitur et perfecta gloria constat ex tribus his: si diligit
-multitudo, si fidem habet, si cum admiratione quadam honore dignos
-putat. Haec autem, si est simpliciter breviterque dicendum, quibus rebus
-pariuntur a singulis, eisdem fere a multitudine. Sed est alius quoque
-quidam aditus ad multitudinem, ut in universorum animos tamquam influere
-possimus.
-
-*32* Ac primum de illis tribus, quae ante dixi, benivolentiae praecepta
-videamus; quae quidem capitur beneficiis maxime, secundo autem loco
-voluntate benefica benivolentia movetur, etiamsi res forte non suppetit;
-vehementer autem amor multitudinis commovetur ipsa fama et opinione
-liberalitatis, beneficentiae, iustitiae, fidei omniumque earum virtutum,
-quae pertinent ad mansuetudinem morum ac facilitatem. Etenim illud
-ipsum, quod honestum decorumque dicimus, quia per se nobis placet
-animosque omnium natura et specie sua commovet maximeque quasi perlucet
-ex iis, quas commemoravi, virtutibus, idcirco illos, in quibus eas
-virtutes esse remur, a natura ipsa diligere cogimur. Atque hae quidem
-causae diligendi gravissimae; possunt enim praeterea non nullae esse
-leviores.
-
-*33* Fides autem ut habeatur, duabus rebus effici potest, si
-existimabimur adepti coniunctam cum iustitia prudentiam. Nam et iis
-fidem habemus, quos plus intellegere quam nos arbitramur quosque et
-futura prospicere credimus et, cum res agatur in discrimenque ventum
-sit, expedire rem et consilium ex tempore capere posse; hanc enim utilem
-homines existimant veramque prudentiam. Iustis autem et fidis[192]
-hominibus, id est bonis viris, ita fides habetur, ut nulla sit in
-iis[193] fraudis iniuriaeque suspicio. Itaque his salutem nostram, his
-fortunas, his liberos rectissime committi arbitramur.
-
-*34* Harum igitur duarum ad fidem faciendam iustitia plus pollet, quippe
-cum ea sine prudentia satis habeat auctoritatis, prudentia sine iustitia
-nihil valet ad faciendam fidem. Quo enim quis versutior et callidior,
-hoc invisior et suspectior est detracta opinione probitatis. Quam ob rem
-intellegentiae iustitia coniuncta, quantum volet, habebit ad faciendam
-fidem virium; iustitia sine prudentia multum poterit, sine iustitia
-nihil valebit prudentia.
-
-[192] _et fidis_ MSS.; del. Facciolati, Pearce; [_et fidis_]
-Bt., Ed.
-
-[193] _iis_ B; _his_ H a b; _hijs_ c.
-
 IX. But friendship has been discussed in another book of mine, entitled
 "Laelius." #The attainment of glory.# Let us now take up the discussion
 of Glory, although I have published two books[AM] on that subject also.
@@ -6145,59 +3474,6 @@ do much; wisdom without justice will be of no avail at all.
 lawyer; he was forbidden by law to accept a fee; his
 services, if he contributed them, were "acts of kindness."
 
-*35* X. Sed ne quis sit admiratus, cur, cum inter omnes philosophos
-constet a meque ipso saepe disputatum sit, qui unam haberet, omnes
-habere virtutes, nunc ita seiungam, quasi possit quisquam, qui non idem
-prudens sit, iustus esse, alia est illa, cum veritas ipsa limatur in
-disputatione, subtilitas, alia, cum ad opinionem communem omnis
-accommodatur oratio. Quam ob rem, ut volgus, ita nos hoc loco loquimur,
-ut alios fortes, alios viros bonos, alios prudentes esse dicamus;
-popularibus enim verbis est agendum et usitatis, cum loquimur[194] de
-opinione populari, idque eodem modo fecit Panaetius. Sed ad propositum
-revertamur.
-
-*36* Erat igitur ex iis[195] tribus, quae ad gloriam pertinerent, hoc
-tertium, ut cum admiratione hominum honore ab iis[196] digni
-iudicaremur. Admirantur igitur communiter illi quidem omnia, quae magna
-et praeter opinionem suam animadverterunt, separatim autem, in singulis
-si perspiciunt necopinata quaedam bona. Itaque eos viros suspiciunt
-maximisque efferunt laudibus, in quibus existimant se excellentes
-quasdam et singulares perspicere virtutes, despiciunt autem eos et
-contemnunt, in quibus nihil virtutis, nihil animi, nihil nervorum
-putant. Non enim omnes eos contemnunt, de quibus male existimant. Nam
-quos improbos, maledicos, fraudulentos putant et ad faciendam iniuriam
-instructos, eos haud contemnunt quidem,[197] sed de iis[198] male
-existimant. Quam ob rem, ut ante dixi, contemnuntur ii,[199] qui "nec
-sibi nec alteri," ut dicitur, in quibus nullus labor, nulla industria,
-nulla cura est.
-
-*37* Admiratione autem afficiuntur ii, qui anteire ceteris virtute
-putantur et cum omni carere dedecore, tum vero iis vitiis, quibus alii
-non facile possunt obsistere. Nam et voluptates, blandissimae dominae,
-maioris partis animos[200] a virtute detorquent et, dolorum cum
-admoventur faces, praeter modum plerique exterrentur; vita mors,
-divitiae paupertas omnes homines vehementissime permovent. Quae qui in
-utramque partem excelso animo magnoque despiciunt, cumque aliqua iis
-ampla et honesta res obiecta est, totos ad se convertit et rapit, tum
-quis non admiretur splendorem pulchritudinemque virtutis?
-
-[194] _loquimur_ B; _loquamur_ H a b; _loquemur_ c.
-
-[195] _iis_ Bt.; _his_ B H; _hijs_ c; not in a b.
-
-[196] _iis_ Bt.; _his_ B H a b; _hijs_ c.
-
-[197] _haud contemnunt quidem_ b, Bt.^2; _contemnunt quidem
-nautiquam_ B H a p, Bt.^1, Heine; _contemnunt quidem
-nequaquam_ c; _non contemnunt quidem_ Madvig, Müller.
-
-[198] _iis_ B, Edd.; _his_ H a b; _hijs_ c.
-
-[199] _ii_ B b; _hii_ H; _hi_ a; _hij_, c. So § 37.
-
-[200] _maioris partis animos_ c, Edd.; _maiores partis animi_
-B; _maiores partes animi_ H a b.
-
 *35* X. But I am afraid some one may wonder why I am now separating the
 virtues--as if it were possible for anyone to be just who is not at the
 same time wise; for it is agreed upon among all philosophers, and I
@@ -6240,49 +3516,6 @@ circumstances, whether prosperous or adverse, and when some noble and
 virtuous purpose, presented to their minds, converts them wholly to
 itself and carries them away in its pursuit, who then could fail to
 admire in them the splendour and beauty of virtue?
-
-*38* XI. Ergo et haec animi despicientia admirabilitatem magnam facit et
-maxime iustitia, ex qua una virtute viri boni appellantur, mirifica
-quaedam multitudini videtur, nec iniuria; nemo enim iustus esse potest,
-qui mortem, qui dolorem, qui exsilium, qui egestatem timet, aut qui ea,
-quae sunt his contraria, aequitati anteponit. Maximeque admirantur eum,
-qui pecunia non movetur; quod in quo viro perspectum sit, hunc igni
-spectatum arbitrantur.
-
-Itaque illa tria, quae proposita sunt ad gloriam, omnia iustitia
-conficit, et benivolentiam, quod prodesse vult plurimis, et ob eandem
-causam fidem et admirationem, quod eas res spernit et neglegit, ad quas
-plerique inflammati aviditate rapiuntur.
-
-*39* Ac mea quidem sententia omnis ratio atque institutio vitae
-adiumenta hominum desiderat, in primisque ut habeat, quibuscum possit
-familiares conferre sermones; quod est difficile, nisi speciem prae te
-boni viri feras. Ergo etiam solitario homini atque in agro vitam agenti
-opinio iustitiae necessaria est, eoque etiam magis, quod, eam si non
-habebunt, [iniusti habebuntur,][201] nullis praesidiis saepti multis
-afficientur iniuriis. *40* #I, 96# Atque iis[202] etiam, qui vendunt
-emunt, conducunt locant contrahendisque negotiis implicantur, iustitia
-ad rem gerendam necessaria est, cuius tanta vis est, ut ne illi quidem,
-qui maleficio et scelere pascuntur, possint sine ulla particula
-iustitiae vivere. Nam qui eorum cuipiam, qui una latrocinantur, furatur
-aliquid aut eripit, is sibi ne in latrocinio quidem relinquit locum,
-ille autem, qui archipirata dicitur, nisi aequabiliter praedam
-dispertiat, aut interficiatur a sociis aut relinquatur; quin etiam leges
-latronum esse dicuntur, quibus pareant, quas observent. Itaque propter
-aequabilem praedae partitionem et Bardulis Illyrius latro, de quo est
-apud Theopompum, magnas opes habuit et multo maiores Viriathus
-Lusitanus; cui quidem etiam exercitus nostri imperatoresque cesserunt;
-quem C. Laelius, is qui Sapiens usurpatur, praetor fregit et comminuit
-ferocitatemque eius ita repressit, ut facile bellum reliquis traderet.
-
-Cum igitur tanta vis iustitiae sit, ut ea etiam latronum opes firmet
-atque augeat, quantam eius vim inter leges et iudicia et in constituta
-re publica fore putamus?
-
-[201] _iniusti habebuntur_ B H b; bracketed by Facciolati,
-Edd.
-
-[202] _iis_ Edd.; _his_ B H a b, not in c.
 
 #Justice is the best way to popularity.#
 
@@ -6332,47 +3565,6 @@ strengthens and augments the power even of robbers, how great do we
 think its power will be in a constitutional government with its laws and
 courts?
 
-*41* XII. Mihi quidem non apud Medos solum, ut ait Herodotus, sed etiam
-apud maiores nostros iustitiae fruendae causa videntur olim bene morati
-reges constituti. Nam cum premeretur inops[203] multitudo ab iis, qui
-maiores opes habebant, ad unum aliquem confugiebant virtute praestantem;
-qui cum prohiberet iniuria tenuiores, aequitate constituenda summos cum
-infimis[204] pari iure retinebat.[205] Eademque constituendarum legum
-fuit causa, quae regum. *42* Ius enim semper est quaesitum aequabile;
-neque enim aliter esset ius. Id si ab uno iusto et bono viro
-consequebantur, erant eo contenti; cum id minus contingeret, leges sunt
-inventae, quae cum omnibus semper una atque eadem voce loquerentur.
-
-Ergo hoc quidem perspicuum est, eos ad imperandum deligi solitos, quorum
-de iustitia magna esset opinio multitudinis. Adiuncto vero, ut idem
-etiam prudentes haberentur, nihil erat, quod homines iis auctoribus non
-posse consequi se arbitrarentur. Omni igitur ratione colenda et
-retinenda iustitia est cum ipsa per sese (nam aliter iustitia non
-esset), tum propter amplificationem honoris et gloriae.
-
-Sed ut pecuniae non quaerendae solum ratio est, verum etiam collocandae,
-quae perpetuos sumptus suppeditet, nec solum necessarios, sed etiam
-liberales, sic gloria et quaerenda et collocanda ratione est. *43* #Xen.
-Mem. II, 6, 39# Quamquam praeclare Socrates hanc viam ad gloriam
-proximam et quasi compendiariam dicebat esse, si quis id ageret, ut,
-qualis haberi vellet, talis esset. Quodsi qui simulatione et inani
-ostentatione et ficto non modo sermone, sed etiam voltu stabilem se
-gloriam consequi posse rentur, vehementer errant. Vera gloria radices
-agit atque etiam propagatur, ficta omnia celeriter tamquam flosculi
-decidunt, nec simulatum potest quicquam esse diuturnum. Testes sunt
-permulti in utramque partem, sed brevitatis causa familia contenti
-erimus una. Ti. enim Gracchus P. f. tam diu laudabitur, dum memoria
-rerum Romanarum manebit; at eius filii nec vivi probabantur bonis et
-mortui numerum optinent iure caesorum.
-
-[203] _inops_ inferior MSS., Edd.; _in otio_ (i.e. "at will")
-B H a b p; _inicio_ (= _initio_) c.
-
-[204] _infimis_ c, Edd.; _infirmis_ B a b; _infirmos_ H.
-
-[205] _retinebat_ c, Edd.; _pertinebat_ B H a p;
-_pertinebant_ b.
-
 #Kings chosen for the sake of justice.#
 
 *41* XII. Now it seems to me, at least, that not only among the Medes,
@@ -6417,65 +3609,11 @@ shall endure; but his sons were not approved by patriots while they
 lived, and since they are dead they are numbered among those whose
 murder was justifiable.
 
-XIII. Qui igitur adipisci veram gloriam[206] volet, iustitiae fungatur
-officiis. #I, 20-41# Ea quae essent, dictum est in libro superiore.
-
-[206] _veram gloriam_ Edd.; _veram iustitiae gloriam_ MSS.
-
 #Ways of winning a good name:#
 
 XIII. If, therefore, anyone wishes to win true glory, let him discharge
 the duties required by justice. And what they are has been set forth in
 the course of the preceding book.
-
-*44* (XIII.) Sed ut facillime, quales simus, tales esse videamur, etsi
-in eo ipso vis maxima est, ut simus ii, qui haberi velimus, tamen
-quaedam praecepta danda sunt. Nam si quis ab ineunte aetate habet causam
-celebritatis et nominis aut a patre acceptam, quod tibi, mi Cicero,
-arbitror contigisse, aut aliquo casu atque fortuna, in hunc oculi omnium
-coniciuntur atque in eum, quid agat, quem ad modum vivat, inquiritur et,
-tamquam in clarissima luce versetur, ita nullum obscurum potest nec
-dictum eius esse nec factum. *45* Quorum autem prima aetas propter
-humilitatem et obscuritatem in hominum ignoratione versatur, ii,[207]
-simul ac iuvenes esse coeperunt, magna spectare et ad ea rectis studiis
-debent contendere: quod eo firmiore animo facient, quia non modo non
-invidetur illi aetati, verum etiam favetur.
-
-Prima igitur est adulescenti commendatio ad gloriam, si qua ex bellicis
-rebus comparari potest, in qua multi apud maiores nostros exstiterunt;
-semper enim fere bella gerebantur. Tua autem aetas incidit in id bellum,
-cuius altera pars sceleris nimium habuit, altera felicitatis parum. Quo
-tamen in bello cum te Pompeius alae [alteri][208] praefecisset, magnam
-laudem et a summo viro et ab exercitu consequebare equitando, iaculando,
-omni militari labore tolerando. Atque ea quidem tua laus pariter cum re
-publica cecidit.
-
-Mihi autem haec oratio suscepta non de te est, sed de genere toto; quam
-ob rem pergamus ad ea, quae restant.
-
-*46* Ut igitur in reliquis rebus multo maiora opera sunt animi quam
-corporis, sic eae res, quas ingenio ac ratione persequimur, gratiores
-sunt quam illae, quas viribus. Prima igitur commendatio proficiscitur a
-modestia cum[209] pietate in parentes, in suos benivolentia. Facillime
-autem et in optimam partem cognoscuntur adulescentes, qui se ad claros
-et sapientes viros bene consulentes rei publicae contulerunt; quibuscum
-si frequentes sunt, opinionem afferunt populo eorum fore se similes,
-quos sibi ipsi delegerint ad imitandum. *47* P. Rutili adulescentiam ad
-opinionem et innocentiae et iuris scientiae P. Muci commendavit domus.
-Nam L. quidem Crassus, cum esset admodum adulescens, non aliunde
-mutuatus est, sed sibi ipse peperit maximam laudem ex illa accusatione
-nobili et gloriosa, et, qua[210] aetate qui exercentur, laude affici
-solent, ut de Demosthene accepimus, ea aetate L. Crassus ostendit id se
-in foro optime iam facere, quod etiam tum poterat domi cum laude
-meditari.
-
-[207] _ii_ B, Edd.; _hi_ H; _iis_ b; _hij_ c; _his_ a.
-
-[208] _alteri_ MSS.; om. Graevius, Edd.
-
-[209] _cum_ Victorius, Edd.; _tum_ MSS.
-
-[210] _et, qua_ Manutius, Edd.; _ex qua_ MSS.
 
 *44* (XIII.) But although the very essence of the problem is that we
 actually be what we wish to be thought to be, still some rules may be
@@ -6538,74 +3676,6 @@ studying at home with credit to himself.
 Gaius Papirius Carbo, a former supporter of the Gracchi. The
 prosecution was so ably conducted that Carbo committed
 suicide to escape certain condemnation.
-
-*48* XIV. Sed cum duplex ratio sit orationis, quarum in altera sermo
-sit, in altera contentio, non est id quidem dubium, quin contentio
-[orationis][211] maiorem vim habeat ad gloriam (ea est enim, quam
-eloquentiam dicimus); sed tamen difficile dictu est, quantopere
-conciliet animos comitas affabilitasque sermonis. Exstant epistulae et
-Philippi ad Alexandrum et Antipatri ad Cassandrum et Antigoni ad
-Philippum filium, trium prudentissimorum (sic enim accepimus); quibus
-praecipiunt, ut oratione benigna multitudinis animos ad benivolentiam
-alliciant militesque blande appellando [sermone][212] deliniant. Quae
-autem in multitudine cum contentione habetur oratio, ea saepe universam
-excitat [gloriam][213]; magna est enim admiratio copiose sapienterque
-dicentis; quem qui audiunt, intellegere etiam et sapere plus quam
-ceteros arbitrantur. Si vero inest in oratione mixta modestia gravitas,
-nihil admirabilius fieri potest, eoque magis, si ea sunt in adulescente.
-
-*49* Sed cum sint plura causarum genera, quae eloquentiam desiderent,
-multique in nostra re publica adulescentes et apud iudices et apud
-populum[214] et apud senatum dicendo laudem assecuti sint, maxima est
-admiratio in iudiciis.
-
-Quorum ratio duplex est. Nam ex accusatione et ex defensione constat;
-quarum etsi laudabilior est defensio, tamen etiam accusatio probata
-persaepe est. Dixi paulo ante de Crasso; idem fecit adulescens M.
-Antonius. Etiam P. Sulpici eloquentiam accusatio illustravit, cum
-seditiosum et inutilem civem, C. Norbanum, in iudicium vocavit. *50* Sed
-hoc quidem non est saepe faciendum nec umquam nisi aut rei publicae
-causa, ut ii, quos ante dixi, aut ulciscendi, ut duo Luculli, aut
-patrocinii, ut nos pro Siculis, pro Sardis in Albucio Iulius. In
-accusando etiam M'. Aquilio L. Fufi cognita industria est. Semel igitur
-aut non saepe certe. Sin erit, cui faciendum sit saepius, rei publicae
-tribuat hoc muneris, cuius inimicos ulcisci saepius non est
-reprehendendum; modus tamen adsit. Duri enim hominis vel potius vix
-hominis videtur periculum capitis inferre multis. Id cum periculosum
-ipsi est, tum etiam sordidum ad famam, committere, ut accusator
-nominere; quod contigit M. Bruto summo genere nato, illius filio, qui
-iuris civilis in primis peritus fuit.
-
-*51* Atque etiam hoc praeceptum officii diligenter tenendum est, ne quem
-umquam innocentem iudicio capitis arcessas; id enim sine scelere fieri
-nullo pacto potest. Nam quid est tam inhumanum quam eloquentiam a natura
-ad salutem hominum et ad conservationem datam ad bonorum pestem
-perniciemque convertere? Nec tamen, ut hoc fugiendum est, item est
-habendum religioni nocentem aliquando, modo ne nefarium[215] impiumque,
-defendere; vult hoc multitudo, patitur consuetudo, fert etiam humanitas.
-Iudicis est semper in causis verum sequi, patroni non numquam veri
-simile, etiamsi minus sit verum, defendere; quod scribere, praesertim
-cum de philosophia scriberem, non auderem, nisi idem placeret gravissimo
-Stoicorum, Panaetio. Maxime autem et gloria paritur et gratia
-defensionibus, eoque maior, si quando accidit, ut ei subveniatur, qui
-potentis alicuius opibus circumveniri urguerique videatur, ut nos et
-saepe alias et adulescentes contra L. Sullae dominantis opes pro Sex.
-Roscio Amerino fecimus quae, ut scis, exstat oratio.
-
-[211] _orationis_ MSS., Ed.; bracketed by Fleckeisen, Bt.^2,
-Müller, Heine.
-
-[212] _blande appellando sermone_ a c, Edd.; _blando
-appellando sermone_ B H b; _blande appellando_ Gulielmus
-(with three inferior MSS.), Bt., Heine; [_sermone_] Ed.
-
-[213] _excitat gloriam_ MSS.; _excitat_ [_gloriam_] Ed.;
-_excitat_ Lange.
-
-[214] _et apud populum_ c, Edd.; not in B H a b.
-
-[215] _modo ne nefarium_ L c, Edd.; _modo nefarium_ Nonius;
-_et nefarium_ B H a b.
 
 #(4) by eloquence.#
 
@@ -6690,61 +3760,6 @@ endangering a person's _caput_, or civil status. A conviction
 on such a charge resulted in his civil degradation and the
 loss of his privileges as a Roman citizen.
 
-*52* XV. Sed expositis adulescentium officiis, quae valeant ad gloriam
-adipiscendam, deinceps de beneficentia[216] ac de liberalitate dicendum
-est; cuius est ratio duplex; nam aut opera benigne fit indigentibus aut
-pecunia. Facilior est haec posterior, locupleti praesertim, sed illa
-lautior ac splendidior et viro forti claroque dignior. Quamquam enim in
-utroque inest gratificandi liberalis voluntas, tamen altera ex arca,
-altera ex virtute depromitur, largitioque, quae fit ex re familiari,
-fontem ipsum benignitatis exhaurit. Ita benignitate benignitas tollitur;
-qua quo in plures usus sis, eo minus in multos uti possis. *53* At qui
-opera, id est virtute et industria, benefici et liberales erunt, primum,
-quo pluribus profuerint, eo plures ad benigne faciendum adiutores
-habebunt, dein consuetudine beneficentiae paratiores erunt et tamquam
-exercitatiores ad bene de multis promerendum.
-
-Praeclare in[217] epistula[218] quadam Alexandrum filium Philippus
-accusat, quod largitione benivolentiam Macedonum consectetur: "Quae te,
-malum!" inquit, "ratio in istam spem induxit, ut eos tibi fideles
-putares fore, quos pecunia corrupisses? An tu id agis, ut Macedones non
-te regem suum, sed ministrum et praebitorem[219] sperent fore?"
-
-Bene "ministrum et praebitorem,"[220] quia sordidum regi, melius etiam,
-quod largitionem "corruptelam" dixit esse; fit enim deterior, qui
-accipit, atque ad idem semper exspectandum paratior.
-
-*54* Hoc ille filio, sed praeceptum putemus omnibus.
-
-Quam ob rem id quidem non dubium est, quin illa benignitas, quae constet
-ex opera et industria, et honestior sit et latius pateat et possit
-prodesse pluribus; non numquam tamen est largiendum, nec hoc
-benignitatis genus omnino repudiandum est et saepe idoneis hominibus
-indigentibus de re familiari impertiendum, sed diligenter atque
-moderate; multi enim patrimonia effuderunt inconsulte largiendo. Quid
-autem est stultius quam, quod libenter facias, curare, ut id diutius
-facere non possis? Atque etiam sequuntur largitionem rapinae; cum enim
-dando egere coeperunt, alienis bonis manus afferre coguntur. Ita, cum
-benivolentiae comparandae causa benefici esse velint, non tanta studia
-assequuntur eorum, quibus dederunt, quanta odia eorum, quibus ademerunt.
-
-*55* Quam ob rem nec ita claudenda res est familiaris, ut eam benignitas
-aperire non possit, nec ita reseranda, ut pateat omnibus; modus
-adhibeatur, isque referatur ad facultates. Omnino meminisse debemus, id
-quod a nostris hominibus saepissime usurpatum iam in proverbii
-consuetudinem venit, "largitionem fundum non habere"; etenim quis potest
-modus esse, cum et idem, qui consuerunt, et idem illud alii desiderent?
-
-[216] _beneficentia_ Edd.; _beneficientia_ MSS. (ubique).
-
-[217] _in_ B H a b; not in L c p.
-
-[218] _epistula_ H, Heine; _epistola_ B L a b c.
-
-[219] _praebitorem_ B H L b c p; _praebitorem putant_ a.
-
-[220] _sperent ... praebitorem_ L c p, Edd.; not in B H a b.
-
 #Generosity of two kinds:#
 
 *52* XV. Now that I have set forth the moral duties of a young man, in
@@ -6814,54 +3829,7 @@ for the same bounty?
 Caesar, Antony, and Catiline--_alieni appetens, sui profusus_
 (Sall., Cat. V).
 
-XVI. Omnino duo sunt genera largorum, quorum alteri prodigi, alteri
-liberales: prodigi, qui epulis et viscerationibus et gladiatorum
-muneribus, ludorum venationumque apparatu pecunias profundunt in eas
-res, quarum memoriam aut brevem aut nullam omnino sint relicturi, *56*
-liberales autem, qui suis facultatibus aut captos a praedonibus redimunt
-aut aes alienum suscipiunt amicorum aut in filiarum collocatione
-adiuvant aut opitulantur in re vel quaerenda vel augenda. *(56)* Itaque
-miror, quid in mentem venerit Theophrasto in eo libro, quem de divitiis
-scripsit; in quo multa praeclare, illud absurde: est enim multus in
-laudanda magnificentia et apparatione popularium munerum taliumque
-sumptuum facultatem fructum divitiarum putat. Mihi autem ille fructus
-liberalitatis, cuius pauca exempla posui, multo et maior videtur et
-certior.
-
 #Not found in our Aristotle.#
-
-Quanto Aristoteles gravius et verius nos reprehendit! qui has pecuniarum
-effusiones non admiremur, quae fiunt ad multitudinem deliniendam. _Ait
-enim_,[221] "qui ab hoste obsidentur, si emere aquae sextarium
-cogerentur[222] mina, hoc primo incredibile nobis videri, omnesque
-mirari, sed cum attenderint, veniam necessitati dare, in his immanibus
-iacturis infinitisque sumptibus nihil nos magnopere mirari, cum
-praesertim neque necessitati subveniatur nec dignitas augeatur ipsaque
-illa delectatio multitudinis ad breve exiguumque tempus _capiatur_,[223]
-eaque a levissimo quoque, in quo tamen ipso una cum satietate memoria
-quoque moriatur voluptatis." *57* Bene etiam colligit "haec pueris et
-mulierculis et servis et servorum simillimis liberis esse grata, gravi
-vero homini et ea, quae fiunt, iudicio certo ponderanti probari posse
-nullo modo."
-
-Quamquam intellego in nostra civitate inveterasse iam bonis temporibus,
-ut splendor aedilitatum ab optimis viris postuletur.[224] Itaque et P.
-Crassus cum cognomine dives, tum copiis functus est aedilicio maximo
-munere, et paulo post L. Crassus cum omnium hominum moderatissimo Q.
-Mucio magnificentissima aedilitate functus est, deinde C. Claudius App.
-f., multi post, Luculli, Hortensius, Silanus; omnes autem P. Lentulus me
-consule vicit superiores; hunc est Scaurus imitatus; magnificentissima
-vero nostri Pompei munera secundo consulatu; in quibus omnibus quid mihi
-placeat, vides.
-
-[221] _Ait enim_ Ed.; _at hi_ a; _at hii_ H; _at ii_ B b; _at
-hij_ c.
-
-[222] _cogerentur_ B H a b; _cogantur_ L c p.
-
-[223] _capiatur_ Beier; not in MSS.
-
-[224] _postuletur_ B H a b, Heine; _postularetur_ L c p, Bt.
 
 #Extravagant waste of the public games.#
 
@@ -6914,47 +3882,6 @@ of my consulship, eclipsed all that had gone before him, and Scaurus
 emulated him. And my friend Pompey's exhibitions in his second
 consulship were the most magnificent of all. And so you see what I
 think about all this sort of thing.
-
-*58* XVII. Vitanda tamen suspicio est avaritiae. Mamerco, homini
-divitissimo, praetermissio aedilitatis consulatus repulsam attulit.
-Quare et, si postulatur a populo, bonis viris si non desiderantibus, at
-tamen approbantibus faciundum est, modo pro facultatibus, nos ipsi ut
-fecimus, et, si quando aliqua res maior atque utilior populari
-largitione acquiritur, ut Oresti nuper prandia in semitis decumae nomine
-magno honori fuerunt. Ne M.[225] quidem Seio vitio datum est, quod in
-caritate asse modium populo dedit; magna enim se et inveterata invidia
-nec turpi iactura, quando erat aedilis, nec maxima liberavit. Sed honori
-summo nuper nostro Miloni fuit, qui gladiatoribus emptis rei publicae
-causa, quae salute nostra continebatur, omnes P. Clodi conatus
-furoresque compressit.
-
-Causa igitur largitionis est, si aut necesse est aut utile. *59* In
-his[226] autem ipsis mediocritatis regula optima est. L. quidem
-Philippus Q. f., magno vir ingenio in primisque clarus, gloriari solebat
-se sine ullo munere adeptum esse omnia, quae haberentur amplissima.
-Dicebat idem Cotta, Curio. Nobis quoque licet in hoc quodam modo
-gloriari; nam pro amplitudine honorum, quos cunctis suffragiis adepti
-sumus nostro quidem anno, quod contigit eorum nemini, quos modo
-nominavi, sane exiguus sumptus aedilitatis fuit.
-
-*60* Atque etiam illae impensae meliores, muri, navalia, portus, aquarum
-ductus omniaque, quae ad usum rei publicae pertinent. Quamquam, quod
-praesens tamquam in manum datur, iucundius est; tamen haec in posterum
-gratiora. Theatra, porticus, nova templa verecundius reprehendo propter
-Pompeium, sed doctissimi non probant, ut et his ipse Panaetius, quem
-multum in his libris secutus sum, non interpretatus, et Phalereus
-Demetrius, qui Periclem, principem Graeciae, vituperat, quod tantam
-pecuniam in praeclara illa propylaea coniecerit. #The portion here
-referred to is lost.# Sed de hoc genere toto in iis libris, quos de re
-publica scripsi, diligenter disputatum.
-
-Tota igitur ratio talium largitionum genere vitiosa est, temporibus
-necessaria, et tum ipsum et ad facultates accommodanda et mediocritate
-moderanda est.
-
-[225] _M._ Orelli, Ed.; _Marco_ MSS.
-
-[226] _his_ H, Edd.; _hijs_ c; _iis_ B b; _is_ L.
 
 *58* XVII. Still we should avoid any suspicion of penuriousness.
 Mamercus was a very wealthy man, and his refusal of the aedileship was
@@ -7017,62 +3944,7 @@ practically giving it away to purchase their good-will.
 [AT] The saving clause is added, because Cicero never filled
 the office of Censor.
 
-*61* XVIII. In illo autem altero genere largiendi, quod a liberalitate
-proficiscitur, non uno modo in disparibus causis affecti esse debemus.
-Alia causa est eius, qui calamitate premitur, et eius, qui res meliores
-quaerit nullis suis rebus adversis. *62* Propensior benignitas esse
-debebit in calamitosos, nisi forte erunt digni calamitate. In iis tamen,
-qui se adiuvari volent, non ne affligantur, sed ut altiorem gradum
-ascendant, restricti omnino esse nullo modo debemus, sed in deligendis
-idoneis iudicium et diligentiam adhibere. Nam praeclare Ennius:
-
 #Fab. inc. Vahlen^2, 409#
-
-Bene fácta male locáta male facta árbitror.
-
-*63* Quod autem tributum est bono viro et grato, in eo cum ex ipso
-fructus est, tum etiam ex ceteris. Temeritate enim remota gratissima est
-liberalitas, eoque eam studiosius plerique laudant, quod summi cuiusque
-bonitas commune perfugium est omnium. Danda igitur opera est, ut iis
-beneficiis quam plurimos afficiamus, quorum memoria liberis posterisque
-prodatur, ut iis ingratis esse non liceat. Omnes enim immemorem
-beneficii oderunt eamque iniuriam in deterrenda liberalitate sibi etiam
-fieri eumque, qui faciat, communem hostem tenuiorum putant.
-
-Atque haec benignitas etiam rei publicae est utilis, redimi e servitute
-captos, locupletari tenuiores; quod quidem volgo solitum fieri ab ordine
-nostro in oratione Crassi scriptum copiose videmus. Hanc ergo[227]
-consuetudinem benignitatis largitioni munerum longe[228] antepono; haec
-est gravium hominum atque magnorum, illa quasi assentatorum populi
-multitudinis levitatem voluptate quasi titillantium.
-
-*64* Conveniet autem cum in dando munificum esse, tum in exigendo non
-acerbum in omnique re contrahenda, vendundo emendo, conducendo locando,
-vicinitatibus et confiniis, aequum, facilem, multa multis de suo iure
-cedentem, a litibus vero, quantum liceat et nescio an paulo plus etiam,
-quam liceat, abhorrentem. Est enim non modo liberale paulum non numquam
-de suo iure decedere, sed interdum etiam fructuosum. Habenda autem ratio
-est rei familiaris, quam quidem dilabi[229] sinere flagitiosum est, sed
-ita, ut illiberalitatis avaritiaeque absit suspicio; posse enim
-liberalitate uti non spoliantem se patrimonio nimirum est pecuniae
-fructus maximus.
-
-Recte etiam a Theophrasto est laudata hospitalitas; est enim, ut mihi
-quidem videtur, valde decorum patere domus hominum illustrium hospitibus
-illustribus, idque etiam rei publicae est ornamento, homines externos
-hoc liberalitatis genere in urbe nostra non egere. Est autem etiam
-vehementer utile iis, qui honeste posse multum volunt, per hospites apud
-externos populos valere opibus et gratia. Theophrastus quidem scribit
-Cimonem Athenis etiam in suos curiales Laciadas hospitalem fuisse; ita
-enim instituisse et vilicis imperavisse, ut omnia praeberentur,
-quicumque Laciades in villam suam devertisset.
-
-[227] _ergo_ B H a b, Müller; _ego_ L c p, Lactantius, Bt.,
-Heine.
-
-[228] _longe_ L c p, Lactantius, Edd.; not in B H a b.
-
-[229] _dilabi_ L c, Ed., Heine; _delabi_ B H a b, Bt.
 
 #General rules for beneficence.#
 
@@ -7142,62 +4014,6 @@ writes that at Athens Cimon was hospitable even to the Laciads, the
 people of his own deme; for he instructed his bailiffs to that end and
 gave them orders that every attention should be shown to any Laciad who
 should ever call at his country home.
-
-*65* XIX. Quae autem opera, non largitione beneficia dantur, haec tum in
-universam rem publicam, tum in singulos cives conferuntur. Nam in iure
-cavere [,consilio iuvare,][230] atque hoc scientiae genere prodesse quam
-plurimis vehementer et ad opes augendas pertinet et ad gratiam.
-
-Itaque cum multa praeclara maiorum, tum quod optime constituti iuris
-civilis summo semper in honore fuit cognitio atque interpretatio; quam
-quidem ante hanc confusionem temporum in possessione sua principes
-retinuerunt, nunc, ut honores, ut omnes dignitatis gradus, sic huius
-scientiae splendor deletus est, idque eo indignius, quod eo tempore hoc
-contigit, cum is esset, qui omnes superiores, quibus honore par esset,
-scientia facile vicisset. Haec igitur opera grata multis et ad
-beneficiis obstringendos homines accommodata.
-
-*66* Atque huic arti finitima est dicendi [gravior] facultas[231] et
-gratior et ornatior. Quid enim eloquentia praestabilius vel admiratione
-audientium vel spe indigentium vel eorum, qui defensi sunt, gratia? Huic
-[quoque] ergo[232] a maioribus nostris est in toga dignitatis[233]
-principatus datus. Diserti igitur hominis et facile laborantis, quodque
-in patriis est moribus, multorum causas et non gravate et gratuito
-defendentis beneficia et patrocinia late patent.
-
-*67* Admonebat me res, ut hoc quoque loco intermissionem eloquentiae, ne
-dicam interitum, deplorarem, ni vererer, ne de me ipso aliquid viderer
-queri. Sed tamen videmus, quibus exstinctis oratoribus quam in paucis
-spes, quanto in paucioribus facultas, quam in multis sit audacia. Cum
-autem omnes non possint, ne multi quidem, aut iuris periti esse aut
-diserti, licet tamen opera prodesse multis beneficia petentem,
-commendantem iudicibus, magistratibus, vigilantem pro re alterius, eos
-ipsos, qui aut consuluntur aut defendunt, rogantem; quod qui faciunt,
-plurimum gratiae consequuntur, latissimeque eorum manat industria.
-
-*68* Iam illud non sunt admonendi (est enim in promptu), ut
-animadvertant, cum iuvare alios velint, ne quos offendant. Saepe enim
-aut eos laedunt, quos non debent, aut eos, quos non expedit; si
-imprudentes, neglegentiae est, si scientes, temeritatis. Utendum etiam
-est excusatione adversus eos, quos invitus offendas, quacumque possis,
-quare id, quod feceris, necesse fuerit nec aliter facere potueris,
-ceterisque operis et officiis erit id, quod violatum videbitur,[234]
-compensandum.
-
-[230] _consilio iuvare_ MSS., Ed.; bracketed by Muther,
-Müller, Heine.
-
-[231] _dicendi gravior facultas_ B H b; _gravior facultas_ L
-c p; _dicendi_ [_gravior_] _facultas_ Ed.; _dicendi facultas_
-Lambinus.
-
-[232] _huic quoque ergo_ B H L b c, Bt.; _huic ergo_
-Facciolati; _huic_ [_quoque_] _ergo_ Ed.
-
-[233] _in toga dignitatis_ L c p, Edd.; _in tota dignitatis_
-B H b; _in tota dignitate_ a.
-
-[234] _videbitur_ L c p, Edd.; not in B H b; _est_ a.
 
 #(2) personal service.#
 
@@ -7271,60 +4087,6 @@ were voluntary and gratis.
 a close friend of Cicero, author of the well-known letter of
 condolence to Cicero on the death of his daughter Tullia.
 
-*69* XX. Sed cum in hominibus iuvandis aut mores spectari aut fortuna
-soleat, dictu quidem est proclive, itaque volgo loquuntur, se in
-beneficiis collocandis mores hominum, non fortunam sequi. Honesta oratio
-est; sed quis est tandem, qui inopis et optimi viri causae non anteponat
-in opera danda gratiam fortunati et potentis? a quo enim expeditior et
-celerior remuneratio fore videtur, in eum fere est voluntas nostra
-propensior. Sed animadvertendum est diligentius, quae natura rerum sit.
-Nimirum enim inops ille, si bonus est vir, etiamsi referre gratiam non
-potest, habere certe potest. Commode autem, quicumque dixit, "pecuniam
-qui habeat, non reddidisse, qui reddiderit, non habere, gratiam autem
-et, qui rettulerit, habere[235] et, qui habeat, rettulisse."
-
-At qui se locupletes, honoratos, beatos putant, ii ne obligari quidem
-beneficio volunt; quin etiam beneficium se dedisse arbitrantur, cum ipsi
-quamvis magnum aliquod acceperint, atque etiam a se aut postulari aut
-exspectari aliquid suspicantur, patrocinio vero se[236] usos aut
-clientes appellari mortis instar putant. *70* At vero ille tenuis, cum,
-quicquid factum sit, se spectatum, non fortunam putet,[237] non modo
-illi, qui est meritus, sed etiam illis, a quibus exspectat (eget enim
-multis), gratum se videri studet neque vero verbis auget suum munus, si
-quo forte fungitur, sed etiam extenuat. Videndumque illud est, quod, si
-opulentum fortunatumque defenderis, in uno illo aut, si[238] forte, in
-liberis eius manet gratia; sin autem inopem, probum tamen et modestum,
-omnes non improbi humiles, quae magna in populo multitudo est,
-praesidium sibi paratum vident. *71* Quam ob rem melius apud bonos quam
-apud fortunatos beneficium collocari puto.
-
-Danda omnino opera est, ut omni generi satis facere possimus; sed si res
-in contentionem veniet, nimirum Themistocles est auctor adhibendus; qui
-cum consuleretur, utrum bono viro pauperi an minus probato diviti filiam
-collocaret: "Ego vero," inquit, "malo virum, qui pecunia egeat, quam
-pecuniam, quae viro." Sed corrupti mores depravatique sunt admiratione
-divitiarum; quarum magnitudo quid ad unum quemque nostrum pertinet?
-Illum fortasse adiuvat, qui habet. Ne id quidem semper; sed fac iuvare;
-utentior[239] sane sit, honestior vero quo modo? Quodsi etiam bonus erit
-vir, ne impediant divitiae, quo minus iuvetur, modo ne adiuvent, sitque
-omne iudicium, non quam locuples, sed qualis quisque sit!
-
-Extremum autem praeceptum in beneficiis operaque danda, ne quid contra
-aequitatem contendas, ne quid pro iniuria; fundamentum enim est
-perpetuae commendationis et famae iustitia, sine qua nihil potest esse
-laudabile.
-
-[235] _gratiam ... habere_ L c p, Edd.; not in B H a b.
-
-[236] _vero se_ B H a b; _vero tuo se_ L c p.
-
-[237] _putet_ Ed.; _putat_ MSS.
-
-[238] _si_ L c p, Edd.; not in B H a b.
-
-[239] _utentior_ MSS., Bt.^1, Heine; _potentior_ later MSS.;
-_opulentior_ one MS. (C. Lange), Lambinus, Bt.^2, Müller.
-
 #The basis for personal service is character not fortune.#
 
 *69* XX. Now in rendering helpful service to people, we usually consider
@@ -7388,68 +4150,6 @@ personal service is never to take up a case in opposition to the right
 nor in defence of the wrong. For the foundation of enduring reputation
 and fame is justice, and without justice there can be nothing worthy of
 praise.
-
-*72* XXI. Sed, quoniam de eo genere beneficiorum dictum est, quae ad
-singulos spectant, deinceps de iis, quae ad universos quaeque ad rem
-publicam pertinent, disputandum est. Eorum autem ipsorum partim[240]
-eius modi sunt, ut ad universos cives pertineant, partim, singulos ut
-attingant; quae sunt etiam gratiora. Danda opera est omnino, si possit,
-utrisque, nec minus, ut etiam singulis consulatur, sed ita, ut ea res
-aut prosit aut certe ne obsit rei publicae. C. Gracchi frumentaria magna
-largitio; exhauriebat igitur aerarium; modica M. Octavi et rei publicae
-tolerabilis et plebi necessaria; ergo et civibus et rei publicae
-salutaris.
-
-*73* In primis autem videndum erit ei, qui rem publicam administrabit,
-ut suum quisque teneat neque de bonis privatorum publice deminutio fiat.
-Perniciose enim Philippus, in tribunatu cum legem agrariam ferret, quam
-tamen antiquari facile passus est et in eo vehementer se moderatum
-praebuit--sed cum in agendo multa populariter, tum illud male, "non esse
-in civitate duo milia hominum, qui rem haberent." Capitalis oratio est,
-ad aequationem bonorum pertinens; qua peste quae potest esse maior? Hanc
-enim ob causam maxime, ut sua tenerentur, res publicae civitatesque
-constitutae sunt. Nam, etsi duce natura congregabantur homines, tamen
-spe custodiae rerum suarum urbium praesidia quaerebant.
-
-*74* Danda etiam opera est, ne, quod apud maiores nostros saepe fiebat
-propter aerarii tenuitatem assiduitatemque bellorum, tributum sit
-conferendum, idque ne eveniat, multo ante erit providendum. Sin quae
-necessitas huius muneris alicui rei publicae obvenerit (malo enim[241]
-quam nostrae ominari; neque tamen de nostra, sed de omni re publica
-disputo), danda erit opera, ut omnes intellegant, si salvi esse velint,
-necessitati esse parendum. Atque etiam omnes, qui rem publicam
-gubernabunt, consulere debebunt, ut earum rerum copia sit, quae
-sunt[242] necessariae. Quarum qualis comparatio fieri soleat et debeat,
-non est necesse disputare; est enim in promptu; tantum locus attingendus
-fuit.
-
-*75* Caput autem est in omni procuratione negotii et muneris publici, ut
-avaritiae pellatur etiam minima suspicio. "Utinam," inquit C. Pontius
-Samnis, "ad illa tempora me fortuna reservavisset et tum essem natus,
-quando Romani dona accipere[243] coepissent! non essem passus diutius
-eos imperare." Ne illi multa saecula exspectanda fuerunt; modo enim hoc
-malum in hanc rem publicam invasit. Itaque facile patior tum potius
-Pontium fuisse, siquidem in illo tantum fuit roboris. Nondum centum et
-decem anni sunt, cum de pecuniis repetundis a L. Pisone lata lex est,
-nulla antea cum fuisset. At vero postea tot leges et proximae quaeque
-duriores, tot rei, tot damnati, tantum [Italicum][244] bellum propter
-iudiciorum metum excitatum, tanta sublatis legibus et iudiciis expilatio
-direptioque sociorum, ut imbecillitate aliorum, non nostra virtute
-valeamus.
-
-[240] _partim_ L c p, Edd.; _quae_ (_que_ = _quae_ H)
-_partim_ B H a b.
-
-[241] _malo enim_ B H L b p; _malo enim alii_ a; _malo enim
-aliene_ (_alienae_) c.
-
-[242] _sunt_ B H b, Bt.^2; _sunt ad victum_ L c p, Bt.^1,
-Heine.
-
-[243] _dona accipere_ B H L a p c; _accipere dona_ b, Ed.
-
-[244] _tantum [Italicum]_ Bake, Edd.; _tantum Italicum_ L c
-p; _tantum Iliacum_ B H; _tanti militari cum_ b.
 
 #Service to the state through personal service to individuals.#
 
@@ -7530,54 +4230,6 @@ ourselves strong not in our own strength but in the weakness of others.
 
 [AX] During the dictatorships of Sulla and Caesar.
 
-*76* XXII. Laudat Africanum Panaetius, quod fuerit abstinens. Quidni
-laudet? Sed in illo alia maiora; laus abstinentiae[245] non hominis est
-solum, sed etiam temporum illorum. Omni Macedonum gaza, quae fuit
-maxima, potitus [est][246] Paulus tantum in aerarium pecuniae invexit,
-ut unius imperatoris praeda finem attulerit tributorum. At hic nihil
-domum suam intulit[247] praeter memoriam nominis sempiternam. Imitatus
-patrem Africanus nihilo locupletior Carthagine eversa. Quid? qui eius
-collega fuit in censura, L. Mummius, numquid copiosior, cum
-copiosissimam urbem funditus sustulisset? Italiam ornare quam domum suam
-maluit; quamquam Italia ornata domus ipsa mihi videtur ornatior.
-
-*77* Nullum igitur vitium taetrius est, ut eo, unde egressa est, referat
-se oratio, quam avaritia, praesertim in principibus et rem publicam
-gubernantibus. Habere enim quaestui rem publicam non modo turpe est, sed
-sceleratum etiam et nefarium. #Plut. Inst. Lacon. 239 F# Itaque, quod
-Apollo Pythius oraclum edidit, Spartam nulla re alia nisi avaritia esse
-perituram, id videtur non solum Lacedaemoniis, sed etiam omnibus
-opulentis populis praedixisse. Nulla autem re conciliare facilius
-benivolentiam multitudinis possunt ii, qui rei publicae praesunt, quam
-abstinentia et continentia.
-
-*78* Qui vero se populares volunt ob eamque causam aut agrariam rem
-temptant, ut possessores pellantur suis sedibus, aut pecunias creditas
-debitoribus condonandas putant, labefactant fundamenta rei publicae,
-concordiam primum, quae esse non potest, cum aliis adimuntur, aliis
-condonantur pecuniae, deinde aequitatem, quae tollitur omnis, si habere
-suum cuique non licet. #§ 73# Id enim est proprium, ut supra dixi,
-civitatis atque urbis, ut sit libera et non sollicita suae rei cuiusque
-custodia. *79* Atque in hac pernicie rei publicae ne illam quidem
-consequuntur, quam putant, gratiam; nam cui res erepta est, est
-inimicus, cui data est, etiam dissimulat se accipere voluisse et maxime
-in pecuniis creditis occultat suum gaudium, ne videatur non fuisse
-solvendo; at vero ille, qui accepit[248] iniuriam, et meminit et prae se
-fert dolorem suum, nec, si plures sunt ii, quibus inprobe datum est,
-quam illi, quibus iniuste ademptum est, idcirco plus etiam valent; non
-enim numero haec iudicantur, sed pondere. Quam autem habet aequitatem,
-ut agrum multis annis aut etiam saeculis ante possessum, qui nullum
-habuit, habeat, qui autem habuit, amittat?
-
-[245] _abstinentiae_ L c p, Edd.; _sapientiae_ B H a b.
-
-[246] _potitus_ J. F. Heusinger; _potitus [est]_ Edd.;
-_potitus est_ MSS.
-
-[247] _intulit_ B H b, Edd.; _detulit_ L c p.
-
-[248] _accepit_ L c, Edd.; _accipit_ B H a b p.
-
 *76* XXII. Panaetius praises Africanus for his integrity in public life.
 Why should he not? But Africanus had other and greater virtues. The
 boast of official integrity belongs not to that man alone but also to
@@ -7634,64 +4286,6 @@ occupied for many years or even generations, and that he who had them
 before should lose possession of them?
 
 [AY] Nearly two million pounds sterling.
-
-*80* XXIII. Ac[249] propter hoc iniuriae genus Lacedaemonii Lysandrum
-ephorum expulerunt, Agim regem, quod numquam antea apud eos acciderat,
-necaverunt, exque eo tempore tantae discordiae secutae sunt, ut et
-tyranni exsisterent et optimates exterminarentur et praeclarissime
-constituta res publica dilaberetur; nec vero solum ipsa cecidit, sed
-etiam reliquam Graeciam evertit contagionibus malorum,[250] quae a
-Lacedaemoniis profectae manarunt latius. Quid? nostros Gracchos, Ti.
-Gracchi summi viri filios, Africani nepotes, nonne agrariae contentiones
-perdiderunt?
-
-*81* At vero Aratus Sicyonius iure laudatur, qui, cum eius civitas
-quinquaginta annos a tyrannis teneretur, profectus Argis Sicyonem
-clandestino introitu urbe est potitus, cumque tyrannum Nicoclem
-improviso oppressisset,[251] sescentos exsules, qui locupletissimi
-fuerant eius civitatis, restituit remque publicam adventu suo liberavit.
-Sed cum magnam animadverteret in bonis et possessionibus difficultatem,
-quod et eos, quos ipse restituerat, quorum bona alii possederant, egere
-iniquissimum esse arbitrabatur et quinquaginta annorum possessiones
-moveri[252] non nimis aequum putabat, propterea quod tam longo spatio
-multa hereditatibus, multa emptionibus, multa dotibus tenebantur sine
-iniuria, iudicavit neque illis adimi nec iis non satis fieri, quorum
-illa fuerant, oportere. *82* Cum igitur statuisset opus esse ad eam rem
-constituendam pecunia, Alexandream se proficisci velle dixit remque
-integram ad reditum suum iussit esse, isque celeriter ad Ptolomaeum,
-suum hospitem, venit, qui tum regnabat alter post Alexandream conditam.
-Cui[253] cum exposuisset patriam se liberare velle causamque docuisset,
-a rege opulento vir summus facile impetravit, ut grandi pecunia
-adiuvaretur. Quam cum Sicyonem attulisset, adhibuit sibi in consilium
-quindecim principes, cum quibus causas cognovit et eorum, qui aliena
-tenebant, et eorum, qui sua amiserant, perfecitque aestimandis
-possessionibus, ut persuaderet aliis, ut pecuniam accipere mallent,
-possessionibus cederent, aliis, ut commodius putarent numerari sibi,
-quod tanti esset, quam suum recuperare. Ita perfectum est, ut omnes
-concordia constituta sine querella discederent.
-
-*83* O virum magnum dignumque, qui in re publica nostra natus esset! Sic
-par est agere cum civibus, non, ut bis iam vidimus, hastam in foro
-ponere et bona civium voci subicere[254] praeconis. At ille Graecus, id
-quod fuit sapientis et praestantis viri, omnibus consulendum putavit,
-eaque est summa ratio et sapientia boni civis, commoda civium non
-divellere atque omnis aequitate eadem continere. Habitent gratis in
-alieno. Quid ita? ut, cum ego emerim, aedificarim, tuear, impendam, tu
-me invito fruare meo? Quid est aliud aliis sua eripere, aliis dare
-aliena? *84* Tabulae vero novae quid habent argumenti, nisi ut emas mea
-pecunia fundum, eum tu habeas, ego non habeam pecuniam?
-
-[249] _Ac_ Edd.; _at_ MSS.
-
-[250] _malorum_ L c p, Edd.; _maiorum_ B H a b.
-
-[251] _oppressisset_ L c p, Edd.; _pressisset_ B H a b.
-
-[252] _moveri_ L c p, Edd.; _movere_ B H a b.
-
-[253] _cui_ Edd.; _qui_ MSS.
-
-[254] _subicere_ L c p, Edd.; _subiacere_ B H a b.
 
 #Instances of agrarian legislation.#
 
@@ -7763,67 +4357,6 @@ And what is the meaning of an abolition of debts, except that you buy a
 farm with my money; that you have the farm, and I have not my money?
 
 [AZ] An assumed appeal to one of Caesar's edicts.
-
-XXIV. Quam ob rem ne sit aes alienum, quod rei publicae noceat,
-providendum est, quod multis rationibus caveri potest, non, si fuerit,
-ut locupletes suum perdant, debitores lucrentur alienum; nec enim ulla
-res vehementius rem publicam continet quam fides, quae esse nulla
-potest, nisi erit necessaria solutio rerum creditarum. Numquam
-vehementius actum est quam me consule, ne solveretur; armis et castris
-temptata res est ab omni genere hominum et ordine; quibus ita restiti,
-ut hoc totum malum de re publica tolleretur. Numquam nec maius aes
-alienum fuit nec melius nec facilius dissolutum est; fraudandi enim spe
-sublata solvendi necessitas consecuta est. At vero hic nunc victor, tum
-quidem victus, quae cogitarat, ea[255] perfecit, cum eius iam nihil
-interesset. Tanta in eo peccandi libido fuit, ut hoc ipsum eum
-delectaret, peccare, etiamsi causa non esset.
-
-*85* Ab hoc igitur genere largitionis, ut aliis detur, aliis auferatur,
-aberunt ii, qui rem publicam tuebuntur, in primisque operam dabunt, ut
-iuris et iudiciorum aequitate suum quisque teneat et neque tenuiores
-propter humilitatem circumveniantur neque locupletibus ad sua vel
-tenenda vel recuperanda obsit invidia, praeterea, quibuscumque rebus vel
-belli vel domi poterunt, rem publicam augeant imperio, agris,
-vectigalibus.
-
-Haec magnorum hominum sunt, haec apud maiores nostros factitata, haec
-genera officiorum qui persequentur,[256] cum summa utilitate rei
-publicae magnam ipsi adipiscentur et gratiam et gloriam.
-
-*86* In his autem utilitatum praeceptis Antipater Tyrius Stoicus, qui
-Athenis nuper est mortuus, duo praeterita censet esse a Panaetio,
-valetudinis curationem et pecuniae; quas res a summo philosopho
-praeteritas arbitror, quod essent faciles; sunt certe utiles. Sed
-valetudo sustentatur notitia sui corporis et observatione, quae res aut
-prodesse soleant aut obesse, et continentia in victu omni atque cultu
-corporis tuendi causa [praetermittendis voluptatibus],[257] postremo
-arte eorum, quorum ad scientiam haec pertinent.
-
-*87* Res autem familiaris quaeri debet iis rebus, a quibus abest
-turpitudo, conservari autem diligentia et parsimonia, eisdem etiam rebus
-augeri. Has res commodissime Xenophon Socraticus persecutus est in eo
-libro, qui Oeconomicus inscribitur, quem nos, ista fere aetate cum
-essemus, qua es tu nunc, e Graeco in Latinum convertimus. [258]Sed toto
-hoc de genere, de quaerenda, de collocanda pecunia, (vellem[259] etiam
-de utenda) commodius a quibusdam optimis viris ad Ianum[260] medium
-sedentibus quam ab ullis philosophis ulla in schola disputatur. Sunt
-tamen ea cognoscenda; pertinent enim ad utilitatem, de qua hoc libro
-disputatum est.[258]
-
-[255] _cogitarat, ea_ B H a b, Bt.^2, Müller; _cogitarat, cum
-ipsius intererat, tum ea_ c p, Bt.^1, Heine.
-
-[256] _persequentur_ c; _persequuntur_ b, Bt.^2;
-_persecuntur_ B H p, Bt.^1, Heine.
-
-[257] _praetermittendis voluptatibus_ MSS.; del. Heine, Edd.
-
-[258] _Sed ... disputatum est_ transposed from § 90 by Unger,
-Edd.
-
-[259] _vellem_ c p, Bt.^1, Ed.; not in B H a b, Bt.^2
-
-[260] _Ianum_ c, Edd.; _ianuae_ B H a b p.
 
 #Economics of debts.#
 
@@ -7901,37 +4434,7 @@ the obnoxious legislation here referred to--that all interest
 in arrears should be remitted, and that that which had been
 paid should be deducted from the principal.
 
-*88* XXV. Sed utilitatum comparatio, quoniam hic locus erat quartus, a
-Panaetio praetermissus, saepe est necessaria. Nam et corporis commoda
-cum externis [et externa cum corporis][261] et ipsa inter se corporis et
-externa cum externis comparari solent. Cum externis corporis hoc modo
-comparantur, valere ut malis quam dives esse, [cum corporis externa hoc
-modo, dives esse potius quam maximis corporis viribus,][262] ipsa inter
-se corporis sic, ut bona valetudo voluptati anteponatur, vires
-celeritati, externorum autem, ut gloria divitiis, vectigalia urbana
-rusticis. *89* Ex quo genere comparationis illud est Catonis senis: a
-quo cum quaereretur, quid maxime in re familiari expediret, respondit:
-"Bene pascere"; quid secundum: "Satis bene pascere"; quid tertium:[263]
-"Male pascere"; quid quartum: "Arare"; et cum ille, qui quaesierat,
-dixisset: "Quid faenerari?", tum Cato: "Quid hominem," inquit,
-"occidere?"
-
-Ex quo et multis aliis intellegi debet utilitatum comparationes fieri
-solere, recteque hoc adiunctum esse quartum exquirendorum officiorum
-genus.[264]
-
 Reliqua deinceps persequemur.
-
-[261] [_et ... corporis_] bracketed by Unger, Edd.
-
-[262] [_cum corporis ... corporis viribus_] bracketed by
-Unger, Edd.
-
-[263] _quid tertium: "Male pascere"_ c p, Edd.; not in B H a
-b.
-
-[264] _officiorum genus._ Here follows in MSS. _Sed toto ...
-disputatum est_ transposed to § 87.
 
 #Comparison of expediencies.#
 
@@ -7966,55 +4469,6 @@ Let us now pass on to the remaining problems.
 ### CICERO DE OFFICIIS BOOK III
 
 ### THE CONFLICT BETWEEN THE RIGHT AND THE EXPEDIENT LIBER TERTIUS / BOOK III
-
-*1* I. P. Scipionem, M.[265] fili, eum, qui primus Africanus appellatus
-est, dicere solitum scripsit Cato, qui fuit eius fere aequalis, numquam
-se minus otiosum esse, quam cum otiosus, nec minus solum, quam cum solus
-esset. Magnifica vero vox et magno viro ac sapiente digna; quae declarat
-illum et in otio de negotiis cogitare et in solitudine secum loqui
-solitum, ut neque cessaret umquam et interdum colloquio alterius non
-egeret. Ita duae res, quae languorem afferunt ceteris, illum acuebant,
-otium et solitudo. Vellem nobis hoc idem vere dicere liceret; sed si
-minus imitatione tantam ingenii praestantiam consequi possumus,
-voluntate certe proxime accedimus; nam et a re publica forensibusque
-negotiis armis impiis vique prohibiti otium persequimur et ob eam causam
-urbe relicta rura peragrantes saepe soli sumus.
-
-*2* Sed nec hoc otium cum Africani otio nec haec solitudo cum illa
-comparanda est. Ille enim requiescens a rei publicae pulcherrimis
-muneribus otium sibi sumebat aliquando et e[266] coetu hominum
-frequentiaque interdum tamquam in portum se in solitudinem recipiebat,
-nostrum autem otium negotii inopia, non requiescendi studio constitutum
-est. Exstincto enim senatu deletisque iudiciis quid est quod dignum
-nobis aut in curia aut in foro agere possimus? *3* Ita, qui in maxima
-celebritate atque in oculis civium quondam vixerimus, nunc fugientes
-conspectum sceleratorum, quibus omnia redundant, abdimus nos, quantum
-licet, et saepe soli sumus. Sed quia sic ab hominibus doctis accepimus,
-non solum ex malis eligere minima oportere, sed etiam excerpere ex his
-ipsis,[267] si quid inesset boni, propterea et otio fruor, non illo
-quidem, quo debebat is,[268] qui quondam peperisset otium civitati, nec
-eam solitudinem languere patior, quam mihi affert necessitas, non
-voluntas.
-
-*4* Quamquam Africanus maiorem laudem meo iudicio assequebatur. Nulla
-enim eius ingenii monumenta mandata litteris, nullum opus otii, nullum
-solitudinis munus exstat; ex quo intellegi debet illum mentis agitatione
-investigationeque earum rerum, quas cogitando consequebatur, nec otiosum
-nec solum umquam fuisse; nos autem, qui non tantum roboris habemus, ut
-cogitatione tacita a[269] solitudine abstrahamur, ad hanc scribendi
-operam omne studium curamque convertimus. Itaque plura brevi tempore
-eversa quam multis annis stante re publica scripsimus.
-
-[265] _M._ Nonius; _Marce_ MSS.
-
-[266] _e_ c, Edd.; _a_ a; not in B H b.
-
-[267] _ex his ipsis_ c, Edd.; _ex his_ a; _ex ipsis_ B H b.
-
-[268] _debebat is_ c, Edd.; _debeat_ B H b; _debeat is_ corr.
-in _debeat_ a.
-
-[269] _a_ c, Edd.; not in B H a b.
 
 #Preface: Scipio and Cicero.#
 
@@ -8066,64 +4520,6 @@ have turned all my attention and endeavour to this kind of literary
 work. I have, accordingly, written more in this short time since the
 downfall of the republic than I did in the course of many years, while
 the republic stood.
-
-*5* II. Sed cum tota philosophia, mi Cicero, frugifera et fructuosa nec
-ulla pars eius inculta ac deserta sit, tum nullus feracior in ea locus
-est nec uberior[270] quam de officiis, a quibus constanter honesteque
-vivendi praecepta ducuntur. Quare, quamquam a Cratippo nostro, principe
-huius memoriae philosophorum, haec te assidue audire atque accipere
-confido, tamen conducere arbitror talibus aures tuas vocibus undique
-circumsonare, nec eas, si fieri possit, quicquam aliud audire. *6* Quod
-cum omnibus est faciendum, qui vitam honestam ingredi cogitant, tum haud
-scio an nemini potius quam tibi; sustines enim non parvam exspectationem
-imitandae industriae nostrae, magnam honorum, non nullam fortasse
-nominis. Suscepisti onus praeterea grave et Athenarum et Cratippi; ad
-quos cum tamquam ad mercaturam bonarum artium sis profectus, inanem
-redire turpissimum est dedecorantem et urbis auctoritatem et magistri.
-Quare, quantum coniti animo potes, quantum labore contendere, si
-discendi labor est potius quam voluptas, tantum fac ut efficias neve
-committas, ut, cum[271] omnia suppeditata sint a nobis, tute tibi
-defuisse videare.
-
-Sed haec hactenus; multa enim saepe ad te cohortandi gratia scripsimus;
-nunc ad reliquam partem propositae divisionis revertamur.
-
-*7* Panaetius igitur, qui sine controversia de officiis accuratissime
-disputavit, quemque nos correctione quadam adhibita potissimum secuti
-sumus, tribus generibus propositis, in quibus deliberare homines et
-consultare de officio solerent, uno, cum dubitarent, honestumne id
-esset, de quo ageretur, an turpe, altero, utilene esset an inutile,
-tertio, si id, quod speciem haberet honesti, pugnaret cum eo, quod utile
-videretur, quo modo ea discerni oporteret, de duobus generibus primis
-tribus libris explicavit, de tertio autem genere deinceps se scripsit
-dicturum nec exsolvit id, quod promiserat. *8* Quod eo magis miror, quia
-scriptum a discipulo eius Posidonio est triginta annis vixisse
-Panaetium, posteaquam illos libros edidisset. Quem locum miror a
-Posidonio breviter esse tactum in quibusdam commentariis, praesertim cum
-scribat nullum esse locum in tota philosophia tam necessarium.
-
-*9* Minime vero assentior iis, qui negant eum locum a Panaetio
-praetermissum, sed consulto relictum, nec omnino scribendum fuisse, quia
-numquam posset utilitas cum honestate pugnare. De quo alterum potest
-habere dubitationem, adhibendumne fuerit hoc genus, quod in divisione
-Panaeti tertium est, an plane omittendum, alterum dubitari non potest,
-quin a Panaetio susceptum sit, sed relictum. Nam qui e divisione
-tripertita duas partes absolverit, huic necesse est restare tertiam;
-praeterea in extremo libro tertio de hac parte pollicetur se deinceps
-esse dicturum. *10* Accedit eodem testis locuples Posidonius, qui etiam
-scribit in quadam epistula P. Rutilium Rufum dicere solere, qui
-Panaetium audierat, ut nemo pictor esset inventus, qui in Coa Venere eam
-partem, quam Apelles inchoatam reliquisset, absolveret (oris enim
-pulchritudo reliqui corporis imitandi spem auferebat), sic ea, quae
-Panaetius praetermisisset [et non perfecisset][272] propter eorum, quae
-perfecisset, praestantiam neminem persecutum.
-
-[270] _uberior_ c, Edd.; _uerior_ B H a b.
-
-[271] _ut, cum_ c, Edd.; _ut ne, cum_ B H a b.
-
-[272] _et non perfecisset_ MSS.; del. Muretus; bracketed by
-Edd.
 
 #Young Cicero admonished to diligence in his studies.#
 
@@ -8197,66 +4593,6 @@ adequately to represent the rest of the figure), so no one, because of
 the surpassing excellence of what Panaetius did complete, would venture
 to supply what he had left undone."
 
-*11* III. Quam ob rem de iudicio Panaeti dubitari non potest; rectene
-autem hanc tertiam partem ad exquirendum officium adiunxerit an secus,
-de eo fortasse disputari potest. Nam, sive honestum solum bonum est, ut
-Stoicis placet, sive, quod honestum est, id ita summum bonum est, quem
-ad modum Peripateticis vestris videtur, ut omnia ex altera parte
-collocata vix minimi momenti instar habeant, dubitandum non est, quin
-numquam possit utilitas cum honestate contendere. Itaque accepimus
-Socratem exsecrari solitum eos, qui primum haec natura cohaerentia
-opinione distraxissent. Cui quidem ita sunt Stoici assensi, ut et,
-quicquid honestum esset, id utile esse censerent nec utile quicquam,
-quod non honestum.
-
-*12* Quodsi is esset Panaetius, qui virtutem propterea colendam diceret,
-quod ea efficiens utilitatis esset, ut ii, qui res expetendas vel
-voluptate vel indolentia metiuntur, liceret ei dicere utilitatem
-aliquando cum honestate pugnare; sed cum sit is, qui id solum bonum
-iudicet, quod honestum sit, quae autem huic repugnent specie quadam
-utilitatis, eorum neque accessione meliorem vitam fieri nec decessione
-peiorem, non videtur debuisse eius modi deliberationem introducere, in
-qua, quod utile videretur, cum eo, quod honestum est, compararetur. *13*
-Etenim quod summum bonum a Stoicis dicitur, convenienter naturae vivere,
-id habet hanc, ut opinor, sententiam: cum virtute congruere semper,
-cetera autem, quae secundum naturam essent, ita legere, si ea virtuti
-non repugnarent. Quod cum ita sit, putant quidam hanc comparationem non
-recte introductam, nec omnino de eo genere quicquam praecipiendum
-fuisse.
-
-Atque[273] illud quidem honestum, quod proprie vereque dicitur, id in
-sapientibus est solis neque a virtute divelli umquam potest; in iis
-autem, in quibus sapientia perfecta non est, ipsum illud quidem
-perfectum honestum nullo modo, similitudines honesti esse possunt. *14*
-Haec enim officia, de quibus his libris disputamus, media Stoici
-appellant; ea communia sunt et late patent; quae et ingenii bonitate
-multi assequuntur et progressione discendi. Illud autem officium, quod
-rectum idem appellant, perfectum atque absolutum est et, ut idem dicunt,
-omnes numeros habet nec praeter sapientem cadere in quemquam potest.
-*15* Cum autem aliquid actum est, in quo media officia compareant,[274]
-id cumulate videtur esse perfectum, propterea quod volgus, quid absit a
-perfecto, non fere intellegit; quatenus autem intellegit, nihil putat
-praetermissum; quod idem[275] in poematis, in picturis usu venit in
-aliisque compluribus, ut delectentur imperiti laudentque ea, quae
-laudanda non sint, ob eam, credo, causam, quod insit in iis[276] aliquid
-probi, quod capiat ignaros, qui quidem,[277] quid in una quaque re vitii
-sit, nequeant iudicare; itaque, cum sunt docti a peritis, desistunt
-facile sententia.
-
-[273] _Atque_ MSS., Bt.^1, Müller, Heine; _atqui_ Fleckeisen,
-Bt.^2, Ed.
-
-[274] _compareant_ Anemoecius, Edd.; _comparant_ B H a b;
-_appareant_ c; _comparent_ p.
-
-[275] _idem_ Nonius, Müller, Heine; _autem_ B H a b; _item_
-c, Bt.
-
-[276] _iis_ Baiter, Müller, Heine; _his_ B H a b; _hijs_ c.
-
-[277] _qui quidem_ many MSS., Bt.^1, Müller; _qui idem_ B H a
-b c; _qui [idem]_ Bt.^2, Heine.
-
 #The conflict between Expediency and Moral Rectitude only apparent.#
 
 *11* III. In regard to Panaetius's real intentions, therefore, no doubt
@@ -8322,84 +4658,6 @@ they readily abandon their former opinion.
 perfection--an allusion to the Pythagorean doctrine that
 specific numbers stand for perfection of specific kinds;
 "absolute duty" combines them all.
-
-IV. Haec igitur officia, de quibus his libris disserimus, quasi secunda
-quaedam honesta esse dicunt, non sapientium modo propria, sed cum omni
-hominum genere communia. *16* Itaque iis omnes, in quibus est virtutis
-indoles, commoventur. Nec vero, cum duo Decii aut duo Scipiones fortes
-viri commemorantur, aut cum Fabricius [aut Aristides][278] iustus
-nominatur, aut ab illis fortitudinis aut ab hoc[279] iustitiae tamquam a
-sapiente petitur exemplum; nemo enim horum sic sapiens, ut sapientem
-volumus intellegi, nec ii, qui sapientes habiti et nominati, M. Cato et
-C. Laelius, sapientes fuerunt, ne illi quidem septem, sed ex mediorum
-officiorum frequentia similitudinem quandam gerebant speciemque
-sapientium.
-
-*17* Quocirca nec id, quod vere honestum est, fas est cum utilitatis
-repugnantia comparari, nec id, quod communiter appellamus honestum, quod
-colitur ab iis, qui bonos se viros haberi volunt, cum emolumentis umquam
-est comparandum, tamque id honestum, quod in nostram intellegentiam
-cadit, tuendum conservandumque nobis est quam illud, quod proprie
-dicitur vereque est honestum, sapientibus; aliter enim teneri non
-potest, si qua ad virtutem est facta progressio.
-
-Sed haec quidem de iis, qui conservatione officiorum existimantur boni.
-
-*18* Qui autem omnia metiuntur emolumentis et commodis neque ea volunt
-praeponderari honestate, ii solent in deliberando honestum cum eo, quod
-utile putant, comparare, boni viri non solent. Itaque existimo
-Panaetium, cum dixerit homines solere in hac comparatione dubitare, hoc
-ipsum sensisse, quod dixerit, "solere" modo, non etiam "oportere."
-Etenim non modo pluris putare, quod utile videatur, quam quod honestum
-sit,[280] sed etiam haec inter se comparare et in his addubitare
-turpissimum est.
-
-Quid ergo est, quod non numquam dubitationem afferre soleat
-considerandumque videatur? Credo, si quando dubitatio accidit, quale sit
-id, de quo consideretur. *19* Saepe enim tempore fit, ut, quod turpe
-plerumque haberi soleat, inveniatur non esse turpe; exempli causa
-ponatur aliquid, quod pateat latius: Quod potest maius esse[281] scelus
-quam non modo hominem, sed etiam familiarem hominem occidere? Num igitur
-se astrinxit scelere, si qui tyrannum occidit quamvis familiarem? Populo
-quidem Romano non videtur, qui ex omnibus praeclaris factis illud
-pulcherrimum existimat. Vicit ergo utilitas honestatem? Immo vero
-honestas utilitatem secuta est.[282]
-
-Itaque, ut sine ullo errore diiudicare possimus, si quando cum illo,
-quod honestum intellegimus, pugnare id videbitur, quod appellamus utile,
-formula quaedam constituenda est; quam si sequemur in comparatione
-rerum, ab officio numquam recedemus. *20* Erit autem haec formula
-Stoicorum rationi disciplinaeque maxime consentanea; quam quidem his
-libris propterea sequimur, quod, quamquam et a veteribus Academicis et a
-Peripateticis vestris, qui quondam idem erant, qui Academici, quae
-honesta sunt, anteponuntur iis, quae videntur utilia, tamen splendidius
-haec ab eis disseruntur,[283] quibus, quicquid honestum est, idem utile
-videtur nec utile quicquam, quod non honestum, quam ab iis,[284] quibus
-et honestum aliquid non utile et utile[285] non honestum. Nobis autem
-nostra Academia magnam licentiam dat, ut, quodcumque maxime probabile
-occurrat, id nostro iure liceat defendere. Sed redeo ad formulam.
-
-[278] _aut Aristides_ (_Aristidesve_ p) MSS., Lactantius;
-bracketed by J. M. Heusinger, Edd.
-
-[279] _hoc_ Lactantius, Edd., _his_ MSS.
-
-[280] _sit_ c, Bt.^2, Müller; not in B H a b, Bt.^1; _est_
-Heine.
-
-[281] _esse_ c, Edd.; not in B H a b.
-
-[282] _utilitatem secuta est_ MSS., Müller, Heine;
-_utilitatem; honestatem utilitas secuta est_ Baiter, Ed.
-
-[283] _disseruntur_ certain MSS., C. Lange and Fr. Fabricius,
-Müller, Heine; _disserentur_ MSS., Bt.
-
-[284] _iis_ Edd.; _his_ (_hijs_ c) MSS.
-
-[285] _et honestum ... et utile_ Lambinus, Bt.^2, Müller,
-Heine, _et honestum ... aut utile_ B H a b; _aut honestum ...
-aut utile_ c, Bt.^1
 
 #Absolute goodness and imperfect humanity.#
 
@@ -8482,66 +4740,6 @@ Academy allows us wide liberty, so that it is within my right to defend
 any theory that presents itself to me as most probable. But to return to
 my rule.
 
-*21* V. Detrahere igitur alteri aliquid et hominem hominis incommodo
-suum commodum augere magis est contra naturam quam mors, quam paupertas,
-quam dolor, quam cetera, quae possunt aut corpori accidere aut rebus
-externis. Nam principio tollit convictum humanum et societatem. Si enim
-sic erimus affecti, ut propter suum quisque emolumentum spoliet aut
-violet alterum, disrumpi necesse est, eam quae maxime est secundum
-naturam, humani generis societatem. *22* Ut, si unum quodque membrum
-sensum hunc haberet, ut posse putaret se valere, si proximi membri
-valetudinem ad se traduxisset, debilitari et interire totum corpus
-necesse esset, sic, si unus quisque nostrum ad se rapiat commoda aliorum
-detrahatque, quod cuique possit, emolumenti sui gratia, societas hominum
-et communitas evertatur necesse est. Nam sibi ut quisque malit, quod ad
-usum vitae pertineat, quam alteri acquirere, concessum est non
-repugnante natura, illud natura non patitur, ut aliorum spoliis nostras
-facultates, copias, opes augeamus.
-
-*23* Neque vero hoc solum natura, id est iure gentium, sed etiam legibus
-populorum, quibus in singulis civitatibus res publica continetur, eodem
-modo constitutum est, ut non liceat sui commodi causa nocere alteri; hoc
-enim spectant leges, hoc volunt, incolumem esse civium coniunctionem;
-quam qui dirimunt, eos morte, exsilio, vinclis, damno coërcent.
-
-Atque hoc multo magis efficit ipsa naturae ratio, quae est lex divina et
-humana; cui parere qui velit (omnes autem parebunt, qui secundum naturam
-volent vivere), numquam committet, ut alienum appetat et id, quod alteri
-detraxerit, sibi adsumat. *24* Etenim multo magis est secundum naturam
-excelsitas animi et magnitudo itemque comitas, iustitia, liberalitas
-quam voluptas, quam vita, quam divitiae; quae quidem contemnere et pro
-nihilo ducere comparantem cum utilitate communi magni animi et excelsi
-est. [Detrahere autem de altero sui commodi causa magis est contra
-naturam quam mors, quam dolor, quam cetera generis eiusdem.][286]
-
-*25* Itemque magis est secundum naturam pro omnibus gentibus, si fieri
-possit, conservandis aut iuvandis maximos labores molestiasque suscipere
-imitantem Herculem illum, quem hominum fama beneficiorum memor in
-concilio caelestium collocavit, quam vivere in solitudine non modo sine
-ullis molestiis, sed etiam in maximis voluptatibus abundantem omnibus
-copiis, ut excellas etiam pulchritudine et viribus.
-
-Quocirca optimo quisque et splendidissimo ingenio longe illam vitam huic
-anteponit. Ex quo efficitur hominem naturae oboedientem homini nocere
-non posse.
-
-*26* Deinde, qui alterum violat, ut ipse aliquid commodi consequatur,
-aut nihil existimat se facere contra naturam aut magis fugiendam[287]
-censet mortem, paupertatem, dolorem, amissionem etiam liberorum,
-propinquorum, amicorum quam facere cuiquam iniuriam. Si nihil existimat
-contra naturam fieri hominibus violandis, quid cum eo disseras, qui
-omnino hominem ex homine tollat? sin fugiendum id quidem censet,
-sed[288] multo illa peiora, mortem, paupertatem, dolorem, errat in eo,
-quod ullum aut corporis aut fortunae vitium vitiis animi gravius
-existimat.
-
-[286] _Detrahere ... generis eiusdem_ MSS.; bracketed by
-Baiter, Edd.
-
-[287] _fugiendam_ b, Ed.; _fugienda_ B H a c.
-
-[288] _sed_ c, Edd.; _et_ B H a b.
-
 #Wrongful gains are against the laws:#
 
 #(1) of nature,#
@@ -8619,79 +4817,6 @@ believes that while such a course should be avoided, the other
 alternatives are much worse--namely, death, poverty, pain--he is
 mistaken in thinking that any ills affecting either his person or his
 property are more serious than those affecting his soul.
-
-VI. Ergo unum debet esse omnibus propositum, ut eadem sit utilitas unius
-cuiusque et universorum; quam si ad se quisque rapiet, dissolvetur omnis
-humana consortio.
-
-*27* Atque etiam, si hoc natura praescribit, ut homo homini, quicumque
-sit, ob eam ipsam causam, quod is homo sit, consultum velit, necesse est
-secundum eandem naturam omnium utilitatem esse communem. Quod si ita
-est, una continemur omnes et eadem lege naturae, idque ipsum si ita est,
-certe violare alterum naturae lege prohibemur. Verum autem primum; verum
-igitur extremum. *28* Nam illud quidem absurdum est, quod quidam dicunt,
-parenti se aut fratri nihil detracturos sui commodi causa, aliam
-rationem esse civium reliquorum. Hi sibi nihil iuris, nullam societatem
-communis utilitatis causa statuunt esse cum civibus, quae sententia
-omnem societatem distrahit civitatis.
-
-Qui autem civium rationem dicunt habendam, externorum negant, ii[289]
-dirimunt communem humani generis societatem: qua sublata beneficentia,
-liberalitas, bonitas, iustitia funditus tollitur; quae qui tollunt,
-etiam adversus deos immortales impii iudicandi sunt. Ab iis enim
-constitutam inter homines societatem evertunt, cuius societatis
-artissimum vinculum est magis arbitrari esse contra naturam hominem
-homini detrahere sui commodi causa quam omnia incommoda subire vel
-externa vel corporis ... vel etiam ipsius animi, quae vacent
-iustitia[290]; haec enim una virtus omnium est domina et regina
-virtutum.
-
-*29* Forsitan quispiam dixerit: Nonne igitur sapiens, si fame ipse
-conficiatur, abstulerit cibum alteri homini ad nullam rem utili? [Minime
-vero; non enim mihi est vita mea utilior quam animi talis affectio,
-neminem ut violem commodi mei gratia.][291] Quid? si Phalarim, crudelem
-tyrannum et immanem, vir bonus, ne ipse frigore conficiatur, vestitu
-spoliare possit, nonne faciat?
-
-*30* Haec ad iudicandum sunt facillima. Nam, si quid ab homine ad nullam
-partem utili utilitatis tuae causa detraxeris, inhumane feceris
-contraque naturae legem; sin autem is tu sis, qui multam utilitatem rei
-publicae atque hominum societati, si in vita remaneas, afferre possis,
-si quid ob eam causam alteri detraxeris, non sit reprehendendum. Sin
-autem id non sit eius modi, suum cuique incommodum ferendum est potius
-quam de alterius commodis detrahendum. Non igitur magis est contra
-naturam morbus aut egestas aut quid eius modi quam detractio atque
-appetitio alieni, sed communis utilitatis derelictio contra naturam est;
-est enim iniusta. *31* Itaque lex ipsa naturae, quae utilitatem hominum
-conservat et continet, decernet profecto, ut ab homine inerti atque
-inutili ad sapientem, bonum, fortem virum transferantur res ad vivendum
-necessariae, qui si occiderit, multum de communi utilitate detraxerit,
-modo hoc ita faciat, ut ne ipse de se bene existimans seseque diligens
-hanc causam habeat ad iniuriam. Ita semper officio fungetur utilitati
-consulens hominum et ei, quam saepe commemoro, humanae societati.
-
-*32* Nam quod ad Phalarim attinet, perfacile iudicium est. Nulla est
-enim societas nobis cum tyrannis, et potius summa distractio est, neque
-est contra naturam spoliare eum, si possis, quem est honestum necare,
-atque hoc omne genus pestiferum atque impium ex hominum communitate
-exterminandum est. Etenim, ut membra quaedam amputantur, si et ipsa
-sanguine et tamquam spiritu carere coeperunt et nocent reliquis partibus
-corporis, sic ista in figura hominis feritas et immanitas beluae a
-communi tamquam humanitatis corpore[292] segreganda est.
-
-Huius generis quaestiones sunt omnes eae, in quibus ex tempore officium
-exquiritur.
-
-[289] _ii_ Bt., Ed.; _hi_ B a b; _hii_ H; _hij_ c.
-
-[290] _quae vacent iustitia_ MSS., Ed., Heine; _quae vacent
-iniustitia_ cod. Ubaldini, Bt.^1; _quae non v. iustitia_ O.
-
-[291] Bracketed by Unger, Edd.
-
-[292] _humanitatis corpore_ Muret, cod. Guelf., Ed., Bt.,
-Heine; _humanitate corporis_ MSS., Müller; Unger strikes out
-_corporis_.
 
 #The interest of society is the interest of the individual.#
 
@@ -8780,42 +4905,6 @@ moral duty is, as it varies with varying circumstances.
 [BD] I.e., there are no circumstances of loss or gain that
 can warrant a violation of justice.
 
-*33* VII. Eius modi igitur credo res Panaetium persecuturum fuisse, nisi
-aliqui casus aut occupatio eius consilium peremisset. Ad quas ipsas
-consultationes superioribus libris satis multa praecepta sunt, ex
-quibus[293] perspici possit, quid sit propter turpitudinem fugiendum,
-quid sit, quod idcirco fugiendum non sit, quod omnino turpe non sit.
-
-Sed quoniam operi inchoato, prope tamen absoluto tamquam fastigium
-imponimus, ut geometrae solent non omnia docere, sed postulare, ut
-quaedam sibi concedantur, quo facilius, quae volunt, explicent, sic ego
-a te postulo, mi Cicero, ut mihi concedas, si potes, nihil praeter id,
-quod honestum sit, propter se esse expetendum. Sin hoc non licet per
-Cratippum, at illud certe dabis, quod honestum sit, id esse maxime
-propter se expetendum. Mihi utrumvis satis est et tum hoc, tum illud
-probabilius videtur nec praeterea quicquam probabile.
-
-*34* Ac primum in hoc Panaetius defendendus est, quod non utilia cum
-honestis pugnare aliquando posse dixerit (neque enim ei fas erat), sed
-ea, quae viderentur utilia. Nihil vero utile, quod non idem honestum,
-nihil honestum, quod non idem utile sit, saepe testatur negatque ullam
-pestem maiorem in vitam hominum invasisse quam eorum opinionem, qui ista
-distraxerint. Itaque, non ut aliquando anteponeremus utilia honestis,
-sed ut ea sine errore diiudicaremus, si quando incidissent,[294] induxit
-eam, quae videretur esse, non quae esset, repugnantiam. Hanc igitur
-partem relictam explebimus nullis adminiculis, sed, ut dicitur, Marte
-nostro. Neque enim quicquam est de hac parte post Panaetium explicatum,
-quod quidem mihi probaretur, de iis, quae in manus meas venerunt.[295]
-
-[293] _superioribus ... ex quibus_ Walker, Bt.^2, Ed.; _ex
-superioribus ... quibus_ MSS., Bt.^1; _superioribus ...
-quibus_, Heine.
-
-[294] _ea ... incidissent_ MSS., Bt.^1, Heine, Ed.; _eam_
-[repugnantiam] ... _incidisset_ Unger, Bt.^2
-
-[295] _venerunt_ Manutius, Edd.; _venerint_ MSS.
-
 *33* VII. It is subjects of this sort that I believe Panaetius would
 have followed up, had not some accident or business interfered with his
 design. For the elucidation of these very questions there are in his
@@ -8871,46 +4960,6 @@ speaking as a Stoic) called all those other blessings not
 mentioning them, the Epicureans, Cyrenaics, etc.
 
 [BG] Because he was a Stoic.
-
-*35* VIII. Cum igitur aliqua species utilitatis obiecta est, commoveri
-necesse est; sed si, cum animum attenderis, turpitudinem videas
-adiunctam ei rei, quae speciem utilitatis attulerit, tum non utilitas
-relinquenda est, sed intellegendum, ubi turpitudo sit, ibi utilitatem
-esse non posse. Quodsi nihil est tam contra naturam quam turpitudo
-(recta enim et convenientia et constantia natura desiderat aspernaturque
-contraria) nihilque tam secundum naturam quam utilitas, certe in eadem
-re utilitas et turpitudo[296] esse non potest.
-
-Itemque, si ad honestatem nati sumus eaque aut sola expetenda est, ut
-Zenoni visum est, aut certe omni pondere gravior habenda quam reliqua
-omnia, quod Aristoteli placet, necesse est, quod honestum sit, id esse
-aut solum aut summum bonum; quod autem bonum, id certe utile: ita,
-quicquid honestum, id utile.
-
-*36* Quare error hominum non proborum, cum aliquid, quod utile visum
-est, arripuit, id continuo secernit ab honesto. Hinc sicae, hinc venena,
-hinc falsa testamenta nascuntur, hinc furta, peculatus, expilationes
-direptionesque sociorum et civium, hinc opum nimiarum, potentiae non
-ferendae, postremo etiam in liberis civitatibus regnandi exsistunt
-cupiditates, quibus nihil nec taetrius nec foedius excogitari potest.
-Emolumenta enim rerum fallacibus iudiciis vident, poenam non dico legum,
-quam saepe perrumpunt, sed ipsius turpitudinis, quae acerbissima est,
-non vident.
-
-*37* Quam ob rem hoc quidem deliberantium genus pellatur e medio (est
-enim totum sceleratum et impium), qui deliberant, utrum id sequantur,
-quod honestum esse videant, an se scientes scelere contaminent; in ipsa
-enim dubitatione facinus inest, etiamsi ad id non pervenerint. Ergo ea
-deliberanda omnino non sunt, in quibus est turpis ipsa deliberatio.
-
-Atque etiam ex omni deliberatione celandi et occultandi spes opinioque
-removenda est. Satis enim nobis, si modo in philosophia aliquid
-profecimus, persuasum esse debet, si omnes deos hominesque celare
-possimus, nihil tamen avare, nihil iniuste, nihil libidinose, nihil
-incontinenter esse faciendum.
-
-[296] _re utilitas et turp._ c, Edd.; _re utili turpitudo_ B
-H a b.
 
 #Expediency and immorality incompatible.#
 
@@ -8968,49 +5017,6 @@ of lust or of intemperance.
 
 #Rep. II, 359 C#
 
-*38* IX. Hinc ille Gyges inducitur a Platone, qui, cum terra
-discessisset magnis quibusdam imbribus, descendit in illum hiatum
-aëneumque equum, ut ferunt fabulae, animadvertit, cuius in lateribus
-fores essent; quibus apertis corpus hominis mortui vidit magnitudine
-invisitata[297] anulumque aureum in digito; quem ut detraxit, ipse
-induit (erat autem regius pastor), tum in concilium se pastorum recepit.
-Ibi cum palam eius anuli ad palmam converterat, a nullo videbatur, ipse
-autem omnia videbat; idem rursus videbatur, cum in locum anulum
-inverterat. Itaque hac opportunitate anuli usus reginae stuprum intulit
-eaque adiutrice regem dominum interemit, sustulit, quos obstare
-arbitrabatur, nec in his eum facinoribus quisquam potuit videre. Sic
-repente anuli beneficio rex exortus est Lydiae.
-
-Hunc igitur ipsum anulum si habeat sapiens, nihilo[298] plus sibi licere
-putet peccare, quam si non haberet[299]; honesta enim bonis viris, non
-occulta quaeruntur.
-
-*39* Atque hoc loco philosophi quidam, minime mali illi quidem, sed non
-satis acuti, fictam et commenticiam fabulam prolatam dicunt a Platone;
-quasi vero ille aut factum id esse aut fieri potuisse defendat! Haec est
-vis huius anuli et huius exempli: si nemo sciturus, nemo ne suspicaturus
-quidem sit, cum aliquid divitiarum, potentiae, dominationis, libidinis
-causa feceris, si id dis hominibusque futurum sit semper ignotum, sisne
-facturus. Negant id fieri posse. Nequaquam[300] potest id quidem; sed
-quaero, quod negant posse, id si posset, quidnam facerent. Urguent
-rustice sane; negant enim posse et in eo perstant; hoc verbum quid
-valeat, non vident. Cum enim quaerimus, si celare possint, quid facturi
-sint, non quaerimus, possintne celare, sed tamquam tormenta quaedam
-adhibemus, ut, si responderint se impunitate proposita facturos, quod
-expediat, facinorosos se esse fateantur, si negent, omnia turpia per se
-ipsa fugienda esse concedant.
-
-Sed iam ad propositum revertamur.
-
-[297] _invisitata_ B H^1, Edd.; _inusitata_ H^2 a b c.
-
-[298] _ni(c)hilo_ c, Edd.; _nihil_ B H a b.
-
-[299] _peccare ... haberet_ MSS.; bracketed by Madv., Bt.
-
-[300] _nequaquam_ Manutius, Bt., Ed., Heine; _quamquam_ (and
-yet it is possible) MSS., Müller.
-
 #The story of Gyges and his ring.#
 
 *38* IX. By way of illustrating this truth Plato introduces the familiar
@@ -9054,79 +5060,6 @@ minded; should they say that they would not do so, they would be
 granting that all things in and of themselves immoral should be avoided.
 
 But let us now return to our theme.
-
-*40* X. Incidunt multae saepe causae, quae conturbent animos utilitatis
-specie, non cum hoc deliberetur, relinquendane sit honestas propter
-utilitatis magnitudinem (nam id quidem improbum est), sed illud,
-possitne id, quod utile videatur, fieri non turpiter. Cum Collatino
-collegae Brutus imperium abrogabat, poterat videri facere id iniuste;
-fuerat enim in regibus expellendis socius Bruti consiliorum et adiutor.
-Cum autem consilium hoc principes cepissent, cognationem Superbi
-nomenque Tarquiniorum et memoriam regni esse tollendam, quod erat utile,
-patriae consulere, id erat ita honestum, ut etiam ipsi Collatino placere
-deberet. Itaque utilitas valuit propter honestatem, sine qua ne utilitas
-quidem esse potuisset.
-
-At in eo rege, qui urbem condidit, non item; *41* species enim
-utilitatis animum pepulit eius; cui cum visum esset utilius solum quam
-cum altero regnare, fratrem interemit. Omisit his et pietatem et
-humanitatem, ut id, quod utile videbatur neque erat, assequi posset, et
-tamen muri causam[301] opposuit, speciem honestatis nec probabilem nec
-sane idoneam. Peccavit igitur, pace vel Quirini vel Romuli dixerim.
-
-*42* Nec tamen nostrae nobis utilitates omittendae sunt aliisque
-tradendae, cum iis[302] ipsi egeamus, sed suae cuique utilitati, quod
-sine alterius iniuria fiat, serviendum est. Scite Chrysippus, ut multa:
-"Qui stadium," inquit, "currit, eniti et contendere debet, quam maxime
-possit, ut vincat, supplantare eum, quicum[303] certet, aut manu
-depellere nullo modo debet; sic in vita sibi quemque petere, quod
-pertineat ad usum, non iniquum est, alteri deripere ius non est."
-
-*43* Maxime autem perturbantur officia in amicitiis, quibus et non
-tribuere, quod recte possis, et tribuere, quod non sit aequum, contra
-officium est. Sed huius generis totius breve et non difficile praeceptum
-est. Quae enim videntur utilia, honores, divitiae, voluptates, cetera
-generis eiusdem, haec amicitiae numquam anteponenda sunt. At neque
-contra rem publicam neque contra ius iurandum ac fidem amici causa vir
-bonus faciet, ne si index quidem erit de ipso amico; ponit enim personam
-amici, cum induit iudicis. Tantum dabit amicitiae, ut veram amici causam
-esse malit, ut orandae litis tempus, quoad per leges liceat, accommodet.
-*44* Cum vero iurato sententia dicenda erit,[304] meminerit deum se
-adhibere[305] testem, id est, ut ego arbitror, mentem suam, qua nihil
-homini dedit deus ipse divinius. Itaque praeclarum a maioribus accepimus
-morem rogandi iudicis, si eum teneremus, QUAE SALVA FIDE FACERE POSSIT.
-Haec rogatio ad ea pertinet, quae paulo ante dixi honeste amico a iudice
-posse concedi; nam si omnia facienda sint, quae amici velint, non
-amicitiae tales, sed coniurationes putandae sint. *45* Loquor autem de
-communibus amicitiis; nam in sapientibus viris perfectisque nihil potest
-esse tale.
-
-Damonem et Phintiam Pythagoreos ferunt hoc animo inter se fuisse, ut,
-cum eorum alteri Dionysius tyrannus diem necis destinavisset et is, qui
-morti addictus esset, paucos sibi dies commendandorum suorum causa
-postulavisset, vas factus sit[306] alter eius sistendi, ut, si ille non
-revertisset, moriendum esset ipsi. Qui cum ad diem se recepisset,
-admiratus eorum fidem tyrannus petivit, ut se ad amicitiam tertium
-ascriberent.
-
-*46* Cum igitur id, quod utile videtur in amicitia, cum eo, quod
-honestum est, comparatur, iaceat utilitatis species, valeat honestas;
-cum autem in amicitia, quae honesta non sunt, postulabuntur, religio et
-fides anteponatur amicitiae. Sic habebitur is, quem exquirimus, dilectus
-officii.
-
-[301] _causam_ c, Edd.; _causa_ B H a b.
-
-[302] _iis_ Bt., Ed., Heine; _his_ B H a b; _hijs_ c.
-
-[303] _quicum_ MSS., Bt., Heine; _quocum_ Ed.
-
-[304] _erit_ Ed., Bt.^2, Heine; _sit_ MSS.; _est_ Bt.^1
-
-[305] _adhibere_ B H a, Bt., Ed.; _habere_ b c, Lact.,
-Müller.
-
-[306] _sit_ Manubius, Edd.; _est_ MSS., Nonius.
 
 #Conflicts between:#
 
@@ -9228,48 +5161,6 @@ duties--the subject of this part of our investigation.
 
 [BJ] I.e., whether he be god or man.
 
-XI. Sed utilitatis specie in re publica saepissime peccatur, ut in
-Corinthi disturbatione nostri; durius etiam Athenienses, qui sciverunt,
-ut Aeginetis, qui classe valebant, pollices praeciderentur. Hoc visum
-est utile; nimis enim imminebat propter propinquitatem Aegina Piraeo.
-Sed nihil, quod crudele, utile; est enim hominum naturae, quam sequi
-debemus, maxime inimica crudelitas. *47* Male etiam, qui peregrinos
-urbibus uti prohibent eosque exterminant, ut Pennus apud patres nostros,
-Papius nuper. Nam esse pro cive, qui civis non sit, rectum est non
-licere; quam legem tulerunt sapientissimi consules Crassus et Scaevola;
-usu vero urbis prohibere peregrinos sane inhumanum est.
-
-Illa praeclara, in quibus publicae utilitatis species prae honestate
-contemnitur. Plena exemplorum est nostra res publica cum saepe, tum
-maxime bello Punico secundo; quae Cannensi calamitate accepta maiores
-animos habuit quam umquam rebus secundis; nulla timoris significatio,
-nulla mentio pacis. Tanta vis est honesti, ut speciem utilitatis
-obscuret.
-
-*48* Athenienses cum Persarum impetum nullo modo possent sustinere
-statuerentque, ut urbe relicta coniugibus et liberis Troezene depositis
-naves conscenderent libertatemque Graeciae classe defenderent, Cyrsilum
-quendam suadentem, ut in urbe manerent Xerxemque[307] reciperent,
-lapidibus obruerunt. Atqui[308] ille utilitatem sequi videbatur; sed ea
-nulla erat repugnante honestate.
-
-*49* Themistocles post victoriam eius belli, quod cum Persis fuit, dixit
-in contione se habere consilium rei publicae salutare, sed id sciri non
-opus esse; postulavit, ut aliquem populus daret, quicum communicaret;
-datus est Aristides; huic ille, classem Lacedaemoniorum, quae subducta
-esset ad Gytheum, clam incendi posse, quo facto frangi Lacedaemoniorum
-opes necesse esset. Quod Aristides cum audisset, in contionem magna
-exspectatione venit dixitque perutile esse consilium, quod Themistocles
-afferret, sed minime honestum. Itaque Athenienses, quod honestum non
-esset, id ne utile quidem putaverunt totamque eam rem, quam ne audierant
-quidem, auctore Aristide repudiaverunt. Melius hi quam nos, qui piratas
-immunes, socios vectigales habemus.
-
-[307] _Xerxemque_ B H a b, Bt., Heine; _Xersenque_ c;
-_Xersemque_ Nonius, Ed.
-
-[308] _Atqui_ Victorius, Fl., Bt.^2, Ed.; _Atque_ MSS., Bt.^1
-
 #(4) apparent political expediency and duty to humanity.#
 
 XI. Through a specious appearance of expediency wrong is very often
@@ -9333,56 +5224,6 @@ Cassius.
 
 Marseilles and King Deiotarus of Armenia had supported Pompey
 and in consequence were made tributary by Caesar's party.
-
-XII. Maneat ergo, quod turpe sit, id numquam esse utile, ne tum quidem,
-cum id, quod esse utile putes, adipiscare; hoc enim ipsum, utile putare,
-quod turpe sit, calamitosum est. *50* #§ 40# Sed incidunt, ut supra
-dixi, saepe causae, cum repugnare utilitas honestati videatur, ut
-animadvertendum sit, repugnetne plane an possit cum honestate coniungi.
-Eius generis hae sunt quaestiones: si exempli gratia vir bonus
-Alexandrea Rhodum magnum frumenti numerum advexerit in Rhodiorum inopia
-et fame summaque annonae caritate, si idem sciat complures mercatores
-Alexandrea solvisse navesque in cursu frumento onustas petentes Rhodum
-viderit, dicturusne sit id Rhodiis an silentio suum quam plurimo
-venditurus. Sapientem et bonum virum fingimus; de eius deliberatione et
-consultatione quaerimus, qui celaturus Rhodios non sit, si id turpe
-iudicet, sed dubitet, an turpe non sit.
-
-*51* In huius modi causis aliud Diogeni Babylonio videri solet, magno et
-gravi Stoico, aliud Antipatro, discipulo eius, homini acutissimo.
-Antipatro omnia patefacienda, ut ne quid omnino, quod venditor norit,
-emptor ignoret, Diogeni venditorem, quatenus iure civili constitutum
-sit, dicere vitia oportere, cetera sine insidiis agere et, quoniam
-vendat, velle quam optime vendere.
-
-"Advexi, exposui, vendo meum non pluris quam ceteri, fortasse etiam
-minoris, cum maior est copia. Cui fit iniuria?"
-
-*52* Exoritur Antipatri ratio ex altera parte: "Quid ais? tu cum
-hominibus consulere debeas et servire humanae societati eaque lege natus
-sis et ea habeas principia naturae, quibus parere et quae sequi debeas,
-ut utilitas tua communis sit utilitas vicissimque communis utilitas tua
-sit, celabis homines, quid iis adsit commoditatis et copiae?"
-
-Respondebit Diogenes fortasse sic: "Aliud est celare, aliud tacere;
-neque ego nunc te celo, si tibi non dico, quae natura deorum sit, qui
-sit finis bonorum, quae tibi plus prodessent cognita quam tritici
-vilitas[309]; sed non, quicquid tibi audire utile est, idem[310] mihi
-dicere necesse est."
-
-*53* "Immo vero," inquiet ille, "necesse est,[311] siquidem meministi
-esse inter homines natura coniunctam societatem."
-
-"Memini," inquiet ille; "sed num ista societas talis est, ut nihil suum
-cuiusque sit? Quod si ita est, ne vendendum quidem quicquam est, sed
-donandum."
-
-[309] _vilitas_ a, Edd.; _utilitas_, B H b c.
-
-[310] _idem_ B H a b; _id_ c, Bt.
-
-[311] _immo ... est_ c, Ed., Heine; _immo vero necesse est_
-p; _immo vero_ [_inquiet ille_] _necesse est_ Bt.
 
 XII. Let it be set down as an established principle, then, that what is
 morally wrong can never be expedient--not even when one secures by means
@@ -9449,55 +5290,6 @@ that those bonds of fellowship are such that there is no such thing as
 private property? If that is the case, we should not sell anything at
 all, but freely give everything away."
 
-XIII. Vides in hac tota disceptatione non illud dici: "Quamvis hoc turpe
-sit, tamen, quoniam expedit, faciam," sed ita expedire, ut turpe non
-sit, ex altera autem parte, ea re, quia turpe sit, non esse faciendum.
-
-*54* Vendat aedes vir bonus propter aliqua vitia, quae ipse norit,
-ceteri ignorent, pestilentes sint et habeantur salubres, ignoretur in
-omnibus cubiculis apparere serpentes, male materiatae _sint_,[312]
-ruinosae, sed hoc praeter dominum nemo sciat; quaero, si haec emptoribus
-venditor non dixerit aedesque vendiderit pluris multo, quam se
-venditurum putarit, num id iniuste aut improbe fecerit.
-
-*55* "Ille vero," inquit Antipater; "quid est enim aliud erranti viam
-non monstrare, quod Athenis exsecrationibus publicis sanctum est, si hoc
-non est, emptorem pati ruere et per errorem in maximam fraudem
-incurrere? Plus etiam est quam viam non monstrare; nam est scientem in
-errorem alterum inducere."
-
-*(55)* Diogenes contra: "Num te emere coëgit, qui ne hortatus quidem
-est? Ille, quod non placebat, proscripsit, tu, quod placebat, emisti.
-Quodsi, qui proscribunt villam bonam beneque aedificatam, non
-existimantur fefellisse, etiamsi illa nec bona est nec aedificata
-ratione, multo minus, qui domum non laudarunt. Ubi enim iudicium
-emptoris est, ibi fraus venditoris quae potest esse? Sin autem dictum
-non omne praestandum est, quod dictum non est, id praestandum putas?
-Quid vero est stultius quam venditorem eius rei, quam vendat, vitia
-narrare? quid autem tam absurdum, quam si domini iussu ita praeco
-praedicet: 'Domum pestilentem vendo?'"
-
-*56* Sic ergo in quibusdam causis dubiis ex altera parte defenditur
-honestas, ex altera ita de utilitate dicitur, ut id, quod utile
-videatur, non modo facere honestum sit, sed etiam non facere turpe. Haec
-est illa, quae videtur utilium fieri cum honestis saepe dissensio. Quae
-diiudicanda sunt;[313] non enim, ut quaereremus, exposuimus, sed ut
-explicaremus. *57* Non igitur videtur nec frumentarius ille Rhodios[314]
-nec hic aedium venditor celare emptores debuisse. Neque enim id est
-celare, quicquid reticeas, sed cum, quod tu scias, id ignorare
-emolumenti tui causa velis eos, quorum intersit id scire. Hoc autem
-celandi genus quale sit et cuius hominis, quis non videt? Certe non
-aperti, non simplicis, non ingenui, non iusti, non viri boni, versuti
-potius, obscuri, astuti, fallacis, malitiosi, callidi, veteratoris,
-vafri. Haec tot et alia plura nonne inutile est vitiorum subire nomina?
-
-[312] _sint_ Bt.^1, Ed., Heine; not in MSS., Bt^2.
-
-[313] _sunt_ MSS., Bt.^1, Heine, Ed.; _est_ [dissensio]
-Unger, Bt.^2
-
-[314] _Rhodios_ c, Edd.; _Rhodius_ B H a b.
-
 XIII. In this whole discussion, you see, no one says "However wrong
 morally this or that may be, still, since it is expedient, I will do
 it"; but the one side asserts that a given act is expedient, without
@@ -9559,53 +5351,6 @@ sly, artful, shrewd, underhand, cunning, one grown old in fraud and
 subtlety. Is it not inexpedient to subject oneself to all these terms of
 reproach and many more besides?
 
-*58* XIV. Quodsi vituperandi, qui reticuerunt, quid de iis existimandum
-est, qui orationis vanitatem adhibuerunt? C. Canius, eques Romanus, nec
-infacetus et satis litteratus, cum se Syracusas otiandi, ut ipse dicere
-solebat, non negotiandi causa contulisset, dictitabat[315] se hortulos
-aliquos emere velle, quo invitare amicos et ubi se oblectare sine
-interpellatoribus posset. Quod cum percrebruisset, Pythius ei quidam,
-qui argentariam faceret Syracusis, venales quidem se hortos non habere,
-sed licere uti Canio, si vellet, ut suis, et simul ad cenam hominem in
-hortos invitavit in posterum diem. Cum ille promisisset, tum Pythius,
-qui esset ut argentarius apud omnes ordines gratiosus, piscatores ad se
-convocavit et ab iis petivit, ut ante suos hortulos postridie
-piscarentur, dixitque, quid eos facere vellet. Ad cenam tempori[316]
-venit Canius; opipare a Pythio apparatum convivium, cumbarum ante oculos
-multitudo; pro se quisque, quod ceperat, afferebat, ante pedes Pythi
-pisces abiciebantur.
-
-*59* Tum Canius: "Quaeso," inquit, "quid est hoc, Pythi? tantumne
-piscium? tantumne cumbarum?"
-
-Et ille: "Quid mirum?" inquit, "hoc loco est Syracusis quicquid est
-piscium, hic aquatio, hac villa isti carere non possunt."
-
-Incensus Canius cupiditate contendit a Pythio, ut venderet; gravate ille
-primo; quid multa? impetrat. Emit homo cupidus et locuples tanti, quanti
-Pythius voluit, et emit instructos; nomina facit, negotium conficit.
-Invitat Canius postridie familiares suos, venit ipse mature; scalmum
-nullum videt, quaerit ex proximo vicino, num feriae quaedam piscatorum
-essent, quod eos nullos videret.
-
-"Nullae, quod sciam," inquit; "sed hic piscari nulli solent; itaque heri
-mirabar, quid accidisset."
-
-*60* Stomachari Canius; sed quid faceret? nondum enim C. Aquilius,
-collega et familiaris meus, protulerat de dolo malo formulas; in quibus
-ipsis, cum ex eo quaereretur,[317] quid esset dolus malus, respondebat:
-cum esset aliud simulatum, aliud actum. Hoc quidem sane luculente ut ab
-homine perito definiendi. Ergo et Pythius et omnes aliud agentes, aliud
-simulantes perfidi, improbi, malitiosi. Nullum igitur eorum factum
-potest utile esse, cum sit tot vitiis inquinatum.
-
-[315] _dictitabat_ c, Edd.; _dictabat_ B H a b.
-
-[316] _tempori_ B H b, Bt.^1, Ed.; _tempore_ a c; _temperi_
-Fl., Bt.^2, Heine.
-
-[317] _quaereretur_ Edd., with authority; _quaererem_ MSS.
-
 #Concealment of truth _vs._ misrepresentation and falsehood.#
 
 *58* XIV. If, then, they are to be blamed who suppress the truth, what
@@ -9658,62 +5403,6 @@ might expect from an expert in making them. Pythius, therefore, and all
 others who do one thing while they pretend another are faithless,
 dishonest, and unprincipled scoundrels. No act of theirs can be
 expedient, when what they do is tainted with so many vices.
-
-*61* XV. Quodsi Aquiliana definitio vera est, ex omni vita simulatio
-dissimulatioque tollenda est. Ita, nec ut emat melius nec ut vendat,
-quicquam simulabit aut dissimulabit vir bonus. Atque[318] iste dolus
-malus et legibus erat vindicatus, ut tutela[319] duodecim tabulis,
-circumscriptio adulescentium lege Plaetoria, et sine lege iudiciis, in
-quibus additur EX FIDE BONA. Reliquorum autem iudiciorum haec verba
-maxime excellunt: in arbitrio rei uxoriae MELIUS AEQUIUS, in fiducia UT
-INTER BONOS BENE AGIER. Quid ergo? aut in eo, QUOD MELIUS AEQUIUS,
-potest ulla pars inesse fraudis? aut, cum dicitur INTER BONOS BENE
-AGIER, quicquam agi dolose aut malitiose potest? Dolus autem malus in
-simulatione, ut ait Aquilius, continetur. Tollendum est igitur ex rebus
-contrahendis omne mendacium; non illicitatorem[320] venditor, non, qui
-contra se liceatur, emptor apponet; uterque, si ad eloquendum venerit,
-non plus quam semel eloquetur. *62* Q. quidem Scaevola P. f., cum
-postulasset, ut sibi fundus, cuius emptor erat, semel indicaretur idque
-venditor ita fecisset, dixit se pluris aestimare; addidit centum milia.
-Nemo est, qui hoc viri boni fuisse neget, sapientis negant, ut si
-minoris, quam potuisset, vendidisset. Haec igitur est illa pernicies,
-quod alios bonos, alios sapientes existimant. #Medea, Vahlen^2, 273# Ex
-quo Ennius "nequiquam sapere sapientem, qui ipse sibi prodesse non
-quiret." Vere id quidem, si, quid esset "prodesse," mihi cum Ennio
-conveniret.
-
-*63* Hecatonem quidem Rhodium, discipulum Panaeti, video in iis libris,
-quos de officio scripsit Q. Tuberoni, dicere "sapientis esse nihil
-contra mores, leges, instituta facientem habere rationem rei familiaris.
-Neque enim solum nobis divites esse volumus, sed liberis, propinquis,
-amicis maximeque rei publicae. Singulorum enim facultates et copiae
-divitiae sunt civitatis." Huic[321] Scaevolae factum, de quo paulo ante
-dixi, placere nullo modo potest; etenim omnino tantum se negat facturum
-compendii sui causa, quod non liceat. Huic nec laus magna tribuenda nec
-gratia est.
-
-*64* Sed, sive et simulatio et dissimulatio dolus malus est, perpaucae
-res sunt, in quibus non dolus malus iste versetur, sive vir bonus est
-is, qui prodest, quibus potest, nocet nemini, certe[322] istum[323]
-virum bonum non facile reperimus.
-
-Numquam igitur est utile peccare, quia semper est turpe, et, quia semper
-est honestum virum bonum esse, semper est utile.
-
-[318] _Atque_ MSS., Bt.^1, Müller, Heine; _Atqui_ Manutius,
-Ed., Bt.^2
-
-[319] _ut tutela_ MSS., Bt., Müller; _ut in tutela_ Heine,
-Ed.
-
-[320] _non illicitatorem_ c (_inl._) p, Edd.; _non
-licitatorem_ B H a b.
-
-[321] _huic_ c, Edd.; _huius_ B H a b.
-
-[322] _certe_ Lamb., Edd.; _recte_ MSS.
-
-[323] _istum_ p c, Edd.; _iustum_ B H a b.
 
 *61* XV. But if Aquilius's definition is correct, pretence and
 concealment should be done away with in all departments of our daily
@@ -9778,53 +5467,6 @@ is always moral.
 
 [BL] See § 70 below.
 
-*65* XVI. Ac de iure quidem praediorum sanctum apud nos est iure civili,
-ut in iis vendendis vitia dicerentur, quae nota essent venditori. Nam,
-cum ex duodecim tabulis satis esset ea praestari, quae essent lingua
-nuncupata, quae qui infitiatus esset, dupli poenam subiret, a iuris
-consultis etiam reticentiae poena est constituta; quicquid enim
-esset[324] in praedio vitii, id statuerunt, si venditor sciret, nisi
-nominatim dictum esset, praestari oportere. *66* Ut, cum in arce
-augurium augures acturi essent iussissentque Ti.[325] Claudium
-Centumalum, qui aedes in Caelio monte habebat, demoliri ea, quorum
-altitudo officeret auspiciis, Claudius proscripsit insulam
-[vendidit],[326] emit P. Calpurnius Lanarius. Huic ab auguribus illud
-idem denuntiatum est. Itaque Calpurnius cum demolitus esset cognossetque
-Claudium aedes postea proscripsisse, quam esset ab auguribus demoliri
-iussus, arbitrum illum adegit, QUICQUID SIBI DARE FACERE OPORTERET EX
-FIDE BONA. M. Cato sententiam dixit, huius nostri Catonis pater (ut enim
-ceteri ex patribus, sic hic, qui illud lumen progenuit ex filio est
-nominandus)--is igitur iudex ita pronuntiavit: "cum in vendendo rem eam
-scisset et non pronuntiasset, emptori damnum praestari oportere."
-
-*67* Ergo ad fidem bonam statuit pertinere notum esse emptori vitium,
-quod nosset venditor. Quod si recte iudicavit, non recte frumentarius
-ille, non recte aedium pestilentium venditor tacuit. Sed huius modi
-reticentiae iure civili comprehendi[327] non possunt; quae autem
-possunt, diligenter tenentur. M. Marius Gratidianus, propinquus noster,
-C. Sergio Oratae vendiderat aedes eas, quas ab eodem ipse paucis ante
-annis emerat. Eae serviebant,[328] sed hoc in mancipio Marius non
-dixerat. Adducta res in iudicium est. Oratam Crassus, Gratidianum
-defendebat Antonius. Ius Crassus urguebat, "quod vitii venditor non
-dixisset sciens, id oportere praestari," aequitatem Antonius, "quoniam
-id vitium ignotum Sergio non fuisset, qui illas aedes vendidisset, nihil
-fuisse necesse dici, nec eum esse deceptum, qui, id, quod emerat, quo
-iure esset, teneret."
-
-*68* Quorsus haec? Ut illud intellegas, non placuisse maioribus nostris
-astutos.
-
-[324] _esset_ p c, Edd.; _est_ B H a b.
-
-[325] _Ti._ Lange, Edd.; _titum_ MSS.
-
-[326] _vendidit_ B H a b; _et vendidit_ p c.; Edd. omit.
-
-[327] _comprehendi_ MSS.; _omnes comprehendi_ Bt., Heine.
-
-[328] _serviebant_ Heus., Edd.; _sergio serviebant_ B H a b;
-_sergio alii serviebant_ c.
-
 #Concealment of truth about real estate prohibited by law.#
 
 *65* XVI. In the laws pertaining to the sale of real property it is
@@ -9880,57 +5522,6 @@ legal liability his purchase was subject."
 
 *68* What is the purpose of these illustrations? To let you see that our
 forefathers did not countenance sharp practice.
-
-XVII. Sed aliter leges, aliter philosophi tollunt astutias, leges,
-quatenus manu tenere possunt, philosophi, quatenus ratione et
-intellegentia. Ratio ergo hoc postulat, ne quid insidiose, ne quid
-simulate, ne quid fallaciter. Suntne igitur insidiae tendere plagas,
-etiamsi excitaturus non sis nec agitaturus? ipsae enim ferae nullo
-insequente saepe incidunt. Sic tu aedes proscribas, tabulam tamquam
-plagam ponas, [domum propter vitia vendas,][329] in eam aliquis incurrat
-imprudens?
-
-*69* Hoc quamquam video propter depravationem consuetudinis neque more
-turpe haberi neque aut lege sanciri aut iure civili, tamen naturae lege
-sanctum est. Societas est enim (quod etsi saepe dictum est, dicendum est
-tamen saepius), latissime quidem quae pateat, omnium inter omnes,
-interior eorum, qui eiusdem gentis sint, propior eorum, qui eiusdem
-civitatis. Itaque maiores aliud ius gentium, aliud ius civile esse
-voluerunt; quod civile, non idem continuo gentium, quod autem gentium,
-idem civile esse debet. Sed nos veri iuris germanaeque iustitiae solidam
-et expressam effigiem nullam tenemus, umbra et imaginibus utimur. Eas
-ipsas utinam sequeremur! feruntur enim ex optimis naturae et veritatis
-exemplis. 70* Nam quanti verba illa: UTI NE PROPTER TE FIDEMVE TUAM
-CAPTUS FRAUDATUSVE SIM! quam illa aurea: UT INTER BONOS BENE AGIER
-OPORTET ET SINE FRAUDATIONE! Sed, qui sint "boni," et quid sit "bene
-agi," magna quaestio est.
-
-Q. quidem Scaevola, pontifex maximus, summam vim esse dicebat in omnibus
-iis arbitriis, in quibus adderetur EX FIDE BONA, fideique bonae nomen
-existimabat manare latissime, idque versari in tutelis societatibus,
-fiduciis mandatis, rebus emptis venditis, conductis locatis, quibus
-vitae societas contineretur; in iis magni esse iudicis statuere,
-praesertim cum in plerisque essent iudicia contraria, quid quemque
-cuique praestare oporteret.
-
-*71* Quocirca astutiae tollendae sunt eaque malitia, quae volt illa
-quidem videri se esse prudentiam, sed abest ab ea distatque plurimum.
-Prudentia est enim locata in dilectu bonorum et malorum, malitia, si
-omnia, quae turpia sunt, mala sunt, mala bonis ponit ante.
-
-Nec vero in praediis solum ius civile ductum a natura malitiam
-fraudemque vindicat, sed etiam in mancipiorum venditione venditoris
-fraus omnis excluditur. Qui enim scire debuit de sanitate, de fuga, de
-furtis, praestat edicto aedilium. Heredum alia causa est.
-
-*72* Ex quo intellegitur, quoniam iuris natura fons sit, hoc secundum
-naturam esse, neminem id agere, ut ex alterius praedetur inscitia. Nec
-ulla pernicies vitae maior inveniri potest quam in malitia simulatio
-intellegentiae; ex quo ista innumerabilia nascuntur, ut utilia cum
-honestis pugnare videantur. Quotus enim quisque reperietur, qui
-impunitate et ignoratione omnium proposita abstinere possit iniuria?
-
-[329] Bracketed by Unger, Edd.
 
 #Law _vs._ philosophy in dealing with knavery.#
 
@@ -10005,47 +5596,6 @@ cases in which the expedient seems to conflict with the right. For how
 few will be found who can refrain from wrong-doing, if assured of the
 power to keep it an absolute secret and to run no risk of punishment!
 
-*73* XVIII. Periclitemur, si placet, et in iis quidem exemplis, in
-quibus peccari volgus hominum fortasse non putet. Neque enim de
-sicariis, veneficis, testamentariis, furibus, peculatoribus hoc loco
-disserendum est, qui non verbis sunt et disputatione philosophorum, sed
-vinclis et carcere fatigandi, sed haec[330] consideremus, quae faciunt
-ii, qui habentur boni.
-
-L. Minuci Basili, locupletis hominis, falsum testamentum quidam e
-Graecia Romam attulerunt. Quod quo facilius optinerent, scripserunt
-heredes secum M. Crassum et Q. Hortensium, homines eiusdem aetatis
-potentissimos; qui cum illud falsum esse suspicarentur, sibi autem
-nullius essent conscii culpae, alieni facinoris munusculum non
-repudiaverunt. Quid ergo? satin est hoc, ut non deliquisse videantur?
-Mihi quidem non videtur, quamquam alterum vivum amavi, alterum non odi
-mortuum; *74* sed, cum Basilus M. Satrium, sororis filium, nomen suum
-ferre voluisset eumque fecisset heredem (hunc dico patronum agri Piceni
-et Sabini; o turpem notam temporum [nomen illorum]!),[331] non erat
-aequum principes civis rem habere, ad Satrium nihil praeter nomen
-pervenire. Etenim, si is, qui non defendit iniuriam neque
-propulsat,[332] cum potest, iniuste facit, #§ 23# ut in primo libro
-disserui, qualis habendus est is, qui non modo non repellit, sed etiam
-adiuvat iniuriam? Mihi quidem etiam verae hereditates non honestae
-videntur, si sunt malitiosis blanditiis, officiorum non veritate, sed
-simulatione quaesitae.
-
-Atqui in talibus rebus aliud utile interdum, aliud honestum videri
-solet. *75* Falso; nam eadem utilitatis, quae honestatis, est regula.
-*(75)* Qui hoc non perviderit, ab hoc nulla fraus aberit, nullum
-facinus. Sic enim cogitans: "Est istuc quidem honestum, verum hoc
-expedit," res a natura copulatas audebit errore divellere, qui fons est
-fraudium, maleficiorum, scelerum omnium.
-
-[330] _haec_ c. Edd.; _hoc_ B H a b.
-
-[331] _turpem notam temporum nomen illorum_ H a (_turpe_) b,
-Bt.; excl. _nomen illorum_ Victorius, Ed.; _turpe nomen
-illorum temporum_ c.
-
-[332] _propulsat_ cod. Bern., O., Edd.; _propulsat a suis_
-Edd.
-
 *73* XVIII. Let us put our principle to the test, if you please, and see
 if it holds good in those instances in which, perhaps, the world in
 general finds no wrong; for in this connection we do not need to discuss
@@ -10092,47 +5642,6 @@ all sorts of dishonesty, wrong-doing, and crime.
 [BM] The shame was that states enjoying the rights of Roman
 citizenship should need a patron to protect their interests
 in the Roman capital.
-
-XIX. Itaque, si vir bonus habeat hanc vim, ut, si digitis concrepuerit,
-possit in locupletium testamenta nomen eius inrepere, hac vi non utatur,
-ne si exploratum quidem habeat id omnino neminem umquam suspicaturum. At
-dares hanc vim M. Crasso, ut digitorum percussione heres posset scriptus
-esse, qui re vera non esset heres, in foro, mihi crede, saltaret. Homo
-autem iustus isque, quem sentimus virum bonum, nihil cuiquam, quod in se
-transferat, detrahet. Hoc qui admiratur, is se, quid sit vir bonus,
-nescire fateatur. *76* At vero, si qui voluerit animi sui complicatam
-notionem evolvere, iam se ipse doceat eum virum bonum esse, qui prosit,
-quibus possit, noceat nemini nisi lacessitus iniuria. Quid ergo? hic non
-noceat, qui quodam quasi veneno perficiat, ut veros heredes moveat, in
-eorum locum ipse succedat? "Non igitur faciat," dixerit quis, "quod
-utile sit, quod expediat?" Immo intellegat nihil nec expedire nec utile
-esse, quod sit iniustum; hoc qui non didicerit, bonus vir esse non
-poterit.
-
-*77* _C._[333] Fimbriam consularem audiebam de patre nostro puer iudicem
-M. Lutatio Pinthiae fuisse, equiti Romano sane honesto, cum is
-sponsionem fecisset, NI VIR BONUS ESSET. Itaque ei dixisse Fimbriam se
-illam rem numquam iudicaturum, ne aut spoliaret fama probatum hominem,
-si contra iudicavisset, aut statuisse videretur virum bonum esse
-aliquem, cum ea res innumerabilibus officiis et laudibus contineretur.
-
-Huic igitur viro bono, quem Fimbria etiam, non modo Socrates noverat,
-nullo modo videri potest quicquam esse utile, quod non honestum sit.
-Itaque talis vir non modo facere, sed ne cogitare quidem quicquam
-audebit, quod non audeat praedicare. Haec non turpe est dubitare
-philosophos, quae ne rustici quidem dubitent? a quibus natum est id,
-quod iam contritum est vetustate, proverbium. Cum enim fidem alicuius
-bonitatemque laudant, dignum esse dicunt, "quicum in tenebris mices."
-Hoc quam habet vim nisi illam, nihil expedire, quod non deceat, etiamsi
-id possis nullo refellente optinere?
-
-*78* Videsne hoc proverbio neque Gygi illi posse veniam dari neque huic,
-quem paulo ante fingebam digitorum percussione hereditates omnium posse
-converrere? Ut enim, quod turpe est, id, quamvis occultetur, tamen
-honestum fieri nullo modo potest, sic, quod honestum non est, id utile
-ut sit, effici non potest adversante et repugnante natura.
-
-[333] _C._ Bt., Ed., Heine; not in MSS.
 
 #The good man not tempted to unrighteous gain.#
 
@@ -10199,55 +5708,6 @@ has known before.
 
 [BO] Lit. 'flash with the fingers'; shoot out some fingers
 the number of which had to be guessed.
-
-*79* XX. At enim, cum permagna praemia sunt, est causa peccandi.
-
-C. Marius cum a spe consulatus longe abesset et iam[334] septimum annum
-post praeturam iaceret, neque petiturus umquam consulatum videretur, Q.
-Metellum, cuius legatus erat, summum virum et civem, cum ab eo,
-imperatore suo, Romam missus esset, apud populum Romanum criminatus est
-bellum illum ducere; si se consulem fecissent; brevi tempore aut vivum
-aut mortuum Iugurtham se in potestatem populi Romani redacturum. Itaque
-factus est ille quidem consul, sed a fide iustitiaque discessit, qui
-optimum et gravissimum civem, cuius legatus et a quo missus esset, in
-invidiam falso crimine adduxerit.
-
-*80* Ne noster quidem Gratidianus officio viri boni functus est tum, cum
-praetor esset collegiumque praetorium tribuni plebi adhibuissent, ut res
-nummaria de communi sententia constitueretur; iactabatur enim temporibus
-illis nummus sic, ut nemo posset scire, quid haberet. Conscripserunt
-communiter edictum cum poena atque iudicio constitueruntque, ut omnes
-simul in rostra post meridiem escenderent. Et ceteri quidem alius alio,
-Marius ab subselliis in rostra recta idque, quod communiter compositum
-fuerat, solus edixit. Et ea res, si quaeris, ei magno honori fuit;
-omnibus vicis statuae, ad eas tus, cerei; quid multa? nemo umquam
-multitudini fuit carior.
-
-*81* Haec sunt, quae conturbent in deliberatione non numquam, cum id, in
-quo violatur aequitas, non ita magnum, illud autem, quod ex eo paritur,
-permagnum videtur, ut Mario praeripere collegis et tribunis plebi
-popularem gratiam non ita turpe, consulem ob eam rem fieri, quod sibi
-tum proposuerat, valde utile videbatur. Sed omnium una regula est, quam
-tibi cupio esse notissimam, aut illud, quod utile videtur, turpe ne sit
-aut, si turpe est, ne videatur esse utile. Quod igitur? possumusne aut
-illum Marium virum bonum iudicare aut hunc[335]? Explica atque excute
-intellegentiam tuam, ut videas, quae sit in ea [species] forma[336] et
-notio viri boni. Cadit ergo in virum bonum mentiri emolumenti sui causa,
-criminari, praeripere, fallere? Nihil profecto minus.
-
-*82* Est ergo ulla res tanti aut commodum ullum tam expetendum, ut viri
-boni et splendorem et nomen amittas? Quid est, quod afferre tantum
-utilitas ista, quae dicitur, possit, quantum auferre, si boni viri nomen
-eripuerit, fidem iustitiamque detraxerit? Quid enim interest, utrum ex
-homine se convertat quis in beluam an hominis figura immanitatem gerat
-beluae?
-
-[334] _et iam_ Edd.; _etiam_ MSS.
-
-[335] _aut hunc_ c, Edd.; _atque hunc_ B H a b.
-
-[336] _ea species forma_ B H a b; _ea specie forma_ c p; _ea
-forma_, Klotz, Heine, Ed.; _ea species_, Bt.
 
 #The moral loss that comes from wrong ambitions:#
 
@@ -10323,63 +5783,9 @@ within?
 a popular leader made him an early mark for Sulla's
 proscriptions.
 
-XXI. Quid? qui omnia recta et honesta neglegunt, dum modo potentiam
-consequantur, nonne idem faciunt, quod is, qui etiam socerum habere
-voluit eum, cuius ipse audacia potens esset? Utile ei videbatur plurimum
-posse alterius invidia; id quam iniustum in patriam et quam turpe esset,
-non videbat. Ipse autem socer in ore semper Graecos versus de Phoenissis
-habebat, quos dicam, ut potero, incondite fortasse, sed tamen, ut res
-possit intellegi:
-
 #Eur. Phoen. 524-525#
 
-Nam sí violandum est iús, regnandi grátia
-Violándum est; aliis rébus pietatém colas.
-
-Capitalis [Eteocles vel potius Euripides],[337] qui id unum, quod omnium
-sceleratissimum fuerit, exceperit! *83* Quid igitur minuta colligimus,
-hereditates, mercaturas, venditiones fraudulentas? ecce tibi, qui rex
-populi Romani dominusque omnium gentium esse concupiverit idque
-perfecerit! Hanc cupiditatem si honestam quis esse dicit, amens est;
-probat enim legum et libertatis interitum earumque oppressionem taetram
-et detestabilem gloriosam putat. Qui autem fatetur honestum non esse in
-ea civitate, quae libera fuerit quaeque[338] esse debeat, regnare, sed
-ei, qui id facere possit, esse utile, qua hunc obiurgatione aut quo
-potius convicio a tanto errore coner avellere? Potest enim, di
-immortales! cuiquam esse utile foedissimum et taeterrimum parricidium
-patriae, quamvis is, qui se eo obstrinxerit, ab oppressis civibus parens
-nominetur? Honestate igitur dirigenda[339] utilitas est, et quidem sic,
-ut haec duo verbo inter se discrepare, re unum sonare videantur.
-
-*84* Non habeo, ad volgi opinionem quae maior utilitas quam regnandi
-esse possit; nihil contra inutilius ei, qui id iniuste consecutus sit,
-invenio, cum ad veritatem coepi revocare rationem. Possunt enim cuiquam
-esse utiles angores, sollicitudines, diurni et nocturni metus, vita
-insidiarum periculorumque plenissima?
-
 #_Inc. Fab._, Ribbeck^2, 651#
-
-Múlti iniqui atque ínfideles régno, pauci bénivoli,[340]
-
-inquit Accius. At cui regno? Quod a Tantalo et Pelope proditum iure
-optinebatur. Nam quanto pluris ei regi putas, qui exercitu populi Romani
-populum ipsum Romanum oppressisset civitatemque non modo liberam, sed
-etiam gentibus imperantem servire sibi coëgisset? *85* Hunc tu quas
-conscientiae labes in animo censes habuisse, quae vulnera? Cuius autem
-vita ipsi potest utilis esse, cum eius vitae ea condicio sit, ut, qui
-illam eripuerit, in maxima et gratia futurus sit et gloria? Quodsi haec
-utilia non sunt, quae maxime videntur, quia plena sunt dedecoris ac
-turpitudinis, satis persuasum esse debet nihil esse utile, quod non
-honestum sit.
-
-[337] Bracketed by Ed., Heine, et al.
-
-[338] _fuerit quaeque_ c, Edd.; _fuit_ B H a b.
-
-[339] _dirigenda_ MSS., Edd. plerique; _derigenda_ Ed.
-
-[340] _beni(e)voli_ Stürenbg.; _benivoli sunt_ c; _boni sunt_
-B H a b.
 
 XXI. Again, when people disregard everything that is morally right and
 true, if only they may secure power thereby, #(3) Pompey,# are they not
@@ -10450,47 +5856,6 @@ Caepio.
 [BT] The title bestowed on Cicero for saving the republic (in
 63) and on Caesar for overthrowing it (after the battle of
 Munda, in 45).
-
-*86* XXII. Quamquam id quidem cum saepe alias, tum Pyrrhi bello a C.
-Fabricio consule iterum et a senatu nostro iudicatum est. Cum enim rex
-Pyrrhus populo Romano bellum ultro intulisset, cumque de imperio
-certamen esset cum rege generoso ac potenti,[341] perfuga ab eo venit in
-castra Fabrici eique est pollicitus, si praemium sibi proposuisset, se,
-ut clam venisset, sic clam in Pyrrhi castra rediturum et eum veneno
-necaturum. Hunc Fabricius reducendum curavit ad Pyrrhum, idque eius
-factum laudatum a senatu est. Atqui, si speciem utilitatis opinionemque
-quaerimus, magnum illud bellum perfuga unus et gravem adversarium
-imperii sustulisset, sed magnum dedecus et flagitium, quicum laudis
-certamen fuisset, eum non virtute, sed scelere superatum.
-
-*87* Utrum igitur utilius vel Fabricio, qui talis in hac urbe, qualis
-Aristides Athenis, fuit, vel senatui nostro, qui numquam utilitatem a
-dignitate seiunxit, armis cum hoste certare an venenis? Si gloriae causa
-imperium expetendum est, scelus absit, in quo non potest esse gloria;
-sin ipsae opes expetuntur quoquo modo, non poterunt utiles esse cum
-infamia.
-
-Non igitur utilis illa L. Philippi Q. f. sententia, quas civitates L.
-Sulla pecunia accepta ex senatus consulto liberavisset, ut eae rursus
-vectigales essent neque iis pecuniam, quam pro libertate dederant,
-redderemus. Ei senatus est assensus. Turpe imperio! piratarum enim
-melior fides quam senatus. At aucta vectigalia, utile igitur. Quousque
-audebunt dicere quicquam utile, quod non honestum? *88* potest autem
-ulli imperio, quod gloria debet fultum esse et benivolentia sociorum,
-utile esse odium et infamia?
-
-Ego etiam cum Catone meo saepe dissensi; nimis mihi praefracte videbatur
-aerarium vectigaliaque defendere, omnia publicanis negare, multa sociis,
-cum in hos benefici esse deberemus, cum illis sic agere, ut cum colonis
-nostris soleremus, eoque magis, quod[342] illa ordinum coniunctio ad
-salutem rei publicae pertinebat. Male etiam Curio, cum causam
-Transpadanorum aequam esse dicebat, semper autem addebat: "Vincat
-utilitas!" Potius doceret non esse aequam, quia non esset utilis rei
-publicae, quam, cum utilem non esse diceret, esse aequam fateretur.
-
-[341] _potenti_ Nonius, Edd.; _potente_ MSS.
-
-[342] _quod_ L c, Edd.; _quo_ B H a b.
 
 #Apparent conflicts between expediency and moral rectitude:#
 
@@ -10566,85 +5931,6 @@ equestrian order, driving many of the equites over to
 Caesar's side. Complete harmony between the senate and the
 knights, as Cicero says, was the only thing that could have
 saved Rome from the popular party and Caesar.
-
-*89* XXIII. Plenus est sextus liber de officiis Hecatonis talium
-quaestionum: "sitne boni viri in maxima caritate annonae familiam non
-alere."
-
-In utramque partem disputat, sed tamen ad extremum utilitate, ut putat,
-officium dirigit[343] magis quam humanitate.
-
-Quaerit, si in mari iactura facienda sit, equine pretiosi potius
-iacturam faciat an servoli vilis. Hic alio res familiaris, alio ducit
-humanitas.
-
-"Si tabulam de naufragio stultus arripuerit, extorquebitne eam sapiens,
-si potuerit?"
-
-Negat, quia sit iniurium.
-
-"Quid? dominus navis eripietne suum?"
-
-"Minime, non plus quam navigantem[344] in alto eicere de navi velit,
-quia sua sit. Quoad enim perventum est[345] eo, quo sumpta navis est,
-non domini est navis, sed navigantium."
-
-*90* "Quid? si una tabula sit, duo naufragi, eique sapientes, sibine
-uter_que_[346] rapiat, an alter cedat alteri?"
-
-"Cedat vero, sed ei, cuius magis intersit vel sua vel rei publicae causa
-vivere."
-
-"Quid, si haec paria in utroque?"
-
-"Nullum erit certamen, sed quasi sorte aut micando victus alteri cedet
-alter."
-
-"Quid? si pater fana expilet, cuniculos agat ad aerarium, indicetne id
-magistratibus filius?"
-
-"Nefas id quidem est, quin etiam defendat patrem, si arguatur."
-
-"Non igitur patria praestat omnibus officiis?"
-
-"Immo vero, sed ipsi patriae conducit pios habere cives in parentes."
-
-"Quid? si tyrannidem occupare, si patriam prodere conabitur pater,
-silebitne filius?"
-
-"Immo vero obsecrabit patrem, ne id faciat. Si nihil proficiet,
-accusabit, minabitur etiam, ad extremum, si ad perniciem patriae res
-spectabit, patriae salutem anteponet saluti patris."
-
-*91* Quaerit etiam, si sapiens adulterinos nummos acceperit imprudens
-pro bonis, cum id rescierit, soluturusne sit eos, si cui[347] debeat,
-pro bonis. Diogenes ait, Antipater negat, cui potius assentior.
-
-Qui vinum[348] fugiens vendat sciens, debeatne dicere. Non necesse putat
-Diogenes, Antipater viri boni existimat. Haec sunt quasi controversa
-iura Stoicorum. "In mancipio vendendo dicendane vitia, non ea, quae nisi
-dixeris, redhibeatur mancipium iure civili, sed haec, mendacem esse,
-aleatorem, furacem, ebriosum?" Alteri dicenda videntur, alteri non
-videntur.
-
-*92* "Si quis aurum vendens orichalcum se putet vendere, indicetne ei
-vir bonus aurum illud esse an emat denario, quod sit mille denarium?"
-
-Perspicuum est iam, et quid mihi videatur, et quae sit inter eos
-philosophos, quos nominavi, controversia.
-
-[343] _dirigit_ MSS., Edd. plerique; _derigit_ Ed.
-
-[344] _quam navigantem_ Heus., Edd.; _quam si navigantem_
-MSS.
-
-[345] _est_ c, Nonius; _sit_ B H a b.
-
-[346] _sibine uterque_ Victorius, Edd.; _sibi neuter_ MSS.
-
-[347] _si cui_ c, Nonius, Edd.; _sicut_ B H a b.
-
-[348] _vinum_ c, Nonius, Edd.; _venenum_ B H a b p.
 
 #Hecaton debates the question of expediency _vs._ moral rectitude.#
 
@@ -10733,30 +6019,6 @@ philosophers.
 
 [BV] The _denarius_ was worth at this time about ninepence.
 
-XXIV. Pacta et promissa semperne servanda sint, QUAE NEC VI NEC DOLO
-MALO, ut praetores solent, FACTA SINT.
-
-Si quis medicamentum cuipiam dederit ad aquam intercutem pepigeritque,
-si eo medicamento sanus factus esset, ne illo medicamento umquam postea
-uteretur, si eo medicamento sanus factus sit et annis aliquot post
-inciderit in eundem morbum nec ab eo, quicum pepigerat, impetret, ut
-iterum eo[349] liceat uti, quid faciendum sit. Cum sit is inhumanus, qui
-non concedat, nec ei quicquam fiat iniuriae, vitae et saluti
-consulendum.
-
-*93* Quid? si qui sapiens rogatus sit ab eo, qui eum heredem faciat, cum
-ei testamento sestertium milies relinquatur, ut, ante quam hereditatem
-adeat, luce palam in foro saltet, idque se facturum promiserit, quod
-aliter heredem eum scripturus ille non esset, faciat, quod promiserit,
-necne? Promisisse nollem et id arbitror fuisse gravitatis; quoniam
-promisit, si saltare in foro turpe ducet, honestius mentietur, si ex
-hereditate nihil ceperit, quam si ceperit, nisi forte eam pecuniam in
-rei publicae magnum aliquod tempus contulerit, ut vel saltare, cum
-patriae consulturus sit, turpe non sit.
-
-[349] _iterum eo_ Pearce, Edd.; _item eo_ B H a b; _item tum_
-c.
-
 #Promises not binding:#
 
 #(1) when life or health is at stake,#
@@ -10793,51 +6055,6 @@ case, to promote thereby the interests of one's country, it would not
 be morally wrong even to dance, if you please, in the forum.
 
 [BW] Approximately £750,000.
-
-*94* XXV. Ac ne illa quidem promissa servanda sunt, quae non sunt
-iis[350] ipsis utilia, quibus illa promiseris. Sol Phaëthonti filio, ut
-redeamus ad fabulas, facturum se esse dixit, quicquid optasset; optavit,
-ut in currum patris tolleretur; sublatus est. Atque[351] is, ante quam
-constitit, ictu fulminis deflagravit. Quanto melius fuerat in hoc
-promissum patris non esse servatum! Quid, quod Theseus exegit promissum
-a Neptuno? cui cum tres optationes Neptunus dedisset, optavit interitum
-Hippolyti filii, cum is patri suspectus esset de noverca; quo optato
-impetrato Theseus in maximis fuit luctibus. *95* Quid, _quod_[352]
-Agamemnon cum devovisset Dianae, quod in suo regno pulcherrimum natum
-esset illo anno, immolavit Iphigeniam, qua nihil erat eo quidem anno
-natum pulchrius? Promissum potius non faciendum quam tam taetrum facinus
-admittendum fuit.
-
-Ergo et promissa non facienda non numquam, neque semper deposita
-reddenda. Si gladium quis apud te sana mente deposuerit, repetat
-insaniens, reddere peccatum sit, officium non reddere. Quid? si is, qui
-apud te pecuniam deposuerit, bellum inferat patriae, reddasne depositum?
-Non credo; facias[353] enim contra rem publicam, quae debet esse
-carissima. Sic multa, quae honesta natura videntur esse, temporibus
-fiunt non honesta; facere promissa, stare conventis, reddere deposita
-commutata utilitate fiunt non honesta.
-
-Ac de iis quidem, quae videntur esse utilitates contra iustitiam
-simulatione prudentiae, satis arbitror dictum.
-
-*96* Sed quoniam a quattuor fontibus honestatis #§§ 15 ff.# primo libro
-officia duximus, in eisdem versemur, cum docebimus ea, #§§ 40-70# quae
-videantur esse utilia neque sint, #§§ 71-95# quam sint virtutis inimica.
-Ac de prudentia quidem, quam vult imitari malitia, itemque de iustitia,
-quae semper est utilis, disputatum est. Reliquae sunt duae partes
-honestatis, quarum altera in animi excellentis magnitudine et
-praestantia cernitur, altera in conformatione et moderatione
-continentiae et temperantiae.
-
-[350] _iis_ Edd.; _his_ B H a b; _hijs_ c.
-
-[351] _Atque_ MSS., Bt.^1, Müller, Heine; _Atqui_ Fl., Bt.^2,
-Ed.
-
-[352] _quod_ Ed.; not in MSS., Bt., et al.
-
-[353] _facias_ c, Bt., Ed., Heine; _facies_ A B H a b,
-Müller.
 
 #(3) when not expedient for him to whom the promise is made.#
 
@@ -10887,19 +6104,6 @@ moral rectitude, the one of which is discernible in the greatness and
 pre-eminence of a superior soul, the other, in the shaping and
 regulation of it by temperance and self-control.
 
-*97* XXVI. Utile videbatur Ulixi, ut quidem poëtae tragici prodiderunt
-(nam apud Homerum, optimum auctorem, talis de Ulixe nulla suspicio est),
-sed insimulant eum tragoediae simulatione insaniae militiam subterfugere
-voluisse. Non honestum consilium, at utile, ut aliquis fortasse dixerit,
-regnare et Ithacae vivere otiose cum parentibus, cum uxore, cum filio.
-Ullum tu decus in cotidianis laboribus et periculis cum hac
-tranquillitate conferendum putas?
-
-Ego vero istam contemnendam et abiciendam, quoniam, quae honesta non
-sit, ne utilem quidem esse arbitror. *98* Quid enim auditurum putas
-fuisse Ulixem, si in illa simulatione perseveravisset? qui cum maximas
-res gesserit in bello, tamen haec audiat ab Aiace:
-
 #(Accius or Pacuvius, Judicium Armorum?) _Inc. inc. fab._, Ribbeck^2
 55-60#
 
@@ -10909,47 +6113,6 @@ Furere ássimulare, né coiret, ínstitit.
 Quodní Palamedi pérspicax prudéntia
 Istíus percepset[354] málitiosam audáciam,
 Fidé sacratae[355] iús perpetuo fálleret.
-
-*99* Illi vero non modo cum hostibus, verum etiam cum fluctibus, id quod
-fecit, dimicare melius fuit quam deserere consentientem Graeciam ad
-bellum barbaris inferendum.
-
-Sed omittamus et fabulas et externa; ad rem factam nostramque veniamus.
-M. Atilius Regulus cum consul iterum in Africa ex insidiis captus esset
-duce Xanthippo Lacedaemonio, imperatore autem patre Hannibalis
-Hamilcare, iuratus missus est ad senatum, ut, nisi redditi essent Poenis
-captivi nobiles quidam, rediret ipse Carthaginem. Is cum Romam venisset,
-utilitatis speciem videbat, sed eam, ut res declarat, falsam iudicavit;
-quae erat talis: manere in patria, esse domui suae cum uxore, cum
-liberis, quam calamitatem accepisset in bello, communem fortunae
-bellicae iudicantem tenere consularis dignitatis gradum. Quis haec negat
-esse utilia? quem censes? Magnitudo animi et fortitudo negat. *100*
-XXVII. Num[356] locupletiores quaeris auctores? Harum enim est virtutum
-proprium nihil extimescere, omnia humana despicere, nihil, quod homini
-accidere possit, intolerandum putare. Itaque quid fecit? In senatum
-venit, mandata exposuit, sententiam ne diceret recusavit, quam diu iure
-iurando hostium teneretur, non esse se senatorem. Atque illud etiam ("O
-stultum hominem," dixerit quispiam, "et repugnantem utilitati suae!"),
-reddi captivos negavit esse utile; illos enim adulescentes esse et bonos
-duces, se iam confectum senectute. Cuius cum valuisset auctoritas,
-captivi retenti sunt, ipse Carthaginem rediit, neque eum caritas patriae
-retinuit nec suorum. Neque vero tum ignorabat se ad crudelissimum hostem
-et ad exquisita supplicia proficisci, sed ius iurandum conservandum
-putabat. Itaque tum, cum vigilando necabatur, erat in meliore causa,
-quam si domi senex captivus, periurus consularis remansisset.
-
-*101* At stulte, qui non modo non censuerit captivos remittendos, verum
-etiam dissuaserit.
-
-Quo modo stulte? etiamne, si rei publicae conducebat? potest autem, quod
-inutile rei publicae sit, id cuiquam civi utile esse?
-
-[354] _percepset_ Bt., Ed., Heine; _percepisset_ MSS.;
-_perspexet_ Müller.
-
-[355] _sacratae_ Edd.; _sacrata_ B H a b; _sacratum_ c.
-
-[356] _num_ A L c, Edd.; _nam_ B H a b.
 
 #Apparent Expediency _vs._ Fortitude:#
 
@@ -11035,53 +6198,7 @@ in his prime when he fell in battle in Spain, in 229.
 Metellus took among the prisoners no less than thirteen
 Carthaginian generals--all men of noble birth.
 
-XXVIII. Pervertunt homines ea, quae sunt fundamenta naturae, cum
-utilitatem ab honestate seiungunt. Omnes enim expetimus utilitatem ad
-eamque rapimur nec facere aliter ullo modo possumus. Nam quis est, qui
-utilia fugiat? aut quis potius, qui ea non studiosissime persequatur?
-Sed quia nusquam possumus nisi in laude, decore, honestate utilia
-reperire, propterea illa prima et summa habemus, utilitatis nomen non
-tam splendidum quam necessarium ducimus.
-
-*102* Quid est igitur, dixerit quis, in iure iurando? num iratum timemus
-Iovem? At hoc quidem commune est omnium philosophorum, non eorum modo,
-qui deum nihil habere ipsum negotii dicunt, nihil exhibere alteri, sed
-eorum etiam, qui deum semper agere aliquid et moliri volunt, numquam nec
-irasci deum nec nocere. Quid autem iratus Iuppiter plus nocere
-potuisset, quam nocuit sibi ipse Regulus? Nulla igitur vis fuit
-religionis, quae tantam utilitatem perverteret.
-
-An ne turpiter faceret? Primum minima de malis. Num[357] igitur tantum
-mali turpitudo ista habebat,[358] quantum ille cruciatus? Deinde illud
-etiam apud Accium:
-
 #Atreus; Ribbeck^2, 227-228#
-
-Fregistín[359] fidem?
-Néque dedi neque do ínfideli cuíquam
-
-quamquam ab impio rege dicitur, luculente tamen dicitur.
-
-*103* Addunt etiam, quem ad modum nos dicamus videri quaedam utilia,
-quae non sint, sic se dicere videri quaedam honesta, quae non sint, "ut
-hoc ipsum videtur honestum, conservandi iuris iurandi causa ad cruciatum
-revertisse; sed fit non honestum, quia, quod per vim hostium esset
-actum, ratum esse non debuit."
-
-Addunt etiam, quicquid valde utile sit, id fieri honestum, etiamsi antea
-non videretur.
-
-Haec fere contra Regulum. Sed prima _quaeque_[360] videamus.
-
-[357] _Num_ Edd.; _non_ MSS.
-
-[358] _habebat_ L c, Edd.; _habebit_ A B H a b.
-
-[359] _fregistin_ Edd.; _fregistine_ A B H a b; _fregisti_ L
-c.
-
-[360] _quaeque_ Forchhammer, Müller, Heine; not in MSS., Bt.,
-Ed.
 
 #Expediency inseparable from moral rectitude.#
 
@@ -11146,84 +6263,11 @@ Regulus. Let us consider them each in turn.
 
 [CA] The Stoics.
 
-*104* XXIX. "Non fuit Iuppiter metuendus ne iratus noceret, qui neque
-irasci solet nec nocere."
-
-Haec quidem ratio non magis contra Reguli quam contra omne ius iurandum
-valet. Sed in iure iurando non qui metus, sed quae vis sit, debet
-intellegi; est enim ius iurandum affirmatio religiosa; quod autem
-affirmate quasi deo teste promiseris, id tenendum est. Iam enim non ad
-iram deorum, quae nulla est, sed ad iustitiam et ad fidem pertinet. Nam
-praeclare Ennius:
-
 #(Thyestes?) _Fab. inc._, Vahlen^2, 403#
-
-Ó Fides alma ápta pinnis ét ius iurandúm Iovis!
-
-Qui ius igitur iurandum violat, is Fidem violat, quam in Capitolio
-"vicinam Iovis optimi maximi," #Unknown# ut in Catonis oratione est,
-maiores nostri esse voluerunt.
-
-*105* At enim ne iratus quidem Iuppiter plus Regulo nocuisset, quam sibi
-nocuit ipse Regulus.
-
-Certe, si nihil malum esset nisi dolere. Id autem non modo [non][361]
-summum malum, sed ne malum quidem esse maxima auctoritate philosophi
-affirmant. Quorum quidem testem non mediocrem, sed haud scio an
-gravissimum Regulum nolite, quaeso, vituperare. Quem enim locupletiorem
-quaerimus quam principem populi Romani, qui retinendi officii causa
-cruciatum subierit voluntarium?
-
-Nam quod aiunt: "minima de malis," id est ut turpiter potius quam
-calamitose, an est ullum maius malum turpitudine? quae si in deformitate
-corporis habet[362] aliquid offensionis, quanta illa depravatio et
-foeditas turpificati animi debet videri! *106* Itaque nervosius qui ista
-disserunt, solum audent malum dicere id, quod turpe sit, qui autem
-remissius, ii tamen non dubitant summum malum dicere.
-
-Nam illud quidem:
 
 #Accius, Atreus; Ribbeck^2, 228#
 
-Néque dedi neque do ínfideli cuíquam
-
-idcirco recte a poëta, quia, cum tractaretur Atreus, personae serviendum
-fuit. Sed si hoc sibi sument, nullam esse fidem, quae infideli data sit,
-videant, ne quaeratur latebra periurio.
-
-*107* Est autem ius etiam bellicum fidesque iuris iurandi saepe cum
-hoste servanda.[363] Quod enim ita iuratum est, ut mens conciperet fieri
-oportere, id servandum est; quod aliter, id si non fecerit, nullum est
-periurium. Ut, si praedonibus pactum pro capite pretium non attuleris,
-nulla fraus sit,[364] ne si iuratus quidem id non feceris; nam pirata
-non est ex perduellium numero definitus, sed communis hostis omnium; cum
-hoc nec fides debet nec ius iurandum esse commune. *108* Non enim falsum
-iurare periurare est, sed, quod EX ANIMI TUI SENTENTIA iuraris, sicut
-verbis concipitur more nostro, id non facere periurium est. Scite
-enim[365] Euripides:
-
 #Hippolytus 612#
-
-Iurávi lingua, méntem iniuratám gero.
-
-Regulus vero non debuit condiciones pactionesque bellicas et hostiles
-perturbare periurio. Cum iusto enim et legitimo hoste res gerebatur,
-adversus quem et totum ius fetiale et multa sunt iura communia. Quod ni
-ita esset, numquam claros viros senatus vinctos[366] hostibus
-dedidisset.
-
-[361] _non modo non_ B H a; _non modo nos_ c; _non modo_ L c
-p, Edd.
-
-[362] _habet_ L c, Edd.; _habeat_ A B H a b.
-
-[363] _Est ... servanda_ bracketed by Unger, Bt.^2, Ed.
-
-[364] _sit_ Edd. plerique; _est_ MSS., Bt.^1
-
-[365] _Scite enim_ A L c, Edd.; _scit enim_ B H a b.
-
-[366] _vinctos_ A L c, Edd.; _victos_ B H a b.
 
 #Rebuttal.#
 
@@ -11320,44 +6364,9 @@ to the enemy.
 
 [CE] See Index, s.v.
 
-*109* XXX. At vero T. Veturius et Sp. Postumius cum iterum consules
-essent, quia, cum male pugnatum apud Caudium esset, legionibus nostris
-sub iugum missis pacem cum Samnitibus fecerant, dediti sunt iis; iniussu
-enim populi senatusque fecerant. Eodemque tempore Ti. Numicius, Q.
-Maelius, qui tum tribuni pl. erant, quod eorum auctoritate pax erat
-facta, dediti sunt, ut pax Samnitium repudiaretur; atque huius
-deditionis ipse Postumius, qui dedebatur, suasor et auctor fuit.
-
-Quod idem multis annis post C. Mancinus, qui, ut Numantinis, quibuscum
-sine senatus auctoritate foedus fecerat, dederetur, rogationem suasit
-eam, quam L. Furius, Sex. Atilius ex senatus consulto ferebant; qua
-accepta est hostibus deditus. Honestius his quam Q. Pompeius, quo, cum
-in eadem causa esset, deprecante accepta lex non est. Hic ea, quae
-videbatur utilitas, plus valuit quam honestas, apud superiores
-utilitatis species falsa ab honestatis auctoritate superata est.
-
 #§ 103#
 
-*110* At non debuit ratum esse, quod erat actum per vim.--Quasi vero
-forti viro vis possit adhiberi.
-
-Cur igitur ad senatum proficiscebatur, cum praesertim de captivis
-dissuasurus esset?
-
-Quod maximum in eo est, id reprehenditis. Non enim suo iudicio stetit,
-sed suscepit causam, ut esset iudicium senatus; cui nisi ipse auctor
-fuisset, captivi profecto Poenis redditi essent; ita incolumis in patria
-Regulus restitisset. Quod quia patriae non utile putavit, idcirco sibi
-honestum et sentire illa et pati credidit.
-
 #§ 103#
-
-Nam quod aiunt, quod valde utile sit, id fieri honestum, immo vero esse,
-non fieri. Est enim nihil utile, quod idem non honestum, nec, quia
-utile, honestum, sed, quia honestum, utile.
-
-Quare ex multis mirabilibus exemplis haud facile quis dixerit hoc
-exemplo aut laudabilius aut praestantius.
 
 #Roman strictness.#
 
@@ -11417,39 +6426,6 @@ conduct of Regulus.
 
 [CF] 184 years, i.e., in B.C. 137.
 
-*111* XXXI. Sed ex tota hac laude Reguli unum illud est admiratione
-dignum, quod captivos retinendos censuit. Nam quod rediit, nobis nunc
-mirabile videtur, illis quidem temporibus aliter facere non potuit;
-itaque ista laus non est hominis, sed temporum. Nullum enim vinculum ad
-astringendam fidem iure iurando maiores artius esse voluerunt. Id
-indicant leges in duodecim tabulis, indicant sacratae, indicant foedera,
-quibus etiam cum hoste devincitur fides, indicant notiones
-animadversionesque censorum, qui nulla de re diligentius quam de iure
-iurando iudicabant.
-
-*112* L. Manlio A. f., cum dictator fuisset, M. Pomponius tr. pl. diem
-dixit, quod is paucos sibi dies ad dictaturam gerendam addidisset;
-criminabatur etiam, quod Titum filium, qui postea est Torquatus
-appellatus, ab hominibus relegasset et ruri habitare iussisset. Quod cum
-audivisset adulescens filius, negotium exhiberi patri, accurrisse Romam
-et cum primo luci[367] Pomponi domum venisse dicitur. Cui cum esset
-nuntiatum, qui illum iratum allaturum ad se aliquid contra patrem
-arbitraretur, surrexit e lectulo remotisque arbitris ad se adulescentem
-iussit venire. At ille, ut ingressus est, confestim gladium destrinxit
-iuravitque se illum statim interfecturum, nisi ius iurandum sibi
-dedisset se patrem missum esse facturum. Iuravit hoc terrore coactus
-Pomponius; rem ad populum detulit, docuit, cur sibi causa desistere
-necesse esset, Manlium missum fecit. Tantum temporibus illis ius
-iurandum valebat.
-
-Atque hic T. Manlius is est, qui ad Anienem Galli, quem ab eo provocatus
-occiderat, torque detracto cognomen invenit, cuius tertio consulatu
-Latini ad Veserim fusi et fugati, magnus vir in primis et, qui
-perindulgens in patrem, idem acerbe severus in filium.
-
-[367] _primo luci_ Beier, Heine, Ed.; _primo lucis_ c; _prima
-luce_ A B H a b.
-
 #The most striking lesson in the story of Regulus.#
 
 *111* XXXI. But of all that is thus praiseworthy in the conduct of
@@ -11500,48 +6476,6 @@ and his property, under the ban of some divinity; other
 authorities limit the term to the laws enacted upon the
 Sacred Mount (B.C. 394).
 
-*113* XXXII. Sed, ut laudandus Regulus in conservando iure iurando, sic
-decem illi, quos post Cannensem pugnam iuratos ad senatum misit Hannibal
-se in castra redituros ea, quorum erant potiti Poeni, nisi de redimendis
-captivis impetravissent, si non redierunt, vituperandi. De quibus non
-omnes uno modo; nam Polybius, bonus auctor in primis, ex decem
-nobilissimis, qui tum erant missi, novem revertisse dicit re a senatu
-non impetrata; unum ex decem, qui paulo post, quam erat[368] egressus e
-castris, redisset, quasi aliquid esset oblitus, Romae remansisse; reditu
-enim in castra liberatum se esse iure iurando interpretabatur, non
-recte; fraus enim astringit,[369] non dissolvit periurium. Fuit igitur
-stulta calliditas perverse imitata prudentiam. Itaque decrevit senatus,
-ut ille veterator et callidus vinctus ad Hannibalem duceretur.
-
-*114*[370] Sed illud maximum: octo hominum milia tenebat Hannibal, non
-quos in acie cepisset, aut qui periculo mortis diffugissent, sed qui
-relicti in castris fuissent a Paulo et a Varrone consulibus. Eos senatus
-non censuit redimendos, cum id parva pecunia fieri posset, ut esset
-insitum militibus nostris aut vincere aut emori. Qua quidem re audita
-fractum animum Hannibalis scribit idem, quod senatus populusque Romanus
-rebus afflictis tam excelso animo fuisset. Sic honestatis comparatione
-ea, quae videntur utilia, vincuntur.
-
-*115* _C._[371] Acilius autem, qui Graece scripsit historiam, plures ait
-fuisse, qui in castra revertissent eadem fraude, ut iure iurando
-liberarentur, eosque a censoribus omnibus ignominiis notatos.
-
-Sit iam huius loci finis. Perspicuum est enim ea, quae timido animo,
-humili, demisso fractoque fiant, quale fuisset Reguli factum, si aut de
-captivis, quod ipsi opus esse videretur, non quod rei publicae,
-censuisset aut domi remanere voluisset, non esse utilia, quia sint
-flagitiosa, foeda, turpia.
-
-[368] _Novem ... quam erat_ c, Bt.^1, Ed.; om. A B H a b;
-_unum qui_ Unger, Bt.^2
-
-[369] _astringit_ c p, Ed., Heine; _distringit_ A B H a b,
-Unger, Bt.
-
-[370] § 114 bracketed by Heus., Bt., as un-Ciceronian.
-
-[371] _C._ Heine, Ed.; not in MSS.
-
 #Contrast between Regulus and the ten envoys from Hannibal.#
 
 *113* XXXII. Now, as Regulus deserves praise for being true to his oath,
@@ -11589,101 +6523,6 @@ regard to the prisoners a measure that seemed to be advantageous for him
 personally, but disadvantageous for the state, or if he had consented to
 remain at home--that such acts are not expedient because they are
 shameful, dishonourable, and immoral.
-
-*116* XXXIII. Restat quarta pars, quae decore, moderatione, modestia,
-continentia, temperantia continetur.
-
-Potest igitur quicquam utile esse, quod sit huic talium virtutum choro
-contrarium? Atqui ab Aristippo Cyrenaici atque Annicerii philosophi
-nominati omne bonum in voluptate posuerunt virtutemque censuerunt ob eam
-rem esse laudandam, quod efficiens esset voluptatis. Quibus obsoletis
-floret Epicurus, eiusdem fere adiutor auctorque sententiae. Cum his
-"viris[372] equisque," ut dicitur, si honestatem tueri ac retinere
-sententia est, decertandum est.
-
-*117* Nam si non modo utilitas, sed vita omnis beata corporis firma
-constitutione eiusque constitutionis spe explorata, ut a Metrodoro
-scriptum est, continetur, certe haec utilitas, et quidem summa (sic enim
-censent), cum honestate pugnabit. Nam ubi primum prudentiae locus
-dabitur? an ut conquirat undique suavitates? Quam miser virtutis
-famulatus servientis voluptati! Quod autem munus prudentiae? an legere
-intellegenter voluptates? Fac nihil isto esse iucundius, quid cogitari
-potest turpius?
-
-Iam, qui dolorem summum malum dicat, apud eum quem habet locum
-fortitudo, quae est dolorum laborumque contemptio? Quamvis enim multis
-locis dicat Epicurus, sicuti[373] dicit, satis fortiter de dolore, tamen
-non id spectandum est, quid dicat, sed quid consentaneum sit ei dicere,
-qui bona voluptate terminaverit, mala dolore.
-
-Et,[374] si illum audiam, de continentia et temperantia dicit ille
-quidem multa multis locis, sed aqua haeret, ut aiunt; nam qui potest
-temperantiam laudare is, qui ponat summum bonum in voluptate? est enim
-temperantia libidinum inimica, libidines autem consectatrices
-voluptatis.
-
-*118* Atque in his tamen tribus generibus, quoquo modo possunt, non
-incallide tergiversantur; prudentiam introducunt scientiam suppeditantem
-voluptates, depellentem dolores; fortitudinem quoque aliquo modo
-expediunt, cum tradunt rationem neglegendae mortis, perpetiendi doloris;
-etiam temperantiam inducunt non facillime illi quidem, sed tamen quoquo
-modo possunt; dicunt enim voluptatis magnitudinem doloris detractione
-finiri. Iustitia vacillat vel iacet potius omnesque eae virtutes, quae
-in communitate cernuntur et in societate generis humani. Neque enim
-bonitas nec liberalitas nec comitas esse potest, non plus quam amicitia,
-si haec non per se expetantur,[375] sed ad voluptatem utilitatemve
-referantur.
-
-Conferamus igitur in pauca.
-
-*119* Nam ut utilitatem nullam esse docuimus, quae honestati esset
-contraria, sic omnem voluptatem dicimus honestati esse contrariam. Quo
-magis reprehendendos Calliphontem et Dinomachum iudico, qui se
-dirempturos controversiam putaverunt, si cum honestate voluptatem
-tamquam cum homine pecudem copulavissent. Non recipit istam
-coniunctionem honestas, aspernatur, repellit. Nec vero finis bonorum [et
-malorum],[376] qui simplex esse debet, ex dissimillimis rebus misceri et
-temperari potest. #De Finibus, II# Sed de hoc (magna enim res est) alio
-loco pluribus; nunc ad propositum.
-
-*120* Quem ad modum igitur, si quando ea, quae videtur[377] utilitas,
-honestati repugnat, diiudicanda res sit, satis est supra disputatum. Sin
-autem speciem utilitatis etiam voluptas habere dicetur, nulla potest
-esse ei cum honestate coniunctio. Nam, ut tribuamus aliquid voluptati,
-condimenti fortasse non nihil, utilitatis certe nihil habebit.
-
-*121* Habes a patre munus, Marce fili, mea quidem sententia magnum, sed
-perinde erit, ut acceperis. Quamquam hi tibi tres libri inter Cratippi
-commentarios tamquam hospites erunt recipiendi; sed, ut, si ipse
-venissem Athenas (quod quidem esset factum, nisi me e medio cursu clara
-voce patria revocasset), aliquando me quoque audires, sic, quoniam his
-voluminibus ad te profecta vox est mea, tribues iis[378] temporis
-quantum poteris, poteris autem, quantum voles. Cum vero intellexero te
-hoc scientiae genere gaudere, tum et praesens tecum propediem, ut spero,
-et, dum aberis, absens loquar.
-
-Vale igitur, mi Cicero, tibique persuade esse te quidem mihi carissimum,
-sed multo fore cariorem, si talibus monitis[379] praeceptisque
-laetabere.
-
-[372] _viris_ c p, Edd.; _veris_ A B H b.
-
-[373] _sicuti_ L c, Edd.; _sicut id_ A B H a b.
-
-[374] _dolore. Et_ Müller, Heine; _dolore: ut_ MSS., Bt.;
-_dolore. Ut_ Ed.
-
-[375] _expetantur_ A, Edd.; _expectantur_ B a; _exspectantur_
-c.
-
-[376] Omitted by Muretus; bracketed by Heine, Ed., et al.
-
-[377] _videtur_ c, Edd.; _videretur_ B H a b; _viderentur_ A.
-
-[378] _iis_ Edd.; _his_ A B H a b; _hijs_ c.
-
-[379] _monitis_ Lambinus, Edd.; _monumentis_ A B H a b;
-_monimentis_ c.
 
 #Apparent Expediency _vs._ Temperance.#
 

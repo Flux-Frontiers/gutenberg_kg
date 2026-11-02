@@ -90,8 +90,37 @@ must be stripped, and the front matter (introduction, preface, contents) must
 not swamp the text; front-matter chunks dominate retrieval seeds. The headings
 must be real chapter headings, since they become the Browse sections.
 
-Fix text problems now. Any text change after stage 3 forces a **full**
-`build-corpus`, not `--update` (see stage 3).
+**Structure gate: check every new book before anything is built.** This is
+not optional, and in a batch it covers every book. Building first and checking
+afterwards cost the 2026-11-01 ten-book batch two extra full bundle builds
+(about an hour), because each text fix made the bundle stale.
+
+```bash
+md="corpus/<genre>/<book>/<slug>.md"
+wc -w "$md"                                   # words, to judge the counts below
+grep -c '^#' "$md"                            # heading count
+grep -n '^#' "$md" | cut -c1-90               # read the whole outline
+```
+
+Read the outline against what the book is. Each of these happened in that batch:
+
+| Look for | Example | Fix |
+|---|---|---|
+| A collection whose works or letters don't each have a heading | Montagu: 2 headings for 58 letters, so the book was two sections. The addressee lines (`TO MRS. S----.` + dateline) were never promoted. | Promote the real boundaries to `##` |
+| Front matter or a colophon promoted to headings | Gogol: a duplicated title page, `AUTHOR OF…`, `TRANSLATED BY…`, `THE END THE NORTHUMBERLAND PRESS…` | Strip the `#` from those lines |
+| Speaker names promoted to headings in a play | Synge: `### SARAH`, `### SUSAN` mid-scene | Restore them to the `NAME.` speaker form the rest of the play uses |
+| Non-English text in the body | *De Officiis* #47001 is the bilingual Loeb: Latin + manuscript variants + English, ~28% Latin | The embedder is English-only, so strip the other language and record the edit in `reference.md`. Ask Eric first: it changes the text. |
+| Markup that looks like headings but isn't | `#Statement of subject.#` side-notes (no space after `#`) | Harmless: DocKG does not treat them as headings. Confirm with the section count in stage 2. |
+
+For a bilingual edition, search for an English-only one first
+(`gutenkg download search "<title>"`). When you strip text, classify the
+paragraphs with a script, then read both lists before writing: the removed
+paragraphs that contain any English, and the kept ones that look foreign. One
+rule that catches untranslated verse quotations also caught lettered English
+footnotes (`[AY] Nearly two million pounds sterling.`).
+
+Fix text problems now, before stage 2. Any text change after stage 3 forces a
+**full** `build-corpus`, not `--update` (see stage 3).
 
 ## Stage 2 -- Per-book index and bookkeeping
 
@@ -114,7 +143,16 @@ poetry run gutenkg audit --genre <genre> --sections   # also flags a book whose 
 
 The chunk count must be non-trivial for the book's length (a novel is
 hundreds to thousands). The query's top hits must come from this book's body,
-not from its `reference.md` or preface.
+not from its `reference.md` or preface. The section count must match the
+outline from stage 1's structure gate:
+
+```bash
+sqlite3 "corpus/<genre>/<book>/.dockg/graph.sqlite" "select name from nodes where kind='section'"
+```
+
+If you fix a book's text after its index is built, move its `.dockg/` aside and
+run `gutenkg rebuild-indices --genre <genre>`. That rebuilds only the books with
+no index, where `--force-build` would rebuild the whole genre.
 
 ## Stage 3 -- Bundle (Eric runs it)
 
