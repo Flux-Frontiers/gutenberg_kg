@@ -80,6 +80,7 @@ Format: `- [ ] Title — Author (Gutenberg ID #NNNNN | IA)` — check the box wh
 
 - [x] Tales of Mystery and Imagination — Edgar Allan Poe (#2147)
 - [x] The Raven and Other Poems — Edgar Allan Poe (#17192)
+- [ ] The Works of Edgar Allan Poe, Volumes 2–5 — Poe (Raven Edition, #2148–2151) *(volume 1, #2147, is held as Tales of Mystery and Imagination; moved here from Science Fiction to sit beside it)*
 - [x] Narrative of the Life of Frederick Douglass — Frederick Douglass (#23)
 - [x] The Souls of Black Folk — W.E.B. Du Bois (#408)
 - [x] Up From Slavery — Booker T. Washington (#2376)
@@ -162,7 +163,6 @@ Format: `- [ ] Title — Author (Gutenberg ID #NNNNN | IA)` — check the box wh
 
 ## Science Fiction (additions)
 
-- [ ] The Complete Works of Edgar Allan Poe — Poe (Raven Edition, #2147-2151) *(#2148 is volume 2 alone; #2147, volume 1, is already in american-literature as Tales of Mystery and Imagination)*
 - [x] The Food of the Gods — H.G. Wells (#11696)
 - [ ] When the World Screamed — Arthur Conan Doyle *(not on Gutenberg; #2038 was the Lock and Key Library anthology)*
 - [x] A Journey to Other Worlds — John Jacob Astor (#3935) *(in corpus as A Journey in Other Worlds)*
@@ -274,7 +274,7 @@ First-person life narratives and major literary biographies; overlaps with
 diaries but distinct in retrospective authorial voice.
 
 - [x] Autobiography — Benjamin Franklin (#148)
-- [ ] Autobiography of John Stuart Mill (#10378) *(#7223 was The Belgian Cookbook)*
+- [x] Autobiography of John Stuart Mill (#10378) *(in corpus as biography/Autobiography; #7223 was The Belgian Cookbook)*
 - [x] Autobiography — Benvenuto Cellini (#4028)
 - [x] Life of Samuel Johnson — James Boswell (#1564)
 - [x] Personal Memoirs — Ulysses S. Grant (#4367)

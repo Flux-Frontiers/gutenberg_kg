@@ -11,6 +11,7 @@
 54700	Oblomov
 8117	The possessed :  or, The devils
 600	Notes from Underground (Dostoevsky)
+36238	The Mantle, and Other Stories (Gogol)
 2142	Childhood (Tolstoy)
 2450	Boyhood (Tolstoy)
 2637	Youth (Tolstoy)
