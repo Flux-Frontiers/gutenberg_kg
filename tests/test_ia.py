@@ -552,6 +552,24 @@ def test_ia_download_skips_by_identifier_despite_title_override(tmp_path, monkey
     assert "already downloaded (IA MiracleMongers)" in capsys.readouterr().out
 
 
+def test_ia_download_skips_item_held_in_another_genre(tmp_path, monkeypatch, capsys):
+    """The IA counterpart of the cross-genre duplicate: the lookup covers the
+    whole corpus, and the skip records the item in the holding genre's catalog."""
+    monkeypatch.setattr(_ia, "CORPUS_ROOT", tmp_path / "corpus")
+    monkeypatch.setattr(_ia, "CATALOG_ROOT", tmp_path / "catalogs")
+    md = _make_ia_book(tmp_path / "corpus" / "curiosities", "Miracle Mongers", "MiracleMongers")
+
+    def _no_network(*a, **kw):
+        raise AssertionError("network must not be hit when another genre holds the item")
+
+    monkeypatch.setattr(_ia, "fetch_ia_metadata", _no_network)
+    result = _ia.download_book("MiracleMongers", genre="audel-electric")
+    assert result == str(md)
+    assert "curiosities/Miracle Mongers — skipping" in capsys.readouterr().out
+    assert (tmp_path / "catalogs" / "curiosities.txt").exists()
+    assert not (tmp_path / "catalogs" / "audel-electric.txt").exists()
+
+
 def test_ia_record_in_catalog_appends_and_is_idempotent(tmp_path: Path, monkeypatch):
     monkeypatch.setattr(_ia, "CATALOG_ROOT", tmp_path)
     assert _ia.record_in_catalog("curiosities", "MiracleMongers", "Miracle Mongers") is True

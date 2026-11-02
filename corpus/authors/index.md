@@ -11,7 +11,7 @@
 | [Algernon Blackwood](algernon_blackwood/author.md) | 1869 | 1951 | 1 |
 | [Andrew Lang](andrew_lang/author.md) | 1844 | 1912 | 1 |
 | [Ann Ward Radcliffe](ann_ward_radcliffe/author.md) | 1764 | 1823 | 1 |
-| [Anton Pavlovich Chekhov](anton_pavlovich_chekhov/author.md) | 1860 | 1904 | 1 |
+| [Anton Pavlovich Chekhov](anton_pavlovich_chekhov/author.md) | 1860 | 1904 | 2 |
 | [Aristophanes](aristophanes/author.md) | -450 | -388 | 5 |
 | [Aristotle](aristotle/author.md) | -384 | -322 | 3 |
 | [Arthur Conan Doyle](arthur_conan_doyle/author.md) | 1859 | 1930 | 3 |
@@ -27,6 +27,7 @@
 | [Bram Stoker](bram_stoker/author.md) | 1847 | 1912 | 1 |
 | [Charles Darwin](charles_darwin/author.md) | 1809 | 1882 | 4 |
 | [Charles Dickens](charles_dickens/author.md) | 1812 | 1870 | 5 |
+| [Charles Lamb](charles_lamb/author.md) | 1775 | 1834 | 1 |
 | [Charlotte Brontë](charlotte_brontë/author.md) | 1816 | 1855 | 1 |
 | [Charlotte Perkins Gilman](charlotte_perkins_gilman/author.md) | 1860 | 1935 | 1 |
 | [Christopher Marlowe](christopher_marlowe/author.md) | 1564 | 1593 | 2 |
@@ -35,7 +36,7 @@
 | [Dante Alighieri](dante_alighieri/author.md) | 1265 | 1321 | 2 |
 | [Diogenes Laertius](diogenes_laertius/author.md) | — | — | 1 |
 | [E. M. Forster](e_m_forster/author.md) | 1879 | 1970 | 2 |
-| [Edgar Allan Poe](edgar_allan_poe/author.md) | 1809 | 1849 | 2 |
+| [Edgar Allan Poe](edgar_allan_poe/author.md) | 1809 | 1849 | 6 |
 | [Edgar Rice Burroughs](edgar_rice_burroughs/author.md) | 1875 | 1950 | 5 |
 | [Edith Wharton](edith_wharton/author.md) | 1862 | 1937 | 2 |
 | [Edward Bulwer Lytton, Baron Lytton](edward_bulwer_lytton_baron_lytton/author.md) | 1803 | 1873 | 1 |
@@ -72,6 +73,7 @@
 | [Isabella L. Bird](isabella_l_bird/author.md) | 1831 | 1904 | 1 |
 | [Ivan Aleksandrovich Goncharov](ivan_aleksandrovich_goncharov/author.md) | 1812 | 1891 | 1 |
 | [Ivan Sergeevich Turgenev](ivan_sergeevich_turgenev/author.md) | 1818 | 1883 | 2 |
+| [J. M. Synge](j_m_synge/author.md) | 1871 | 1909 | 1 |
 | [Jack London](jack_london/author.md) | 1876 | 1916 | 3 |
 | [Jacob Grimm](jacob_grimm/author.md) | 1785 | 1863 | 1 |
 | [James Boswell](james_boswell/author.md) | 1740 | 1795 | 2 |
@@ -95,22 +97,24 @@
 | [Jules Verne](jules_verne/author.md) | 1828 | 1905 | 4 |
 | [Kate Chopin](kate_chopin/author.md) | 1850 | 1904 | 1 |
 | [Laozi](laozi/author.md) | — | — | 1 |
-| [Leo Tolstoy](leo_tolstoy/author.md) | 1828 | 1910 | 3 |
+| [Leo Tolstoy](leo_tolstoy/author.md) | 1828 | 1910 | 5 |
 | [Lewis Carroll](lewis_carroll/author.md) | 1832 | 1898 | 1 |
 | [Lucius Annaeus Seneca](lucius_annaeus_seneca/author.md) | — | 65 | 1 |
 | [M. G. Lewis](m_g_lewis/author.md) | 1775 | 1818 | 1 |
 | [M. R. James](m_r_james/author.md) | 1862 | 1936 | 1 |
 | [Marco Polo](marco_polo/author.md) | 1254 | 1324 | 1 |
 | [Marcus Aurelius](marcus_aurelius/author.md) | 121 | 180 | 3 |
+| [Marcus Tullius Cicero](marcus_tullius_cicero/author.md) | -106 | -43 | 1 |
 | [Mark Twain](mark_twain/author.md) | 1835 | 1910 | 2 |
 | [Mary Wollstonecraft](mary_wollstonecraft/author.md) | 1759 | 1797 | 1 |
 | [Mary Wollstonecraft Shelley](mary_wollstonecraft_shelley/author.md) | 1797 | 1851 | 1 |
+| [Mary Wortley Montagu](mary_wortley_montagu/author.md) | 1689 | 1762 | 1 |
 | [Michael Faraday](michael_faraday/author.md) | 1791 | 1867 | 1 |
 | [Miguel de Cervantes Saavedra](miguel_de_cervantes_saavedra/author.md) | 1547 | 1616 | 1 |
 | [Mungo Park](mungo_park/author.md) | 1771 | 1806 | 1 |
 | [Nathaniel Hawthorne](nathaniel_hawthorne/author.md) | 1804 | 1864 | 1 |
 | [Niccolò Machiavelli](niccolò_machiavelli/author.md) | 1469 | 1527 | 1 |
-| [Nikolai Vasilevich Gogol](nikolai_vasilevich_gogol/author.md) | 1809 | 1852 | 1 |
+| [Nikolai Vasilevich Gogol](nikolai_vasilevich_gogol/author.md) | 1809 | 1852 | 2 |
 | [Oscar Wilde](oscar_wilde/author.md) | 1854 | 1900 | 2 |
 | [Ovid](ovid/author.md) | -43 | 17 | 1 |
 | [Philip Dormer Stanhope, Earl of Chesterfield](philip_dormer_stanhope_earl_of_chesterfield/author.md) | 1694 | 1773 | 1 |

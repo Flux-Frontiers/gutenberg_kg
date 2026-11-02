@@ -8,13 +8,17 @@
 # Uncle Tom's Cabin (#203), Walden (#205)
 
 # --- Essential gaps ---
-23	Narrative of the Life of Frederick Douglass (Douglass)
+# Douglass (#23) and Washington (#2376) are held in biography; the
+# already-downloaded check is per genre, so listing them here re-downloads them.
 408	The Souls of Black Folk (Du Bois)
-2376	Up From Slavery (Washington)
 
 # --- Poe ---
 2147	Tales of Mystery and Imagination (Poe)
 17192	The Raven and Other Poems (Poe)
+2148	The Works of Edgar Allan Poe, Volume 2 (Poe)
+2149	The Works of Edgar Allan Poe, Volume 3 (Poe)
+2150	The Works of Edgar Allan Poe, Volume 4 (Poe)
+2151	The Works of Edgar Allan Poe, Volume 5 (Poe)
 
 # --- Fiction ---
 910	White Fang (London)

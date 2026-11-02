@@ -1,6 +1,6 @@
 # GutenbergKG — Ingestion Pipeline
 
-> **Current corpus:** 255 books across 20 genres. The per-stage sizes below are
+> **Current corpus:** 265 books across 20 genres. The per-stage sizes below are
 > architecture examples from a reference build; consult the [corpus catalog](CORPUS.md)
 > for live coverage and [`gutenkg status`](CHEATSHEET.md#check-ingest-status-across-corpus)
 > for local index metrics.
@@ -15,7 +15,7 @@
         ▼
   ┌─────────────────────────────────────────────────────────────┐
   │                   CORPUS  (corpus/)                         │
-  │   20 genres · 255 books · Markdown + reference.md             │
+  │   20 genres · 265 books · Markdown + reference.md             │
   └─────────────────────────────────────────────────────────────┘
         │
         ├─── 19 prose / technical genres ─────────────────────────▶  Semantic Chunker
@@ -41,7 +41,7 @@ All genres in a strategy group are processed together in one DocKG pass.
 
 | Strategy | Genres | Chunker behaviour |
 |---|---|---|
-| `semantic` | 18 genres (244 books) | Sentence-transformer semantic boundary detection |
+| `semantic` | 18 genres (254 books) | Sentence-transformer semantic boundary detection |
 | `verse` | `sacred-texts` (7 books) | Chapter:verse window; auto-detects `^\d+:\d+\s` format |
 | `diarykg` | `diaries` (4 collections) | Separate temporal pipeline — YAML timestamps, diary-aware chunking |
 
@@ -289,10 +289,10 @@ through the Swift packs, the image and the web catalog.
 
 | Content type | Genres | Books | Index |
 |---|---:|---:|---|
-| Prose and technical text | 18 | 244 | DocKG semantic chunking |
+| Prose and technical text | 18 | 254 | DocKG semantic chunking |
 | Sacred texts | 1 | 7 | DocKG verse chunking |
 | Diaries | 1 | 4 | DiaryKG temporal indexing |
-| **Total** | **20** | **255** | |
+| **Total** | **20** | **265** | |
 
 ---
 

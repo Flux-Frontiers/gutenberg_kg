@@ -10,3 +10,4 @@
 | Title | Genre |
 |-------|-------|
 | Dead Souls | russian-literature |
+| The Mantle, and Other Stories (Gogol) | russian-literature |

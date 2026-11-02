@@ -736,6 +736,34 @@ def test_download_book_skips_by_id_despite_title_override(tmp_path: Path, monkey
     assert "already downloaded (Gutenberg #2445)" in capsys.readouterr().out
 
 
+def test_find_book_by_id_searches_inside_genres(tmp_path: Path):
+    """From the corpus root, books sit one level down at <genre>/<book>/."""
+    md = _make_downloaded_book(tmp_path / "biography", "Up From Slavery", 2376)
+    assert _find_book_by_id(2376, str(tmp_path)) == str(md)
+
+
+def test_download_book_skips_book_held_in_another_genre(tmp_path: Path, monkeypatch, capsys):
+    """A catalog listing a book that another genre holds must not download a
+    second copy (Douglass #23 and Washington #2376, held in biography and
+    re-downloaded from the american-literature catalog). The skip records the
+    book in the holding genre's catalog, not the one asked for."""
+    monkeypatch.setattr(dg, "CORPUS_ROOT", str(tmp_path / "corpus"))
+    monkeypatch.setattr(dg, "CATALOG_ROOT", str(tmp_path / "catalogs"))
+    md = _make_downloaded_book(tmp_path / "corpus" / "biography", "Up From Slavery", 2376)
+
+    def _no_network(*a, **kw):
+        raise AssertionError("network must not be hit when another genre holds the ID")
+
+    monkeypatch.setattr(dg, "fetch_metadata", _no_network)
+    result = dg.download_book(
+        2376, title="Up From Slavery (Washington)", genre="american-literature"
+    )
+    assert result == str(md)
+    assert "biography/Up From Slavery — skipping" in capsys.readouterr().out
+    assert (tmp_path / "catalogs" / "biography.txt").exists()
+    assert not (tmp_path / "catalogs" / "american-literature.txt").exists()
+
+
 def test_download_book_force_bypasses_id_check(tmp_path: Path, monkeypatch):
     """--force must still reach the metadata fetch even when the ID exists."""
     monkeypatch.setattr(dg, "CORPUS_ROOT", str(tmp_path))
@@ -1056,7 +1084,25 @@ def test_run_catalog_skips_mismatched_entry_and_continues(tmp_path: Path, monkey
     dg.run_catalog(str(catalog), genre="russian-literature", dry_run=True)
     captured = capsys.readouterr()
     assert "ERROR downloading #1022" in captured.err
-    assert "1/2 book(s) would be downloaded" in captured.out
+    assert "1 book(s) would be downloaded, 0 already held, 1 failed (2 in catalog)" in captured.out
+
+
+def test_run_catalog_counts_held_books_apart_from_downloads(tmp_path: Path, monkeypatch, capsys):
+    """A catalog whose books are all held must not report them as downloads."""
+    monkeypatch.setattr(dg, "CORPUS_ROOT", str(tmp_path / "corpus"))
+    monkeypatch.setattr(dg, "CATALOG_ROOT", str(tmp_path / "catalogs"))
+    _make_downloaded_book(tmp_path / "corpus" / "biography", "Up From Slavery", 2376)
+    monkeypatch.setattr(dg, "fetch_metadata", lambda ebook_id: {"title": "De Officiis"})
+    catalog = tmp_path / "mixed.txt"
+    catalog.write_text(
+        "2376\tUp From Slavery (Washington)\n47001\tDe Officiis (Cicero)\n", encoding="utf-8"
+    )
+
+    dg.run_catalog(str(catalog), genre="ancient-classical", dry_run=True)
+    assert (
+        "1 book(s) would be downloaded, 1 already held, 0 failed (2 in catalog)"
+        in capsys.readouterr().out
+    )
 
 
 # ---------------------------------------------------------------------------

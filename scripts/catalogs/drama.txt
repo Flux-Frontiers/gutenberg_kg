@@ -27,3 +27,5 @@
 3790	Major Barbara
 844	The Importance of Being Earnest — Oscar Wilde
 1754	The sea-gull
+7986	Plays by Anton Chekhov, Second Series (Chekhov)
+1240	The Playboy of the Western World (Synge)

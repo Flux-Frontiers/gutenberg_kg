@@ -913,13 +913,17 @@ def _find_item_by_id(identifier: str, search_root: Path) -> str | None:
     keys on ``ebook_id``, which is ``None`` for every IA book, so both copies
     audit clean.
 
+    Like it, this scans two levels (``*/`` and the corpus's ``<genre>/<book>/``)
+    and download_book searches the whole corpus, so an item held in another
+    genre is not downloaded again.
+
     :param identifier: Internet Archive item identifier.
-    :param search_root: Directory whose immediate children are book dirs.
+    :param search_root: The corpus root, or any directory of book dirs.
     :returns: Path to the item's full-text ``.md``, or ``None`` if not found.
     """
     if not search_root.is_dir():
         return None
-    for ref in sorted(search_root.glob("*/reference.md")):
+    for ref in sorted([*search_root.glob("*/reference.md"), *search_root.glob("*/*/reference.md")]):
         try:
             if parse_reference(ref).get("ia_id") != identifier:
                 continue
@@ -929,6 +933,15 @@ def _find_item_by_id(identifier: str, search_root: Path) -> str | None:
         if cands:
             return str(cands[0])
     return None
+
+
+def _held_genre(book_dir: Path, corpus_root: Path) -> str | None:
+    """The genre directory holding ``book_dir``, or ``None`` at the corpus root.
+
+    The IA counterpart of :func:`gutenberg_kg.gutenberg._held_genre`.
+    """
+    parts = book_dir.relative_to(corpus_root).parts
+    return parts[0] if len(parts) == 2 else None
 
 
 def download_book(
@@ -946,14 +959,19 @@ def download_book(
     # no network round-trip. See _find_item_by_id for why the path check below
     # is not sufficient on its own.
     if not force:
-        search_root = CORPUS_ROOT / genre if genre else CORPUS_ROOT
-        existing = _find_item_by_id(identifier, search_root)
+        existing = _find_item_by_id(identifier, CORPUS_ROOT)
         if existing:
-            existing_dir = Path(existing).parent.name
-            print(f"  [=] already downloaded (IA {identifier}): {existing_dir} — skipping")
+            book_path = Path(existing).parent
+            existing_dir = book_path.name
+            held_in = _held_genre(book_path, CORPUS_ROOT)
+            where = (
+                existing_dir if held_in == genre else f"{held_in or '<corpus root>'}/{existing_dir}"
+            )
+            print(f"  [=] already downloaded (IA {identifier}): {where} — skipping")
             # Catalogue on the skip path too: an item on disk but uncatalogued
             # is exactly the pre-existing drift, and re-running is the repair.
-            record_in_catalog(genre, identifier, existing_dir, dry_run=dry_run)
+            # The catalog is the holding genre's, not the one asked for.
+            record_in_catalog(held_in, identifier, existing_dir, dry_run=dry_run)
             return existing
 
     print(f"  Fetching metadata for {identifier!r}...")

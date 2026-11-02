@@ -696,18 +696,22 @@ def write_reference(book_dir: str, meta: dict) -> str:
 def _find_book_by_id(ebook_id: int, search_root: str) -> str | None:
     """Return the primary ``.md`` path of an existing book with this Gutenberg ID.
 
-    Scans ``<search_root>/*/reference.md`` so idempotence is keyed on the ID
-    itself — a catalog title override that differs from the existing directory
-    name must not trigger a duplicate re-download of the same book.
+    Scans ``<search_root>/*/reference.md`` and ``<search_root>/*/*/reference.md``
+    so idempotence is keyed on the ID itself — a catalog title override that
+    differs from the existing directory name must not trigger a duplicate
+    re-download of the same book. The second level is the corpus layout
+    (``<genre>/<book>/``): download_book searches the whole corpus, because a
+    book held in one genre and listed in another genre's catalog was otherwise
+    downloaded a second time (Douglass #23 and Washington #2376, 2026-11-01).
 
     :param ebook_id: Project Gutenberg numeric book ID.
-    :param search_root: Directory whose immediate children are book dirs.
+    :param search_root: The corpus root, or any directory of book dirs.
     :returns: Path to the book's full-text ``.md``, or ``None`` if not found.
     """
     root = Path(search_root)
     if not root.is_dir():
         return None
-    for ref in sorted(root.glob("*/reference.md")):
+    for ref in sorted([*root.glob("*/reference.md"), *root.glob("*/*/reference.md")]):
         try:
             if parse_reference(ref).get("ebook_id") != ebook_id:
                 continue
@@ -717,6 +721,12 @@ def _find_book_by_id(ebook_id: int, search_root: str) -> str | None:
         if cands:
             return str(cands[0])
     return None
+
+
+def _held_genre(book_dir: Path, corpus_root: str | Path) -> str | None:
+    """The genre directory holding ``book_dir``, or ``None`` at the corpus root."""
+    parts = book_dir.relative_to(corpus_root).parts
+    return parts[0] if len(parts) == 2 else None
 
 
 def download_book(
@@ -746,18 +756,23 @@ def download_book(
     """
     # ID-based idempotence check: a book already present under ANY directory
     # name (e.g. downloaded under its OPDS title before a catalog override was
-    # curated) must not be fetched again. Runs before the metadata fetch so a
-    # skip costs no network round-trip.
+    # curated) or in ANY genre must not be fetched again. Runs before the
+    # metadata fetch so a skip costs no network round-trip.
     if not force:
-        search_root = os.path.join(CORPUS_ROOT, genre) if genre else CORPUS_ROOT
-        existing = _find_book_by_id(ebook_id, search_root)
+        existing = _find_book_by_id(ebook_id, CORPUS_ROOT)
         if existing:
-            existing_dir = os.path.basename(os.path.dirname(existing))
-            print(f"  [=] already downloaded (Gutenberg #{ebook_id}): {existing_dir} — skipping")
+            book_path = Path(existing).parent
+            existing_dir = book_path.name
+            held_in = _held_genre(book_path, CORPUS_ROOT)
+            where = (
+                existing_dir if held_in == genre else f"{held_in or '<corpus root>'}/{existing_dir}"
+            )
+            print(f"  [=] already downloaded (Gutenberg #{ebook_id}): {where} — skipping")
             # Catalogue on the skip path too: a book already on disk but absent
             # from the catalog is exactly the pre-existing drift, and re-running
-            # the download is the natural way to repair it.
-            record_in_catalog(genre, ebook_id, existing_dir, dry_run=dry_run)
+            # the download is the natural way to repair it. The catalog is the
+            # one for the genre that holds the book, not the one asked for.
+            record_in_catalog(held_in, ebook_id, existing_dir, dry_run=dry_run)
             return existing
 
     # Fetch metadata (needed for the title before we can check idempotence)
@@ -1092,8 +1107,12 @@ def run_catalog(
         sys.exit(1)
 
     print(f"{'[dry] ' if dry_run else ''}Catalog loaded: {len(entries)} book(s)\n")
-    succeeded = 0
+    # download_book returns the existing path on a skip, the same as on a
+    # download, so the held books are counted here. A summary that counted
+    # every non-failure read "24/24 would be downloaded" with nothing to fetch.
+    fetched = held = failed = 0
     for ebook_id, title in entries:
+        already = not force and _find_book_by_id(ebook_id, CORPUS_ROOT) is not None
         try:
             download_book(
                 ebook_id,
@@ -1103,15 +1122,20 @@ def run_catalog(
                 dry_run=dry_run,
                 check_titles=check_titles,
             )
-            succeeded += 1
+            if already:
+                held += 1
+            else:
+                fetched += 1
         except Exception as exc:  # noqa: BLE001
+            failed += 1
             print(f"  ERROR downloading #{ebook_id}: {exc}", file=sys.stderr)
         print()
 
-    if dry_run:
-        print(f"[dry] {succeeded}/{len(entries)} book(s) would be downloaded.")
-    else:
-        print(f"Done. {succeeded}/{len(entries)} book(s) downloaded.")
+    verb = "would be downloaded" if dry_run else "downloaded"
+    print(
+        f"{'[dry] ' if dry_run else 'Done. '}{fetched} book(s) {verb}, {held} already held, "
+        f"{failed} failed ({len(entries)} in catalog)."
+    )
 
 
 def run_fetch_genre(

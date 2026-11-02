@@ -10,5 +10,7 @@
 | Title | Genre |
 |-------|-------|
 | Anna Karenina | russian-literature |
-| Childhood, Boyhood, Youth (Tolstoy) | russian-literature |
+| Boyhood (Tolstoy) | russian-literature |
+| Childhood (Tolstoy) | russian-literature |
 | War and Peace | russian-literature |
+| Youth (Tolstoy) | russian-literature |
