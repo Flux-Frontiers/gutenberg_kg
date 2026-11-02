@@ -70,7 +70,7 @@ Format: `- [ ] Title — Author (Gutenberg ID #NNNNN | IA)` — check the box wh
 - [x] The Birds — Aristophanes (#3013)
 - [x] Oresteia — Aeschylus (#8714) *(in corpus as The House of Atreus)*
 - [x] Medea — Euripides (#35451) *(#35 is The Time Machine)*
-- [ ] On Duties (De Officiis) — Cicero (#47001) *(not in corpus -- never downloaded; Gutenberg titles it De Officiis)*
+- [x] On Duties (De Officiis) — Cicero (#47001) *(in corpus as De Officiis (Cicero), Gutenberg's title)*
 - [x] On the Nature of Things — Lucretius (#785)
 - [x] The Consolation of Philosophy — Boethius (#14328)
 
@@ -80,7 +80,7 @@ Format: `- [ ] Title — Author (Gutenberg ID #NNNNN | IA)` — check the box wh
 
 - [x] Tales of Mystery and Imagination — Edgar Allan Poe (#2147)
 - [x] The Raven and Other Poems — Edgar Allan Poe (#17192)
-- [ ] The Works of Edgar Allan Poe, Volumes 2–5 — Poe (Raven Edition, #2148–2151) *(volume 1, #2147, is held as Tales of Mystery and Imagination; moved here from Science Fiction to sit beside it)*
+- [x] The Works of Edgar Allan Poe, Volumes 2–5 — Poe (Raven Edition, #2148–2151) *(volume 1, #2147, is held as Tales of Mystery and Imagination; moved here from Science Fiction to sit beside it)*
 - [x] Narrative of the Life of Frederick Douglass — Frederick Douglass (#23)
 - [x] The Souls of Black Folk — W.E.B. Du Bois (#408)
 - [x] Up From Slavery — Booker T. Washington (#2376)
@@ -141,7 +141,7 @@ Format: `- [ ] Title — Author (Gutenberg ID #NNNNN | IA)` — check the box wh
 
 - [x] Fathers and Sons — Ivan Turgenev (#30723)
 - [x] On the Eve — Ivan Turgenev (#6902)
-- [ ] The Overcoat — Nikolai Gogol (#36238, as The Mantle, and Other Stories) *(#1022 was Thoreau's Walking)*
+- [x] The Overcoat — Nikolai Gogol (#36238, as The Mantle, and Other Stories) *(#1022 was Thoreau's Walking)*
 - [x] Oblomov — Ivan Goncharov (#54700)
 - [x] The Possessed (Demons) — Fyodor Dostoevsky (#8117)
 - [x] Notes from Underground — Fyodor Dostoevsky (#600)
@@ -262,8 +262,8 @@ personality and social context in ways essays cannot.  Wide date range: Pliny
 - [x] Letters to His Son — Lord Chesterfield (#3352)
 - [x] Letters — Pliny the Younger (#2811)
 - [x] Letters of John Keats to His Family and Friends (#35698)
-- [ ] Turkish Embassy Letters — Lady Mary Wortley Montagu (#17520) *(Gutenberg titles it "Letters of the Right Honourable Lady M—y W—y M—e"; use that title in a catalog. #16287 was William James)*
-- [ ] Letters of Charles Lamb (#10125, The Best Letters of Charles Lamb) *(#1633 was Hale's The Brick Moon)*
+- [x] Turkish Embassy Letters — Lady Mary Wortley Montagu (#17520) *(in corpus as Letters of Lady Mary Wortley Montagu; Gutenberg titles it "Letters of the Right Honourable Lady M—y W—y M—e", which the catalog keeps. #16287 was William James)*
+- [x] Letters of Charles Lamb (#10125, The Best Letters of Charles Lamb) *(#1633 was Hale's The Brick Moon)*
 - [x] Letters and Journals of Lord Byron (#8901, #9921) *(in corpus as two volumes; #19190 was an unrelated book)*
 
 ---
@@ -338,10 +338,10 @@ modern European.
 - [x] Hedda Gabler — Henrik Ibsen (#4093)
 - [x] Pygmalion — George Bernard Shaw (#3825)
 - [x] Major Barbara — George Bernard Shaw (#3790)
-- [ ] The Cherry Orchard — Anton Chekhov (#7986, Plays by Anton Chekhov, Second Series) *(#7984 was The Old Santa Fe Trail)*
+- [x] The Cherry Orchard — Anton Chekhov (#7986, Plays by Anton Chekhov, Second Series) *(#7984 was The Old Santa Fe Trail)*
 - [x] The Seagull — Anton Chekhov (#1754)
 - [x] The Importance of Being Earnest — Oscar Wilde (#844)
-- [ ] The Playboy of the Western World — J.M. Synge (#1240) *(#5765 was Darwin's Insectivorous Plants)*
+- [x] The Playboy of the Western World — J.M. Synge (#1240) *(#5765 was Darwin's Insectivorous Plants)*
 
 ---
 
