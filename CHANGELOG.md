@@ -8,6 +8,13 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+### Changed
+
+- **The Knowledge Press app is on the App Store.** Version 1.32.0 was
+  accepted for iPhone, iPad and Mac on 2026-11-03. The README and docs that
+  called it "in development for App Store deployment" now link to
+  [its listing](https://apps.apple.com/us/app/the-knowledge-press/id6812116080).
+
 ## [1.32.0] - 2026-11-03
 
 ### Added
