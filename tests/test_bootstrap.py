@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import importlib.util
+import re
 import subprocess
 import sys
 from pathlib import Path
@@ -227,6 +228,37 @@ def test_no_python_skips_install_and_models(monkeypatch, capsys):
     b.fetch_models()
     assert capsys.readouterr().out.count("no supported Python") == 2
     assert b.blocked == []
+
+
+def test_dev_install_names_only_groups_pyproject_defines(monkeypatch, capsys):
+    # The kg group was retired (#152) while --with dev,kg stayed here, so
+    # `make bootstrap DEV=1` died with "Group(s) not found: kg".
+    monkeypatch.delenv("VIRTUAL_ENV", raising=False)
+    b = _run(dev=True)
+    b.python_ready = b.poetry_ready = True
+    b.install_deps()
+    out = capsys.readouterr().out
+    groups = re.search(r"--with (\S+)", out)
+    assert groups, out
+    text = (_SCRIPT.parent.parent / "pyproject.toml").read_text(encoding="utf-8")
+    for group in groups.group(1).split(","):
+        assert f"[tool.poetry.group.{group}]" in text, group
+
+
+@pytest.mark.parametrize(("has_uv", "mentions_brew"), [(True, False), (False, True)])
+def test_unsupported_python_hint_leads_with_uv(monkeypatch, has_uv, mentions_brew):
+    monkeypatch.setattr(bootstrap, "python_ok", lambda v: False)
+    monkeypatch.setattr(bootstrap.platform, "system", lambda: "Darwin")
+    monkeypatch.setattr(
+        bootstrap.shutil, "which", lambda name: "/bin/uv" if has_uv and name == "uv" else None
+    )
+    hints = []
+    monkeypatch.setattr(bootstrap, "say", lambda tag, msg: hints.append(msg))
+    b = _run()
+    b.check_python()
+    assert b.blocked and not b.python_ready
+    assert "uv python install 3.12" in hints[-1]
+    assert ("brew install python@3.12" in hints[-1]) is mentions_brew
 
 
 def test_foreign_virtualenv_blocks_install(monkeypatch, tmp_path):

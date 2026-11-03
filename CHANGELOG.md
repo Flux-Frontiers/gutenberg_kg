@@ -10,6 +10,13 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Added
 
+- **`scripts/rotate_omlx_key.py`: one oMLX API key in both places.** Writes a
+  random key (or `--key`) to `auth.api_key` in `~/.omlx/settings.json` and to
+  `VLLM_API_KEY` in `docker/.env`, backing up the settings and never printing
+  the key. It refuses while oMLX is running (port open, or an `omlx` process),
+  since the app can write its settings back on exit. A mismatch is what makes
+  oMLX answer 401 and the chat UI's model list come up empty.
+
 - **`make bootstrap`: one-command install for a fresh clone.**
   `scripts/bootstrap.py` (stdlib only, so it runs before Poetry or the venv
   exist) checks Python 3.12/3.13, Poetry 2.x, Make and a container runtime,
@@ -37,6 +44,18 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Changed
 
+- **A uv-managed Python is the suggested interpreter.** `make bootstrap`'s
+  hint for an unsupported Python is now `uv python install 3.12` (Homebrew
+  only as the fallback when uv is absent), and INSTALLATION.md gains "Using a
+  uv-managed Python": how to point Poetry's in-project `.venv` at uv's
+  standalone CPython, why `uv python find` needs `--system`, and why
+  `poetry env use` fails while `VIRTUAL_ENV` names the removed venv.
+  INSTALLATION.md and `docker/.env.example` also say where the oMLX app keeps
+  its port (`~/.omlx/settings.json`, default 8000, the worker's) and that
+  `VLLM_MODEL` must be a model oMLX serves; three troubleshooting rows cover
+  the port clash, the empty model list, and "Network is unreachable" from a
+  closed image-server port.
+
 - **INSTALLATION.md no longer says image generation needs a local LLM.** With
   `OPENAI_API_KEY` set, the worker and chat UI generate images with
   `gpt-image-1` and need no local model or image server. `gutenkg imagine`
@@ -45,6 +64,25 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   assumes a POSIX shell.
 
 ### Fixed
+
+- **`make up` no longer leaves the image server silently down.**
+  `image-server`, `sdxl-server` and `sdxl-fetch` built `.venv-image` and
+  `.venv-sdxl` with a bare `python3 -m venv`, so a Homebrew 3.14 first on PATH
+  gave a venv outside `requires-python`, and a Homebrew whose bundled pip wheel
+  the user could not read gave one with no pip. Every later step failed, `make
+  up` printed its warning, and the worker reported "Network is unreachable"
+  for :8090. A shared `make-venv` recipe now uses `uv venv --seed
+  --managed-python` (uv's standalone CPython, independent of Homebrew) when uv
+  is on PATH, else python3.13 or python3.12; it rebuilds a venv on the wrong
+  Python or without pip, and fails the target if the build does not work.
+  `VENV_PYTHON` and `VENV_UV_FLAGS` override the choice.
+
+- **`make bootstrap DEV=1` no longer asks for the retired `kg` group.** The
+  group went in #152 (pycode-kg is a global tool), but bootstrap still ran
+  `poetry install --with dev,kg`, which stops with "Group(s) not found: kg";
+  INSTALLATION.md gave the same command in three places. Both now say
+  `--with dev`, and a test checks every group bootstrap names against
+  pyproject.
 
 - **A book held in one genre is no longer downloaded again from another
   genre's catalog.** The already-downloaded check (`gutenkg download` and
