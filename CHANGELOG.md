@@ -10,6 +10,16 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Added
 
+- **`make bootstrap`: one-command install for a fresh clone.**
+  `scripts/bootstrap.py` (stdlib only, so it runs before Poetry or the venv
+  exist) checks Python 3.12/3.13, Poetry 2.x, Make and a container runtime,
+  installs Poetry when missing (with confirmation), runs `poetry install`,
+  `gutenkg init` and seeds `docker/.env` without overwriting it, then reports
+  which oMLX, Ollama and OpenAI backends are usable. `DRY_RUN=1` prints every
+  action and changes nothing; it ends by printing the next command rather than
+  starting the 30-45 minute corpus build. A header records the version,
+  git commit, UTC timestamp, host, OS, CPU, memory, free disk and Python.
+
 - **Ten books from the wishlist** (265 after ingest): Gogol's *The Mantle,
   and Other Stories*, the *Letters of the Right Honourable Lady Mary Wortley
   Montagu* (Gutenberg #17520, whose own title initials her name as "Lady
@@ -24,6 +34,15 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - **`add-book` skill: a structure gate before any build.** Every new book's
   heading outline, section count and language are checked first, with the
   four problems this batch hit and their fixes.
+
+### Changed
+
+- **INSTALLATION.md no longer says image generation needs a local LLM.** With
+  `OPENAI_API_KEY` set, the worker and chat UI generate images with
+  `gpt-image-1` and need no local model or image server. `gutenkg imagine`
+  still calls an image server, and the page now says so. A new "SDXL on
+  Windows" section gives the PowerShell steps, since `make sdxl-server`
+  assumes a POSIX shell.
 
 ### Fixed
 
