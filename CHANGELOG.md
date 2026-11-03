@@ -37,6 +37,16 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   `corpus/`, where there are only genre directories. Those two catalog lines
   are removed.
 
+### Security
+
+- **kgmodule-utils 0.29.2 and quiltwright 0.17.0 are the floors.** Both
+  floor Pillow at 13.0.0, so the core install (through
+  `kgmodule-utils[synthesis]`) and the `viz3d` and `pov` extras (through
+  quiltwright) can no longer resolve Pillow 12.3.0 and its 41 advisories.
+  `scripts/check_pins.py --bump` moved the kgmodule-utils floor in
+  `pyproject.toml`, the Dockerfile ARG and `runpod/requirements.txt`
+  together; the lock follows both.
+
 ## [1.31.0] - 2026-11-01
 
 A corpus and security release: the catalog IDs checked against Gutenberg's
