@@ -4,6 +4,10 @@
 # SPDX-License-Identifier: Elastic-2.0. See LICENSE.
 #
 # Typical workflow:
+#   make bootstrap      — check requirements, install what is missing, fetch models
+#                         (make bootstrap DRY_RUN=1 reports only; YES=1 skips the
+#                         questions; DEV=1 adds the contributor toolchain;
+#                         CLI_ONLY=1 skips the container runtime check)
 #   make init           — fetch local ML models (spaCy, embedder); run once after clone
 #   make chunk-diaries  — re-chunk .diary/ from committed .md (always --force)
 #   make build-diaries  — build .diarykg/ indices (prerequisite for build-corpus)
@@ -240,7 +244,14 @@ endif
 # `gutenkg` on PATH. Override with e.g. `make GUTENKG=gutenkg build-corpus`.
 GUTENKG     ?= poetry run gutenkg
 
-.PHONY: init spacy-model chunk-diaries build-diaries build-corpus export-swift export-web-catalog export-web-books stale-books refresh-text check-pins setup build build-all rebuild rebuild-all prune kill down-all runtime-guard publish-worker-image pull-worker-image run image-server sdxl-server sdxl-fetch chat up stop down query logs clean docs
+.PHONY: bootstrap init spacy-model chunk-diaries build-diaries build-corpus export-swift export-web-catalog export-web-books stale-books refresh-text check-pins setup build build-all rebuild rebuild-all prune kill down-all runtime-guard publish-worker-image pull-worker-image run image-server sdxl-server sdxl-fetch chat up stop down query logs clean docs
+
+# One-command install for a fresh clone. Uses the system python3, not Poetry,
+# because it has to run before Poetry or the venv exist. Flags map to variables
+# so `make bootstrap DRY_RUN=1` works; on a machine without make, run
+# `python3 scripts/bootstrap.py --dry-run` directly. See scripts/bootstrap.py.
+bootstrap:
+	@python3 scripts/bootstrap.py $(if $(DRY_RUN),--dry-run) $(if $(YES),--yes) $(if $(DEV),--dev) $(if $(CLI_ONLY),--cli-only)
 
 init:
 	$(GUTENKG) init

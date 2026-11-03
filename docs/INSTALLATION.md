@@ -2,9 +2,40 @@
 
 This guide covers everything needed to install, build, and run GutenbergKG — both the **CLI workflow** (build and query the corpus directly) and the **Docker workflow** (run the corpus behind a query worker and chat UI).
 
-> **TL;DR** — For the CLI: install Poetry, `poetry install --extras "kgdeps viz viz3d mcp"`, `gutenkg ingest --force-build`. For Docker: `make build-corpus && make build && make run`. Querying needs no LLM; synthesis and image generation need a local LLM (oMLX or Ollama).
+> **TL;DR** — Run `make bootstrap` (preview with `make bootstrap DRY_RUN=1`). It checks the requirements, installs what is missing and fetches the local models. Then, for the CLI: `gutenkg ingest --force-build`. For Docker: `make pull-worker-image && make up`, or `make build-corpus && make build && make up` to build it yourself. Querying needs no LLM. Synthesis and image generation need a backend: a local one (oMLX or Ollama for text, FLUX or SDXL for images) **or** an `OPENAI_API_KEY`, which covers both with nothing else installed.
 
 > **Just want to read?** The [Knowledge Press Forest](https://flux-frontiers.github.io/knowledge_press/) runs in the browser with nothing to install. The Knowledge Press app for iPhone, iPad and Mac is in development for App Store deployment. Both live in the [knowledge_press](https://github.com/Flux-Frontiers/knowledge_press) repo; see [Knowledge Press apps](KNOWLEDGE_PRESS.md).
+
+---
+
+## Quick start: `make bootstrap`
+
+One command takes a fresh clone to a working install. It uses only the system `python3`, so it runs before Poetry or the venv exist:
+
+```bash
+make bootstrap DRY_RUN=1     # report what is present and what it would do; changes nothing
+make bootstrap               # do it, asking before each install
+make bootstrap YES=1         # do it without asking
+```
+
+No `make` yet? Run the script directly: `python3 scripts/bootstrap.py --dry-run`.
+
+It walks the [requirements](#requirements) in order:
+
+| Step | Present | Missing |
+|---|---|---|
+| Python 3.12 or 3.13 | reports the version | reports it and how to install it; never installs Python |
+| Poetry 2.x | reports the version | installs it with `pipx` if you have it, else the [official installer](https://python-poetry.org/docs/#installation), after you confirm |
+| GNU Make | reports it | warns; only the build and run targets need it |
+| Docker or Apple `container` | reports it, and whether the Docker daemon is up | warns; on Apple Silicon with macOS 26 or later offers `make setup RUNTIME=apple` |
+| Python dependencies | `poetry install --extras "kgdeps viz viz3d mcp"` (safe to re-run); refused while a virtualenv other than `.venv` is active, since Poetry would install into it | |
+| Local models | `gutenkg init` fetches the spaCy and embedder models | |
+| `docker/.env` | left unchanged | copied from `docker/.env.example` |
+| LLM and image backends | reports oMLX, Ollama and whether an OpenAI key is set | reports only |
+
+Options: `DEV=1` also installs the contributor toolchain (`--with dev,kg` and the `image` and `pov` extras), and `CLI_ONLY=1` skips the container check. With `DRY_RUN=1` the only command that runs is the read-only `gutenkg init --check`, and only when the venv already exists.
+
+It exits `1` when a requirement is missing that it cannot or did not install, and `0` otherwise. It ends by printing the next command and does not run it: building the corpus takes 30-45 minutes, and `make pull-worker-image` skips that.
 
 ---
 
@@ -16,21 +47,28 @@ This guide covers everything needed to install, build, and run GutenbergKG — b
 | **[Poetry](https://python-poetry.org/)** | CLI workflow | 2.x | dependency management + virtual env |
 | **[GNU Make](https://www.gnu.org/software/make/)** | build/run targets | any | drives `build-corpus`, `build`, `run`, `chat`, `up` |
 | **[Docker](https://docs.docker.com/get-docker/)** | container workflow | Engine 24+, Compose v2 | `docker compose` (v2 syntax, not `docker-compose`) — or Apple's [`container`](https://github.com/apple/container) CLI on macOS 26 via `make … RUNTIME=apple` (see [APPLE_CONTAINERS.md](APPLE_CONTAINERS.md)) |
-| **Local LLM** | synthesis + image generation *(optional)* | — | [oMLX](https://omlx.ai) on Apple Silicon, or [Ollama](https://ollama.com) cross-platform |
+| **LLM backend** | synthesis + image generation *(optional)* | — | Local: [oMLX](https://omlx.ai) on Apple Silicon, or [Ollama](https://ollama.com) cross-platform, plus a local image server. Cloud: an `OPENAI_API_KEY` alone, nothing installed (see the OpenAI section below) |
 
 ### Do I need an LLM?
 
-**No — not to query the corpus.** The knowledge graph and vector index answer semantic queries deterministically on their own. A local LLM is only required for the two optional layers:
+**No — not to query the corpus.** The knowledge graph and vector index answer semantic queries deterministically on their own. A backend is only required for the two optional layers:
 
 - **Synthesis** — summarizing and comparing retrieved passages (`kgrag synthesize`, chat UI).
-- **Image generation** — the VLM rewrite stage of `gutenkg imagine`.
+- **Image generation** — rendering a scene from a passage (chat UI's *Render response*, the apps, `gutenkg imagine`).
 
-On Apple Silicon, **oMLX** is recommended (fast, multi-model, OpenAI-compatible). **Ollama** works on macOS, Linux, and Windows.
+Each layer has a local and a cloud route, and you can mix them:
+
+| | Local | Cloud |
+|---|---|---|
+| Synthesis | oMLX (Apple Silicon, recommended) or Ollama (macOS, Linux, Windows) | OpenAI, with `OPENAI_API_KEY` |
+| Image generation | FLUX.2 (`make image-server`) or SDXL-Lightning (`make sdxl-server`) | OpenAI `gpt-image-1`, with `OPENAI_API_KEY` |
+
+With `OPENAI_API_KEY` set in `docker/.env`, the worker and chat UI generate images with no image server and no local model. The `gutenkg imagine` CLI is the exception: it always calls an image server, so it still needs FLUX or SDXL running.
 
 ### Platform notes
 
-- **Apple Silicon (M-series)** is the primary target. The full corpus rebuilds in ~30 min on an M5 Max, ~45 min on a Mac mini M4. Image generation (FLUX.2-Klein) and oMLX are Apple-Silicon-only.
-- **Linux / Windows** — the CLI and Docker query/synthesis workflows run anywhere Python 3.12+ and Docker run; use Ollama for synthesis. The MLX-based image generation path is not available off Apple Silicon.
+- **Apple Silicon (M-series)** is the primary target. The full corpus rebuilds in ~30 min on an M5 Max, ~45 min on a Mac mini M4. oMLX is Apple-Silicon-only. FLUX.2-Klein needs Apple Silicon or Linux with CUDA 13.
+- **Linux / Windows** — the CLI and Docker query/synthesis workflows run anywhere Python 3.12+ and Docker run; use Ollama or OpenAI for synthesis. For images, SDXL-Lightning runs on any host (slowly on CPU) and OpenAI needs no host support at all.
 
 ---
 
@@ -123,7 +161,7 @@ poetry install --extras "kgdeps viz viz3d mcp"
 make build-corpus      # builds DiaryKG indices, then bundles DocKG + diaries (~24 min)
 ```
 
-`make build-corpus` runs `make build-diaries` first (a prerequisite), then `gutenkg build-corpus`, producing `bundles/gutenberg-all/` (gitignored). `make build-diaries` in turn depends on `make chunk-diaries`, which reconstructs each diary's git-ignored `.diary/` chunk corpus from the committed `<book>.md` — so a fresh clone needs no extra steps. (The chunker uses spaCy; if prompted, run `python -m spacy download en_core_web_sm` once.)
+`make build-corpus` runs `make build-diaries` first (a prerequisite), then `gutenkg build-corpus`, producing `bundles/gutenberg-all/` (gitignored). `make build-diaries` in turn depends on `make chunk-diaries`, which reconstructs each diary's git-ignored `.diary/` chunk corpus from the committed `<book>.md` — so a fresh clone needs no extra steps. (The chunker uses spaCy; `make bootstrap`, or `gutenkg init` on its own, fetches that model and the embedder.)
 
 ### 2. Build the image and bring up the stack
 
@@ -233,6 +271,7 @@ make logs        # follow worker logs
 
 | Target | Does |
 |---|---|
+| `make bootstrap` | check requirements, install what is missing, fetch models; `DRY_RUN=1` reports only, `YES=1` skips the questions, `DEV=1` adds the contributor toolchain, `CLI_ONLY=1` skips the container check |
 | `make chunk-diaries` | re-chunk `.diary/` from committed `<book>.md` (always `--force`, so a parser change propagates) |
 | `make build-diaries` | rebuild `.diarykg/` indices (depends on `chunk-diaries`; prerequisite for `build-corpus`) |
 | `make build-corpus` | rebuild the DocKG + diary bundle (~24 min) |
@@ -258,7 +297,7 @@ make logs        # follow worker logs
 
 ## Connecting a local LLM (optional)
 
-Synthesis and image generation reach a host LLM. From inside Docker, the host is `host.docker.internal`.
+Local synthesis and image generation reach a model server on the host. From inside Docker, the host is `host.docker.internal`. oMLX and Ollama are the local options; OpenAI, below, needs only a key.
 
 ### oMLX (Apple Silicon, recommended)
 
@@ -333,6 +372,8 @@ gets `gpt-image-1`, and OpenAI bills each image. A 1024x1024 image takes about
 50 s. To go back to the local server, set `WORKER_IMAGE_BACKEND=mflux-serve` and
 recreate the worker (see [API keys and `docker/.env`](#api-keys-and-dockerenv)).
 
+With no key set, the chat UI's **OpenAI** image option is unavailable; the worker reports it as not available. The key is read by the worker, so the `gutenkg imagine` CLI does not use it: that command always calls an image server (`make image-server` or `make sdxl-server`).
+
 Because OpenAI is a cloud API, it is the **one path that needs nothing installed locally at all** — no Apple Silicon, no oMLX, no local image server. It is not the only cross-platform option, though: Ollama covers text synthesis on Linux and Windows, and SDXL-Lightning covers images (below).
 
 ### Image generation (local)
@@ -357,6 +398,19 @@ Point the worker at whichever is running via `GUTENKG_IMAGE_ENDPOINT` in `docker
 > `make` exports a command-line variable, `docker/.env` sets the worker's value
 > as `WORKER_IMAGE_BACKEND`, and compose and `RUNTIME=apple` pass it into the
 > container as `IMAGE_BACKEND`.
+
+#### SDXL on Windows
+
+The SDXL server runs on Windows, but `make sdxl-server` does not: it assumes a POSIX venv layout and shell. Start it by hand from the repo root in PowerShell:
+
+```powershell
+python -m venv .venv-sdxl
+.venv-sdxl\Scripts\python -m pip install -r docker\requirements-sdxl.txt
+.venv-sdxl\Scripts\python -m pip install --no-deps -e .
+.venv-sdxl\Scripts\gutenkg-sdxl-server          # listens on :8091
+```
+
+The plain `torch` wheel pip installs on Windows is CPU-only, which works but is slow. With an NVIDIA GPU, install a CUDA build of torch first, using the command [pytorch.org](https://pytorch.org/get-started/locally/) gives for your CUDA version; the server then picks `cuda` on its own. A worker in Docker Desktop reaches it at `http://host.docker.internal:8091`.
 
 ---
 
