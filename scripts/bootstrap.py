@@ -448,9 +448,13 @@ class Bootstrap:
                 say("ok", f"{name} at {found} (this python3 is {v[0]}.{v[1]}; Poetry will use it)")
                 self.python_ready = True
                 return
-        hint = "Install 3.12 or 3.13"
-        if platform.system() == "Darwin":
-            hint += ": brew install python@3.12"
+        # uv's standalone CPython lands python3.12 in ~/.local/bin, where the
+        # search above finds it, and does not depend on Homebrew.
+        hint = "Install 3.12 or 3.13: uv python install 3.12"
+        if not shutil.which("uv"):
+            hint += " (uv: https://docs.astral.sh/uv/)"
+            if platform.system() == "Darwin":
+                hint += ", or brew install python@3.12"
         self.block(f"Python {v[0]}.{v[1]} is outside >=3.12,<3.14", hint)
 
     def check_poetry(self) -> None:
@@ -600,7 +604,7 @@ class Bootstrap:
             )
             return
         if self.dev:
-            cmd = ["poetry", "install", "--with", "dev,kg", "--extras", dev_extras(self.extras)]
+            cmd = ["poetry", "install", "--with", "dev", "--extras", dev_extras(self.extras)]
         else:
             cmd = ["poetry", "install", "--extras", self.extras]
         if not self.act(cmd):

@@ -33,7 +33,7 @@ It walks the [requirements](#requirements) in order:
 | `docker/.env` | left unchanged | copied from `docker/.env.example` |
 | LLM and image backends | reports oMLX, Ollama and whether an OpenAI key is set | reports only |
 
-Options: `DEV=1` also installs the contributor toolchain (`--with dev,kg` and the `image` and `pov` extras), and `CLI_ONLY=1` skips the container check. With `DRY_RUN=1` the only command that runs is the read-only `gutenkg init --check`, and only when the venv already exists.
+Options: `DEV=1` also installs the contributor toolchain (`--with dev` and the `image` and `pov` extras), and `CLI_ONLY=1` skips the container check. With `DRY_RUN=1` the only command that runs is the read-only `gutenkg init --check`, and only when the venv already exists.
 
 It exits `1` when a requirement is missing that it cannot or did not install, and `0` otherwise. It ends by printing the next command and does not run it: building the corpus takes 30-45 minutes, and `make pull-worker-image` skips that.
 
@@ -43,7 +43,7 @@ It exits `1` when a requirement is missing that it cannot or did not install, an
 
 | | Required for | Version | Notes |
 |---|---|---|---|
-| **Python** | everything | 3.12 or 3.13 (`>=3.12,<3.14`) | 3.14 not yet supported |
+| **Python** | everything | 3.12 or 3.13 (`>=3.12,<3.14`) | 3.14 not yet supported. `uv python install 3.12` is the easiest route and needs no Homebrew; see [Using a uv-managed Python](#using-a-uv-managed-python) |
 | **[Poetry](https://python-poetry.org/)** | CLI workflow | 2.x | dependency management + virtual env |
 | **[GNU Make](https://www.gnu.org/software/make/)** | build/run targets | any | drives `build-corpus`, `build`, `run`, `chat`, `up` |
 | **[Docker](https://docs.docker.com/get-docker/)** | container workflow | Engine 24+, Compose v2 | `docker compose` (v2 syntax, not `docker-compose`) — or Apple's [`container`](https://github.com/apple/container) CLI on macOS 26 via `make … RUNTIME=apple` (see [APPLE_CONTAINERS.md](APPLE_CONTAINERS.md)) |
@@ -97,10 +97,10 @@ That set is the **recommended default** — everything except dev tooling (KG in
 | *(none)* | core runtime only | `poetry install` |
 | *(everything)* | every extra above | `poetry install --all-extras` |
 
-Dev tooling (pytest, ruff, ty, pre-commit) is **not an extra** — it lives in the *optional* Poetry `dev` group, so it stays out of the published wheel metadata and a bare `poetry install` stays core-runtime-only. The same is true of `pycode-kg`, in the optional `kg` group: this repo *runs* the `pycodekg` CLI and its MCP server but imports neither, so it is maintainer tooling rather than a feature of the package. There is no `.[dev]` to pip-install; development needs Poetry. Contributors who want the test/lint toolchain, matching every extra CI's own jobs install:
+Dev tooling (pytest, ruff, ty, pre-commit) is **not an extra** — it lives in the *optional* Poetry `dev` group, so it stays out of the published wheel metadata and a bare `poetry install` stays core-runtime-only. `pycode-kg` is in no group at all: this repo *runs* the `pycodekg` CLI and its MCP server but imports neither, so it is a global tool resolved from `PATH`, not a dependency (the `kg` group that once held it is gone). There is no `.[dev]` to pip-install; development needs Poetry. Contributors who want the test/lint toolchain, matching every extra CI's own jobs install:
 
 ```bash
-poetry install --with dev,kg --extras "kgdeps viz viz3d mcp image pov"   # or --with dev,kg --all-extras
+poetry install --with dev --extras "kgdeps viz viz3d mcp image pov"   # or --with dev --all-extras
 pre-commit install
 ```
 
@@ -120,8 +120,22 @@ Prefer a plain venv + pip? The same extras work with pip:
 ```bash
 python -m venv .venv
 source .venv/bin/activate          # Windows: .venv\Scripts\activate
-pip install -e ".[kgdeps,viz,viz3d,mcp]"      # dev and kg tooling are poetry-only: poetry install --with dev,kg
+pip install -e ".[kgdeps,viz,viz3d,mcp]"      # dev tooling is poetry-only: poetry install --with dev
 ```
+
+#### Using a uv-managed Python
+
+[uv](https://docs.astral.sh/uv/) can supply the interpreter itself: a standalone CPython in `~/.local/share/uv/python`, with `python3.12` linked into `~/.local/bin`. It does not depend on Homebrew, and the image-server venvs already use it when uv is installed (see [Image generation (local)](#image-generation-local)). Poetry still builds `.venv` in the repo (`poetry.toml` sets `in-project = true`); only the interpreter it points at lives under uv.
+
+```bash
+uv python install 3.12
+rm -rf .venv                     # poetry env use keeps an existing 3.12 venv as is
+poetry env use "$(uv python find 3.12 --managed-python --system)"
+poetry install --extras "kgdeps viz viz3d mcp"   # or the contributor command above
+.venv/bin/gutenkg init           # the spaCy model lives in .venv, so fetch it again
+```
+
+`--system` matters: without it `uv python find` returns the project's own `.venv/bin/python3` first. Run this with no virtualenv active (`deactivate`); with `VIRTUAL_ENV` still pointing at the removed `.venv`, `poetry env use` fails with `No such file or directory: 'python'`. Removing that uv Python later (`uv python uninstall 3.12`) breaks every venv built on it until it is rebuilt, exactly as removing a Homebrew Python would.
 
 ### 2. Build the knowledge graph
 
@@ -307,7 +321,10 @@ Start oMLX on **port 8080** (8000 is taken by the worker):
 omlx serve --port 8080                  # serves the models in ~/.omlx/models
 ```
 
-Or set the port in the oMLX app. Under `RUNTIME=apple` the containers reach
+The oMLX app keeps its port in `~/.omlx/settings.json` (`server.port`), and
+its default is 8000, the worker's port, so `make up` then fails with "port is
+already allocated" or "address already in use". Quit the app, set `"port":
+8080` there, and relaunch it. Under `RUNTIME=apple` the containers reach
 the host over vmnet, so oMLX must listen on `0.0.0.0` (`--host 0.0.0.0`), not
 `127.0.0.1`.
 
@@ -325,9 +342,15 @@ VLLM_MODEL=Qwen3-4B-Instruct-2507-MLX-8bit
 VLLM_API_KEY=sk-your-omlx-api-key     # from ~/.omlx/settings.json → auth.api_key
 ```
 
+`VLLM_MODEL` must be a model oMLX actually serves; list them with
+`curl -H "Authorization: Bearer <key>" http://localhost:8080/v1/models`.
+
 If oMLX has API key verification on and this key is empty or wrong, oMLX
-answers 401 and synthesis fails. Restart the worker (`make down && make up`)
-after changing `docker/.env`.
+answers 401, synthesis fails, and the chat UI's model list comes up empty.
+`python scripts/rotate_omlx_key.py` writes one new random key (or `--key
+sk-...`) to both `~/.omlx/settings.json` and `docker/.env`; quit oMLX first,
+since the app can write its settings back on exit. Restart the worker
+(`make down && make up`) after changing `docker/.env`.
 
 ### Ollama (cross-platform)
 
@@ -386,6 +409,8 @@ Two local servers, both isolated in their own venv so their dependencies never t
 | SDXL-Lightning (diffusers) | `8091` | `make sdxl-server` | anywhere — `sdxl_server` resolves `cuda → mps → cpu`, so it works on CPU too, just slowly |
 
 `make up` picks for you: FLUX where mflux is supported, SDXL everywhere else. Force one with `make up IMAGE_BACKEND=flux` or `IMAGE_BACKEND=sdxl`; asking for FLUX on a host that cannot run it now fails with a message naming the requirement instead of a pip resolution error.
+
+**The venvs (`.venv-image`, `.venv-sdxl`).** With uv on `PATH` they are built with `uv venv --seed --managed-python`: uv's own standalone CPython, independent of Homebrew, and no `ensurepip`. Without uv, `python3.13` or `python3.12` is used, never a bare `python3`. A venv on the wrong Python or without pip is rebuilt, and if the build fails the target fails instead of starting nothing. `VENV_PYTHON=3.13` picks the version; `VENV_UV_FLAGS=` lets uv use a system Python too.
 
 **SDXL downloads weights on first run** — SDXL base, the fp16-fix VAE and the Lightning UNet come to roughly 7 GB, cached under `~/.cache/huggingface`. Run `make sdxl-fetch` to get that out of the way before starting the stack. Once cached, `SDXL_OFFLINE=1` makes the server refuse network access entirely.
 
@@ -570,7 +595,9 @@ The local `gutenkg imagine` command (outside Docker) reads its own `GUTENKG_*` v
 | Slow first query in Docker | The embedding model is pre-downloaded at build time and runs offline (`HF_HUB_OFFLINE=1`); the first request still warms the model into memory. |
 | Image generation unavailable on Linux/Windows | FLUX.2-Klein / MLX image generation is Apple-Silicon-only. Use SDXL-Lightning (`make sdxl-server`) or OpenAI (`WORKER_IMAGE_BACKEND=openai`). |
 | Changed `docker/.env`, nothing changed | Recreate the worker; see [API keys and `docker/.env`](#api-keys-and-dockerenv). |
-| Synthesis fails with 401 from oMLX | `VLLM_API_KEY` is empty or wrong while oMLX verifies keys. |
+| Synthesis fails with 401 from oMLX, or the chat UI lists no models | `VLLM_API_KEY` is empty, the example placeholder, or wrong while oMLX verifies keys. `python scripts/rotate_omlx_key.py` sets one key in both places; see [oMLX](#omlx-apple-silicon-recommended). |
+| `make up`: "ports are not available … 127.0.0.1:8000 … address already in use" | Something else holds the worker's port, usually oMLX on its default 8000. `lsof -nP -iTCP:8000 -sTCP:LISTEN` names it; move oMLX to 8080. |
+| Image generation fails with "Network is unreachable" | Nothing is listening on the image port (`:8090` FLUX, `:8091` SDXL); Docker Desktop reports a closed host port this way. Check with `lsof -nP -iTCP:8090 -sTCP:LISTEN`, then `make image-server` and read its error. |
 | Phone or another Mac cannot reach the worker | See [Serving phones and other devices on your LAN](#serving-phones-and-other-devices-on-your-lan). |
 | `make up` stops with "is running. With both container runtimes up" | The other runtime is running. `make down-all`, then `make up`. |
 | Every `docker` command fails with HTTP 500 | Docker Desktop's backend outlived its engine. Quit Docker Desktop, `pkill -x com.docker.backend`, reopen it. |

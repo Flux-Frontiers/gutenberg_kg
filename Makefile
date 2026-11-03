@@ -693,6 +693,50 @@ clean:
 
 endif
 
+# ------------------------------------------------------------------
+# Isolated venvs for the image servers (.venv-image, .venv-sdxl).
+#
+# These used to be made with a bare `python3 -m venv`, which took whatever
+# python3 came first on PATH. With Homebrew's 3.14 there, the venv fell outside
+# requires-python (>=3.12,<3.14); and a Homebrew whose bundled pip wheel the
+# current user cannot read (installed by another account) makes ensurepip fail,
+# leaving a venv with no pip. Every later step then failed, `make up` printed
+# its warning, and the worker reported "Network is unreachable" for :8090.
+#
+# Now: with uv on PATH, `uv venv --seed` builds the venv without ensurepip, and
+# --managed-python uses uv's own standalone CPython (downloaded once to
+# ~/.local/share/uv), so the image servers do not depend on Homebrew at all.
+# Without uv, python3.13 or python3.12 is used. An existing venv on the wrong
+# Python, or without pip, is rebuilt; if the build still fails, the target fails.
+#
+#   VENV_PYTHON=3.13          pick the interpreter version (default 3.12)
+#   VENV_UV_FLAGS=            let uv use a system (e.g. Homebrew) Python too
+# ------------------------------------------------------------------
+VENV_PYTHON   ?= 3.12
+VENV_UV_FLAGS ?= --managed-python
+
+# $(call make-venv,DIR,PURPOSE)
+define make-venv
+	@v=$(1); \
+	ok() { "$$v/bin/python" -c 'import sys, pip; sys.exit(not (3, 12) <= sys.version_info[:2] < (3, 14))' 2>/dev/null; }; \
+	if ! ok; then \
+		[ -e "$$v" ] && echo "$$v is unusable (wrong Python or no pip); rebuilding ..."; \
+		rm -rf "$$v"; \
+		echo "Creating $$v for isolated $(2) dependencies ..."; \
+		if command -v uv >/dev/null 2>&1; then \
+			uv venv --quiet --seed $(VENV_UV_FLAGS) --python $(VENV_PYTHON) "$$v" || exit 1; \
+		else \
+			py=$$(command -v python$(VENV_PYTHON) || command -v python3.13 || command -v python3.12); \
+			if [ -z "$$py" ]; then \
+				echo "ERROR: no Python 3.12/3.13 found. Install uv (https://docs.astral.sh/uv/) or python@3.12."; \
+				exit 1; \
+			fi; \
+			"$$py" -m venv "$$v" || exit 1; \
+		fi; \
+		ok || { echo "ERROR: $$v was created but has no working pip; see the Makefile notes above make-venv."; exit 1; }; \
+	fi
+endef
+
 image-server:
 	@if [ "$(MFLUX_OK)" != "1" ]; then \
 		echo "ERROR: the FLUX image server cannot run on this host."; \
@@ -703,10 +747,7 @@ image-server:
 		echo "  Or re-run with FORCE_IMAGE_SERVER=1 on a CUDA 13 Linux host."; \
 		exit 1; \
 	fi
-	@if [ ! -x .venv-image/bin/python ]; then \
-		echo "Creating .venv-image for isolated image dependencies ..."; \
-		python3 -m venv .venv-image; \
-	fi
+	$(call make-venv,.venv-image,image)
 	@.venv-image/bin/python -m pip install --quiet --upgrade pip
 	@.venv-image/bin/python -m pip install --quiet -r docker/requirements-image.txt
 	@.venv-image/bin/python -m pip install --quiet --no-deps -e .
@@ -714,10 +755,7 @@ image-server:
 	MFLUX_SERVER_HOST=0.0.0.0 .venv-image/bin/gutenkg-image-server &
 
 sdxl-server:
-	@if [ ! -x .venv-sdxl/bin/python ]; then \
-		echo "Creating .venv-sdxl for isolated SDXL/diffusers dependencies ..."; \
-		python3 -m venv .venv-sdxl; \
-	fi
+	$(call make-venv,.venv-sdxl,SDXL/diffusers)
 	@.venv-sdxl/bin/python -m pip install --quiet --upgrade pip
 	@.venv-sdxl/bin/python -m pip install --quiet -r docker/requirements-sdxl.txt
 	@.venv-sdxl/bin/python -m pip install --quiet --no-deps -e .
@@ -728,10 +766,7 @@ sdxl-server:
 # `make up` on a fresh machine is not a silent multi-GB wait. Once cached,
 # SDXL_OFFLINE=1 makes the server refuse network access entirely.
 sdxl-fetch:
-	@if [ ! -x .venv-sdxl/bin/python ]; then \
-		echo "Creating .venv-sdxl for isolated SDXL/diffusers dependencies ..."; \
-		python3 -m venv .venv-sdxl; \
-	fi
+	$(call make-venv,.venv-sdxl,SDXL/diffusers)
 	@.venv-sdxl/bin/python -m pip install --quiet --upgrade pip
 	@.venv-sdxl/bin/python -m pip install --quiet -r docker/requirements-sdxl.txt
 	@.venv-sdxl/bin/python -m pip install --quiet --no-deps -e .
