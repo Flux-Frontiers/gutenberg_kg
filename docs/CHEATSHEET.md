@@ -480,8 +480,8 @@ pip install omlx          # or: pip install git+https://github.com/omlx/omlx
 # Start with the model used by gutenkg imagine (adjust path to your MLX model)
 omlx serve mlx-community/Qwen3-30B-A3B-Instruct-2507-MLX-4bit --port 8080
 
-# Verify it's up
-curl http://localhost:8080/v1/models
+# Verify it's up (the key is auth.api_key in ~/.omlx/settings.json; without it, 401)
+curl -H "Authorization: Bearer <key>" http://localhost:8080/v1/models
 ```
 
 > **Tip:** If oMLX is down when you run `gutenkg imagine --query ...`, the VLM
