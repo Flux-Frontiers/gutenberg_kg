@@ -1,70 +1,103 @@
-# Release Notes -- v1.31.0
+# Release Notes -- v1.32.0
 
-> Released: 2026-11-01
-
-A corpus and security release: the catalog IDs checked against Gutenberg's
-own catalog, Tolstoy's trilogy completed (255 books), and the two critical
-Dependabot alerts cleared. Rebuild the worker image to pick up the new
-dependency floors.
+> Released: 2026-11-03
 
 ### Added
 
-- **`gutenkg download` refuses an ID that names a different book.** A catalog
-  or `--title` override was trusted blindly, so a wrong ID downloaded the
-  wrong book under the right name: `8799  The Divine Comedy: Purgatorio` in
-  `world-literature.txt` would have shelved the Doré *Paradise* as Purgatorio.
-  The override is now compared with the title from the ID's metadata, and an
-  entry sharing fewer than half its words is refused before any text is
-  fetched; a catalog run reports it and carries on. `--dry-run` runs the
-  check, and `--no-title-check` (on `download book` and `download catalog`)
-  skips it for a deliberate rename.
+- **`scripts/rotate_omlx_key.py`: one oMLX API key in both places.** Writes a
+  random key (or `--key`) to `auth.api_key` in `~/.omlx/settings.json` and to
+  `VLLM_API_KEY` in `docker/.env`, backing up the settings to a timestamped
+  `settings.json.bak-*` on each run and never printing the key. It refuses while oMLX is running (port open, or an `omlx` process),
+  since the app can write its settings back on exit. A mismatch is what makes
+  oMLX answer 401 and the chat UI's model list come up empty.
 
-### Fixed
+- **`make bootstrap`: one-command install for a fresh clone.**
+  `scripts/bootstrap.py` (stdlib only, so it runs before Poetry or the venv
+  exist) checks Python 3.12/3.13, Poetry 2.x, Make and a container runtime,
+  installs Poetry when missing (with confirmation), runs `poetry install`,
+  `gutenkg init` and seeds `docker/.env` without overwriting it, then reports
+  which oMLX, Ollama and OpenAI backends are usable. `DRY_RUN=1` prints every
+  action and changes nothing; it ends by printing the next command rather than
+  starting the 30-45 minute corpus build. A header records the version,
+  git commit, UTC timestamp, host, OS, CPU, memory, free disk and Python.
 
-- **Wrong Gutenberg IDs in the catalogs and wishlist.** Checked against
-  Gutenberg's catalog on 2026-10-31. Removed three catalog lines whose IDs
-  name other books: `35 Medea` (*The Time Machine*), `1658 The Island of
-  Doctor Moreau` (*Phaedo*) and `8799 Purgatorio` (#8800, already held, is the
-  complete Cary *Divine Comedy*). The right copies were already held under
-  #35451 and #159, and `159`'s title is re-cased to match its directory, which
-  clears the one `gutenkg audit` error. In `docs/CORPUS_WISHLIST.md`, 12 of the
-  13 unchecked IDs named the wrong book or part of it; each now carries the
-  right ID or is marked as not on Gutenberg, and Byron's *Letters and Journals*
-  and Mungo Park are checked off, as both are already held.
-- **Tolstoy's trilogy is complete.** #2450, held as "Childhood, Boyhood,
-  Youth", is *Boyhood* alone; it is renamed `Boyhood (Tolstoy)`, and
-  *Childhood* (#2142) and *Youth* (#2637) are added to `russian-literature`.
-  The `ancient-classical` catalog line for #47001 is retitled *De Officiis*,
-  Gutenberg's own title, so the download title check accepts it.
+- **Ten books from the wishlist** (265 after ingest): Gogol's *The Mantle,
+  and Other Stories*, the *Letters of the Right Honourable Lady Mary Wortley
+  Montagu* (Gutenberg #17520, whose own title initials her name as "Lady
+  M—y W—y M—e"), *The Best Letters of Charles Lamb*, Chekhov's *Plays, Second
+  Series*, Synge's *The Playboy of the Western World*, the Raven Edition of
+  Poe, volumes 2-5 (#2148-2151, beside volume 1 in american-literature), and
+  Cicero's *De Officiis*. Gutenberg's only *De Officiis* is the bilingual
+  Loeb; the corpus keeps Miller's English and drops the Latin and its
+  manuscript-variant notes, which the English embedder turned into search
+  noise. Montagu's 58 letters each get a heading (the download had fused
+  them into two sections), and stray headings in Synge and Gogol are fixed.
+- **`add-book` skill: a structure gate before any build.** Every new book's
+  heading outline, section count and language are checked first, with the
+  four problems this batch hit and their fixes.
 
 ### Changed
 
-- **kgmodule-utils 0.29.1.** `check_pins.py --bump` moves the floor, lock,
-  Dockerfile ARG and runpod pin together. Its two fixes are in the code-KG
-  store's symbol-stub resolution (kg_utils #46). The DocKG and DiaryKG
-  paths this repo uses are unchanged.
-- **Phones and tablets as worker origins (docs).** A browser on another
-  device opens the forest's dev server as `http://<your-mac>.local:5173` and
-  sends that origin, which the default `GUTENKG_CORS_ORIGINS` does not
-  include, so live moots fail while every other op works. The LAN checklist
-  in `docs/INSTALLATION.md` gains that step, and `docs/MOOTS.md` notes it
-  under the setting (#216).
+- **A uv-managed Python is the suggested interpreter.** `make bootstrap`'s
+  hint for an unsupported Python is now `uv python install 3.12` (Homebrew
+  only as the fallback when uv is absent), and INSTALLATION.md gains "Using a
+  uv-managed Python": how to point Poetry's in-project `.venv` at uv's
+  standalone CPython, why `uv python find` needs `--system`, and why
+  `poetry env use` fails while `VIRTUAL_ENV` names the removed venv.
+  INSTALLATION.md and `docker/.env.example` also say where the oMLX app keeps
+  its port (`~/.omlx/settings.json`, default 8000, the worker's) and that
+  `VLLM_MODEL` must be a model oMLX serves; three troubleshooting rows cover
+  the port clash, the empty model list, and "Network is unreachable" from a
+  closed image-server port.
 
-### Removed
+- **INSTALLATION.md no longer says image generation needs a local LLM.** With
+  `OPENAI_API_KEY` set, the worker and chat UI generate images with
+  `gpt-image-1` and need no local model or image server. `gutenkg imagine`
+  still calls an image server, and the page now says so. A new "SDXL on
+  Windows" section gives the PowerShell steps, since `make sdxl-server`
+  assumes a POSIX shell.
 
-- **`scratch_embed_bench.py`**, a one-off probe of embedding throughput over
-  time. Nothing referenced it.
+### Fixed
+
+- **`make up` no longer leaves the image server silently down.**
+  `image-server`, `sdxl-server` and `sdxl-fetch` built `.venv-image` and
+  `.venv-sdxl` with a bare `python3 -m venv`, so a Homebrew 3.14 first on PATH
+  gave a venv outside `requires-python`, and a Homebrew whose bundled pip wheel
+  the user could not read gave one with no pip. Every later step failed, `make
+  up` printed its warning, and the worker reported "Network is unreachable"
+  for :8090. A shared `make-venv` recipe now uses `uv venv --seed
+  --managed-python` (uv's standalone CPython, independent of Homebrew) when uv
+  is on PATH, else python3.13 or python3.12; it rebuilds a venv on the wrong
+  Python or without pip, and fails the target if the build does not work.
+  `VENV_PYTHON` and `VENV_UV_FLAGS` override the choice.
+
+- **`make bootstrap DEV=1` no longer asks for the retired `kg` group.** The
+  group went in #152 (pycode-kg is a global tool), but bootstrap still ran
+  `poetry install --with dev,kg`, which stops with "Group(s) not found: kg";
+  INSTALLATION.md gave the same command in three places. Both now say
+  `--with dev`, and a test checks every group bootstrap names against
+  pyproject.
+
+- **A book held in one genre is no longer downloaded again from another
+  genre's catalog.** The already-downloaded check (`gutenkg download` and
+  `gutenkg ia download`) searched only the target genre, so the
+  american-literature catalog re-downloaded Douglass (#23) and Washington
+  (#2376), both held in biography. It now searches the whole corpus, and the
+  skip records the book in the catalog of the genre that holds it. Without
+  `--genre` the check had never matched at all: it looked one level below
+  `corpus/`, where there are only genre directories. Those two catalog lines
+  are removed.
 
 ### Security
 
-- **Dependabot alerts cleared in `poetry.lock`.** `pillow` 12.3.0 -> 13.0.0
-  (critical: FlashPix heap overflow, plus the 12.x advisories) and `certifi`
-  2026.7.22 -> 2026.10.23 (critical: emSign roots with compromised
-  intermediates), with `filelock` 3.32.5 -> 4.2.6, `setuptools` -> 84.2.1 and
-  `virtualenv` -> 21.15.2. The `pillow` floor moves to `>=13.0.0` in the `chat`
-  and `image` extras, the dev group and both image-server requirement files.
-  `streamlit` moves to `>=1.66.1` with it: through 1.66.0 it capped
-  `pillow<13`.
+- **kgmodule-utils 0.29.2 and quiltwright 0.17.0 are the floors.** Both
+  floor Pillow at 13.0.0, so the core install (through
+  `kgmodule-utils[synthesis]`) and the `viz3d` and `pov` extras (through
+  quiltwright) can no longer resolve Pillow 12.3.0 and its 41 advisories.
+  `scripts/check_pins.py --bump` moved the kgmodule-utils floor in
+  `pyproject.toml`, the Dockerfile ARG and `runpod/requirements.txt`
+  together; the lock follows both. At release, `check_pins.py --bump` also
+  moved kg-rag to 0.18.1 in the same three places.
 
 ---
 

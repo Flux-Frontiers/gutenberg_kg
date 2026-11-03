@@ -11,6 +11,13 @@ Use the `gutenkg` CLI (after `poetry install`).
 ## Installation
 
 ```bash
+make bootstrap DRY_RUN=1   # check every requirement; changes nothing
+make bootstrap             # install what is missing (YES=1 no prompts, DEV=1 dev tools, CLI_ONLY=1 no containers)
+```
+
+Or by hand:
+
+```bash
 deactivate          # make sure no other venv is active
 poetry env use python3.12
 poetry install --extras "kgdeps viz viz3d mcp"
@@ -482,6 +489,10 @@ omlx serve mlx-community/Qwen3-30B-A3B-Instruct-2507-MLX-4bit --port 8080
 
 # Verify it's up (the key is auth.api_key in ~/.omlx/settings.json; without it, 401)
 curl -H "Authorization: Bearer <key>" http://localhost:8080/v1/models
+
+# 401 or an empty chat model list: put one new key in ~/.omlx/settings.json
+# and docker/.env (quit oMLX first), then relaunch oMLX and `make down && make up`
+python scripts/rotate_omlx_key.py
 ```
 
 > **Tip:** If oMLX is down when you run `gutenkg imagine --query ...`, the VLM

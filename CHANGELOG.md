@@ -8,6 +8,8 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+## [1.32.0] - 2026-11-03
+
 ### Added
 
 - **`scripts/rotate_omlx_key.py`: one oMLX API key in both places.** Writes a
@@ -102,7 +104,8 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   quiltwright) can no longer resolve Pillow 12.3.0 and its 41 advisories.
   `scripts/check_pins.py --bump` moved the kgmodule-utils floor in
   `pyproject.toml`, the Dockerfile ARG and `runpod/requirements.txt`
-  together; the lock follows both.
+  together; the lock follows both. At release, `check_pins.py --bump` also
+  moved kg-rag to 0.18.1 in the same three places.
 
 ## [1.31.0] - 2026-11-01
 
