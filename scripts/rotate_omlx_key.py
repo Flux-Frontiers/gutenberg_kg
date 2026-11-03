@@ -13,8 +13,11 @@ Usage:
     python scripts/rotate_omlx_key.py --key sk-...  # use a key of your own
     python scripts/rotate_omlx_key.py --force       # skip the "oMLX running" check
 
-Afterwards relaunch oMLX, then recreate the worker:
-    docker compose -f docker/docker-compose.yml --profile chat up -d --force-recreate worker
+Each run backs the settings up to settings.json.bak-<UTC timestamp>, so a later
+rotation never overwrites the backup of an earlier one.
+
+Afterwards relaunch oMLX, then restart the stack:
+    make down && make up
 """
 
 from __future__ import annotations
@@ -27,6 +30,7 @@ import shutil
 import socket
 import subprocess
 import sys
+from datetime import datetime, timezone
 from pathlib import Path
 
 REPO = Path(__file__).resolve().parent.parent
@@ -54,12 +58,25 @@ def omlx_running() -> bool:
     return result.returncode == 0
 
 
-def write_settings(key: str) -> None:
-    """Store ``key`` as ``auth.api_key`` in the oMLX settings, keeping a backup."""
+def backup_path() -> Path:
+    """Return an unused ``settings.json.bak-<UTC timestamp>`` path beside the settings."""
+    stamp = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")  # noqa: UP017
+    path = OMLX_SETTINGS.with_name(f"{OMLX_SETTINGS.name}.bak-{stamp}")
+    n = 1
+    while path.exists():
+        path = OMLX_SETTINGS.with_name(f"{OMLX_SETTINGS.name}.bak-{stamp}-{n}")
+        n += 1
+    return path
+
+
+def write_settings(key: str) -> Path:
+    """Store ``key`` as ``auth.api_key`` in the oMLX settings and return the backup path."""
     settings = json.loads(OMLX_SETTINGS.read_text())
     settings.setdefault("auth", {})["api_key"] = key
-    shutil.copy2(OMLX_SETTINGS, OMLX_SETTINGS.with_suffix(".json.bak"))
+    backup = backup_path()
+    shutil.copy2(OMLX_SETTINGS, backup)
     OMLX_SETTINGS.write_text(json.dumps(settings, indent=2) + "\n")
+    return backup
 
 
 def write_env(key: str) -> None:
@@ -88,13 +105,10 @@ def main() -> int:
         return 1
 
     key = args.key or "sk-" + secrets.token_urlsafe(32)
-    write_settings(key)
+    backup = write_settings(key)
     write_env(key)
-    print(f"New key written to {OMLX_SETTINGS} (backup: .json.bak) and {ENV_FILE}.")
-    print("Next: relaunch oMLX, then recreate the worker:")
-    print(
-        "  docker compose -f docker/docker-compose.yml --profile chat up -d --force-recreate worker"
-    )
+    print(f"New key written to {OMLX_SETTINGS} (backup: {backup.name}) and {ENV_FILE}.")
+    print("Next: relaunch oMLX, then restart the stack: make down && make up")
     return 0
 
 

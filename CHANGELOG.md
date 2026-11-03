@@ -12,8 +12,8 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 - **`scripts/rotate_omlx_key.py`: one oMLX API key in both places.** Writes a
   random key (or `--key`) to `auth.api_key` in `~/.omlx/settings.json` and to
-  `VLLM_API_KEY` in `docker/.env`, backing up the settings and never printing
-  the key. It refuses while oMLX is running (port open, or an `omlx` process),
+  `VLLM_API_KEY` in `docker/.env`, backing up the settings to a timestamped
+  `settings.json.bak-*` on each run and never printing the key. It refuses while oMLX is running (port open, or an `omlx` process),
   since the app can write its settings back on exit. A mismatch is what makes
   oMLX answer 401 and the chat UI's model list come up empty.
 
