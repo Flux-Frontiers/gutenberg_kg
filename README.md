@@ -143,7 +143,7 @@ Open **http://localhost:8501** and ask a question. Use `make up` instead of `mak
 
 The bundle and Docker image are large because the corpus and its vector indices travel with the app. That is deliberate: once built, the reading room has no runtime dependency on a hosted corpus.
 
-For prerequisites, non-Apple-Silicon notes, smaller setups, and cloud/OpenAI synthesis, see [Installation](docs/INSTALLATION.md). For what the interface shows and how it handles sources, see [The Knowledge Press chat UI](docs/CHAT_UI.md).
+For prerequisites, non-Apple-Silicon notes, smaller setups, and cloud/OpenAI synthesis and image generation, see [Installation](docs/INSTALLATION.md). For what the interface shows and how it handles sources, see [The Knowledge Press chat UI](docs/CHAT_UI.md).
 
 ### Runtime: Docker or Apple `container`
 
