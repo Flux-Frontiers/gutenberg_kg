@@ -117,7 +117,7 @@ Under the hood, each work becomes a [DocKG](https://github.com/Flux-Frontiers/do
 |---|---|
 | Walk the corpus as a forest | Open [Knowledge Press Forest](https://flux-frontiers.github.io/knowledge_press/). |
 | Have two books discuss a topic | Play a saved moot in the forest, or hold one with `gutenkg converse`. See [Moots](docs/MOOTS.md). |
-| Ask the corpus on an iPhone, iPad or Mac | The Knowledge Press app is in development for App Store deployment. See [Knowledge Press apps](docs/KNOWLEDGE_PRESS.md). |
+| Ask the corpus on an iPhone, iPad or Mac | Install [The Knowledge Press](https://apps.apple.com/us/app/the-knowledge-press/id6812116080) from the App Store. See [Knowledge Press apps](docs/KNOWLEDGE_PRESS.md). |
 | Explore the library in a browser | Build the local app below, then open the chat UI. |
 | Work from the terminal or add texts | Follow the [CLI installation guide](docs/INSTALLATION.md#cli-workflow). |
 | Understand a command or corpus-maintenance workflow | See the [cheatsheet](docs/CHEATSHEET.md). |

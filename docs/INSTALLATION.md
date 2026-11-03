@@ -4,7 +4,7 @@ This guide covers everything needed to install, build, and run GutenbergKG — b
 
 > **TL;DR** — Run `make bootstrap` (preview with `make bootstrap DRY_RUN=1`). It checks the requirements, installs what is missing and fetches the local models. Then, for the CLI: `gutenkg ingest --force-build`. For Docker: `make pull-worker-image && make up`, or `make build-corpus && make build && make up` to build it yourself. Querying needs no LLM. Synthesis and image generation need a backend: a local one (oMLX or Ollama for text, FLUX or SDXL for images) **or** an `OPENAI_API_KEY`, which covers both with nothing else installed.
 
-> **Just want to read?** The [Knowledge Press Forest](https://flux-frontiers.github.io/knowledge_press/) runs in the browser with nothing to install. The Knowledge Press app for iPhone, iPad and Mac is in development for App Store deployment. Both live in the [knowledge_press](https://github.com/Flux-Frontiers/knowledge_press) repo; see [Knowledge Press apps](KNOWLEDGE_PRESS.md).
+> **Just want to read?** The [Knowledge Press Forest](https://flux-frontiers.github.io/knowledge_press/) runs in the browser with nothing to install. The Knowledge Press app for iPhone, iPad and Mac is on the [App Store](https://apps.apple.com/us/app/the-knowledge-press/id6812116080). Both live in the [knowledge_press](https://github.com/Flux-Frontiers/knowledge_press) repo; see [Knowledge Press apps](KNOWLEDGE_PRESS.md).
 
 ---
 

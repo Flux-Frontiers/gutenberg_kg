@@ -12,7 +12,7 @@ repo.
 |---|---|---|
 | Chat UI (reading room) | This repo: Streamlit in front of the query worker | Available. See [Chat UI](CHAT_UI.md) and [Installation](INSTALLATION.md#docker-workflow). |
 | Knowledge Press Forest | knowledge_press `web/`, a Vite, React and Three app | Available at [flux-frontiers.github.io/knowledge_press](https://flux-frontiers.github.io/knowledge_press/). Nothing to install. |
-| Knowledge Press app for iPhone, iPad and Mac | knowledge_press `app/`, Swift with XcodeGen | In development for App Store deployment. Not yet on the App Store. |
+| Knowledge Press app for iPhone, iPad and Mac | knowledge_press `app/`, Swift with XcodeGen | Available on the [App Store](https://apps.apple.com/us/app/the-knowledge-press/id6812116080). |
 
 ### Knowledge Press Forest
 
@@ -26,8 +26,8 @@ covers the controls.
 
 The app searches the corpus on the device and writes answers with the
 language model built into iOS 26 and macOS 26, so it works with the network
-off. It is in development for App Store deployment. Until it ships, it can be
-built from source; the
+off. Install it from the [App Store](https://apps.apple.com/us/app/the-knowledge-press/id6812116080), or build it from
+source; the
 [app RUNBOOK](https://github.com/Flux-Frontiers/knowledge_press/blob/main/app/RUNBOOK.md)
 is the full path from a built corpus to the app answering on a device, and
 the [App guide](https://flux-frontiers.github.io/knowledge_press/docs/app/getting-started/)
