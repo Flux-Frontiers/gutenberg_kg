@@ -102,7 +102,7 @@ dependencies = [
     # is drift the gate cannot see.
     "kgmodule-utils[synthesis,sqlite-vec]>=0.29.2",
     "rich>=14.3.3,<15",
-    "doc-kg (>=0.29.0)",  # transformers 5.x -- must match kg-rag, see kgdeps
+    "doc-kg (>=0.30.0)",  # chunk text keeps source whitespace (item 83); transformers 5.x, see kgdeps
     "diary-kg (>=0.101.0)",
     "hf-transfer (>=0.1.9,<0.2.0)",
 ]

@@ -105,7 +105,7 @@ RUN pip install --no-cache-dir --index-url https://download.pytorch.org/whl/cpu 
 # reason. Keep every ARG == the lock.
 ARG KG_RAG_VERSION=0.18.1
 ARG KGMODULE_UTILS_VERSION=0.29.2
-ARG DOC_KG_VERSION=0.29.0
+ARG DOC_KG_VERSION=0.30.0
 ARG DIARY_KG_VERSION=0.101.0
 RUN pip install --no-cache-dir \
     "runpod==1.12.0" \

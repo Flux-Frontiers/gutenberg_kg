@@ -107,6 +107,8 @@ __all__ = [
 
 PACK_VERSION = 1
 DEFAULT_BUNDLE = Path("bundles/gutenberg-all")
+#: The Markdown the bundle was built from; read only to record chunk gaps.
+CORPUS_ROOT = Path(__file__).resolve().parents[2] / "corpus"
 EMBED_MODEL = "BAAI/bge-small-en-v1.5"
 EMBED_DIM = 384
 
@@ -207,6 +209,9 @@ CREATE TABLE passages (
   chapter    INTEGER,           -- verse-chunked genres with no section nodes
   timestamp  TEXT,              -- diaries only
   vector_index INTEGER,         -- dense row in the .vectors sidecar; NULL if none
+  gap_after  TEXT,              -- the source's whitespace between this chunk and the next:
+                                --   spaces verbatim, else one newline or two; NULL when they
+                                --   overlap, other text sits between, or the source was not read
   content    TEXT NOT NULL
 );
 CREATE INDEX idx_passages_scope ON passages(genre, kind);
@@ -1045,6 +1050,71 @@ def window_oversized_sections(
     return len(added)
 
 
+def chunk_gap(source: str, end: int, next_start: int) -> str | None:
+    """Classify the source text between one chunk's end and the next's start.
+
+    Browse rebuilds a chapter from its chunks, and a chunk carries none of the
+    whitespace around it. Without this the reader has to guess, and a blank
+    line between every pair of chunks split paragraphs mid-sentence ("And
+    choke their art." / "The merciless Macdonwald" is one line of *Macbeth*).
+
+    :param source: The document's text.
+    :param end: Offset just past the first chunk.
+    :param next_start: Offset of the next chunk.
+    :returns: Spaces within a line, verbatim; ``"\\n"`` at a line end and
+        ``"\\n\\n"`` at a paragraph break, whatever spaces sit around them,
+        since the reader splits paragraphs on exactly ``"\\n\\n"``. ``None``
+        when the chunks overlap or the gap holds text (a heading).
+    """
+    if next_start < end:
+        return None
+    gap = source[end:next_start]
+    if gap.strip():
+        return None
+    return gap if "\n" not in gap else "\n" * min(2, gap.count("\n"))
+
+
+def fill_chunk_gaps(con: sqlite3.Connection, kg_name: str, corpus_root: Path) -> int:
+    """Set ``gap_after`` on each chunk of *kg_name* from its source document.
+
+    A chunk whose text is not its source slice at ``char_start`` (a truncated
+    passage, or a corpus edited since the build) gets no gap, and the reader
+    falls back to a blank line, as it did before this column existed.
+
+    :param con: The open passage pack.
+    :param kg_name: The source whose chunks to fill.
+    :param corpus_root: Directory the chunks' ``file_path`` is relative to.
+    :returns: How many chunks got a gap.
+    """
+    rows = con.execute(
+        "SELECT rowid, file_path, char_start, content FROM passages "
+        " WHERE kg_name = ? AND kind = 'chunk' AND file_path IS NOT NULL "
+        "   AND char_start IS NOT NULL ORDER BY file_path, char_start",
+        (kg_name,),
+    ).fetchall()
+    updates: list[tuple[str, int]] = []
+    source: str | None = None
+    source_path: str | None = None
+    for (rowid, file_path, start, content), following in zip(rows, rows[1:]):
+        if following[1] != file_path:
+            continue
+        if file_path != source_path:
+            path = corpus_root / file_path
+            source = path.read_text(encoding="utf-8") if path.is_file() else None
+            source_path = file_path
+        if source is None or source[start : start + len(content)] != content:
+            continue
+        next_start, next_content = following[2], following[3]
+        if source[next_start : next_start + len(next_content)] != next_content:
+            continue
+        gap = chunk_gap(source, start + len(content), next_start)
+        if gap is not None:
+            updates.append((gap, rowid))
+    con.executemany("UPDATE passages SET gap_after = ? WHERE rowid = ?", updates)
+    con.commit()
+    return len(updates)
+
+
 def build_passage_pack(
     dest: Path,
     sources: Sequence[_PassageSource],
@@ -1054,6 +1124,7 @@ def build_passage_pack(
     max_chars: int = 0,
     with_vectors: bool = True,
     browse_window: int = BROWSE_WINDOW_TRIGGER_CHARS,
+    corpus_root: Path | None = None,
     progress=None,
 ) -> PackStats:
     """Write a passage pack: content, an FTS5 index over it, and the vectors.
@@ -1080,6 +1151,8 @@ def build_passage_pack(
     :param dtype: ``"int8"`` (default, ~3x smaller) or ``"float"``.
     :param max_chars: Per-passage truncation; 0 keeps passages whole.
     :param with_vectors: Skip the vector stage entirely when False.
+    :param corpus_root: Source documents, for :func:`fill_chunk_gaps`. ``None``
+        leaves ``gap_after`` empty (diaries, or a bundle without its corpus).
     :param progress: Optional ``callable(str)`` for status lines.
     :returns: Stats for the finished pack.
     """
@@ -1134,6 +1207,9 @@ def build_passage_pack(
             con.commit()
             stats.passages += written
             say(f"  {source.kg_name}: {written:,} passages")
+            if corpus_root is not None:
+                gaps = fill_chunk_gaps(con, source.kg_name, corpus_root)
+                say(f"  {source.kg_name}: {gaps:,} chunk gaps from the source")
 
         windowed = window_oversized_sections(con, trigger_chars=browse_window)
         if windowed:
@@ -1909,6 +1985,7 @@ def export_swift(options: ExportOptions, *, progress=None) -> ExportReport:
             dtype=options.dtype,
             max_chars=options.max_chars,
             with_vectors=options.with_vectors,
+            corpus_root=CORPUS_ROOT if CORPUS_ROOT.is_dir() else None,
             progress=say,
         )
     )

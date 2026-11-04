@@ -1132,14 +1132,14 @@ files = [
 
 [[package]]
 name = "doc-kg"
-version = "0.29.0"
+version = "0.30.0"
 description = "A tool to build a semantically searchable knowledge graph from markdown and text documents"
 optional = false
 python-versions = "<3.14,>=3.12"
 groups = ["main"]
 files = [
-    {file = "doc_kg-0.29.0-py3-none-any.whl", hash = "sha256:f82a3309eb1f3a8fd2287f970195742d808b5df9c1496e96f927650c3b07e539"},
-    {file = "doc_kg-0.29.0.tar.gz", hash = "sha256:4155fae3276d6f7df0062f4dea7ca026f30bb2fca8e3cec43b36299815eb7753"},
+    {file = "doc_kg-0.30.0-py3-none-any.whl", hash = "sha256:6ec17b3cace5f823a6b10e2d9de26c36fecfc5d972cba8581c96de5ac128f3d1"},
+    {file = "doc_kg-0.30.0.tar.gz", hash = "sha256:7e8d5122496ba8743156f7fe3fd0ddb5d669856c1754ce934abe211143649c44"},
 ]
 
 [package.dependencies]
@@ -6323,4 +6323,4 @@ viz3d = ["PyQt5", "kgmodule-utils", "markdown", "param", "pyvistaqt", "quiltwrig
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.12,<3.14"
-content-hash = "e9c8481e5d583987c90276c2be0bed7cc1a3ae3e0ee34ab4c4652d133fc5485c"
+content-hash = "1fbbcef52978fe9cf5c9dd23102ff3704e11e08661c9a9598c2dec62d4674a54"
