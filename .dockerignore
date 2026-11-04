@@ -18,6 +18,13 @@
 # here checked for it.
 **/lancedb
 
+# Backups beside the bundle -- an index kept before a rebuild, old Swift packs.
+# Nothing serves them, and `COPY bundles/` took them along: on 2026-11-04 a
+# 4.3 GB .dockg.bak-* and a 678 MB swift-oct19 grew the bundle layer from
+# 6.2 GB to 11.6 GB.
+bundles/*/.dockg.bak*
+bundles/*/swift-*
+
 # DiaryKG's back-pointer to its source .diary dir — an ABSOLUTE host path
 # (/Users/.../corpus/diaries/<name>/.diary) that bundle_diaries copies verbatim
 # (shutil.copytree(symlinks=True)). Docker copies symlinks as-is, so it lands in
