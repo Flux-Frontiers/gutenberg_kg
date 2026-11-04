@@ -27,7 +27,9 @@ from gutenberg_kg.export_swift import (
     _file_path_scope,
     _truncate,
     build_golden,
+    chunk_gap,
     export_swift,
+    fill_chunk_gaps,
     fts_match_expression,
     fts_phrase_expression,
     iter_source_vectors,
@@ -804,6 +806,63 @@ class TestCrossDiaryIdCollisions:
         matrix, _ = read_vector_sidecar(out / "diaries.vectors")
         assert int(np.argmax(matrix[indexed["evelyn-volume-1:p:1"]])) == 3
         assert int(np.argmax(matrix[indexed["pepys-complete:p:1"]])) == 5
+
+
+class TestChunkGaps:
+    """What separates two chunks in the source, so Browse can rejoin them."""
+
+    SOURCE = (
+        "Their art.\n\nThe merciless Macdonwald,\n"
+        "Show'd like a rebel's whore. But all's too weak;\n"
+        "For brave Macbeth.\n\n## SCENE III\n\nA heath."
+    )
+
+    def test_classifies_the_gap(self):
+        assert chunk_gap("a. B", 2, 3) == " "
+        assert chunk_gap("a.\nB", 2, 3) == "\n"
+        assert chunk_gap("a.\n  \nB", 2, 6) == "\n\n"  # reflow splits on exactly this
+        assert chunk_gap("a!  B", 2, 4) == "  "  # spaces verbatim
+        assert chunk_gap("a.\n\n\nB", 2, 5) == "\n\n"
+        assert chunk_gap("a. B", 3, 2) is None  # overlap
+        assert chunk_gap("a.\n## H\nB", 2, 8) is None  # a heading between
+
+    def _pack(self, tmp_path, chunks):
+        (tmp_path / "corpus" / "drama" / "M").mkdir(parents=True)
+        (tmp_path / "corpus" / "drama" / "M" / "m.md").write_text(self.SOURCE, encoding="utf-8")
+        con = sqlite3.connect(str(tmp_path / "p.pack"))
+        con.executescript(_PASSAGE_SCHEMA)
+        con.executemany(
+            "INSERT INTO passages (id, kg_name, kg_kind, kind, file_path, char_start, content)"
+            " VALUES (?, 'gutenberg', 'doc', 'chunk', 'drama/M/m.md', ?, ?)",
+            [(f"g:c:{i}", self.SOURCE.index(text), text) for i, text in enumerate(chunks)],
+        )
+        con.commit()
+        return con
+
+    def test_fills_gaps_from_the_source(self, tmp_path):
+        chunks = [
+            "Their art.",
+            "The merciless Macdonwald,\nShow'd like a rebel's whore.",
+            "But all's too weak;\nFor brave Macbeth.",
+            "A heath.",
+        ]
+        con = self._pack(tmp_path, chunks)
+        assert fill_chunk_gaps(con, "gutenberg", tmp_path / "corpus") == 2
+        gaps = [g for (g,) in con.execute("SELECT gap_after FROM passages ORDER BY char_start")]
+        # Paragraph break, same line, then a heading between (no gap), last chunk none.
+        assert gaps == ["\n\n", " ", None, None]
+        con.close()
+
+    def test_a_chunk_that_is_not_its_source_slice_gets_no_gap(self, tmp_path):
+        con = self._pack(tmp_path, ["Their art.", "The merciless Macdonwald,"])
+        con.execute("UPDATE passages SET content = 'Their  art.' WHERE id = 'g:c:0'")
+        assert fill_chunk_gaps(con, "gutenberg", tmp_path / "corpus") == 0
+        con.close()
+
+    def test_a_missing_source_leaves_gaps_empty(self, tmp_path):
+        con = self._pack(tmp_path, ["Their art.", "The merciless Macdonwald,"])
+        assert fill_chunk_gaps(con, "gutenberg", tmp_path / "elsewhere") == 0
+        con.close()
 
 
 class TestWindowOversizedSections:

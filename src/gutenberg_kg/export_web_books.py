@@ -58,6 +58,39 @@ def _connect(pack: Path) -> sqlite3.Connection:
     return con
 
 
+def join_chunks(chunks: list[sqlite3.Row]) -> str:
+    """A chapter's text from its chunks, in reading order.
+
+    A chunk recording ``gap_after`` is followed by exactly that whitespace, so
+    a seam in the middle of a line stays one line. Chunks that overlap lose
+    the repeated text, but only when the overlapping characters agree; any
+    other seam is a blank line, as before ``gap_after`` existed.
+
+    :param chunks: Rows with ``char_start``, ``content`` and ``gap_after``
+        (NULL in a pack that predates it).
+    :returns: The joined text.
+    """
+    text = ""
+    previous = None
+    for chunk in chunks:
+        content = chunk["content"]
+        if previous is None:
+            text = content
+        else:
+            gap = previous["gap_after"]
+            overlap = previous["char_start"] + len(previous["content"]) - chunk["char_start"]
+            if gap is not None:
+                text += gap + content
+            elif overlap >= len(content) and previous["content"].endswith(content):
+                continue  # wholly inside the previous chunk; keep it as the one to trim against
+            elif 0 < overlap < len(content) and previous["content"].endswith(content[:overlap]):
+                text += content[overlap:]
+            else:
+                text += "\n\n" + content
+        previous = chunk
+    return text
+
+
 def book_chapters(con: sqlite3.Connection, file_path: str) -> list[dict]:
     """A book's chapters from ``gutenberg.pack``, as the worker builds them.
 
@@ -71,8 +104,10 @@ def book_chapters(con: sqlite3.Connection, file_path: str) -> list[dict]:
         "WHERE kind='section' AND file_path=? ORDER BY char_start",
         (file_path,),
     ).fetchall()
+    columns = {row[1] for row in con.execute("PRAGMA table_info(passages)")}
+    gap = "gap_after" if "gap_after" in columns else "NULL AS gap_after"
     chunks = con.execute(
-        "SELECT char_start, chapter, content FROM passages "
+        f"SELECT char_start, chapter, content, {gap} FROM passages "
         "WHERE kind='chunk' AND file_path=? ORDER BY char_start",
         (file_path,),
     ).fetchall()
@@ -80,10 +115,12 @@ def book_chapters(con: sqlite3.Connection, file_path: str) -> list[dict]:
         chapters = []
         for i, s in enumerate(sections):
             end = sections[i + 1]["char_start"] if i + 1 < len(sections) else None
-            text = "\n\n".join(
-                c["content"]
-                for c in chunks
-                if c["char_start"] >= s["char_start"] and (end is None or c["char_start"] < end)
+            text = join_chunks(
+                [
+                    c
+                    for c in chunks
+                    if c["char_start"] >= s["char_start"] and (end is None or c["char_start"] < end)
+                ]
             )
             chapters.append({"title": s["title"], "text": text})
         return chapters

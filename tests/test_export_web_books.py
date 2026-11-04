@@ -165,3 +165,43 @@ class TestExportWebBooks:
         )
         assert result.exit_code != 0
         assert "export-swift" in result.output
+
+
+class TestJoinChunks:
+    """Rejoining a chapter's chunks the way the app's reader does."""
+
+    @staticmethod
+    def _rows(chunks: list[tuple[int, str, str | None]]) -> list[sqlite3.Row]:
+        con = sqlite3.connect(":memory:")
+        con.row_factory = sqlite3.Row
+        con.execute("CREATE TABLE c (char_start INTEGER, content TEXT, gap_after TEXT)")
+        con.executemany("INSERT INTO c VALUES (?,?,?)", chunks)
+        return con.execute("SELECT * FROM c ORDER BY char_start").fetchall()
+
+    def test_uses_the_recorded_gap(self):
+        from gutenberg_kg.export_web_books import join_chunks
+
+        rows = self._rows(
+            [(0, "And choke their art.", " "), (21, "The merciless Macdonwald", None)]
+        )
+        assert join_chunks(rows) == "And choke their art. The merciless Macdonwald"
+
+    def test_drops_an_overlap_only_when_the_text_agrees(self):
+        from gutenberg_kg.export_web_books import join_chunks
+
+        # "Come along now." (15 chars) ends the first chunk and starts the second.
+        agreed = self._rows(
+            [(0, "Stay back. Come along now.", None), (11, "Come along now. Come slow.", None)]
+        )
+        assert join_chunks(agreed) == "Stay back. Come along now. Come slow."
+        # The offsets claim an overlap the text does not show: keep both, as before.
+        disagree = self._rows(
+            [(0, "Stay back. Come along now.", None), (11, "Something else entirely.", None)]
+        )
+        assert join_chunks(disagree) == "Stay back. Come along now.\n\nSomething else entirely."
+
+    def test_skips_a_chunk_wholly_inside_the_previous_one(self):
+        from gutenberg_kg.export_web_books import join_chunks
+
+        rows = self._rows([(0, "Stay back. Come along now.", None), (11, "Come along now.", None)])
+        assert join_chunks(rows) == "Stay back. Come along now."
