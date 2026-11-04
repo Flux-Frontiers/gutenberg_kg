@@ -15,6 +15,14 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   called it "in development for App Store deployment" now link to
   [its listing](https://apps.apple.com/us/app/the-knowledge-press/id6812116080).
 
+### Fixed
+
+- **Local FLUX image generation works again.** Pillow 13 imports the
+  `IntegralLike` alias in its private `PIL._typing` only on Python 3.15+, so
+  mflux 0.18, which imports that module, failed on Python 3.12 and every image
+  request returned 500. `docker/requirements-image.txt` now floors mflux at
+  0.24.0, which no longer imports it.
+
 ## [1.32.0] - 2026-11-03
 
 ### Added
