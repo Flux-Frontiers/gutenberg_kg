@@ -34,6 +34,10 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Fixed
 
+- **The worker image no longer ships bundle backups.** `.dockerignore`
+  drops `bundles/*/.dockg.bak*` and `bundles/*/swift-*`, which `COPY
+  bundles/` had baked in: a 4.3 GB index backup and 678 MB of old Swift packs
+  grew the bundle layer from 6.2 GB to 11.6 GB.
 - **The web forest's book text no longer repeats a sentence at each seam.**
   `export-web-books` joined a chapter's chunks with a blank line and kept
   both copies of the text two chunks overlap. It now uses `gap_after` and
