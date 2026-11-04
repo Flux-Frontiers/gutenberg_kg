@@ -14,6 +14,11 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   accepted for iPhone, iPad and Mac on 2026-11-03. The README and docs that
   called it "in development for App Store deployment" now link to
   [its listing](https://apps.apple.com/us/app/the-knowledge-press/id6812116080).
+- **doc-kg floor is 0.30.0** in `pyproject.toml`, the Dockerfile's
+  `DOC_KG_VERSION` and `runpod/requirements.txt`. doc-kg 0.30.0 stores each
+  chunk as the source text it spans, so a play's speaker cues keep their own
+  lines ("DUNCAN." no longer runs on from "battlements."). Chunk ids and
+  counts are unchanged. The corpus needs a re-ingest to pick it up.
 
 ### Fixed
 
