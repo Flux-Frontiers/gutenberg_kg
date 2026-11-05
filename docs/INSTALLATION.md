@@ -47,7 +47,7 @@ It exits `1` when a requirement is missing that it cannot or did not install, an
 | **[Poetry](https://python-poetry.org/)** | CLI workflow | 2.x | dependency management + virtual env |
 | **[GNU Make](https://www.gnu.org/software/make/)** | build/run targets | any | drives `build-corpus`, `build`, `run`, `chat`, `up` |
 | **[Docker](https://docs.docker.com/get-docker/)** | container workflow | Engine 24+, Compose v2 | `docker compose` (v2 syntax, not `docker-compose`) — or Apple's [`container`](https://github.com/apple/container) CLI on macOS 26 via `make … RUNTIME=apple` (see [APPLE_CONTAINERS.md](APPLE_CONTAINERS.md)) |
-| **LLM backend** | synthesis + image generation *(optional)* | — | Local: [oMLX](https://omlx.ai) on Apple Silicon, or [Ollama](https://ollama.com) cross-platform, plus a local image server. Cloud: an `OPENAI_API_KEY` alone, nothing installed (see the OpenAI section below) |
+| **LLM backend** | synthesis + image generation *(optional)* | — | Local: [oMLX](https://omlx.ai) on Apple Silicon, or [Ollama](https://ollama.com) cross-platform, plus a local image server. Cloud: an `OPENAI_API_KEY` alone, nothing installed (see the OpenAI section below), or an `ANTHROPIC_API_KEY` for synthesis only |
 
 ### Do I need an LLM?
 
@@ -60,7 +60,7 @@ Each layer has a local and a cloud route, and you can mix them:
 
 | | Local | Cloud |
 |---|---|---|
-| Synthesis | oMLX (Apple Silicon, recommended) or Ollama (macOS, Linux, Windows) | OpenAI, with `OPENAI_API_KEY` |
+| Synthesis | oMLX (Apple Silicon, recommended) or Ollama (macOS, Linux, Windows) | OpenAI, with `OPENAI_API_KEY`, or Anthropic, with `ANTHROPIC_API_KEY` |
 | Image generation | FLUX.2 (`make image-server`) or SDXL-Lightning (`make sdxl-server`) | OpenAI `gpt-image-1`, with `OPENAI_API_KEY` |
 
 With `OPENAI_API_KEY` set in `docker/.env`, the worker and chat UI generate images with no image server and no local model. The `gutenkg imagine` CLI is the exception: it always calls an image server, so it still needs FLUX or SDXL running.
@@ -311,7 +311,7 @@ make logs        # follow worker logs
 
 ## Connecting a local LLM (optional)
 
-Local synthesis and image generation reach a model server on the host. From inside Docker, the host is `host.docker.internal`. oMLX and Ollama are the local options; OpenAI, below, needs only a key.
+Local synthesis and image generation reach a model server on the host. From inside Docker, the host is `host.docker.internal`. oMLX and Ollama are the local options; OpenAI and Anthropic, below, need only a key.
 
 ### oMLX (Apple Silicon, recommended)
 
@@ -399,6 +399,24 @@ With no key set, the chat UI's **OpenAI** image option is unavailable; the worke
 
 Because OpenAI is a cloud API, it is the **one path that needs nothing installed locally at all** — no Apple Silicon, no oMLX, no local image server. It is not the only cross-platform option, though: Ollama covers text synthesis on Linux and Windows, and SDXL-Lightning covers images (below).
 
+### Anthropic (cloud, synthesis only)
+
+The Anthropic provider answers with Claude. It covers text synthesis, not images, and needs no local model server. The only required variable is your API key:
+
+```bash
+# docker/.env  -- Anthropic for text synthesis
+ANTHROPIC_API_KEY=sk-ant-...
+```
+
+Select **Anthropic** in the chat UI's Provider dropdown, or send `"backend": "anthropic"` to the worker. The model is chosen per request and defaults to `claude-opus-5-5`.
+
+For images, **Auto** uses the local image server when it is up. To use `gpt-image-1` instead, set `OPENAI_API_KEY` and pick **OpenAI** in the **Image backend** picker.
+
+Anthropic is selected per request only:
+
+- Do not set `SYNTH_BACKEND=anthropic`. The worker's default backend reads the `VLLM_*` values, so it would send Claude requests to your oMLX endpoint.
+- `gutenkg converse` does not accept it. Its `--backend` takes `omlx`, `ollama` or `openai`.
+
 ### Image generation (local)
 
 Two local servers, both isolated in their own venv so their dependencies never touch the main Poetry environment:
@@ -441,9 +459,9 @@ The plain `torch` wheel pip installs on Windows is CPU-only, which works but is 
 
 ## API keys and `docker/.env`
 
-Keys (`OPENAI_API_KEY`, `VLLM_API_KEY`, `IMAGE_API_KEY`, `HANDLER_SECRET`) go
-in `docker/.env`, which git ignores. `docker/.env.example` is the tracked
-template and holds placeholders only.
+Keys (`OPENAI_API_KEY`, `ANTHROPIC_API_KEY`, `VLLM_API_KEY`, `IMAGE_API_KEY`,
+`HANDLER_SECRET`) go in `docker/.env`, which git ignores. `docker/.env.example`
+is the tracked template and holds placeholders only.
 
 **Keys are applied when the container starts, not when the image is built.**
 Compose's `environment:` block and the `RUNTIME=apple` recipe's `-e` flags read
@@ -546,6 +564,7 @@ Provider is chosen per-request (chat UI Provider dropdown / `"backend"` field). 
 | `VLLM_MODEL` | `Qwen3-4B-Instruct-2507-MLX-8bit` | omlx | oMLX model ID. |
 | `OLLAMA_ENDPOINT` | `http://localhost:11434/v1` | ollama | Ollama OpenAI-compatible endpoint (no key needed). |
 | `OPENAI_API_KEY` | — | openai | **Required for the OpenAI path.** Endpoint defaults to `https://api.openai.com/v1`, model to `gpt-4o-mini`. |
+| `ANTHROPIC_API_KEY` | -- | anthropic | **Required for the Anthropic path.** Model defaults to `claude-opus-5-5`. Select per request; do not use `anthropic` as `SYNTH_BACKEND`. |
 
 ### Image generation
 
