@@ -113,6 +113,15 @@ Empty chunks are dropped. Empty *sections* are not: they carry no prose, but
 they are the chapter markers `get_chapters` lists and `get_chapter` slices
 between.
 
+`gap_after` is the source's whitespace between a chunk and the next one in
+the same file: spaces verbatim, otherwise one newline or two. Browse joins
+chunks with it, so a seam inside a paragraph or a verse line reads as the
+source has it rather than as a blank line. It is NULL when the two chunks
+overlap, when other text such as a heading sits between them, or when the
+chunk's text does not match its source slice; the reader then falls back to
+a blank line. Filling it reads `corpus/`, so an export without the corpus
+leaves it empty, and diaries carry none yet.
+
 `passages.id` is `<kg_name>:<node_id>`, not the source node id verbatim.
 Diary node ids name the entry file within a book but not the book, and every
 diary numbers its entries from `entry_0000` — so raw ids collide across the

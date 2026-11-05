@@ -8,6 +8,8 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+## [1.33.0] - 2026-11-04
+
 ### Changed
 
 - **The Knowledge Press app is on the App Store.** Version 1.32.0 was

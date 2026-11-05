@@ -8,7 +8,7 @@
   <a href="https://www.python.org/"><img src="https://img.shields.io/badge/python-3.12%20%7C%203.13-blue.svg" alt="Python"/></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/code-Elastic--2.0-lightgrey.svg" alt="Code License"/></a>
   <a href="https://www.gutenberg.org/"><img src="https://img.shields.io/badge/texts-Public%20Domain-green.svg" alt="Texts License"/></a>
-  <img src="https://img.shields.io/badge/version-1.32.0-blue.svg" alt="Version"/>
+  <img src="https://img.shields.io/badge/version-1.33.0-blue.svg" alt="Version"/>
   <img src="https://img.shields.io/badge/corpus-265%20books-orange.svg" alt="Corpus"/>
   <img src="https://img.shields.io/badge/nodes-1.4M-green.svg" alt="Nodes"/>
   <img src="https://img.shields.io/badge/edges-5.4M-green.svg" alt="Edges"/>
@@ -264,7 +264,7 @@ If you use GutenbergKG in research, use GitHub’s **Cite this repository** butt
   author       = {Suchanek, Eric G.},
   title        = {{GutenbergKG}: The Knowledge Press},
   year         = {2026},
-  version      = {1.32.0},
+  version      = {1.33.0},
   publisher    = {Flux-Frontiers},
   doi          = {10.5281/zenodo.20045389},
   url          = {https://github.com/Flux-Frontiers/gutenberg_kg}
