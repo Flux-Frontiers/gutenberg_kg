@@ -118,6 +118,13 @@ REGISTRY_IMAGE ?= docker.io/egsuchanek/$(IMAGE)
 PLATFORMS      ?= linux/amd64,linux/arm64
 BUILDX_BUILDER ?= gutenkg-multiarch
 
+# OCI labels stamped on the published image, so `imagetools inspect` says
+# which release and commit it was built from.
+PKG_VERSION  := $(shell sed -n 's/^version = "\(.*\)"/\1/p' pyproject.toml)
+GIT_REVISION := $(shell git rev-parse HEAD 2>/dev/null)
+IMAGE_LABELS := --label org.opencontainers.image.version=$(PKG_VERSION) \
+                --label org.opencontainers.image.revision=$(GIT_REVISION)
+
 # Extra flags spliced into both build recipes below. Empty for a normal
 # `make build` (layer cache used); `make rebuild`/`rebuild-all` set this to
 # --no-cache so a stale cached layer can't hide a change.
@@ -525,7 +532,7 @@ build: check-pins setup
 publish-worker-image: check-pins setup
 	@$(resolve_spec) \
 	OLD=$$(python3 scripts/prune_hub_image.py digest $(REGISTRY_IMAGE):$$IMAGE_TAG); \
-	container build $(BUILD_FLAGS) $(HF_SECRET) \
+	container build $(BUILD_FLAGS) $(HF_SECRET) $(IMAGE_LABELS) \
 	  $(foreach p,$(subst $(COMMA), ,$(PLATFORMS)),--platform $(p)) \
 	  -f docker/Dockerfile --build-arg BUNDLE=$$BUNDLE \
 	  -t $(REGISTRY_IMAGE):$$IMAGE_TAG . && \
@@ -647,7 +654,7 @@ publish-worker-image: check-pins
 	@$(resolve_spec) \
 	OLD=$$(python3 scripts/prune_hub_image.py digest $(REGISTRY_IMAGE):$$IMAGE_TAG); \
 	docker buildx build --builder $(BUILDX_BUILDER) --platform $(PLATFORMS) \
-	  $(BUILD_FLAGS) $(HF_SECRET) -f docker/Dockerfile --build-arg BUNDLE=$$BUNDLE \
+	  $(BUILD_FLAGS) $(HF_SECRET) $(IMAGE_LABELS) -f docker/Dockerfile --build-arg BUNDLE=$$BUNDLE \
 	  -t $(REGISTRY_IMAGE):$$IMAGE_TAG --push . && \
 	python3 scripts/prune_hub_image.py prune $(REGISTRY_IMAGE):$$IMAGE_TAG "$$OLD"
 
