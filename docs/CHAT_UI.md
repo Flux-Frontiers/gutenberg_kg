@@ -164,7 +164,7 @@ it talks to.
 
 **Read by the worker** (set in [`docker/.env`](../docker/.env.example) — copy
 `docker/.env.example` to `docker/.env`): `VLLM_ENDPOINT_URL` / `VLLM_MODEL` /
-`VLLM_API_KEY` (oMLX), `OLLAMA_ENDPOINT` (Ollama), `OPENAI_API_KEY` (OpenAI), and
+`VLLM_API_KEY` (oMLX), `OLLAMA_ENDPOINT` (Ollama), `OPENAI_API_KEY` (OpenAI), `ANTHROPIC_API_KEY` (Anthropic), and
 `GUTENKG_IMAGE_ENDPOINT` / `IMAGE_STEPS` (image generation). See
 [`docs/INSTALLATION.md`](INSTALLATION.md#environment-variables--full-reference) for
 the full reference.

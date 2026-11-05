@@ -45,6 +45,7 @@ services:
       VLLM_API_KEY: ${VLLM_API_KEY:-}
       OLLAMA_ENDPOINT: ${OLLAMA_ENDPOINT:-http://host.docker.internal:11434/v1}
       OPENAI_API_KEY: ${OPENAI_API_KEY:-}
+      ANTHROPIC_API_KEY: ${ANTHROPIC_API_KEY:-}
       # Canonical image endpoint variable.
       GUTENKG_IMAGE_ENDPOINT: ${GUTENKG_IMAGE_ENDPOINT:-http://host.docker.internal:8090}
       # Compatibility alias for components still reading IMAGE_ENDPOINT.
