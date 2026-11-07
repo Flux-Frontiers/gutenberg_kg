@@ -8,6 +8,8 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+## [1.34.0] - 2026-11-07
+
 ### Added
 
 - **Anthropic as a synthesis provider.** The chat UI's Provider dropdown lists
@@ -22,6 +24,9 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   `KGMODULE_UTILS_VERSION`, runpod). It also makes OpenAI's gpt-5 and later
   models answer: 0.29.2 sent parameters they reject, and only the GPT-4
   family worked. The model list for OpenAI now holds only chat models.
+- **The published worker image names its release.** `make publish-worker-image`
+  stamps the OCI version and revision labels, so `docker buildx imagetools
+  inspect` shows which release and commit an image was built from.
 
 ### Fixed
 

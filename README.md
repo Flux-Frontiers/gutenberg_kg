@@ -8,7 +8,7 @@
   <a href="https://www.python.org/"><img src="https://img.shields.io/badge/python-3.12%20%7C%203.13-blue.svg" alt="Python"/></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/code-Elastic--2.0-lightgrey.svg" alt="Code License"/></a>
   <a href="https://www.gutenberg.org/"><img src="https://img.shields.io/badge/texts-Public%20Domain-green.svg" alt="Texts License"/></a>
-  <img src="https://img.shields.io/badge/version-1.33.0-blue.svg" alt="Version"/>
+  <img src="https://img.shields.io/badge/version-1.34.0-blue.svg" alt="Version"/>
   <img src="https://img.shields.io/badge/corpus-265%20books-orange.svg" alt="Corpus"/>
   <img src="https://img.shields.io/badge/nodes-1.4M-green.svg" alt="Nodes"/>
   <img src="https://img.shields.io/badge/edges-5.4M-green.svg" alt="Edges"/>
@@ -143,7 +143,7 @@ Open **http://localhost:8501** and ask a question. Use `make up` instead of `mak
 
 The bundle and Docker image are large because the corpus and its vector indices travel with the app. That is deliberate: once built, the reading room has no runtime dependency on a hosted corpus.
 
-For prerequisites, non-Apple-Silicon notes, smaller setups, and cloud/OpenAI synthesis and image generation, see [Installation](docs/INSTALLATION.md). For what the interface shows and how it handles sources, see [The Knowledge Press chat UI](docs/CHAT_UI.md).
+For prerequisites, non-Apple-Silicon notes, smaller setups, cloud synthesis with OpenAI or Anthropic, and image generation, see [Installation](docs/INSTALLATION.md). For what the interface shows and how it handles sources, see [The Knowledge Press chat UI](docs/CHAT_UI.md).
 
 ### Runtime: Docker or Apple `container`
 
@@ -264,7 +264,7 @@ If you use GutenbergKG in research, use GitHub’s **Cite this repository** butt
   author       = {Suchanek, Eric G.},
   title        = {{GutenbergKG}: The Knowledge Press},
   year         = {2026},
-  version      = {1.33.0},
+  version      = {1.34.0},
   publisher    = {Flux-Frontiers},
   doi          = {10.5281/zenodo.20045389},
   url          = {https://github.com/Flux-Frontiers/gutenberg_kg}

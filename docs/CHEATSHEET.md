@@ -214,6 +214,12 @@ gutenkg query "plague" --registry /path/to/registry.json     # non-default regis
 | `--registry` | KGRAG default | Override the local registry path |
 | `--json` | off | Emit KGRAG results as JSON |
 
+For an answer synthesized from the passages, use the chat UI or send
+`"synthesize": true` to a running worker. A request picks its provider with
+`backend`: `omlx`, `ollama`, `openai` or `anthropic`. Cloud providers read
+`OPENAI_API_KEY` or `ANTHROPIC_API_KEY` from `docker/.env`. Anthropic works per
+request only: do not set `SYNTH_BACKEND=anthropic`.
+
 ---
 
 ## Two Books in Conversation (Entmoot)
@@ -254,7 +260,7 @@ titles contain an em dash.
 | `--topic` | none | Subject the moot discusses; anchors every retrieval |
 | `--turns` | `8` | Total utterances (2-40) |
 | `--k` | `6` | Passages per turn |
-| `--backend` | `$SYNTH_BACKEND`, then `omlx` | Model provider: `omlx`, `ollama` or `openai` (needs `OPENAI_API_KEY` or `SYNTH_API_KEY`) |
+| `--backend` | `$SYNTH_BACKEND`, then `omlx` | Model provider: `omlx`, `ollama` or `openai` (needs `OPENAI_API_KEY` or `SYNTH_API_KEY`); `anthropic` is not accepted here |
 | `--model` | `Qwen3.8-27B-4bit` on omlx, else the backend's default | Model id; on omlx `SYNTH_MODEL` does not apply |
 | `--temperature` | `0.6` | Sampling temperature |
 | `--worker` | `$KGRAG_ENDPOINT` or `http://localhost:8000` | Worker URL |

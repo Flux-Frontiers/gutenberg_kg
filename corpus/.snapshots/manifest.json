@@ -1,6 +1,6 @@
 {
   "format": "1.0",
-  "last_update": "2026-11-05T00:17:02.249040+00:00",
+  "last_update": "2026-11-07T05:35:52.168825+00:00",
   "snapshots": [
     {
       "key": "1.18.0",
@@ -3148,6 +3148,180 @@
       "tool": "gutenberg-kg",
       "tool_version": "1.33.0",
       "file": "1.33.0.json",
+      "metrics": {
+        "total_nodes": 1380718,
+        "total_edges": 5401478,
+        "total_books": 265,
+        "total_authors": 154,
+        "genres": [
+          {
+            "corpus": "gutenberg-ancient-classical",
+            "label": "Ancient & Classical",
+            "books": 24,
+            "nodes": 123616,
+            "edges": 473927
+          },
+          {
+            "corpus": "gutenberg-shakespeare",
+            "label": "Shakespeare",
+            "books": 4,
+            "nodes": 6271,
+            "edges": 20974
+          },
+          {
+            "corpus": "gutenberg-english-literature",
+            "label": "English Literature",
+            "books": 38,
+            "nodes": 187151,
+            "edges": 836712
+          },
+          {
+            "corpus": "gutenberg-american-literature",
+            "label": "American Literature",
+            "books": 27,
+            "nodes": 110234,
+            "edges": 389557
+          },
+          {
+            "corpus": "gutenberg-french-literature",
+            "label": "French Literature",
+            "books": 12,
+            "nodes": 89523,
+            "edges": 415351
+          },
+          {
+            "corpus": "gutenberg-russian-literature",
+            "label": "Russian Literature",
+            "books": 15,
+            "nodes": 98465,
+            "edges": 451691
+          },
+          {
+            "corpus": "gutenberg-philosophy",
+            "label": "Philosophy",
+            "books": 39,
+            "nodes": 207617,
+            "edges": 721116
+          },
+          {
+            "corpus": "gutenberg-spanish",
+            "label": "Spanish Literature",
+            "books": 1,
+            "nodes": 11431,
+            "edges": 52843
+          },
+          {
+            "corpus": "gutenberg-science-fiction",
+            "label": "Science Fiction",
+            "books": 16,
+            "nodes": 52007,
+            "edges": 179992
+          },
+          {
+            "corpus": "gutenberg-sacred-texts",
+            "label": "Sacred Texts",
+            "books": 7,
+            "nodes": 32317,
+            "edges": 157409
+          },
+          {
+            "corpus": "gutenberg-german-literature",
+            "label": "German Literature",
+            "books": 5,
+            "nodes": 15691,
+            "edges": 48659
+          },
+          {
+            "corpus": "gutenberg-world-literature",
+            "label": "World Literature",
+            "books": 4,
+            "nodes": 18541,
+            "edges": 66008
+          },
+          {
+            "corpus": "gutenberg-letters",
+            "label": "Letters",
+            "books": 8,
+            "nodes": 47469,
+            "edges": 150201
+          },
+          {
+            "corpus": "gutenberg-biography",
+            "label": "Biography",
+            "books": 12,
+            "nodes": 74859,
+            "edges": 293955
+          },
+          {
+            "corpus": "gutenberg-natural-history",
+            "label": "Natural History",
+            "books": 7,
+            "nodes": 44823,
+            "edges": 157476
+          },
+          {
+            "corpus": "gutenberg-travel",
+            "label": "Travel",
+            "books": 6,
+            "nodes": 57125,
+            "edges": 197025
+          },
+          {
+            "corpus": "gutenberg-drama",
+            "label": "Drama",
+            "books": 12,
+            "nodes": 19680,
+            "edges": 76246
+          },
+          {
+            "corpus": "gutenberg-diaries",
+            "label": "Diaries",
+            "books": 4,
+            "nodes": 78217,
+            "edges": 379515
+          },
+          {
+            "corpus": "gutenberg-horror",
+            "label": "Horror",
+            "books": 16,
+            "nodes": 43661,
+            "edges": 165114
+          },
+          {
+            "corpus": "gutenberg-audel-electric",
+            "label": "Technical Reference (IA)",
+            "books": 8,
+            "nodes": 62020,
+            "edges": 167707
+          },
+          {
+            "corpus": "gutenberg-curiosities",
+            "label": "Curiosities",
+            "books": 0,
+            "nodes": 0,
+            "edges": 0
+          }
+        ]
+      },
+      "deltas": {
+        "vs_previous": null,
+        "vs_baseline": {
+          "nodes": 36290,
+          "edges": 121464,
+          "books": 12,
+          "authors": 1
+        }
+      }
+    },
+    {
+      "key": "1.34.0",
+      "branch": "main",
+      "timestamp": "2026-11-07T05:35:52.161223+00:00",
+      "version": "1.34.0",
+      "subject": "corpus:gutenberg",
+      "tool": "gutenberg-kg",
+      "tool_version": "1.34.0",
+      "file": "1.34.0.json",
       "metrics": {
         "total_nodes": 1380718,
         "total_edges": 5401478,
