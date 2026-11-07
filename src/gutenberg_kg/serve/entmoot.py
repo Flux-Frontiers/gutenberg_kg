@@ -740,6 +740,35 @@ def _reminder(passages: list[Passage]) -> str:
     )
 
 
+def _no_text_message(synth, title: str, model: str | None) -> str:
+    """Say why a model returned nothing, as far as the endpoint's model list shows.
+
+    ``synth.complete`` logs the real exception and returns ``None``, so the model
+    list is the only way to tell these cases apart from here. It costs one more
+    request, and only after both attempts have failed.
+
+    :param synth: The text synthesizer.
+    :param title: The title of the book whose turn failed.
+    :param model: The model the turn asked for, or ``None`` for the synthesizer's
+        default.
+    :returns: The error message.
+    """
+    list_models = getattr(synth, "list_models", None)
+    if list_models is None:
+        return f"the model returned no text for {title}; is the endpoint up?"
+    served = list_models()
+    if not served:
+        return (
+            f"no reply for {title}, and the synthesis endpoint could not list its models; "
+            "is it up, and is its API key right?"
+        )
+    cfg = getattr(synth, "_cfg", None)  # TextSynthesizer keeps its TextConfig here
+    name = model or (cfg.resolved_model() if cfg is not None else "")
+    if name and name not in served:
+        return f"the synthesis endpoint does not serve {name}; it lists: {', '.join(served[:10])}"
+    return f"{name or 'the model'} returned no text for {title}"
+
+
 def turn(
     synth,
     tree: Tree,
@@ -798,7 +827,7 @@ def turn(
             reply = second
             grounding = check_grounding(reply, passages, pool, others, own)
     if not reply:
-        raise MootError(f"the model returned no text for {tree.title}; is the endpoint up?")
+        raise MootError(_no_text_message(synth, tree.title, model))
     by_tag = {p.tag: p.node_id for p in passages}
     text, snaps = snap_quotes(reply, pool, others, own)
     return Utterance(

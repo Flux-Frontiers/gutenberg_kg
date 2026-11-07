@@ -523,7 +523,7 @@ Checklist on the Mac that runs the worker:
    forest's dev server as `http://<your-mac>.local:5173` sends that origin,
    which the worker's default `GUTENKG_CORS_ORIGINS` does not include, so
    live moots fail while every other op works. Add it in `docker/.env`:
-   `GUTENKG_CORS_ORIGINS=http://localhost:5173,http://<your-mac>.local:5173,https://flux-frontiers.github.io`.
+   `GUTENKG_CORS_ORIGINS=http://localhost:5173,http://<your-mac>.local:5173,https://flux-frontiers.github.io,kp-forest://forest`.
    Vite itself refuses unknown host names; start the dev server with
    `__VITE_ADDITIONAL_SERVER_ALLOWED_HOSTS=<your-mac>.local`.
 
