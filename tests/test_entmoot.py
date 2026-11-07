@@ -51,7 +51,7 @@ class FakeSynth:
     """Returns scripted replies in order, then repeats the last one."""
 
     def __init__(self, replies=None):
-        self.replies = list(replies or ["Hear me [s1]."])
+        self.replies = list(replies or ['Hear me: "a dreadful thing indeed" [s1].'])
         self.calls: list[list[dict]] = []
         self.models: set = set()
 
@@ -126,8 +126,12 @@ class TestRunMoot:
         assert data["model"] == "m"
         assert data["stats"]["turns"] == 2
         assert data["stats"]["tags_valid_rate"] == 1.0
-        assert data["stats"]["quote_found_rate"] is None
+        assert data["stats"]["quote_found_rate"] == 1.0
         assert data["utterances"][0]["cited"] == {"s1": f"{A}#1"}
+
+
+OPENING = 'Opening line, "a dreadful thing indeed" [s1].'
+SECOND = 'Second line, "a dreadful thing indeed" [s2].'
 
 
 class TestTopicSeeding:
@@ -139,19 +143,19 @@ class TestTopicSeeding:
 
     def test_later_queries_carry_topic_and_incoming_line(self):
         client = FakeClient()
-        synth = FakeSynth(["Opening line [s1].", "Second line [s2]."])
+        synth = FakeSynth([OPENING, SECOND])
         t = run_moot(client, synth, [A, B], "jealousy", 3)
-        assert client.calls[2] == ("jealousy Opening line [s1].", B, 6)
+        assert client.calls[2] == (f"jealousy {OPENING}", B, 6)
         # Overfetched: by turn 3 this tree has cited a passage, so fresh ones are sought.
-        assert client.calls[3] == ("jealousy Second line [s2].", A, 6 * entmoot.FRESH_OVERFETCH)
+        assert client.calls[3] == (f"jealousy {SECOND}", A, 6 * entmoot.FRESH_OVERFETCH)
         assert t.utterances[0].query == "jealousy"
 
     def test_without_topic_later_queries_use_the_incoming_line_only(self):
         client = FakeClient()
-        synth = FakeSynth(["Opening line [s1].", "Second line [s2]."])
+        synth = FakeSynth([OPENING, SECOND])
         run_moot(client, synth, [A, B], None, 3)
-        assert client.calls[2][0] == "Opening line [s1]."
-        assert client.calls[3][0] == "Second line [s2]."
+        assert client.calls[2][0] == OPENING
+        assert client.calls[3][0] == SECOND
 
     def test_persona_names_the_topic(self):
         synth = FakeSynth()
@@ -221,17 +225,19 @@ class TestCheckGrounding:
 
 class TestRetry:
     def test_one_retry_then_success(self):
-        synth = FakeSynth(["Bad [s9].", "Good [s1]."])
+        good = 'Good, "a dreadful thing indeed" [s1].'
+        synth = FakeSynth(["Bad [s9].", good])
         t = run_moot(FakeClient(), synth, [A, B], "jealousy", 2)
         first = t.utterances[0]
-        assert first.attempts == 2 and first.grounded and first.text == "Good [s1]."
+        assert first.attempts == 2 and first.grounded and first.text == good
         assert "did not hold to your passages" in synth.turn_calls()[1][-1]["content"]
 
     def test_an_untagged_reply_is_retried(self):
-        synth = FakeSynth(["To be angry is not the part of a man.", "Be gentle [s1]."])
+        gentle = 'Be gentle: "a dreadful thing indeed" [s1].'
+        synth = FakeSynth(["To be angry is not the part of a man.", gentle])
         t = run_moot(FakeClient(), synth, [A, B], "jealousy", 2)
         first = t.utterances[0]
-        assert first.attempts == 2 and first.grounded and first.text == "Be gentle [s1]."
+        assert first.attempts == 2 and first.grounded and first.text == gentle
 
     def test_an_untagged_reply_twice_is_ungrounded(self):
         synth = FakeSynth(["To be angry is not the part of a man."])
@@ -261,8 +267,14 @@ class TestRetry:
         assert not u.grounding["tags_valid"]
         assert u.attempts == 2 and not u.grounded
 
+    def test_a_turn_with_no_quote_of_its_book_is_retried(self):
+        synth = FakeSynth(["Jealousy is dreadful [s1].", 'It is "a dreadful thing indeed" [s1].'])
+        t = run_moot(FakeClient(), synth, [A, B], "jealousy", 2)
+        first = t.utterances[0]
+        assert first.attempts == 2 and first.grounded
+
     def test_two_failures_keep_the_reply_marked_ungrounded(self):
-        synth = FakeSynth(["Bad [s9].", "Still bad [s7].", "Fine [s1]."])
+        synth = FakeSynth(["Bad [s9].", "Still bad [s7].", 'Fine, "a dreadful thing indeed" [s1].'])
         t = run_moot(FakeClient(), synth, [A, B], "jealousy", 2)
         first = t.utterances[0]
         assert first.attempts == 2 and not first.grounded
@@ -371,7 +383,7 @@ def test_converse_writes_a_transcript(cli, monkeypatch, tmp_path):
         cli, ["converse", A, B, "--topic", "jealousy", "--turns", "2", "--out", str(out)]
     )
     assert result.exit_code == 0, result.output
-    assert "[1] Thus Spake Zarathustra: Hear me [s1]." in result.output
+    assert '[1] Thus Spake Zarathustra: Hear me: "a dreadful thing indeed" [s1].' in result.output
     data = json.loads(out.read_text())
     assert data["model"] == entmoot.DEFAULT_MODEL
     assert synth.models == {entmoot.DEFAULT_MODEL}
@@ -563,17 +575,19 @@ class TestRevisedGrounding:
         synth = KeyedSynth(
             {
                 ZARA: ["I speak of the scorpion and its sting [s1]."],
-                SOMEBODY: ['You said "the scorpion and its sting" [o1], and I agree [s1].'],
+                SOMEBODY: [
+                    'You said "the scorpion and its sting" [o1]; I say "only says: unique" [s1].'
+                ],
             }
         )
         t = run_moot(TurnClient(), synth, [A, B], "jealousy", 2)
         g = t.utterances[1].grounding
         assert (g["other_quotes_found"], g["other_quotes_total"]) == (1, 1)
-        assert (g["quotes_found"], g["quotes_total"]) == (0, 0)  # never counts as own
+        assert (g["quotes_found"], g["quotes_total"]) == (1, 1)  # the own quote alone
         assert t.utterances[1].grounded
         assert t.stats()["other_quote_valid_rate"] == 1.0
 
-    def test_invalid_other_quote_does_not_affect_grounding(self):
+    def test_an_o_quote_found_nowhere_counts_against_grounding(self):
         synth = KeyedSynth(
             {
                 ZARA: ["I speak of the scorpion and its sting [s1]."],
@@ -582,11 +596,20 @@ class TestRevisedGrounding:
         )
         t = run_moot(TurnClient(), synth, [A, B], "jealousy", 2)
         u = t.utterances[1]
-        assert (u.grounding["other_quotes_found"], u.grounding["other_quotes_total"]) == (0, 1)
-        assert u.grounded and u.attempts == 1
-        assert u.quotes == [
-            {"text": "the eagle and the serpent", "found": False, "source": "other"}
-        ]
+        assert (u.grounding["other_quotes_found"], u.grounding["other_quotes_total"]) == (0, 0)
+        assert (u.grounding["quotes_found"], u.grounding["quotes_total"]) == (0, 1)
+        assert not u.grounded and u.attempts == 2
+        assert u.quotes == [{"text": "the eagle and the serpent", "found": False, "source": "own"}]
+
+    def test_an_invented_quote_before_an_o_quote_counts_against_grounding(self):
+        g = check_grounding(
+            'Anger is "a wise man never weeps" as you said "the scorpion and its sting" [o1]. '
+            '"jealousy is a dreadful" [s1].',
+            [Passage("s1", "chunk:1", "n1", "jealousy is a dreadful thing indeed")],
+            others={1: "I speak of the scorpion and its sting."},
+        )
+        assert (g["quotes_found"], g["quotes_total"]) == (1, 2)
+        assert (g["other_quotes_found"], g["other_quotes_total"]) == (1, 1)
 
     def test_an_o_tag_on_the_speakers_own_turn_is_a_valid_self_quote(self):
         synth = KeyedSynth(
@@ -662,7 +685,9 @@ class TestRevisedGrounding:
         assert g["other_quotes_found"] == 1
 
     def test_utterances_are_numbered_from_one_and_shown_to_the_model(self):
-        synth = FakeSynth(["First [s1].", "Second [s1].", "Third [s1]."])
+        synth = FakeSynth(
+            [f'{w}, "a dreadful thing indeed" [s1].' for w in ("First", "Second", "Third")]
+        )
         t = run_moot(FakeClient(), synth, [A, B], "jealousy", 3)
         assert [u.turn for u in t.utterances] == [1, 2, 3]
         assert (
@@ -670,7 +695,7 @@ class TestRevisedGrounding:
             not in synth.turn_calls()[2][1]["content"]
         )
         assert (
-            "Turn 2, The Diary of Somebody has just said: Second [s1]."
+            'Turn 2, The Diary of Somebody has just said: Second, "a dreadful thing indeed" [s1].'
             in synth.turn_calls()[2][1]["content"]
         )
         assert "[oN]" in synth.turn_calls()[0][0]["content"]
@@ -986,7 +1011,7 @@ def test_converse_plain_overrides_a_terminal(cli, monkeypatch):
     monkeypatch.setattr(cmd_converse, "_make_synth", lambda backend: FakeSynth())
     result = CliRunner().invoke(cli, ["converse", A, B, "--turns", "2", "--plain"])
     assert result.exit_code == 0, result.output
-    assert "[1] Thus Spake Zarathustra: Hear me [s1]." in result.output
+    assert '[1] Thus Spake Zarathustra: Hear me: "a dreadful thing indeed" [s1].' in result.output
     assert "╭" not in result.output
 
 

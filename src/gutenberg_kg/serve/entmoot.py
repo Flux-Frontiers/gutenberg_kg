@@ -561,7 +561,9 @@ def check_grounding(
     tree (source ``"other"``) or of the speaker's own earlier turn (source
     ``"self"``). It is valid when it appears in that turn, and it is reported
     separately, never counting toward grounding: words spoken in the moot are
-    model-written, not the book. Words of the moot under an ``[sN]`` tag are
+    model-written, not the book. An ``[oN]`` quote found neither in that turn
+    nor in the speaker's book is counted as a missed own-book quote, so an
+    invented quote cannot pass under an ``[oN]`` tag. Words of the moot under an ``[sN]`` tag are
     checked as an own-book quote, so they are a miss. A reply with no tags
     has ``tags_valid`` true, so ``tags_cited`` is reported; a turn with none
     is not grounded.
@@ -595,6 +597,10 @@ def check_grounding(
         if turns:
             source, texts = _moot_source(turns, others, own)
             found = _quote_in(q, [_normalize(t) for t in texts])
+            if not found and not _quote_in(q, haystacks):
+                # In neither the turn it names nor the speaker's book: an
+                # invented quote, whatever its tag says.
+                source = "own"
             quotes.append({"text": q, "found": found, "source": source})
         else:
             quotes.append({"text": q, "found": _quote_in(q, haystacks), "source": "own"})
@@ -730,11 +736,13 @@ def snap_quotes(
 
 
 def _passes(grounding: dict) -> bool:
-    # A turn must cite its own passages: without an [sN] tag nothing shows
-    # whether a paraphrase came from them or from the model's memory.
+    # A turn must cite its own passages and quote its own book at least once,
+    # as the persona asks: without both, nothing shows whether the reply came
+    # from the passages or from the model's memory.
     return (
         grounding["tags_cited"] > 0
         and grounding["tags_valid"]
+        and grounding["quotes_total"] > 0
         and grounding["quotes_found"] == grounding["quotes_total"]
     )
 

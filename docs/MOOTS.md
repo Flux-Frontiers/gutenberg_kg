@@ -79,13 +79,16 @@ reliably, so more of its quotes end up corrected or unquoted.
    through answer, ask a pointed question, give an example, and concede a point
    before pressing, and each book's last turn closes the moot.
 4. **Grounding.** The raw reply is checked: it must carry at least one `[sN]`
-   tag, each `[sN]` tag must name one of this turn's passages, each `[oN]` tag
-   must name a turn already spoken, each quote of the speaker's own book must
-   appear in a passage that book returned during the moot, and each `[oN]`
-   quote must appear in turn `N`. Quotes of earlier turns are reported but
-   never count as grounding, since words spoken in a moot are model-written.
-   Only double quotes are checked; words in single quotes are not. A turn
-   that fails the check is retried once.
+   tag and at least one quote of its own book. Each `[sN]` tag must name one
+   of this turn's passages, each `[oN]` tag a turn already spoken, and each
+   quote of the speaker's own book must appear in a passage that book
+   returned during the moot. Each `[oN]` quote must appear in turn `N`.
+   Quotes of earlier turns are reported but never count as grounding, since
+   words spoken in a moot are model-written. An `[oN]` quote found neither in
+   turn `N` nor in the speaker's book counts as a missed quote of that book,
+   so an invented quote cannot pass under an `[oN]` tag. Only double quotes
+   are checked; words in single quotes are not. A turn that fails the check
+   is retried once.
 5. **Quote snapping.** Every quote left in the transcript is then made
    verbatim. A quote of 3 or more words that was not found is compared with its
    source; when the source's words match it closely (a similarity of at least

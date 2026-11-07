@@ -20,6 +20,16 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   turn that did not exist, such as `[o9]` in turn 2, was exempt from the
   grounding check, so an invented quote could pass under it. Such a tag now
   fails the turn, as an `[sN]` tag for a passage not given already did.
+- **A grounded turn must quote its own book.** The persona asks for at least
+  one exact quote per turn, but the check did not require one, so a turn with
+  one valid tag and an invented paraphrase passed. A turn with no quote of its
+  own book now gets the reminder retry.
+- **An invented quote cannot pass under an `[oN]` tag.** A quote is tied to
+  the first tag after it, so an invented quote placed before a real quote of
+  the other book was exempt from the check. An `[oN]` quote found neither in
+  the turn it names nor in the speaker's book now counts as a missed quote of
+  that book. An honest misquote of the other book now also fails the turn and
+  is retried; snapping still corrects it in the transcript.
 
 ## [1.34.0] - 2026-11-07
 
