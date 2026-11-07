@@ -79,7 +79,9 @@ reliably, so more of its quotes end up corrected or unquoted.
    through answer, ask a pointed question, give an example, and concede a point
    before pressing, and each book's last turn closes the moot.
 4. **Grounding.** The raw reply is checked: it must carry at least one `[sN]`
-   tag and at least one quote of its own book. Each `[sN]` tag must name one
+   tag and must repeat its own book's words: a quote found in the book, or a
+   run of 6 or more words copied from a passage without quote marks, which
+   models often write. Each `[sN]` tag must name one
    of this turn's passages, each `[oN]` tag a turn already spoken, and each
    quote of the speaker's own book must appear in a passage that book
    returned during the moot. Each `[oN]` quote must appear in turn `N`.

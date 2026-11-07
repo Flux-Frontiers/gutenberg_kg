@@ -55,6 +55,10 @@ _QUOTE_CHARS = str.maketrans(
     }
 )
 _QUOTE_MIN_WORDS = 3
+#: A run of this many words copied from the speaker's own passages, quoted or
+#: not, shows a reply drew on them; models often copy a line without quote marks.
+VERBATIM_MIN_WORDS = 6
+_PLAIN_WORD = re.compile(r"[^\W_]+(?:'[^\W_]+)*")
 # An ellipsis inside a quote marks an elision; each side is checked on its own.
 _ELLIPSIS = re.compile(r"\.\.\.|\u2026")
 
@@ -523,6 +527,28 @@ def _moot_source(
     return source, [spoken[n] for n in turns if n in spoken]
 
 
+def _words(text: str) -> list[str]:
+    """The words of ``text``, normalized, without punctuation or tags."""
+    return _PLAIN_WORD.findall(_TAG_GROUP.sub(" ", _normalize(text)))
+
+
+def _copies_a_run(text: str, sources: list[str], n: int = VERBATIM_MIN_WORDS) -> bool:
+    """Whether ``text`` repeats ``n`` consecutive words of any source.
+
+    :param text: The reply.
+    :param sources: The speaker's own passages.
+    :param n: The run length.
+    :returns: ``True`` when some run of ``n`` words appears in a source.
+    """
+    words = _words(text)
+    runs = {tuple(words[i : i + n]) for i in range(len(words) - n + 1)}
+    for src in sources:
+        w = _words(src)
+        if any(tuple(w[i : i + n]) in runs for i in range(len(w) - n + 1)):
+            return True
+    return False
+
+
 def _quote_in(quote: str, sources: list[str]) -> bool:
     """Whether a quote appears in the source its tag points to.
 
@@ -574,7 +600,10 @@ def check_grounding(
         moot; defaults to ``passages``.
     :param others: The other tree's utterances so far, turn number -> text.
     :param own: The speaker's own earlier utterances, turn number -> text.
-    :returns: ``{"tags_valid", "tags_cited", "quotes_found", "quotes_total",
+    ``verbatim`` says whether the reply repeats :data:`VERBATIM_MIN_WORDS`
+    consecutive words of the speaker's own book, quoted or not.
+
+    :returns: ``{"tags_valid", "tags_cited", "verbatim", "quotes_found", "quotes_total",
         "other_quotes_found", "other_quotes_total", "self_quotes_found",
         "self_quotes_total", "quotes"}``, where ``quotes`` lists
         ``{"text", "found", "source"}`` per quote, ``source`` being
@@ -617,6 +646,9 @@ def check_grounding(
     return {
         "tags_valid": o_valid and all(t in by_tag for t in s_tags),
         "tags_cited": len(s_tags),
+        "verbatim": _copies_a_run(
+            text, [p.content for p in (pool if pool is not None else passages)]
+        ),
         "quotes_found": own_found,
         "quotes_total": own_total,
         "other_quotes_found": o_found,
@@ -736,13 +768,13 @@ def snap_quotes(
 
 
 def _passes(grounding: dict) -> bool:
-    # A turn must cite its own passages and quote its own book at least once,
-    # as the persona asks: without both, nothing shows whether the reply came
-    # from the passages or from the model's memory.
+    # A turn must cite its own passages and repeat their words, in a found
+    # quote or a verbatim run: without both, nothing shows whether the reply
+    # came from the passages or from the model's memory.
     return (
         grounding["tags_cited"] > 0
         and grounding["tags_valid"]
-        and grounding["quotes_total"] > 0
+        and (grounding["quotes_total"] > 0 or grounding.get("verbatim", False))
         and grounding["quotes_found"] == grounding["quotes_total"]
     )
 
@@ -751,9 +783,9 @@ def _reminder(passages: list[Passage]) -> str:
     tags = ", ".join(p.tag for p in passages)
     return (
         "That reply did not hold to your passages. Cite only the tags you were "
-        f"given ({tags}), and put in double quotes only words copied exactly from "
-        f"your passages, at most {MAX_QUOTES} quoted phrases of at least three words "
-        "each; paraphrase the rest with its [sN] tag. Words spoken earlier in the "
+        f"given ({tags}). Put in double quotes at least one phrase copied exactly "
+        f"from your passages, at most {MAX_QUOTES} quoted phrases of at least three "
+        "words each, and nothing else; paraphrase the rest with its [sN] tag. Words spoken earlier in the "
         "moot, the other book's or your own, take an [oN] tag, never an [sN] tag. "
         "Give your reply again."
     )

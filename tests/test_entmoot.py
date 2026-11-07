@@ -273,6 +273,18 @@ class TestRetry:
         first = t.utterances[0]
         assert first.attempts == 2 and first.grounded
 
+    def test_a_turn_that_copies_its_passage_unquoted_is_grounded(self):
+        synth = FakeSynth(["Jealousy is a dreadful thing indeed [s1]."])
+        t = run_moot(FakeClient(), synth, [A, B], "jealousy", 2)
+        first = t.utterances[0]
+        assert first.grounding["verbatim"] and first.grounding["quotes_total"] == 0
+        assert first.attempts == 1 and first.grounded
+
+    def test_the_reminder_asks_for_a_quote(self):
+        synth = FakeSynth(["Jealousy is dreadful [s1]."])
+        run_moot(FakeClient(), synth, [A, B], "jealousy", 2)
+        assert "at least one" in synth.turn_calls()[1][-1]["content"]
+
     def test_two_failures_keep_the_reply_marked_ungrounded(self):
         synth = FakeSynth(["Bad [s9].", "Still bad [s7].", 'Fine, "a dreadful thing indeed" [s1].'])
         t = run_moot(FakeClient(), synth, [A, B], "jealousy", 2)
