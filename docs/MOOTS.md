@@ -78,8 +78,8 @@ reliably, so more of its quotes end up corrected or unquoted.
    of circling one point: the first turn opens, the turns between rotate
    through answer, ask a pointed question, give an example, and concede a point
    before pressing, and each book's last turn closes the moot.
-4. **Grounding.** The raw reply is checked: each `[sN]` tag must name one of
-   this turn's passages, each quote of the speaker's own book must appear in a
+4. **Grounding.** The raw reply is checked: it must carry at least one `[sN]`
+   tag, each `[sN]` tag must name one of this turn's passages, each quote of the speaker's own book must appear in a
    passage that book returned during the moot, and each `[oN]` quote must
    appear in turn `N`. Quotes of earlier turns are reported but never count as
    grounding, since words spoken in a moot are model-written. A turn that

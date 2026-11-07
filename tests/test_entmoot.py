@@ -227,6 +227,28 @@ class TestRetry:
         assert first.attempts == 2 and first.grounded and first.text == "Good [s1]."
         assert "did not hold to your passages" in synth.turn_calls()[1][-1]["content"]
 
+    def test_an_untagged_reply_is_retried(self):
+        synth = FakeSynth(["To be angry is not the part of a man.", "Be gentle [s1]."])
+        t = run_moot(FakeClient(), synth, [A, B], "jealousy", 2)
+        first = t.utterances[0]
+        assert first.attempts == 2 and first.grounded and first.text == "Be gentle [s1]."
+
+    def test_an_untagged_reply_twice_is_ungrounded(self):
+        synth = FakeSynth(["To be angry is not the part of a man."])
+        t = run_moot(FakeClient(), synth, [A, B], "jealousy", 2)
+        assert all(u.attempts == 2 and not u.grounded for u in t.utterances)
+
+    def test_only_o_tags_is_ungrounded(self):
+        synth = KeyedSynth(
+            {
+                ZARA: ["I speak of the scorpion and its sting [s1]."],
+                SOMEBODY: ['You said "the scorpion and its sting" [o1], and I agree.'],
+            }
+        )
+        t = run_moot(TurnClient(), synth, [A, B], "jealousy", 2)
+        u = t.utterances[1]
+        assert u.attempts == 2 and not u.grounded
+
     def test_two_failures_keep_the_reply_marked_ungrounded(self):
         synth = FakeSynth(["Bad [s9].", "Still bad [s7].", "Fine [s1]."])
         t = run_moot(FakeClient(), synth, [A, B], "jealousy", 2)

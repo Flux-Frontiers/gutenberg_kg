@@ -8,6 +8,15 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+### Fixed
+
+- **A moot turn with no `[sN]` tag is no longer grounded.** A reply with no
+  tags and no quotes passed the grounding check, so the Forest showed a
+  paraphrase with no sources as grounded and it was never retried. A turn now
+  needs at least one `[sN]` tag naming one of its passages. A turn that only
+  quotes the other book with `[oN]` also needs one. Without it, the turn gets
+  the reminder retry and is marked ungrounded if it fails again.
+
 ## [1.34.0] - 2026-11-07
 
 ### Added

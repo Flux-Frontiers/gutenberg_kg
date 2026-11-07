@@ -562,7 +562,8 @@ def check_grounding(
     separately, never counting toward grounding: words spoken in the moot are
     model-written, not the book. Words of the moot under an ``[sN]`` tag are
     checked as an own-book quote, so they are a miss. A reply with no tags
-    has ``tags_valid`` true, so ``tags_cited`` is reported to make that visible.
+    has ``tags_valid`` true, so ``tags_cited`` is reported; a turn with none
+    is not grounded.
 
     :param text: The reply.
     :param passages: The passages given this turn.
@@ -725,7 +726,13 @@ def snap_quotes(
 
 
 def _passes(grounding: dict) -> bool:
-    return grounding["tags_valid"] and grounding["quotes_found"] == grounding["quotes_total"]
+    # A turn must cite its own passages: without an [sN] tag nothing shows
+    # whether a paraphrase came from them or from the model's memory.
+    return (
+        grounding["tags_cited"] > 0
+        and grounding["tags_valid"]
+        and grounding["quotes_found"] == grounding["quotes_total"]
+    )
 
 
 def _reminder(passages: list[Passage]) -> str:
