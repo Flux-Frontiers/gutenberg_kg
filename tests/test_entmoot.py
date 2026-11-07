@@ -249,6 +249,18 @@ class TestRetry:
         u = t.utterances[1]
         assert u.attempts == 2 and not u.grounded
 
+    def test_an_o_tag_for_a_turn_not_yet_spoken_is_ungrounded(self):
+        synth = KeyedSynth(
+            {
+                ZARA: ["I speak of the scorpion and its sting [s1]."],
+                SOMEBODY: ['As was said, "a wise man never weeps" [o9], and I agree [s1].'],
+            }
+        )
+        t = run_moot(TurnClient(), synth, [A, B], "jealousy", 2)
+        u = t.utterances[1]
+        assert not u.grounding["tags_valid"]
+        assert u.attempts == 2 and not u.grounded
+
     def test_two_failures_keep_the_reply_marked_ungrounded(self):
         synth = FakeSynth(["Bad [s9].", "Still bad [s7].", "Fine [s1]."])
         t = run_moot(FakeClient(), synth, [A, B], "jealousy", 2)

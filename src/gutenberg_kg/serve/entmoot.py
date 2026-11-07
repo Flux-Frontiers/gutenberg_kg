@@ -552,7 +552,8 @@ def check_grounding(
 ) -> dict:
     """Check a reply's citations and quotes.
 
-    ``[sN]`` tags must name a passage given this turn. A quote of the
+    ``[sN]`` tags must name a passage given this turn, and ``[oN]`` tags a
+    turn already spoken. A quote of the
     speaker's own book is found when it appears, after normalization, in any
     passage of that book retrieved during the moot (``pool``); a quote with
     an ellipsis is checked fragment by fragment (see :func:`_quote_in`). A
@@ -578,9 +579,12 @@ def check_grounding(
         ``"own"`` (the speaker's book), ``"other"`` or ``"self"``.
     """
     by_tag = {p.tag for p in passages}
-    s_tags = [t for t in parse_tags(text) if t.startswith("s")]
+    tags = parse_tags(text)
+    s_tags = [t for t in tags if t.startswith("s")]
     haystacks = [_normalize(p.content) for p in (pool if pool is not None else passages)]
     others, own = others or {}, own or {}
+    spoken = others.keys() | own.keys()
+    o_valid = all(int(t[1:]) in spoken for t in tags if t.startswith("o"))
     flat = text.translate(_QUOTE_CHARS)
     spans = _quote_spans(flat)
     quotes = []
@@ -605,7 +609,7 @@ def check_grounding(
         count("self"),
     )
     return {
-        "tags_valid": all(t in by_tag for t in s_tags),
+        "tags_valid": o_valid and all(t in by_tag for t in s_tags),
         "tags_cited": len(s_tags),
         "quotes_found": own_found,
         "quotes_total": own_total,

@@ -16,6 +16,10 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   needs at least one `[sN]` tag naming one of its passages. A turn that only
   quotes the other book with `[oN]` also needs one. Without it, the turn gets
   the reminder retry and is marked ungrounded if it fails again.
+- **An `[oN]` tag must name a turn already spoken.** A quote tagged with a
+  turn that did not exist, such as `[o9]` in turn 2, was exempt from the
+  grounding check, so an invented quote could pass under it. Such a tag now
+  fails the turn, as an `[sN]` tag for a passage not given already did.
 
 ## [1.34.0] - 2026-11-07
 
