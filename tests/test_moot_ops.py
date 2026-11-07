@@ -48,7 +48,7 @@ class FakeSynth:
             self.fail_first -= 1
             raise ConnectionError("model server down")
         self.n += 1
-        return f"Reply {self.n} [s1]."
+        return f'Reply {self.n}: "virtue is its own reward" [s1].'
 
 
 VOICES = {"marcus_aurelius": {"gender": "male", "accent": None, "source": "wikidata"}}
