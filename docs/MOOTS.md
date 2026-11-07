@@ -148,8 +148,9 @@ Two settings let a browser reach the worker:
 
 - **`GUTENKG_CORS_ORIGINS`**: the origins allowed to call it, comma
   separated. `docker compose` and `make run` default to the forest's dev
-  server, `http://localhost:5173`, and the published forest,
-  `https://flux-frontiers.github.io`. Set it empty to turn CORS off. A
+  server, `http://localhost:5173`, the published forest,
+  `https://flux-frontiers.github.io`, and the Forest tab of the Knowledge
+  Press app, `kp-forest://forest`. Set it empty to turn CORS off. A
   browser on another device sends the origin it opened, such as
   `http://<your-mac>.local:5173`, so add that too (see the installation
   guide's LAN checklist).

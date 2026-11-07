@@ -37,6 +37,7 @@ _SYNTH_PROVIDERS: dict[str, str] = {
     "oMLX": "omlx",
     "Ollama": "ollama",
     "OpenAI": "openai",
+    "Anthropic": "anthropic",
 }
 
 # Synthesis models to hide from the dropdown. Reasoning models like Agents-A1

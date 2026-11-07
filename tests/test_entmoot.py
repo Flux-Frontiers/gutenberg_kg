@@ -244,6 +244,38 @@ class TestRetry:
         with pytest.raises(MootError):
             run_moot(FakeClient(), Dead(), [A, B], "jealousy", 2)
 
+    @pytest.mark.parametrize(
+        ("served", "expected"),
+        [
+            ([], "could not list its models"),
+            (["other-model"], "does not serve wanted-model; it lists: other-model"),
+            (["wanted-model"], "wanted-model returned no text"),
+        ],
+    )
+    def test_no_text_error_names_the_cause(self, served, expected):
+        class Silent:
+            def complete(self, *_a, **_kw):
+                return None
+
+            def list_models(self):
+                return served
+
+        with pytest.raises(MootError, match=expected):
+            run_moot(FakeClient(), Silent(), [A, B], "jealousy", 2, model="wanted-model")
+
+    def test_no_text_error_uses_the_synthesizers_default_model(self):
+        class Silent:
+            _cfg = type("Cfg", (), {"resolved_model": staticmethod(lambda: "default-model")})
+
+            def complete(self, *_a, **_kw):
+                return None
+
+            def list_models(self):
+                return ["other-model"]
+
+        with pytest.raises(MootError, match="does not serve default-model"):
+            run_moot(FakeClient(), Silent(), [A, B], "jealousy", 2)
+
 
 # ---------------------------------------------------------------------------
 # CLI

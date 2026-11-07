@@ -116,7 +116,7 @@ LLM only summarizes verified passages, it never invents sources. When enabled, t
 extra controls appear:
 
 - **Provider** — `oMLX` (local MLX, Apple Silicon), `Ollama` (local, cross-platform),
-  or `OpenAI` (cloud).
+  `OpenAI` (cloud) or `Anthropic` (cloud, text only).
 - **Model** — fetched live from the selected provider; **🔄 Refresh models** re-queries
   the list.
 
@@ -133,8 +133,8 @@ The sidebar **🖼️ Image** section acts on the most recent result:
   visual scene description, then an image backend generates the illustration. The
   **Resolution** selector (Preview / Standard / Full) trades quality for speed.
   **Image backend** picks what draws it: **Auto** follows the synthesis
-  provider, OpenAI images for OpenAI and the local image server for oMLX or
-  Ollama (the worker's default when there is no local server or no provider); **Local**
+  provider, OpenAI images for OpenAI and the local image server for oMLX, Ollama
+  or Anthropic (the worker's default when there is no local server or no provider); **Local**
   and **OpenAI** appear only when the worker can use them right now (its image
   server answers, or it holds an OpenAI key). OpenAI bills per image. The iOS
   and macOS apps have the same picker under Settings > Illustrations.
@@ -164,8 +164,9 @@ it talks to.
 
 **Read by the worker** (set in [`docker/.env`](../docker/.env.example) — copy
 `docker/.env.example` to `docker/.env`): `VLLM_ENDPOINT_URL` / `VLLM_MODEL` /
-`VLLM_API_KEY` (oMLX), `OLLAMA_ENDPOINT` (Ollama), `OPENAI_API_KEY` (OpenAI), and
-`GUTENKG_IMAGE_ENDPOINT` / `IMAGE_STEPS` (image generation). See
+`VLLM_API_KEY` (oMLX), `OLLAMA_ENDPOINT` (Ollama), `OPENAI_API_KEY` (OpenAI),
+`ANTHROPIC_API_KEY` (Anthropic), and `GUTENKG_IMAGE_ENDPOINT` / `IMAGE_STEPS`
+(image generation). See
 [`docs/INSTALLATION.md`](INSTALLATION.md#environment-variables--full-reference) for
 the full reference.
 

@@ -36,7 +36,7 @@ services:
       # Live moots from the Knowledge Press Forest (serve/moot_ops.py): the
       # origins allowed to call this worker, and an optional token the forest
       # sends instead of HANDLER_SECRET, which must never reach a browser.
-      GUTENKG_CORS_ORIGINS: ${GUTENKG_CORS_ORIGINS-http://localhost:5173,https://flux-frontiers.github.io}
+      GUTENKG_CORS_ORIGINS: ${GUTENKG_CORS_ORIGINS-http://localhost:5173,https://flux-frontiers.github.io,kp-forest://forest}
       MOOT_TOKEN: ${MOOT_TOKEN:-}
       # Synthesis via a host LLM server (optional — omit to disable).
       # Defaults target oMLX on :8080; see docker/.env.example.
@@ -45,6 +45,7 @@ services:
       VLLM_API_KEY: ${VLLM_API_KEY:-}
       OLLAMA_ENDPOINT: ${OLLAMA_ENDPOINT:-http://host.docker.internal:11434/v1}
       OPENAI_API_KEY: ${OPENAI_API_KEY:-}
+      ANTHROPIC_API_KEY: ${ANTHROPIC_API_KEY:-}
       # Canonical image endpoint variable.
       GUTENKG_IMAGE_ENDPOINT: ${GUTENKG_IMAGE_ENDPOINT:-http://host.docker.internal:8090}
       # Compatibility alias for components still reading IMAGE_ENDPOINT.
