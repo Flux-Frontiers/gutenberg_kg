@@ -23,6 +23,18 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   models answer: 0.29.2 sent parameters they reject, and only the GPT-4
   family worked. The model list for OpenAI now holds only chat models.
 
+### Fixed
+
+- **Live moots work from the Knowledge Press app by default.** The default
+  `GUTENKG_CORS_ORIGINS` in `docker-compose.yml` and `make run` now includes
+  `kp-forest://forest`, the origin of the app's Forest tab. Without it, the
+  preflight got a 405 until someone edited `docker/.env`.
+- **A moot's model failure says what is wrong.** The error told every case to
+  check the endpoint. It now separates an endpoint that cannot list its models,
+  a model the endpoint does not serve, and a served model that returned nothing.
+  This matters on oMLX, where moots ask for `Qwen3.8-27B-4bit` rather than
+  `VLLM_MODEL`.
+
 ## [1.33.0] - 2026-11-04
 
 ### Changed
