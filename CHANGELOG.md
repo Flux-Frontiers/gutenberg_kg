@@ -8,6 +8,19 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+### Added
+
+- **A literary year for every corpus work.** `corpus/pub_dates.tsv` gives
+  each of the 265 works the year it was first published, performed or (for
+  ancient and sacred texts) composed, with its source and confidence. It is
+  the data behind the Knowledge Press forest's timeline slider.
+  `scripts/lookup_pub_dates.py` resolves it from hand dates in
+  `corpus/pub_dates_overrides.tsv`, the year each reference summary states,
+  and Wikidata (by Gutenberg ebook ID, or by title among the author's works
+  found by Gutenberg author ID). A year after the author's death becomes the
+  death year; a set's volumes share the first volume's year. No
+  `reference.md` is changed.
+
 ## [1.34.1] - 2026-11-07
 
 ### Fixed

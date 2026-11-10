@@ -1,0 +1,67 @@
+# Hand-dated literary years for corpus works the automatic lookup cannot date.
+# year: signed (negative is BC). basis: published | performed | composed.
+# confidence: exact | approx (approx means within a few decades or the century).
+# Rules: multi-volume sets use the first volume's year; co-authored works use the primary author.
+entry	year	basis	confidence	note
+audel-electric/Audels Electric Library Vol 1	1929	published	exact	Audel set dated 1929 throughout (Frank D. Graham, primary author)
+audel-electric/Audels Electric Library Vol 2	1929	published	exact	Audel set dated 1929 throughout
+audel-electric/Audels Electric Library Vol 3	1929	published	exact	Audel set dated 1929 throughout
+audel-electric/Audels Electric Library Vol 4	1929	published	exact	Audel set dated 1929 throughout
+audel-electric/Audels Electric Library Vol 7	1929	published	exact	Audel set dated 1929 throughout
+audel-electric/Audels Electric Library Vol 8	1929	published	exact	Audel set dated 1929 throughout
+audel-electric/Audels Electric Library Vol 9	1929	published	exact	Audel set dated 1929 throughout
+audel-electric/Audels Electric Library Vol 10	1929	published	exact	Audel set dated 1929 throughout
+drama/The Duchess of Malfi — John Webster	1613	performed	approx	first performed c. 1613; printed 1623
+science-fiction/Symzonia: Voyage of Discovery	1820	published	exact	"Captain Adam Seaborn" (pseudonym)
+english-literature/Robinson Crusoe	1719	published	exact	Defoe
+ancient-classical/Medea of Euripides	-431	performed	exact	Dionysia, 431 BC
+ancient-classical/Minor Dialogues, Together With the Dialogue on Clemency	55	composed	approx	Seneca; De Clementia c. AD 55-56
+philosophy/The Art of War (Sun Tzu)	-500	composed	approx	traditionally 5th century BC
+philosophy/The Kama Sutra of Vatsyayana	300	composed	approx	c. 3rd century AD
+philosophy/The Lives and Opinions of Eminent Philosophers	230	composed	approx	Diogenes Laertius, early 3rd century AD
+sacred-texts/The Upanishads (Max Müller translation)	-800	composed	approx	earliest principal Upanishads c. 800 BC
+sacred-texts/Dhammapada (F. Max Müller translation)	-250	composed	approx	c. 3rd century BC
+sacred-texts/The Bhagavad Gita (Edwin Arnold verse translation)	-200	composed	approx	c. 2nd century BC
+sacred-texts/Tao Te Ching (James Legge translation)	-400	composed	approx	c. 4th century BC
+sacred-texts/The Quran (Rodwell translation)	632	composed	exact	revelation completed AD 632
+sacred-texts/The Bible (King James Version)	-1000	composed	approx	oldest Hebrew Bible texts c. 1000 BC
+diaries/The Diary of Samuel Pepys — Complete	1660	composed	exact	first diary entry year
+diaries/The Diary of John Evelyn — Volume 1	1632	composed	exact	first diary period year
+diaries/The Diary of John Evelyn — Volume 2	1632	composed	exact	multi-volume: first volume year
+diaries/The Journal of a Tour to the Hebrides with Samuel Johnson	1773	composed	exact	tour of 1773; published 1785
+sacred-texts/The Analects of Confucius (James Legge translation)	-475	composed	approx	compiled after Confucius (d. 479 BC); reference.md names the translator
+world-literature/One Thousand and One Nights (Lane translation)	850	composed	approx	oldest Arabic fragment, 9th century; reference.md names Andrew Lang as author (folder says Lane)
+world-literature/The Divine Comedy (Longfellow)	1308	composed	approx	begun c. 1308; matches the Cary translation
+american-literature/Tales of Mystery and Imagination (Poe)	1845	published	approx	Poe's own collection Tales (1845); this anthology title is posthumous
+american-literature/The Works of Edgar Allan Poe, Volume 2 (Poe)	1845	published	approx	collected tales; dated with Tales (1845)
+american-literature/The Works of Edgar Allan Poe, Volume 3 (Poe)	1845	published	approx	multi-volume: dated with Volume 2
+american-literature/The Works of Edgar Allan Poe, Volume 4 (Poe)	1845	published	approx	multi-volume: dated with Volume 2
+american-literature/The Works of Edgar Allan Poe, Volume 5 (Poe)	1845	published	approx	multi-volume: dated with Volume 2
+american-literature/The Star-Treader, and other poems	1912	published	exact	Clark Ashton Smith's first collection
+ancient-classical/A Selection from the Discourses of Epictetus with the Encheiridion	108	composed	approx	Arrian's record of Epictetus, c. AD 108
+ancient-classical/The Golden Sayings of Epictetus, with the Hymn of Cleanthes	108	composed	approx	from Arrian's Discourses, c. AD 108
+ancient-classical/The Teaching of Epictetus	108	composed	approx	from Arrian's Discourses, c. AD 108
+philosophy/The Enchiridion	125	composed	approx	Arrian's handbook of Epictetus, c. AD 125
+ancient-classical/On the Nature of Things (Lucretius)	-55	composed	approx	c. 55 BC
+ancient-classical/The Eleven Comedies, Volume 1	-425	performed	exact	first play, The Acharnians, 425 BC
+ancient-classical/The Eleven Comedies, Volume 2	-425	performed	exact	multi-volume: first volume year
+ancient-classical/The House of Atreus; Being the Agamemnon, the Libation bearers, and the Furies	-458	performed	exact	Oresteia, Dionysia 458 BC
+ancient-classical/The Iliad	-750	composed	approx	c. 8th century BC
+ancient-classical/The Odyssey	-725	composed	approx	c. late 8th century BC, after the Iliad
+biography/Autobiography of Benvenuto Cellini	1558	composed	approx	written 1558-1563; published 1728
+biography/Miracle Mongers and Their Methods — Harry Houdini	1920	published	exact	Houdini
+drama/Plays by Anton Chekhov, Second Series (Chekhov)	1884	composed	exact	first play in the volume, On the High Road (1884)
+drama/The Playboy of the Western World (Synge)	1907	performed	exact	Abbey Theatre, January 1907
+letters/Letters of John Keats to His Family and Friends	1816	composed	exact	first letter in the text, November 1816
+letters/Letters of Pliny the Younger	100	composed	approx	letters published c. AD 100-109
+letters/Letters of the Right Honourable Lady Mary Wortley Montagu	1716	composed	exact	first letter in the text, Rotterdam, August 1716
+letters/Letters to His Son — Lord Chesterfield	1748	composed	exact	first letter in this volume (Letter XXIV), January 1748
+letters/The Best Letters of Charles Lamb (Lamb)	1796	composed	exact	first letter in the text, May 1796
+philosophy/Hegel's Lectures on the History of Philosophy: Volume 3 (of 3)	1805	composed	approx	lectures first given at Jena 1805; published 1833-1836
+philosophy/Nicomachean Ethics (Aristotle)	-340	composed	approx	c. 340 BC
+philosophy/Politics (Aristotle)	-350	composed	approx	c. 350 BC
+philosophy/Plutarch's Morals	100	composed	approx	Moralia, c. AD 100
+philosophy/The City of God, Volume I	426	published	exact	completed AD 426 (begun 413)
+philosophy/The Crown of Wild Olive	1866	published	exact	Ruskin
+russian-literature/The Mantle, and Other Stories (Gogol)	1842	published	exact	title story, The Overcoat (1842)
+travel/Travels in the interior districts of Africa: performed under the direction and patronage of the African Association, in the years 1795, 1796, and 1797	1799	published	exact	Mungo Park
