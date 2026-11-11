@@ -24,6 +24,13 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   Press catalog gains an optional `year` per book, read from
   `corpus/pub_dates.tsv`. A corpus without the table exports as before.
 
+### Documentation
+
+- **Literary years guide** (`docs/PUB_DATES.md`): how each year is resolved,
+  the overrides conventions, the confidence breakdown, reviewing conflicts and
+  regenerating the table. Linked from the README, the cheatsheet and the
+  Knowledge Press page.
+
 ## [1.34.1] - 2026-11-07
 
 ### Fixed

@@ -59,6 +59,7 @@ nav:
   - Corpus:
       - Books in the corpus: CORPUS.md
       - Corpus wishlist: CORPUS_WISHLIST.md
+      - Literary years: PUB_DATES.md
       - Download pipeline: DOWNLOAD_PIPELINE.md
       - IA catalog workflow: IA_CATALOG_WORKFLOW.md
       - IA OCR text: IA_OCR_TEXT.md

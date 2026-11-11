@@ -48,7 +48,7 @@ git clone https://github.com/Flux-Frontiers/knowledge_press
 cd knowledge_press && make web-install web-dev
 ```
 
-The book catalog is generated from the corpus rather than hand-maintained — `gutenkg export-web-catalog` (also `make export-web-catalog`) counts DocKG chunk nodes per book and writes the forest's `src/game/catalogPart*.ts` in a sibling knowledge_press checkout (`KNOWLEDGE_PRESS_DIR` to point elsewhere), so the forest follows the corpus instead of drifting from it. `gutenkg export-web-books` (also `make export-web-books`) writes each book's chapters from the Swift packs as `web/public/books/<slug>.json`, which is how the published forest reads books without a worker.
+The book catalog is generated from the corpus rather than hand-maintained — `gutenkg export-web-catalog` (also `make export-web-catalog`) counts DocKG chunk nodes per book and writes the forest's `src/game/catalogPart*.ts` in a sibling knowledge_press checkout (`KNOWLEDGE_PRESS_DIR` to point elsewhere), so the forest follows the corpus instead of drifting from it. Each book also carries its literary year (first published, performed or composed) from `corpus/pub_dates.tsv`, which drives the forest's timeline; see [Literary years](docs/PUB_DATES.md). `gutenkg export-web-books` (also `make export-web-books`) writes each book's chapters from the Swift packs as `web/public/books/<slug>.json`, which is how the published forest reads books without a worker.
 
 ### Moots: books that talk to each other
 

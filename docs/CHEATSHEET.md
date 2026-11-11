@@ -316,6 +316,16 @@ gutenkg export-web-catalog                 # -> ../knowledge_press/web/src/game/
 make export-web-catalog                    # the same; KNOWLEDGE_PRESS_DIR moves the checkout
 ```
 
+Each book's `year` comes from `corpus/pub_dates.tsv`. Hand dates go in
+`corpus/pub_dates_overrides.tsv`; then rerun the resolver (it queries Wikidata
+and writes a review TSV, nothing under `corpus/`). See
+[Literary years](PUB_DATES.md).
+
+```bash
+python3 -I scripts/lookup_pub_dates.py /tmp/pub_dates_review.tsv /tmp/pub_dates_cache.json            # every work
+python3 -I scripts/lookup_pub_dates.py /tmp/pub_dates_review.tsv /tmp/pub_dates_cache.json "genre/Book"  # one work
+```
+
 The forest's reader reads each book from a static `<slug>.json`, so the
 published site needs no worker. `export-web-books` writes them from the Swift
 packs, with chapters built as the worker's `get_chapter` builds them. Run
