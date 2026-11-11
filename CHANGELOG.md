@@ -8,6 +8,8 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+## [1.35.0] - 2026-11-10
+
 ### Added
 
 - **A literary year for every corpus work.** `corpus/pub_dates.tsv` gives
@@ -30,6 +32,10 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   the overrides conventions, the confidence breakdown, reviewing conflicts and
   regenerating the table. Linked from the README, the cheatsheet and the
   Knowledge Press page.
+
+### Changed
+
+- **kg-rag floor 0.18.2** (pyproject, Dockerfile `KG_RAG_VERSION`, runpod).
 
 ## [1.34.1] - 2026-11-07
 
