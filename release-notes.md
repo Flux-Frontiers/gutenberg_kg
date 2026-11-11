@@ -24,6 +24,11 @@
   the overrides conventions, the confidence breakdown, reviewing conflicts and
   regenerating the table. Linked from the README, the cheatsheet and the
   Knowledge Press page.
+- **Interactive literary-years charts in the guide.** `scripts/plot_pub_dates.py`
+  writes `docs/assets/literary_years.html` from `corpus/pub_dates.tsv`: works
+  by era, each genre's span with one dot per work, the confidence and source
+  breakdowns, and the years to review. Plotly, following the site's light or
+  dark scheme; `docs/PUB_DATES.md` embeds it.
 
 ### Changed
 

@@ -324,6 +324,7 @@ and writes a review TSV, nothing under `corpus/`). See
 ```bash
 python3 -I scripts/lookup_pub_dates.py /tmp/pub_dates_review.tsv /tmp/pub_dates_cache.json            # every work
 python3 -I scripts/lookup_pub_dates.py /tmp/pub_dates_review.tsv /tmp/pub_dates_cache.json "genre/Book"  # one work
+poetry run python scripts/plot_pub_dates.py                                                            # redraw the docs charts
 ```
 
 The forest's reader reads each book from a static `<slug>.json`, so the

@@ -34,8 +34,9 @@ Each work is resolved in this order. The first step that gives a year wins.
     Agreement within two years is `high` confidence. One source alone is
     `medium`. Disagreement is `conflict`; it takes the earlier year that falls
     within the author's life.
+
 4. **An estimate** when nothing else dates the work: birth + 40, or death - 10,
-   at `low` confidence. No current work needs one.
+    at `low` confidence. No current work needs one.
 
 Two rules then apply to every row:
 
@@ -62,8 +63,11 @@ override. Four Wikidata years are `approx` (Herodotus, Ovid, Plutarch,
 Plato's *Phaedo*) and two were clamped to the author's death (Mill's
 *Autobiography*, Marlowe's *Doctor Faustus*).
 
-The span runs from 1000 BC to 1931. 176 works (two thirds) fall in 1800-1931;
-29 are BC.
+<iframe src="../assets/literary_years.html" title="Corpus literary years: charts"
+        style="width: 100%; height: 2400px; border: 0;" loading="lazy"></iframe>
+
+The charts are written by `scripts/plot_pub_dates.py` from
+`corpus/pub_dates.tsv`. [Open them on their own page](assets/literary_years.html).
 
 ## Reviewing conflicts
 
@@ -90,7 +94,12 @@ python3 -I scripts/lookup_pub_dates.py /tmp/pub_dates_review.tsv /tmp/pub_dates_
 The script writes a wider review TSV (author dates, Wikidata route and rejected
 matches) and changes nothing under `corpus/`. Read the `conflict`, `approx`,
 `clamped-*` and `error` rows, then copy the `entry` through `wd_work` columns
-into `corpus/pub_dates.tsv` below its two comment lines.
+into `corpus/pub_dates.tsv` below its two comment lines. Then redraw the
+charts on this page:
+
+```bash
+poetry run python scripts/plot_pub_dates.py   # -> docs/assets/literary_years.html
+```
 
 A book added to the corpus has no year until this is rerun for it. The web
 catalog export leaves `year` out for an undated book, so the forest still
