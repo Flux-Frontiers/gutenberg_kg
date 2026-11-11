@@ -200,3 +200,48 @@ class TestWrite:
         )
         text = export_web_catalog.emit_part([row], 1)
         assert '{ label: "1660", entries: 2, bins: [1,0,1] },' in text
+
+
+class TestYear:
+    def _pub_dates(self, root: Path, rows: str) -> None:
+        (root / "pub_dates.tsv").write_text(
+            "# comment line\nentry\tyear\tsource\n" + rows, encoding="utf-8"
+        )
+
+    def test_year_comes_from_pub_dates(self, tmp_path: Path):
+        _write_book(
+            tmp_path,
+            "ancient-classical",
+            "The Iliad",
+            title="The Iliad",
+            author="Homer",
+            chunks=["Sing, O goddess."],
+        )
+        self._pub_dates(tmp_path, "ancient-classical/The Iliad\t-750\toverride\n")
+        (row,) = export_web_catalog.scan_corpus(tmp_path)
+        assert row.year == -750
+
+    def test_missing_table_or_row_leaves_year_unset(self, tmp_path: Path):
+        _write_book(tmp_path, "drama", "Hamlet", title="Hamlet", author="Shakespeare", chunks=["x"])
+        (row,) = export_web_catalog.scan_corpus(tmp_path)
+        assert row.year is None
+        self._pub_dates(tmp_path, "drama/Other\t1600\tsummary\n")
+        (row,) = export_web_catalog.scan_corpus(tmp_path)
+        assert row.year is None
+
+    def test_year_is_written_only_when_known(self):
+        base = dict(
+            slug="s",
+            title="T",
+            book="B",
+            author="A",
+            genre="drama",
+            genre_label="Drama",
+            chunks=1,
+            excerpt="",
+        )
+        dated = export_web_catalog.emit_part([export_web_catalog.BookRow(**base, year=1603)], 1)
+        undated = export_web_catalog.emit_part([export_web_catalog.BookRow(**base)], 1)
+        assert "    year: 1603," in dated
+        assert "year:" not in undated
+        assert "year?: number" in export_web_catalog.CATALOG_TYPES

@@ -20,6 +20,9 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   found by Gutenberg author ID). A year after the author's death becomes the
   death year; a set's volumes share the first volume's year. No
   `reference.md` is changed.
+- **`gutenkg export-web-catalog` writes each book's `year`.** The Knowledge
+  Press catalog gains an optional `year` per book, read from
+  `corpus/pub_dates.tsv`. A corpus without the table exports as before.
 
 ## [1.34.1] - 2026-11-07
 

@@ -23,6 +23,7 @@ Usage:
 
 from __future__ import annotations
 
+import csv
 import json
 import os
 import re
@@ -80,6 +81,8 @@ class BookRow:
     tags: list[str] = field(default_factory=list)
     # Diaries only: period limbs from gutenberg_kg.treegeom.diary_periods.
     periods: list[dict] = field(default_factory=list)
+    # Literary year from corpus/pub_dates.tsv (negative is BC); None when undated.
+    year: int | None = None
 
 
 def slug_from_title(title: str) -> str:
@@ -156,7 +159,27 @@ def diary_periods_for(book_dir: Path, genre: str) -> list[dict]:
     return diary_periods(nodes, edges, load_entry_times(meta))
 
 
-def collect_book(book_dir: Path, genre: str) -> BookRow | None:
+def load_pub_years(root: Path) -> dict[str, int]:
+    """Literary years from ``<root>/pub_dates.tsv``, keyed by ``genre/Book Folder``.
+
+    The table is written by ``scripts/lookup_pub_dates.py``. A missing table
+    yields no years, so the export still works on a corpus without one.
+
+    :param root: Corpus root.
+    :return: Year per entry (negative is BC).
+    """
+    path = root / "pub_dates.tsv"
+    if not path.is_file():
+        return {}
+    lines = [
+        ln for ln in path.read_text(encoding="utf-8").splitlines() if ln and not ln.startswith("#")
+    ]
+    return {
+        r["entry"]: int(r["year"]) for r in csv.DictReader(lines, delimiter="\t") if r.get("year")
+    }
+
+
+def collect_book(book_dir: Path, genre: str, year: int | None = None) -> BookRow | None:
     db = kg_db(book_dir)
     if db is None:
         return None
@@ -177,6 +200,7 @@ def collect_book(book_dir: Path, genre: str) -> BookRow | None:
         excerpt=excerpt,
         tags=[genre],
         periods=diary_periods_for(book_dir, genre) if db.parent.name == ".diarykg" else [],
+        year=year,
     )
 
 
@@ -185,13 +209,16 @@ def scan_corpus(root: Path) -> list[BookRow]:
     missing = 0
     if not root.is_dir():
         return books
+    years = load_pub_years(root)
     for genre_dir in sorted(p for p in root.iterdir() if p.is_dir() and not p.name.startswith(".")):
         if genre_dir.name == "authors":
             continue
         for book_dir in sorted(
             p for p in genre_dir.iterdir() if p.is_dir() and not p.name.startswith(".")
         ):
-            row = collect_book(book_dir, genre_dir.name)
+            row = collect_book(
+                book_dir, genre_dir.name, years.get(f"{genre_dir.name}/{book_dir.name}")
+            )
             if row is None:
                 missing += 1
                 continue
@@ -222,6 +249,8 @@ def emit_part(rows: list[BookRow], index: int) -> str:
         lines.append(f"    chunks: {r.chunks},")
         lines.append(f"    excerpt: {ts_string(r.excerpt)},")
         lines.append(f"    tags: {json.dumps(r.tags, ensure_ascii=False)},")
+        if r.year is not None:
+            lines.append(f"    year: {r.year},")
         if r.periods:
             lines.append("    periods: [")
             for p in r.periods:
@@ -269,6 +298,11 @@ CATALOG_TYPES = """export type Book = {
   chunks: number;
   excerpt: string;
   tags: string[];
+  /**
+   * Literary year: first published, performed, or (ancient and sacred texts)
+   * composed. Negative is BC. Absent when the corpus has no date for the work.
+   */
+  year?: number;
   /**
    * Diaries only: one limb per period (a calendar year when dated), earliest
    * first. `bins` counts the period's chunks in equal slices along its limb,
