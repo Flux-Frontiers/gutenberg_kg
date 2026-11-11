@@ -42,7 +42,7 @@ files these commands write.
 |---|---|---|
 | `gutenkg export-swift` | `core.pack`, `gutenberg.pack`, `diaries.pack`, their `.vectors`, `manifest.json`, `golden.json` under `bundles/<bundle>/swift/` | The app. See [On-device corpus packs](ON_DEVICE.md). |
 | `gutenkg export-embedder` | The Core ML query embedder, beside the packs | The app |
-| `gutenkg export-web-catalog` | The forest's book catalog, `web/src/game/catalog*.ts` | The forest |
+| `gutenkg export-web-catalog` | The forest's book catalog, `web/src/game/catalog*.ts`, with each book's literary year from `corpus/pub_dates.tsv` ([Literary years](PUB_DATES.md)) | The forest and its timeline |
 | `gutenkg export-web-books` | One `web/public/books/<slug>.json` per book, built from the Swift packs | The forest's reader |
 | `gutenkg export-web-moots` | One moot pack per `gutenkg converse --out` transcript, plus `index.json`, under `web/public/moots/` | The forest's moot player |
 

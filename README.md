@@ -8,7 +8,7 @@
   <a href="https://www.python.org/"><img src="https://img.shields.io/badge/python-3.12%20%7C%203.13-blue.svg" alt="Python"/></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/code-Elastic--2.0-lightgrey.svg" alt="Code License"/></a>
   <a href="https://www.gutenberg.org/"><img src="https://img.shields.io/badge/texts-Public%20Domain-green.svg" alt="Texts License"/></a>
-  <img src="https://img.shields.io/badge/version-1.34.1-blue.svg" alt="Version"/>
+  <img src="https://img.shields.io/badge/version-1.35.0-blue.svg" alt="Version"/>
   <img src="https://img.shields.io/badge/corpus-265%20books-orange.svg" alt="Corpus"/>
   <img src="https://img.shields.io/badge/nodes-1.4M-green.svg" alt="Nodes"/>
   <img src="https://img.shields.io/badge/edges-5.4M-green.svg" alt="Edges"/>
@@ -48,7 +48,7 @@ git clone https://github.com/Flux-Frontiers/knowledge_press
 cd knowledge_press && make web-install web-dev
 ```
 
-The book catalog is generated from the corpus rather than hand-maintained — `gutenkg export-web-catalog` (also `make export-web-catalog`) counts DocKG chunk nodes per book and writes the forest's `src/game/catalogPart*.ts` in a sibling knowledge_press checkout (`KNOWLEDGE_PRESS_DIR` to point elsewhere), so the forest follows the corpus instead of drifting from it. `gutenkg export-web-books` (also `make export-web-books`) writes each book's chapters from the Swift packs as `web/public/books/<slug>.json`, which is how the published forest reads books without a worker.
+The book catalog is generated from the corpus rather than hand-maintained — `gutenkg export-web-catalog` (also `make export-web-catalog`) counts DocKG chunk nodes per book and writes the forest's `src/game/catalogPart*.ts` in a sibling knowledge_press checkout (`KNOWLEDGE_PRESS_DIR` to point elsewhere), so the forest follows the corpus instead of drifting from it. Each book also carries its literary year (first published, performed or composed) from `corpus/pub_dates.tsv`, which drives the forest's timeline; see [Literary years](docs/PUB_DATES.md). `gutenkg export-web-books` (also `make export-web-books`) writes each book's chapters from the Swift packs as `web/public/books/<slug>.json`, which is how the published forest reads books without a worker.
 
 ### Moots: books that talk to each other
 
@@ -264,7 +264,7 @@ If you use GutenbergKG in research, use GitHub’s **Cite this repository** butt
   author       = {Suchanek, Eric G.},
   title        = {{GutenbergKG}: The Knowledge Press},
   year         = {2026},
-  version      = {1.34.1},
+  version      = {1.35.0},
   publisher    = {Flux-Frontiers},
   doi          = {10.5281/zenodo.20045389},
   url          = {https://github.com/Flux-Frontiers/gutenberg_kg}

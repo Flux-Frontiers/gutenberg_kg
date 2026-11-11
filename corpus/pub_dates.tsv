@@ -1,0 +1,268 @@
+# Literary year per corpus work, resolved by scripts/lookup_pub_dates.py.
+# Edit corpus/pub_dates_overrides.tsv, not this file, then regenerate.
+entry	year	source	confidence	flags	summary_year	wd_year	wd_work
+american-literature/Adventures of Huckleberry Finn	1884	summary+wikidata	high		1884	1884	Q215410 Adventures of Huckleberry Finn
+american-literature/Ebony and Crystal: Poems in Verse and Prose	1922	wikidata	medium			1922	Q123542967 Ebony and Crystal
+american-literature/Leaves of Grass	1855	summary+wikidata	high		1855	1855	Q132042 Leaves of Grass
+american-literature/Moby Dick	1851	summary+wikidata	high		1851	1851	Q174596 Moby-Dick
+american-literature/My Antonia (Cather)	1918	summary	medium		1918
+american-literature/O Pioneers! (Cather)	1913	summary+wikidata	high		1913	1913	Q2008343 O Pioneers!
+american-literature/Tales of Mystery and Imagination (Poe)	1845	override	hand
+american-literature/The Age of Innocence (Wharton)	1920	summary+wikidata	high		1920	1920	Q1045464 The Age of Innocence
+american-literature/The Awakening (Chopin)	1899	wikidata	medium			1899	Q1567505 The Awakening
+american-literature/The Call of the Wild	1903	summary+wikidata	high		1903	1903	Q476871 The Call of the Wild
+american-literature/The House of Mirth (Wharton)	1905	summary+wikidata	high		1905	1905	Q6474536 The House of Mirth
+american-literature/The Jungle (Sinclair)	1905	summary+wikidata	high		1906	1905	Q260205 The Jungle
+american-literature/The Legend of Sleepy Hollow (Irving)	1820	summary	medium		1820
+american-literature/The Raven and Other Poems (Poe)	1845	summary	medium		1845
+american-literature/The Red Badge of Courage	1894	summary+wikidata	high		1895	1894	Q1219239 The Red Badge of Courage
+american-literature/The Scarlet Letter	1850	summary+wikidata	high		1850	1850	Q907568 The Scarlet Letter
+american-literature/The Sea-Wolf (London)	1904	summary+wikidata	high		1904	1904	Q1196857 The Sea-Wolf
+american-literature/The Souls of Black Folk (Du Bois)	1903	summary+wikidata	high		1903	1903	Q1253660 The Souls of Black Folk
+american-literature/The Star-Treader, and other poems	1912	override	hand
+american-literature/The Works of Edgar Allan Poe, Volume 2 (Poe)	1845	override	hand
+american-literature/The Works of Edgar Allan Poe, Volume 3 (Poe)	1845	override	hand
+american-literature/The Works of Edgar Allan Poe, Volume 4 (Poe)	1845	override	hand
+american-literature/The Works of Edgar Allan Poe, Volume 5 (Poe)	1845	override	hand
+american-literature/The Yellow Wallpaper	1892	summary	medium		1892
+american-literature/Uncle Toms Cabin	1852	wikidata	medium			1852	Q2222 Uncle Tom's Cabin
+american-literature/Walden	1854	wikidata	medium			1854	Q863534 Walden
+american-literature/White Fang (London)	1906	wikidata	medium			1906	Q152267 White Fang
+ancient-classical/A Selection from the Discourses of Epictetus with the Encheiridion	108	override	hand
+ancient-classical/De Officiis (Cicero)	-44	summary	medium		-44
+ancient-classical/Histories (Herodotus)	-440	wikidata	medium	approx		-440	Q746583 Histories
+ancient-classical/History of the Peloponnesian War (Thucydides)	-431	summary	medium		-431
+ancient-classical/Medea of Euripides	-431	override	hand		-431
+ancient-classical/Metamorphoses (Ovid)	1	wikidata	medium	approx		1	Q184742 Metamorphoses
+ancient-classical/Minor Dialogues, Together With the Dialogue on Clemency	55	override	hand
+ancient-classical/Oedipus King of Thebes	-429	summary	medium		-429
+ancient-classical/On the Nature of Things (Lucretius)	-55	override	hand
+ancient-classical/Parallel Lives (Plutarch)	110	wikidata	medium	approx		110	Q842337 Parallel Lives
+ancient-classical/The Aeneid	-19	summary	medium		-19
+ancient-classical/The Birds (Aristophanes)	-414	wikidata	medium			-414	Q1164079 The Birds
+ancient-classical/The Clouds (Aristophanes)	-423	summary	medium		-423
+ancient-classical/The Consolation of Philosophy (Boethius)	523	summary	medium		523
+ancient-classical/The Eleven Comedies, Volume 1	-425	override	hand
+ancient-classical/The Eleven Comedies, Volume 2	-425	override	hand
+ancient-classical/The Frogs	-405	wikidata	medium			-405	Q815376 The Frogs
+ancient-classical/The Golden Sayings of Epictetus, with the Hymn of Cleanthes	108	override	hand
+ancient-classical/The House of Atreus; Being the Agamemnon, the Libation bearers, and the Furies	-458	override	hand
+ancient-classical/The Iliad	-750	override	hand
+ancient-classical/The Meditations of the Emperor Marcus Aurelius Antoninus	170	summary	medium		170
+ancient-classical/The Odyssey	-725	override	hand
+ancient-classical/The Teaching of Epictetus	108	override	hand
+ancient-classical/Thoughts of Marcus Aurelius Antoninus	170	summary	medium		170
+audel-electric/Audels Electric Library Vol 1	1929	override	hand
+audel-electric/Audels Electric Library Vol 10	1929	override	hand
+audel-electric/Audels Electric Library Vol 2	1929	override	hand
+audel-electric/Audels Electric Library Vol 3	1929	override	hand
+audel-electric/Audels Electric Library Vol 4	1929	override	hand
+audel-electric/Audels Electric Library Vol 7	1929	override	hand
+audel-electric/Audels Electric Library Vol 8	1929	override	hand
+audel-electric/Audels Electric Library Vol 9	1929	override	hand
+biography/Autobiography	1873	wikidata	medium	clamped-from-1874		1874	Q19053628 Autobiography
+biography/Autobiography of Benjamin Franklin	1771	summary	medium		1771
+biography/Autobiography of Benvenuto Cellini	1558	override	hand
+biography/Confessions — Jean-Jacques Rousseau	1765	summary	medium		1765
+biography/Confessions — Saint Augustine	397	summary	medium		397
+biography/Incidents in the Life of a Slave Girl — Harriet Jacobs	1861	summary	medium		1861
+biography/Miracle Mongers and Their Methods — Harry Houdini	1920	override	hand
+biography/Narrative of the Life of Frederick Douglass	1845	summary+wikidata	high		1845	1845	Q2904743 Narrative of the Life of Frederick Douglass, an American Slave
+biography/Personal Memoirs of Ulysses S. Grant — Volume 1	1884	summary	medium		1884
+biography/The Education of Henry Adams	1918	summary+wikidata	high		1918	1918	Q7731604 The Education of Henry Adams
+biography/The Life of Samuel Johnson — James Boswell	1791	summary+wikidata	high		1791	1791	Q1218644 The Life of Samuel Johnson
+biography/Up From Slavery — Booker T. Washington	1900	summary+wikidata	high		1901	1900	Q1568126 Up from Slavery
+diaries/The Diary of John Evelyn — Volume 1	1632	override	hand		1818
+diaries/The Diary of John Evelyn — Volume 2	1632	override	hand		1818
+diaries/The Diary of Samuel Pepys — Complete	1660	override	hand
+diaries/The Journal of a Tour to the Hebrides with Samuel Johnson	1773	override	hand		1785
+drama/A Doll's House — Henrik Ibsen	1879	summary	medium		1879
+drama/Doctor Faustus — Christopher Marlowe	1593	summary	medium	clamped-from-1594	1594
+drama/Hedda Gabler — Henrik Ibsen	1890	summary+wikidata	high		1890	1890	Q176465 Hedda Gabler
+drama/Major Barbara	1905	summary	medium		1905
+drama/Plays by Anton Chekhov, Second Series (Chekhov)	1884	override	hand
+drama/Pygmalion — George Bernard Shaw	1913	summary+wikidata	high		1912	1913	Q637200 Pygmalion
+drama/Tamburlaine the Great — Christopher Marlowe	1587	summary	medium		1587
+drama/The Duchess of Malfi — John Webster	1613	override	hand		1612
+drama/The Importance of Being Earnest — Oscar Wilde	1895	summary	medium		1895
+drama/The Master Builder	1892	summary	medium		1892
+drama/The Playboy of the Western World (Synge)	1907	override	hand
+drama/The sea-gull	1895	summary	medium		1895
+english-literature/A Christmas Carol in Prose; Being a Ghost Story of Christmas	1843	summary+wikidata	high		1843	1843	Q62879 A Christmas Carol
+english-literature/A Modest Proposal	1729	summary+wikidata	high		1729	1729	Q264143 A Modest Proposal
+english-literature/A Room with a View (Forster)	1908	summary+wikidata	high		1908	1908	Q120288 A Room with a View
+english-literature/A Tale of Two Cities	1859	summary+wikidata	high		1859	1859	Q308918 A Tale of Two Cities
+english-literature/Alices Adventures in Wonderland	1865	summary+wikidata	high		1865	1865	Q92640 Alice's Adventures in Wonderland
+english-literature/Bleak House (Dickens)	1853	summary+wikidata	high		1852	1853	Q883305 Bleak House
+english-literature/Cranford (Gaskell)	1851	summary+wikidata	high		1853	1851	Q265100 Cranford
+english-literature/David Copperfield (Dickens)	1850	summary+wikidata	high		1849	1850	Q189811 David Copperfield
+english-literature/Dracula	1897	summary+wikidata	high		1897	1897	Q41542 Dracula
+english-literature/Emma	1815	summary+wikidata	high		1815	1815	Q223880 Emma
+english-literature/Far from the Madding Crowd (Hardy)	1874	summary+wikidata	high		1874	1874	Q5642996 Far from the Madding Crowd
+english-literature/Great Expectations	1861	summary+wikidata	high		1860	1861	Q219552 Great Expectations
+english-literature/Grimms Fairy Tales	1812	summary	medium		1812
+english-literature/Gullivers Travels	1726	summary	medium		1726
+english-literature/Heart of Darkness	1899	summary+wikidata	high		1899	1899	Q129778 Heart of Darkness
+english-literature/Howards End	1910	summary+wikidata	high		1910	1910	Q1146642 Howards End
+english-literature/Jane Eyre	1847	summary	medium		1847
+english-literature/Kim (Kipling)	1901	summary+wikidata	high		1901	1901	Q589868 Kim
+english-literature/Middlemarch	1871	summary+wikidata	high		1871	1871	Q313129 Middlemarch
+english-literature/North and South (Gaskell)	1855	summary+wikidata	high		1854	1855	Q1853142 North and South
+english-literature/Pride and Prejudice	1813	summary+wikidata	high		1813	1813	Q170583 Pride and Prejudice
+english-literature/Robinson Crusoe	1719	override	hand		1719
+english-literature/Sense and Sensibility	1811	summary+wikidata	high		1811	1811	Q274744 Sense and Sensibility
+english-literature/Tess of the d'Urbervilles (Hardy)	1891	summary	medium		1891
+english-literature/The Adventures of Sherlock Holmes	1892	summary+wikidata	high		1892	1892	Q392147 The Adventures of Sherlock Holmes
+english-literature/The Jungle Book (Kipling)	1894	summary+wikidata	high		1894	1894	Q189509 The Jungle Book
+english-literature/The Man Who Was Thursday (Chesterton)	1908	wikidata	medium			1908	Q959816 The Man Who Was Thursday
+english-literature/The Mayor of Casterbridge (Hardy)	1886	summary+wikidata	high		1886	1886	Q2343169 The Mayor of Casterbridge
+english-literature/The Picture of Dorian Gray	1890	summary	medium		1890
+english-literature/The Portrait of a Lady — Volume 1	1881	summary+wikidata	high		1880	1881	Q861017 The Portrait of a Lady
+english-literature/The Portrait of a Lady — Volume 2	1881	summary+wikidata	high		1880	1881	Q861017 The Portrait of a Lady
+english-literature/The Strange Case of Dr Jekyll and Mr Hyde	1886	summary+wikidata	high		1886	1886	Q217352 Strange Case of Dr Jekyll and Mr Hyde
+english-literature/The Time Machine	1895	summary+wikidata	high		1895	1895	Q627333 The Time Machine
+english-literature/The Turn of the Screw (Henry James)	1898	summary+wikidata	high		1898	1898	Q625923 The Turn of the Screw
+english-literature/The War of the Worlds	1897	summary+wikidata	high		1895	1897	Q213019 The War of the Worlds
+english-literature/Treasure Island	1883	summary+wikidata	high		1883	1883	Q185118 Treasure Island
+english-literature/Vanity Fair (Thackeray)	1848	summary+wikidata	high		1847	1848	Q612836 Vanity Fair
+english-literature/Wuthering Heights	1847	summary+wikidata	high		1847	1847	Q202975 Wuthering Heights
+french-literature/Around the World in Eighty Days (Verne)	1872	summary+wikidata	high		1872	1872	Q1219561 Around the World in Eighty Days
+french-literature/Candide	1759	summary+wikidata	high		1759	1759	Q215894 Candide
+french-literature/From the Earth to the Moon (Verne)	1865	summary	medium		1865
+french-literature/Germinal (Zola)	1885	summary+wikidata	high		1884	1885	Q137869 Germinal
+french-literature/Journey to the Center of the Earth (Verne)	1864	summary	medium		1864
+french-literature/Les Miserables	1862	summary+wikidata	high		1862	1862	Q180736 Les Misérables
+french-literature/Madame Bovary	1857	summary	medium		1857
+french-literature/Nana (Zola)	1880	wikidata	medium			1880	Q1138346 Nana
+french-literature/The Count of Monte Cristo	1844	wikidata	medium			1844	Q191838 The Count of Monte Cristo
+french-literature/The Hunchback of Notre-Dame (Hugo)	1831	summary+wikidata	high		1831	1831	Q191380 The Hunchback of Notre Dame
+french-literature/The Three Musketeers	1844	summary	medium		1844
+french-literature/Twenty Thousand Leagues Under the Sea	1869	wikidata	medium			1869	Q183565 Twenty Thousand Leagues Under the Sea
+german-literature/Faust Part I (Goethe)	1808	summary	medium		1808
+german-literature/Faust: Der Tragödie zweiter Teil	1832	summary	medium		1832
+german-literature/Siddhartha (Hesse)	1922	summary+wikidata	high		1922	1922	Q457289 Siddhartha
+german-literature/The Metamorphosis (Kafka)	1915	summary+wikidata	high		1915	1915	Q184222 The Metamorphosis
+german-literature/The Trial (Kafka)	1914	summary	conflict		1914	1925	Q36097 The Trial
+horror/At the Mountains of Madness	1931	summary	conflict		1931	1936	Q786586 At the Mountains of Madness
+horror/Carmilla	1872	summary+wikidata	high		1872	1872	Q1043792 Carmilla
+horror/Ghost Stories of an Antiquary	1904	summary+wikidata	high		1904	1904	Q1226144 Ghost Stories of an Antiquary
+horror/Tales of Terror and Mystery	1922	wikidata	medium			1922	Q18546595 Tales of Terror and Mystery
+horror/The Call of Cthulhu	1928	summary+wikidata	high		1926	1928	Q1141815 The Call of Cthulhu
+horror/The Case of Charles Dexter Ward	1927	summary	medium		1927
+horror/The Colour Out of Space	1927	summary+wikidata	high		1927	1927	Q1212384 The Colour Out of Space
+horror/The Dunwich Horror	1929	summary+wikidata	high		1928	1929	Q2468877 The Dunwich Horror
+horror/The Great God Pan	1894	summary+wikidata	high		1894	1894	Q1394704 The Great God Pan
+horror/The House on the Borderland	1908	summary+wikidata	high		1908	1908	Q740473 The House on the Borderland
+horror/The King in Yellow	1895	summary+wikidata	high		1895	1895	Q1195112 The King in Yellow
+horror/The Monk: A Romance	1796	summary+wikidata	high		1796	1796	Q2659564 The Monk
+horror/The Mysteries of Udolpho	1794	summary+wikidata	high		1794	1794	Q2600909 The Mysteries of Udolpho
+horror/The Shadow over Innsmouth	1931	summary	conflict		1931	1936	Q1068054 The Shadow Over Innsmouth
+horror/The Shunned House	1924	summary	conflict		1924	1937	Q3210430 The Shunned House
+horror/The Willows	1907	summary+wikidata	high		1907	1907	Q7775018 The Willows
+letters/Letters of John Keats to His Family and Friends	1816	override	hand
+letters/Letters of Pliny the Younger	100	override	hand
+letters/Letters of the Right Honourable Lady Mary Wortley Montagu	1716	override	hand
+letters/Letters on England	1733	summary	medium		1733
+letters/Letters to His Son — Lord Chesterfield	1748	override	hand
+letters/The Best Letters of Charles Lamb (Lamb)	1796	override	hand
+letters/The Works of Lord Byron: Letters and Journals. Vol. 1	1808	wikidata	medium			1808	Q21139806 The Works of Lord Byron
+letters/The Works of Lord Byron: Letters and Journals. Vol. 2	1808	wikidata	medium			1808	Q21139806 The Works of Lord Byron
+natural-history/Autobiography of Charles Darwin	1876	summary	medium		1876
+natural-history/Man's Place in Nature — Thomas H. Huxley	1863	summary	medium		1863
+natural-history/On the Origin of Species — Charles Darwin	1859	summary+wikidata	high		1859	1859	Q20124 On the Origin of Species
+natural-history/The Chemical History of a Candle — Michael Faraday	1861	wikidata	medium			1861	Q900752 A Course of Six Lectures on the Chemical History of a Candle : To Which is Added a Lecture on Platinum
+natural-history/The Descent of Man — Charles Darwin	1871	wikidata	medium			1871	Q1165434 The Descent of Man, and Selection in Relation to Sex
+natural-history/The Malay Archipelago — Alfred Russel Wallace	1869	summary	medium		1869
+natural-history/The Voyage of the Beagle — Charles Darwin	1839	summary	medium		1839
+philosophy/A Pickle for the Knowing Ones	1802	summary	medium		1802
+philosophy/A Vindication of the Rights of Woman (Wollstonecraft)	1792	summary	medium		1792
+philosophy/Apology (Plato)	-399	summary	medium		-399
+philosophy/Beyond Good and Evil	1886	summary	medium		1886
+philosophy/Common Sense	1776	summary+wikidata	high		1776	1776	Q843940 Common Sense
+philosophy/Critique of Pure Reason (Kant)	1781	summary+wikidata	high		1781	1781	Q220002 Critique of Pure Reason
+philosophy/Discourse on the Method of Rightly Conducting One's Reason and of Seeking Truth in the Sciences	1637	summary+wikidata	high		1637	1637	Q731224 Discourse on the Method
+philosophy/Ecce Homo	1888	summary	medium		1888
+philosophy/Essays — First and Second Series (Emerson)	1841	summary+wikidata	high		1841	1841	Q5399394 Essays: First Series
+philosophy/Groundwork of the Metaphysics of Morals (Kant)	1785	wikidata	medium			1785	Q1550565 Groundwork of the Metaphysic of Morals
+philosophy/Hegel's Lectures on the History of Philosophy: Volume 3 (of 3)	1805	override	hand
+philosophy/Leviathan	1651	summary+wikidata	high		1651	1651	Q193034 Leviathan
+philosophy/Meditations	170	summary	conflict		170	200	Q1152283 Meditations
+philosophy/Nicomachean Ethics (Aristotle)	-340	override	hand
+philosophy/On Liberty (Mill)	1859	summary+wikidata	high		1859	1859	Q1055881 On Liberty
+philosophy/On the Duty of Civil Disobedience (Thoreau)	1849	summary+wikidata	high		1849	1849	Q331092 Civil Disobedience
+philosophy/Phaedo (Plato)	-360	wikidata	medium	approx		-360	Q244161 Phaedo
+philosophy/Plutarch's Morals	100	override	hand
+philosophy/Poetics (Aristotle)	-335	summary	medium		-335
+philosophy/Politics (Aristotle)	-350	override	hand
+philosophy/Second Treatise of Government	1689	summary	medium		1689
+philosophy/The Art of War (Sun Tzu)	-500	override	hand
+philosophy/The Birth of Tragedy; or, Hellenism and Pessimism	1872	summary	medium		1872
+philosophy/The City of God, Volume I	426	override	hand
+philosophy/The Crown of Wild Olive	1866	override	hand
+philosophy/The Enchiridion	125	override	hand
+philosophy/The Federalist Papers	1788	summary+wikidata	high		1787	1788	Q858036 Federalist Papers
+philosophy/The Kama Sutra of Vatsyayana	300	override	hand
+philosophy/The Lives and Opinions of Eminent Philosophers	230	override	hand
+philosophy/The Prince	1513	summary	conflict		1513	1532	Q131719 The Prince
+philosophy/The Problems of Philosophy (Russell)	1912	summary+wikidata	high		1912	1912	Q3393210 The Problems of Philosophy
+philosophy/The Republic	-375	summary	conflict		-375	1963	Q123397 The Republic
+philosophy/The Social Contract (Rousseau)	1762	wikidata	medium			1762	Q190126 The Social Contract
+philosophy/The Symposium (Plato)	-385	summary	medium		-385
+philosophy/The Twilight of the Idols; or, How to Philosophize with the Hammer. The Antichrist	1889	wikidata	medium			1889	Q1296318 Twilight of the Idols
+philosophy/The Wealth of Nations	1776	summary+wikidata	high		1776	1776	Q233562 The Wealth of Nations
+philosophy/The origin and development of the moral ideas	1906	wikidata	medium			1906	Q7755345 The Origin and Development of the Moral Ideas
+philosophy/Thus Spake Zarathustra	1883	summary	medium		1883
+philosophy/Utilitarianism (Mill)	1861	summary+wikidata	high		1861	1861	Q1197767 Utilitarianism
+russian-literature/Anna Karenina	1877	summary+wikidata	high		1878	1877	Q147787 Anna Karenina
+russian-literature/Boyhood (Tolstoy)	1854	wikidata	medium			1854	Q965704 Boyhood
+russian-literature/Childhood (Tolstoy)	1852	summary	medium		1852
+russian-literature/Crime and Punishment	1866	summary+wikidata	high		1866	1866	Q165318 Crime and Punishment
+russian-literature/Dead Souls	1842	summary+wikidata	high		1842	1842	Q647379 Dead Souls
+russian-literature/Fathers and Sons (Turgenev)	1862	summary	medium		1862
+russian-literature/Notes from Underground (Dostoevsky)	1864	summary+wikidata	high		1864	1864	Q695116 Notes from Underground
+russian-literature/Oblomov	1859	summary	medium		1859
+russian-literature/On the Eve (Turgenev)	1860	summary+wikidata	high		1859	1860	Q144547 On the Eve
+russian-literature/The Brothers Karamazov	1880	summary+wikidata	high		1879	1880	Q183157 The Brothers Karamazov
+russian-literature/The Idiot	1869	summary+wikidata	high		1868	1869	Q210784 The Idiot
+russian-literature/The Mantle, and Other Stories (Gogol)	1842	override	hand
+russian-literature/The possessed :  or, The devils	1871	summary	medium		1871
+russian-literature/War and Peace	1869	summary+wikidata	high		1869	1869	Q161531 War and Peace
+russian-literature/Youth (Tolstoy)	1857	wikidata	medium			1857	Q7458355 Youth
+sacred-texts/Dhammapada (F. Max Müller translation)	-250	override	hand
+sacred-texts/Tao Te Ching (James Legge translation)	-400	override	hand
+sacred-texts/The Analects of Confucius (James Legge translation)	-475	override	hand
+sacred-texts/The Bhagavad Gita (Edwin Arnold verse translation)	-200	override	hand		1885
+sacred-texts/The Bible (King James Version)	-1000	override	hand		1611
+sacred-texts/The Quran (Rodwell translation)	632	override	hand
+sacred-texts/The Upanishads (Max Müller translation)	-800	override	hand
+science-fiction/A Journey in Other Worlds: A Romance of the Future	1894	summary+wikidata	high		1894	1894	Q4657515 A Journey in Other Worlds
+science-fiction/A Princess of Mars	1912	wikidata	medium			1912	Q475589 A Princess of Mars
+science-fiction/At the Earth's Core	1914	summary+wikidata	high		1914	1914	Q2870358 At the Earth's Core
+science-fiction/Etidorhpa; or, The End of Earth.	1895	summary	medium		1895
+science-fiction/Flatland	1884	summary+wikidata	high		1884	1884	Q728312 Flatland
+science-fiction/Frankenstein	1818	summary+wikidata	high		1818	1818	Q150827 Frankenstein; or, The Modern Prometheus
+science-fiction/Pellucidar (Burroughs)	1915	wikidata	medium			1915	Q928680 Pellucidar
+science-fiction/Symzonia: Voyage of Discovery	1820	override	hand		1820
+science-fiction/The Coming Race	1871	summary+wikidata	high		1871	1871	Q510699 The Coming Race
+science-fiction/The First Men in the Moon	1901	wikidata	medium			1901	Q1218232 The First Men in the Moon
+science-fiction/The Food of the Gods (Wells)	1904	wikidata	medium			1904	Q1215802 The Food of the Gods and How It Came to Earth
+science-fiction/The Gods of Mars	1913	summary	medium		1913
+science-fiction/The Invisible Man	1897	summary+wikidata	high		1897	1897	Q1539509 The Invisible Man
+science-fiction/The Island of Doctor Moreau	1895	summary+wikidata	high		1896	1895	Q718268 The Island of Dr Moreau
+science-fiction/The Lost World	1912	summary+wikidata	high		1912	1912	Q785255 The Lost World
+science-fiction/The warlord of Mars	1913	summary	conflict		1913	1918	Q673493 The Gods of Mars
+shakespeare/A Midsummer Nights Dream	1595	summary	medium		1595
+shakespeare/Hamlet	1599	summary	medium		1599
+shakespeare/Macbeth	1606	summary	medium		1606
+shakespeare/Romeo and Juliet	1591	summary	medium		1591
+spanish/Don Quixote	1605	summary	medium		1605
+travel/A Lady's Life in the Rocky Mountains	1879	summary	medium		1879
+travel/The Innocents Abroad — Mark Twain	1869	summary+wikidata	high		1869	1869	Q1211101 The Innocents Abroad
+travel/The Travels of Marco Polo	1298	wikidata	medium			1298	Q654562 The Travels of Marco Polo
+travel/Travels in the interior districts of Africa: performed under the direction and patronage of the African Association, in the years 1795, 1796, and 1797	1799	override	hand
+travel/Two Years Before the Mast	1840	summary	medium		1840
+travel/Typee: A Peep at Polynesian Life — Herman Melville	1846	summary+wikidata	high		1846	1846	Q2463076 Typee
+world-literature/Gitanjali (Tagore)	1910	summary	medium		1910
+world-literature/One Thousand and One Nights (Lane translation)	850	override	hand
+world-literature/The Divine Comedy (Cary)	1308	summary	medium		1308
+world-literature/The Divine Comedy (Longfellow)	1308	override	hand
