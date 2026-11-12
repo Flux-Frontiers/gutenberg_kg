@@ -69,7 +69,7 @@ All genres in a strategy group are processed together in one DocKG pass.
 ```
 
 **Output:** `bundles/gutenberg-all/.dockg/graph.sqlite`
-683,531 nodes · all genres in one table
+745,627 nodes · all genres in one table
 
 ---
 
@@ -204,7 +204,7 @@ Step 3 also writes `HAS_TOPIC` edges with classifier confidence scores into the 
       "author_death": "348 BC",
       "ebook_id":     1497
     },
-    …  253 entries
+    …  265 entries
   }
 ```
 
@@ -218,9 +218,9 @@ the `file_path` prefix — no extra node fields required.
 ```
   bundles/gutenberg-all/
   ├── .dockg/
-  │   ├── graph.sqlite          2.9 GB   (683,531 nodes; embed-text, topics, entities)
-  │   ├── vectors.sqlite        1.1 GB   (688 K × 384-dim fp32 vectors, sqlite-vec)
-  │   └── catalog.json          size varies  (253 books · author/title/ID)
+  │   ├── graph.sqlite          3.9 GB   (745,627 nodes; embed-text, topics, entities)
+  │   ├── vectors.sqlite        1.3 GB   (746 K × 384-dim fp32 vectors, sqlite-vec)
+  │   └── catalog.json          size varies  (265 books · author/title/ID)
   │
   └── diaries/
       ├── The Diary of Samuel Pepys — Complete/.diarykg/

@@ -33,7 +33,7 @@ The included corpus contains **265 texts in 20 genres**: literature, philosophy,
 
 **[Open Knowledge Press Forest](https://flux-frontiers.github.io/knowledge_press/)**. It runs in the browser; there is nothing to install.
 
-Every book in the corpus is a tree, and the 253 trees stand in genre groves. You drive a lantern cart through them, along a ring road that links every grove or off it between the trunks. Each tree is grown from its book's DocKG graph by the same space-colonization rule `gutenkg viz3d` uses, so a book has the same silhouette in both. At the hub stands the corpus redwood, one tree for the whole library, with a limb reaching toward every book.
+Every book in the corpus is a tree, and the 265 trees stand in genre groves. You drive a lantern cart through them, along a ring road that links every grove or off it between the trunks. Each tree is grown from its book's DocKG graph by the same space-colonization rule `gutenkg viz3d` uses, so a book has the same silhouette in both. At the hub stands the corpus redwood, one tree for the whole library, with a limb reaching toward every book.
 
 - **G** opens the grove atlas and **B** lists every book; both jump you there.
 - **Q** rides the ring road. The tour stops at each grove and narrates it, as a caption and aloud.
