@@ -57,6 +57,9 @@ def test_patch_prose_updates_every_wording() -> None:
             "| Prose and technical text | 19 | 242 | DocKG semantic chunking |",
             "| Diaries | 1 | 4 | DiaryKG temporal indexing |",
             "| **Total** | **21** | **253** | |",
+            "Every book in the corpus is a tree, and the 253 trees stand in genre groves.",
+            "    …  253 entries",
+            "  │   └── catalog.json          size varies  (253 books · author/title/ID)",
         ]
     )
     assert mod._patch_prose(text, status).splitlines() == [
@@ -72,6 +75,9 @@ def test_patch_prose_updates_every_wording() -> None:
         "| Prose and technical text | 2 | 15 | DocKG semantic chunking |",
         "| Diaries | 1 | 2 | DiaryKG temporal indexing |",
         "| **Total** | **3** | **17** | |",
+        "Every book in the corpus is a tree, and the 17 trees stand in genre groves.",
+        "    …  17 entries",
+        "  │   └── catalog.json          size varies  (17 books · author/title/ID)",
     ]
 
 

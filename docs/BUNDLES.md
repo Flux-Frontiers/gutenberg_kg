@@ -182,7 +182,7 @@ and this doc's own writing, on Turing (Apple Silicon, MPS embedding).
 
 | Selection | Books | Nodes | DocKG build | DocKG size | Swift export |
 |---|---:|---:|---:|---:|---:|
-| `gutenberg-all` (full corpus) | 253 | 731,824 | ~22m | multi-GB | ~860 MB (all packs) |
+| `gutenberg-all` (full corpus) | 265 | 745,627 | ~22m (at 253 books) | 4.9 GB | 734 MB (all packs) |
 | `philosophy-starter` (`genres = ["philosophy"]`) | 39 | 144,046 | 2m 38s | 725.4 MB | — |
 | single book (ad-hoc `--book`, this doc's own test) | 1 | 8,367 | 9s | 35.3 MB | 4.46 MB |
 | `shakespeare-demo` (4 books, `materialize = "none"`) | 4 | — (filtered from `gutenberg-all`) | n/a | n/a | 2.06 MB |

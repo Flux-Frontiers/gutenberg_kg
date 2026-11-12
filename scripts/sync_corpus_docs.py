@@ -202,6 +202,12 @@ _PROSE_PATTERNS: list[tuple[str, str]] = [
     (r"query \d+ books", "query {books} books"),
     # docs/PARTNERS.md
     (r"corpus stands at \d+ works", "corpus stands at {books} works"),
+    # README.md forest section: one tree per book (the web catalog is
+    # generated from the corpus, so the counts match)
+    (r"the \d+ trees stand", "the {books} trees stand"),
+    # docs/ingestion-pipeline.md bundle catalog.json
+    (r"…  \d+ entries", "…  {books} entries"),
+    (r"\(\d+ books · author/title/ID\)", "({books} books · author/title/ID)"),
 ]
 
 

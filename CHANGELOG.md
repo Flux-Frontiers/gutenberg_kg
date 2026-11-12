@@ -8,6 +8,15 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+### Fixed
+
+- **Stale corpus counts in the docs.** The README forest section said 253
+  trees and `docs/ingestion-pipeline.md` described a 253-book bundle; both
+  now match the 265-book corpus and the current consolidated bundle
+  (745,627 nodes). `scripts/sync_corpus_docs.py` now keeps the forest tree
+  count and the bundle catalog count in sync, and the `gutenberg-all` row
+  in `docs/BUNDLES.md` carries the current book, node and size figures.
+
 ## [1.35.0] - 2026-11-10
 
 ### Added
