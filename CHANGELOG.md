@@ -15,6 +15,11 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   `voice: { gender, accent }` on every book whose author is known, for the
   Knowledge Press forest's read-aloud. 252 of the 265 books have one; the
   rest are "Various" and the Audel handbooks.
+- **Each book in `core.pack` carries its author's voice too.**
+  `gutenkg export-swift` writes `gender` and `accent` columns on the books
+  table from the same `voices.json`, so the app's reader can read a book in
+  a voice that matches its author. Both are NULL for an unknown author; an
+  app that does not read them is unaffected.
 - **Four more authors in the voice table**: Charles Lamb, J. M. Synge,
   Marcus Tullius Cicero and Mary Wortley Montagu, whose author pages were
   newer than the table. Synge's accent is set by hand to `en-GB`: Wikidata

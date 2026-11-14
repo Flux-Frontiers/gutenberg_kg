@@ -172,10 +172,23 @@ def bundle(tmp_path):
 
 @pytest.fixture
 def packs(bundle, tmp_path):
-    """A built export, without the vector or golden stages."""
+    """A built export, without the vector or golden stages.
+
+    Its voice table knows Hobbes only, so the fixture does not depend on the
+    corpus's own ``voices.json``.
+    """
     out = tmp_path / "swift"
+    voices = tmp_path / "voices.json"
+    voices.write_text(json.dumps({"thomas_hobbes": {"gender": "male", "accent": "en-GB"}}))
     report = export_swift(
-        ExportOptions(bundle=bundle, out=out, with_vectors=False, golden=False, force=True)
+        ExportOptions(
+            bundle=bundle,
+            out=out,
+            with_vectors=False,
+            golden=False,
+            force=True,
+            voices_path=voices,
+        )
     )
     return report, out
 
@@ -320,6 +333,18 @@ class TestCorePack:
 
         (stats,) = _rows(out / "core.pack", "SELECT * FROM corpus_stats")
         assert (stats["books"], stats["genres"], stats["diaries"]) == (2, 2, 1)
+
+    def test_books_carry_their_authors_voice(self, packs):
+        """The app's reader picks a voice from these; an unknown author reads NULL."""
+        _, out = packs
+        voices = {
+            b["key"]: (b["gender"], b["accent"])
+            for b in _rows(out / "core.pack", "SELECT key, gender, accent FROM books")
+        }
+        assert voices == {
+            "philosophy/Leviathan": ("male", "en-GB"),
+            "sacred-texts/The Bible (King James Version)": (None, None),
+        }
 
     def test_chapter_list_is_servable_from_the_packs(self, packs):
         """The Browse drill, entirely offline: book → its chapters."""

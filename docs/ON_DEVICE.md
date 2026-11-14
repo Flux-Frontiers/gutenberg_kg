@@ -15,7 +15,7 @@ gutenkg export-swift              # bundles/gutenberg-all → bundles/gutenberg-
 
 | File | Holds | Rough size |
 |---|---|---:|
-| `core.pack` | genres, books, authors, the Browse entry points | ~5 MB |
+| `core.pack` | genres, books, authors and their voices (`gender`, `accent` from `corpus/authors/voices.json`), the Browse entry points | ~5 MB |
 | `gutenberg.pack` | 364 K chunk/section passages and their FTS5 index | ~600 MB |
 | `gutenberg.vectors` | their embeddings, row-major, memory-mappable | ~140 MB |
 | `diaries.pack` | the four diaries, same schema plus `timestamp` | ~100 MB |
