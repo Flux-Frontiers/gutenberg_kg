@@ -258,6 +258,16 @@
   "wikidata": "Q5686",
   "source": "wikidata"
  },
+ "charles_lamb": {
+  "name": "Charles Lamb",
+  "gender": "male",
+  "accent": "en-GB",
+  "citizenship": [
+   "United Kingdom of Great Britain and Ireland"
+  ],
+  "wikidata": "Q372984",
+  "source": "wikidata"
+ },
  "charlotte_brontë": {
   "name": "Charlotte Brontë",
   "gender": "female",
@@ -721,6 +731,16 @@
   "wikidata": "Q42831",
   "source": "wikidata"
  },
+ "j_m_synge": {
+  "name": "J. M. Synge",
+  "gender": "male",
+  "accent": "en-GB",
+  "citizenship": [
+   "Ireland"
+  ],
+  "wikidata": "Q213447",
+  "source": "manual"
+ },
  "jack_london": {
   "name": "Jack London",
   "gender": "male",
@@ -1032,6 +1052,16 @@
   "wikidata": "Q1430",
   "source": "wikidata"
  },
+ "marcus_tullius_cicero": {
+  "name": "Marcus Tullius Cicero",
+  "gender": "male",
+  "accent": null,
+  "citizenship": [
+   "Ancient Rome"
+  ],
+  "wikidata": "Q1541",
+  "source": "wikidata"
+ },
  "mark_twain": {
   "name": "Mark Twain",
   "gender": "male",
@@ -1062,6 +1092,17 @@
    "United Kingdom"
   ],
   "wikidata": "Q47152",
+  "source": "wikidata"
+ },
+ "mary_wortley_montagu": {
+  "name": "Mary Wortley Montagu",
+  "gender": "female",
+  "accent": "en-GB",
+  "citizenship": [
+   "Kingdom of England",
+   "Kingdom of Great Britain"
+  ],
+  "wikidata": "Q235121",
   "source": "wikidata"
  },
  "michael_faraday": {

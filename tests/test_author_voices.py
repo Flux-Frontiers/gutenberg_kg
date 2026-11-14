@@ -155,6 +155,21 @@ def test_voice_for_matches_the_catalog_author_name():
     assert voice_for("Somebody Else", voices) == {"gender": None, "accent": None}
 
 
+def test_voice_for_a_joint_work_takes_its_first_known_author():
+    voices = {
+        "alexander_hamilton": {"gender": "male", "accent": "en-US"},
+        "alexandre_dumas": {"gender": "male", "accent": None},
+        "jacob_grimm": {"gender": "male", "accent": None},
+        "various": {"gender": None, "accent": None},
+    }
+    hamilton = voice_for("Alexander Hamilton, John Jay, and James Madison", voices)
+    assert hamilton == {"gender": "male", "accent": "en-US"}
+    assert voice_for("Alexandre Dumas and Auguste Maquet", voices)["gender"] == "male"
+    assert voice_for("Jacob Grimm & Wilhelm Grimm", voices)["gender"] == "male"
+    assert voice_for("Frank D. Graham and Theo Audel & Company", voices)["gender"] is None
+    assert voice_for("Various", voices) == {"gender": None, "accent": None}
+
+
 def test_moot_packs_carry_each_authors_voice():
     transcript = {
         "trees": [

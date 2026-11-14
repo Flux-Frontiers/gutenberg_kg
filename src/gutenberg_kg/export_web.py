@@ -32,6 +32,8 @@ import sys
 from dataclasses import dataclass, field
 from pathlib import Path
 
+from gutenberg_kg.author_voices import read_voices, voice_for
+
 REPO_ROOT = Path(__file__).resolve().parents[2]
 CORPUS_ROOT = REPO_ROOT / "corpus"
 # The web forest lives in the knowledge_press repo, by default a sibling checkout.
@@ -83,6 +85,8 @@ class BookRow:
     periods: list[dict] = field(default_factory=list)
     # Literary year from corpus/pub_dates.tsv (negative is BC); None when undated.
     year: int | None = None
+    # The author's {"gender", "accent"} from corpus/authors/voices.json; both None when unknown.
+    voice: dict = field(default_factory=lambda: {"gender": None, "accent": None})
 
 
 def slug_from_title(title: str) -> str:
@@ -179,7 +183,9 @@ def load_pub_years(root: Path) -> dict[str, int]:
     }
 
 
-def collect_book(book_dir: Path, genre: str, year: int | None = None) -> BookRow | None:
+def collect_book(
+    book_dir: Path, genre: str, year: int | None = None, voices: dict[str, dict] | None = None
+) -> BookRow | None:
     db = kg_db(book_dir)
     if db is None:
         return None
@@ -201,6 +207,7 @@ def collect_book(book_dir: Path, genre: str, year: int | None = None) -> BookRow
         tags=[genre],
         periods=diary_periods_for(book_dir, genre) if db.parent.name == ".diarykg" else [],
         year=year,
+        voice=voice_for(author, voices or {}),
     )
 
 
@@ -210,6 +217,7 @@ def scan_corpus(root: Path) -> list[BookRow]:
     if not root.is_dir():
         return books
     years = load_pub_years(root)
+    voices = read_voices(root / "authors" / "voices.json")
     for genre_dir in sorted(p for p in root.iterdir() if p.is_dir() and not p.name.startswith(".")):
         if genre_dir.name == "authors":
             continue
@@ -217,7 +225,7 @@ def scan_corpus(root: Path) -> list[BookRow]:
             p for p in genre_dir.iterdir() if p.is_dir() and not p.name.startswith(".")
         ):
             row = collect_book(
-                book_dir, genre_dir.name, years.get(f"{genre_dir.name}/{book_dir.name}")
+                book_dir, genre_dir.name, years.get(f"{genre_dir.name}/{book_dir.name}"), voices
             )
             if row is None:
                 missing += 1
@@ -251,6 +259,11 @@ def emit_part(rows: list[BookRow], index: int) -> str:
         lines.append(f"    tags: {json.dumps(r.tags, ensure_ascii=False)},")
         if r.year is not None:
             lines.append(f"    year: {r.year},")
+        if r.voice.get("gender") or r.voice.get("accent"):
+            lines.append(
+                f"    voice: {{ gender: {json.dumps(r.voice.get('gender'))}, "
+                f"accent: {json.dumps(r.voice.get('accent'))} }},"
+            )
         if r.periods:
             lines.append("    periods: [")
             for p in r.periods:
@@ -303,6 +316,12 @@ CATALOG_TYPES = """export type Book = {
    * composed. Negative is BC. Absent when the corpus has no date for the work.
    */
   year?: number;
+  /**
+   * What a voice reading the book should sound like: its author's gender and
+   * accent, from corpus/authors/voices.json. Absent when neither is known
+   * ("Various"); `accent` is null for a translated author.
+   */
+  voice?: { gender: "male" | "female" | null; accent: string | null };
   /**
    * Diaries only: one limb per period (a calendar year when dated), earliest
    * first. `bins` counts the period's chunks in equal slices along its limb,

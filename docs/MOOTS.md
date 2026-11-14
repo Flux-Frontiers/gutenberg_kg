@@ -194,6 +194,13 @@ gutenkg author-voices --dry-run            # print the table instead of writing 
 An entry with `"source": "manual"` is never overwritten, so a hand correction
 survives `--refresh`.
 
+`gutenkg export-web-catalog` reads the same table and gives each book in the
+forest catalog a `voice`, which the forest reader uses to read the book
+aloud. A joint work ("Alexandre Dumas and Auguste Maquet") takes the voice of
+its first named author the table knows. A book whose author has neither a
+gender nor an accent ("Various") gets no `voice` and is read in the system
+voice. Run `author-voices` before `export-web-catalog` when authors are added.
+
 ## Limits
 
 - A moot is only as good as the model. Small models quote less reliably and

@@ -352,8 +352,11 @@ Each tree in a pack carries its author's voice, so the forest can read a
 woman's book in a woman's voice and Twain in an American one where the browser
 has one. `author-voices` looks the authors up on Wikidata (gender, and an
 accent from citizenship: `en-US`, `en-GB`, or none for translated authors) and
-writes `corpus/authors/voices.json`. Ingestion does not touch it. Run it again
-after adding authors; set an entry's `"source"` to `"manual"` to keep a
+writes `corpus/authors/voices.json`. Ingestion does not touch it;
+`export-web-catalog` gives each catalog book its author's voice from it, for
+the forest's read-aloud, and `export-swift` writes the same voice as `gender`
+and `accent` columns in `core.pack`, for the app's reader. Run it again after
+adding authors; set an entry's `"source"` to `"manual"` to keep a
 correction.
 
 ```bash

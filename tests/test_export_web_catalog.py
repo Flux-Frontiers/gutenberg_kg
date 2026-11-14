@@ -7,6 +7,7 @@ tiny corpus tree in tmp_path — they do not touch the real ``corpus/``.
 
 from __future__ import annotations
 
+import json
 import sqlite3
 from pathlib import Path
 
@@ -89,6 +90,24 @@ class TestScan:
     def test_skips_books_without_a_graph(self, tmp_path: Path):
         (tmp_path / "philosophy" / "Notes").mkdir(parents=True)
         assert export_web_catalog.scan_corpus(tmp_path) == []
+
+    def test_each_book_carries_its_authors_voice(self, tmp_path: Path):
+        for folder, author in [("Persuasion", "Jane Austen"), ("Essays", "Various")]:
+            _write_book(tmp_path, "fiction", folder, title=folder, author=author, chunks=["x"])
+        authors = tmp_path / "authors"
+        authors.mkdir()
+        (authors / "voices.json").write_text(
+            json.dumps({"jane_austen": {"gender": "female", "accent": "en-GB"}}), encoding="utf-8"
+        )
+        books = export_web_catalog.scan_corpus(tmp_path)
+        assert {b.author: b.voice["gender"] for b in books} == {
+            "Jane Austen": "female",
+            "Various": None,
+        }
+        export_web_catalog.write_catalog(books, tmp_path / "game")
+        text = (tmp_path / "game" / "catalogPart1.ts").read_text(encoding="utf-8")
+        assert 'voice: { gender: "female", accent: "en-GB" },' in text
+        assert text.count("voice:") == 1  # "Various" has none
 
     def test_writes_split_catalog(self, tmp_path: Path):
         _write_book(
