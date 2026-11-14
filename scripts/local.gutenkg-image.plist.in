@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!-- Template for `make image-agent-install`: @REPO@ and @LOG@ are filled in. -->
+<plist version="1.0">
+<dict>
+	<key>Label</key>
+	<string>local.gutenkg-image</string>
+	<key>ProgramArguments</key>
+	<array>
+		<string>@REPO@/.venv-image/bin/gutenkg-image-server</string>
+	</array>
+	<key>WorkingDirectory</key>
+	<string>@REPO@</string>
+	<key>EnvironmentVariables</key>
+	<dict>
+		<key>MFLUX_SERVER_HOST</key>
+		<string>0.0.0.0</string>
+	</dict>
+	<key>RunAtLoad</key>
+	<true/>
+	<key>KeepAlive</key>
+	<true/>
+	<key>ThrottleInterval</key>
+	<integer>10</integer>
+	<key>StandardOutPath</key>
+	<string>@LOG@</string>
+	<key>StandardErrorPath</key>
+	<string>@LOG@</string>
+</dict>
+</plist>

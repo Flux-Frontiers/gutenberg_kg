@@ -8,6 +8,19 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+### Added
+
+- **The FLUX image server can run as a LaunchAgent.** `make image-agent-install`
+  installs `local.gutenkg-image`, which starts `gutenkg-image-server` at login
+  and restarts it if it exits; `make image-agent-uninstall` removes it. While it
+  is installed, `make image-server` (and so `make up`) does not start a second
+  copy.
+
+### Changed
+
+- **The chat container restarts with Docker**, like the worker
+  (`restart: unless-stopped`).
+
 ## [1.36.0] - 2026-11-14
 
 ### Added

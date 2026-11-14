@@ -601,6 +601,8 @@ The local `gutenkg imagine` command (outside Docker) reads its own `GUTENKG_*` v
 | `IMAGE_OUTPUT_DIR` | `/tmp/gutenberg_images` | Where rendered images are written. |
 | `IMAGE_PRELOAD` | `0` | Set to `1` to load the FLUX model at startup instead of first request. |
 
+To keep the FLUX server running on a Mac, run `make image-server` once to build `.venv-image`, then `make image-agent-install`. That installs the LaunchAgent `local.gutenkg-image`, which starts the server at login and restarts it if it exits; it logs to `~/Library/Logs/gutenkg-image.log`. While it is installed, `make down` and `make kill` stop the server only until launchd restarts it, and `make image-server` leaves it alone. `make image-agent-uninstall` stops it and removes the agent.
+
 ---
 
 ## Troubleshooting

@@ -36,6 +36,9 @@
 #   make run            — start the worker on http://localhost:8000
 #   make image-server   — start the local FLUX image server on :8090 (needs mflux:
 #                         Apple Silicon, or Linux + CUDA 13)
+#   make image-agent-install    — run the FLUX image server as a LaunchAgent:
+#                         starts at login, restarted if it exits (macOS)
+#   make image-agent-uninstall  — stop it and remove the LaunchAgent
 #   make sdxl-server    — start the local SDXL-Lightning image server on :8091
 #                         (diffusers; cuda -> mps -> cpu, so it runs anywhere)
 #   make sdxl-fetch     — pre-download the SDXL weights (~7 GB) before first use
@@ -251,7 +254,7 @@ endif
 # `gutenkg` on PATH. Override with e.g. `make GUTENKG=gutenkg build-corpus`.
 GUTENKG     ?= poetry run gutenkg
 
-.PHONY: bootstrap init spacy-model chunk-diaries build-diaries build-corpus export-swift export-web-catalog export-web-books stale-books refresh-text check-pins setup build build-all rebuild rebuild-all prune kill down-all runtime-guard publish-worker-image pull-worker-image run image-server sdxl-server sdxl-fetch chat up stop down query logs clean docs
+.PHONY: bootstrap init spacy-model chunk-diaries build-diaries build-corpus export-swift export-web-catalog export-web-books stale-books refresh-text check-pins setup build build-all rebuild rebuild-all prune kill down-all runtime-guard publish-worker-image pull-worker-image run image-server image-agent-install image-agent-uninstall sdxl-server sdxl-fetch chat up stop down query logs clean docs
 
 # One-command install for a fresh clone. Uses the system python3, not Poetry,
 # because it has to run before Poetry or the venv exist. Flags map to variables
@@ -759,8 +762,36 @@ image-server:
 	@.venv-image/bin/python -m pip install --quiet --upgrade pip
 	@.venv-image/bin/python -m pip install --quiet -r docker/requirements-image.txt
 	@.venv-image/bin/python -m pip install --quiet --no-deps -e .
-	@echo "Starting FLUX image server on $(IMAGE_SERVER) (background, .venv-image) ..."
-	MFLUX_SERVER_HOST=0.0.0.0 .venv-image/bin/gutenkg-image-server &
+	@if launchctl print gui/$$(id -u)/$(IMAGE_AGENT) >/dev/null 2>&1; then \
+		echo "FLUX image server is run by launchd ($(IMAGE_AGENT)); not starting a second copy."; \
+	else \
+		echo "Starting FLUX image server on $(IMAGE_SERVER) (background, .venv-image) ..."; \
+		MFLUX_SERVER_HOST=0.0.0.0 .venv-image/bin/gutenkg-image-server & \
+	fi
+
+# Run the FLUX image server as a macOS LaunchAgent: it starts at login and
+# launchd restarts it if it exits, so `make down` and `make kill` no longer stop
+# it for good -- `make image-agent-uninstall` does. Needs .venv-image, which
+# `make image-server` builds.
+IMAGE_AGENT       = local.gutenkg-image
+IMAGE_AGENT_PLIST = $(HOME)/Library/LaunchAgents/$(IMAGE_AGENT).plist
+IMAGE_AGENT_LOG   = $(HOME)/Library/Logs/gutenkg-image.log
+IMAGE_AGENT_REPO ?= $(CURDIR)
+
+image-agent-install:
+	@test -x "$(IMAGE_AGENT_REPO)/.venv-image/bin/gutenkg-image-server" || \
+		{ echo "ERROR: $(IMAGE_AGENT_REPO)/.venv-image is missing; run 'make image-server' once first."; exit 1; }
+	-@launchctl bootout gui/$$(id -u)/$(IMAGE_AGENT) 2>/dev/null || true
+	-@pkill -f gutenkg-image-server 2>/dev/null || true
+	@sed -e 's|@REPO@|$(IMAGE_AGENT_REPO)|g' -e 's|@LOG@|$(IMAGE_AGENT_LOG)|g' \
+		scripts/$(IMAGE_AGENT).plist.in > $(IMAGE_AGENT_PLIST)
+	@launchctl bootstrap gui/$$(id -u) $(IMAGE_AGENT_PLIST)
+	@echo "Installed $(IMAGE_AGENT_PLIST); FLUX image server on $(IMAGE_SERVER), log $(IMAGE_AGENT_LOG)"
+
+image-agent-uninstall:
+	-@launchctl bootout gui/$$(id -u)/$(IMAGE_AGENT) 2>/dev/null || true
+	@rm -f $(IMAGE_AGENT_PLIST)
+	@echo "Removed $(IMAGE_AGENT); the FLUX image server is stopped."
 
 sdxl-server:
 	$(call make-venv,.venv-sdxl,SDXL/diffusers)
