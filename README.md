@@ -56,6 +56,8 @@ A moot seats two books and lets them discuss a topic. Each book speaks only from
 
 In the forest, the **Moots** button plays saved moots: each turn appears as a speech bubble, the speaking tree is ringed in its color, and the turns can be read aloud, in voices matched to each author where the browser has them. Playing a saved moot needs nothing installed.
 
+The same author voices go with every book: `gutenkg export-web-catalog` puts them in the forest's catalog and `gutenkg export-swift` in the app's `core.pack`, so the forest reads each book aloud in a voice that matches its author, and the app's packs carry the same voices for its reader.
+
 To hold a new moot, run `gutenkg converse` against a local worker and a model backend (local oMLX or Ollama, or any OpenAI-compatible host), then export it for the forest:
 
 ```bash
