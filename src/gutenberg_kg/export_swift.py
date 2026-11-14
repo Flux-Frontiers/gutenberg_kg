@@ -85,6 +85,7 @@ from dataclasses import dataclass, field
 from datetime import UTC, datetime
 from pathlib import Path
 
+from gutenberg_kg.author_voices import VOICES_PATH, read_voices, voice_for
 from gutenberg_kg.serve.fusion import RESCUE_TOLERANCE, merge_by_rank
 
 __all__ = [
@@ -176,7 +177,9 @@ CREATE TABLE books (
   title     TEXT,
   author    TEXT,
   ebook_id  INTEGER,
-  file_path TEXT                -- the content document's node file_path
+  file_path TEXT,               -- the content document's node file_path
+  gender    TEXT,               -- the author's voice, from voices.json: "male", "female" or NULL
+  accent    TEXT                -- a BCP 47 tag such as "en-GB", or NULL (a translated author)
 );
 CREATE INDEX idx_books_genre ON books(genre);
 
@@ -789,6 +792,7 @@ def build_core_pack(
     catalog: dict[str, dict],
     diary_count: int,
     catalog_keys: frozenset[str] | None = None,
+    voices: dict[str, dict] | None = None,
 ) -> PackStats:
     """Write ``core.pack`` — the catalog the Browse tab and the scope picker read.
 
@@ -798,6 +802,8 @@ def build_core_pack(
     :param diary_count: Diaries included in this export.
     :param catalog_keys: Restrict to these ``"<genre>/<book>"`` keys; ``None``
         keeps every book in ``catalog``.
+    :param voices: The author voice table (``corpus/authors/voices.json``),
+        for each book's ``gender`` and ``accent``; ``None`` leaves both NULL.
     :returns: Stats for the finished pack.
     """
     if catalog_keys is not None:
@@ -811,6 +817,7 @@ def build_core_pack(
             genre = meta.get("genre") or key.split("/")[0]
             book = meta.get("book") or key.split("/")[-1]
             genre_counts[genre] = genre_counts.get(genre, 0) + 1
+            voice = voice_for(meta.get("author") or "", voices or {})
             rows.append(
                 (
                     key,
@@ -820,12 +827,14 @@ def build_core_pack(
                     meta.get("author"),
                     meta.get("ebook_id"),
                     file_paths.get(key),
+                    voice["gender"],
+                    voice["accent"],
                 )
             )
         con.executemany(
             "INSERT OR REPLACE INTO books"
-            "(key, genre, book, title, author, ebook_id, file_path) "
-            "VALUES (?, ?, ?, ?, ?, ?, ?)",
+            "(key, genre, book, title, author, ebook_id, file_path, gender, accent) "
+            "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)",
             rows,
         )
         con.executemany(
@@ -1887,6 +1896,8 @@ class ExportOptions:
     #: product and gets no such claim.
     product_name: str | None = None
     product_version: str | None = None
+    #: The author voice table for ``core.pack``'s ``gender`` and ``accent``.
+    voices_path: Path = VOICES_PATH
 
     def resolved_out(self) -> Path:
         """Output directory; defaults to ``<bundle>/swift``."""
@@ -1966,6 +1977,7 @@ def export_swift(options: ExportOptions, *, progress=None) -> ExportReport:
             catalog=catalog,
             diary_count=len(diaries),
             catalog_keys=options.catalog_keys,
+            voices=read_voices(options.voices_path),
         )
     )
 
