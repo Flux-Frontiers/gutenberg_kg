@@ -354,8 +354,10 @@ has one. `author-voices` looks the authors up on Wikidata (gender, and an
 accent from citizenship: `en-US`, `en-GB`, or none for translated authors) and
 writes `corpus/authors/voices.json`. Ingestion does not touch it;
 `export-web-catalog` gives each catalog book its author's voice from it, for
-the forest's read-aloud. Run it again after adding authors; set an entry's
-`"source"` to `"manual"` to keep a correction.
+the forest's read-aloud, and `export-swift` writes the same voice as `gender`
+and `accent` columns in `core.pack`, for the app's reader. Run it again after
+adding authors; set an entry's `"source"` to `"manual"` to keep a
+correction.
 
 ```bash
 gutenkg author-voices                      # look up authors not yet in the table
