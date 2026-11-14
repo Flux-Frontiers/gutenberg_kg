@@ -239,11 +239,21 @@ def read_voices(path: Path = VOICES_PATH) -> dict[str, dict]:
     return json.loads(path.read_text(encoding="utf-8")) if path.is_file() else {}
 
 
+# Separators between the authors of a joint work: "A, B, and C", "A and B", "A & B".
+_JOINT = re.compile(r",\s*(?:and\s+)?|\s+and\s+|\s*&\s*")
+
+
 def voice_for(author: str, voices: dict[str, dict]) -> dict:
     """``{"gender", "accent"}`` for a catalog author name, both ``None`` when unknown.
+
+    A joint work ("Alexandre Dumas and Auguste Maquet") takes the voice of its
+    first named author the table knows.
 
     :param author: The author as the catalog names it.
     :param voices: The voice table.
     """
     entry = voices.get(_slugify(author), {})
+    if not entry.get("gender"):
+        named = (voices.get(_slugify(name), {}) for name in _JOINT.split(author) if name)
+        entry = next((e for e in named if e.get("gender")), entry)
     return {"gender": entry.get("gender"), "accent": entry.get("accent")}
