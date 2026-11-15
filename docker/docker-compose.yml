@@ -84,5 +84,6 @@ services:
       - "host.docker.internal:host-gateway"
     depends_on:
       - worker
+    restart: unless-stopped
     profiles:
       - chat
