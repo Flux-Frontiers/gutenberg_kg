@@ -352,6 +352,40 @@ sk-...`) to both `~/.omlx/settings.json` and `docker/.env`; quit oMLX first,
 since the app can write its settings back on exit. Restart the worker
 (`make down && make up`) after changing `docker/.env`.
 
+#### Choosing a model
+
+`VLLM_MODEL` does two jobs: it writes answers, and it rewrites passages into
+image prompts before FLUX renders them. A request can name another model
+(the `model` field), but everything else uses this one. The default,
+`Qwen3-4B-Instruct-2507-MLX-8bit`, fits any Apple Silicon Mac. On a Mac with
+more memory, a larger model gives more faithful answers and pictures.
+
+| Model ID in oMLX | Weights | Answer | Image rewrite | Notes |
+| --- | --- | --- | --- | --- |
+| `Qwen3-4B-Instruct-2507-MLX-8bit` (default) | 4 GB | 5-12 s | 1-2 s | Adds interpretation the passages do not support. Ignores the rewrite prompt's accuracy rules: Lot's wife stands beside the pillar of salt instead of becoming it. |
+| `Jundot--Qwen3.6-35B-A3B-oQ4e-mtp` | 20 GB | 2.5-7 s | 1-2 s | Mixture of experts: 35B parameters, 3B active per token, so it runs at small-model speed. Follows the accuracy rules. Fastest answers measured. |
+| `Qwen3.8-27B-oQ4e-mtp` (Jundot) | 16 GB | 6-11 s | about 9.5 s | Most faithful pictures, slowest rewrite. |
+| `Qwen3.8-27B-4bit` | 15 GB | 12-18 s | about 7 s | Same quality as the Jundot build, slower. |
+
+Measured 2026-11-17 on an M5 Max: five questions answered by the worker, one
+run each, plus four answers rewritten and rendered through FLUX.2 klein.
+Answer times include retrieval. Treat them as a ranking, not a benchmark.
+
+Size the model to memory. The weights must fit beside the FLUX image server
+(about 9 GB for the 4-bit FLUX.2 klein), the worker container and macOS:
+
+- **16-24 GB:** keep the 4B default.
+- **32 GB:** a 27B model fits, or A3B if images are rendered elsewhere.
+- **48 GB or more:** A3B with FLUX on the same Mac.
+
+The 32 GB and 48 GB lines are estimates from the weight sizes and have not
+been measured on those machines. If oMLX starts swapping, answers slow from
+seconds to minutes; drop to a smaller model.
+
+The 27B and A3B models are thinking models. The worker turns thinking off
+for oMLX, so they answer directly. Check what oMLX serves before setting
+`VLLM_MODEL`, using the `curl` command above.
+
 ### Ollama (cross-platform)
 
 ```bash
@@ -561,7 +595,7 @@ Provider is chosen per-request (chat UI Provider dropdown / `"backend"` field). 
 | `SYNTH_MODEL` | — | omlx | Model override (falls back to `VLLM_MODEL`). |
 | `VLLM_ENDPOINT_URL` | `http://localhost:8080/v1` | omlx | oMLX / vLLM OpenAI-compatible endpoint. |
 | `VLLM_API_KEY` | — | omlx | Bearer token for oMLX (omit for Ollama). |
-| `VLLM_MODEL` | `Qwen3-4B-Instruct-2507-MLX-8bit` | omlx | oMLX model ID. |
+| `VLLM_MODEL` | `Qwen3-4B-Instruct-2507-MLX-8bit` | omlx | oMLX model ID, for answers and image-prompt rewrites. See [Choosing a model](#choosing-a-model). |
 | `OLLAMA_ENDPOINT` | `http://localhost:11434/v1` | ollama | Ollama OpenAI-compatible endpoint (no key needed). |
 | `OPENAI_API_KEY` | — | openai | **Required for the OpenAI path.** Endpoint defaults to `https://api.openai.com/v1`, model to `gpt-4o-mini`. |
 | `ANTHROPIC_API_KEY` | -- | anthropic | **Required for the Anthropic path.** Model defaults to `claude-opus-5-5`. Select per request; do not use `anthropic` as `SYNTH_BACKEND`. |
