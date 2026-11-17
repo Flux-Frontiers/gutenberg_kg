@@ -45,7 +45,7 @@ The provider step backs up `docker/.env` before it changes it, and never prints 
 
 Options: `DEV=1` also installs the contributor toolchain (`--with dev` and the `image` and `pov` extras), and `CLI_ONLY=1` skips the container check. With `DRY_RUN=1` the only command that runs is the read-only `gutenkg init --check`, and only when the venv already exists.
 
-It exits `1` when a requirement is missing that it cannot or did not install, and `0` otherwise. It ends by printing the next command and does not run it: building the corpus takes 30-45 minutes, and `make pull-worker-image` skips that.
+It exits `1` when a requirement is missing that it cannot or did not install, or when the chosen provider could not be set up, and `0` otherwise. It ends by printing the next command and does not run it: building the corpus takes 30-45 minutes, and `make pull-worker-image` skips that.
 
 ---
 

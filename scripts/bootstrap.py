@@ -101,7 +101,7 @@ SETUP_MODELS = ROOT / "scripts" / "setup_models.py"
 # Seconds to wait for oMLX to answer after launching the app.
 OMLX_START_WAIT_S = 60
 # Each cloud key is checked against the provider's model list, which spends no
-# tokens. 401 or 403 means the key is wrong.
+# tokens. 401 means the key is wrong.
 CLOUD_KEYS = {
     "openai": (
         "OPENAI_API_KEY",
@@ -228,15 +228,16 @@ def check_key(url: str, headers: dict, timeout: float = 15.0):
     :param url: The provider's model-list URL.
     :param headers: Request headers carrying the key.
     :param timeout: Seconds to wait.
-    :returns: True for a good key, False for a rejected one (401 or 403), None
-        when the answer says nothing about the key (no network, a 5xx).
+    :returns: True for a good key, False for a rejected one (401), None when the
+        answer says nothing about the key: no network, a 5xx, or a 403, which a
+        valid key without permission for the model list also gets.
     """
     req = urllib.request.Request(url, headers=headers)
     try:
         with urllib.request.urlopen(req, timeout=timeout) as resp:  # noqa: S310
             return resp.status == 200
     except urllib.error.HTTPError as exc:
-        return False if exc.code in (401, 403) else None
+        return False if exc.code == 401 else None
     except (urllib.error.URLError, OSError, ValueError):
         return None
 
@@ -916,8 +917,9 @@ class Bootstrap:
     def _setup_cloud(self, provider: str) -> None:
         """OpenAI or Anthropic: get the key, check it, then write it to docker/.env."""
         name, url, headers = CLOUD_KEYS[provider]
+        # The worker reads docker/.env, so a key saved there wins over the shell's.
         saved = read_dotenv(ENV_FILE).get(name, "")
-        key = os.environ.get(name) or saved
+        key = saved or os.environ.get(name, "")
         if not key:
             if self.dry_run:
                 say("would run", f"ask for {name}, check it and set it in docker/.env")
@@ -937,7 +939,7 @@ class Bootstrap:
                 self.block(f"{provider} rejected {name}", "Check the key and re-run")
                 return
             if good is None:
-                say("warn", f"could not reach {url} to check {name}; keeping it unchecked")
+                say("warn", f"could not confirm {name} with {url}; keeping it unchecked")
             else:
                 say("ok", f"{name} accepted by {provider}")
         if key != saved:

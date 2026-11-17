@@ -466,7 +466,7 @@ def test_unreachable_check_keeps_the_key_with_a_warning(provider_box, monkeypatc
     b = _run(dry_run=False, provider="anthropic")
     b.setup_provider()
     assert b.blocked == [] and f"ANTHROPIC_API_KEY={_FAKE_ANT_KEY}" in env.read_text()
-    assert "could not reach" in capsys.readouterr().out
+    assert "could not confirm" in capsys.readouterr().out
 
 
 def test_dry_run_provider_asks_nothing_and_writes_nothing(provider_box, monkeypatch):
@@ -481,6 +481,39 @@ def test_dry_run_provider_asks_nothing_and_writes_nothing(provider_box, monkeypa
     for provider in ("openai", "anthropic", None):
         _run(provider=provider).setup_provider()
     assert env.read_text() == before and calls == []
+
+
+def test_a_saved_key_is_checked_and_kept(provider_box, monkeypatch):
+    env, _ = provider_box
+    env.write_text(env.read_text().replace("OPENAI_API_KEY=\n", "OPENAI_API_KEY=sk-saved\n"))
+    monkeypatch.setenv("OPENAI_API_KEY", "sk-from-shell")
+    before = env.read_text()
+
+    def no_prompt(*a, **k):
+        raise AssertionError("prompted for a saved key")
+
+    monkeypatch.setattr(bootstrap.getpass, "getpass", no_prompt)
+    seen = []
+    monkeypatch.setattr(bootstrap, "check_key", lambda url, h: seen.append(h) or True)
+    b = _run(dry_run=False, provider="openai")
+    b.setup_provider()
+    assert b.blocked == [] and seen == [{"Authorization": "Bearer sk-saved"}]
+    assert env.read_text() == before
+
+
+@pytest.mark.parametrize(("answer", "chosen"), [("openai", "openai"), ("", "none"), ("vllm", None)])
+def test_the_provider_prompt(provider_box, monkeypatch, answer, chosen):
+    monkeypatch.setattr("builtins.input", lambda prompt: answer)
+    assert _run(dry_run=False).choose_provider() == chosen
+
+
+@pytest.mark.parametrize(("code", "verdict"), [(401, False), (403, None), (500, None)])
+def test_check_key_rejects_only_401(monkeypatch, code, verdict):
+    def raise_http(req, timeout):
+        raise bootstrap.urllib.error.HTTPError(req.full_url, code, "x", {}, None)
+
+    monkeypatch.setattr(bootstrap.urllib.request, "urlopen", raise_http)
+    assert bootstrap.check_key("https://example.invalid/v1/models", {}) is verdict
 
 
 @pytest.mark.parametrize(
