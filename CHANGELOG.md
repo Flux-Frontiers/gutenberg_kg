@@ -18,6 +18,12 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Changed
 
+- **kgmodule-utils 0.30.1, and a refreshed lock.** The floor rises to
+  0.30.1 for its accurate-scene image rewrite prompt, in pyproject, the
+  Dockerfile ARG and `runpod/requirements.txt`. `poetry update` moved 113
+  locked packages to current releases (among them huggingface-hub 2.4,
+  openai 3.52, torch 2.15 and transformers 5.23); kg-rag, doc-kg and
+  diary-kg were already current.
 - **The install guide has a model-sizing table.** "Choosing a model" under
   Connecting a local LLM compares the 4B default with Qwen3.6-35B-A3B and
   two Qwen3.8-27B builds: weight size, answer and rewrite times, and which
