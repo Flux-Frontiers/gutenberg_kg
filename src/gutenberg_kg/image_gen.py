@@ -26,10 +26,6 @@ from io import BytesIO
 from pathlib import Path
 from typing import TYPE_CHECKING
 
-# One prompt for every rewrite path: the worker's, this CLI/MCP one, and
-# the app's Swift mirror (test_synthesis_parity.py).
-from gutenberg_kg.synthesis_prompts import IMAGE_REWRITE_SYSTEM as _VLM_SYSTEM
-
 if TYPE_CHECKING:
     from PIL.Image import Image as PILImage
 
@@ -123,6 +119,13 @@ def vlm_rewrite(
     """
     import re
 
+    # Imported here, not at module level: the shared prompt comes from
+    # kgmodule-utils, which the FLUX image server's .venv-image does not
+    # install, and that server imports this module for generate() only.
+    # One prompt for every rewrite path: the worker's, this CLI/MCP one,
+    # and the app's Swift mirror (test_synthesis_parity.py).
+    from gutenberg_kg.synthesis_prompts import IMAGE_REWRITE_SYSTEM
+
     try:
         from openai import OpenAI
     except ImportError:
@@ -136,7 +139,7 @@ def vlm_rewrite(
         response = client.chat.completions.create(
             model=mdl,
             messages=[
-                {"role": "system", "content": _VLM_SYSTEM},
+                {"role": "system", "content": IMAGE_REWRITE_SYSTEM},
                 {"role": "user", "content": corpus_text},
             ],
             max_tokens=300,
