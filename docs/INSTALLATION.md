@@ -357,7 +357,11 @@ since the app can write its settings back on exit. Restart the worker
 #### Choosing a model
 
 The quickest way to set this up is `make models`. It picks the model that fits
-this Mac's memory, downloads it into oMLX and sets it as the worker's default:
+this Mac's memory, downloads it into oMLX and sets it as the worker's default.
+It works with oMLX only, on Apple Silicon. Install oMLX, start it on port 8080 (see
+above), and set `VLLM_API_KEY` in `docker/.env` to its key before you run it.
+With oMLX not running, it downloads the model and writes `docker/.env` without
+testing the model.
 
 ```bash
 make models                 # pick from this Mac's memory
@@ -369,10 +373,11 @@ make down && make up        # then restart the stack
 ```
 
 It downloads the model into `~/.omlx/models/<org>/<name>` and has oMLX rescan
-its models. It then writes `VLLM_MODEL`, `MOOT_MODEL` and `IMAGE_IDLE_UNLOAD_S`
-to `docker/.env`, after backing the file up. Next it sends one short request,
-so a model oMLX refuses to load fails here with oMLX's own message. Last, it
-pulls the worker image. It reports Docker's memory and oMLX's memory guard but
+its models; a model oMLX already serves is not downloaded again. It then sends
+one short request, so a model oMLX refuses to load fails here with oMLX's own
+message and `docker/.env` is left as it was. Next it writes `VLLM_MODEL`,
+`MOOT_MODEL` and `IMAGE_IDLE_UNLOAD_S` to `docker/.env`, after backing the file
+up. Last, it pulls the worker image. It reports Docker's memory and oMLX's memory guard but
 does not change them. The tiers are in `scripts/model_tiers.json`:
 
 | Tier | Memory | Model | Size | Basis |
