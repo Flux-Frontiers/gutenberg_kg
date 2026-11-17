@@ -22,11 +22,14 @@ only output is its transcript.
 from __future__ import annotations
 
 import difflib
+import os
 import re
 from dataclasses import asdict, dataclass, field
 
-#: The model a moot uses unless ``--model`` overrides it. 4B models run about
-#: three times faster but quote far less reliably.
+#: The model a moot uses on oMLX unless ``--model`` or ``MOOT_MODEL`` names
+#: another. 4B models run about three times faster but quote far less reliably.
+#: A Mac of 24 GB or less cannot load it beside FLUX; `make models` sets
+#: MOOT_MODEL there (scripts/model_tiers.json).
 DEFAULT_MODEL = "Qwen3.8-27B-4bit"
 
 #: Every ``complete`` call is capped here; the persona's word limit alone does
@@ -933,7 +936,8 @@ def resolve_model(backend: str, model: str | None, synth) -> tuple[str | None, s
     """Pick the model a moot calls with and the name its transcript records.
 
     :param backend: The synthesizer's backend name, e.g. ``"omlx"``.
-    :param model: A model id the caller asked for, or ``None``.
+    :param model: A model id the caller asked for, or ``None``. Without one,
+        oMLX uses ``MOOT_MODEL`` from the environment, then ``DEFAULT_MODEL``.
     :param synth: The synthesizer, whose own default applies off omlx.
     :returns: ``(model passed to complete, model name recorded)``. The first is
         ``None`` when the synthesizer's default should apply.
@@ -941,7 +945,8 @@ def resolve_model(backend: str, model: str | None, synth) -> tuple[str | None, s
     if model:
         return model, model
     if backend == "omlx":
-        return DEFAULT_MODEL, DEFAULT_MODEL
+        chosen = os.environ.get("MOOT_MODEL", "").strip() or DEFAULT_MODEL
+        return chosen, chosen
     cfg = getattr(synth, "_cfg", None)  # TextSynthesizer keeps its TextConfig here
     return None, cfg.resolved_model() if cfg is not None else ""
 

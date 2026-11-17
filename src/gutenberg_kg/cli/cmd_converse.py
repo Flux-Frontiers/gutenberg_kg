@@ -27,8 +27,8 @@ Backend: --backend picks the provider; it defaults to SYNTH_BACKEND, then omlx.
           SYNTH_BACKEND is also openai.
 
 \b
-Model: on omlx a moot uses {DEFAULT_MODEL} unless --model names another;
-SYNTH_MODEL does not apply there. For quick runs on omlx,
+Model: on omlx a moot uses MOOT_MODEL, else {DEFAULT_MODEL}, unless --model
+names another; SYNTH_MODEL does not apply there. For quick runs on omlx,
 --model Qwen3-4B-Instruct-2507-MLX-8bit is about three times faster
 but quotes its book far less reliably. On ollama and openai the backend's
 own default applies (SYNTH_MODEL, when SYNTH_BACKEND names that backend).
@@ -318,7 +318,7 @@ def _print_utterance(u) -> None:
 @click.option(
     "--model",
     default=None,
-    help=f"Model id. Default: {DEFAULT_MODEL} on omlx, the backend's own default otherwise.",
+    help=f"Model id. Default on omlx: MOOT_MODEL, else {DEFAULT_MODEL}; the backend's own default otherwise.",
 )
 @click.option(
     "--temperature", type=float, default=0.6, show_default=True, help="Sampling temperature."

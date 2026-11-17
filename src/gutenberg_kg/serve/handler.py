@@ -34,7 +34,9 @@ GUTENKG_CORS_ORIGINS  Comma-separated origins a browser may call from (serve/cor
 GUTENKG_VOICES     The author voice table for live moots.  Default: corpus/authors/voices.json
 VLLM_ENDPOINT_URL  Optional OpenAI-compatible endpoint for synthesis (oMLX/Ollama/vLLM).
 VLLM_API_KEY       Bearer token for the synthesis endpoint.  Omit for Ollama.
-VLLM_MODEL         Model ID.  Default: Qwen3-8B-MLX-4bit
+VLLM_MODEL         Model ID.  Default: Qwen3-4B-Instruct-2507-MLX-8bit
+                   (scripts/model_tiers.json; `make models` sets it per Mac)
+MOOT_MODEL         Model a moot uses on oMLX.  Default: Qwen3.8-27B-4bit
 SYNTH_MAX_K        Max snippets fed to synthesis.  Default: 12
 SYNTH_PROMPT       System prompt: guide | worker.  Default: guide
 
@@ -102,6 +104,7 @@ from gutenberg_kg.serve.scope import dense_scope_sql as _dense_scope_sql
 from gutenberg_kg.serve.scope import keep_in_scope as _keep_in_scope
 from gutenberg_kg.serve.scope import resolve_corpus as _resolve_corpus
 from gutenberg_kg.serve.scope import scope_prefix as _scope_prefix
+from gutenberg_kg.serve.synth_status import empty_synthesis_error
 from gutenberg_kg.synthesis_prompts import system_prompt
 from gutenberg_kg.vector_store import resolve_vectors_path
 
@@ -1092,6 +1095,12 @@ def handler(job: dict) -> dict:
         except Exception as exc:  # noqa: BLE001 — any backend failure degrades the same way
             synthesis_error = f"{type(exc).__name__}: {exc}"
             print(f"[query] synthesis FAILED: {synthesis_error}")
+        if synthesis_error is None and not synthesis:
+            synthesis_error = empty_synthesis_error(
+                hits, model or active_synth._cfg.resolved_model(), SYNTH_MAX_K
+            )
+            if synthesis_error:
+                print(f"[query] synthesis FAILED: {synthesis_error}")
         synthesis_ms = (time.perf_counter() - t0_synth) * 1000
         if synthesis_error is None:
             print(f"[query] synthesis returned in {synthesis_ms:.0f}ms")
