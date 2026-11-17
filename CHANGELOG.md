@@ -8,6 +8,22 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+### Fixed
+
+- **kgmodule-utils 0.30.2, and a lock that installs one cuBLAS.** The floor
+  rises to 0.30.2 in `pyproject.toml`, `runpod/requirements.txt` and the
+  Dockerfile. That release sends each synthesis key only to its own backend.
+  The lock is regenerated with Poetry 2.4.3: the previous one, written by
+  Poetry 2.5.1, marked the second `nvidia-cublas` and `nvidia-cuda-nvrtc`
+  entries for all of Linux, so a Linux x86_64 install from the lock got both
+  versions. The worker image was not affected, since it installs CPU torch
+  with pip. `tests/test_lock_markers.py` now fails when the lock would
+  install two versions of a package on Linux x86_64, macOS arm64 or Windows.
+- **A diary-routing test no longer writes to `~/.kgrag`.**
+  `test_run_ingest_routes_diaries_to_diary_pipeline` now passes a temporary
+  registry path to `run_ingest`, so it no longer creates the real KGRAG
+  registry folder, and it passes with no home folder.
+
 ### Added
 
 - **`make bootstrap` can set up the LLM provider.** A new last step sets up
