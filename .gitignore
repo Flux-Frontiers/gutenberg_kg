@@ -58,6 +58,8 @@ ipython_config.py
 
 # Environments
 .env
+# Backups scripts/setup_models.py makes of docker/.env; they hold its secrets.
+.env.bak-*
 .envrc
 .venv
 env/

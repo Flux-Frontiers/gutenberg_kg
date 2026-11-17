@@ -68,6 +68,10 @@
 #   make down-all               — kill containers under both runtimes, stop both runtimes
 #   make publish-worker-image   — build linux/amd64 + linux/arm64 and push to $(REGISTRY_IMAGE)
 #   make pull-worker-image      — pull the published image instead of building one
+#   make models                 — download the LLM that fits this Mac into oMLX, set it
+#                         as the worker's default, pull the worker image
+#                         (TIER=small|medium|large|xl, MODEL=<hf repo>,
+#                         IMAGES=openai, DRY_RUN=1; tiers: scripts/model_tiers.json)
 # run/chat/up refuse to start while the other runtime is up (see runtime-guard).
 #   make logs  RUNTIME=apple    — follow worker logs (`container logs -f`)
 #   make clean RUNTIME=apple    — remove the image (`container image rm`)
@@ -88,6 +92,9 @@ COMPOSE      = docker compose -f docker/docker-compose.yml
 WORKER       = http://localhost:8000
 IMAGE_SERVER = http://localhost:8090
 SDXL_SERVER  = http://localhost:8091
+# Seconds FLUX stays loaded after a render (0 = always). `make models` writes it
+# to docker/.env; this reads it there for the image server and its LaunchAgent.
+IMAGE_IDLE_UNLOAD_S ?= $(or $(shell sed -n 's/^IMAGE_IDLE_UNLOAD_S=//p' docker/.env 2>/dev/null | tail -n 1),0)
 
 # Selective bundle export (analysis/SELECTIVE_BUNDLE_EXPORT_PLAN.md phase 4).
 # Defaults preserve today's full-corpus behavior exactly: no SPEC, BUNDLE
@@ -254,7 +261,7 @@ endif
 # `gutenkg` on PATH. Override with e.g. `make GUTENKG=gutenkg build-corpus`.
 GUTENKG     ?= poetry run gutenkg
 
-.PHONY: bootstrap init spacy-model chunk-diaries build-diaries build-corpus export-swift export-web-catalog export-web-books stale-books refresh-text check-pins setup build build-all rebuild rebuild-all prune kill down-all runtime-guard publish-worker-image pull-worker-image run image-server image-agent-install image-agent-uninstall sdxl-server sdxl-fetch chat up stop down query logs clean docs
+.PHONY: bootstrap init spacy-model chunk-diaries build-diaries build-corpus export-swift export-web-catalog export-web-books stale-books refresh-text check-pins setup build build-all rebuild rebuild-all prune kill down-all runtime-guard publish-worker-image pull-worker-image models runimage-server image-agent-install image-agent-uninstall sdxl-server sdxl-fetch chat up stop down query logs clean docs
 
 # One-command install for a fresh clone. Uses the system python3, not Poetry,
 # because it has to run before Poetry or the venv exist. Flags map to variables
@@ -570,6 +577,7 @@ run: runtime-guard setup
 	  -e HANDLER_SECRET="$${HANDLER_SECRET:-}" \
 	  -e GUTENKG_CORS_ORIGINS="$${GUTENKG_CORS_ORIGINS-http://localhost:5173,https://flux-frontiers.github.io,kp-forest://forest}" \
 	  -e MOOT_TOKEN="$${MOOT_TOKEN:-}" \
+	  -e MOOT_MODEL="$${MOOT_MODEL:-}" \
 	  -e VLLM_ENDPOINT_URL="$$VLLM_ENDPOINT_URL" \
 	  -e VLLM_MODEL="$${VLLM_MODEL:-Qwen3-4B-Instruct-2507-MLX-8bit}" \
 	  -e VLLM_API_KEY="$${VLLM_API_KEY:-}" \
@@ -766,7 +774,7 @@ image-server:
 		echo "FLUX image server is run by launchd ($(IMAGE_AGENT)); not starting a second copy."; \
 	else \
 		echo "Starting FLUX image server on $(IMAGE_SERVER) (background, .venv-image) ..."; \
-		MFLUX_SERVER_HOST=0.0.0.0 .venv-image/bin/gutenkg-image-server & \
+		MFLUX_SERVER_HOST=0.0.0.0 IMAGE_IDLE_UNLOAD_S=$(IMAGE_IDLE_UNLOAD_S) .venv-image/bin/gutenkg-image-server & \
 	fi
 
 # Run the FLUX image server as a macOS LaunchAgent: it starts at login and
@@ -783,10 +791,25 @@ image-agent-install:
 		{ echo "ERROR: $(IMAGE_AGENT_REPO)/.venv-image is missing; run 'make image-server' once first."; exit 1; }
 	-@launchctl bootout gui/$$(id -u)/$(IMAGE_AGENT) 2>/dev/null || true
 	-@pkill -f gutenkg-image-server 2>/dev/null || true
+	@# bootout returns before the service is gone; bootstrapping too soon fails
+	@# with "5: Input/output error". Wait up to 10 s for it to go.
+	@for i in 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20; do \
+		launchctl print gui/$$(id -u)/$(IMAGE_AGENT) >/dev/null 2>&1 || break; sleep 0.5; \
+	done
 	@sed -e 's|@REPO@|$(IMAGE_AGENT_REPO)|g' -e 's|@LOG@|$(IMAGE_AGENT_LOG)|g' \
+		-e 's|@IDLE@|$(IMAGE_IDLE_UNLOAD_S)|g' \
 		scripts/$(IMAGE_AGENT).plist.in > $(IMAGE_AGENT_PLIST)
 	@launchctl bootstrap gui/$$(id -u) $(IMAGE_AGENT_PLIST)
 	@echo "Installed $(IMAGE_AGENT_PLIST); FLUX image server on $(IMAGE_SERVER), log $(IMAGE_AGENT_LOG)"
+
+# Set up the local LLM for this Mac's memory: download it into oMLX, write
+# VLLM_MODEL, MOOT_MODEL and IMAGE_IDLE_UNLOAD_S to docker/.env, test it, then
+# pull the worker image for the current RUNTIME. See scripts/setup_models.py
+# and docs/INSTALLATION.md ("Small Macs").
+models:
+	@python3 scripts/setup_models.py $(if $(TIER),--tier $(TIER)) $(if $(MODEL),--model $(MODEL)) \
+		$(if $(IMAGES),--images $(IMAGES)) $(if $(DRY_RUN),--dry-run)
+	@$(if $(DRY_RUN),echo "Dry run: worker image not pulled.",$(MAKE) --no-print-directory pull-worker-image)
 
 image-agent-uninstall:
 	-@launchctl bootout gui/$$(id -u)/$(IMAGE_AGENT) 2>/dev/null || true

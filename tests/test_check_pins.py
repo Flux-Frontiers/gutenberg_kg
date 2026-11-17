@@ -138,6 +138,9 @@ def tree(tmp_path, monkeypatch):
             path.write_text(content)
             monkeypatch.setattr(check_pins, attr, path)
             paths[attr] = path
+        # The model-default check reads the compose file these trees replace;
+        # it has tests of its own in test_setup_models.py.
+        monkeypatch.setattr(check_pins, "model_default_problems", lambda: [])
         return paths
 
     return _build

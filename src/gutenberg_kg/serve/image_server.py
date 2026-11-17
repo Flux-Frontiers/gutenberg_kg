@@ -21,6 +21,10 @@ IMAGE_STEPS           Default inference steps (default: 4)
 IMAGE_OUTPUT_DIR      Directory for saved images when response_format=filepath (default: /tmp/gutenberg_images)
 MFLUX_SERVER_HOST     Bind host (default: 0.0.0.0)
 MFLUX_SERVER_PORT     Bind port (default: 8090)
+IMAGE_IDLE_UNLOAD_S   Unload FLUX after this many idle seconds, so a small Mac gets
+                      its 12-15 GB back for the LLM; the next render reloads it.
+                      0 (default) keeps it loaded.  `make models` sets 300 on
+                      Macs of 24 GB or less (scripts/model_tiers.json).
 """
 
 from __future__ import annotations
@@ -28,6 +32,7 @@ from __future__ import annotations
 import asyncio
 import base64
 import os
+import threading
 import time
 import uuid
 from io import BytesIO
@@ -60,6 +65,51 @@ if _PRELOAD:
 else:
     print("[startup] IMAGE_PRELOAD disabled; model will load on first generation request")
 
+_IDLE_UNLOAD_S = int(os.environ.get("IMAGE_IDLE_UNLOAD_S", "0") or 0)
+# One render at a time, and never an unload in the middle of one.
+_gen_lock = threading.Lock()
+_last_used = time.monotonic()
+
+
+def _render(**kwargs):
+    """Run image_gen.generate() under the lock and note when it finished."""
+    global _last_used
+    with _gen_lock:
+        try:
+            return image_gen.generate(**kwargs)
+        finally:
+            _last_used = time.monotonic()
+
+
+def maybe_unload(now: float | None = None) -> bool:
+    """Unload FLUX if it has been idle for ``IMAGE_IDLE_UNLOAD_S`` seconds.
+
+    Skipped while a render holds the lock; the watcher tries again later.
+
+    :param now: The current ``time.monotonic()`` reading (for tests).
+    :returns: ``True`` if the model was unloaded.
+    """
+    if _IDLE_UNLOAD_S <= 0 or not image_gen.model_loaded():
+        return False
+    now = time.monotonic() if now is None else now
+    if now - _last_used < _IDLE_UNLOAD_S:
+        return False
+    if not _gen_lock.acquire(blocking=False):
+        return False
+    try:
+        return image_gen.unload_model()
+    finally:
+        _gen_lock.release()
+
+
+def _idle_watcher() -> None:
+    """Check for an idle model every few seconds, for the life of the server."""
+    interval = max(5.0, min(30.0, _IDLE_UNLOAD_S / 4))
+    while True:
+        time.sleep(interval)
+        if maybe_unload():
+            print(f"[idle] FLUX unloaded after {_IDLE_UNLOAD_S}s idle; the next render reloads it")
+
 
 class ImageGenRequest(BaseModel):
     model: str = "flux2-klein-4b"
@@ -82,7 +132,13 @@ def health():
 
     :returns: ``{"status": "ok", ...}`` identifying the backend.
     """
-    return {"status": "ok", "backend": "flux", "model": "flux2-klein-4b"}
+    return {
+        "status": "ok",
+        "backend": "flux",
+        "model": "flux2-klein-4b",
+        "loaded": image_gen.model_loaded(),
+        "idle_unload_s": _IDLE_UNLOAD_S,
+    }
 
 
 @app.get("/v1/models")
@@ -110,8 +166,8 @@ async def generate_image(req: ImageGenRequest):
     loop = asyncio.get_event_loop()
     pil = await loop.run_in_executor(
         None,
-        lambda: image_gen.generate(
-            req.prompt,
+        lambda: _render(
+            prompt=req.prompt,
             size=req.size,
             seed=req.seed,
             model_name=_MODEL_NAME,
@@ -135,6 +191,9 @@ def main() -> None:
     """Run the FastAPI app with uvicorn, using host/port from environment variables."""
     host = os.environ.get("MFLUX_SERVER_HOST", "0.0.0.0")
     port = int(os.environ.get("MFLUX_SERVER_PORT", "8090"))
+    if _IDLE_UNLOAD_S > 0:
+        threading.Thread(target=_idle_watcher, name="flux-idle-unload", daemon=True).start()
+        print(f"[startup] FLUX unloads after {_IDLE_UNLOAD_S}s idle (IMAGE_IDLE_UNLOAD_S)")
     uvicorn.run(app, host=host, port=port)
 
 

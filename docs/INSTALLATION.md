@@ -356,6 +356,32 @@ since the app can write its settings back on exit. Restart the worker
 
 #### Choosing a model
 
+The quickest way to set this up is `make models`. It picks the model that fits
+this Mac's memory, downloads it into oMLX and sets it as the worker's default:
+
+```bash
+make models                 # pick from this Mac's memory
+make models DRY_RUN=1       # show what it would do
+make models TIER=medium     # small | medium | large | xl
+make models MODEL=Qwen/Qwen3-8B-MLX-4bit   # any MLX repo on Hugging Face
+make models IMAGES=openai   # render images with OpenAI instead of FLUX
+make down && make up        # then restart the stack
+```
+
+It downloads the model into `~/.omlx/models/<org>/<name>` and has oMLX rescan
+its models. It then writes `VLLM_MODEL`, `MOOT_MODEL` and `IMAGE_IDLE_UNLOAD_S`
+to `docker/.env`, after backing the file up. Next it sends one short request,
+so a model oMLX refuses to load fails here with oMLX's own message. Last, it
+pulls the worker image. It reports Docker's memory and oMLX's memory guard but
+does not change them. The tiers are in `scripts/model_tiers.json`:
+
+| Tier | Memory | Model | Size | Basis |
+| --- | --- | --- | --- | --- |
+| small | 16 GB or less | `Qwen3-4B-Instruct-2507-MLX-8bit` | 4.3 GB | estimate |
+| medium | 18-24 GB | `Qwen3-8B-MLX-4bit` | 4.1 GB | measured on a 24 GB Mac |
+| large | 32-36 GB | `Qwen3.8-27B-4bit` | 15.7 GB | estimate |
+| xl | 48 GB or more | `Qwen3.6-35B-A3B-oQ4e-mtp` | 21.6 GB | measured on an M5 Max |
+
 `VLLM_MODEL` does two jobs: it writes answers, and it rewrites passages into
 image prompts before FLUX renders them. A request can name another model
 (the `model` field), but everything else uses this one. The default,
@@ -365,6 +391,7 @@ more memory, a larger model gives more faithful answers and pictures.
 | Model ID in oMLX | Weights | Answer | Image rewrite | Notes |
 | --- | --- | --- | --- | --- |
 | `Qwen3-4B-Instruct-2507-MLX-8bit` (default) | 4 GB | 5-12 s | 1-2 s | Adds interpretation the passages do not support. Ignores the rewrite prompt's accuracy rules: Lot's wife stands beside the pillar of salt instead of becoming it. |
+| `Qwen3-8B-MLX-4bit` | 4 GB | 2-6 s | not measured | The `make models` choice for 18-24 GB. Measured on a 24 GB Mac; see [Small Macs](#small-macs-16-24-gb). |
 | `Jundot--Qwen3.6-35B-A3B-oQ4e-mtp` | 20 GB | 2.5-7 s | 1-2 s | Mixture of experts: 35B parameters, 3B active per token, so it runs at small-model speed. Follows the accuracy rules. Fastest answers measured. |
 | `Qwen3.8-27B-oQ4e-mtp` (Jundot) | 16 GB | 6-11 s | about 9.5 s | Most faithful pictures, slowest rewrite. |
 | `Qwen3.8-27B-4bit` | 15 GB | 12-18 s | about 7 s | Same quality as the Jundot build, slower. |
@@ -374,15 +401,63 @@ run each, plus four answers rewritten and rendered through FLUX.2 klein.
 Answer times include retrieval. Treat them as a ranking, not a benchmark.
 
 Size the model to memory. The weights must fit beside the FLUX image server
-(about 9 GB for the 4-bit FLUX.2 klein), the worker container and macOS:
+(9 GB of weights, but 12-15 GB in memory once it has rendered), the worker
+container's VM and macOS:
 
-- **16-24 GB:** keep the 4B default.
+- **16 GB:** the 4B default. Not yet measured.
+- **18-24 GB:** `Qwen3-8B-MLX-4bit`. Measured; see below.
 - **32 GB:** a 27B model fits, or A3B if images are rendered elsewhere.
 - **48 GB or more:** A3B with FLUX on the same Mac.
 
-The 32 GB and 48 GB lines are estimates from the weight sizes and have not
-been measured on those machines. If oMLX starts swapping, answers slow from
-seconds to minutes; drop to a smaller model.
+The 32 GB line is an estimate from the weight sizes. If oMLX starts swapping,
+answers slow from seconds to minutes; drop to a smaller model.
+
+#### Small Macs (16-24 GB)
+
+oMLX will not load a model that does not fit in the memory left over. It
+refuses with a clear message, which the worker now reports as
+`synthesis_error` (it used to return an empty answer with no error). What is
+left over depends mostly on two other programs:
+
+- **The FLUX image server** loads its model on the first render. It held
+  12-15 GB from then on until it was restarted. `IMAGE_IDLE_UNLOAD_S` now
+  unloads it after that many idle seconds; `make models` sets 300 on these
+  Macs, and the next render loads it again.
+- **Docker's VM** keeps the memory it has used, even when the containers are
+  idle. With Docker Desktop set to 7.7 GB, the VM held about 10.7 GB of the
+  Mac's memory. Set it to about 4 GB (Docker Desktop > Settings > Resources).
+
+Free memory in this order: Docker's VM, then FLUX, then a smaller model.
+Stop containers that are not part of GutenbergKG too.
+
+Measured 2026-11-17 on a 24 GB Mac with these settings: the GPU memory limit
+raised to 21 GB (`sudo sysctl iogpu.wired_limit_mb=21504`, which lasts until
+the next restart), Docker's VM at 3.7 GB, and oMLX's memory guard on
+"balanced". Each answer was the same diary question, through the worker.
+
+| What | Time | Memory free | Swap used |
+| --- | --- | --- | --- |
+| 8B answer, first (loads the model) | 6.0 s | 65% | 0.9 GB |
+| 8B answer, repeated | 2.2 s | 65% | 0.9 GB |
+| FLUX render, first (loads FLUX) | 52 s | 28% | 6.5 GB |
+| 8B answer with FLUX loaded | 3.3 s | 27% | 7.2 GB |
+| FLUX render, second | 77 s | 22% | 6.9 GB |
+
+Answers stay fast with FLUX loaded. Renders do not: the second was slower
+than the first, because the Mac was swapping. On the same Mac:
+
+- **`Qwen3.8-27B-4bit` (15.7 GB) was refused.** oMLX had 4.5 GB for it with
+  FLUX loaded and Docker at 7.7 GB, and 12.8 GB once FLUX was unloaded.
+- **A3B (21.6 GB) cannot run on 24 GB at all.** It is larger than oMLX's
+  whole 21 GB limit.
+
+For a larger model on a 24 GB Mac, render images with OpenAI
+(`make models TIER=large IMAGES=openai`, with `OPENAI_API_KEY` set) and
+leave the FLUX server stopped. This has not been measured.
+
+Moots use `MOOT_MODEL` on oMLX, or `Qwen3.8-27B-4bit` when it is empty. That
+27B does not fit on these Macs, so `make models` sets `MOOT_MODEL` to the
+model it installs.
 
 The 27B and A3B models are thinking models. The worker turns thinking off
 for oMLX, so they answer directly. Check what oMLX serves before setting

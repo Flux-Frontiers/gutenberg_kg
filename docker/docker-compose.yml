@@ -38,6 +38,9 @@ services:
       # sends instead of HANDLER_SECRET, which must never reach a browser.
       GUTENKG_CORS_ORIGINS: ${GUTENKG_CORS_ORIGINS-http://localhost:5173,https://flux-frontiers.github.io,kp-forest://forest}
       MOOT_TOKEN: ${MOOT_TOKEN:-}
+      # The model moots use on oMLX; empty means Qwen3.8-27B-4bit. `make models`
+      # sets it on small Macs (scripts/model_tiers.json).
+      MOOT_MODEL: ${MOOT_MODEL:-}
       # Synthesis via a host LLM server (optional — omit to disable).
       # Defaults target oMLX on :8080; see docker/.env.example.
       VLLM_ENDPOINT_URL: ${VLLM_ENDPOINT_URL:-http://host.docker.internal:8080/v1}
