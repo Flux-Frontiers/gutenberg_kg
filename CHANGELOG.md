@@ -8,6 +8,16 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+### Fixed
+
+- **The FLUX image server starts again.** 1.37.0's `image_gen.py` imported
+  the shared rewrite prompt at module level, which pulls in kgmodule-utils.
+  The image server's `.venv-image` does not install it, so
+  `gutenkg-image-server` exited on import and the LaunchAgent restarted it in
+  a loop; the apps reported "Network is unreachable" on Render. The import
+  now sits inside `vlm_rewrite()`, the only caller, and a test imports
+  `image_gen` with kg_utils blocked.
+
 ## [1.37.0] - 2026-11-17
 
 ### Added
