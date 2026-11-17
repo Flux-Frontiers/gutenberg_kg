@@ -135,7 +135,8 @@ class OMLX:
         server = settings.get("server", {})
         host = server.get("host", "127.0.0.1")
         host = "127.0.0.1" if host in ("0.0.0.0", "") else host
-        self.base = f"http://{host}:{int(server.get('port', 8080))}"
+        # 8000 is oMLX's own default; the docs have it moved to 8080.
+        self.base = f"http://{host}:{int(server.get('port', 8000))}"
         self._key = (settings.get("auth") or {}).get("api_key") or ""
         self.guard_tier = (settings.get("memory") or {}).get("memory_guard_tier", "?")
 
