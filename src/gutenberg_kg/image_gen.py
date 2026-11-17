@@ -195,7 +195,8 @@ def unload_model() -> bool:
 
     gc.collect()
     try:
-        import mlx.core as mx
+        # mlx is in the image server's .venv-image only, not the checked env.
+        import mlx.core as mx  # ty: ignore[unresolved-import]
 
         clear = getattr(mx, "clear_cache", None) or mx.metal.clear_cache
         clear()
