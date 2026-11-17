@@ -109,6 +109,7 @@ def sandbox(monkeypatch, tmp_path):
     settings.write_text(json.dumps({"server": {"port": 1}}))
     monkeypatch.setattr(setup_models, "ENV_FILE", env)
     monkeypatch.setattr(setup_models, "OMLX_SETTINGS", settings)
+    monkeypatch.setattr(setup_models, "OMLX_HOME", tmp_path)
     monkeypatch.setattr(setup_models, "OMLX_MODELS", tmp_path / "models")
     monkeypatch.setattr(setup_models, "IMAGE_AGENT_PLIST", tmp_path / "none.plist")
     monkeypatch.setattr(setup_models, "find_hf", lambda: "/bin/false")
