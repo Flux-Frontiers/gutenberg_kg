@@ -16,6 +16,7 @@ One command takes a fresh clone to a working install. It uses only the system `p
 make bootstrap DRY_RUN=1     # report what is present and what it would do; changes nothing
 make bootstrap               # do it, asking before each install
 make bootstrap YES=1         # do it without asking
+make bootstrap PROVIDER=omlx # also set up an LLM provider: omlx | openai | anthropic | none
 ```
 
 No `make` yet? Run the script directly: `python3 scripts/bootstrap.py --dry-run`.
@@ -32,10 +33,19 @@ It walks the [requirements](#requirements) in order:
 | Local models | `gutenkg init` fetches the spaCy and embedder models | |
 | `docker/.env` | left unchanged | copied from `docker/.env.example` |
 | LLM and image backends | reports oMLX, Ollama and whether an OpenAI key is set | reports only |
+| LLM provider | sets up the one chosen with `PROVIDER=`, or asked for on a terminal (see below) | with no choice, says how to make one |
+
+The provider step backs up `docker/.env` before it changes it, and never prints a key:
+
+- `omlx` (Apple Silicon): checks that oMLX is installed and running, offering to open the app; that the port oMLX listens on matches `VLLM_ENDPOINT_URL`; and that `VLLM_API_KEY` is oMLX's key, offering to copy it in. Then it runs `scripts/setup_models.py` (as `make models` does, without pulling the worker image) to fetch and test the model for this Mac's memory.
+- `openai` or `anthropic`: asks for the key when `docker/.env` has none, checks it against the provider's model list (no tokens spent) and writes it. A rejected key is not written.
+- `none`: nothing to set up; querying the corpus needs no LLM.
+
+`YES=1` and runs off a terminal never pick a provider; pass `PROVIDER=` for that. Ollama is not set up here yet; see [Ollama](#ollama-cross-platform).
 
 Options: `DEV=1` also installs the contributor toolchain (`--with dev` and the `image` and `pov` extras), and `CLI_ONLY=1` skips the container check. With `DRY_RUN=1` the only command that runs is the read-only `gutenkg init --check`, and only when the venv already exists.
 
-It exits `1` when a requirement is missing that it cannot or did not install, and `0` otherwise. It ends by printing the next command and does not run it: building the corpus takes 30-45 minutes, and `make pull-worker-image` skips that.
+It exits `1` when a requirement is missing that it cannot or did not install, or when the chosen provider could not be set up, and `0` otherwise. It ends by printing the next command and does not run it: building the corpus takes 30-45 minutes, and `make pull-worker-image` skips that.
 
 ---
 

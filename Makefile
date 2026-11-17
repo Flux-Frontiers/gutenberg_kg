@@ -268,7 +268,7 @@ GUTENKG     ?= poetry run gutenkg
 # so `make bootstrap DRY_RUN=1` works; on a machine without make, run
 # `python3 scripts/bootstrap.py --dry-run` directly. See scripts/bootstrap.py.
 bootstrap:
-	@python3 scripts/bootstrap.py $(if $(DRY_RUN),--dry-run) $(if $(YES),--yes) $(if $(DEV),--dev) $(if $(CLI_ONLY),--cli-only)
+	@python3 scripts/bootstrap.py $(if $(DRY_RUN),--dry-run) $(if $(YES),--yes) $(if $(DEV),--dev) $(if $(CLI_ONLY),--cli-only) $(if $(PROVIDER),--provider $(PROVIDER))
 
 init:
 	$(GUTENKG) init
