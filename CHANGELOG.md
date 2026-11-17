@@ -18,6 +18,11 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Changed
 
+- **`gutenkg imagine` and the MCP image tool use the shared rewrite prompt.**
+  `image_gen.py` kept its own copy of the art-director prompt; it now imports
+  `IMAGE_REWRITE_SYSTEM`, so the CLI, the MCP server and the worker rewrite
+  with the same text. The prompt itself (accurate-scene rules) comes from
+  kgmodule-utils.
 - **The chat container restarts with Docker**, like the worker
   (`restart: unless-stopped`).
 

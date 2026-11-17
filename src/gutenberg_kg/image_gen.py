@@ -26,6 +26,10 @@ from io import BytesIO
 from pathlib import Path
 from typing import TYPE_CHECKING
 
+# One prompt for every rewrite path: the worker's, this CLI/MCP one, and
+# the app's Swift mirror (test_synthesis_parity.py).
+from gutenberg_kg.synthesis_prompts import IMAGE_REWRITE_SYSTEM as _VLM_SYSTEM
+
 if TYPE_CHECKING:
     from PIL.Image import Image as PILImage
 
@@ -100,14 +104,6 @@ def discover_image_endpoint(
 
 
 _DEFAULT_VLM_MODEL = "Qwen3-4B-Instruct-2507-MLX-8bit"
-
-_VLM_SYSTEM = (
-    "You are an expert art director. Given a passage of historical text, write a single concise "
-    "image generation prompt (one paragraph, no bullet points, no quotation marks) that vividly "
-    "describes the scene for a text-to-image model. Focus on visual elements: setting, lighting, "
-    "figures, mood, and artistic style. Do NOT include any text, labels, captions, or words in "
-    "the scene description. Output ONLY the prompt, nothing else."
-)
 
 
 def vlm_rewrite(
