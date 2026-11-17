@@ -295,6 +295,8 @@ make logs        # follow worker logs
 | `make run` | start the worker on `:8000` |
 | `make chat` | start worker + chat UI on `:8501` |
 | `make image-server` | start the local FLUX image server on `:8090` (isolated `.venv-image`; needs mflux — see below) |
+| `make image-agent-install` | run the FLUX image server as the LaunchAgent `local.gutenkg-image`: starts at login, restarts if it exits (macOS; run `make image-server` once first) |
+| `make image-agent-uninstall` | stop the LaunchAgent and remove it |
 | `make sdxl-server` | start the local SDXL-Lightning image server on `:8091` (isolated `.venv-sdxl`; runs anywhere) |
 | `make sdxl-fetch` | pre-download the SDXL weights (~7 GB) without starting the server |
 | `make up` | start everything (worker + chat + whichever image server this host supports) |

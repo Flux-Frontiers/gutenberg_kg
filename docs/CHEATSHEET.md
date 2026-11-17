@@ -493,6 +493,11 @@ with pycode-kg, so `make image-server` builds an isolated `.venv-image` from
 `docker/requirements-image.txt` instead. Run that once, then use `gutenkg
 imagine` normally.
 
+To keep the FLUX server running on a Mac, run `make image-agent-install`
+after that first `make image-server`. It installs the LaunchAgent
+`local.gutenkg-image`, which starts the server at login and restarts it if it
+exits. `make image-agent-uninstall` removes it.
+
 #### 2. oMLX — local VLM server
 
 oMLX is an OpenAI-compatible local inference server for MLX models. The VLM
