@@ -18,6 +18,11 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Changed
 
+- **The install guide has a model-sizing table.** "Choosing a model" under
+  Connecting a local LLM compares the 4B default with Qwen3.6-35B-A3B and
+  two Qwen3.8-27B builds: weight size, answer and rewrite times, and which
+  follow the image rewrite's accuracy rules. It also gives memory guidance
+  for 16-24, 32 and 48 GB Macs. The default stays 4B.
 - **`gutenkg imagine` and the MCP image tool use the shared rewrite prompt.**
   `image_gen.py` kept its own copy of the art-director prompt; it now imports
   `IMAGE_REWRITE_SYSTEM`, so the CLI, the MCP server and the worker rewrite
