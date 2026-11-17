@@ -1,39 +1,35 @@
-# Release Notes -- v1.36.0
+# Release Notes -- v1.37.0
 
-> Released: 2026-11-14
+> Released: 2026-11-17
 
 ### Added
 
-- **Each book in the forest catalog carries its author's voice.**
-  `gutenkg export-web-catalog` reads `corpus/authors/voices.json` and writes
-  `voice: { gender, accent }` on every book whose author is known, for the
-  Knowledge Press forest's read-aloud. 252 of the 265 books have one; the
-  rest are "Various" and the Audel handbooks.
-- **Each book in `core.pack` carries its author's voice too.**
-  `gutenkg export-swift` writes `gender` and `accent` columns on the books
-  table from the same `voices.json`, so the app's reader can read a book in
-  a voice that matches its author. Both are NULL for an unknown author; an
-  app that does not read them is unaffected.
-- **Four more authors in the voice table**: Charles Lamb, J. M. Synge,
-  Marcus Tullius Cicero and Mary Wortley Montagu, whose author pages were
-  newer than the table. Synge's accent is set by hand to `en-GB`: Wikidata
-  lists no citizenship for him.
+- **The FLUX image server can run as a LaunchAgent.** `make image-agent-install`
+  installs `local.gutenkg-image`, which starts `gutenkg-image-server` at login
+  and restarts it if it exits; `make image-agent-uninstall` removes it. While it
+  is installed, `make image-server` (and so `make up`) does not start a second
+  copy.
 
 ### Changed
 
-- **`voice_for` reads a joint work's authors one by one.** "Alexander
-  Hamilton, John Jay, and James Madison" now takes Hamilton's voice, where it
-  had none; the same for Dumas and Maquet, the Grimms, and Polo and
-  Rusticiano. Moot packs get the same voices.
-
-### Fixed
-
-- **Stale corpus counts in the docs.** The README forest section said 253
-  trees and `docs/ingestion-pipeline.md` described a 253-book bundle; both
-  now match the 265-book corpus and the current consolidated bundle
-  (745,627 nodes). `scripts/sync_corpus_docs.py` now keeps the forest tree
-  count and the bundle catalog count in sync, and the `gutenberg-all` row
-  in `docs/BUNDLES.md` carries the current book, node and size figures.
+- **kgmodule-utils 0.30.1, and a refreshed lock.** The floor rises to
+  0.30.1 for its accurate-scene image rewrite prompt, in pyproject, the
+  Dockerfile ARG and `runpod/requirements.txt`. `poetry update` moved 113
+  locked packages to current releases (among them huggingface-hub 2.4,
+  openai 3.52, torch 2.15 and transformers 5.23); kg-rag, doc-kg and
+  diary-kg were already current.
+- **The install guide has a model-sizing table.** "Choosing a model" under
+  Connecting a local LLM compares the 4B default with Qwen3.6-35B-A3B and
+  two Qwen3.8-27B builds: weight size, answer and rewrite times, and which
+  follow the image rewrite's accuracy rules. It also gives memory guidance
+  for 16-24, 32 and 48 GB Macs. The default stays 4B.
+- **`gutenkg imagine` and the MCP image tool use the shared rewrite prompt.**
+  `image_gen.py` kept its own copy of the art-director prompt; it now imports
+  `IMAGE_REWRITE_SYSTEM`, so the CLI, the MCP server and the worker rewrite
+  with the same text. The prompt itself (accurate-scene rules) comes from
+  kgmodule-utils.
+- **The chat container restarts with Docker**, like the worker
+  (`restart: unless-stopped`).
 
 ---
 

@@ -8,6 +8,8 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+## [1.37.0] - 2026-11-17
+
 ### Added
 
 - **The FLUX image server can run as a LaunchAgent.** `make image-agent-install`
