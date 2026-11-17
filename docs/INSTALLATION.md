@@ -295,6 +295,8 @@ make logs        # follow worker logs
 | `make run` | start the worker on `:8000` |
 | `make chat` | start worker + chat UI on `:8501` |
 | `make image-server` | start the local FLUX image server on `:8090` (isolated `.venv-image`; needs mflux — see below) |
+| `make image-agent-install` | run the FLUX image server as the LaunchAgent `local.gutenkg-image`: starts at login, restarts if it exits (macOS; run `make image-server` once first) |
+| `make image-agent-uninstall` | stop the LaunchAgent and remove it |
 | `make sdxl-server` | start the local SDXL-Lightning image server on `:8091` (isolated `.venv-sdxl`; runs anywhere) |
 | `make sdxl-fetch` | pre-download the SDXL weights (~7 GB) without starting the server |
 | `make up` | start everything (worker + chat + whichever image server this host supports) |
@@ -351,6 +353,40 @@ answers 401, synthesis fails, and the chat UI's model list comes up empty.
 sk-...`) to both `~/.omlx/settings.json` and `docker/.env`; quit oMLX first,
 since the app can write its settings back on exit. Restart the worker
 (`make down && make up`) after changing `docker/.env`.
+
+#### Choosing a model
+
+`VLLM_MODEL` does two jobs: it writes answers, and it rewrites passages into
+image prompts before FLUX renders them. A request can name another model
+(the `model` field), but everything else uses this one. The default,
+`Qwen3-4B-Instruct-2507-MLX-8bit`, fits any Apple Silicon Mac. On a Mac with
+more memory, a larger model gives more faithful answers and pictures.
+
+| Model ID in oMLX | Weights | Answer | Image rewrite | Notes |
+| --- | --- | --- | --- | --- |
+| `Qwen3-4B-Instruct-2507-MLX-8bit` (default) | 4 GB | 5-12 s | 1-2 s | Adds interpretation the passages do not support. Ignores the rewrite prompt's accuracy rules: Lot's wife stands beside the pillar of salt instead of becoming it. |
+| `Jundot--Qwen3.6-35B-A3B-oQ4e-mtp` | 20 GB | 2.5-7 s | 1-2 s | Mixture of experts: 35B parameters, 3B active per token, so it runs at small-model speed. Follows the accuracy rules. Fastest answers measured. |
+| `Qwen3.8-27B-oQ4e-mtp` (Jundot) | 16 GB | 6-11 s | about 9.5 s | Most faithful pictures, slowest rewrite. |
+| `Qwen3.8-27B-4bit` | 15 GB | 12-18 s | about 7 s | Same quality as the Jundot build, slower. |
+
+Measured 2026-11-17 on an M5 Max: five questions answered by the worker, one
+run each, plus four answers rewritten and rendered through FLUX.2 klein.
+Answer times include retrieval. Treat them as a ranking, not a benchmark.
+
+Size the model to memory. The weights must fit beside the FLUX image server
+(about 9 GB for the 4-bit FLUX.2 klein), the worker container and macOS:
+
+- **16-24 GB:** keep the 4B default.
+- **32 GB:** a 27B model fits, or A3B if images are rendered elsewhere.
+- **48 GB or more:** A3B with FLUX on the same Mac.
+
+The 32 GB and 48 GB lines are estimates from the weight sizes and have not
+been measured on those machines. If oMLX starts swapping, answers slow from
+seconds to minutes; drop to a smaller model.
+
+The 27B and A3B models are thinking models. The worker turns thinking off
+for oMLX, so they answer directly. Check what oMLX serves before setting
+`VLLM_MODEL`, using the `curl` command above.
 
 ### Ollama (cross-platform)
 
@@ -561,7 +597,7 @@ Provider is chosen per-request (chat UI Provider dropdown / `"backend"` field). 
 | `SYNTH_MODEL` | — | omlx | Model override (falls back to `VLLM_MODEL`). |
 | `VLLM_ENDPOINT_URL` | `http://localhost:8080/v1` | omlx | oMLX / vLLM OpenAI-compatible endpoint. |
 | `VLLM_API_KEY` | — | omlx | Bearer token for oMLX (omit for Ollama). |
-| `VLLM_MODEL` | `Qwen3-4B-Instruct-2507-MLX-8bit` | omlx | oMLX model ID. |
+| `VLLM_MODEL` | `Qwen3-4B-Instruct-2507-MLX-8bit` | omlx | oMLX model ID, for answers and image-prompt rewrites. See [Choosing a model](#choosing-a-model). |
 | `OLLAMA_ENDPOINT` | `http://localhost:11434/v1` | ollama | Ollama OpenAI-compatible endpoint (no key needed). |
 | `OPENAI_API_KEY` | — | openai | **Required for the OpenAI path.** Endpoint defaults to `https://api.openai.com/v1`, model to `gpt-4o-mini`. |
 | `ANTHROPIC_API_KEY` | -- | anthropic | **Required for the Anthropic path.** Model defaults to `claude-opus-5-5`. Select per request; do not use `anthropic` as `SYNTH_BACKEND`. |
@@ -600,6 +636,8 @@ The local `gutenkg imagine` command (outside Docker) reads its own `GUTENKG_*` v
 | `MFLUX_SERVER_PORT` | `8090` | Bind port. |
 | `IMAGE_OUTPUT_DIR` | `/tmp/gutenberg_images` | Where rendered images are written. |
 | `IMAGE_PRELOAD` | `0` | Set to `1` to load the FLUX model at startup instead of first request. |
+
+To keep the FLUX server running on a Mac, run `make image-server` once to build `.venv-image`, then `make image-agent-install`. That installs the LaunchAgent `local.gutenkg-image`, which starts the server at login and restarts it if it exits; it logs to `~/Library/Logs/gutenkg-image.log`. While it is installed, `make down` and `make kill` stop the server only until launchd restarts it, and `make image-server` leaves it alone. `make image-agent-uninstall` stops it and removes the agent.
 
 ---
 
