@@ -10,6 +10,14 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Added
 
+- **`make bootstrap` can set up the LLM provider.** A new last step sets up
+  the provider named with `PROVIDER=omlx|openai|anthropic|none`, or asked for
+  on a terminal. For oMLX it checks that oMLX is installed and running, that
+  its port matches `VLLM_ENDPOINT_URL` and that `VLLM_API_KEY` is its key, then
+  runs `scripts/setup_models.py`. For OpenAI and Anthropic it asks for the key,
+  checks it against the provider's model list and writes it to `docker/.env`.
+  `docker/.env` is backed up first and keys are never printed. Without a
+  provider, as before, the backends are only reported.
 - **`make models` sets up the LLM that fits this Mac.** `scripts/setup_models.py`
   picks a tier from the Mac's memory (or `TIER=`, or `MODEL=` for any MLX
   repo) and downloads that tier's model into `~/.omlx/models`. It has oMLX

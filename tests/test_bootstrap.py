@@ -335,3 +335,157 @@ def test_paint_is_plain_without_color(monkeypatch):
     assert bootstrap.paint("ok", "32") == "ok"
     monkeypatch.setattr(bootstrap, "_USE_COLOR", True)
     assert bootstrap.paint("ok", "32") == "\033[32mok\033[0m"
+
+
+# -- step 9: LLM provider ------------------------------------------------------
+
+
+_FAKE_ANT_KEY = "sk-ant-typed"  # pragma: allowlist secret
+
+
+class _Done:
+    returncode = 0
+
+
+@pytest.fixture
+def provider_box(monkeypatch, tmp_path):
+    """Sandbox step 9: its own docker/.env, oMLX paths, no network, no commands."""
+    example = tmp_path / ".env.example"
+    example.write_text(
+        "VLLM_ENDPOINT_URL=http://host.docker.internal:8080/v1\nVLLM_API_KEY=sk-your-omlx-api-key\n"
+        "OPENAI_API_KEY=\nANTHROPIC_API_KEY=\n"
+    )
+    env = tmp_path / ".env"
+    env.write_text(example.read_text())
+    monkeypatch.setattr(bootstrap, "ENV_EXAMPLE", example)
+    monkeypatch.setattr(bootstrap, "ENV_FILE", env)
+    monkeypatch.setattr(bootstrap, "OMLX_SETTINGS", tmp_path / "settings.json")
+    monkeypatch.setattr(bootstrap, "OMLX_APP", tmp_path / "oMLX.app")
+    monkeypatch.setattr(bootstrap.platform, "system", lambda: "Darwin")
+    monkeypatch.setattr(bootstrap.platform, "machine", lambda: "arm64")
+    monkeypatch.setattr(bootstrap.shutil, "which", lambda name: None)
+    monkeypatch.setattr(bootstrap.sys.stdin, "isatty", lambda: True)
+    monkeypatch.setattr(bootstrap, "port_open", lambda port, **k: False)
+    monkeypatch.setattr(bootstrap, "http_status", lambda url, **k: None)
+
+    def no_network(*a, **k):
+        raise AssertionError("check_key reached the network")
+
+    monkeypatch.setattr(bootstrap, "check_key", no_network)
+    for name in ("OPENAI_API_KEY", "ANTHROPIC_API_KEY"):
+        monkeypatch.delenv(name, raising=False)
+    calls: list = []
+    monkeypatch.setattr(bootstrap.subprocess, "run", lambda cmd, **k: calls.append(cmd) or _Done())
+    return env, calls
+
+
+def _omlx_up(monkeypatch, tmp_path, *, port=8080, key="sk-real"):
+    (tmp_path / "settings.json").write_text(
+        f'{{"server": {{"port": {port}}}, "auth": {{"api_key": "{key}"}}}}'
+    )
+    monkeypatch.setattr(bootstrap, "port_open", lambda p, **k: p == port)
+    monkeypatch.setattr(bootstrap, "http_status", lambda url, **k: 200)
+
+
+def test_no_provider_off_a_terminal_only_says_how(provider_box, monkeypatch, capsys):
+    monkeypatch.setattr(bootstrap.sys.stdin, "isatty", lambda: False)
+    b = _run(dry_run=False)
+    b.setup_provider()
+    assert b.blocked == [] and "PROVIDER=" in capsys.readouterr().out
+
+
+def test_omlx_not_installed_blocks(provider_box):
+    b = _run(dry_run=False, provider="omlx")
+    b.setup_provider()
+    assert b.blocked == ["oMLX is not installed"]
+
+
+def test_omlx_off_apple_silicon_blocks(provider_box, monkeypatch):
+    monkeypatch.setattr(bootstrap.platform, "system", lambda: "Linux")
+    b = _run(dry_run=False, provider="omlx")
+    b.setup_provider()
+    assert b.blocked == ["oMLX"]
+
+
+def test_omlx_installed_but_down_and_not_started_blocks(provider_box, tmp_path):
+    (tmp_path / "settings.json").write_text('{"server": {"port": 8080}}')
+    b = _run(dry_run=False, provider="omlx")
+    b.setup_provider()
+    assert b.blocked == ["oMLX is not running"]
+
+
+def test_omlx_running_copies_its_key_and_runs_setup_models(
+    provider_box, monkeypatch, tmp_path, capsys
+):
+    env, calls = provider_box
+    _omlx_up(monkeypatch, tmp_path)
+    b = _run(dry_run=False, assume_yes=True, provider="omlx")
+    b.setup_provider()
+    assert b.blocked == []
+    assert "VLLM_API_KEY=sk-real" in env.read_text()
+    assert list(tmp_path.glob(".env.bak-*"))
+    assert calls and calls[-1][-1].endswith("setup_models.py")
+    assert "sk-real" not in capsys.readouterr().out
+
+
+def test_omlx_port_mismatch_blocks_before_the_model(provider_box, monkeypatch, tmp_path):
+    env, calls = provider_box
+    _omlx_up(monkeypatch, tmp_path, port=8000)
+    b = _run(dry_run=False, assume_yes=True, provider="omlx")
+    b.setup_provider()
+    assert len(b.blocked) == 1 and ":8000" in b.blocked[0]
+    assert calls == [] and "sk-real" not in env.read_text()
+
+
+def test_openai_key_is_checked_then_written_unprinted(provider_box, monkeypatch, capsys):
+    env, _ = provider_box
+    monkeypatch.setattr(bootstrap.getpass, "getpass", lambda prompt: "sk-typed")
+    seen = []
+    monkeypatch.setattr(bootstrap, "check_key", lambda url, h: seen.append(h) or True)
+    b = _run(dry_run=False, provider="openai")
+    b.setup_provider()
+    assert b.blocked == [] and seen == [{"Authorization": "Bearer sk-typed"}]
+    assert "OPENAI_API_KEY=sk-typed" in env.read_text()
+    assert "sk-typed" not in capsys.readouterr().out
+
+
+def test_rejected_key_is_not_written(provider_box, monkeypatch):
+    env, _ = provider_box
+    monkeypatch.setattr(bootstrap.getpass, "getpass", lambda prompt: "sk-bad")
+    monkeypatch.setattr(bootstrap, "check_key", lambda url, h: False)
+    b = _run(dry_run=False, provider="anthropic")
+    b.setup_provider()
+    assert b.blocked == ["anthropic rejected ANTHROPIC_API_KEY"]
+    assert "sk-bad" not in env.read_text()
+
+
+def test_unreachable_check_keeps_the_key_with_a_warning(provider_box, monkeypatch, capsys):
+    env, _ = provider_box
+    monkeypatch.setattr(bootstrap.getpass, "getpass", lambda prompt: _FAKE_ANT_KEY)
+    monkeypatch.setattr(bootstrap, "check_key", lambda url, h: None)
+    b = _run(dry_run=False, provider="anthropic")
+    b.setup_provider()
+    assert b.blocked == [] and f"ANTHROPIC_API_KEY={_FAKE_ANT_KEY}" in env.read_text()
+    assert "could not reach" in capsys.readouterr().out
+
+
+def test_dry_run_provider_asks_nothing_and_writes_nothing(provider_box, monkeypatch):
+    env, calls = provider_box
+    before = env.read_text()
+
+    def no_prompt(*a, **k):
+        raise AssertionError("dry run prompted")
+
+    monkeypatch.setattr(bootstrap.getpass, "getpass", no_prompt)
+    monkeypatch.setattr("builtins.input", no_prompt)
+    for provider in ("openai", "anthropic", None):
+        _run(provider=provider).setup_provider()
+    assert env.read_text() == before and calls == []
+
+
+@pytest.mark.parametrize(
+    ("url", "port"),
+    [("http://host.docker.internal:8080/v1", 8080), ("http://localhost/v1", None), ("", None)],
+)
+def test_url_port(url, port):
+    assert bootstrap.url_port(url) == port
