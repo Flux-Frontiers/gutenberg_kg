@@ -130,8 +130,8 @@ def resolve_served_id(served: list[str], wanted: str) -> str | None:
 class OMLX:
     """The few oMLX calls this script makes, authenticated from its settings."""
 
-    def __init__(self, settings_path: Path = OMLX_SETTINGS):
-        settings = json.loads(settings_path.read_text())
+    def __init__(self, settings_path: Path | None = None):
+        settings = json.loads((settings_path or OMLX_SETTINGS).read_text())
         server = settings.get("server", {})
         host = server.get("host", "127.0.0.1")
         host = "127.0.0.1" if host in ("0.0.0.0", "") else host
@@ -273,36 +273,53 @@ def main(argv: list[str] | None = None) -> int:
     if args.images == "openai":
         env_values["WORKER_IMAGE_BACKEND"] = "openai"
 
+    # oMLX may already serve the model from elsewhere (the Hugging Face cache,
+    # under an org-prefixed id); then there is nothing to download.
+    omlx = OMLX()
+    online = omlx.reachable()
+    found = resolve_served_id(omlx.models(), tier["llm_id"]) if online else None
+
     if args.dry_run:
-        state = "present" if has_weights(dest) else f"to download (~{tier['llm_gb'] or '?'} GB)"
-        print(f"  model folder: {dest} ({state})")
+        if found:
+            state = f"already served by oMLX as {found}"
+            env_values["VLLM_MODEL"] = found
+            if tier["moot_model"] == tier["llm_id"]:
+                env_values["MOOT_MODEL"] = found
+        elif has_weights(dest):
+            state = "present"
+        else:
+            state = f"to download (~{tier['llm_gb'] or '?'} GB)"
+        print(f"  model: {dest} ({state})")
         for k, v in env_values.items():
             print(f"  docker/.env: {k}={v}")
         print("Dry run: nothing changed.")
         return 0
 
-    # 1. Download.
-    if not has_weights(dest) and tier["llm_gb"]:
-        free_gb = shutil.disk_usage(OMLX_HOME).free / 1e9
-        if free_gb < tier["llm_gb"] * 1.1:
-            print(
-                f"error: {free_gb:.1f} GB free; {tier['llm_repo']} needs about {tier['llm_gb']} GB.",
-                file=sys.stderr,
-            )
+    # 1. Download, unless oMLX already serves the model.
+    if found:
+        print(f"oMLX already serves {found}; skipping the download.")
+    else:
+        if not has_weights(dest) and tier["llm_gb"]:
+            free_gb = shutil.disk_usage(OMLX_HOME).free / 1e9
+            if free_gb < tier["llm_gb"] * 1.1:
+                print(
+                    f"error: {free_gb:.1f} GB free; {tier['llm_repo']} needs about {tier['llm_gb']} GB.",
+                    file=sys.stderr,
+                )
+                return 1
+        print(f"Downloading into {dest} (resumes; quick if already there) ...")
+        cmd = [hf, "download", tier["llm_repo"], "--local-dir", str(dest)]
+        if subprocess.run(cmd).returncode != 0:
+            print(f"error: download of {tier['llm_repo']} failed.", file=sys.stderr)
             return 1
-    print(f"Downloading into {dest} (resumes; quick if already there) ...")
-    if subprocess.run([hf, "download", tier["llm_repo"], "--local-dir", str(dest)]).returncode != 0:
-        print(f"error: download of {tier['llm_repo']} failed.", file=sys.stderr)
-        return 1
 
     # 2. Rescan and resolve the served id.
-    omlx = OMLX()
     served_id = tier["llm_id"]
-    online = omlx.reachable()
     if online:
-        if not omlx.reload():
-            print("note: oMLX has no rescan route; if the model is not listed, restart oMLX.")
-        found = resolve_served_id(omlx.models(), tier["llm_id"])
+        if not found:
+            if not omlx.reload():
+                print("note: oMLX has no rescan route; if the model is not listed, restart oMLX.")
+            found = resolve_served_id(omlx.models(), tier["llm_id"])
         if found is None:
             print(
                 f"error: oMLX does not list {tier['llm_id']} after the rescan. Restart oMLX and re-run.",

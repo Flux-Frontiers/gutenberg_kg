@@ -164,6 +164,30 @@ def test_a_working_model_is_written(sandbox, monkeypatch):
     assert list(sandbox.parent.glob(".env.bak-*"))
 
 
+class ServingWithPrefix(FakeOMLX):
+    """oMLX that already serves the 8B under an org-prefixed id."""
+
+    def models(self):
+        return ["Qwen--Qwen3-8B-MLX-4bit"]
+
+
+def test_a_served_model_is_not_downloaded(sandbox, monkeypatch):
+    calls = []
+    monkeypatch.setattr(setup_models.subprocess, "run", lambda *a, **k: calls.append(a))
+    monkeypatch.setattr(setup_models, "OMLX", ServingWithPrefix)
+    assert setup_models.main([]) == 0
+    assert calls == []
+    assert "VLLM_MODEL=Qwen--Qwen3-8B-MLX-4bit" in sandbox.read_text()
+
+
+def test_dry_run_reports_the_served_id(sandbox, monkeypatch, capsys):
+    monkeypatch.setattr(setup_models, "OMLX", ServingWithPrefix)
+    assert setup_models.main(["--dry-run"]) == 0
+    out = capsys.readouterr().out
+    assert "already served by oMLX" in out and "VLLM_MODEL=Qwen--Qwen3-8B-MLX-4bit" in out
+    assert sandbox.read_text() == "VLLM_MODEL=old\n"
+
+
 def test_a_refused_model_leaves_env_alone(sandbox, monkeypatch, capsys):
     _no_download(monkeypatch)
 
