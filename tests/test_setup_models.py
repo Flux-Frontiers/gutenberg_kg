@@ -94,6 +94,29 @@ class TestServedId:
         assert setup_models.resolve_served_id(["XQwen3-8B-MLX-4bit"], "Qwen3-8B-MLX-4bit") is None
 
 
+class TestModelsDir:
+    """Downloads go where oMLX scans, not always ~/.omlx/models."""
+
+    def _settings(self, tmp_path, model):
+        path = tmp_path / "settings.json"
+        path.write_text(json.dumps({"model": model}))
+        return path
+
+    def test_model_dirs_wins(self, tmp_path):
+        s = self._settings(tmp_path, {"model_dirs": ["/Volumes/X/m"], "model_dir": "/other"})
+        assert setup_models.omlx_models_dir(s) == Path("/Volumes/X/m")
+
+    def test_model_dir_is_the_fallback(self, tmp_path):
+        s = self._settings(tmp_path, {"model_dirs": [], "model_dir": "/other"})
+        assert setup_models.omlx_models_dir(s) == Path("/other")
+
+    def test_default_without_settings(self, tmp_path, monkeypatch):
+        monkeypatch.setattr(setup_models, "OMLX_MODELS", tmp_path / "models")
+        assert setup_models.omlx_models_dir(tmp_path / "absent.json") == tmp_path / "models"
+        s = self._settings(tmp_path, {})
+        assert setup_models.omlx_models_dir(s) == tmp_path / "models"
+
+
 def test_plist_idle_unload():
     text = "<key>IMAGE_IDLE_UNLOAD_S</key>\n\t\t<string>300</string>"
     assert setup_models.plist_idle_unload(text) == "300"
