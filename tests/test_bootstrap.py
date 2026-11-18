@@ -446,6 +446,8 @@ def test_openai_key_is_checked_then_written_unprinted(provider_box, monkeypatch,
     b.setup_provider()
     assert b.blocked == [] and seen == [{"Authorization": "Bearer sk-typed"}]
     assert "OPENAI_API_KEY=sk-typed" in env.read_text()
+    for path in [env, *env.parent.glob(".env.bak-*")]:
+        assert path.stat().st_mode & 0o777 == 0o600, path
     assert "sk-typed" not in capsys.readouterr().out
 
 

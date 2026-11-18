@@ -24,6 +24,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import re
 import secrets
 import shutil
@@ -75,6 +76,7 @@ def write_settings(key: str) -> Path:
     settings.setdefault("auth", {})["api_key"] = key
     backup = backup_path()
     shutil.copy2(OMLX_SETTINGS, backup)
+    os.chmod(backup, 0o600)  # the backup holds the old key
     OMLX_SETTINGS.write_text(json.dumps(settings, indent=2) + "\n")
     return backup
 
@@ -87,6 +89,7 @@ def write_env(key: str) -> None:
         text = re.sub(r"(?m)^VLLM_API_KEY=.*$", lambda _: line, text)
     else:
         text = text.rstrip("\n") + f"\n{line}\n"
+    os.chmod(ENV_FILE, 0o600)  # holds the key; owner-only before the write
     ENV_FILE.write_text(text)
 
 

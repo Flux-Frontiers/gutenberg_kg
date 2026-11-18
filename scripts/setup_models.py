@@ -31,6 +31,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import platform
 import re
 import shutil
@@ -100,6 +101,24 @@ def set_env_keys(text: str, values: dict[str, str]) -> str:
         else:
             text = text.rstrip("\n") + f"\n{line}\n"
     return text
+
+
+def write_private(path: Path, text: str) -> None:
+    """Write ``text`` to ``path`` readable by its owner only.
+
+    docker/.env holds API keys; Docker Compose needs them in plain text, so the
+    file mode is what keeps other accounts on the machine out.
+    """
+    if path.exists():
+        os.chmod(path, 0o600)  # before the write, so the new text is never exposed
+    path.write_text(text)
+    os.chmod(path, 0o600)
+
+
+def copy_private(src: Path, dst: Path) -> None:
+    """Copy ``src`` to ``dst`` and make the copy readable by its owner only."""
+    shutil.copy2(src, dst)
+    os.chmod(dst, 0o600)
 
 
 def backup_path(path: Path) -> Path:
@@ -363,8 +382,8 @@ def main(argv: list[str] | None = None) -> int:
     new = set_env_keys(old, env_values)
     if new != old:
         backup = backup_path(ENV_FILE)
-        shutil.copy2(ENV_FILE, backup)
-        ENV_FILE.write_text(new)
+        copy_private(ENV_FILE, backup)
+        write_private(ENV_FILE, new)
         print(f"Updated docker/.env (backup: {backup.name}):")
     else:
         print("docker/.env already matches:")

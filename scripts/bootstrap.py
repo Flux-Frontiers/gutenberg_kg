@@ -805,7 +805,7 @@ class Bootstrap:
             return
         # A sibling stdlib script; imported here so a dry run never needs it.
         sys.path.insert(0, str(SETUP_MODELS.parent))
-        from setup_models import backup_path, set_env_keys
+        from setup_models import backup_path, copy_private, set_env_keys, write_private
 
         if not ENV_FILE.exists():
             shutil.copyfile(ENV_EXAMPLE, ENV_FILE)
@@ -814,8 +814,8 @@ class Bootstrap:
         if new == old:
             return
         backup = backup_path(ENV_FILE)
-        shutil.copy2(ENV_FILE, backup)
-        ENV_FILE.write_text(new, encoding="utf-8")
+        copy_private(ENV_FILE, backup)
+        write_private(ENV_FILE, new)
         say("ok", f"set {names} in docker/.env (backup: {backup.name})")
 
     def choose_provider(self):

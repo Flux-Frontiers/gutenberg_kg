@@ -10,6 +10,12 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Fixed
 
+- **`docker/.env` and its backups are owner-only.** `make bootstrap`,
+  `make models` and `scripts/rotate_omlx_key.py` write API keys into
+  `docker/.env`, which Docker Compose needs in plain text, and the files were
+  readable by every account on the machine (mode 644). They now write it, and
+  every backup they make, with mode 600. To fix an existing file:
+  `chmod 600 docker/.env docker/.env.bak-*`.
 - **kgmodule-utils 0.30.2, and a lock that installs one cuBLAS.** The floor
   rises to 0.30.2 in `pyproject.toml`, `runpod/requirements.txt` and the
   Dockerfile. That release sends each synthesis key only to its own backend.

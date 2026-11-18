@@ -161,7 +161,11 @@ def test_a_working_model_is_written(sandbox, monkeypatch):
     text = sandbox.read_text()
     assert "VLLM_MODEL=Qwen3-8B-MLX-4bit" in text
     assert "MOOT_MODEL=Qwen3-8B-MLX-4bit" in text and "IMAGE_IDLE_UNLOAD_S=300" in text
-    assert list(sandbox.parent.glob(".env.bak-*"))
+    backups = list(sandbox.parent.glob(".env.bak-*"))
+    assert backups
+    # docker/.env holds API keys: owner-only, and so is its backup.
+    for path in [sandbox, *backups]:
+        assert path.stat().st_mode & 0o777 == 0o600, path
 
 
 class ServingWithPrefix(FakeOMLX):
