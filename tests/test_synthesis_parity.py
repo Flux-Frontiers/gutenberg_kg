@@ -141,10 +141,9 @@ def test_rag_prompt_keeps_the_grounding_rule() -> None:
 def _synth_max_k(relative: str) -> int:
     """Read a handler's ``SYNTH_MAX_K`` default out of its source.
 
-    Parsed rather than imported on purpose. ``serve/handler.py`` imports
-    ``runpod``, an optional dependency absent from the dev environment and
-    from CI, and these tests exist precisely because they need no runtime --
-    no toolchain, no corpus, no device, no optional extras.
+    Parsed rather than imported on purpose: these tests exist precisely
+    because they need no runtime -- no toolchain, no corpus, no device, no
+    optional extras.
 
     :param relative: Repo-relative path to a handler module.
     :returns: The integer default.
@@ -174,19 +173,14 @@ def test_worker_budget_matches_synth_max_k() -> None:
     )
 
 
-def test_both_handlers_agree_on_synth_max_k() -> None:
-    """The local worker and the RunPod worker feed the model the same amount."""
-    assert _synth_max_k("runpod/handler.py") == _synth_max_k("src/gutenberg_kg/serve/handler.py")
-
-
 def test_no_handler_inlines_its_own_rag_prompt() -> None:
     """A fourth copy of the prompt is how the RunPod drift happened.
 
-    Both handlers must reach the text through ``synthesis_prompts``; an
+    The handler must reach the text through ``synthesis_prompts``; an
     inlined "You are a literary guide…" string is the exact shape of the bug
     this module was written to end.
     """
-    for relative in ("runpod/handler.py", "src/gutenberg_kg/serve/handler.py"):
+    for relative in ("src/gutenberg_kg/serve/handler.py",):
         source = (REPO / relative).read_text(encoding="utf-8")
         body = "\n".join(line for line in source.split("\n") if not line.lstrip().startswith("#"))
         assert "You are a literary guide" not in body, (

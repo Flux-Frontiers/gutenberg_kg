@@ -346,8 +346,8 @@ refresh-text:
 	$(MAKE) --no-print-directory build-all
 	$(MAKE) --no-print-directory export-web-catalog
 
-# The four KG packages are named in four files that drift independently:
-# pyproject floors, poetry.lock, docker/Dockerfile ARGs, runpod/requirements.txt.
+# The four KG packages are named in three files that drift independently:
+# pyproject floors, poetry.lock, docker/Dockerfile ARGs.
 # A Dockerfile ARG below its pyproject floor is not a build failure — the
 # `pip install .` step just re-resolves past it — so the pin silently stops
 # describing the image. A prerequisite of `build` in both runtime branches so a

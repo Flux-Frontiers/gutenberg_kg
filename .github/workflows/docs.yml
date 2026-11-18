@@ -54,8 +54,8 @@ jobs:
       # must satisfy every documented module's top-level import: chat
       # (streamlit/httpx), image (fastapi/uvicorn), mcp (mcp/structlog),
       # viz+viz3d (plotly/PyQt5/pyvista/pycode-kg), kgdeps (kg-rag). None of
-      # the documented modules import gutenberg_kg.serve.handler or runpod,
-      # so unlike the old pdoc build this needs no separate runpod install.
+      # the documented modules import gutenberg_kg.serve.handler, so the
+      # worker's own startup never runs here.
       - name: Install dependencies
         run: poetry install --no-interaction --with docs --extras "chat image mcp viz viz3d kgdeps"
 

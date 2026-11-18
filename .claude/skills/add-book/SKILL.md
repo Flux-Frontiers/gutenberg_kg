@@ -327,8 +327,6 @@ path: re-ingest with `gutenkg ingest --genre <g> --force-build`, then a
 
 ## Out of scope
 
-- The RunPod serverless index push (`runpod/push_indices.sh`) is deferred and
-  is not part of this pipeline.
 - Selective bundles (`bundles/specs/*.toml`) are rebuilt with
   `gutenkg bundle make <spec> --verify --image`. They pick up the new book
   only when their spec selects its genre or the book itself; see

@@ -11,7 +11,7 @@ Modules
 -------
 cli           — the ``gutenkg`` command group (download, ingest, query,
                 snapshots, visualisation, batch workflows).
-serve         — the RunPod worker, Streamlit chat UI, and image servers
+serve         — the worker, Streamlit chat UI, and image servers
                 (see :mod:`gutenberg_kg.serve` — optional extras required).
 build_corpus  — corpus build/bundle pipeline (``gutenkg build-corpus``).
 image_gen     — FLUX.2-Klein image generation (local MLX or remote server).

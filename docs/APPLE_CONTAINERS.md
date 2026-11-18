@@ -112,7 +112,6 @@ Notes:
   worker stays down after a reboot until you `make run RUNTIME=apple` again.
 - **`make run` is idempotent**: a running worker is left alone; a stopped or
   stale container is replaced.
-- The RunPod pipeline (`runpod/`) is untouched and still requires Docker.
 
 ---
 

@@ -41,7 +41,7 @@ technical reference.
 |---|---|
 | [Ray-tracing the knowledge tree](POVRAY.md) | Growing a book into a 3-D tree, cast to Looking Glass or rendered analytically |
 
-See also [RunPod deployment](RUNPOD.md) and [Partners](PARTNERS.md).
+See also [Partners](PARTNERS.md).
 
 The [API reference](api/corpus.md) is generated from the package's own
 docstrings.

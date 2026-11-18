@@ -8,6 +8,15 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+### Removed
+
+- **The RunPod serverless pipeline.** It was never deployed, and since 1.40.0
+  the worker no longer uses RunPod's server. Gone: `runpod/` (its Dockerfile,
+  handler, build and index-push scripts), `.runpod/` and `docs/RUNPOD.md`.
+  `scripts/check_pins.py` now compares three files instead of four, and the
+  tests, docs, CI comments and skills that named the RunPod worker are
+  updated. The `/runsync` request and reply format is unchanged.
+
 ## [1.40.0] - 2026-11-18
 
 ### Changed

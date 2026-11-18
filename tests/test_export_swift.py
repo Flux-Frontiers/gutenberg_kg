@@ -408,8 +408,8 @@ class TestHelpers:
         assert rrf_fuse(["ruskin", "moby"], ["genesis"], 3) == ["genesis", "ruskin", "moby"]
 
     def test_rrf_is_the_handlers_rrf(self):
-        # Read out of the source: importing the handler needs runpod, which
-        # the dev environment does not install (see test_synthesis_parity).
+        # Read out of the source: importing the handler runs the worker's
+        # whole startup (see test_synthesis_parity).
 
         src = Path("src/gutenberg_kg/serve/handler.py").read_text(encoding="utf-8")
         fn = next(
