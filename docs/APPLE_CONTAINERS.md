@@ -41,15 +41,25 @@ Notes:
 - **Changing `docker/.env` needs a new worker, not a new image.**
   `make run RUNTIME=apple` leaves a running worker alone, so run
   `container delete -f gutenberg-worker` first.
-- **Memory/CPU are per-container VM flags**, defaulting to 2g/6 CPUs for the
-  worker and 512m for chat. Override like `make run RUNTIME=apple WORKER_MEM=4g`
-  if a larger corpus or heavier query load needs headroom. These follow the
-  same shape observed in the sibling `corpus_pepys` repo (same Makefile
-  pattern, same worker/chat container shape): worker needs ~2g, chat ~512m —
-  both a fraction of the old 8g/4g guesses. Memory is a lazy upper bound, not
-  a reservation, so this doesn't pin RAM, just caps it. If a larger corpus
-  ever pushes the worker past this cap (OOM, or `container stats` showing it
-  pinned at the ceiling under load), re-measure with:
+- **Memory/CPU are per-container VM flags**, defaulting to 4g/6 CPUs for the
+  worker and 512m for chat. Override like `make run RUNTIME=apple WORKER_MEM=8g`
+  if a larger corpus or heavier query load needs headroom. The cap must cover
+  the worker process (~0.5 GB) plus the VM's page cache for the hot part of
+  the index. Measured on 2026-11-17 against the 5.9 GB `gutenberg-all`
+  bundle:
+
+  | `WORKER_MEM` | Search time | VM memory | Host footprint |
+  |---|---|---|---|
+  | 2g | 3-8 s per query; the index is reread from disk every query | pinned at 2 GiB | 2.2 GB |
+  | 8g | 0.5-0.7 s warm | 2.66 GiB | 3.1 GB |
+  | Docker Desktop (11.7 GiB VM) | 0.5-0.7 s warm | -- | 12 GB |
+
+  Memory is a lazy upper bound, not a reservation, so this doesn't pin RAM,
+  just caps it. Because the page cache fills whatever the cap allows, a worker
+  at the ceiling is not by itself a problem; the signs that the cap is too
+  small are block I/O in `container stats` that keeps growing with each query
+  and `search_ms` in the response staying in seconds after warm-up. If a
+  larger corpus shows those, re-measure with:
   1. `make up RUNTIME=apple` (or `run` + `chat`) with the current
      defaults.
   2. In one shell, poll `container stats --no-stream <worker-name> <chat-name>`

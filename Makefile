@@ -75,7 +75,7 @@
 # run/chat/up refuse to start while the other runtime is up (see runtime-guard).
 #   make logs  RUNTIME=apple    — follow worker logs (`container logs -f`)
 #   make clean RUNTIME=apple    — remove the image (`container image rm`)
-# Per-container VM sizing (overridable): WORKER_MEM=8g WORKER_CPUS=6 CHAT_MEM=4g
+# Per-container VM sizing (overridable): WORKER_MEM=4g WORKER_CPUS=6 CHAT_MEM=512m
 #   make run RUNTIME=apple WORKER_MEM=12g
 # See docs/APPLE_CONTAINERS.md for setup and caveats.
 RUNTIME ?= docker
@@ -166,13 +166,16 @@ endif
 
 # Apple `container` runtime settings (RUNTIME=apple only). Each container is
 # its own VM — memory is an explicit upper bound, not shared with the host
-# like Docker Desktop's single big VM. Right-sized per the corpus_pepys
-# `container stats` recipe (same worker/chat shape): worker needs ~2g,
-# chat ~512m. See docs/APPLE_CONTAINERS.md. Lazily allocated, so this
-# doesn't pin the RAM, just caps it — override per-machine if needed.
+# like Docker Desktop's single big VM. Measured 2026-11-17 on the 5.9 GB
+# gutenberg-all bundle: the worker process is ~0.5 GB, but the VM's page
+# cache must also hold the hot part of the index. At 2g it rereads the index
+# from disk on every query (3-8 s per search); at 8g the working set settled
+# at 2.66 GiB with 0.5-0.7 s warm searches. Chat needs ~512m. See
+# docs/APPLE_CONTAINERS.md. Lazily allocated, so this doesn't pin the RAM,
+# just caps it -- override per-machine if needed.
 WORKER_NAME  = gutenberg-worker
 CHAT_NAME    = gutenberg-chat
-WORKER_MEM  ?= 2g
+WORKER_MEM  ?= 4g
 WORKER_CPUS ?= 6
 CHAT_MEM    ?= 512m
 
