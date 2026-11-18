@@ -60,9 +60,9 @@ RUN apt-get update && \
 # where that build is the correct one.
 RUN pip install --no-cache-dir --index-url https://download.pytorch.org/whl/cpu torch
 
-# runpod: serverless worker harness (rp_serve_api) used by the handler. Pinned
-#         exactly: handler._allow_cors subclasses its internal WorkerAPI to add
-#         CORS for live moots, and a different version may change that class.
+# fastapi + uvicorn[standard]: the worker's HTTP server (serve/worker_api.py).
+#         Pinned to the versions runpod 1.12.0 used to bring in, which the
+#         worker ran on before it served /runsync itself.
 # kg-rag: KGRegistry/CorpusRegistry + embedder wrapper — imported lazily by
 #         the handler's _bootstrap_registry, so a missing install only fails
 #         at container startup, not at build time
@@ -108,7 +108,8 @@ ARG KGMODULE_UTILS_VERSION=0.30.2
 ARG DOC_KG_VERSION=0.30.0
 ARG DIARY_KG_VERSION=0.101.0
 RUN pip install --no-cache-dir \
-    "runpod==1.12.0" \
+    "fastapi==0.163.2" \
+    "uvicorn[standard]==0.54.0" \
     "kg-rag==${KG_RAG_VERSION}" \
     "kgmodule-utils[synthesis,sqlite-vec]==${KGMODULE_UTILS_VERSION}" \
     "doc-kg==${DOC_KG_VERSION}" \

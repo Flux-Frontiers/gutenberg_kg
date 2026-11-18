@@ -8,6 +8,32 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+### Changed
+
+- **The worker serves `/runsync` itself instead of through RunPod's local
+  test server.** `serve/worker_api.py` is a small FastAPI app that keeps the
+  request and reply format: replies to every op and error case were compared
+  with the RunPod server's, and the envelope, status codes, validation errors
+  and CORS headers match. Differences no client uses: the `id` loses its
+  `test-` prefix, the error JSON for an exception drops RunPod's `hostname`,
+  `worker_id` and `runpod_version` fields, and only `/runsync` is served
+  (RunPod's `/run`, `/status` and `/stream` are gone). The
+  image drops `runpod` and pins the `fastapi` and `uvicorn[standard]` versions
+  it used to bring in. `gutenkg-handler` takes `--host` and `--port`, and
+  still accepts `--rp_serve_api`, `--rp_api_host` and `--rp_api_port`, so
+  compose files and Makefiles already checked out keep working.
+
+### Fixed
+
+- **Renders no longer arrive cut short from an Apple `container` worker.**
+  `container`'s port forwarder drops bytes it has not yet relayed when the
+  server closes the connection, so 2-9 MB render replies reached slow or
+  remote clients truncated (Python `IncompleteRead`, curl error 18). The worker
+  now lets the client close first: it holds the end of a `Connection: close`
+  reply until the client hangs up (up to 300 s), and keeps idle connections
+  open for 300 s instead of uvicorn's 5. `docs/APPLE_CONTAINERS.md` has the
+  measurements.
+
 ## [1.39.0] - 2026-11-17
 
 ### Changed
