@@ -406,7 +406,7 @@ more memory, a larger model gives more faithful answers and pictures.
 | Model ID in oMLX | Weights | Answer | Image rewrite | Notes |
 | --- | --- | --- | --- | --- |
 | `Qwen3-4B-Instruct-2507-MLX-8bit` (default) | 4 GB | 5-12 s | 1-2 s | Adds interpretation the passages do not support. Ignores the rewrite prompt's accuracy rules: Lot's wife stands beside the pillar of salt instead of becoming it. |
-| `Qwen3-8B-MLX-4bit` | 4 GB | 2-6 s | not measured | The `make models` choice for 18-24 GB. Measured on a 24 GB Mac; see [Small Macs](#small-macs-16-24-gb). |
+| `Qwen3-8B-MLX-4bit` | 4 GB | 2-6 s | 3.5-4 s | The `make models` choice for 18-24 GB. Follows the accuracy rules: Lot's wife becomes the pillar. Fits beside FLUX on a 24 GB Mac, with little to spare; see [Small Macs](#small-macs-16-24-gb). |
 | `Jundot--Qwen3.6-35B-A3B-oQ4e-mtp` | 20 GB | 2.5-7 s | 1-2 s | Mixture of experts: 35B parameters, 3B active per token, so it runs at small-model speed. Follows the accuracy rules. Fastest answers measured. |
 | `Qwen3.8-27B-oQ4e-mtp` (Jundot) | 16 GB | 6-11 s | about 9.5 s | Most faithful pictures, slowest rewrite. |
 | `Qwen3.8-27B-4bit` | 15 GB | 12-18 s | about 7 s | Same quality as the Jundot build, slower. |
