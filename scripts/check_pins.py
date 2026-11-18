@@ -83,6 +83,15 @@ DOCKERFILE = ROOT / "docker" / "Dockerfile"
 COMPOSE = ROOT / "docker" / "docker-compose.yml"
 RUNPOD_REQS = ROOT / "runpod" / "requirements.txt"
 
+# The local-model tier table (`make models`) and the places that repeat its
+# default model. A Mac with no docker/.env runs whatever these say, so they must
+# all name the default tier's model, and the install doc must name every tier's.
+MODEL_TIERS = ROOT / "scripts" / "model_tiers.json"
+MAKEFILE = ROOT / "Makefile"
+ENV_EXAMPLE = ROOT / "docker" / ".env.example"
+IMAGE_GEN = ROOT / "src" / "gutenberg_kg" / "image_gen.py"
+INSTALL_DOC = ROOT / "docs" / "INSTALLATION.md"
+
 # distribution name -> Dockerfile ARG name.
 # kg-rag belongs here, not in a container-only bucket: it is declared in the
 # `kgdeps` extra and carries a poetry.lock entry, so its lock-vs-ARG comparison
@@ -214,6 +223,39 @@ def compose_args() -> dict[str, str]:
     """
     pattern = re.compile(r"^\s+(\w+_VERSION):\s*(\S+)", re.MULTILINE)
     return dict(pattern.findall(COMPOSE.read_text()))
+
+
+def model_default_problems() -> list[str]:
+    """Report every place whose default LLM disagrees with scripts/model_tiers.json.
+
+    :returns: One message per disagreement; empty when they all agree.
+    """
+    table = json.loads(MODEL_TIERS.read_text())
+    want = table["tiers"][table["default_tier"]]["llm_id"]
+    sources = {
+        "docker/docker-compose.yml": (COMPOSE, r"VLLM_MODEL:\s*\$\{VLLM_MODEL:-([^}]+)\}"),
+        "Makefile": (MAKEFILE, r'VLLM_MODEL="\$\$\{VLLM_MODEL:-([^}]+)\}"'),
+        "docker/.env.example": (ENV_EXAMPLE, r"(?m)^VLLM_MODEL=(\S*)"),
+        "image_gen._DEFAULT_VLM_MODEL": (IMAGE_GEN, r'(?m)^_DEFAULT_VLM_MODEL\s*=\s*"([^"]+)"'),
+    }
+    problems = []
+    for label, (path, pattern) in sources.items():
+        found = re.findall(pattern, path.read_text()) if path.exists() else []
+        if not found:
+            problems.append(f"{label}: no default VLLM_MODEL found (expected {want})")
+        for got in found:
+            if got != want:
+                problems.append(
+                    f"{label}: default model {got}, but model_tiers.json's default is {want}"
+                )
+    if INSTALL_DOC.exists():
+        doc = INSTALL_DOC.read_text()
+        for name, tier in table["tiers"].items():
+            if tier["llm_id"] not in doc:
+                problems.append(
+                    f"docs/INSTALLATION.md: does not name the {name} tier's model {tier['llm_id']}"
+                )
+    return problems
 
 
 def pypi_releases(dist: str) -> tuple[str, set[str]] | None:
@@ -379,7 +421,7 @@ def main() -> int:
     pypi: dict[str, tuple[str, set[str]] | None] = (
         {} if args.offline else {dist: pypi_releases(dist) for dist in PINNED}
     )
-    problems: list[str] = []
+    problems: list[str] = model_default_problems()
     behind: list[str] = []
 
     def pypi_cell(dist: str, pinned: str | None) -> str:
@@ -478,6 +520,7 @@ def main() -> int:
         return 1
 
     print("Pins agree: lock, Dockerfile ARGs, pyproject floors and runpod all match.")
+    print("Model defaults agree with scripts/model_tiers.json.")
     return 0
 
 

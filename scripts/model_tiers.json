@@ -1,0 +1,42 @@
+{
+  "_comment": "The one tier table for local models on Apple Silicon. scripts/setup_models.py reads it (`make models`); scripts/check_pins.py fails when a repo-wide default disagrees with `default_tier`. Sizes are as oMLX counts them. See docs/INSTALLATION.md, 'Small Macs (16-24 GB)'.",
+  "default_tier": "small",
+  "tiers": {
+    "small": {
+      "max_ram_gb": 16,
+      "llm_repo": "lmstudio-community/Qwen3-4B-Instruct-2507-MLX-8bit",
+      "llm_id": "Qwen3-4B-Instruct-2507-MLX-8bit",
+      "llm_gb": 4.3,
+      "moot_model": "Qwen3-4B-Instruct-2507-MLX-8bit",
+      "image_idle_unload_s": 300,
+      "status": "estimate"
+    },
+    "medium": {
+      "max_ram_gb": 24,
+      "llm_repo": "Qwen/Qwen3-8B-MLX-4bit",
+      "llm_id": "Qwen3-8B-MLX-4bit",
+      "llm_gb": 4.1,
+      "moot_model": "Qwen3-8B-MLX-4bit",
+      "image_idle_unload_s": 300,
+      "status": "measured 2026-11-17 on a 24 GB Mac (Babbage)"
+    },
+    "large": {
+      "max_ram_gb": 36,
+      "llm_repo": "mlx-community/Qwen3.8-27B-4bit",
+      "llm_id": "Qwen3.8-27B-4bit",
+      "llm_gb": 15.7,
+      "moot_model": null,
+      "image_idle_unload_s": 0,
+      "status": "estimate"
+    },
+    "xl": {
+      "max_ram_gb": null,
+      "llm_repo": "Jundot/Qwen3.6-35B-A3B-oQ4e-mtp",
+      "llm_id": "Qwen3.6-35B-A3B-oQ4e-mtp",
+      "llm_gb": 21.6,
+      "moot_model": null,
+      "image_idle_unload_s": 0,
+      "status": "measured 2026-11-17 on an M5 Max"
+    }
+  }
+}

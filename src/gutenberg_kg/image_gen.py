@@ -26,10 +26,6 @@ from io import BytesIO
 from pathlib import Path
 from typing import TYPE_CHECKING
 
-# One prompt for every rewrite path: the worker's, this CLI/MCP one, and
-# the app's Swift mirror (test_synthesis_parity.py).
-from gutenberg_kg.synthesis_prompts import IMAGE_REWRITE_SYSTEM as _VLM_SYSTEM
-
 if TYPE_CHECKING:
     from PIL.Image import Image as PILImage
 
@@ -117,11 +113,18 @@ def vlm_rewrite(
     :param corpus_text: Historical text to rewrite as a visual scene description.
     :param base_url: OpenAI-compatible endpoint URL. Falls back to GUTENKG_VLM_ENDPOINT
                      or http://localhost:8080/v1.
-    :param model: Model ID. Falls back to GUTENKG_VLM_MODEL or the Qwen3-30B default.
+    :param model: Model ID. Falls back to GUTENKG_VLM_MODEL or _DEFAULT_VLM_MODEL.
     :returns: (prompt, error) — prompt is the rewritten text (or corpus_text on failure);
               error is None on success or a short message describing the failure.
     """
     import re
+
+    # Imported here, not at module level: the shared prompt comes from
+    # kgmodule-utils, which the FLUX image server's .venv-image does not
+    # install, and that server imports this module for generate() only.
+    # One prompt for every rewrite path: the worker's, this CLI/MCP one,
+    # and the app's Swift mirror (test_synthesis_parity.py).
+    from gutenberg_kg.synthesis_prompts import IMAGE_REWRITE_SYSTEM
 
     try:
         from openai import OpenAI
@@ -136,7 +139,7 @@ def vlm_rewrite(
         response = client.chat.completions.create(
             model=mdl,
             messages=[
-                {"role": "system", "content": _VLM_SYSTEM},
+                {"role": "system", "content": IMAGE_REWRITE_SYSTEM},
                 {"role": "user", "content": corpus_text},
             ],
             max_tokens=300,
@@ -167,6 +170,39 @@ def _load_model(model_name: str):
     _cached_model = Flux2Klein(model_path=model_name)
     _cached_model_name = model_name
     return _cached_model
+
+
+def model_loaded() -> bool:
+    """Return ``True`` while a Flux2Klein model is held in memory."""
+    return _cached_model is not None
+
+
+def unload_model() -> bool:
+    """Drop the cached Flux2Klein model and return its memory to the system.
+
+    The image server calls this after ``IMAGE_IDLE_UNLOAD_S`` idle seconds, so a
+    small Mac gets FLUX's 12-15 GB back for its LLM. The next generation loads
+    the model again.
+
+    :returns: ``True`` if a model was unloaded, ``False`` if none was loaded.
+    """
+    global _cached_model, _cached_model_name
+    if _cached_model is None:
+        return False
+    _cached_model = None
+    _cached_model_name = None
+    import gc
+
+    gc.collect()
+    try:
+        # mlx is in the image server's .venv-image only, not the checked env.
+        import mlx.core as mx  # ty: ignore[import-not-found]
+
+        clear = getattr(mx, "clear_cache", None) or mx.metal.clear_cache
+        clear()
+    except (ImportError, AttributeError):
+        pass
+    return True
 
 
 def generate(

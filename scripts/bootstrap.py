@@ -31,6 +31,14 @@ Steps, in order:
 7. ``docker/.env`` from ``docker/.env.example``. An existing file is never
    touched.
 8. Optional LLM and image backends: oMLX, Ollama, OpenAI keys. Reported only.
+9. The LLM provider, set up when one is chosen with ``--provider`` or at the
+   prompt (a terminal run without ``--yes``). ``omlx`` checks that oMLX is
+   installed and running, copies its API key into ``docker/.env`` and runs
+   ``scripts/setup_models.py`` to fetch and test the model for this Mac.
+   ``openai`` and ``anthropic`` ask for the key, check it against the
+   provider's model list (no tokens spent) and write it to ``docker/.env``.
+   ``docker/.env`` is backed up before any change. With no provider chosen
+   this step only says how to choose one.
 
 It ends by printing the next command and does not run it: ``make build-corpus``
 takes 30-45 minutes, and ``make pull-worker-image`` skips it.
@@ -41,12 +49,15 @@ printed as ``would run``. The one command that does run is the read-only
 
 Exit status:
     0  every requirement is met, or is one this script installs
-    1  a requirement is missing that the script cannot or did not install
+    1  a requirement is missing that the script cannot or did not install,
+       or the chosen provider could not be set up
 """
 
 from __future__ import annotations
 
 import argparse
+import getpass
+import json
 import os
 import platform
 import re
@@ -81,6 +92,28 @@ APPLE_CONTAINER_MIN_MACOS = 26
 
 ENV_FILE = ROOT / "docker" / ".env"
 ENV_EXAMPLE = ROOT / "docker" / ".env.example"
+
+PROVIDERS = ("omlx", "openai", "anthropic", "none")
+OMLX_SETTINGS = Path.home() / ".omlx" / "settings.json"
+OMLX_APP = Path("/Applications/oMLX.app")
+OMLX_URL = "https://omlx.ai"
+SETUP_MODELS = ROOT / "scripts" / "setup_models.py"
+# Seconds to wait for oMLX to answer after launching the app.
+OMLX_START_WAIT_S = 60
+# Each cloud key is checked against the provider's model list, which spends no
+# tokens. 401 means the key is wrong.
+CLOUD_KEYS = {
+    "openai": (
+        "OPENAI_API_KEY",
+        "https://api.openai.com/v1/models",
+        lambda key: {"Authorization": f"Bearer {key}"},
+    ),
+    "anthropic": (
+        "ANTHROPIC_API_KEY",
+        "https://api.anthropic.com/v1/models",
+        lambda key: {"x-api-key": key, "anthropic-version": "2026-10-21"},
+    ),
+}
 
 # Local probes must not go through an HTTP proxy from the environment.
 _LOCAL_OPENER = urllib.request.build_opener(urllib.request.ProxyHandler({}))
@@ -187,6 +220,48 @@ def http_status(url: str, timeout: float = 1.0):
         return exc.code
     except (urllib.error.URLError, OSError, ValueError):
         return None
+
+
+def check_key(url: str, headers: dict, timeout: float = 15.0):
+    """Ask a cloud provider whether an API key is good, by listing its models.
+
+    :param url: The provider's model-list URL.
+    :param headers: Request headers carrying the key.
+    :param timeout: Seconds to wait.
+    :returns: True for a good key, False for a rejected one (401), None when the
+        answer says nothing about the key: no network, a 5xx, or a 403, which a
+        valid key without permission for the model list also gets.
+    """
+    req = urllib.request.Request(url, headers=headers)
+    try:
+        with urllib.request.urlopen(req, timeout=timeout) as resp:  # noqa: S310
+            return resp.status == 200
+    except urllib.error.HTTPError as exc:
+        return False if exc.code == 401 else None
+    except (urllib.error.URLError, OSError, ValueError):
+        return None
+
+
+def read_omlx_settings(path: Path) -> dict:
+    """Read oMLX's settings file.
+
+    :param path: Usually ``~/.omlx/settings.json``.
+    :returns: The parsed settings, or ``{}`` when the file is missing or unreadable.
+    """
+    try:
+        return json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        return {}
+
+
+def url_port(url: str):
+    """The port in a URL such as ``http://host.docker.internal:8080/v1``.
+
+    :param url: The URL.
+    :returns: The port as an int, or None when the URL names none.
+    """
+    m = re.match(r"^[a-z]+://[^/:]+:(\d+)", url)
+    return int(m.group(1)) if m else None
 
 
 # ANSI colors, used only on a terminal (main() decides; NO_COLOR turns them off).
@@ -376,7 +451,16 @@ def header_lines(*, dry_run: bool, started) -> list:
 class Bootstrap:
     """One bootstrap run; records the requirements it could not satisfy."""
 
-    def __init__(self, *, dry_run: bool, assume_yes: bool, dev: bool, cli_only: bool, extras: str):
+    def __init__(
+        self,
+        *,
+        dry_run: bool,
+        assume_yes: bool,
+        dev: bool,
+        cli_only: bool,
+        extras: str,
+        provider=None,
+    ):
         """Set the run mode.
 
         :param dry_run: Report only; run no install and write no file.
@@ -384,7 +468,10 @@ class Bootstrap:
         :param dev: Install the contributor toolchain as well.
         :param cli_only: Skip the container runtime check.
         :param extras: Space-separated Poetry extras for ``poetry install``.
+        :param provider: One of ``PROVIDERS`` to set up, or None to ask on a
+            terminal (and to only report otherwise).
         """
+        self.provider = provider
         self.dry_run = dry_run
         self.assume_yes = assume_yes
         self.dev = dev
@@ -707,6 +794,161 @@ class Bootstrap:
         else:
             say("info", "local images: make sdxl-server (FLUX needs Apple Silicon or CUDA 13)")
 
+    def write_env(self, values: dict) -> None:
+        """Set keys in ``docker/.env``, backing it up first; never prints values.
+
+        :param values: Mapping of name to value.
+        """
+        names = ", ".join(values)
+        if self.dry_run:
+            say("would run", f"set {names} in docker/.env")
+            return
+        # A sibling stdlib script; imported here so a dry run never needs it.
+        sys.path.insert(0, str(SETUP_MODELS.parent))
+        from setup_models import backup_path, copy_private, set_env_keys, write_private
+
+        if not ENV_FILE.exists():
+            shutil.copyfile(ENV_EXAMPLE, ENV_FILE)
+        old = ENV_FILE.read_text(encoding="utf-8")
+        new = set_env_keys(old, values)
+        if new == old:
+            return
+        backup = backup_path(ENV_FILE)
+        copy_private(ENV_FILE, backup)
+        write_private(ENV_FILE, new)
+        say("ok", f"set {names} in docker/.env (backup: {backup.name})")
+
+    def choose_provider(self):
+        """The provider to set up: the one given, else asked for on a terminal.
+
+        :returns: One of ``PROVIDERS``, or None when none was chosen.
+        """
+        if self.provider:
+            return self.provider
+        if self.dry_run or self.assume_yes or not sys.stdin.isatty():
+            say(
+                "skip",
+                "no provider chosen; to set one up: make bootstrap PROVIDER=omlx|openai|anthropic",
+            )
+            return None
+        offered = [p for p in PROVIDERS if p != "omlx" or self._apple_silicon()]
+        answer = input(f"  ? LLM provider to set up [{'/'.join(offered)}] (none): ")
+        answer = answer.strip().lower() or "none"
+        if answer not in offered:
+            say("skip", f"{answer!r} is not one of {', '.join(offered)}; nothing set up")
+            return None
+        return answer
+
+    @staticmethod
+    def _apple_silicon() -> bool:
+        return platform.system() == "Darwin" and platform.machine() == "arm64"
+
+    def setup_provider(self) -> None:
+        """Step 9: set up the chosen LLM provider."""
+        provider = self.choose_provider()
+        if provider in (None, "none"):
+            if provider == "none":
+                say("ok", "no LLM provider; querying the corpus works without one")
+            return
+        if provider == "omlx":
+            self._setup_omlx()
+        else:
+            self._setup_cloud(provider)
+
+    def _omlx_answering(self, port: int) -> bool:
+        return port_open(port) and http_status(f"http://127.0.0.1:{port}/v1/models") in (200, 401)
+
+    def _setup_omlx(self) -> None:
+        """oMLX: installed, running, key and port matching docker/.env, then the model."""
+        if not self._apple_silicon():
+            self.block("oMLX", "it needs an Apple Silicon Mac; use openai or anthropic")
+            return
+        if not (OMLX_APP.exists() or OMLX_SETTINGS.exists() or shutil.which("omlx")):
+            self.block("oMLX is not installed", f"Install it from {OMLX_URL}, then re-run")
+            return
+        settings = read_omlx_settings(OMLX_SETTINGS)
+        port = int((settings.get("server") or {}).get("port") or 8000)
+        if not self._omlx_answering(port):
+            say("missing", f"oMLX is not answering on :{port}")
+            if not (OMLX_APP.exists() and self.confirm("Start the oMLX app now?")):
+                self.block("oMLX is not running", "Start it, then re-run")
+                return
+            if not self.act(["open", "-a", str(OMLX_APP)]):
+                self.block("oMLX did not start", "Start it by hand, then re-run")
+                return
+            if not self.dry_run:
+                deadline = time.monotonic() + OMLX_START_WAIT_S
+                settings = read_omlx_settings(OMLX_SETTINGS)
+                port = int((settings.get("server") or {}).get("port") or 8000)
+                while not self._omlx_answering(port) and time.monotonic() < deadline:
+                    time.sleep(2)
+                    settings = read_omlx_settings(OMLX_SETTINGS)
+                    port = int((settings.get("server") or {}).get("port") or 8000)
+                if not self._omlx_answering(port):
+                    self.block(
+                        "oMLX did not answer", f"waited {OMLX_START_WAIT_S} s on :{port}; re-run"
+                    )
+                    return
+        if self._omlx_answering(port):
+            say("ok", f"oMLX answering on :{port}")
+
+        dotenv = read_dotenv(ENV_FILE) or read_dotenv(ENV_EXAMPLE)
+        env_port = url_port(dotenv.get("VLLM_ENDPOINT_URL", ""))
+        if env_port is not None and env_port != port:
+            self.block(
+                f"oMLX listens on :{port} but VLLM_ENDPOINT_URL in docker/.env uses :{env_port}",
+                "Set server.port to 8080 in oMLX's settings (quit it first), or change"
+                " VLLM_ENDPOINT_URL",
+            )
+            return
+        key = (settings.get("auth") or {}).get("api_key") or ""
+        if key and dotenv.get("VLLM_API_KEY") != key:
+            say("warn", "VLLM_API_KEY in docker/.env is not oMLX's key")
+            if self.confirm("Copy oMLX's API key into docker/.env?"):
+                self.write_env({"VLLM_API_KEY": key})
+            else:
+                self.block("VLLM_API_KEY", "Set it to auth.api_key from ~/.omlx/settings.json")
+                return
+
+        cmd = [sys.executable, str(SETUP_MODELS.relative_to(ROOT))]
+        if not self.act(cmd):
+            self.block("the oMLX model", "see the error above; make models TIER=<smaller> retries")
+
+    def _setup_cloud(self, provider: str) -> None:
+        """OpenAI or Anthropic: get the key, check it, then write it to docker/.env."""
+        name, url, headers = CLOUD_KEYS[provider]
+        # The worker reads docker/.env, so a key saved there wins over the shell's.
+        saved = read_dotenv(ENV_FILE).get(name, "")
+        key = saved or os.environ.get(name, "")
+        if not key:
+            if self.dry_run:
+                say("would run", f"ask for {name}, check it and set it in docker/.env")
+                return
+            if not sys.stdin.isatty():
+                self.block(f"{name} is not set", "Set it in docker/.env, or run on a terminal")
+                return
+            key = getpass.getpass(f"  ? {name} (not shown): ").strip()
+            if not key:
+                self.block(f"{name} is not set", "Set it in docker/.env and re-run")
+                return
+        if self.dry_run:
+            say("would run", f"check {name} against {url}")
+        else:
+            good = check_key(url, headers(key))
+            if good is False:
+                self.block(f"{provider} rejected {name}", "Check the key and re-run")
+                return
+            if good is None:
+                say("warn", f"could not confirm {name} with {url}; keeping it unchecked")
+            else:
+                say("ok", f"{name} accepted by {provider}")
+        if key != saved:
+            self.write_env({name: key})
+        if provider == "anthropic":
+            say("info", "pick Anthropic in the chat UI's Provider list; it covers text only")
+        else:
+            say("info", "pick OpenAI in the chat UI's Provider list (text and images)")
+
     def run(self) -> int:
         """Run every step and print the summary.
 
@@ -718,14 +960,15 @@ class Bootstrap:
         if self.dry_run:
             print(paint("Dry run: nothing will be installed, copied or downloaded.\n", "33"))
         steps = [
-            ("1/8 Python", self.check_python),
-            ("2/8 Poetry", self.check_poetry),
-            ("3/8 Make", self.check_make),
-            ("4/8 Container runtime", None if self.cli_only else self.check_containers),
-            ("5/8 Python dependencies", self.install_deps),
-            ("6/8 Local models", self.fetch_models),
-            ("7/8 docker/.env", self.make_env_file),
-            ("8/8 Optional backends", self.probe_backends),
+            ("1/9 Python", self.check_python),
+            ("2/9 Poetry", self.check_poetry),
+            ("3/9 Make", self.check_make),
+            ("4/9 Container runtime", None if self.cli_only else self.check_containers),
+            ("5/9 Python dependencies", self.install_deps),
+            ("6/9 Local models", self.fetch_models),
+            ("7/9 docker/.env", self.make_env_file),
+            ("8/9 Optional backends", self.probe_backends),
+            ("9/9 LLM provider", self.setup_provider),
         ]
         for title, step in steps:
             print(paint(title, "1"))
@@ -768,6 +1011,11 @@ def main(argv=None) -> int:
     )
     p.add_argument("--cli-only", action="store_true", help="skip the container runtime check")
     p.add_argument("--extras", default=EXTRAS, help=f"Poetry extras (default: {EXTRAS!r})")
+    p.add_argument(
+        "--provider",
+        choices=PROVIDERS,
+        help="LLM provider to set up; without it a terminal run asks, others only report",
+    )
     args = p.parse_args(argv)
     # Keep our lines in order with the output of the commands we run.
     sys.stdout.reconfigure(line_buffering=True)
@@ -781,6 +1029,7 @@ def main(argv=None) -> int:
         dev=args.dev,
         cli_only=args.cli_only,
         extras=args.extras,
+        provider=args.provider,
     ).run()
 
 

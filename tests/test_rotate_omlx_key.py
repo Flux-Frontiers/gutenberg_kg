@@ -77,6 +77,14 @@ def test_each_run_keeps_its_own_backup(files, monkeypatch):
     assert sorted(keys) == sorted([_OLD_KEY, _NEW_KEY])
 
 
+def test_key_files_it_writes_are_owner_only(files, monkeypatch):
+    """docker/.env and the settings backups hold keys: no group or world access."""
+    settings, env = files
+    assert _main(monkeypatch, "--key", _NEW_KEY) == 0
+    for path in [env, *settings.parent.glob("settings.json.bak-*")]:
+        assert path.stat().st_mode & 0o777 == 0o600, path
+
+
 def test_refuses_while_omlx_runs(files, monkeypatch):
     settings, env = files
     before = (settings.read_text(), env.read_text())
