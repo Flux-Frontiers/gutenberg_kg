@@ -350,7 +350,7 @@ Set in `docker/.env`:
 
 ```bash
 VLLM_ENDPOINT_URL=http://host.docker.internal:8080/v1
-VLLM_MODEL=Qwen3-4B-Instruct-2507-MLX-8bit
+VLLM_MODEL=Qwen3-8B-MLX-4bit
 VLLM_API_KEY=sk-your-omlx-api-key     # from ~/.omlx/settings.json → auth.api_key
 ```
 
@@ -392,7 +392,7 @@ does not change them. The tiers are in `scripts/model_tiers.json`:
 
 | Tier | Memory | Model | Size | Basis |
 | --- | --- | --- | --- | --- |
-| small | 16 GB or less | `Qwen3-4B-Instruct-2507-MLX-8bit` | 4.3 GB | estimate |
+| small | 16 GB or less | `Qwen3-8B-MLX-4bit` | 4.1 GB | estimate |
 | medium | 18-24 GB | `Qwen3-8B-MLX-4bit` | 4.1 GB | measured on a 24 GB Mac |
 | large | 32-36 GB | `Qwen3.8-27B-4bit` | 15.7 GB | estimate |
 | xl | 48 GB or more | `Qwen3.6-35B-A3B-oQ4e-mtp` | 21.6 GB | measured on an M5 Max |
@@ -400,13 +400,13 @@ does not change them. The tiers are in `scripts/model_tiers.json`:
 `VLLM_MODEL` does two jobs: it writes answers, and it rewrites passages into
 image prompts before FLUX renders them. A request can name another model
 (the `model` field), but everything else uses this one. The default,
-`Qwen3-4B-Instruct-2507-MLX-8bit`, fits any Apple Silicon Mac. On a Mac with
+`Qwen3-8B-MLX-4bit`, fits any Apple Silicon Mac. On a Mac with
 more memory, a larger model gives more faithful answers and pictures.
 
 | Model ID in oMLX | Weights | Answer | Image rewrite | Notes |
 | --- | --- | --- | --- | --- |
-| `Qwen3-4B-Instruct-2507-MLX-8bit` (default) | 4 GB | 5-12 s | 1-2 s | Adds interpretation the passages do not support. Ignores the rewrite prompt's accuracy rules: Lot's wife stands beside the pillar of salt instead of becoming it. |
-| `Qwen3-8B-MLX-4bit` | 4 GB | 2-6 s | not measured | The `make models` choice for 18-24 GB. Measured on a 24 GB Mac; see [Small Macs](#small-macs-16-24-gb). |
+| `Qwen3-4B-Instruct-2507-MLX-8bit` | 4 GB | 5-12 s | 1-2 s | Adds interpretation the passages do not support. Ignores the rewrite prompt's accuracy rules: Lot's wife stands beside the pillar of salt instead of becoming it. |
+| `Qwen3-8B-MLX-4bit` (default) | 4 GB | 2-6 s | 1-4 s | The default, and the `make models` choice up to 24 GB. A thinking model; the worker turns thinking off. Follows the accuracy rules: Lot's wife becomes the pillar. Fits beside FLUX on a 24 GB Mac, with little to spare; see [Small Macs](#small-macs-16-24-gb). |
 | `Jundot--Qwen3.6-35B-A3B-oQ4e-mtp` | 20 GB | 2.5-7 s | 1-2 s | Mixture of experts: 35B parameters, 3B active per token, so it runs at small-model speed. Follows the accuracy rules. Fastest answers measured. |
 | `Qwen3.8-27B-oQ4e-mtp` (Jundot) | 16 GB | 6-11 s | about 9.5 s | Most faithful pictures, slowest rewrite. |
 | `Qwen3.8-27B-4bit` | 15 GB | 12-18 s | about 7 s | Same quality as the Jundot build, slower. |
@@ -419,13 +419,34 @@ Size the model to memory. The weights must fit beside the FLUX image server
 (9 GB of weights, but 12-15 GB in memory once it has rendered), the worker
 container's VM and macOS:
 
-- **16 GB:** the 4B default. Not yet measured.
-- **18-24 GB:** `Qwen3-8B-MLX-4bit`. Measured; see below.
+- **24 GB or less:** `Qwen3-8B-MLX-4bit`, the default. Measured on 24 GB; 16 GB is an estimate from its size.
 - **32 GB:** a 27B model fits, or A3B if images are rendered elsewhere.
 - **48 GB or more:** A3B with FLUX on the same Mac.
 
 The 32 GB line is an estimate from the weight sizes. If oMLX starts swapping,
 answers slow from seconds to minutes; drop to a smaller model.
+
+The same test on two Macs, 2026-11-17: one question ("pillar of salt") through
+the worker, a rewrite of the Lot passage, and a 1024x1024 FLUX render. The
+M5 Max times are a second, warm run; the first run, which loads the model, took
+4-18 s per answer. The 24 GB Mac is an M4 Pro (Babbage) with FLUX loaded.
+
+| Model | M5 Max: answer / rewrite / render | 24 GB M4 Pro: answer / rewrite / render | Lot's wife |
+| --- | --- | --- | --- |
+| `Qwen3-4B-Instruct-2507` | 3.2 / 1.5 / 4.8 s | 9.6 / 3.0 / 34.9 s (4-bit build) | Stands beside the pillar |
+| `Qwen3-8B-MLX-4bit` | 2.0 / 1.2 / 4.8 s | 5.1 / 3.4 / 40.6 s | Becomes the pillar |
+| `Qwen3.8-27B-4bit` | 11.1 / 6.6 / 6.0 s | refused: 15.7 GB, 14.1 GB free | Becomes the pillar |
+| `Qwen3.6-35B-A3B-oQ4e-mtp` | 2.1 / 1.1 / 5.7 s | refused: 21.6 GB, 14.4 GB free | Becomes the pillar |
+
+On the 24 GB Mac the 8B and FLUX fit together with little to spare. FLUX
+renders there are seven to eight times slower than on the M5 Max; the language
+model steps are two to three times slower. On a large Mac, A3B answers and
+rewrites as fast as the 8B and writes the most complete prompts. The 27B is the
+slowest at every step.
+
+A correct prompt does not guarantee a correct picture. With the same seed,
+FLUX drew a woman beside the pillar for two of the three prompts that turned
+her into it; only the 27B's render showed her as the pillar.
 
 #### Small Macs (16-24 GB)
 
@@ -687,7 +708,7 @@ Provider is chosen per-request (chat UI Provider dropdown / `"backend"` field). 
 | `SYNTH_MODEL` | — | omlx | Model override (falls back to `VLLM_MODEL`). |
 | `VLLM_ENDPOINT_URL` | `http://localhost:8080/v1` | omlx | oMLX / vLLM OpenAI-compatible endpoint. |
 | `VLLM_API_KEY` | — | omlx | Bearer token for oMLX (omit for Ollama). |
-| `VLLM_MODEL` | `Qwen3-4B-Instruct-2507-MLX-8bit` | omlx | oMLX model ID, for answers and image-prompt rewrites. See [Choosing a model](#choosing-a-model). |
+| `VLLM_MODEL` | `Qwen3-8B-MLX-4bit` | omlx | oMLX model ID, for answers and image-prompt rewrites. See [Choosing a model](#choosing-a-model). |
 | `OLLAMA_ENDPOINT` | `http://localhost:11434/v1` | ollama | Ollama OpenAI-compatible endpoint (no key needed). |
 | `OPENAI_API_KEY` | — | openai | **Required for the OpenAI path.** Endpoint defaults to `https://api.openai.com/v1`, model to `gpt-4o-mini`. |
 | `ANTHROPIC_API_KEY` | -- | anthropic | **Required for the Anthropic path.** Model defaults to `claude-opus-5-5`. Select per request; do not use `anthropic` as `SYNTH_BACKEND`. |
@@ -713,7 +734,7 @@ The local `gutenkg imagine` command (outside Docker) reads its own `GUTENKG_*` v
 | Variable | Default | Purpose |
 |---|---|---|
 | `GUTENKG_VLM_ENDPOINT` | `http://localhost:8080/v1` | oMLX endpoint for the VLM prose→scene rewrite. |
-| `GUTENKG_VLM_MODEL` | `Qwen3-4B-Instruct-2507-MLX-8bit` | VLM model ID. |
+| `GUTENKG_VLM_MODEL` | `Qwen3-8B-MLX-4bit` | VLM model ID. |
 | `GUTENKG_IMAGE_ENDPOINT` | *(empty: probe ports 8090, 8091)* | Image server to call. The CLI and the MCP tools never generate in-process; with no server answering they stop with "No image server found". |
 | `GUTENKG_IMAGE_MODEL` | `mlx-community/flux2-klein-4b-4bit` | Local FLUX model. |
 | `GUTENKG_IMAGE_STEPS` | `4` | Local FLUX inference steps. |

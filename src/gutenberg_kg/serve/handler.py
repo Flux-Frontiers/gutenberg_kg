@@ -34,7 +34,7 @@ GUTENKG_CORS_ORIGINS  Comma-separated origins a browser may call from (serve/cor
 GUTENKG_VOICES     The author voice table for live moots.  Default: corpus/authors/voices.json
 VLLM_ENDPOINT_URL  Optional OpenAI-compatible endpoint for synthesis (oMLX/Ollama/vLLM).
 VLLM_API_KEY       Bearer token for the synthesis endpoint.  Omit for Ollama.
-VLLM_MODEL         Model ID.  Default: Qwen3-4B-Instruct-2507-MLX-8bit
+VLLM_MODEL         Model ID.  Default: Qwen3-8B-MLX-4bit
                    (scripts/model_tiers.json; `make models` sets it per Mac)
 MOOT_MODEL         Model a moot uses on oMLX.  Default: Qwen3.8-27B-4bit
 SYNTH_MAX_K        Max snippets fed to synthesis.  Default: 12

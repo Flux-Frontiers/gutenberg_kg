@@ -44,7 +44,7 @@ services:
       # Synthesis via a host LLM server (optional — omit to disable).
       # Defaults target oMLX on :8080; see docker/.env.example.
       VLLM_ENDPOINT_URL: ${VLLM_ENDPOINT_URL:-http://host.docker.internal:8080/v1}
-      VLLM_MODEL: ${VLLM_MODEL:-Qwen3-4B-Instruct-2507-MLX-8bit}
+      VLLM_MODEL: ${VLLM_MODEL:-Qwen3-8B-MLX-4bit}
       VLLM_API_KEY: ${VLLM_API_KEY:-}
       OLLAMA_ENDPOINT: ${OLLAMA_ENDPOINT:-http://host.docker.internal:11434/v1}
       OPENAI_API_KEY: ${OPENAI_API_KEY:-}

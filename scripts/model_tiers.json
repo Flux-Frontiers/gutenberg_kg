@@ -4,12 +4,12 @@
   "tiers": {
     "small": {
       "max_ram_gb": 16,
-      "llm_repo": "lmstudio-community/Qwen3-4B-Instruct-2507-MLX-8bit",
-      "llm_id": "Qwen3-4B-Instruct-2507-MLX-8bit",
-      "llm_gb": 4.3,
-      "moot_model": "Qwen3-4B-Instruct-2507-MLX-8bit",
+      "llm_repo": "Qwen/Qwen3-8B-MLX-4bit",
+      "llm_id": "Qwen3-8B-MLX-4bit",
+      "llm_gb": 4.1,
+      "moot_model": "Qwen3-8B-MLX-4bit",
       "image_idle_unload_s": 300,
-      "status": "estimate"
+      "status": "estimate: the medium tier's model, unmeasured on 16 GB"
     },
     "medium": {
       "max_ram_gb": 24,

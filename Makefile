@@ -582,7 +582,7 @@ run: runtime-guard setup
 	  -e MOOT_TOKEN="$${MOOT_TOKEN:-}" \
 	  -e MOOT_MODEL="$${MOOT_MODEL:-}" \
 	  -e VLLM_ENDPOINT_URL="$$VLLM_ENDPOINT_URL" \
-	  -e VLLM_MODEL="$${VLLM_MODEL:-Qwen3-4B-Instruct-2507-MLX-8bit}" \
+	  -e VLLM_MODEL="$${VLLM_MODEL:-Qwen3-8B-MLX-4bit}" \
 	  -e VLLM_API_KEY="$${VLLM_API_KEY:-}" \
 	  -e OLLAMA_ENDPOINT="$$OLLAMA_ENDPOINT" \
 	  -e OPENAI_API_KEY="$${OPENAI_API_KEY:-}" \

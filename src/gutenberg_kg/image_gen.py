@@ -99,7 +99,7 @@ def discover_image_endpoint(
     return None
 
 
-_DEFAULT_VLM_MODEL = "Qwen3-4B-Instruct-2507-MLX-8bit"
+_DEFAULT_VLM_MODEL = "Qwen3-8B-MLX-4bit"
 
 
 def vlm_rewrite(
