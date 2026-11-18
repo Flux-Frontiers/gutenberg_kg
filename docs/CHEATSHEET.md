@@ -520,14 +520,15 @@ render; re-run `make image-agent-install` after changing it.
 oMLX is an OpenAI-compatible local inference server for MLX models. The VLM
 rewrite step calls it on `http://localhost:8080/v1`.
 
-Install and start oMLX with any Qwen3 model (30B recommended, 4B works too):
+Install and start oMLX with a Qwen3 model. `make models` picks one for this Mac's
+memory; the default is `Qwen3-8B-MLX-4bit` (see INSTALLATION.md, "Choosing a model"):
 
 ```bash
 # Install oMLX (requires Python 3.11+)
 pip install omlx          # or: pip install git+https://github.com/omlx/omlx
 
 # Start with the model used by gutenkg imagine (adjust path to your MLX model)
-omlx serve mlx-community/Qwen3-30B-A3B-Instruct-2507-MLX-4bit --port 8080
+omlx serve Qwen/Qwen3-8B-MLX-4bit --port 8080
 
 # Verify it's up (the key is auth.api_key in ~/.omlx/settings.json; without it, 401)
 curl -H "Authorization: Bearer <key>" http://localhost:8080/v1/models
