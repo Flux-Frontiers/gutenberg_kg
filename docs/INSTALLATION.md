@@ -427,6 +427,21 @@ container's VM and macOS:
 The 32 GB line is an estimate from the weight sizes. If oMLX starts swapping,
 answers slow from seconds to minutes; drop to a smaller model.
 
+The same test on two Macs, 2026-11-17: one question ("pillar of salt") through
+the worker, a rewrite of the Lot passage, and a 1024x1024 FLUX render. The
+M5 Max times are a second, warm run; the first run, which loads the model, took
+4-18 s per answer. The 24 GB Mac is an M4 Pro (Babbage) with FLUX loaded.
+
+| Model | M5 Max: answer / rewrite / render | 24 GB M4 Pro: answer / rewrite / render | Lot's wife |
+| --- | --- | --- | --- |
+| `Qwen3-4B-Instruct-2507` | 3.2 / 1.5 / 4.8 s | 9.6 / 3.0 / 34.9 s (4-bit build) | Stands beside the pillar |
+| `Qwen3-8B-MLX-4bit` | 2.0 / 1.2 / 4.8 s | 5.1 / 3.4 / 40.6 s | Becomes the pillar |
+| `Qwen3.8-27B-4bit` | 11.1 / 6.6 / 6.0 s | refused: 15.7 GB, 14.1 GB free | Becomes the pillar |
+| `Qwen3.6-35B-A3B-oQ4e-mtp` | 2.1 / 1.1 / 5.7 s | refused: 21.6 GB, 14.4 GB free | Becomes the pillar |
+
+On the 24 GB Mac the 8B and FLUX fit together with little to spare. FLUX
+renders there are seven to eight times slower than on the M5 Max.
+
 #### Small Macs (16-24 GB)
 
 oMLX will not load a model that does not fit in the memory left over. It
