@@ -33,6 +33,17 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   reply until the client hangs up (up to 300 s), and keeps idle connections
   open for 300 s instead of uvicorn's 5. `docs/APPLE_CONTAINERS.md` has the
   measurements.
+- **`make models` downloads into the directory oMLX scans.** It always used
+  `~/.omlx/models`, so with oMLX's `model_dirs` pointed elsewhere the download
+  succeeded but the rescan never found it, and the run failed with "oMLX does
+  not list ... after the rescan". It now uses the first of `model.model_dirs`
+  in `~/.omlx/settings.json`, else `model.model_dir`, else `~/.omlx/models`,
+  and checks free space on that volume.
+- **`make run RUNTIME=apple` stops early when the worker image is missing.**
+  Without a local image, `container run` tried to pull
+  `docker.io/library/corpus-gutenberg` and failed with a confusing error. It
+  now says to run `make pull-worker-image RUNTIME=apple` or
+  `make build RUNTIME=apple`.
 
 ## [1.39.0] - 2026-11-17
 
