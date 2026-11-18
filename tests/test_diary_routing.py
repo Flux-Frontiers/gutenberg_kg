@@ -14,7 +14,7 @@ pytest.importorskip("kg_rag")  # diary routing/registration needs the kgdeps ext
 from gutenberg_kg import ingest as ig  # noqa: E402
 
 
-def test_run_ingest_routes_diaries_to_diary_pipeline(monkeypatch):
+def test_run_ingest_routes_diaries_to_diary_pipeline(monkeypatch, tmp_path):
     """run_ingest with only 'diaries' delegates to ingest_diaries and short-circuits."""
     calls = {}
 
@@ -30,9 +30,12 @@ def test_run_ingest_routes_diaries_to_diary_pipeline(monkeypatch):
     monkeypatch.setattr(ig, "ingest_diaries", fake_ingest_diaries)
     monkeypatch.setattr(ig, "process_book", boom)
 
-    rc = ig.run_ingest(["diaries"], ig.IngestOptions(dry_run=True))
+    # An explicit registry keeps the test out of the real ~/.kgrag.
+    registry = tmp_path / "registry.sqlite"
+    rc = ig.run_ingest(["diaries"], ig.IngestOptions(dry_run=True), registry=registry)
     assert rc == 0
     assert calls, "ingest_diaries was not called for the diaries genre"
+    assert calls["registry_path"] == registry.resolve()
 
 
 def test_register_diary_book_points_to_diarykg(tmp_path):
