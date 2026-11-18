@@ -569,6 +569,12 @@ run: runtime-guard setup
 	@if container list --quiet 2>/dev/null | grep -qx "$(WORKER_NAME)"; then \
 		echo "Worker already running at $(WORKER)"; exit 0; \
 	fi; \
+	if ! container image inspect $(IMAGE):latest >/dev/null 2>&1; then \
+		echo "ERROR: no local $(IMAGE):latest image in the Apple container store,"; \
+		echo "so 'container run' would try (and fail) to pull docker.io/library/$(IMAGE)."; \
+		echo "Run 'make pull-worker-image RUNTIME=apple' (published image) or 'make build RUNTIME=apple'."; \
+		exit 1; \
+	fi; \
 	container delete -f $(WORKER_NAME) >/dev/null 2>&1 || true; \
 	set -a; [ -f docker/.env ] && . docker/.env; set +a; \
 	$(APPLE_REWRITE_ENDPOINTS); \

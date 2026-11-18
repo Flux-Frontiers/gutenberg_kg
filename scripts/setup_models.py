@@ -5,8 +5,9 @@
 Reads the tier table in scripts/model_tiers.json, picks a tier from this Mac's
 memory (or the one named with --tier), and then:
 
-  1. downloads the tier's model into ~/.omlx/models/<org>/<name> with `hf`
-     (resumable; a model already there costs one quick check);
+  1. downloads the tier's model into <oMLX model dir>/<org>/<name> with `hf`
+     (the first of oMLX's `model_dirs`, else ~/.omlx/models; resumable, and a
+     model already there costs one quick check);
   2. asks oMLX to rescan its models and reads back the id it serves;
   3. sends one short chat request, so a model oMLX refuses to load fails here
      with oMLX's own message, and docker/.env is left as it was;
@@ -146,6 +147,21 @@ def resolve_served_id(served: list[str], wanted: str) -> str | None:
     return None
 
 
+def omlx_models_dir(settings_path: Path | None = None) -> Path:
+    """Return the directory oMLX scans for models: its first ``model_dirs``
+    entry, else ``model_dir``, else ~/.omlx/models.
+
+    A model downloaded anywhere else is invisible to oMLX's rescan.
+    """
+    try:
+        model = json.loads((settings_path or OMLX_SETTINGS).read_text()).get("model") or {}
+    except (OSError, ValueError):
+        model = {}
+    dirs = model.get("model_dirs") or []
+    chosen = (dirs[0] if dirs else None) or model.get("model_dir")
+    return Path(chosen).expanduser() if chosen else OMLX_MODELS
+
+
 class OMLX:
     """The few oMLX calls this script makes, authenticated from its settings."""
 
@@ -278,13 +294,14 @@ def main(argv: list[str] | None = None) -> int:
     hf = find_hf()
     if hf is None:
         print(
-            "error: the `hf` CLI is missing. Run `make setup`, or `pip install huggingface_hub`.",
+            "error: the `hf` CLI is missing. Run `poetry install` (it lives in .venv/bin).",
             file=sys.stderr,
         )
         return 1
 
     org, _, base = tier["llm_repo"].rpartition("/")
-    dest = OMLX_MODELS / (org or "local") / base
+    models_dir = omlx_models_dir()
+    dest = models_dir / (org or "local") / base
     env_values = {
         "VLLM_MODEL": tier["llm_id"],
         "MOOT_MODEL": tier["moot_model"] or "",
@@ -320,7 +337,8 @@ def main(argv: list[str] | None = None) -> int:
         print(f"oMLX already serves {found}; skipping the download.")
     else:
         if not has_weights(dest) and tier["llm_gb"]:
-            free_gb = shutil.disk_usage(OMLX_HOME).free / 1e9
+            probe = models_dir if models_dir.exists() else OMLX_HOME
+            free_gb = shutil.disk_usage(probe).free / 1e9
             if free_gb < tier["llm_gb"] * 1.1:
                 print(
                     f"error: {free_gb:.1f} GB free; {tier['llm_repo']} needs about {tier['llm_gb']} GB.",
