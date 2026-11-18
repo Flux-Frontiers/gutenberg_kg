@@ -239,8 +239,38 @@ make publish-worker-image RUNTIME=docker
 
 Docker Desktop already holds the Docker Hub login (browser sign-in), and a
 `docker-container` buildx builder named `gutenkg-multiarch` is created on
-first use. Its amd64 half runs under QEMU, so the first build is slow; later
+first use. Its amd64 half is emulated, so the first build is slow; later
 builds reuse the builder's cache.
+
+The amd64 half needs Rosetta, not QEMU. Under QEMU, Python crashes while
+loading torch in the step that pre-downloads the embedding model, before any
+download starts:
+
+```text
+qemu: uncaught target signal 11 (Segmentation fault) - core dumped
+... did not complete successfully: exit code: 139
+```
+
+Before publishing:
+
+- In Docker Desktop > Settings > General, turn on "Use Rosetta for x86_64/amd64
+  emulation on Apple Silicon". It can be on and still not in use: on
+  2026-11-17 it was on, but after a Docker Desktop restart amd64 ran under
+  QEMU. Turning it off, applying, then on again and applying fixed it.
+- Check which emulator handles amd64:
+
+  ```bash
+  docker run --rm --privileged alpine sh -c \
+    'mount -t binfmt_misc binfmt_misc /proc/sys/fs/binfmt_misc 2>/dev/null; ls /proc/sys/fs/binfmt_misc'
+  ```
+
+  A `rosetta` entry means Rosetta. An `x86_64` entry pointing at
+  `/usr/bin/qemu-x86_64` with no `rosetta` entry means QEMU, and the build will
+  crash.
+- Give Docker Desktop at least 12 GB (Settings > Resources). The 1.39.0 image
+  was published with 12 GB. The [Small Macs](#small-macs-16-24-gb) advice to
+  run Docker at about 4 GB is for serving the worker, not for building it;
+  raise it to publish and lower it after.
 
 Each push moves the tag to the new image, and Docker Hub keeps the one it
 replaced, untagged, with its own copy of the corpus: about 6 GB per publish.
