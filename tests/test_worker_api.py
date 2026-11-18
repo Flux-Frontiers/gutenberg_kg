@@ -5,10 +5,14 @@ from __future__ import annotations
 import asyncio
 import json
 
-from fastapi.testclient import TestClient
+import pytest
 
-from gutenberg_kg.serve.cors import cors_origins
-from gutenberg_kg.serve.worker_api import ClientClosesFirst, create_app, run_job
+pytest.importorskip("fastapi", reason="fastapi not installed (the image extra)")
+
+from fastapi.testclient import TestClient  # noqa: E402
+
+from gutenberg_kg.serve.cors import cors_origins  # noqa: E402
+from gutenberg_kg.serve.worker_api import ClientClosesFirst, create_app, run_job  # noqa: E402
 
 FOREST = "http://localhost:5173"
 

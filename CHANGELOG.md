@@ -12,10 +12,12 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 - **The worker serves `/runsync` itself instead of through RunPod's local
   test server.** `serve/worker_api.py` is a small FastAPI app that keeps the
-  request and reply format byte for byte: the same envelope, status codes,
-  validation errors and CORS headers, checked against the RunPod server for
-  every op. The one difference: the error JSON for an exception no longer
-  carries RunPod's `hostname`, `worker_id` and `runpod_version` fields. The
+  request and reply format: replies to every op and error case were compared
+  with the RunPod server's, and the envelope, status codes, validation errors
+  and CORS headers match. Differences no client uses: the `id` loses its
+  `test-` prefix, the error JSON for an exception drops RunPod's `hostname`,
+  `worker_id` and `runpod_version` fields, and only `/runsync` is served
+  (RunPod's `/run`, `/status` and `/stream` are gone). The
   image drops `runpod` and pins the `fastapi` and `uvicorn[standard]` versions
   it used to bring in. `gutenkg-handler` takes `--host` and `--port`, and
   still accepts `--rp_serve_api`, `--rp_api_host` and `--rp_api_port`, so
