@@ -13,9 +13,9 @@ Reply, HTTP 200 once the request parses:
 
 - ``{"id", "status": "COMPLETED", "output": <the handler's result>}``
 - ``{"id", "status": "FAILED", "error": <message>}`` when the handler's result
-  carries a truthy ``"error"``, or the handler raises. A raised exception's
-  message is a JSON string with ``error_type``, ``error_message`` and
-  ``error_traceback``, as RunPod sent it.
+  carries a truthy ``"error"``, or the handler raises. For a raised
+  exception the message only names the job; the traceback goes to the
+  worker's log under that job id, not to the client.
 
 The handler runs on the event loop, one job at a time, as it did under RunPod:
 its module state (registry, stores, moot sessions, the FLUX client) has only
@@ -32,7 +32,6 @@ the client side fully when the backend goes away. Docker's forwarder does not.
 from __future__ import annotations
 
 import asyncio
-import json
 import traceback
 import uuid
 from collections.abc import Callable
@@ -71,14 +70,11 @@ def run_job(handler: Handler, inp: dict[str, Any]) -> dict[str, Any]:
     job_id = str(uuid.uuid4())
     try:
         result = handler({"id": job_id, "input": inp})
-    except Exception as exc:  # noqa: BLE001 -- every failure becomes a FAILED reply
+    except Exception:  # noqa: BLE001 -- every failure becomes a FAILED reply
+        print(f"[runsync] job {job_id} failed:", flush=True)
         traceback.print_exc()
-        error = {
-            "error_type": str(type(exc)),
-            "error_message": str(exc),
-            "error_traceback": traceback.format_exc(),
-        }
-        return {"id": job_id, "status": "FAILED", "error": json.dumps(error)}
+        error = f"the worker hit an internal error (job {job_id}); see its log"
+        return {"id": job_id, "status": "FAILED", "error": error}
     if isinstance(result, dict) and result.get("error"):
         return {"id": job_id, "status": "FAILED", "error": result["error"]}
     if isinstance(result, dict) and "error" in result:

@@ -15,13 +15,18 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   request and reply format: replies to every op and error case were compared
   with the RunPod server's, and the envelope, status codes, validation errors
   and CORS headers match. Differences no client uses: the `id` loses its
-  `test-` prefix, the error JSON for an exception drops RunPod's `hostname`,
-  `worker_id` and `runpod_version` fields, and only `/runsync` is served
+  `test-` prefix, and only `/runsync` is served
   (RunPod's `/run`, `/status` and `/stream` are gone). The
   image drops `runpod` and pins the `fastapi` and `uvicorn[standard]` versions
   it used to bring in. `gutenkg-handler` takes `--host` and `--port`, and
   still accepts `--rp_serve_api`, `--rp_api_host` and `--rp_api_port`, so
   compose files and Makefiles already checked out keep working.
+- **An exception in the worker no longer sends its traceback to the client.**
+  RunPod's server put the error type, message and full traceback in the
+  reply, exposing file paths to anyone who can reach the worker. The reply now
+  says the worker hit an internal error and names the job; the traceback is
+  in the worker's log under that job id. Errors the handler returns, such as
+  `book not found`, are unchanged.
 
 ### Fixed
 
