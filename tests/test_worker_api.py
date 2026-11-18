@@ -3,7 +3,6 @@
 from __future__ import annotations
 
 import asyncio
-import json
 
 import pytest
 
@@ -57,7 +56,7 @@ def test_a_result_that_is_not_a_dict_is_passed_through():
     assert run_job(lambda job: [1, 2], {})["output"] == [1, 2]
 
 
-def test_an_exception_comes_back_failed_with_its_type_and_message():
+def test_an_exception_comes_back_failed_without_its_traceback(capsys):
     def handler(job):
         return int(job["input"]["k"])
 
@@ -65,10 +64,11 @@ def test_an_exception_comes_back_failed_with_its_type_and_message():
     assert reply.status_code == 200
     body = reply.json()
     assert body["status"] == "FAILED"
-    error = json.loads(body["error"])
-    assert error["error_type"] == "<class 'ValueError'>"
-    assert "invalid literal" in error["error_message"]
-    assert "Traceback" in error["error_traceback"]
+    assert body["id"] in body["error"]
+    assert "Traceback" not in body["error"] and "invalid literal" not in body["error"]
+    log = capsys.readouterr()
+    assert body["id"] in log.out
+    assert "invalid literal" in log.err
 
 
 def test_a_body_without_a_dict_input_is_refused():
