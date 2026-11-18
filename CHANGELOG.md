@@ -8,6 +8,8 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+## [1.39.0] - 2026-11-17
+
 ### Changed
 
 - **The default model is now `Qwen3-8B-MLX-4bit`, replacing
