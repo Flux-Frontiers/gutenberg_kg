@@ -8,6 +8,8 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+## [1.40.0] - 2026-11-18
+
 ### Changed
 
 - **The worker serves `/runsync` itself instead of through RunPod's local
@@ -49,6 +51,15 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   `docker.io/library/corpus-gutenberg` and failed with a confusing error. It
   now says to run `make pull-worker-image RUNTIME=apple` or
   `make build RUNTIME=apple`.
+
+### Documentation
+
+- **Publishing the worker image needs Docker Desktop's Rosetta, not QEMU.**
+  `docs/INSTALLATION.md` now says so: under QEMU the amd64 half segfaults
+  (exit 139) importing torch, and after a restart Docker can fall back to QEMU
+  silently. It gives the error text, the off-and-on Rosetta toggle, a binfmt
+  check, and Docker at 12 GB or more for publishing (#264).
+- **The cheatsheet names the 8B default** and its `omlx serve` line (#263).
 
 ## [1.39.0] - 2026-11-17
 
