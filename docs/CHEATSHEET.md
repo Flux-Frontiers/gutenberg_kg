@@ -13,6 +13,16 @@ Use the `gutenkg` CLI (after `poetry install`).
 ```bash
 make bootstrap DRY_RUN=1   # check every requirement; changes nothing
 make bootstrap             # install what is missing (YES=1 no prompts, DEV=1 dev tools, CLI_ONLY=1 no containers)
+make bootstrap PROVIDER=omlx   # also set up the LLM: omlx | openai | anthropic | none
+```
+
+Local LLM on Apple Silicon (oMLX installed and running on port 8080):
+
+```bash
+make models DRY_RUN=1      # show the tier for this Mac's memory; changes nothing
+make models                # download, test, write VLLM_MODEL / MOOT_MODEL / IMAGE_IDLE_UNLOAD_S
+make models TIER=medium    # small | medium | large | xl
+make down && make up       # restart the stack to use it
 ```
 
 Or by hand:
@@ -218,7 +228,9 @@ For an answer synthesized from the passages, use the chat UI or send
 `"synthesize": true` to a running worker. A request picks its provider with
 `backend`: `omlx`, `ollama`, `openai` or `anthropic`. Cloud providers read
 `OPENAI_API_KEY` or `ANTHROPIC_API_KEY` from `docker/.env`. Anthropic works per
-request only: do not set `SYNTH_BACKEND=anthropic`.
+request only: do not set `SYNTH_BACKEND=anthropic`. When the model returns
+nothing (oMLX refused to load it, or the server is down), the response carries
+a `synthesis_error` naming the model, beside the search results.
 
 ---
 
@@ -235,6 +247,8 @@ time, per-turn time, model, machine) at the end; piped or logged output stays
 plain text. [Moots](MOOTS.md) explains how a turn is made and grounded, and
 how the forest holds live moots against your worker (the `moot_start`,
 `moot_turn` and `moot_stop` ops; `GUTENKG_CORS_ORIGINS` and `MOOT_TOKEN`).
+On oMLX a moot uses `MOOT_MODEL` from `docker/.env`, or Qwen3.8-27B-4bit when it
+is empty; `--model` overrides both.
 
 Every quote in the output is verbatim and at least three words long. A quote
 the model misremembered is replaced with its source's exact words when it
@@ -496,7 +510,10 @@ imagine` normally.
 To keep the FLUX server running on a Mac, run `make image-agent-install`
 after that first `make image-server`. It installs the LaunchAgent
 `local.gutenkg-image`, which starts the server at login and restarts it if it
-exits. `make image-agent-uninstall` removes it.
+exits. `make image-agent-uninstall` removes it. With `IMAGE_IDLE_UNLOAD_S` set
+in `docker/.env` (`make models` sets 300 on Macs of 24 GB or less), the server
+drops FLUX's 12-15 GB after that many idle seconds and reloads it on the next
+render; re-run `make image-agent-install` after changing it.
 
 #### 2. oMLX — local VLM server
 

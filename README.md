@@ -136,12 +136,15 @@ git clone https://github.com/Flux-Frontiers/gutenberg_kg
 cd gutenberg_kg
 make bootstrap DRY_RUN=1  # check requirements and show what it would install
 make bootstrap            # install Poetry deps and local models, copy docker/.env
+make bootstrap PROVIDER=omlx  # also set up an LLM: omlx | openai | anthropic | none
 make build-corpus         # build DocKG + DiaryKG indices (~30 min on Apple Silicon)
 make build                # bake the corpus into the Docker image
 make chat                 # start the worker and reading room
 ```
 
 Open **http://localhost:8501** and ask a question. Use `make up` instead of `make chat` to also start the local image service; use `make stop` to shut down services.
+
+For answers written by a local LLM on Apple Silicon, `make models` picks the model that fits the Mac's memory, downloads it into oMLX, tests it and writes it to `docker/.env` (oMLX must be installed and running). On Macs of 24 GB or less it also has the FLUX image server unload when idle (`IMAGE_IDLE_UNLOAD_S`) and points moots at the same model (`MOOT_MODEL`). If the model returns nothing, the answer carries a `synthesis_error` saying why instead of coming back blank.
 
 The bundle and Docker image are large because the corpus and its vector indices travel with the app. That is deliberate: once built, the reading room has no runtime dependency on a hosted corpus.
 
