@@ -412,8 +412,9 @@ make models IMAGES=openai   # render images with OpenAI instead of FLUX
 make down && make up        # then restart the stack
 ```
 
-It downloads the model into `~/.omlx/models/<org>/<name>` and has oMLX rescan
-its models; a model oMLX already serves is not downloaded again. It then sends
+It downloads the model into `<org>/<name>` under the directory oMLX scans (the
+first of `model.model_dirs` in `~/.omlx/settings.json`, else `~/.omlx/models`)
+and has oMLX rescan its models; a model oMLX already serves is not downloaded again. It then sends
 one short request, so a model oMLX refuses to load fails here with oMLX's own
 message and `docker/.env` is left as it was. Next it writes `VLLM_MODEL`,
 `MOOT_MODEL` and `IMAGE_IDLE_UNLOAD_S` to `docker/.env`, after backing the file
