@@ -2,12 +2,13 @@
 
 from __future__ import annotations
 
+import asyncio
 import json
 
 from fastapi.testclient import TestClient
 
 from gutenberg_kg.serve.cors import cors_origins
-from gutenberg_kg.serve.worker_api import create_app, run_job
+from gutenberg_kg.serve.worker_api import ClientClosesFirst, create_app, run_job
 
 FOREST = "http://localhost:5173"
 
@@ -88,3 +89,59 @@ def test_cors_is_added_only_for_allowed_origins():
     assert ok.headers["access-control-allow-origin"] == FOREST
     other = client.post("/runsync", json={"input": {}}, headers={"origin": "http://evil.example"})
     assert "access-control-allow-origin" not in other.headers
+
+
+async def _reply(scope, receive, send):
+    await send({"type": "http.response.start", "status": 200, "headers": []})
+    await send({"type": "http.response.body", "body": b"data"})
+
+
+def _hold(headers, http_version="1.1", events=("http.disconnect",), wait=5.0):
+    """Run ClientClosesFirst over a one-frame reply; return what was sent, in order."""
+    log: list = []
+    queue = list(events)
+
+    async def receive():
+        log.append("receive")
+        if not queue:
+            await asyncio.sleep(3600)
+        return {"type": queue.pop(0)}
+
+    async def send(message):
+        log.append((message["type"], message.get("body"), message.get("more_body", False)))
+
+    scope = {"type": "http", "http_version": http_version, "headers": headers}
+    asyncio.run(ClientClosesFirst(_reply, wait=wait)(scope, receive, send))
+    return log
+
+
+def test_a_closing_request_waits_for_the_client_before_the_last_frame():
+    log = _hold([(b"connection", b"close")])
+    assert log == [
+        ("http.response.start", None, False),
+        ("http.response.body", b"data", True),
+        "receive",
+        ("http.response.body", b"", False),
+    ]
+
+
+def test_other_events_are_skipped_until_the_disconnect():
+    log = _hold([(b"connection", b"Close")], events=("http.request", "http.disconnect"))
+    assert log.count("receive") == 2
+    assert log[-1] == ("http.response.body", b"", False)
+
+
+def test_the_wait_gives_up_after_its_timeout():
+    log = _hold([(b"connection", b"close")], events=(), wait=0.05)
+    assert log[-1] == ("http.response.body", b"", False)
+
+
+def test_keep_alive_requests_pass_through_untouched():
+    log = _hold([(b"connection", b"keep-alive")])
+    assert log == [("http.response.start", None, False), ("http.response.body", b"data", False)]
+    assert _hold([]) == log
+
+
+def test_http_1_0_closes_unless_it_asks_for_keep_alive():
+    assert "receive" in _hold([], http_version="1.0")
+    assert "receive" not in _hold([(b"connection", b"keep-alive")], http_version="1.0")

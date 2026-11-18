@@ -84,6 +84,17 @@ Notes:
   the Docker path. (Older CLIs had no `--publish` and forced vmnet-IP addressing;
   if `container run --help` shows no `-p/--publish`, `make setup RUNTIME=apple`
   upgrades it.)
+- **The published-port forwarder can cut a reply short.** When the server
+  closes a connection, `container`'s forwarder (v1.1.0 to at least 1.7.1,
+  `Sources/SocketForwarder/GlueHandler.swift`) closes the client side at once
+  and drops what it has not relayed yet. A render reply is 2-9 MB, so slow or
+  remote clients got it truncated: Python raised `IncompleteRead`, and curl
+  exited with error 18. In tests on 2026-11-18, a slow reader lost 4 of 7
+  replies through the forwarder, 0 of 7 sent straight to the container's IP,
+  and 0 of 7 under Docker. The worker now never closes first: it holds the
+  end of a `Connection: close` reply until the client hangs up, and keeps idle
+  connections open for 300 s (`serve/worker_api.py`). Other servers you run
+  under `container` can still hit this.
 - **Host services are reached at the vmnet gateway, not `host.docker.internal`.**
   Contrary to the 0.9 "resolves natively" claim, that hostname does *not*
   resolve inside the containers on the runtime tested here (still true on

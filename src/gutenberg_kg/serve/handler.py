@@ -1129,7 +1129,7 @@ def main() -> None:
 
     import uvicorn
 
-    from gutenberg_kg.serve.worker_api import create_app
+    from gutenberg_kg.serve.worker_api import KEEP_ALIVE_S, create_app
 
     parser = argparse.ArgumentParser(prog="gutenkg-handler")
     parser.add_argument("--host", "--rp_api_host", dest="host", default="localhost")
@@ -1148,6 +1148,7 @@ def main() -> None:
         port=args.port,
         log_level=os.environ.get("UVICORN_LOG_LEVEL", "info"),
         access_log=False,
+        timeout_keep_alive=KEEP_ALIVE_S,
     )
 
 

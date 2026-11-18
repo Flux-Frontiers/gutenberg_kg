@@ -21,6 +21,17 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   still accepts `--rp_serve_api`, `--rp_api_host` and `--rp_api_port`, so
   compose files and Makefiles already checked out keep working.
 
+### Fixed
+
+- **Renders no longer arrive cut short from an Apple `container` worker.**
+  `container`'s port forwarder drops bytes it has not yet relayed when the
+  server closes the connection, so 2-9 MB render replies reached slow or
+  remote clients truncated (Python `IncompleteRead`, curl error 18). The worker
+  now lets the client close first: it holds the end of a `Connection: close`
+  reply until the client hangs up (up to 300 s), and keeps idle connections
+  open for 300 s instead of uvicorn's 5. `docs/APPLE_CONTAINERS.md` has the
+  measurements.
+
 ## [1.39.0] - 2026-11-17
 
 ### Changed
