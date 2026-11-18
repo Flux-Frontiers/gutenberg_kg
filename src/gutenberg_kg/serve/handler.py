@@ -7,8 +7,8 @@ image at /workspace/gutenberg/:
   .dockg/            — consolidated DocKG (241 books, 20 genres, 1.3M nodes)
   diaries/*/diarykg/ — 4 DiaryKG temporal indices (Pepys, Evelyn, Boswell)
 
-Implements the RunPod serverless API (--rp_serve_api) so it can be driven by
-the Chat.py Streamlit UI, curl, or any compatible HTTP client.
+Serves RunPod's request format (POST /runsync, see serve/worker_api.py) so it
+can be driven by the Chat.py Streamlit UI, curl, or any compatible HTTP client.
 
 Volume layout (baked in at build time)
 ---------------------------------------
@@ -90,11 +90,10 @@ from kg_utils.synthesis import (
 )
 from kg_utils.worker import handle_aux_ops
 
-import runpod
 from gutenberg_kg.author_voices import VOICES_PATH, read_voices
 from gutenberg_kg.diary_meta import DIARY_META as _DIARY_META
 from gutenberg_kg.diary_meta import diary_slug as _diary_slug
-from gutenberg_kg.serve.cors import CORS_ENV, CORSMiddleware, cors_origins
+from gutenberg_kg.serve.cors import CORS_ENV, cors_origins
 from gutenberg_kg.serve.diary_browse import diary_chapter as _diary_chapter
 from gutenberg_kg.serve.diary_browse import diary_chapters as _diary_chapters
 from gutenberg_kg.serve.fusion import merge_by_rank as _merge_by_rank
@@ -962,9 +961,9 @@ def _moot_sessions() -> MootSessions:
 
 
 def handler(job: dict) -> dict:
-    """RunPod serverless entry point: search the corpus and optionally synthesise an answer.
+    """The worker's entry point: search the corpus and optionally synthesise an answer.
 
-    :param job: RunPod job dict; ``job["input"]`` holds the request schema described
+    :param job: Job dict (RunPod's shape); ``job["input"]`` holds the request schema described
         in this module's docstring (query, corpus, k, min_score, semantic_floor,
         synthesize, model, secret, op).
     :returns: A result dict with hits, timing, and optional synthesis text, or
@@ -1119,35 +1118,37 @@ def handler(job: dict) -> dict:
     }
 
 
-def _allow_cors(origins: frozenset[str]) -> None:
-    """Add :class:`CORSMiddleware` to RunPod's local API server.
-
-    ``runpod.serverless.start`` builds its FastAPI app and runs uvicorn in one
-    call, so there is no app to wrap. This replaces its ``WorkerAPI`` class
-    with one that adds the middleware once the app exists. Tied to runpod's
-    internals (1.12); the startup line shows whether it took.
-
-    :param origins: The allowed origins.
-    """
-    from runpod.serverless.modules import rp_fastapi
-
-    base = rp_fastapi.WorkerAPI
-
-    class _CORSWorkerAPI(base):
-        def __init__(self, config):
-            super().__init__(config)
-            self.rp_app.add_middleware(CORSMiddleware, origins=origins)
-
-    rp_fastapi.WorkerAPI = _CORSWorkerAPI
-    print(f"[startup] CORS allowed for: {', '.join(sorted(origins))}")
-
-
 def main() -> None:
-    """Start the RunPod serverless worker (``gutenkg-handler`` entry point)."""
+    """Start the worker's HTTP server (``gutenkg-handler`` entry point).
+
+    Takes ``--host`` and ``--port``. RunPod's old flags (``--rp_serve_api``,
+    ``--rp_api_host``, ``--rp_api_port``) still work, so a new image runs under
+    an older compose file or Makefile.
+    """
+    import argparse
+
+    import uvicorn
+
+    from gutenberg_kg.serve.worker_api import create_app
+
+    parser = argparse.ArgumentParser(prog="gutenkg-handler")
+    parser.add_argument("--host", "--rp_api_host", dest="host", default="localhost")
+    parser.add_argument("--port", "--rp_api_port", dest="port", type=int, default=8000)
+    parser.add_argument("--rp_serve_api", action="store_true", help=argparse.SUPPRESS)
+    args, ignored = parser.parse_known_args()
+    if ignored:
+        print(f"[startup] ignoring arguments: {' '.join(ignored)}")
+
     origins = cors_origins(os.environ.get(CORS_ENV, ""))
     if origins:
-        _allow_cors(origins)
-    runpod.serverless.start({"handler": handler})
+        print(f"[startup] CORS allowed for: {', '.join(sorted(origins))}")
+    uvicorn.run(
+        create_app(handler, origins),
+        host=args.host,
+        port=args.port,
+        log_level=os.environ.get("UVICORN_LOG_LEVEL", "info"),
+        access_log=False,
+    )
 
 
 if __name__ == "__main__":
