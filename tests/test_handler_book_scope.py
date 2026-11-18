@@ -132,15 +132,15 @@ class TestResolveCorpus:
         assert "error" in resolve_corpus("nonsense", CATALOG, GENRES)
 
 
-def test_both_workers_share_the_scope_rules():
-    """The local and RunPod workers resolve ``corpus`` through this module.
+def test_worker_uses_the_shared_scope_rules():
+    """The worker resolves ``corpus`` through this module.
 
-    Read from source: neither handler can be imported without its startup.
+    Read from source: the handler cannot be imported without its startup.
     """
     from pathlib import Path
 
     repo = Path(__file__).resolve().parents[1]
-    for relative in ("src/gutenberg_kg/serve/handler.py", "runpod/handler.py"):
+    for relative in ("src/gutenberg_kg/serve/handler.py",):
         source = (repo / relative).read_text(encoding="utf-8")
         assert "from gutenberg_kg.serve.scope import resolve_corpus" in source, relative
         assert "_resolve_corpus(corpus, _catalog, _ALL_GENRES)" in source, relative

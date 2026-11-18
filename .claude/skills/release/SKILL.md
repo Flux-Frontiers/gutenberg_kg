@@ -226,11 +226,10 @@ is what happened right after 1.20.0 shipped. Bump before verifying, not after:
 python3 scripts/check_pins.py --bump
 ```
 
-This rewrites the pyproject floors, the Dockerfile ARGs and the runpod floors
+This rewrites the pyproject floors and the Dockerfile ARGs
 to the latest PyPI release for all four KG packages (kg-rag, kgmodule-utils,
 doc-kg, diary-kg), then runs `poetry lock` so the lock agrees. Read the diff —
-`pyproject.toml`, `docker/Dockerfile`, `runpod/requirements.txt`,
-`poetry.lock` — before continuing; it is still a published wheel's floor
+`pyproject.toml`, `docker/Dockerfile`, `poetry.lock` — before continuing; it is still a published wheel's floor
 moving, not a no-op. The bump refuses outright if PyPI cannot be read for any
 one of the four (the set moves together or not at all) — in that case skip
 this step and let Step 6 report the advisory as usual; that is not a reason to
@@ -254,7 +253,7 @@ against the wrong dependency set.
 All six are pre-commit hooks except `check_pins.py`, so a normal commit has
 already run most of them. `check_pins.py` and the `Installed CLI` job have no
 local equivalent — they catch KG pin drift across
-`pyproject` / `poetry.lock` / `docker/Dockerfile` / `runpod/requirements.txt`
+`pyproject` / `poetry.lock` / `docker/Dockerfile`
 and wheel packaging respectively. After Step 5c this run should be clean; a
 "Behind PyPI" advisory here means Step 5c's bump was skipped (PyPI was
 unreachable for one of the four) — that is informational, the KG pins move as
@@ -269,13 +268,13 @@ much less than it appears to. `main` is where those three actually run.
 ```bash
 git add CHANGELOG.md release-notes.md README.md CITATION.cff \
         docs/CORPUS.md pyproject.toml src/gutenberg_kg/__init__.py \
-        docker/Dockerfile runpod/requirements.txt poetry.lock \
+        docker/Dockerfile poetry.lock \
         corpus/.snapshots/
 git commit -m "chore(release): v<version> release notes"
 git tag -a v<version> -m "v<version>"
 ```
 
-`docker/Dockerfile`, `runpod/requirements.txt` and `poetry.lock` are only
+`docker/Dockerfile` and `poetry.lock` are only
 dirty here if Step 5c actually bumped something; `git add` on an unchanged
 file is a no-op.
 

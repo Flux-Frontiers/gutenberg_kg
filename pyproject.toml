@@ -155,10 +155,9 @@ mcp = [
     "kgmodule-utils[mcp]>=0.30.2",
     "structlog>=24.0",
 ]
-# Serving layer (gutenberg_kg.serve) -- one extra per module. runpod is
-# deliberately absent: its fastapi[all]/boto3/aiohttp tree makes `poetry lock`
-# pathologically slow, and the worker only runs in the RunPod container, which
-# installs it from runpod/requirements.txt.
+# Serving layer (gutenberg_kg.serve) -- one extra per module. The worker has
+# no extra: it runs only in the container image, which installs its server
+# (fastapi, uvicorn) in docker/Dockerfile.
 # pillow 13.0.0 fixes the FlashPix heap overflow and the rest of the 12.x
 # advisories. streamlit capped pillow<13 through 1.66.0; 1.66.1 is the first
 # release that admits it, so the two floors move together.
@@ -283,7 +282,7 @@ markers = [
 # PycodeKG / DocKG index configuration
 # ---------------------------------------------------------------------------
 [tool.pycodekg]
-include = ["src", "docker", "runpod"]
+include = ["src", "docker"]
 
 [tool.dockg]
 # `site` for the same reason as `dist`: `make docs` renders mkdocs into a
@@ -294,5 +293,5 @@ include = ["src", "docker", "runpod"]
 # A duplicate document is worse than a missing one: it double-counts in every
 # ranking and returns the same passage twice.
 exclude = [
-    "corpus", "bundles", "dist", "site", "src", "venv", "reports", "runpod", "docker",
+    "corpus", "bundles", "dist", "site", "src", "venv", "reports", "docker",
 ]

@@ -1,14 +1,14 @@
 # © 2026 Eric G. Suchanek, PhD — Flux-Frontiers · SPDX-License-Identifier: Elastic-2.0
 """CORS for the local worker, so the Knowledge Press Forest can call it.
 
-RunPod's local API server (``--rp_serve_api``) sends no CORS headers, so a
-browser page cannot read its answers. :class:`CORSMiddleware` is plain ASGI:
+The worker's HTTP server (:mod:`gutenberg_kg.serve.worker_api`) sends no CORS
+headers of its own, so a browser page cannot read its answers. :class:`CORSMiddleware` is plain ASGI:
 it answers preflight requests from the allowed origins and adds
 ``Access-Control-Allow-Origin`` to their responses. A request from any other
 origin passes through untouched, without CORS headers, so the browser refuses
 it as before.
 
-The handler installs it only when ``GUTENKG_CORS_ORIGINS`` is set (see
+The worker installs it only when ``GUTENKG_CORS_ORIGINS`` is set (see
 :func:`cors_origins`).
 """
 

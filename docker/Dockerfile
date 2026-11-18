@@ -54,10 +54,6 @@ RUN apt-get update && \
 # first means the resolver below finds the requirement already satisfied and
 # leaves the CPU build in place. Keep this layer above the KG install so a pin
 # bump doesn't re-download torch.
-#
-# NOTE: this is the LOCAL/Apple image only. runpod/Dockerfile is deliberately
-# left on the default CUDA wheels — RunPod serverless is amd64 on real GPUs,
-# where that build is the correct one.
 RUN pip install --no-cache-dir --index-url https://download.pytorch.org/whl/cpu torch
 
 # fastapi + uvicorn[standard]: the worker's HTTP server (serve/worker_api.py).
@@ -129,7 +125,7 @@ COPY corpus/authors/voices.json /app/voices.json
 ENV GUTENKG_VOICES=/app/voices.json
 
 # Pre-download the embedding model during build so the container never reaches
-# HuggingFace at runtime (network may be unavailable or restricted on RunPod).
+# HuggingFace at runtime (the network may be unavailable or restricted).
 # The token arrives as a BuildKit secret (see HF_SECRET in the Makefile), so the
 # Hub request is authenticated — higher rate limits, no "unauthenticated
 # requests" warning — without the token landing in the image or its build
