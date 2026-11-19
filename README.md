@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/logos/logo_512.png" alt="GutenbergKG — The Knowledge Press" width="320"/>
+  <img src="assets/logos/gutenbergkg_banner.png" alt="GutenbergKG — The Knowledge Press" width="720"/>
 </p>
 
 <p align="center">
