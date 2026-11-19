@@ -23,6 +23,11 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   is centered on the banner's height; `scripts/build_logo.py` draws it this
   way and the banner is redrawn.
 
+- **`assets/brand-system/` describes the Art Techno mark.** A new
+  `README.md` covers the mark, its files and sizes, how to use it, the
+  palette and how to rebuild it. The August 2026 brand board for the brain
+  logo moves to `assets/brand-system/archive/2026-08-brain/`, unchanged.
+
 ### Removed
 
 - **The RunPod serverless pipeline.** It was never deployed, and since 1.40.0
