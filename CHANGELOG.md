@@ -18,6 +18,11 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   and the docs logo and favicon now come from the icon. The README header
   shows the banner.
 
+- **The banner lettering is larger.** The name is set as large as the
+  space beside the mark allows, the part line at the same width, and the pair
+  is centered on the banner's height; `scripts/build_logo.py` draws it this
+  way and the banner is redrawn.
+
 ### Removed
 
 - **The RunPod serverless pipeline.** It was never deployed, and since 1.40.0

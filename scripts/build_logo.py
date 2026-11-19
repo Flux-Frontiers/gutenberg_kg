@@ -177,10 +177,14 @@ def banner(display, mono) -> str:
     body += (
         f'<g transform="translate({f(230 - 256 * s)} {f(160 - 213 * s)}) scale({s})">{book()}</g>'
     )
-    cx = (450 + 1240) / 2
-    size = min(68, 68 * 740 / display.width(NAME, 68, 0.2))
-    body += display.path(NAME, cx, 172, size, 0.2, "middle", GOLD)
-    body += mono.path(PART, cx, 222, 17, 0.3, "middle", MINT)
+    cx, room, gap = 820, 760, 34
+    size = min(120, 120 * room / display.width(NAME, 120, 0.2))
+    part = min(26, 26 * room / mono.width(PART, 26, 0.3))
+    cap = display.cap * size / display.upm
+    pcap = mono.cap * part / mono.upm
+    base = (320 - (cap + gap + pcap)) / 2 + cap
+    body += display.path(NAME, cx, base, size, 0.2, "middle", GOLD)
+    body += mono.path(PART, cx, base + gap + pcap, part, 0.3, "middle", MINT)
     return svg(1280, 320, "GutenbergKG banner, Art Techno", body)
 
 
