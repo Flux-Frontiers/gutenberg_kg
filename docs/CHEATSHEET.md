@@ -857,7 +857,6 @@ gutenberg_kg/
 │   ├── docker-compose.yml
 │   ├── requirements-image.txt              # FLUX image-server deps
 │   └── requirements-sdxl.txt               # SDXL image-server deps
-├── runpod/                                 # RunPod serverless build pipeline
 ├── scripts/
 │   ├── process_logo.py                     # Logo transparency + variant generator
 │   ├── assess_front_matter.py              # Corpus front-matter analysis
@@ -886,7 +885,6 @@ gutenberg_kg/
 │   ├── INSTALLATION.md                     # CLI + Docker installation
 │   ├── ON_DEVICE.md                        # On-device corpus packs for the app
 │   ├── PARTNERS.md                         # Collaboration and sponsorship
-│   ├── RUNPOD.md                           # RunPod deployment
 │   ├── SIMILAR_TO_CAP_*.md                 # SIMILAR_TO evaluation record
 │   └── ingestion-pipeline.md               # Ingestion pipeline internals
 ├── reports/

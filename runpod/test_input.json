@@ -1,8 +1,0 @@
-{
-  "input": {
-    "query": "Marcus Aurelius on suffering and stoic virtue",
-    "corpus": "philosophy",
-    "k": 4,
-    "synthesize": false
-  }
-}

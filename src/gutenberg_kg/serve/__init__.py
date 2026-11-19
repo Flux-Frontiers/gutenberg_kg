@@ -3,7 +3,7 @@
 
 Modules
 -------
-handler       — RunPod serverless worker (semantic search + synthesis).
+handler       — the worker (semantic search + synthesis), served by worker_api.
                 Importing it runs the full startup sequence (registry,
                 embedder, vector tables), so import it only to serve.
 Chat          — Streamlit chat UI (launch via ``gutenkg chat``).

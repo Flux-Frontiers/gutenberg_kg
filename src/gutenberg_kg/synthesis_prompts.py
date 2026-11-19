@@ -1,15 +1,15 @@
 # © 2026 Eric G. Suchanek, PhD — Flux-Frontiers · SPDX-License-Identifier: Elastic-2.0
 """The synthesis prompt contract, in one place, for every Python caller.
 
-Four things answer questions over this corpus: the local worker
-(:mod:`gutenberg_kg.serve.handler`), the RunPod worker (``runpod/handler.py``),
-and the Swift app's two Foundation Models backends. They must be held to the
+Three things answer questions over this corpus: the worker
+(:mod:`gutenberg_kg.serve.handler`) and the Swift app's two Foundation Models
+backends. They must be held to the
 same rule -- answer only from the passages -- or the same question gives
 answers of different trustworthiness depending on which one happened to run.
 
 Keeping that true needs a single definition per prompt and a test that fails
 when a copy drifts. Before this module existed there were three copies and one
-had already drifted: ``runpod/handler.py`` carried an inlined paraphrase that
+had already drifted: ``runpod/handler.py`` (since removed) carried an inlined paraphrase that
 had lost both "Do NOT use any prior knowledge" and "Never contradict or
 override what the passages say", which are the two sentences that make an
 answer citable rather than merely plausible.
@@ -86,8 +86,8 @@ def system_prompt(name: str | None = None) -> str:
     return PROMPTS.get((name or DEFAULT_PROMPT).strip().lower(), PROMPTS[DEFAULT_PROMPT])
 
 
-#: Separator between the genre, author and title of a passage header, as both
-#: workers and the Swift budgeter write it. ``runpod/handler.py`` used " | "
+#: Separator between the genre, author and title of a passage header, as the
+#: worker and the Swift budgeter write it. ``runpod/handler.py`` used " | "
 #: until 2026-09-15, so a RunPod answer saw a different prompt shape from
 #: every other engine.
 HEADER_SEPARATOR = " · "
