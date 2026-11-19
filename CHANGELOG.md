@@ -8,6 +8,21 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+### Changed
+
+- **The logo is redrawn in Art Techno.** The brain is replaced by an open
+  book drawn as four traces notched at the gutter, with a die in the gutter
+  and a graph fan rising from it. `scripts/build_logo.py` draws the square
+  mark, a 64 px icon and a banner as SVG and writes every PNG size under
+  `assets/` and `docs/assets/`; the 64 px and smaller sizes, the small badges
+  and the docs logo and favicon now come from the icon. The README header
+  shows the banner.
+
+- **The banner lettering is larger.** The name is set as large as the
+  space beside the mark allows, the part line at the same width, and the pair
+  is centered on the banner's height; `scripts/build_logo.py` draws it this
+  way and the banner is redrawn.
+
 ### Removed
 
 - **The RunPod serverless pipeline.** It was never deployed, and since 1.40.0
