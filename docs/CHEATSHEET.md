@@ -859,7 +859,6 @@ gutenberg_kg/
 │   └── requirements-sdxl.txt               # SDXL image-server deps
 ├── scripts/
 │   ├── build_logo.py                       # Draws the Art Techno logo at every size
-│   ├── process_logo.py                     # Logo transparency + variant generator
 │   ├── assess_front_matter.py              # Corpus front-matter analysis
 │   ├── provenance_verifier.py              # Reference.md provenance checker
 │   ├── regenerate_corpus_doc.py            # Regenerates docs/CORPUS.md
