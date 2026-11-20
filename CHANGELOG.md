@@ -8,6 +8,8 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+## [1.40.1] - 2026-11-19
+
 ### Changed
 
 - **The logo is redrawn in Art Techno.** The brain is replaced by an open
@@ -56,7 +58,7 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   these patterns found no other story chapters; the remaining hits are
   contents lists, an appendix list in *The Travels of Marco Polo* and
   front-matter essays in *Fathers and Sons*, left as they are. The four books
-  need re-ingesting and a full corpus rebuild to take effect.
+  are re-ingested and the corpus bundle is rebuilt with them.
 
 ## [1.40.0] - 2026-11-18
 

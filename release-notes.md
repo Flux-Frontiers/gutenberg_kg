@@ -1,57 +1,56 @@
-# Release Notes -- v1.40.0
+# Release Notes -- v1.40.1
 
-> Released: 2026-11-18
+> Released: 2026-11-19
 
 ### Changed
 
-- **The worker serves `/runsync` itself instead of through RunPod's local
-  test server.** `serve/worker_api.py` is a small FastAPI app that keeps the
-  request and reply format: replies to every op and error case were compared
-  with the RunPod server's, and the envelope, status codes, validation errors
-  and CORS headers match. Differences no client uses: the `id` loses its
-  `test-` prefix, and only `/runsync` is served
-  (RunPod's `/run`, `/status` and `/stream` are gone). The
-  image drops `runpod` and pins the `fastapi` and `uvicorn[standard]` versions
-  it used to bring in. `gutenkg-handler` takes `--host` and `--port`, and
-  still accepts `--rp_serve_api`, `--rp_api_host` and `--rp_api_port`, so
-  compose files and Makefiles already checked out keep working.
-- **An exception in the worker no longer sends its traceback to the client.**
-  RunPod's server put the error type, message and full traceback in the
-  reply, exposing file paths to anyone who can reach the worker. The reply now
-  says the worker hit an internal error and names the job; the traceback is
-  in the worker's log under that job id. Errors the handler returns, such as
-  `book not found`, are unchanged.
+- **The logo is redrawn in Art Techno.** The brain is replaced by an open
+  book drawn as four traces notched at the gutter, with a die in the gutter
+  and a graph fan rising from it. `scripts/build_logo.py` draws the square
+  mark, a 64 px icon and a banner as SVG and writes every PNG size under
+  `assets/` and `docs/assets/`; the 64 px and smaller sizes, the small badges
+  and the docs logo and favicon now come from the icon. The README header
+  shows the banner.
+
+- **The banner lettering is larger.** The name is set as large as the
+  space beside the mark allows, the part line at the same width, and the pair
+  is centered on the banner's height; `scripts/build_logo.py` draws it this
+  way and the banner is redrawn.
+
+- **`assets/brand-system/` describes the Art Techno mark.** A new
+  `README.md` covers the mark, its files and sizes, how to use it, the
+  palette and how to rebuild it. The August 2026 brand board for the brain
+  logo moves to `assets/brand-system/archive/2026-08-brain/`, unchanged.
+
+### Removed
+
+- **The RunPod serverless pipeline.** It was never deployed, and since 1.40.0
+  the worker no longer uses RunPod's server. Gone: `runpod/` (its Dockerfile,
+  handler, build and index-push scripts), `.runpod/` and `docs/RUNPOD.md`.
+  `scripts/check_pins.py` now compares three files instead of four, and the
+  tests, docs, CI comments and skills that named the RunPod worker are
+  updated. The `/runsync` request and reply format is unchanged.
+- **`scripts/process_logo.py`**, the raster pipeline for the old brain
+  logo. `scripts/build_logo.py` draws the Art Techno logo and writes every
+  size, so nothing uses it, and it would overwrite the new files.
 
 ### Fixed
 
-- **Renders no longer arrive cut short from an Apple `container` worker.**
-  `container`'s port forwarder drops bytes it has not yet relayed when the
-  server closes the connection, so 2-9 MB render replies reached slow or
-  remote clients truncated (Python `IncompleteRead`, curl error 18). The worker
-  now lets the client close first: it holds the end of a `Connection: close`
-  reply until the client hangs up (up to 300 s), and keeps idle connections
-  open for 300 s instead of uvicorn's 5. `docs/APPLE_CONTAINERS.md` has the
-  measurements.
-- **`make models` downloads into the directory oMLX scans.** It always used
-  `~/.omlx/models`, so with oMLX's `model_dirs` pointed elsewhere the download
-  succeeded but the rescan never found it, and the run failed with "oMLX does
-  not list ... after the rescan". It now uses the first of `model.model_dirs`
-  in `~/.omlx/settings.json`, else `model.model_dir`, else `~/.omlx/models`,
-  and checks free space on that volume.
-- **`make run RUNTIME=apple` stops early when the worker image is missing.**
-  Without a local image, `container run` tried to pull
-  `docker.io/library/corpus-gutenberg` and failed with a confusing error. It
-  now says to run `make pull-worker-image RUNTIME=apple` or
-  `make build RUNTIME=apple`.
-
-### Documentation
-
-- **Publishing the worker image needs Docker Desktop's Rosetta, not QEMU.**
-  `docs/INSTALLATION.md` now says so: under QEMU the amd64 half segfaults
-  (exit 139) importing torch, and after a restart Docker can fall back to QEMU
-  silently. It gives the error text, the off-and-on Rosetta toggle, a binfmt
-  check, and Docker at 12 GB or more for publishing (#264).
-- **The cheatsheet names the 8B default** and its `omlx serve` line (#263).
+- **Four books had chapters as plain text.** A chapter's numeral and title
+  sat on plain lines instead of a heading, so each such chapter ran into the
+  section before it. *At the Earth's Core* (9 of 15 chapters, which left 9
+  story sections instead of 17) and *The Great God Pan* (5 of 8) now have a
+  `###` heading per chapter. In *The Food of the Gods* none of the 12
+  chapters ("CHAPTER THE FIRST.") were headings; they are now `###` under
+  their `##` books, with each chapter's numbered parts moved down to `####`,
+  where before all 62 parts sat side by side and their numbers restarted
+  without a chapter to tell them apart. In *Second Treatise of Government*
+  none of the 19 chapters were headings, so the whole treatise was one
+  650-chunk section; each chapter is now a `###` heading. Corpus scans for
+  these patterns found no other story chapters; the remaining hits are
+  contents lists, an appendix list in *The Travels of Marco Polo* and
+  front-matter essays in *Fathers and Sons*, left as they are. The four books
+  are re-ingested and the corpus bundle is rebuilt with them.
 
 ---
 
