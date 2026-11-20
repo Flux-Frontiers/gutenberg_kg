@@ -8,8 +8,7 @@ The Great God Pan
 
 by Arthur Machen
 
-I
-THE EXPERIMENT
+### I THE EXPERIMENT
 
 “I am glad you came, Clarke; very glad indeed. I was not sure you could
 spare the time.”
@@ -304,8 +303,7 @@ wide-awake, rolling her head from side to side, and grinning vacantly.
 hopeless idiot. However, it could not be helped; and, after all, she
 has seen the Great God Pan.”
 
-II
-MR. CLARKE’S MEMOIRS
+### II MR. CLARKE’S MEMOIRS
 
 Mr. Clarke, the gentleman chosen by Dr. Raymond to witness the strange
 experiment of the god Pan, was a person in whose character caution and
@@ -848,8 +846,7 @@ Well, I must be off; good-day.”
 Villiers went away, thinking of his own conceit of the Chinese boxes;
 here was quaint workmanship indeed.
 
-IV
-THE DISCOVERY IN PAUL STREET
+### IV THE DISCOVERY IN PAUL STREET
 
 A few months after Villiers’ meeting with Herbert, Mr. Clarke was
 sitting, as usual, by his after-dinner hearth, resolutely guarding his
@@ -1084,8 +1081,7 @@ strange story indeed. You must give me time to think it over; I may be
 able to help you or I may not. Must you be going now? Well, good-night,
 Villiers, good-night. Come and see me in the course of a week.”
 
-V
-THE LETTER OF ADVICE
+### V THE LETTER OF ADVICE
 
 “Do you know, Austin,” said Villiers, as the two friends were pacing
 sedately along Piccadilly one pleasant morning in May, “do you know I
@@ -1354,8 +1350,7 @@ Herbert, is only the beginning. She will come back to London, Austin;
 depend on it, she will come back, and we shall hear more about her
 then. I doubt it will be very pleasant news.”
 
-VI
-THE SUICIDES
+### VI THE SUICIDES
 
 Lord Argentine was a great favourite in London Society. At twenty he
 had been a poor man, decked with the surname of an illustrious family,

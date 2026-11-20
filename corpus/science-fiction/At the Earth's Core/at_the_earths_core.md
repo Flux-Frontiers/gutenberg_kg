@@ -66,8 +66,7 @@ the most it could be scarce more than one!” That night he told me his
 story—the story that I give you here as nearly in his own words as I
 can recall them.
 
-I
-TOWARD THE ETERNAL FIRES
+### I TOWARD THE ETERNAL FIRES
 
 I was born in Connecticut about thirty years ago. My name is David
 Innes. My father was a wealthy mine owner. When I was nineteen he died.
@@ -424,8 +423,7 @@ my fondest hopes were realized—a flood of fresh air was pouring into
 the iron cabin. The reaction left me in a state of collapse, and I lost
 consciousness.
 
-II
-A STRANGE WORLD
+### II A STRANGE WORLD
 
 I was unconscious little more than an instant, for as I lunged forward
 from the crossbeam to which I had been clinging, and fell with a crash
@@ -1073,8 +1071,7 @@ you have told me that ten years have elapsed since I departed from this
 earth I have lost all respect for time—I am commencing to doubt that
 such a thing exists other than in the weak, finite mind of man.
 
-IV
-DIAN THE BEAUTIFUL
+### IV DIAN THE BEAUTIFUL
 
 When our guards aroused us from sleep we were much refreshed. They gave
 us food. Strips of dried meat it was, but it put new life and strength
@@ -1433,8 +1430,7 @@ a flight of steps leading to the buried city. Sagoths were on guard
 here as well as at a hundred or more other towers scattered about over
 a large plain.
 
-V
-SLAVES
+### V SLAVES
 
 As we descended the broad staircase which led to the main avenue of
 Phutra I caught my first sight of the dominant race of the inner world.
@@ -1746,8 +1742,7 @@ plan as the only feasible one, and when I had assured him that I would
 take all the responsibility for it were we captured, he accorded a
 reluctant assent.
 
-VI
-THE BEGINNING OF HORROR
+### VI THE BEGINNING OF HORROR
 
 Within Pellucidar one time is as good as another. There were no nights
 to mask our attempted escape. All must be done in broad daylight—all
@@ -2663,8 +2658,7 @@ had just escaped. I knew that I could meet death bravely enough if it
 but came in the form of some familiar beast or man—anything other than
 the hideous and uncanny Mahars.
 
-IX
-THE FACE OF DEATH
+### IX THE FACE OF DEATH
 
 I must have fallen asleep from exhaustion. When I awoke I was very
 hungry, and after busying myself searching for fruit for a while, I set
@@ -2916,8 +2910,7 @@ ready to take up the pursuit. When he did not discover me in sight
 within the valley he dashed, hissing, into the rank vegetation of the
 swamp and that was the last I saw of him.
 
-X
-PHUTRA AGAIN
+### X PHUTRA AGAIN
 
 I hastened to the cliff edge above Ja and helped him to a secure
 footing. He would not listen to any thanks for his attempt to save me,
@@ -3377,8 +3370,7 @@ then his old voice faltered and broke, and as he hid his face in his
 hands the Sagoth guardsman grasped me roughly by the shoulder and
 hustled me from the chamber.
 
-XI
-FOUR DEAD MAHARS
+### XI FOUR DEAD MAHARS
 
 A moment later I was standing before a dozen Mahars—the social
 investigators of Phutra. They asked me many questions, through a Sagoth
@@ -4649,8 +4641,7 @@ did not know, for as I have told you, time had ceased to exist for me
 beneath that eternal noonday sun—it may have been an hour, or a month
 of earthly time; I do not know.
 
-XV
-BACK TO EARTH
+### XV BACK TO EARTH
 
 We crossed the river and passed through the mountains beyond, and
 finally we came out upon a great level plain which stretched away as

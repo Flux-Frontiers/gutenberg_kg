@@ -40,6 +40,20 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   logo. `scripts/build_logo.py` draws the Art Techno logo and writes every
   size, so nothing uses it, and it would overwrite the new files.
 
+### Fixed
+
+- **Two books had half their chapters as plain text.** In *At the Earth's
+  Core* (9 of 15 chapters) and *The Great God Pan* (5 of 8), a chapter's
+  numeral and title sat on two plain lines instead of a `###` heading, so each
+  ran into the chapter before it: *At the Earth's Core* had 9 story sections
+  instead of 17, one of them chapters VIII to XI. Both now have a heading per
+  chapter. A corpus scan for the same pattern (a bare numeral line followed by
+  a capitalized title) found no other story chapters; its other hits are a
+  manuscript list in *The Travels of Marco Polo*, critical essays in the front
+  matter of *Fathers and Sons*, and the contents lists of *The Mayor of
+  Casterbridge* and *O Pioneers!*, all left as they are. The two books need
+  re-ingesting and a full corpus rebuild to take effect.
+
 ## [1.40.0] - 2026-11-18
 
 ### Changed
