@@ -15,11 +15,9 @@ H.G. WELLS
 
 THE FOOD OF THE GODS.
 
-CHAPTER THE FIRST.
+### CHAPTER THE FIRST. THE DISCOVERY OF THE FOOD.
 
-THE DISCOVERY OF THE FOOD.
-
-### I.
+#### I.
 
 In the middle years of the nineteenth century there first became
 abundant in this strange world of ours a class of men, men tending for
@@ -142,7 +140,7 @@ that--there can be no doubt of it now--he among his fellows was
 different, he was different inasmuch as something of the vision still
 lingered in his eyes.
 
-### II.
+#### II.
 
 The Food of the Gods I call it, this substance that Mr. Bensington and
 Professor Redwood made between them; and having regard now to what it
@@ -211,7 +209,7 @@ these they spoke of as Herakleophorbia I, Herakleophorbia II, and
 Herakleophorbia III. It is Herakleophorbia IV. which I--insisting upon
 Bensington's original name--call here the Food of the Gods.
 
-### III.
+#### III.
 
 The idea was Mr. Bensington's. But as it was suggested to him by one of
 Professor Redwood's contributions to the Philosophical Transactions, he
@@ -346,7 +344,7 @@ it would (if you follow me) go thus--
 /
 /
 
-### IV.
+#### IV.
 
 The night after his conversation with Redwood Mr. Bensington could
 scarcely sleep a wink. He did seem once to get into a sort of doze, but
@@ -410,11 +408,9 @@ That either dream is to be regarded as in any way significant or
 prophetic beyond what I have categorically said, I do not for one moment
 suggest.
 
-CHAPTER THE SECOND.
+### CHAPTER THE SECOND. THE EXPERIMENTAL FARM.
 
-THE EXPERIMENTAL FARM.
-
-### I.
+#### I.
 
 Mr. Bensington proposed originally to try this stuff, so soon as he was
 really able to prepare it, upon tadpoles. One always does try this sort
@@ -609,7 +605,7 @@ penetrating whisper; "_Meathured_!"
 "'E's worse than our old guvnor; I'm dratted if 'e ain't," said the
 carpenter from Hickleybrow.
 
-### II.
+#### II.
 
 Experimental work is the most tedious thing in the world (unless it be
 the reports of it in the _Philosophical Transactions_), and it seemed a
@@ -790,7 +786,7 @@ bones of a rabbit scattered about the far corner of the run--"
 But when they came to look at them they found they were the larger bones
 of a cat picked very clean and dry.
 
-### III.
+#### III.
 
 "_That's_ no chick," said Mr. Bensington's cousin Jane.
 
@@ -929,7 +925,7 @@ only beginning to dawn upon me ... the possible consequences...."
 And even then, you know, Mr. Bensington was far from any conception of
 the mine that little train would fire.
 
-### IV.
+#### IV.
 
 That happened early in June. For some weeks Bensington was kept from
 revisiting the Experimental Farm by a severe imaginary catarrh, and one
@@ -1043,7 +1039,7 @@ bought an evening paper, opened it, changed colour, forgot about bull
 calves and committee forthwith, and took a hansom headlong for
 Bensington's flat.
 
-### V.
+#### V.
 
 The flat was occupied, it seemed to him--to the exclusion of all other
 sensible objects--by Mr. Skinner and his voice, if indeed you can call
@@ -1127,7 +1123,7 @@ earwigs will get out of your way--"
 
 "There aren't any rats," said Redwood.
 
-### VI.
+#### VI.
 
 Mr. Skinner might have foregone his chief anxiety. Mrs. Skinner did not
 stop out her day.
@@ -1239,7 +1235,7 @@ world, recking little or nothing of the Herakleophorbia concealed in
 that white bundle that struggled so persistently towards its orderly
 retirement.
 
-### VII.
+#### VII.
 
 So far as I can gather, the pullets came into Hickleybrow about three
 o'clock in the afternoon. Their coming must have been a brisk affair,
@@ -1337,7 +1333,7 @@ circus proprietor at Tunbridge Wells, who lured them into a cage,
 rendered vacant through the death of a widowed dromedary, by scattering
 cakes and bread....
 
-### VIII.
+#### VIII.
 
 When the unfortunate Skinner got out of the South-Eastern train at
 Urshot that evening it was already nearly dusk. The train was late, but
@@ -1534,11 +1530,9 @@ perplexities into the Incognito.
 And in the Incognito, whether of this or of some other world unknown to
 us, he obstinately and quite indisputably has remained to this day....
 
-CHAPTER THE THIRD.
+### CHAPTER THE THIRD. THE GIANT RATS.
 
-THE GIANT RATS.
-
-### I.
+#### I.
 
 It was two nights after the disappearance of Mr. Skinner that the
 Podbourne doctor was out late near Hankey, driving in his buggy. He had
@@ -1713,7 +1707,7 @@ And when the fire was out the giant rats came back, took the dead horse,
 dragged it across the churchyard into the brickfield and ate at it until
 it was dawn, none even then daring to disturb them....
 
-### II.
+#### II.
 
 Redwood went round, to Bensington about eleven the next morning with the
 "second editions" of three evening papers in his hand.
@@ -1955,7 +1949,7 @@ making a Boom.
 rats. 'Orrible affair--'orrible affair--rats--eaten by Stchewpendous
 rats. Full perticulars--'orrible affair."
 
-### III.
+#### III.
 
 Cossar, the well-known civil engineer, found them in the great doorway
 of the flat mansions, Redwood holding out the damp pink paper, and
@@ -2104,7 +2098,7 @@ his own possibilities, in spite of the stiffness of his arm. He wished
 some of those confounded arm-chair critics of railway management could
 have seen it.
 
-### IV.
+#### IV.
 
 By five o'clock that evening this amazing Cossar, with no appearance of
 hurry at all, had got all the stuff for his fight with insurgent Bigness
@@ -2372,7 +2366,7 @@ towards his neck and made him step aside hastily.
 "Whoo-z-z z-z-z-z-Z-Z-Z," from the distant wasps' nest, "whoo oo
 zoo-oo."
 
-### V.
+#### V.
 
 This incident left the party alert but not unstrung.
 
@@ -2502,7 +2496,7 @@ inaudible darknesses, and Redwood was calling "Bensington!"
 
 "Cossar's bagged another of the rats!"
 
-### VI.
+#### VI.
 
 When the Expedition had finished refreshment, the night had fully come.
 The stars were at their brightest, and a growing pallor towards Hankey
@@ -2803,7 +2797,7 @@ waist. Obviously. Feel my sleeves, Bensington! I'm wet through with
 perspiration. Jolly hard to think of everything. Only a halfway-up of
 whisky can save me from a cold."
 
-### VII.
+#### VII.
 
 There were moments during that wonderful night when it seemed to
 Bensington that he was planned by nature for a life of fantastic
@@ -2901,7 +2895,7 @@ cotton strands, his feet lead. He wondered if any one would get them
 coffee in Hickleybrow. He had never been up all night for
 three-and-thirty years.
 
-### VIII.
+#### VIII.
 
 And while these eight adventurers fought with rats about the
 Experimental Farm, nine miles away, in the village of Cheasing
@@ -2918,11 +2912,9 @@ tooth biting her lip in an ecstasy of determination, "Come _up_!"
 And presently, "_Jab_!" a fresh supply of the Food of the Gods was let
 loose to wreak its powers of giantry upon the world.
 
-CHAPTER THE FOURTH.
+### CHAPTER THE FOURTH. THE GIANT CHILDREN.
 
-THE GIANT CHILDREN.
-
-### I.
+#### I.
 
 For a time at least the spreading circle of residual consequences about
 the Experimental Farm must pass out of the focus of our narrative--how
@@ -3069,7 +3061,7 @@ as though that distant splendour had never shone upon his brain, and he
 would perceive nothing ahead but sinister shadows, vast declivities and
 darknesses, inhospitable immensities, cold, wild, and terrible things.
 
-### II.
+#### II.
 
 Amidst the complex and confused happenings, the impacts from the great
 outer world that constituted Mr. Bensington's fame, a shining and active
@@ -3336,7 +3328,7 @@ eyes spoke.
 strenuously calm voice, "I shall give the Food to my little Teddy with
 my own hands."
 
-### III.
+#### III.
 
 It was only a few days after this that Redwood opened his paper to find
 that the Prime Minister had promised a Royal Commission on Boomfood.
@@ -3452,7 +3444,7 @@ if you'll pardon my frankness. I'll make you the powders myself."
 Redwood--"just as well." And then: "I can assure you I really don't mind
 in the least."
 
-### IV.
+#### IV.
 
 When Winkles had gone Bensington came and stood on the hearth-rug and
 looked down at Redwood.
@@ -3614,7 +3606,7 @@ with a vast upward sweep of his arm.
 
 "Redwood!" he said, to point the allusion, "make it SO!"
 
-### V.
+#### V.
 
 There is, it seems, an upward limit to the pride of maternity, and this
 in the case of Mrs. Redwood was reached when her offspring completed his
@@ -3737,7 +3729,7 @@ And Redwood, who had helped to bring her to the door, went down the
 passage much relieved. (Eh! but it's a base job this being a man--with
 women as they are!)
 
-### VI.
+#### VI.
 
 Before the year was out there were, in addition to Redwood's pioneer
 vehicle, quite a number of motor-perambulators to be seen in the west of
@@ -3970,11 +3962,9 @@ with one eye that watched Redwood doubtfully for a confirmatory
 expression. "All of them, you know--fearfully big. I don't seem able to
 imagine--even with this--just how big they're all going to be."
 
-CHAPTER THE FIFTH.
+### CHAPTER THE FIFTH. THE MINIMIFICENCE OF MR. BENSINGTON.
 
-THE MINIMIFICENCE OF MR. BENSINGTON.
-
-### I.
+#### I.
 
 It was while the Royal Commission on Boomfood was preparing its report
 that Herakleophorbia really began to demonstrate its capacity for
@@ -4125,7 +4115,7 @@ there he met the gardener coachman and told him of the whole affair.
 When they got back to Mr. Carrington he was sitting up, dazed and weak,
 but able to warn them against the danger in the pool.
 
-### II.
+#### II.
 
 Such were the circumstances by which the world had its first
 notification that the Food was loose again. In another week Keston
@@ -4305,7 +4295,7 @@ Never once after that escape did he meddle again with the stupendous
 development of the Food of the Gods he of all men had done most to
 begin.
 
-### III.
+#### III.
 
 This little man who started the whole thing passes out of the story, and
 after a time he passed altogether out of the world of things, visible
@@ -4361,11 +4351,9 @@ Until--
 
 ## BOOK II THE FOOD IN THE VILLAGE.
 
-CHAPTER THE FIRST.
+### CHAPTER THE FIRST. THE COMING OF THE FOOD.
 
-THE COMING OF THE FOOD.
-
-### I.
+#### I.
 
 Our theme, which began so compactly in Mr. Bensington's study, has
 already spread and branched, until it points this way and that, and
@@ -4489,7 +4477,7 @@ attempt--following one thread, as it were--to show the direction in
 which the whole great interwoven fabric of the thing rolled off the loom
 of Time.
 
-### II.
+#### II.
 
 Cheasing Eyebright had of course a Vicar. There are vicars and vicars,
 and of all sorts I love an innovating vicar--a piebald progressive
@@ -4578,7 +4566,7 @@ Thus the Vicar. He loved a classical quotation subtly misapplied. Below,
 Mrs. Skinner, inelegant but resolute, had involved herself curiously
 with Wilmerding's stile.
 
-### III.
+#### III.
 
 No one knows what the Vicar made of the Giant Puff-Balls.
 
@@ -4611,7 +4599,7 @@ some weeks, indeed ever since Caddles walked over one Sunday afternoon a
 month or more ago to see his mother-in-law and hear Mr. Skinner (since
 defunct) brag about his management of hens.
 
-### IV.
+#### IV.
 
 The growth of the puff-balls following on the expansion of the Caddles'
 baby really ought to have opened the Vicar's eyes. The latter fact had
@@ -4761,7 +4749,7 @@ once, This is abnormal." His eyes became profound, his voice dropped,
 his manner verged upon the intimately confidential. He raised one hand
 stiffly. "And I treat it in that spirit," he said.
 
-### V.
+#### V.
 
 "Tut, tut!" said the Vicar to his breakfast things--the day after the
 coming of Mrs. Skinner. "Tut, tut! what's this?" and poised his glasses
@@ -4857,7 +4845,7 @@ the Vicar could have eaten--Herakleophorbia by the truckful. For growth
 had done with them. Growth had done with these two gentlemen for
 evermore.
 
-### VI.
+#### VI.
 
 It was a day or so after this conversation--a day or so, that is, after
 the burning of the Experimental Farm--that Winkles came to Redwood and
@@ -5018,7 +5006,7 @@ And growing.
 "Practically," said Lady Wondershoot, "he's eaten up every calf in the
 place. If I have any more of this sort of thing from that man Caddles--"
 
-### VII.
+#### VII.
 
 But even so secluded a place as Cheasing Eyebright could not rest for
 long in the theory of Hypertrophy--Contagious or not--in view of the
@@ -5073,11 +5061,9 @@ expurgations--what Redwood had said.
 
 Though indeed as a matter of fact the mischief was only beginning.
 
-CHAPTER THE SECOND.
+### CHAPTER THE SECOND. THE BRAT GIGANTIC.
 
-THE BRAT GIGANTIC.
-
-### I.
+#### I.
 
 The giant child was ugly--the Vicar would insist. "He always had been
 ugly--as all excessive things must be." The Vicar's views had carried
@@ -5296,7 +5282,7 @@ suggest. "Nice to 'ave a few thousand of _them_ on the rates, eh?"
 And usually there was some one wise enough to tell this philosopher:
 "You're about Right there, Sir," in hearty tones.
 
-### II.
+#### II.
 
 He had his bad days.
 
@@ -5339,7 +5325,7 @@ hunger, to bear with stoical calm an amount of violent scolding that was
 more in proportion to his size than anything else that had ever before
 fallen to his lot in the Happy Village.
 
-### III.
+#### III.
 
 Immediately after that affair Lady Wondershoot, casting about for
 exemplary additions to the abuse and fastings she had inflicted, issued
@@ -5413,7 +5399,7 @@ before the blacksmith's grew so big and developed into such frightful
 skipjacks and cockchafers--motor cockchafers the boys called them--that
 they drove Lady Wondershoot abroad.
 
-### IV.
+#### IV.
 
 But soon the Food was to enter upon a new phase of its work in him. In
 spite of the simple instructions of the Vicar--instructions intended to
@@ -5534,7 +5520,7 @@ didn't mean to worry."
 
 And he would go on thinking.
 
-### V.
+#### V.
 
 He was thinking too four years after, when the Vicar, now no longer ripe
 but over-ripe, saw him for the last time of all. You figure the old
@@ -5638,11 +5624,9 @@ the Food of the Gods had been working.
 
 ## BOOK III. THE HARVEST OF THE FOOD.
 
-CHAPTER THE FIRST.
+### CHAPTER THE FIRST. THE ALTERED WORLD.
 
-THE ALTERED WORLD.
-
-### I.
+#### I.
 
 Change played in its new fashion with the world for twenty years. To
 most men the new things came little by little and day by day, remarkably
@@ -5857,7 +5841,7 @@ again, and monstrous caricatures and distortions--a hundred varieties of
 misrepresentations of those great and shining figures they had passed so
 nearly only a few minutes before....
 
-### II.
+#### II.
 
 It had been the purpose of the younger brother to do a very magnificent
 thing, to celebrate this return to life by a dinner at some restaurant
@@ -5999,7 +5983,7 @@ ordered flow of melodious persuasion, its little, marvellously
 penetrating voice, John Caterham--"Jack the Giant-killer." They must all
 unite to "grasp the nettle" before it was "too late."
 
-### III.
+#### III.
 
 The tallest and strongest and most regarded of all the children of the
 Food were the three sons of Cossar. The mile or so of land near
@@ -6167,7 +6151,7 @@ undesirable things still living and breeding on the site they had
 chosen--the site on which the fair great house of the little people
 might have towered to heaven ...
 
-### IV.
+#### IV.
 
 That had been in the boyhood of the Sons, but now they were nearly men,
 And the chains had been tightening upon them, and tightening with every
@@ -6308,7 +6292,7 @@ young giant's mind. He waved his pine mast in reply, filled the whole
 valley with his vast Hullo! threw a "Something's up" to his brothers,
 and set off in twenty-foot strides to meet and help his father.
 
-### V.
+#### V.
 
 It chanced too that a young man who was not a giant was delivering his
 soul about these sons of Cossar just at that same time. He had come over
@@ -6445,11 +6429,9 @@ fling of all his limbs. "The middle way is nothingness. It is one thing
 or the other. Eat or destroy. Eat or destroy! What else is there to
 do?"
 
-CHAPTER THE SECOND.
+### CHAPTER THE SECOND. THE GIANT LOVERS.
 
-THE GIANT LOVERS.
-
-### I.
+#### I.
 
 Now it chanced in the days when Caterham was campaigning against the
 Boom-children before the General Election that was--amidst the most
@@ -6582,7 +6564,7 @@ dreamt--have dreamt such things. But waking--No. Tell me! Tell me! What
 are you? What is this Food of the Gods? Tell me slowly--and clearly. Why
 have they kept it from me, that I am not alone?"
 
-### II.
+#### II.
 
 "Tell me," she said, and young Redwood, tremulous and excited, set
 himself to tell her--it was poor and broken telling for a time--of the
@@ -6766,7 +6748,7 @@ She walked into her apartments across the great yard of the Palace like
 one who walks in a dream, with a vast branch of chestnut trailing from
 her hand.
 
-### III.
+#### III.
 
 These two met altogether fourteen times before the beginning of the end.
 They met in the Great Park or on the heights and among the gorges of
@@ -6853,7 +6835,7 @@ And then:
 
 And so the whole trouble came out.
 
-### IV.
+#### IV.
 
 "They say that we must part," the Princess said to her lover.
 
@@ -7021,7 +7003,7 @@ It must be over now. There were threats against all our race--against
 all our race, that is, but you. I must see our Brothers. I must tell
 them all that has happened between us, and all that threatens now."
 
-### V.
+#### V.
 
 He did not come to their next meeting until she had waited some time.
 They were to meet that day about midday in a great space of park that
@@ -7166,11 +7148,9 @@ through, she made him turn aside towards the south.
 
 As they fled a bullet whipped by them overhead.
 
-CHAPTER THE THIRD.
+### CHAPTER THE THIRD. YOUNG CADDLES IN LONDON.
 
-YOUNG CADDLES IN LONDON.
-
-### I.
+#### I.
 
 All unaware of the trend of events, unaware of the laws that were
 closing in upon all the Brethren, unaware indeed that there lived a
@@ -7285,7 +7265,7 @@ recklessly, and added, "I _seen_ the Princess."
 
 Amidst a hum of ten million such sayings young Caddles came to London...
 
-### II.
+#### II.
 
 I think of young Caddles always as he was seen in the New Kent Road, the
 sunset warm upon his perplexed and staring face. The Road was thick with
@@ -7403,7 +7383,7 @@ detachment--"_Garn!_"
 
 There were others almost equally popular.
 
-### III.
+#### III.
 
 What was he seeking? He wanted something the pigmy world did not give,
 some end which the pigmy world prevented his attaining, prevented even
@@ -7497,7 +7477,7 @@ talking to a draggled woman he had found sleeping in a ditch near
 Hampstead Heath, asking her very earnestly what she thought she was
 for....
 
-### IV.
+#### IV.
 
 The wandering of Caddles about London came to a head on the second day
 in the morning. For then his hunger overcame him. He hesitated where the
@@ -7644,11 +7624,9 @@ his knees bent under him, and he came crashing to the earth, the first
 of the giant nettles to fall to Caterham's resolute clutch, the very
 last that he had reckoned would come into his hand.
 
-CHAPTER THE FOURTH.
+### CHAPTER THE FOURTH. REDWOOD'S TWO DAYS.
 
-REDWOOD'S TWO DAYS.
-
-### I.
+#### I.
 
 So soon as Caterham knew the moment for grasping his nettle had come, he
 took the law into his own hands and sent to arrest Cossar and Redwood.
@@ -7736,7 +7714,7 @@ by way of protest we shall be obliged, Sir, to disconnect."
 The last word the officer heard was Redwood's high-pitched, "But at
 least you might tell me if my Son--"
 
-### II.
+#### II.
 
 After that Redwood spent most of his time at the windows.
 
@@ -7947,7 +7925,7 @@ fatigue and lie down upon the little bed they had prepared for him
 between his writing-desk and the sinking fire in the fireplace under the
 great hog's skull.
 
-### III.
+#### III.
 
 For thirty-six long hours did Redwood remain imprisoned, closed in and
 shut off from the great drama of the Two Days, while the little people
@@ -8123,7 +8101,7 @@ Redwood looked about the study. His eyes rested for a moment on the
 photograph of his boy. He turned and met the expectation of the young
 man. "Yes," he said at last, "I will come."
 
-### IV.
+#### IV.
 
 His encounter with Caterham was entirely different from his
 anticipation. He had seen the man only twice in his life, once at dinner
@@ -8379,11 +8357,9 @@ held out his hand to Redwood.
 As if it were a matter of course, Redwood shook hands with him for the
 second time.
 
-CHAPTER THE FIFTH.
+### CHAPTER THE FIFTH. THE GIANT LEAGUER.
 
-THE GIANT LEAGUER.
-
-### I.
+#### I.
 
 Presently Redwood found himself in a train going south over the Thames.
 He had a brief vision of the river shining under its lights, and of the
@@ -8534,7 +8510,7 @@ and kept in ignorance," he said, "for two whole days."
 "I know you do." He laughed with a note of bitterness. "I suppose he's
 wiping it up."
 
-### II.
+#### II.
 
 "Where is my son?" said Redwood.
 
@@ -8688,7 +8664,7 @@ He left his sentence incomplete.
 "That is what Death is for." He heard Cossar below him insisting, "How
 else could the thing be done? That is what Death is for."
 
-### III.
+#### III.
 
 After devious windings and ascents they came out upon a projecting ledge
 from which it was possible to see over the greater extent of the Giants'
