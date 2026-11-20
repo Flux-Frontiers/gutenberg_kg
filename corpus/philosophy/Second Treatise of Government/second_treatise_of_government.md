@@ -110,10 +110,7 @@ of pages always means pages of his Patriarcha, Edition 1680.
 
 ## Book II
 
-CHAPTER. I.
-
-AN ESSAY CONCERNING THE TRUE ORIGINAL, EXTENT AND END OF CIVIL
-GOVERNMENT
+### CHAPTER. I. AN ESSAY CONCERNING THE TRUE ORIGINAL, EXTENT AND END OF CIVIL GOVERNMENT
 
 Sect. 1. It having been shewn in the foregoing discourse,
 
@@ -164,9 +161,7 @@ community, in the execution of such laws, and in the defence of the
 commonwealth from foreign injury; and all this only for the public
 good.
 
-CHAPTER. II.
-
-OF THE STATE OF NATURE.
+### CHAPTER. II. OF THE STATE OF NATURE.
 
 Sect. 4. TO understand political power right, and derive it from its
 original, we must consider, what state all men are naturally in, and
@@ -418,9 +413,7 @@ remain so, till by their own consents they make themselves members of
 some politic society; and I doubt not in the sequel of this discourse,
 to make it very clear.
 
-CHAPTER. III.
-
-OF THE STATE OF WAR.
+### CHAPTER. III. OF THE STATE OF WAR.
 
 Sect. 16. THE state of war is a state of enmity and destruction: and
 therefore declaring by word or action, not a passionate and hasty, but a
@@ -538,9 +531,7 @@ state of war with me, and whether I may, as Jephtha did, appeal to
 heaven in it? of that I myself can only be judge in my own conscience,
 as I will answer it, at the great day, to the supreme judge of all men.
 
-CHAPTER. IV.
-
-OF SLAVERY.
+### CHAPTER. IV. OF SLAVERY.
 
 Sect. 22. THE natural liberty of man is to be free from any superior
 power on earth, and not to be under the will or legislative authority of
@@ -591,9 +582,7 @@ having an arbitrary power over his life, that he could not, at pleasure,
 so much as maim him, but the loss of an eye, or tooth, set him free,
 Exod. xxi.
 
-CHAPTER. V.
-
-OF PROPERTY.
+### CHAPTER. V. OF PROPERTY.
 
 Sect. 25. Whether we consider natural reason, which tells us, that men,
 being once born, have a right to their preservation, and consequently to
@@ -1091,9 +1080,7 @@ nor for encroachment on the right of others; what portion a man carved
 to himself, was easily seen; and it was useless, as well as dishonest,
 to carve himself too much, or take more than he needed.
 
-CHAPTER. VI.
-
-OF PATERNAL POWER.
+### CHAPTER. VI. OF PATERNAL POWER.
 
 Sect. 52. IT may perhaps be censured as an impertinent criticism, in a
 discourse of this nature, to find fault with words and names, that have
@@ -1601,9 +1588,7 @@ princes, nay princes only, ought to be priests, since it is as certain,
 that in the beginning, the father of the family was priest, as that he
 was ruler in his own houshold.
 
-CHAPTER. VII.
-
-OF POLITICAL OR CIVIL SOCIETY.
+### CHAPTER. VII. OF POLITICAL OR CIVIL SOCIETY.
 
 Sect. 77. GOD having made man such a creature, that in his own judgment,
 it was not good for him to be alone, put him under strong obligations of
@@ -1989,9 +1974,7 @@ Pol. l. i. sect. 10.)
 (**Civil law being the act of the whole body politic, doth therefore
 over-rule each several part of the same body. Hooker, ibid.)
 
-CHAPTER. VIII.
-
-OF THE BEGINNING OF POLITICAL SOCIETIES.
+### CHAPTER. VIII. OF THE BEGINNING OF POLITICAL SOCIETIES.
 
 Sect. 95. MEN being, as has been said, by nature, all free, equal, and
 independent, no one can be put out of this estate, and subjected to the
@@ -2565,9 +2548,7 @@ express promise and compact. This is that, which I think, concerning the
 beginning of political societies, and that consent which makes any one a
 member of any commonwealth.
 
-CHAPTER. IX.
-
-OF THE ENDS OF POLITICAL SOCIETY AND GOVERNMENT.
+### CHAPTER. IX. OF THE ENDS OF POLITICAL SOCIETY AND GOVERNMENT.
 
 Sect. 123. IF man in the state of nature be so free, as has been said;
 if he be absolute lord of his own person and possessions, equal to the
@@ -2685,9 +2666,7 @@ abroad to prevent or redress foreign injuries, and secure the community
 from inroads and invasion. And all this to be directed to no other end,
 but the peace, safety, and public good of the people.
 
-CHAPTER. X.
-
-OF THE FORMS OF A COMMON-WEALTH.
+### CHAPTER. X. OF THE FORMS OF A COMMON-WEALTH.
 
 Sect. 132. THE majority having, as has been shewed, upon men’s first
 uniting into society, the whole power of the community naturally in
@@ -2723,9 +2702,7 @@ commonwealth in that sense, in which I find it used by king James the
 first; and I take it to be its genuine signification; which if any body
 dislike, I consent with him to change it for a better.
 
-CHAPTER. XI.
-
-OF THE EXTENT OF THE LEGISLATIVE POWER.
+### CHAPTER. XI. OF THE EXTENT OF THE LEGISLATIVE POWER.
 
 Sect. 134. THE great end of men’s entering into society, being the
 enjoyment of their properties in peace and safety, and the great
@@ -2994,10 +2971,7 @@ Fourthly, The legislative neither must nor can transfer the power of
 making laws to any body else, or place it any where, but where the
 people have.
 
-CHAPTER. XII.
-
-OF THE LEGISLATIVE, EXECUTIVE, AND FEDERATIVE POWER OF THE
-COMMON-WEALTH.
+### CHAPTER. XII. OF THE LEGISLATIVE, EXECUTIVE, AND FEDERATIVE POWER OF THE COMMON-WEALTH.
 
 Sect. 143. THE legislative power is that, which has a right to direct
 how the force of the commonwealth shall be employed for preserving the
@@ -3075,9 +3049,7 @@ act separately, whereby the force of the public would be under different
 commands: which would be apt some time or other to cause disorder and
 ruin.
 
-CHAPTER. XIII.
-
-OF THE SUBORDINATION OF THE POWERS OF THE COMMON-WEALTH.
+### CHAPTER. XIII. OF THE SUBORDINATION OF THE POWERS OF THE COMMON-WEALTH.
 
 Sect. 149. THOUGH in a constituted commonwealth, standing upon its own
 basis, and acting according to its own nature, that is, acting for the
@@ -3318,9 +3290,7 @@ representatives upon just and undeniably equal measures, suitable to the
 original frame of the government, it cannot be doubted to be the will
 and act of the society, whoever permitted or caused them so to do.
 
-CHAPTER. XIV.
-
-OF PREROGATIVE.
+### CHAPTER. XIV. OF PREROGATIVE.
 
 Sect. 159. WHERE the legislative and executive power are in distinct
 hands, (as they are in all moderated monarchies, and well-framed
@@ -3508,9 +3478,7 @@ amended. But this the executive power, or wise princes, never need come
 in the danger of: and it is the thing, of all others, they have most
 need to avoid, as of all others the most perilous.
 
-CHAPTER. XV.
-
-OF PATERNAL, POLITICAL, AND DESPOTICAL POWER, CONSIDERED TOGETHER.
+### CHAPTER. XV. OF PATERNAL, POLITICAL, AND DESPOTICAL POWER, CONSIDERED TOGETHER.
 
 Sect. 169. THOUGH I have had occasion to speak of these separately
 before, yet the great mistakes of late about government, having, as I
@@ -3617,9 +3585,7 @@ the child incapable to manage his property; political, where men have
 property in their own disposal; and despotical, over such as have no
 property at all.
 
-CHAPTER. XVI.
-
-OF CONQUEST.
+### CHAPTER. XVI. OF CONQUEST.
 
 Sect. 175. THOUGH governments can originally have no other rise than
 that before mentioned, nor polities be founded on any thing but the
@@ -4019,9 +3985,7 @@ Ahaz, and deposed him, and made Hezekiah king in his father’s lifetime;
 and that Hezekiah by agreement had done him homage, and paid him tribute
 all this time.
 
-CHAPTER. XVII.
-
-OF USURPATION.
+### CHAPTER. XVII. OF USURPATION.
 
 Sect. 197. AS conquest may be called a foreign usurpation, so usurpation
 is a kind of domestic conquest, with this difference, that an usurper
@@ -4054,9 +4018,7 @@ have a title, till the people are both at liberty to consent, and have
 actually consented to allow, and confirm in him the power he hath till
 then usurped.
 
-CHAPTER. XVIII.
-
-OF TYRANNY.
+### CHAPTER. XVIII. OF TYRANNY.
 
 Sect. 199. AS usurpation is the exercise of power, which another hath a
 right to; so tyranny is the exercise of power beyond right, which no
@@ -4296,9 +4258,7 @@ men and provisions did often force him to turn his course another way
 for some time, which he steadily returned to again, as soon as the wind,
 weather, and other circumstances would let him?
 
-CHAPTER. XIX.
-
-OF THE DISSOLUTION OF GOVERNMENT.
+### CHAPTER. XIX. OF THE DISSOLUTION OF GOVERNMENT.
 
 Sect. 211. HE that will with any clearness speak of the dissolution of
 government, ought in the first place to distinguish between the

@@ -42,17 +42,21 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Fixed
 
-- **Two books had half their chapters as plain text.** In *At the Earth's
-  Core* (9 of 15 chapters) and *The Great God Pan* (5 of 8), a chapter's
-  numeral and title sat on two plain lines instead of a `###` heading, so each
-  ran into the chapter before it: *At the Earth's Core* had 9 story sections
-  instead of 17, one of them chapters VIII to XI. Both now have a heading per
-  chapter. A corpus scan for the same pattern (a bare numeral line followed by
-  a capitalized title) found no other story chapters; its other hits are a
-  manuscript list in *The Travels of Marco Polo*, critical essays in the front
-  matter of *Fathers and Sons*, and the contents lists of *The Mayor of
-  Casterbridge* and *O Pioneers!*, all left as they are. The two books need
-  re-ingesting and a full corpus rebuild to take effect.
+- **Four books had chapters as plain text.** A chapter's numeral and title
+  sat on plain lines instead of a heading, so each such chapter ran into the
+  section before it. *At the Earth's Core* (9 of 15 chapters, which left 9
+  story sections instead of 17) and *The Great God Pan* (5 of 8) now have a
+  `###` heading per chapter. In *The Food of the Gods* none of the 12
+  chapters ("CHAPTER THE FIRST.") were headings; they are now `###` under
+  their `##` books, with each chapter's numbered parts moved down to `####`,
+  where before all 62 parts sat side by side and their numbers restarted
+  without a chapter to tell them apart. In *Second Treatise of Government*
+  none of the 19 chapters were headings, so the whole treatise was one
+  650-chunk section; each chapter is now a `###` heading. Corpus scans for
+  these patterns found no other story chapters; the remaining hits are
+  contents lists, an appendix list in *The Travels of Marco Polo* and
+  front-matter essays in *Fathers and Sons*, left as they are. The four books
+  need re-ingesting and a full corpus rebuild to take effect.
 
 ## [1.40.0] - 2026-11-18
 
