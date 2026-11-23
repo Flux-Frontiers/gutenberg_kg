@@ -1,56 +1,64 @@
-# Release Notes -- v1.40.1
+# Release Notes -- v1.41.0
 
-> Released: 2026-11-19
+> Released: 2026-11-22
 
 ### Changed
 
-- **The logo is redrawn in Art Techno.** The brain is replaced by an open
-  book drawn as four traces notched at the gutter, with a die in the gutter
-  and a graph fan rising from it. `scripts/build_logo.py` draws the square
-  mark, a 64 px icon and a banner as SVG and writes every PNG size under
-  `assets/` and `docs/assets/`; the 64 px and smaller sizes, the small badges
-  and the docs logo and favicon now come from the icon. The README header
-  shows the banner.
-
-- **The banner lettering is larger.** The name is set as large as the
-  space beside the mark allows, the part line at the same width, and the pair
-  is centered on the banner's height; `scripts/build_logo.py` draws it this
-  way and the banner is redrawn.
-
-- **`assets/brand-system/` describes the Art Techno mark.** A new
-  `README.md` covers the mark, its files and sizes, how to use it, the
-  palette and how to rebuild it. The August 2026 brand board for the brain
-  logo moves to `assets/brand-system/archive/2026-08-brain/`, unchanged.
+- **KG pins:** kg-rag floor 0.19.0 and kgmodule-utils floor 0.31.0
+  (pyproject, Dockerfile `KG_RAG_VERSION` and `KGMODULE_UTILS_VERSION`).
+- **The image servers are imagewright's.** `make image-server` and
+  `make sdxl-server` install
+  [imagewright](https://github.com/Flux-Frontiers/imagewright) into
+  `.venv-image` and `.venv-sdxl` (from `docker/requirements-image.txt` and
+  `requirements-sdxl.txt`) and run `imagewright serve --backend flux` or
+  `--backend sdxl`. They answer the same routes with the same bodies on the
+  same ports, and FLUX runs on one thread. `make image-agent-install` writes a
+  LaunchAgent that runs `imagewright serve`, and `make sdxl-fetch` downloads
+  the weights through imagewright. To move a machine, run `make image-server`
+  and restart the server; run `make image-agent-install` to rewrite its
+  LaunchAgent. Images requested with `response_format=filepath` go to
+  imagewright's temporary folder unless `IMAGE_OUTPUT_DIR` is set.
+- **`gutenkg-image-server` and `gutenkg-sdxl-server` are aliases of
+  `imagewright serve`** for this release, so a LaunchAgent written by an
+  earlier release keeps starting a server. They keep the `0.0.0.0` bind
+  default and the `MFLUX_SERVER_*` and `SDXL_SERVER_*` variables. In an
+  environment without imagewright they exit and name the `make` target that
+  rebuilds it. They are removed in the next release. `make kill`, `make down`
+  and `make image-agent-install` stop both the aliases and `imagewright serve`.
+- **The image client is imagewright.** `gutenkg imagine` and the
+  `generate_image` and `corpus_imagine` MCP tools now find an image server
+  and send it the request through imagewright, the fleet's image package,
+  which is a new core dependency (click, httpx and pillow; no model stack).
+  The request body, the `GUTENKG_IMAGE_STEPS` and `GUTENKG_IMAGE_SIZE`
+  defaults, and the two ports probed are unchanged, and
+  `image_gen.generate_via_server` and `discover_image_endpoint` keep their
+  names and signatures. The MCP tools return the image bytes in memory
+  instead of leaving a temporary file, and keep shrinking an oversized image
+  until it fits the client's limit.
+- **Importing an alias needs nothing outside the standard library.** A test
+  blocks kgmodule-utils and imagewright and imports both aliases, so a
+  `.venv-image` that lacks them still starts far enough to say what to run.
 
 ### Removed
 
-- **The RunPod serverless pipeline.** It was never deployed, and since 1.40.0
-  the worker no longer uses RunPod's server. Gone: `runpod/` (its Dockerfile,
-  handler, build and index-push scripts), `.runpod/` and `docs/RUNPOD.md`.
-  `scripts/check_pins.py` now compares three files instead of four, and the
-  tests, docs, CI comments and skills that named the RunPod worker are
-  updated. The `/runsync` request and reply format is unchanged.
-- **`scripts/process_logo.py`**, the raster pipeline for the old brain
-  logo. `scripts/build_logo.py` draws the Art Techno logo and writes every
-  size, so nothing uses it, and it would overwrite the new files.
+- **The built-in FLUX and SDXL servers.** `serve/image_server.py` and
+  `serve/sdxl_server.py` hold only the aliases. Their FastAPI apps, request
+  models and model loading are gone, with their tests; imagewright's own
+  tests cover the same behavior.
+- **In-process generation in `image_gen`:** `generate`, `generate_auto`,
+  `model_loaded`, `unload_model` and `_load_model`. Generate through an image
+  server with `generate_via_server`, or with imagewright's `mflux-local`
+  backend.
+- **The `image` extra.** Nothing in the package needs FastAPI except the
+  worker, whose container installs it; the tests get FastAPI from the `dev`
+  group. Drop `--extras image` from install commands.
 
 ### Fixed
 
-- **Four books had chapters as plain text.** A chapter's numeral and title
-  sat on plain lines instead of a heading, so each such chapter ran into the
-  section before it. *At the Earth's Core* (9 of 15 chapters, which left 9
-  story sections instead of 17) and *The Great God Pan* (5 of 8) now have a
-  `###` heading per chapter. In *The Food of the Gods* none of the 12
-  chapters ("CHAPTER THE FIRST.") were headings; they are now `###` under
-  their `##` books, with each chapter's numbered parts moved down to `####`,
-  where before all 62 parts sat side by side and their numbers restarted
-  without a chapter to tell them apart. In *Second Treatise of Government*
-  none of the 19 chapters were headings, so the whole treatise was one
-  650-chunk section; each chapter is now a `###` heading. Corpus scans for
-  these patterns found no other story chapters; the remaining hits are
-  contents lists, an appendix list in *The Travels of Marco Polo* and
-  front-matter essays in *Fathers and Sons*, left as they are. The four books
-  are re-ingested and the corpus bundle is rebuilt with them.
+- **The `mkdocs-build` pre-commit hook passes with mkdocs-material 9.8.**
+  Its "MkDocs 2" notice names `NO_MKDOCS_2_WARNING`, which the hook read as
+  an unaccepted warning. `scripts/check_docs_build.py` now sets that
+  variable for the build.
 
 ---
 

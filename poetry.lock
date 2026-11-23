@@ -1976,15 +1976,15 @@ referencing = ">=0.31.0"
 
 [[package]]
 name = "kg-rag"
-version = "0.18.2"
+version = "0.19.0"
 description = "Orchestration layer for the KGRAG(tm) components."
 optional = true
 python-versions = "<3.14,>=3.12"
 groups = ["main"]
 markers = "extra == \"kgdeps\""
 files = [
-    {file = "kg_rag-0.18.2-py3-none-any.whl", hash = "sha256:c3e9a4d1bba5298080c3ef1ea82410b9ff97de962e823e180af7425b8dc0ef46"},
-    {file = "kg_rag-0.18.2.tar.gz", hash = "sha256:70ba4e6f38c8328ac2c79a86d7f5456b701815bc366871e2797992b73dda49fe"},
+    {file = "kg_rag-0.19.0-py3-none-any.whl", hash = "sha256:0284613e9052f13c6f6a7dbf9dd201eefbb799e0324ad043d6d91e96dc4c4589"},
+    {file = "kg_rag-0.19.0.tar.gz", hash = "sha256:aa3a7a689b43eb06de2e327e3ef84ffca252a540ec5cf57e1c7f292f3b0a2b28"},
 ]
 
 [package.dependencies]
@@ -1999,10 +1999,12 @@ torch = ">=2.5.1"
 transformers = ">=5.5.0,<6"
 
 [package.extras]
-all = ["PyQt5 (>=5.15.0)", "connectome-kg (>=0.10.1)", "diary-kg (>=0.101.0)", "doc-kg (>=0.30.0)", "firecrawl-anydoc (>=0.1.9)", "ftree-kg (>=0.18.1)", "markdown (>=3.6)", "memory-kg (>=0.13.0)", "param (>=2.0.0)", "plotly (>=5.14.0)", "pycode-kg (>=0.29.3)", "pymupdf (>=2.0)", "pyvis (>=0.3.2)", "pyvista (>=0.44.0)", "pyvistaqt (>=0.11.0)", "streamlit (>=1.35.0)", "trame-vtk (>=2.0.0)", "vault-kg (>=0.6.1)"]
+all = ["PyQt5 (>=5.15.0)", "anthropic (>=2.0.0)", "connectome-kg (>=0.10.1)", "diary-kg (>=0.101.0)", "doc-kg (>=0.30.0)", "firecrawl-anydoc (>=0.1.9)", "ftree-kg (>=0.18.1)", "httpx (>=0.27.0)", "imagewright (>=0.1.0)", "markdown (>=3.6)", "memory-kg (>=0.13.0)", "openai (>=1.30.0)", "param (>=2.0.0)", "pillow (>=13.0.0)", "plotly (>=5.14.0)", "pycode-kg (>=0.29.3)", "pymupdf (>=2.0)", "pyvis (>=0.3.2)", "pyvista (>=0.44.0)", "pyvistaqt (>=0.11.0)", "streamlit (>=1.35.0)", "trame-vtk (>=2.0.0)", "vault-kg (>=0.6.1)"]
 connectome = ["connectome-kg (>=0.10.1)"]
 diary = ["diary-kg (>=0.101.0)"]
 filetree = ["ftree-kg (>=0.18.1)"]
+imagine = ["imagewright (>=0.1.0)", "kgmodule-utils[synthesis] (>=0.31.0)"]
+imagine-local = ["imagewright (>=0.1.0)", "mflux (>=0.24.0)"]
 ingest = ["kgmodule-utils[ingest] (>=0.30.0)"]
 kg = ["doc-kg (>=0.30.0)", "memory-kg (>=0.13.0)", "pycode-kg (>=0.29.3)"]
 qt = ["PyQt5 (>=5.15.0)"]
@@ -2013,14 +2015,14 @@ viz3d = ["PyQt5 (>=5.15.0)", "markdown (>=3.6)", "param (>=2.0.0)", "pyvista (>=
 
 [[package]]
 name = "kgmodule-utils"
-version = "0.30.2"
+version = "0.31.0"
 description = "Shared types, graph store, semantic index, and pipeline base for the KGModule SDK"
 optional = false
 python-versions = "<3.14,>=3.12"
 groups = ["main"]
 files = [
-    {file = "kgmodule_utils-0.30.2-py3-none-any.whl", hash = "sha256:3d5bf3eaff104a0f0457f0a9b2c7668bc9675c4499ee5ab7618378e6a971799f"},
-    {file = "kgmodule_utils-0.30.2.tar.gz", hash = "sha256:34dac1e1d90b4e82d3b6c2d21a631345d75954356ce23937c6ff72d3db228dee"},
+    {file = "kgmodule_utils-0.31.0-py3-none-any.whl", hash = "sha256:81011c2ea5b9f5821753ce1198ce265e195dfb1fc9e6fc09b22d8e8625c3e3ff"},
+    {file = "kgmodule_utils-0.31.0.tar.gz", hash = "sha256:c398733ec30631f2ce711094e9f367dda43f797b679701d10d01df447996b903"},
 ]
 
 [package.dependencies]
@@ -6759,4 +6761,4 @@ viz3d = ["PyQt5", "kgmodule-utils", "markdown", "param", "pyvistaqt", "quiltwrig
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.12,<3.14"
-content-hash = "1b204c1dfdd2c9c0e5c1da88aa991e52ad1754844ac161c9ceb5501334777417"
+content-hash = "f110f2090099aeb61fc02106e7b2610f6662b113a896f7e2924a7d0ac8ba5e9d"

@@ -8,8 +8,12 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+## [1.41.0] - 2026-11-22
+
 ### Changed
 
+- **KG pins:** kg-rag floor 0.19.0 and kgmodule-utils floor 0.31.0
+  (pyproject, Dockerfile `KG_RAG_VERSION` and `KGMODULE_UTILS_VERSION`).
 - **The image servers are imagewright's.** `make image-server` and
   `make sdxl-server` install
   [imagewright](https://github.com/Flux-Frontiers/imagewright) into
