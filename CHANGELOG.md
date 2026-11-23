@@ -8,6 +8,14 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+## [1.42.0] - 2026-11-22
+
+### Changed
+
+- **Dependencies refreshed** (`poetry update`): 29 packages, none of them
+  fleet packages. The one major move is smart-open 9.0.4 -> 10.0.0, an
+  indirect dependency.
+
 ### Removed
 
 - **The `gutenkg-image-server` and `gutenkg-sdxl-server` aliases.** Run
