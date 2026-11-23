@@ -1738,14 +1738,14 @@ all = ["coverage (>=7.10.0)", "hypothesis (>=6.141.1)", "mypy (>=1.11.2)", "pyte
 
 [[package]]
 name = "imagewright"
-version = "0.1.0"
+version = "0.2.0"
 description = "Image generation over one HTTP contract: a client, local FLUX and SDXL servers, and an MCP tool"
 optional = false
 python-versions = "<3.14,>=3.12"
 groups = ["main"]
 files = [
-    {file = "imagewright-0.1.0-py3-none-any.whl", hash = "sha256:f4ee311a53f1cea14e77c68a1e0d818961de471292b352313763a2bcb110a9c5"},
-    {file = "imagewright-0.1.0.tar.gz", hash = "sha256:6bb70e48c2655220f53d96b212309dd1f121f2456affbc7374c293648e3bba6d"},
+    {file = "imagewright-0.2.0-py3-none-any.whl", hash = "sha256:47d092fe205c6b5f0aa9df082131a8637cea9ff1e02064a3db3c1441a54b1e48"},
+    {file = "imagewright-0.2.0.tar.gz", hash = "sha256:819aa8855ab2464f6757072d5d264537c2ef669b5d599312e80f0e57576b9d07"},
 ]
 
 [package.dependencies]
@@ -6781,4 +6781,4 @@ viz3d = ["PyQt5", "kgmodule-utils", "markdown", "param", "pyvistaqt", "quiltwrig
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.12,<3.14"
-content-hash = "f110f2090099aeb61fc02106e7b2610f6662b113a896f7e2924a7d0ac8ba5e9d"
+content-hash = "e45a37210a4332a88fdd05232f0f97da2ff3062281a0e85a04a700708fdd3258"
