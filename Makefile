@@ -92,10 +92,9 @@ COMPOSE      = docker compose -f docker/docker-compose.yml
 WORKER       = http://localhost:8000
 IMAGE_SERVER = http://localhost:8090
 SDXL_SERVER  = http://localhost:8091
-# What `make kill`, `down` and `image-agent-install` stop: imagewright's servers,
-# and the gutenkg-* aliases that an older LaunchAgent still runs.
-FLUX_PROCS   = imagewright serve --backend flux|gutenkg-image-server
-SDXL_PROCS   = imagewright serve --backend sdxl|gutenkg-sdxl-server
+# What `make kill`, `down` and `image-agent-install` stop: imagewright's servers.
+FLUX_PROCS   = imagewright serve --backend flux
+SDXL_PROCS   = imagewright serve --backend sdxl
 # Seconds FLUX stays loaded after a render (0 = always). `make models` writes it
 # to docker/.env; this reads it there for the image server and its LaunchAgent.
 IMAGE_IDLE_UNLOAD_S ?= $(or $(shell sed -n 's/^IMAGE_IDLE_UNLOAD_S=//p' docker/.env 2>/dev/null | tail -n 1),0)
@@ -782,9 +781,6 @@ image-server:
 	$(call make-venv,.venv-image,image)
 	@.venv-image/bin/python -m pip install --quiet --upgrade pip
 	@.venv-image/bin/python -m pip install --quiet -r docker/requirements-image.txt
-	@# This checkout too, for the gutenkg-image-server alias that a LaunchAgent
-	@# from an earlier release runs. Drop with the alias.
-	@.venv-image/bin/python -m pip install --quiet --no-deps -e .
 	@if launchctl print gui/$$(id -u)/$(IMAGE_AGENT) >/dev/null 2>&1; then \
 		echo "FLUX image server is run by launchd ($(IMAGE_AGENT)); not starting a second copy."; \
 	else \
