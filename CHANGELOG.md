@@ -8,6 +8,17 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+### Removed
+
+- **The `gutenkg-image-server` and `gutenkg-sdxl-server` aliases.** Run
+  `imagewright serve --backend flux` or `--backend sdxl`, as `make
+  image-server`, `make sdxl-server` and the LaunchAgent already do. A
+  LaunchAgent written before 1.41.0 still runs the old command; rewrite it
+  with `make image-server` and then `make image-agent-install`.
+  `make image-server` no longer installs this checkout into `.venv-image`,
+  and `make kill`, `make down` and `make image-agent-install` stop only
+  `imagewright serve`.
+
 ## [1.41.0] - 2026-11-22
 
 ### Changed

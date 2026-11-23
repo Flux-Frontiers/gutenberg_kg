@@ -787,13 +787,6 @@ The SDXL server (`make sdxl-server`, `imagewright serve --backend sdxl`) reads
 `SDXL_SERVER_HOST` and `SDXL_SERVER_PORT` (default `8091`) the same way, plus
 `SDXL_MODEL`, `SDXL_BASE`, `SDXL_OFFLINE` and `MPS_DTYPE`.
 
-`gutenkg-image-server` and `gutenkg-sdxl-server` still exist for one release, as
-aliases of `imagewright serve`. A LaunchAgent installed by an earlier release
-runs `gutenkg-image-server`, and the alias keeps it working. To move it to
-`imagewright serve`, run `make image-server` and then `make image-agent-install`.
-In an environment without imagewright, the alias exits with a message that
-says to run `make image-server` (or `make sdxl-server`).
-
 To keep the FLUX server running on a Mac, run `make image-server` once to build `.venv-image`, then `make image-agent-install`. That installs the LaunchAgent `local.gutenkg-image`, which starts the server at login and restarts it if it exits; it logs to `~/Library/Logs/gutenkg-image.log`. While it is installed, `make down` and `make kill` stop the server only until launchd restarts it, and `make image-server` leaves it alone. `make image-agent-uninstall` stops it and removes the agent.
 
 ---
