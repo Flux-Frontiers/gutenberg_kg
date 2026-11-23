@@ -2,4 +2,4 @@
 # FastAPI, uvicorn and the diffusers/torch stack. Kept out of the mflux
 # .venv-image and the main Poetry environment. On Apple Silicon, torch ships MPS
 # support in the default wheel.
-imagewright[serve,sdxl]>=0.1.0
+imagewright[serve,sdxl]>=0.2.0

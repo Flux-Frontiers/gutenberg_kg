@@ -109,7 +109,7 @@ dependencies = [
     # The image client: `gutenkg imagine` and the MCP image tools find an image
     # server and send it the request through imagewright (click, httpx, pillow;
     # no model stack).
-    "imagewright>=0.1.0",
+    "imagewright>=0.2.0",
 ]
 
 [project.optional-dependencies]
