@@ -10,8 +10,9 @@ replaced the cybernetic-brain logo in November 2026.
 Art Techno does for the computer age what Art Deco did for the machine age.
 Its style rules, palette and motif lexicon are in the Art Techno repository,
 [`docs/STYLE.md`](https://github.com/Flux-Frontiers/art_techno/blob/main/docs/STYLE.md).
-The rules and marks the KG fleet shares are in diary_kg's
-[`assets/brands.md`](https://github.com/Flux-Frontiers/diary_kg/blob/main/assets/brands.md).
+The rules and marks the fleet shares are in
+[`kgrag_priv/brands/README.md`](https://github.com/Flux-Frontiers/kgrag_priv/blob/main/brands/README.md),
+the source of truth for fleet branding (a private repository).
 
 ## The files
 
