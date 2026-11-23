@@ -302,17 +302,54 @@ async def generate_image(req: ImageGenRequest):
     return JSONResponse({"created": int(time.time()), "data": [{"b64_json": b64}]})
 
 
+def _imagewright_server():
+    """Return imagewright's SDXL server module, or None when it cannot serve here.
+
+    `.venv-sdxl` is an editable install, so a `git pull` changes this code
+    before anyone refreshes the environment. One built before imagewright
+    existed has no imagewright, and this server must keep serving there. Any
+    failure to import it, or a missing extra, therefore means "use the
+    built-in server", never a crash.
+
+    :return: ``imagewright.sdxl_server``, or None.
+    """
+    try:
+        from imagewright import sdxl_server  # noqa: PLC0415 - may be absent, see above
+
+        sdxl_server.require_extras()
+    except Exception as exc:  # noqa: BLE001 - any failure selects the built-in server
+        print(f"[startup] imagewright cannot serve here ({type(exc).__name__}: {exc})")
+        return None
+    return sdxl_server
+
+
 def main() -> None:
-    """Run the SDXL-Lightning server (preloads the pipeline at startup)."""
+    """Serve SDXL-Lightning on ``SDXL_SERVER_HOST``:``SDXL_SERVER_PORT``.
+
+    Through imagewright's server when this environment has it (the same routes,
+    request fields and response bodies), else through the built-in one. Either
+    way the pipeline is built before the port opens.
+    """
     # Imported here, not at module scope: only actually serving needs uvicorn,
     # so importing this module for tests or the wheel's entry-point check does
     # not require it.
     import uvicorn
 
-    _load_pipeline()
     host = os.environ.get("SDXL_SERVER_HOST", "0.0.0.0")
     port = int(os.environ.get("SDXL_SERVER_PORT", "8091"))
-    uvicorn.run(app, host=host, port=port)
+    server = _imagewright_server()
+    if server is None:
+        print(
+            "[startup] serving with the built-in SDXL server; "
+            "run `make sdxl-server` to refresh .venv-sdxl"
+        )
+        _load_pipeline()
+        uvicorn.run(app, host=host, port=port)
+        return
+    # imagewright's default is its own temp folder; keep this repo's.
+    os.environ.setdefault("IMAGE_OUTPUT_DIR", str(_OUTPUT_DIR))
+    print("[startup] serving SDXL through imagewright")
+    uvicorn.run(server.create_app(), host=host, port=port)
 
 
 if __name__ == "__main__":
