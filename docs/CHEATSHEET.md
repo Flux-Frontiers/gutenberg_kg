@@ -820,8 +820,6 @@ gutenberg_kg/
 │   │   ├── Chat.py                         # Streamlit reading room
 │   │   ├── entmoot.py                      # Two books in conversation (gutenkg converse)
 │   │   ├── handler.py                      # Query worker (retrieval + synthesis)
-│   │   ├── image_server.py                 # gutenkg-image-server alias of imagewright serve
-│   │   ├── sdxl_server.py                  # gutenkg-sdxl-server alias of imagewright serve
 │   │   └── pages/1_Browse.py               # Corpus browser page
 │   └── cli/
 │       ├── main.py                         # gutenkg CLI root group
