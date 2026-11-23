@@ -105,6 +105,10 @@ dependencies = [
     "doc-kg (>=0.30.0)",  # chunk text keeps source whitespace (item 83); transformers 5.x, see kgdeps
     "diary-kg (>=0.101.0)",
     "hf-transfer (>=0.1.9,<0.2.0)",
+    # The image client: `gutenkg imagine` and the MCP image tools find an image
+    # server and send it the request through imagewright (click, httpx, pillow;
+    # no model stack). The image servers themselves do not import it yet.
+    "imagewright>=0.1.0",
 ]
 
 [project.optional-dependencies]

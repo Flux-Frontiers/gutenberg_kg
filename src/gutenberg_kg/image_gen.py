@@ -19,10 +19,8 @@ GUTENKG_IMAGE_ENDPOINT   Base URL of a running mflux-serve instance
 
 from __future__ import annotations
 
-import base64
 import os
 import random
-from io import BytesIO
 from pathlib import Path
 from typing import TYPE_CHECKING
 
@@ -85,18 +83,11 @@ def discover_image_endpoint(
     :param timeout: Per-candidate timeout in seconds.
     :return: The first responding base URL, or None if none answered.
     """
-    import httpx
+    # Imported here, not at module level: the FLUX image server imports this
+    # module, and its .venv-image may not have imagewright yet.
+    from imagewright import discover_image_endpoint as _discover
 
-    for base in candidates:
-        root = base.rstrip("/")
-        for route in ("/health", "/v1/models"):
-            try:
-                reply = httpx.get(f"{root}{route}", timeout=timeout)
-            except Exception:  # noqa: BLE001 - any failure just means "try the next"
-                break  # port is down; no point trying its other route
-            if reply.status_code == 200:
-                return base
-    return None
+    return _discover(candidates, timeout)
 
 
 _DEFAULT_VLM_MODEL = "Qwen3-8B-MLX-4bit"
@@ -259,8 +250,9 @@ def generate_via_server(
 ) -> PILImage:
     """Generate an image by calling a running mflux-serve HTTP server.
 
-    Requires only httpx + pillow — safe to call from Linux containers or any
-    environment without mflux installed.
+    The request goes through imagewright's client, which needs only httpx and
+    pillow, so this is safe to call from a Linux container or any environment
+    without mflux installed.
 
     :param prompt: Text description of the image to generate.
     :param server_url: Base URL of the mflux-serve instance, e.g. http://localhost:8088.
@@ -269,31 +261,17 @@ def generate_via_server(
     :param steps: Override inference steps (default: GUTENKG_IMAGE_STEPS or 4).
     :returns: PIL Image decoded from the server response.
     """
-    import httpx
-    from PIL import Image
+    # Imported here, not at module level: see discover_image_endpoint.
+    from imagewright import ImageBackend, ImageConfig, ImageSynthesizer
 
     steps = steps or int(os.environ.get("GUTENKG_IMAGE_STEPS", _DEFAULT_STEPS))
     size = size or os.environ.get("GUTENKG_IMAGE_SIZE", _DEFAULT_SIZE)
     width, height = _parse_size(size) or _DEFAULT_DIMS
 
-    payload: dict = {
-        "prompt": prompt,
-        "n": 1,
-        "size": f"{width}x{height}",
-        "num_inference_steps": steps,
-        "response_format": "b64_json",
-    }
-    if seed is not None:
-        payload["seed"] = seed
-
-    resp = httpx.post(
-        server_url.rstrip("/") + "/v1/images/generations",
-        json=payload,
-        timeout=httpx.Timeout(connect=5.0, read=300.0, write=10.0, pool=5.0),
+    client = ImageSynthesizer(
+        ImageConfig(backend=ImageBackend.MFLUX_SERVE, server_url=server_url, steps=steps)
     )
-    resp.raise_for_status()
-    b64 = resp.json()["data"][0]["b64_json"]
-    return Image.open(BytesIO(base64.b64decode(b64)))
+    return client.generate(prompt, size=f"{width}x{height}", seed=seed, steps=steps)
 
 
 def generate_auto(
