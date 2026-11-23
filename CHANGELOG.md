@@ -8,6 +8,8 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+## [1.43.0] - 2026-11-23
+
 ### Changed
 
 - **The worker's image synthesizer is imagewright's.** `serve/handler.py`
