@@ -1738,6 +1738,30 @@ files = [
 all = ["coverage (>=7.10.0)", "hypothesis (>=6.141.1)", "mypy (>=1.11.2)", "pytest (>=8.3.2)", "ruff (>=0.16.0)", "ty (>=0.0.37)"]
 
 [[package]]
+name = "imagewright"
+version = "0.1.0"
+description = "Image generation over one HTTP contract: a client, local FLUX and SDXL servers, and an MCP tool"
+optional = false
+python-versions = "<3.14,>=3.12"
+groups = ["main"]
+files = [
+    {file = "imagewright-0.1.0-py3-none-any.whl", hash = "sha256:f4ee311a53f1cea14e77c68a1e0d818961de471292b352313763a2bcb110a9c5"},
+    {file = "imagewright-0.1.0.tar.gz", hash = "sha256:6bb70e48c2655220f53d96b212309dd1f121f2456affbc7374c293648e3bba6d"},
+]
+
+[package.dependencies]
+click = ">=8.1.0,<9"
+httpx = ">=0.27.0"
+pillow = ">=13.0.0"
+
+[package.extras]
+flux = ["mflux (>=0.24.0)"]
+mcp = ["mcp (>=1.23.0,<2)"]
+openai = ["openai (>=1.30.0)"]
+sdxl = ["accelerate (>=0.33.0)", "diffusers (>=0.30.0)", "huggingface_hub (>=0.24.0)", "safetensors (>=0.4.0)", "torch (>=2.4.0)", "transformers (>=4.44.0)"]
+serve = ["fastapi (>=0.116.0)", "pydantic (>=2.8.0)", "uvicorn (>=0.30.0)"]
+
+[[package]]
 name = "iniconfig"
 version = "2.3.1"
 description = "brain-dead simple config-ini parsing"
@@ -6737,4 +6761,4 @@ viz3d = ["PyQt5", "kgmodule-utils", "markdown", "param", "pyvistaqt", "quiltwrig
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.12,<3.14"
-content-hash = "29ce970a7d2a9171bd71bfccf3b1c149f54dd2ace8ee7de210eae5d455f947e6"
+content-hash = "87e548a556435865aaad8eb3833738248acb7f8ad56ade282b5e15440e504bd7"

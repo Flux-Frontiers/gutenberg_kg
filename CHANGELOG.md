@@ -8,6 +8,24 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+### Changed
+
+- **The image client is imagewright.** `gutenkg imagine` and the
+  `generate_image` and `corpus_imagine` MCP tools now find an image server
+  and send it the request through
+  [imagewright](https://github.com/Flux-Frontiers/imagewright), the fleet's
+  image package, which is a new core dependency (click, httpx and pillow; no
+  model stack). The request body, the `GUTENKG_IMAGE_STEPS` and
+  `GUTENKG_IMAGE_SIZE` defaults, and the two ports probed are unchanged, and
+  `image_gen.generate_via_server` and `discover_image_endpoint` keep their
+  names and signatures. The MCP tools return the image bytes in memory
+  instead of leaving a temporary file, and keep shrinking an oversized image
+  until it fits the client's limit.
+- **The image servers are not changed.** `gutenkg-image-server` and
+  `gutenkg-sdxl-server` still run this repo's own code and do not import
+  imagewright, so an existing `.venv-image` keeps working after a pull. A
+  test blocks imagewright and imports both servers to keep it that way.
+
 ## [1.40.1] - 2026-11-19
 
 ### Changed
