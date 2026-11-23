@@ -34,6 +34,7 @@ Exit status:
 
 from __future__ import annotations
 
+import os
 import re
 import subprocess
 import sys
@@ -56,9 +57,12 @@ def main() -> int:
     if not MKDOCS.exists():
         return 0
 
+    # mkdocs-material 9.8 prints a "MkDocs 2" notice whose last line names
+    # NO_MKDOCS_2_WARNING, which the "WARNING" filter below would flag.
     result = subprocess.run(
         [str(MKDOCS), "build", "--strict"],
         cwd=ROOT,
+        env={**os.environ, "NO_MKDOCS_2_WARNING": "1"},
         capture_output=True,
         text=True,
         check=False,

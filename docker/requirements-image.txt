@@ -1,5 +1,3 @@
-fastapi>=0.116.0
-uvicorn>=0.30.0
-pydantic>=2.8.0
-pillow>=13.0.0
-mflux>=0.24.0
+# The FLUX image server for `make image-server`: imagewright's, with FastAPI,
+# uvicorn and mflux. mflux needs Apple MLX (macOS arm64) or CUDA 13 on Linux.
+imagewright[serve,flux]>=0.1.0

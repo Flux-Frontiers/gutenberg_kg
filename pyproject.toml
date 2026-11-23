@@ -15,7 +15,9 @@
 #            ray-tracing box can install this WITHOUT viz3d.
 #   mcp      MCP server, `gutenkg mcp` (mcp, structlog)
 #   chat     reading-room UI, `gutenkg chat` (streamlit, httpx, watchdog)
-#   image    local image server, `gutenkg-image-server` (fastapi, uvicorn)
+#
+# The image servers are imagewright's, in their own venvs: `make image-server`
+# and `make sdxl-server` (docker/requirements-image.txt, requirements-sdxl.txt).
 #
 # Quick install (poetry)
 # ----------------------
@@ -39,14 +41,13 @@
 #
 # First-time setup (contributors)
 # -------------------------------
-#   poetry install --with dev --extras "kgdeps viz viz3d pov mcp image"
+#   poetry install --with dev --extras "kgdeps viz viz3d pov mcp"
 #   pre-commit install
 #
-# `pov` and `image` are in there for the tests, not for the features:
-# tests/test_povscene.py and tests/test_sdxl_server.py import quiltwright and
-# fastapi through the modules under test. Both now `importorskip`, so a
-# narrower install SKIPS them rather than failing at collection and taking the
-# whole run down — but they only actually run with the extras present, which is
+# `pov` is in there for the tests, not for the feature: tests/test_povscene.py
+# imports quiltwright through the module under test. It `importorskip`s, so a
+# narrower install SKIPS it rather than failing at collection and taking the
+# whole run down — but it only actually runs with the extra present, which is
 # how CI's test job installs.
 #
 # Run tests
@@ -57,7 +58,7 @@
 #
 # Generate docs
 # -------------
-#   poetry install --with docs --extras "chat image mcp viz viz3d kgdeps"
+#   poetry install --with docs --extras "chat mcp viz viz3d kgdeps"
 #   make docs                          build the mkdocs site into ./site
 #   make docs-serve                    serve it locally with live reload
 #
@@ -105,6 +106,10 @@ dependencies = [
     "doc-kg (>=0.30.0)",  # chunk text keeps source whitespace (item 83); transformers 5.x, see kgdeps
     "diary-kg (>=0.101.0)",
     "hf-transfer (>=0.1.9,<0.2.0)",
+    # The image client: `gutenkg imagine` and the MCP image tools find an image
+    # server and send it the request through imagewright (click, httpx, pillow;
+    # no model stack).
+    "imagewright>=0.1.0",
 ]
 
 [project.optional-dependencies]
@@ -167,15 +172,6 @@ chat = [
     "watchdog>=6.0.0",
     "pillow>=13.0.0",
 ]
-# mflux is deliberately absent -- its transformers pin conflicts with pycode-kg,
-# so local FLUX generation uses the isolated .venv-image built from
-# docker/requirements-image.txt (see `make image-server`).
-image = [
-    "fastapi>=0.116.0",
-    "uvicorn>=0.54.0",
-    "pydantic>=2.8.0",
-    "pillow>=13.0.0",
-]
 # No `full` / `all` aggregate extras: re-listing a package in an aggregate is a
 # second declaration under different markers, which poetry resolves by adding an
 # override and restarting. Twelve packages did that here -- 1,278 restarts, 503s
@@ -204,6 +200,9 @@ mkdocstrings = { version = ">=0.26", extras = ["python"] }
 
 [tool.poetry.group.dev.dependencies]
 detect-secrets = ">=1.5.0"
+# tests/test_worker_api.py drives the worker's FastAPI app; the container
+# installs it for real in docker/Dockerfile.
+fastapi = ">=0.116.0"
 pillow = ">=13.0.0"
 pre-commit = ">=4.5.1"
 pytest = ">=9.0.3"

@@ -102,7 +102,6 @@ That set is the **recommended default** — everything except dev tooling (KG in
 | `viz3d` | pyvista, PyQt5, kgmodule-utils, quiltwright (3-D visualiser + light-field quilts) | `poetry install --extras viz3d` |
 | `mcp` | kgmodule-utils[mcp], structlog (MCP server, `gutenkg mcp`) | `poetry install --extras mcp` |
 | `chat` | streamlit, httpx, watchdog (reading-room UI) | `poetry install --extras chat` |
-| `image` | fastapi, uvicorn, pydantic (image service) | `poetry install --extras image` |
 | `pov` | quiltwright povgen, kgmodule-utils NumPy-only geometry (analytic POV-Ray output, `gutenkg pov`) — deliberately no PyVista/Qt/GL, so a headless box can install it alone | `poetry install --extras pov` |
 | *(none)* | core runtime only | `poetry install` |
 | *(everything)* | every extra above | `poetry install --all-extras` |
@@ -110,14 +109,13 @@ That set is the **recommended default** — everything except dev tooling (KG in
 Dev tooling (pytest, ruff, ty, pre-commit) is **not an extra** — it lives in the *optional* Poetry `dev` group, so it stays out of the published wheel metadata and a bare `poetry install` stays core-runtime-only. `pycode-kg` is in no group at all: this repo *runs* the `pycodekg` CLI and its MCP server but imports neither, so it is a global tool resolved from `PATH`, not a dependency (the `kg` group that once held it is gone). There is no `.[dev]` to pip-install; development needs Poetry. Contributors who want the test/lint toolchain, matching every extra CI's own jobs install:
 
 ```bash
-poetry install --with dev --extras "kgdeps viz viz3d mcp image pov"   # or --with dev --all-extras
+poetry install --with dev --extras "kgdeps viz viz3d mcp pov"   # or --with dev --all-extras
 pre-commit install
 ```
 
-`--with dev` alone covers `ruff` and `ty`, but two extras are load-bearing for what the local `ty`/`pytest` pre-commit hooks actually check, and dropping either silently narrows what runs locally versus what CI runs on the same command:
+`--with dev` alone covers `ruff` and `ty`, but the `pov` extra decides what the local `ty`/`pytest` pre-commit hooks actually check, and dropping it silently narrows what runs locally versus what CI runs on the same command:
 
-- **`image`** — `tests/test_sdxl_server.py` imports fastapi/pydantic at module level, so without it `pytest` aborts during *collection* rather than skipping. CI's test job runs `poetry install --with dev --extras image --extras pov` for exactly this.
-- **`pov`** — `tests/test_povscene.py` imports `gutenberg_kg.povscene`, which imports `quiltwright.povgen` at module scope; same collection-failure shape as `image` if it is missing. It matters for `ty` too, not just `pytest`: CI's type-check job installs `--extras pov` specifically because an unresolved import is not a type error, so `ty` reported "All checks passed" on `swept_scene(instance_index=<ndarray>)` sitting against a `Sequence[int]` parameter until the extra made the signature visible. Installing `viz3d` already pulls `quiltwright` transitively and happens to satisfy this too — but `pov` is what CI actually names, and a leaner setup that skips `viz3d` (a real path: `pov` explicitly needs no PyVista/Qt/GL) needs it named explicitly.
+- **`pov`** — `tests/test_povscene.py` imports `gutenberg_kg.povscene`, which imports `quiltwright.povgen` at module scope, so without it `pytest` aborts during *collection* rather than skipping. CI's test job runs `poetry install --with dev --extras pov` for this. It matters for `ty` too, not just `pytest`: CI's type-check job installs `--extras pov` specifically because an unresolved import is not a type error, so `ty` reported "All checks passed" on `swept_scene(instance_index=<ndarray>)` sitting against a `Sequence[int]` parameter until the extra made the signature visible. Installing `viz3d` already pulls `quiltwright` transitively and happens to satisfy this too — but `pov` is what CI actually names, and a leaner setup that skips `viz3d` (a real path: `pov` explicitly needs no PyVista/Qt/GL) needs it named explicitly.
 
 The other extras only turn optional-feature tests from skipped into run.
 
@@ -334,10 +332,10 @@ make logs        # follow worker logs
 | `make build` | build the Docker image (bakes the bundle in) |
 | `make run` | start the worker on `:8000` |
 | `make chat` | start worker + chat UI on `:8501` |
-| `make image-server` | start the local FLUX image server on `:8090` (isolated `.venv-image`; needs mflux — see below) |
+| `make image-server` | start imagewright's FLUX image server on `:8090` (isolated `.venv-image`; needs mflux — see below) |
 | `make image-agent-install` | run the FLUX image server as the LaunchAgent `local.gutenkg-image`: starts at login, restarts if it exits (macOS; run `make image-server` once first) |
 | `make image-agent-uninstall` | stop the LaunchAgent and remove it |
-| `make sdxl-server` | start the local SDXL-Lightning image server on `:8091` (isolated `.venv-sdxl`; runs anywhere) |
+| `make sdxl-server` | start imagewright's SDXL-Lightning image server on `:8091` (isolated `.venv-sdxl`; runs anywhere) |
 | `make sdxl-fetch` | pre-download the SDXL weights (~7 GB) without starting the server |
 | `make up` | start everything (worker + chat + whichever image server this host supports) |
 | `make query Q="…"` | fire a one-shot query against the running worker |
@@ -597,12 +595,12 @@ Anthropic is selected per request only:
 
 ### Image generation (local)
 
-Two local servers, both isolated in their own venv so their dependencies never touch the main Poetry environment:
+Two local servers, both [imagewright](https://github.com/Flux-Frontiers/imagewright)'s (`imagewright serve`), each isolated in its own venv so its dependencies never touch the main Poetry environment:
 
 | Server | Port | Start with | Runs on |
 |---|---|---|---|
 | FLUX.2 (mflux) | `8090` | `make image-server` | Apple Silicon, or Linux with CUDA 13 — mflux needs `mlx`, and there is no Windows wheel |
-| SDXL-Lightning (diffusers) | `8091` | `make sdxl-server` | anywhere — `sdxl_server` resolves `cuda → mps → cpu`, so it works on CPU too, just slowly |
+| SDXL-Lightning (diffusers) | `8091` | `make sdxl-server` | anywhere — the SDXL server resolves `cuda → mps → cpu`, so it works on CPU too, just slowly |
 
 `make up` picks for you: FLUX where mflux is supported, SDXL everywhere else. Force one with `make up IMAGE_BACKEND=flux` or `IMAGE_BACKEND=sdxl`; asking for FLUX on a host that cannot run it now fails with a message naming the requirement instead of a pip resolution error.
 
@@ -627,8 +625,8 @@ The SDXL server runs on Windows, but `make sdxl-server` does not: it assumes a P
 ```powershell
 python -m venv .venv-sdxl
 .venv-sdxl\Scripts\python -m pip install -r docker\requirements-sdxl.txt
-.venv-sdxl\Scripts\python -m pip install --no-deps -e .
-.venv-sdxl\Scripts\gutenkg-sdxl-server          # listens on :8091
+$env:SDXL_SERVER_HOST = "0.0.0.0"
+.venv-sdxl\Scripts\imagewright serve --backend sdxl   # listens on :8091
 ```
 
 The plain `torch` wheel pip installs on Windows is CPU-only, which works but is slow. With an NVIDIA GPU, install a CUDA build of torch first, using the command [pytorch.org](https://pytorch.org/get-started/locally/) gives for your CUDA version; the server then picks `cuda` on its own. A worker in Docker Desktop reaches it at `http://host.docker.internal:8091`.
@@ -767,17 +765,34 @@ The local `gutenkg imagine` command (outside Docker) reads its own `GUTENKG_*` v
 | `GUTENKG_VLM_ENDPOINT` | `http://localhost:8080/v1` | oMLX endpoint for the VLM prose→scene rewrite. |
 | `GUTENKG_VLM_MODEL` | `Qwen3-8B-MLX-4bit` | VLM model ID. |
 | `GUTENKG_IMAGE_ENDPOINT` | *(empty: probe ports 8090, 8091)* | Image server to call. The CLI and the MCP tools never generate in-process; with no server answering they stop with "No image server found". |
-| `GUTENKG_IMAGE_MODEL` | `mlx-community/flux2-klein-4b-4bit` | Local FLUX model. |
-| `GUTENKG_IMAGE_STEPS` | `4` | Local FLUX inference steps. |
+| `GUTENKG_IMAGE_STEPS` | `4` | Inference steps sent with each request. |
+| `GUTENKG_IMAGE_SIZE` | `1536x1024` | Image size sent with each request. |
 
-### Image server (`make image-server` / `gutenkg-image-server`)
+### Image server (`make image-server`)
+
+The FLUX server is imagewright's, started as `imagewright serve --backend flux`
+from `.venv-image`. It reads these variables; the full list is in
+`imagewright.flux_server`.
 
 | Variable | Default | Purpose |
 |---|---|---|
-| `MFLUX_SERVER_HOST` | `0.0.0.0` | Bind host for the FLUX server. |
+| `MFLUX_SERVER_HOST` | `127.0.0.1`; `make image-server` and the LaunchAgent set `0.0.0.0` | Bind host. |
 | `MFLUX_SERVER_PORT` | `8090` | Bind port. |
-| `IMAGE_OUTPUT_DIR` | `/tmp/gutenberg_images` | Where rendered images are written. |
+| `IMAGE_MODEL` / `GUTENKG_IMAGE_MODEL` | `mlx-community/flux2-klein-4b-4bit` | FLUX model the server loads. |
 | `IMAGE_PRELOAD` | `0` | Set to `1` to load the FLUX model at startup instead of first request. |
+| `IMAGE_IDLE_UNLOAD_S` | `0` | Unload the model after this many idle seconds; `make` reads it from `docker/.env`. |
+| `IMAGE_OUTPUT_DIR` | `imagewright_images` in the system temp folder | Where `response_format=filepath` images are written. |
+
+The SDXL server (`make sdxl-server`, `imagewright serve --backend sdxl`) reads
+`SDXL_SERVER_HOST` and `SDXL_SERVER_PORT` (default `8091`) the same way, plus
+`SDXL_MODEL`, `SDXL_BASE`, `SDXL_OFFLINE` and `MPS_DTYPE`.
+
+`gutenkg-image-server` and `gutenkg-sdxl-server` still exist for one release, as
+aliases of `imagewright serve`. A LaunchAgent installed by an earlier release
+runs `gutenkg-image-server`, and the alias keeps it working. To move it to
+`imagewright serve`, run `make image-server` and then `make image-agent-install`.
+In an environment without imagewright, the alias exits with a message that
+says to run `make image-server` (or `make sdxl-server`).
 
 To keep the FLUX server running on a Mac, run `make image-server` once to build `.venv-image`, then `make image-agent-install`. That installs the LaunchAgent `local.gutenkg-image`, which starts the server at login and restarts it if it exits; it logs to `~/Library/Logs/gutenkg-image.log`. While it is installed, `make down` and `make kill` stop the server only until launchd restarts it, and `make image-server` leaves it alone. `make image-agent-uninstall` stops it and removes the agent.
 

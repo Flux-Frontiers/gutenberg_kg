@@ -92,6 +92,10 @@ COMPOSE      = docker compose -f docker/docker-compose.yml
 WORKER       = http://localhost:8000
 IMAGE_SERVER = http://localhost:8090
 SDXL_SERVER  = http://localhost:8091
+# What `make kill`, `down` and `image-agent-install` stop: imagewright's servers,
+# and the gutenkg-* aliases that an older LaunchAgent still runs.
+FLUX_PROCS   = imagewright serve --backend flux|gutenkg-image-server
+SDXL_PROCS   = imagewright serve --backend sdxl|gutenkg-sdxl-server
 # Seconds FLUX stays loaded after a render (0 = always). `make models` writes it
 # to docker/.env; this reads it there for the image server and its LaunchAgent.
 IMAGE_IDLE_UNLOAD_S ?= $(or $(shell sed -n 's/^IMAGE_IDLE_UNLOAD_S=//p' docker/.env 2>/dev/null | tail -n 1),0)
@@ -225,7 +229,7 @@ endif
 # so it needs Apple MLX on macOS arm64, or CUDA 13 and an NVIDIA GPU on Linux,
 # and there is no Windows entry at all. On any other host the pip install fails.
 #
-# The SDXL backend has no such constraint: gutenberg_kg.serve.sdxl_server
+# The SDXL backend has no such constraint: imagewright's SDXL server
 # resolves cuda -> mps -> cpu, so its diffusers/torch stack runs anywhere (on
 # CPU it is slow, but it works). That is why the default below falls back to it
 # rather than simply skipping image generation.
@@ -433,8 +437,8 @@ kill:
 		echo "==> Skipping Apple container — not installed."; \
 	fi
 	@echo "==> Killing local image-server processes ..."
-	-pkill -f gutenkg-image-server 2>/dev/null || true
-	-pkill -f gutenkg-sdxl-server 2>/dev/null || true
+	-pkill -f '$(FLUX_PROCS)' 2>/dev/null || true
+	-pkill -f '$(SDXL_PROCS)' 2>/dev/null || true
 	@echo "Done. Killed."
 
 # `kill`, then stop the runtimes themselves: Apple's container services (which
@@ -638,8 +642,8 @@ start up: runtime-guard
 
 stop down:
 	-container delete -f $(CHAT_NAME) $(WORKER_NAME) 2>/dev/null || true
-	-pkill -f gutenkg-image-server 2>/dev/null || true
-	-pkill -f gutenkg-sdxl-server 2>/dev/null || true
+	-pkill -f '$(FLUX_PROCS)' 2>/dev/null || true
+	-pkill -f '$(SDXL_PROCS)' 2>/dev/null || true
 
 logs:
 	container logs -f $(WORKER_NAME)
@@ -710,8 +714,8 @@ start up: runtime-guard
 
 stop down:
 	$(COMPOSE) --profile chat down
-	-pkill -f gutenkg-image-server 2>/dev/null || true
-	-pkill -f gutenkg-sdxl-server 2>/dev/null || true
+	-pkill -f '$(FLUX_PROCS)' 2>/dev/null || true
+	-pkill -f '$(SDXL_PROCS)' 2>/dev/null || true
 
 logs:
 	$(COMPOSE) logs -f worker
@@ -778,12 +782,14 @@ image-server:
 	$(call make-venv,.venv-image,image)
 	@.venv-image/bin/python -m pip install --quiet --upgrade pip
 	@.venv-image/bin/python -m pip install --quiet -r docker/requirements-image.txt
+	@# This checkout too, for the gutenkg-image-server alias that a LaunchAgent
+	@# from an earlier release runs. Drop with the alias.
 	@.venv-image/bin/python -m pip install --quiet --no-deps -e .
 	@if launchctl print gui/$$(id -u)/$(IMAGE_AGENT) >/dev/null 2>&1; then \
 		echo "FLUX image server is run by launchd ($(IMAGE_AGENT)); not starting a second copy."; \
 	else \
 		echo "Starting FLUX image server on $(IMAGE_SERVER) (background, .venv-image) ..."; \
-		MFLUX_SERVER_HOST=0.0.0.0 IMAGE_IDLE_UNLOAD_S=$(IMAGE_IDLE_UNLOAD_S) .venv-image/bin/gutenkg-image-server & \
+		MFLUX_SERVER_HOST=0.0.0.0 IMAGE_IDLE_UNLOAD_S=$(IMAGE_IDLE_UNLOAD_S) .venv-image/bin/imagewright serve --backend flux & \
 	fi
 
 # Run the FLUX image server as a macOS LaunchAgent: it starts at login and
@@ -796,10 +802,10 @@ IMAGE_AGENT_LOG   = $(HOME)/Library/Logs/gutenkg-image.log
 IMAGE_AGENT_REPO ?= $(CURDIR)
 
 image-agent-install:
-	@test -x "$(IMAGE_AGENT_REPO)/.venv-image/bin/gutenkg-image-server" || \
+	@test -x "$(IMAGE_AGENT_REPO)/.venv-image/bin/imagewright" || \
 		{ echo "ERROR: $(IMAGE_AGENT_REPO)/.venv-image is missing; run 'make image-server' once first."; exit 1; }
 	-@launchctl bootout gui/$$(id -u)/$(IMAGE_AGENT) 2>/dev/null || true
-	-@pkill -f gutenkg-image-server 2>/dev/null || true
+	-@pkill -f '$(FLUX_PROCS)' 2>/dev/null || true
 	@# bootout returns before the service is gone; bootstrapping too soon fails
 	@# with "5: Input/output error". Wait up to 10 s for it to go.
 	@for i in 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20; do \
@@ -829,9 +835,8 @@ sdxl-server:
 	$(call make-venv,.venv-sdxl,SDXL/diffusers)
 	@.venv-sdxl/bin/python -m pip install --quiet --upgrade pip
 	@.venv-sdxl/bin/python -m pip install --quiet -r docker/requirements-sdxl.txt
-	@.venv-sdxl/bin/python -m pip install --quiet --no-deps -e .
 	@echo "Starting SDXL-Lightning image server on $(SDXL_SERVER) (background, .venv-sdxl) ..."
-	SDXL_SERVER_HOST=0.0.0.0 .venv-sdxl/bin/gutenkg-sdxl-server &
+	SDXL_SERVER_HOST=0.0.0.0 .venv-sdxl/bin/imagewright serve --backend sdxl &
 
 # Pre-download the SDXL weights without starting the server, so the first
 # `make up` on a fresh machine is not a silent multi-GB wait. Once cached,
@@ -840,9 +845,8 @@ sdxl-fetch:
 	$(call make-venv,.venv-sdxl,SDXL/diffusers)
 	@.venv-sdxl/bin/python -m pip install --quiet --upgrade pip
 	@.venv-sdxl/bin/python -m pip install --quiet -r docker/requirements-sdxl.txt
-	@.venv-sdxl/bin/python -m pip install --quiet --no-deps -e .
 	@echo "Fetching SDXL-Lightning weights (~7 GB, cached under ~/.cache/huggingface) ..."
-	@.venv-sdxl/bin/python -c "from gutenberg_kg.serve.sdxl_server import _load_pipeline; _load_pipeline()"
+	@.venv-sdxl/bin/python -c "from imagewright.sdxl_server import SdxlServer; SdxlServer.from_env().load_pipeline()"
 	@echo "Done. Weights cached; SDXL_OFFLINE=1 will now work."
 
 query:

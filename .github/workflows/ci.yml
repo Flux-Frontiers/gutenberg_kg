@@ -139,19 +139,14 @@ jobs:
           path: .venv
           key: test-${{ runner.os }}-${{ hashFiles('poetry.lock') }}
 
-      # `image` alongside `dev`: it carries fastapi/pydantic, which
-      # tests/test_sdxl_server.py needs to import the module and assert on its
-      # request-model defaults. torch and diffusers stay out — sdxl_server
-      # defers them until an actual render.
-      #
-      # `pov` too: tests/test_povscene.py imports gutenberg_kg.povscene, which
+      # `pov` alongside `dev`: tests/test_povscene.py imports gutenberg_kg.povscene, which
       # imports quiltwright.povgen at module scope, so without it collection
       # fails and takes the whole job with it. The extra is cheap and headless
       # — NumPy-only geometry plus quiltwright (numpy, pillow), no PyVista, no
       # Qt, no GL context. The tests that do want PyVista importorskip it
       # individually.
       - name: Install dependencies
-        run: poetry install --no-interaction --with dev --extras image --extras pov
+        run: poetry install --no-interaction --with dev --extras pov
 
       # tests/test_synthesis_parity.py pins the app's Swift prompts to the
       # Python constants; the Swift lives in the public knowledge_press repo.

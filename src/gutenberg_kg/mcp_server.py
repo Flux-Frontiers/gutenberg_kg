@@ -34,20 +34,18 @@ Run
 from __future__ import annotations
 
 import os
-import tempfile
-from io import BytesIO
 from pathlib import Path
 from typing import TYPE_CHECKING, Any
 
 # At module scope: FastMCP evaluates the tools' annotations when it registers
 # them. Only build_server() imports this module, so other gutenkg commands
 # still start without mcp.
+from imagewright import as_mcp_image
 from kg_utils.mcp import Context, kg_from
 from mcp.server.fastmcp import Image
 
 if TYPE_CHECKING:
     from kg_utils.mcp import KGServer
-    from PIL import Image as PILImage
 
 #: The bundle served when ``--db`` is not given.
 DEFAULT_BUNDLE = Path("bundles") / "gutenberg-all"
@@ -67,54 +65,12 @@ PREAMBLE = (
     "running image server."
 )
 
-_MAX_IMAGE_BYTES = 3_750_000
-
 
 def stats(*, ctx: Context) -> dict[str, Any]:
     """
     Node and edge counts for the corpus bundle, in total and by kind and relation, plus its vector count.
     """
     return {**kg_from(ctx).stats(), "kind": "gutenberg"}
-
-
-def _compress_for_mcp(pil_img: PILImage.Image, path: str) -> tuple[str, str]:
-    """Save image; compress to JPEG if it exceeds the 5 MB MCP limit."""
-    from PIL import Image as PILImage  # noqa: PLC0415
-
-    pil_img.save(path)
-    size = Path(path).stat().st_size
-    if size <= _MAX_IMAGE_BYTES:
-        return path, "png"
-
-    # Re-save as JPEG at progressively lower quality
-    jpg_path = path.replace(".png", ".jpg")
-    for quality in (85, 70, 50):
-        buf = BytesIO()
-        pil_img.convert("RGB").save(buf, format="JPEG", quality=quality, optimize=True)
-        if buf.tell() <= _MAX_IMAGE_BYTES:
-            Path(jpg_path).write_bytes(buf.getvalue())
-            return jpg_path, "jpeg"
-
-    # Last resort: scale down
-    for scale in (0.75, 0.5):
-        small = pil_img.resize(
-            (int(pil_img.width * scale), int(pil_img.height * scale)),
-            PILImage.Resampling.LANCZOS,
-        )
-        buf = BytesIO()
-        small.convert("RGB").save(buf, format="JPEG", quality=70, optimize=True)
-        if buf.tell() <= _MAX_IMAGE_BYTES:
-            Path(jpg_path).write_bytes(buf.getvalue())
-            return jpg_path, "jpeg"
-
-    raise ValueError("Image could not be compressed below the 5 MB MCP limit.")
-
-
-def _as_mcp_image(pil: PILImage.Image) -> Image:
-    with tempfile.NamedTemporaryFile(suffix=".png", delete=False) as f:
-        out_path = f.name
-    effective_path, fmt = _compress_for_mcp(pil, out_path)
-    return Image(path=effective_path, format=fmt)
 
 
 def _logger():
@@ -148,7 +104,7 @@ async def generate_image(
         seed=seed,
         steps=steps,
     )
-    return _as_mcp_image(pil)
+    return as_mcp_image(pil)
 
 
 async def corpus_imagine(
@@ -195,7 +151,7 @@ async def corpus_imagine(
         seed=seed,
         steps=steps,
     )
-    return _as_mcp_image(pil)
+    return as_mcp_image(pil)
 
 
 EXTRA_TOOLS = (generate_image, corpus_imagine)

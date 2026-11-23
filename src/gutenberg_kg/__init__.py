@@ -11,10 +11,10 @@ Modules
 -------
 cli           — the ``gutenkg`` command group (download, ingest, query,
                 snapshots, visualisation, batch workflows).
-serve         — the worker, Streamlit chat UI, and image servers
+serve         — the worker, Streamlit chat UI, and the image-server aliases
                 (see :mod:`gutenberg_kg.serve` — optional extras required).
 build_corpus  — corpus build/bundle pipeline (``gutenkg build-corpus``).
-image_gen     — FLUX.2-Klein image generation (local MLX or remote server).
+image_gen     — image generation through an image server (imagewright).
 mcp_server    — MCP tools for querying the corpus and generating images.
 
 .. _DocKG: https://github.com/Flux-Frontiers/doc_kg
