@@ -10,6 +10,19 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Changed
 
+- **The image servers serve through imagewright when it is installed.**
+  `gutenkg-image-server` and `gutenkg-sdxl-server` keep their names, ports,
+  environment variables and the `0.0.0.0` bind default. When the server's
+  environment has imagewright with its `serve` and `flux` (or `sdxl`)
+  extras, they run imagewright's server, which answers the same routes with
+  the same bodies and runs FLUX on one thread. When it does not, they run
+  this repo's own server and log that they are serving with the built-in
+  server, with the `make` target that refreshes the environment. So a
+  `.venv-image` built before this release keeps serving after a pull. `docker/requirements-image.txt` and
+  `requirements-sdxl.txt` now install imagewright; run `make image-server`
+  (or `make sdxl-server`) and restart the server to move a machine onto it.
+  `IMAGE_PRELOAD` now loads the model when the server starts, not when its
+  module is imported.
 - **The image client is imagewright.** `gutenkg imagine` and the
   `generate_image` and `corpus_imagine` MCP tools now find an image server
   and send it the request through
@@ -21,10 +34,9 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   names and signatures. The MCP tools return the image bytes in memory
   instead of leaving a temporary file, and keep shrinking an oversized image
   until it fits the client's limit.
-- **The image servers are not changed.** `gutenkg-image-server` and
-  `gutenkg-sdxl-server` still run this repo's own code and do not import
-  imagewright, so an existing `.venv-image` keeps working after a pull. A
-  test blocks imagewright and imports both servers to keep it that way.
+- **Importing an image server never needs imagewright.** A test blocks
+  imagewright and imports both servers, so an existing `.venv-image` keeps
+  working after a pull.
 
 ## [1.40.1] - 2026-11-19
 

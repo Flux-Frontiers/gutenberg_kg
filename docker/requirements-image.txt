@@ -3,3 +3,6 @@ uvicorn>=0.30.0
 pydantic>=2.8.0
 pillow>=13.0.0
 mflux>=0.24.0
+# The server itself: gutenkg-image-server and gutenkg-sdxl-server serve through
+# imagewright when it is installed, and through this repo's own code when not.
+imagewright[serve,flux]>=0.1.0

@@ -56,14 +56,21 @@ _PRELOAD = os.environ.get("IMAGE_PRELOAD", "0").strip().lower() in {
     "yes",
 }
 
-# Optional preload for local generation; keep disabled by default so endpoint-only
-# deployments do not require local mflux model imports at startup.
-if _PRELOAD:
-    print(f"[startup] loading model {_MODEL_NAME} ...")
-    image_gen._load_model(_MODEL_NAME)
-    print("[startup] model ready")
-else:
-    print("[startup] IMAGE_PRELOAD disabled; model will load on first generation request")
+
+def _preload() -> None:
+    """Load the model now if ``IMAGE_PRELOAD`` asks for it.
+
+    Called when the built-in server starts, not at import: when imagewright
+    serves instead, it loads the model itself, and loading here as well would
+    hold FLUX in memory twice.
+    """
+    if _PRELOAD:
+        print(f"[startup] loading model {_MODEL_NAME} ...")
+        image_gen._load_model(_MODEL_NAME)
+        print("[startup] model ready")
+    else:
+        print("[startup] IMAGE_PRELOAD disabled; model will load on first generation request")
+
 
 _IDLE_UNLOAD_S = int(os.environ.get("IMAGE_IDLE_UNLOAD_S", "0") or 0)
 # One render at a time, and never an unload in the middle of one.
@@ -187,14 +194,56 @@ async def generate_image(req: ImageGenRequest):
     return JSONResponse({"created": int(time.time()), "data": [{"b64_json": b64}]})
 
 
-def main() -> None:
-    """Run the FastAPI app with uvicorn, using host/port from environment variables."""
-    host = os.environ.get("MFLUX_SERVER_HOST", "0.0.0.0")
-    port = int(os.environ.get("MFLUX_SERVER_PORT", "8090"))
+def _imagewright_server():
+    """Return imagewright's FLUX server module, or None when it cannot serve here.
+
+    `.venv-image` is an editable install, so a `git pull` changes this code
+    before anyone refreshes the environment. One built before imagewright
+    existed has no imagewright, and this server must keep serving there. Any
+    failure to import it, or a missing extra, therefore means "use the
+    built-in server", never a crash.
+
+    :return: ``imagewright.flux_server``, or None.
+    """
+    try:
+        from imagewright import flux_server  # noqa: PLC0415 - may be absent, see above
+
+        flux_server.require_extras()
+    except Exception as exc:  # noqa: BLE001 - any failure selects the built-in server
+        print(f"[startup] imagewright cannot serve here ({type(exc).__name__}: {exc})")
+        return None
+    return flux_server
+
+
+def _serve_builtin(host: str, port: int) -> None:
+    """Run this module's own FastAPI app, as every release before imagewright did."""
+    _preload()
     if _IDLE_UNLOAD_S > 0:
         threading.Thread(target=_idle_watcher, name="flux-idle-unload", daemon=True).start()
         print(f"[startup] FLUX unloads after {_IDLE_UNLOAD_S}s idle (IMAGE_IDLE_UNLOAD_S)")
     uvicorn.run(app, host=host, port=port)
+
+
+def main() -> None:
+    """Serve FLUX on ``MFLUX_SERVER_HOST``:``MFLUX_SERVER_PORT``.
+
+    Through imagewright's server when this environment has it (the same routes,
+    request fields and response bodies), else through the built-in one.
+    """
+    host = os.environ.get("MFLUX_SERVER_HOST", "0.0.0.0")
+    port = int(os.environ.get("MFLUX_SERVER_PORT", "8090"))
+    server = _imagewright_server()
+    if server is None:
+        print(
+            "[startup] serving with the built-in FLUX server; "
+            "run `make image-server` to refresh .venv-image"
+        )
+        _serve_builtin(host, port)
+        return
+    # imagewright's default is its own temp folder; keep this repo's.
+    os.environ.setdefault("IMAGE_OUTPUT_DIR", str(_OUTPUT_DIR))
+    print("[startup] serving FLUX through imagewright")
+    uvicorn.run(server.create_app(), host=host, port=port)
 
 
 if __name__ == "__main__":

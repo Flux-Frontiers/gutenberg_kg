@@ -779,6 +779,23 @@ The local `gutenkg imagine` command (outside Docker) reads its own `GUTENKG_*` v
 | `IMAGE_OUTPUT_DIR` | `/tmp/gutenberg_images` | Where rendered images are written. |
 | `IMAGE_PRELOAD` | `0` | Set to `1` to load the FLUX model at startup instead of first request. |
 
+`gutenkg-image-server` and `gutenkg-sdxl-server` serve through
+[imagewright](https://github.com/Flux-Frontiers/imagewright) when the server's
+environment has it, with the same routes, request fields and response bodies.
+`make image-server` and `make sdxl-server` install it from
+`docker/requirements-image.txt` and `docker/requirements-sdxl.txt`. In an
+environment built before that, the server starts its built-in code and says so
+in its log:
+
+```
+[startup] serving with the built-in FLUX server; run `make image-server` to refresh .venv-image
+```
+
+To move a machine onto imagewright, run `make image-server` (or
+`make sdxl-server`) again and restart the server. A server run by the
+LaunchAgent restarts with `launchctl kickstart -k gui/$(id -u)/local.gutenkg-image`.
+The log then reads `[startup] serving FLUX through imagewright`.
+
 To keep the FLUX server running on a Mac, run `make image-server` once to build `.venv-image`, then `make image-agent-install`. That installs the LaunchAgent `local.gutenkg-image`, which starts the server at login and restarts it if it exits; it logs to `~/Library/Logs/gutenkg-image.log`. While it is installed, `make down` and `make kill` stop the server only until launchd restarts it, and `make image-server` leaves it alone. `make image-agent-uninstall` stops it and removes the agent.
 
 ---

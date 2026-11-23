@@ -11,3 +11,6 @@ transformers>=4.44.0
 accelerate>=0.33.0
 safetensors>=0.4.0
 huggingface_hub>=0.24.0
+# The server itself: gutenkg-image-server and gutenkg-sdxl-server serve through
+# imagewright when it is installed, and through this repo's own code when not.
+imagewright[serve,sdxl]>=0.1.0
