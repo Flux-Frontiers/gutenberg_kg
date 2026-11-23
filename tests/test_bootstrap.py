@@ -278,8 +278,8 @@ def test_repo_venv_active_is_fine(monkeypatch, capsys):
 
 
 def test_dev_keeps_chosen_extras():
-    assert bootstrap.dev_extras("mcp viz") == "mcp viz image pov"
-    assert bootstrap.dev_extras("pov mcp") == "pov mcp image"
+    assert bootstrap.dev_extras("mcp viz") == "mcp viz pov"
+    assert bootstrap.dev_extras("pov mcp") == "pov mcp"
 
 
 @pytest.mark.parametrize(("macos", "offered"), [("26.1", True), ("15.6", False)])

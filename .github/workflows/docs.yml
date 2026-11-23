@@ -52,12 +52,12 @@ jobs:
 
       # mkdocstrings imports gutenberg_kg to read its docstrings, so the env
       # must satisfy every documented module's top-level import: chat
-      # (streamlit/httpx), image (fastapi/uvicorn), mcp (mcp/structlog),
+      # (streamlit/httpx), mcp (mcp/structlog),
       # viz+viz3d (plotly/PyQt5/pyvista/pycode-kg), kgdeps (kg-rag). None of
       # the documented modules import gutenberg_kg.serve.handler, so the
       # worker's own startup never runs here.
       - name: Install dependencies
-        run: poetry install --no-interaction --with docs --extras "chat image mcp viz viz3d kgdeps"
+        run: poetry install --no-interaction --with docs --extras "chat mcp viz viz3d kgdeps"
 
       # Not --strict: docs/*.md cross-links to src/, benchmarks/, scripts/,
       # docker/ and the top-level README (outside docs_dir) render fine on

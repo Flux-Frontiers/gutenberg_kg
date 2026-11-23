@@ -493,19 +493,16 @@ elsewhere):
 #### 1. Python install
 
 ```bash
-# The image service (fastapi/uvicorn) — Poetry or pip
-poetry install --extras image
-pip install -e ".[image]"
-
 # Optional: MCP server support (Claude Code / Cursor)
 poetry install --extras mcp
 ```
 
-There is no `imagine` extra. The generation backend itself is **not** a
-dependency of this package: mflux pins a `transformers` version that conflicts
-with pycode-kg, so `make image-server` builds an isolated `.venv-image` from
-`docker/requirements-image.txt` instead. Run that once, then use `gutenkg
-imagine` normally.
+`gutenkg imagine` needs no extra: it is a client of an image server. The
+server is imagewright's, and it is **not** a dependency of this package: mflux
+pins a `transformers` version that conflicts with pycode-kg, so
+`make image-server` builds an isolated `.venv-image` from
+`docker/requirements-image.txt` and starts `imagewright serve --backend flux`
+there. Run that once, then use `gutenkg imagine` normally.
 
 To keep the FLUX server running on a Mac, run `make image-agent-install`
 after that first `make image-server`. It installs the LaunchAgent
@@ -653,7 +650,7 @@ Pepys' description"* and the `corpus_imagine` tool handles the full pipeline.
 | Variable | Default | Description |
 |----------|---------|-------------|
 | `GUTENKG_IMAGE_ENDPOINT` | unset | Image server base URL for `gutenkg imagine` and the MCP tools; unset probes ports 8090 and 8091 |
-| `GUTENKG_IMAGE_MODEL` | `mlx-community/flux2-klein-4b-4bit` | HuggingFace model repo the FLUX image server loads |
+| `GUTENKG_IMAGE_MODEL` | `mlx-community/flux2-klein-4b-4bit` | HuggingFace model repo the FLUX image server loads (imagewright reads `IMAGE_MODEL` first) |
 | `GUTENKG_IMAGE_STEPS` | `4` | Default inference steps |
 
 ---
@@ -823,8 +820,8 @@ gutenberg_kg/
 │   │   ├── Chat.py                         # Streamlit reading room
 │   │   ├── entmoot.py                      # Two books in conversation (gutenkg converse)
 │   │   ├── handler.py                      # Query worker (retrieval + synthesis)
-│   │   ├── image_server.py                 # FLUX image service
-│   │   ├── sdxl_server.py                  # SDXL-Lightning image service
+│   │   ├── image_server.py                 # gutenkg-image-server alias of imagewright serve
+│   │   ├── sdxl_server.py                  # gutenkg-sdxl-server alias of imagewright serve
 │   │   └── pages/1_Browse.py               # Corpus browser page
 │   └── cli/
 │       ├── main.py                         # gutenkg CLI root group
@@ -855,8 +852,8 @@ gutenberg_kg/
 ├── docker/
 │   ├── Dockerfile                          # Worker + chat image
 │   ├── docker-compose.yml
-│   ├── requirements-image.txt              # FLUX image-server deps
-│   └── requirements-sdxl.txt               # SDXL image-server deps
+│   ├── requirements-image.txt              # .venv-image: imagewright[serve,flux]
+│   └── requirements-sdxl.txt               # .venv-sdxl: imagewright[serve,sdxl]
 ├── scripts/
 │   ├── build_logo.py                       # Draws the Art Techno logo at every size
 │   ├── assess_front_matter.py              # Corpus front-matter analysis

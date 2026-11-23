@@ -6,7 +6,7 @@ import asyncio
 
 import pytest
 
-pytest.importorskip("fastapi", reason="fastapi not installed (the image extra)")
+pytest.importorskip("fastapi", reason="fastapi not installed (the dev group)")
 
 from fastapi.testclient import TestClient  # noqa: E402
 
