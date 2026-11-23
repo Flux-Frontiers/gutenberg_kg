@@ -8,6 +8,26 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+### Fixed
+
+- **A request's `image_backend` override reads the environment like the
+  default does.** The worker built the override's config by hand, dropping
+  `IMAGE_STEPS` (it rendered at 4) and the `GUTENKG_IMAGE_ENDPOINT` fallback.
+  It now starts from `imagewright.image_config_from_env()`, reuses the default
+  synthesizer when the request names its backend, and clears `IMAGE_MODEL` on
+  a switch. The logic moved to `serve/image_backends.py`
+  (`image_synth_for_backend`), which loads no indices, so it is now tested.
+
+### Changed
+
+- **One Poetry writes `poetry.lock`: 2.4.3.** `pyproject.toml` sets
+  `requires-poetry = "==2.4.3"`, and every CI `snok/install-poetry` step pins
+  the same version (they were unpinned). Poetry 2.5.x drops part of the
+  nvidia markers; an older one rewrites the lock. `tests/test_lock_markers.py`
+  now also fails when the lock header or a CI pin disagrees with
+  `requires-poetry`, and the release skill checks the Poetry version before
+  any relock.
+
 ## [1.43.0] - 2026-11-23
 
 ### Changed

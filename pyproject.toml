@@ -72,6 +72,11 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.poetry]
 packages = [{ include = "gutenberg_kg", from = "src" }]
+# One Poetry writes poetry.lock, here and in CI (.github/workflows pin the
+# same version); any other refuses to run rather than rewrite the lock.
+# Not 2.5.x: it drops part of the nvidia markers and torch segfaults on
+# Linux x86_64 (tests/test_lock_markers.py).
+requires-poetry = "==2.4.3"
 
 # ---------------------------------------------------------------------------
 # PEP 621 project metadata

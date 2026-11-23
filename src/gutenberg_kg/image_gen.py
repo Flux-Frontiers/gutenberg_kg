@@ -146,14 +146,14 @@ def generate_via_server(
     seed: int | None = None,
     steps: int | None = None,
 ) -> PILImage:
-    """Generate an image by calling a running mflux-serve HTTP server.
+    """Generate an image by calling a running image server (``imagewright serve``).
 
     The request goes through imagewright's client, which needs only httpx and
     pillow, so this is safe to call from a Linux container or any environment
     without mflux installed.
 
     :param prompt: Text description of the image to generate.
-    :param server_url: Base URL of the mflux-serve instance, e.g. http://localhost:8088.
+    :param server_url: Base URL of the image server, e.g. http://localhost:8090.
     :param size: Output size ``"WIDTHxHEIGHT"`` (default: GUTENKG_IMAGE_SIZE or 1536x1024).
     :param seed: Optional integer seed for reproducibility.
     :param steps: Override inference steps (default: GUTENKG_IMAGE_STEPS or 4).
