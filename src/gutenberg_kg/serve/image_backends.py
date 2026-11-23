@@ -15,7 +15,7 @@ import os
 from gutenberg_kg.image_gen import discover_image_endpoint
 
 #: Backend keys, in the order the pickers list them. They are the worker's
-#: ``image_backend`` values (``kg_utils.synthesis.ImageBackend``).
+#: ``image_backend`` values (``imagewright.ImageBackend``).
 LOCAL = "mflux-serve"
 OPENAI = "openai"
 
