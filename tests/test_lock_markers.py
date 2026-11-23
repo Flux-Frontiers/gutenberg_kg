@@ -11,6 +11,7 @@ writes the full marker. This test catches such a lock before CI installs it.
 
 from __future__ import annotations
 
+import re
 import tomllib
 from pathlib import Path
 
@@ -89,3 +90,49 @@ def test_one_version_per_package(platform: str) -> None:
         f"poetry.lock installs two versions on {platform}: {doubled}. "
         "Relock with Poetry 2.4.3 (Poetry 2.5.x drops part of the marker)."
     )
+
+
+# ---------------------------------------------------------------------------
+# One Poetry everywhere: the lock header, pyproject and the CI pins agree
+# ---------------------------------------------------------------------------
+
+ROOT = LOCK.parent
+WORKFLOWS = ROOT / ".github" / "workflows"
+
+
+def _required_poetry() -> str:
+    """Return the version ``requires-poetry = "==X"`` in pyproject.toml pins."""
+    pyproject = tomllib.loads((ROOT / "pyproject.toml").read_text(encoding="utf-8"))
+    spec = pyproject["tool"]["poetry"]["requires-poetry"]
+    assert spec.startswith("=="), f"requires-poetry should pin one version, got {spec!r}"
+    return spec[2:]
+
+
+def test_lock_was_written_by_the_pinned_poetry() -> None:
+    header = LOCK.read_text(encoding="utf-8").splitlines()[0]
+    match = re.search(r"Poetry (\S+) ", header)
+    assert match, f"no Poetry version in the lock header: {header!r}"
+    assert match.group(1) == _required_poetry(), (
+        f"poetry.lock was written by Poetry {match.group(1)}, but pyproject pins "
+        f"{_required_poetry()}. Restore it (git checkout poetry.lock) and relock "
+        "with the pinned Poetry."
+    )
+
+
+def test_every_ci_poetry_install_pins_the_same_version() -> None:
+    want = _required_poetry()
+    for workflow in sorted(WORKFLOWS.glob("*.yml")):
+        lines = workflow.read_text(encoding="utf-8").splitlines()
+        for i, line in enumerate(lines):
+            if "snok/install-poetry" not in line:
+                continue
+            step = []  # the step's own lines, up to the next step or a blank
+            for following in lines[i + 1 :]:
+                if not following.strip() or following.lstrip().startswith("- "):
+                    break
+                step.append(following.strip())
+            versions = [s.split(":", 1)[1].strip() for s in step if s.startswith("version:")]
+            assert versions == [want], (
+                f"{workflow.name}:{i + 1} installs Poetry {versions or 'unpinned'}; "
+                f"pin `version: {want}` to match pyproject's requires-poetry."
+            )
