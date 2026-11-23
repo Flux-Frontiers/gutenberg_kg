@@ -8,12 +8,16 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
-### Changed
+## [1.43.1] - 2026-11-23
+
+### Security
 
 - **imagewright floor raised to 0.2.0** in `pyproject.toml`,
   `docker/requirements-image.txt` and `docker/requirements-sdxl.txt`, with the
-  lock moved to match. 0.2.0 adds `imagewright service install` and keeps
-  `ImageConfig`'s API key out of its `repr()`; no API this repo uses changed.
+  lock moved to match. imagewright 0.2.0 leaves `ImageConfig.api_key` out of
+  the dataclass `repr()`, so printing or logging an image config no longer
+  exposes the OpenAI key. It also adds `imagewright service install`; no API
+  this repo uses changed.
 
 ## [1.43.0] - 2026-11-23
 

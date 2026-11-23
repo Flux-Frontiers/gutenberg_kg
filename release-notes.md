@@ -1,14 +1,15 @@
-# Release Notes -- v1.43.0
+# Release Notes -- v1.43.1
 
 > Released: 2026-11-23
 
-### Changed
+### Security
 
-- **The worker's image synthesizer is imagewright's.** `serve/handler.py`
-  builds it with `imagewright.ImageSynthesizer` and resolves a per-request
-  `image_backend` itself, with the same environment variables and fallbacks
-  as before. It no longer uses `kg_utils.synthesis`'s image half, which is
-  due to be removed from kgmodule-utils.
+- **imagewright floor raised to 0.2.0** in `pyproject.toml`,
+  `docker/requirements-image.txt` and `docker/requirements-sdxl.txt`, with the
+  lock moved to match. imagewright 0.2.0 leaves `ImageConfig.api_key` out of
+  the dataclass `repr()`, so printing or logging an image config no longer
+  exposes the OpenAI key. It also adds `imagewright service install`; no API
+  this repo uses changed.
 
 ---
 
