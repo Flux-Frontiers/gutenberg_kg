@@ -57,6 +57,13 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   worker, whose container installs it; the tests get FastAPI from the `dev`
   group. Drop `--extras image` from install commands.
 
+### Fixed
+
+- **The `mkdocs-build` pre-commit hook passes with mkdocs-material 9.8.**
+  Its "MkDocs 2" notice names `NO_MKDOCS_2_WARNING`, which the hook read as
+  an unaccepted warning. `scripts/check_docs_build.py` now sets that
+  variable for the build.
+
 ## [1.40.1] - 2026-11-19
 
 ### Changed
