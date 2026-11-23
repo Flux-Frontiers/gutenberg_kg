@@ -81,13 +81,9 @@ from collections import defaultdict
 from datetime import UTC, datetime
 from pathlib import Path
 
+from imagewright import ImageBackend, ImageConfig, ImageSynthesizer, image_config_from_env
 from kg_utils.retrieval import attach_content_by_sqlite
-from kg_utils.synthesis import (
-    image_synth_for_backend,
-    image_synthesizer_from_env,
-    text_synth_for_backend,
-    text_synthesizer_from_env,
-)
+from kg_utils.synthesis import text_synth_for_backend, text_synthesizer_from_env
 from kg_utils.worker import handle_aux_ops
 
 from gutenberg_kg.author_voices import VOICES_PATH, read_voices
@@ -397,7 +393,7 @@ _open_dockg_store()
 
 print("[startup] initialising synthesis backends ...")
 _text_synth = text_synthesizer_from_env()
-_image_synth = image_synthesizer_from_env()
+_image_synth = ImageSynthesizer(image_config_from_env())
 print("[startup] ready")
 
 
@@ -421,7 +417,18 @@ def _image_for_backend(backend_str: str):
     :param backend_str: Backend name requested by the caller (e.g. ``"openai"``), or ``""``.
     :returns: An image synthesizer instance for the resolved backend.
     """
-    return image_synth_for_backend(backend_str, _image_synth)
+    try:
+        selected = ImageBackend((backend_str or "").strip().lower())
+    except ValueError:
+        return _image_synth
+    if selected == ImageBackend.OPENAI:
+        api_key = os.environ.get("OPENAI_API_KEY") or os.environ.get("IMAGE_API_KEY") or ""
+        return ImageSynthesizer(ImageConfig(backend=selected, api_key=api_key))
+    if selected == ImageBackend.MFLUX_SERVE:
+        server_url = os.environ.get("IMAGE_ENDPOINT") or ""
+        return ImageSynthesizer(ImageConfig(backend=selected, server_url=server_url))
+    model = os.environ.get("IMAGE_MODEL") or os.environ.get("GUTENKG_IMAGE_MODEL") or ""
+    return ImageSynthesizer(ImageConfig(backend=selected, model=model))
 
 
 # ---------------------------------------------------------------------------
