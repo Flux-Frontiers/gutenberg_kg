@@ -81,7 +81,7 @@ from collections import defaultdict
 from datetime import UTC, datetime
 from pathlib import Path
 
-from imagewright import ImageBackend, ImageConfig, ImageSynthesizer, image_config_from_env
+from imagewright import ImageSynthesizer, image_config_from_env
 from kg_utils.retrieval import attach_content_by_sqlite
 from kg_utils.synthesis import text_synth_for_backend, text_synthesizer_from_env
 from kg_utils.worker import handle_aux_ops
@@ -93,7 +93,7 @@ from gutenberg_kg.serve.cors import CORS_ENV, cors_origins
 from gutenberg_kg.serve.diary_browse import diary_chapter as _diary_chapter
 from gutenberg_kg.serve.diary_browse import diary_chapters as _diary_chapters
 from gutenberg_kg.serve.fusion import merge_by_rank as _merge_by_rank
-from gutenberg_kg.serve.image_backends import image_backends
+from gutenberg_kg.serve.image_backends import image_backends, image_synth_for_backend
 from gutenberg_kg.serve.moot_ops import MOOT_OPS, MootSessions, authorized
 from gutenberg_kg.serve.scope import dense_scope_sql as _dense_scope_sql
 from gutenberg_kg.serve.scope import keep_in_scope as _keep_in_scope
@@ -417,18 +417,7 @@ def _image_for_backend(backend_str: str):
     :param backend_str: Backend name requested by the caller (e.g. ``"openai"``), or ``""``.
     :returns: An image synthesizer instance for the resolved backend.
     """
-    try:
-        selected = ImageBackend((backend_str or "").strip().lower())
-    except ValueError:
-        return _image_synth
-    if selected == ImageBackend.OPENAI:
-        api_key = os.environ.get("OPENAI_API_KEY") or os.environ.get("IMAGE_API_KEY") or ""
-        return ImageSynthesizer(ImageConfig(backend=selected, api_key=api_key))
-    if selected == ImageBackend.MFLUX_SERVE:
-        server_url = os.environ.get("IMAGE_ENDPOINT") or ""
-        return ImageSynthesizer(ImageConfig(backend=selected, server_url=server_url))
-    model = os.environ.get("IMAGE_MODEL") or os.environ.get("GUTENKG_IMAGE_MODEL") or ""
-    return ImageSynthesizer(ImageConfig(backend=selected, model=model))
+    return image_synth_for_backend(backend_str, _image_synth)
 
 
 # ---------------------------------------------------------------------------
