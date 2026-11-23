@@ -8,9 +8,9 @@ handler       — the worker (semantic search + synthesis), served by worker_api
                 embedder, vector tables), so import it only to serve.
 Chat          — Streamlit chat UI (launch via ``gutenkg chat``).
 pages/        — extra Streamlit pages auto-discovered next to Chat.py.
-image_server  — FastAPI wrapper around :mod:`gutenberg_kg.image_gen`
-                (launch via ``gutenkg-image-server``).
+image_server  — ``gutenkg-image-server``, an alias of ``imagewright serve``
+                kept for one release (and ``sdxl_server``, its SDXL twin).
 
-Optional dependencies: install ``gutenberg-kg[worker]``, ``[chat]``, or
-``[image]`` for the respective module's requirements.
+Optional dependencies: install ``gutenberg-kg[chat]`` for the chat UI. The
+worker's FastAPI comes with its container image (docker/Dockerfile).
 """

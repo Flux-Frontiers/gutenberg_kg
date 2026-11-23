@@ -7,7 +7,10 @@
 	<string>local.gutenkg-image</string>
 	<key>ProgramArguments</key>
 	<array>
-		<string>@REPO@/.venv-image/bin/gutenkg-image-server</string>
+		<string>@REPO@/.venv-image/bin/imagewright</string>
+		<string>serve</string>
+		<string>--backend</string>
+		<string>flux</string>
 	</array>
 	<key>WorkingDirectory</key>
 	<string>@REPO@</string>

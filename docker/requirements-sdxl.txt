@@ -1,16 +1,5 @@
-# Isolated deps for the SDXL-Lightning image server (gutenberg_kg.serve.sdxl_server).
-# diffusers/torch stack — kept OUT of the mflux .venv-image and the main Poetry env.
-# Apple Silicon: torch ships MPS support in the default wheel.
-fastapi>=0.116.0
-uvicorn>=0.30.0
-pydantic>=2.8.0
-pillow>=13.0.0
-torch>=2.4.0
-diffusers>=0.30.0
-transformers>=4.44.0
-accelerate>=0.33.0
-safetensors>=0.4.0
-huggingface_hub>=0.24.0
-# The server itself: gutenkg-image-server and gutenkg-sdxl-server serve through
-# imagewright when it is installed, and through this repo's own code when not.
+# The SDXL-Lightning image server for `make sdxl-server`: imagewright's, with
+# FastAPI, uvicorn and the diffusers/torch stack. Kept out of the mflux
+# .venv-image and the main Poetry environment. On Apple Silicon, torch ships MPS
+# support in the default wheel.
 imagewright[serve,sdxl]>=0.1.0

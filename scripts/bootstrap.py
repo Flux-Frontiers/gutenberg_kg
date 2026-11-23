@@ -85,7 +85,7 @@ POETRY_INSTALLER_URL = "https://install.python-poetry.org"
 
 # The CLI install the docs recommend; --dev adds what CI's test job needs.
 EXTRAS = "kgdeps viz viz3d mcp"
-DEV_ONLY_EXTRAS = ("image", "pov")
+DEV_ONLY_EXTRAS = ("pov",)
 
 # Apple's `container` CLI needs macOS 26.
 APPLE_CONTAINER_MIN_MACOS = 26
@@ -142,7 +142,7 @@ def dev_extras(extras: str) -> str:
     """Add the extras the contributor toolchain needs to the chosen ones.
 
     :param extras: Space-separated Poetry extras.
-    :returns: The same extras plus ``image`` and ``pov``, without duplicates.
+    :returns: The same extras plus ``pov``, without duplicates.
     """
     merged = extras.split()
     merged += [e for e in DEV_ONLY_EXTRAS if e not in merged]
