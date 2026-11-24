@@ -116,13 +116,18 @@ def registry_token(repo: str, user: str = "", secret: str = "") -> str:
         return json.load(res)["token"]
 
 
-def tag_digest(repo: str, tag: str, token: str) -> str:
-    """The digest a tag points to, or ``""`` when the tag does not exist."""
+def tag_lookup(repo: str, tag: str, token: str) -> tuple[int, str]:
+    """HEAD a tag: the HTTP status, and the digest it points to (``""`` unless 200)."""
     status, headers, _ = _request(
         f"{REGISTRY}/v2/{repo}/manifests/{tag}", token=token, method="HEAD", accept=INDEX_TYPES
     )
     digest = {k.lower(): v for k, v in headers.items()}.get("docker-content-digest", "")
-    return digest if status == 200 else ""
+    return status, digest if status == 200 else ""
+
+
+def tag_digest(repo: str, tag: str, token: str) -> str:
+    """The digest a tag points to, or ``""`` when the tag does not exist."""
+    return tag_lookup(repo, tag, token)[1]
 
 
 def main(argv: list[str] | None = None) -> int:
@@ -142,11 +147,25 @@ def main(argv: list[str] | None = None) -> int:
 
     parsed = parse_image(args.image)
     if args.command == "digest":
-        # Never fails a publish: no digest only means nothing gets pruned.
-        try:
-            print(tag_digest(*parsed, registry_token(parsed[0])) if parsed else "")
-        except (urllib.error.URLError, OSError, KeyError, ValueError):
-            print("")
+        # Never fails a publish: no digest only means nothing gets pruned. A tag
+        # that does not exist yet is normal; any other failure is warned about on
+        # stderr, because the image this push replaces will then stay on Hub.
+        digest, problem = "", ""
+        if parsed:
+            try:
+                status, digest = tag_lookup(*parsed, registry_token(parsed[0]))
+                if status not in (200, 404):
+                    problem = f"HTTP {status}"
+            except (urllib.error.URLError, OSError, KeyError, ValueError) as err:
+                problem = f"{type(err).__name__}: {err}"
+        if problem:
+            print(
+                f"prune: warning: could not read the digest of {args.image} ({problem}).\n"
+                "  The image this push replaces will not be pruned. Find its digest later\n"
+                "  with `docker buildx history inspect` and run this script's `prune`.",
+                file=sys.stderr,
+            )
+        print(digest)
         return 0
 
     if parsed is None:

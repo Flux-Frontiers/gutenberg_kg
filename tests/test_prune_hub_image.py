@@ -78,3 +78,12 @@ def test_prune_does_nothing_without_an_old_image_or_off_docker_hub(image, old, c
 def test_digest_off_docker_hub_is_empty(capsys):
     assert prune.main(["digest", "ghcr.io/someone/image:latest"]) == 0
     assert capsys.readouterr().out == "\n"
+
+
+def test_digest_warns_when_docker_hub_cannot_be_read(monkeypatch, capsys):
+    # A closed local port stands in for Docker Hub being unreachable.
+    monkeypatch.setattr(prune, "AUTH_URL", "http://127.0.0.1:9/token")
+    assert prune.main(["digest", IMAGE]) == 0
+    out, err = capsys.readouterr()
+    assert out == "\n"
+    assert "will not be pruned" in err
