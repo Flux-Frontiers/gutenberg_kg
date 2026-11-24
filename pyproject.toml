@@ -124,7 +124,7 @@ kgdeps = [
     #
     # The floor still moves with doc-kg's: kg-rag needs transformers>=5.5.0,
     # which older doc-kg pins (transformers<4.57) contradict.
-    "kg-rag>=0.19.0",
+    "kg-rag>=0.19.2",
 ]
 viz = [
     "plotly>=7.1.0",
